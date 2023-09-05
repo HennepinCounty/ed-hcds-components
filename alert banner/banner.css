@@ -1,0 +1,70 @@
+body{
+    padding: 1rem;
+}
+button, div{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.alert {
+    position: relative;
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.alert .close {
+    padding: 0.75rem 1.25rem;
+    color: inherit;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+button{
+    background-color:inherit;
+    border: 0;
+}
+
+.alert .close:hover,
+.alert .close:focus {
+    color: inherit;
+}
+
+.alert .close span[aria-hidden] {
+    font-size: 1.8rem;
+    margin-top: -0.2rem;
+}
+
+.alert-primary{
+    background-color: #113c66;
+    color: white;
+}
+.alert-secondary{
+    background-color:#0058a4;
+    color: white;
+}
+.alert-success{
+    background-color: #9fcc3b;
+    color: black;
+}
+.alert-danger{
+    background-color:#ce1432;
+    color: white;
+}
+.alert-warning{
+    background-color: #ffcb05;
+    color: black;
+}
+.alert-info{
+    background-color:#44c8f5;
+    color: black;
+}
+.alert-light{
+    background-color:#e9ecef;
+    color: black;
+}
+.alert-dark{
+    background-color:#343a40;
+    color: white;
+}
+
