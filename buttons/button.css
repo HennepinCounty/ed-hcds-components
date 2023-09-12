@@ -1,0 +1,152 @@
+.body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.indent {
+    margin-left: 20px;
+}
+
+.material-symbols-outlined{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Primary button */
+.hc-primary,
+.hc-primary:hover,
+.hc-primary:active,
+.hc-primary:disabled {
+    min-height: 40px;
+    min-width: 75px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    margin: auto;
+    text-align: center;
+    border-radius: 2px;
+    border: none;
+}
+
+.hc-primary:focus,
+.hc-secondary:focus,
+.hc-danger:focus {
+    border: 2px solid white;
+    border-style: double;
+    outline: 2px solid #113c66;
+}
+
+.hc-primary {
+    background-color: #113c66;
+}
+
+.hc-primary:hover {
+    background-color: #002852;
+}
+
+.hc-primary:active {
+    background-color: #0a1e48;
+}
+
+.hc-primary:disabled {
+    background-color: #c3c6c9;
+    color: #818283;
+}
+
+/* Secondary button */
+.hc-secondary {
+    min-height: 40px;
+    min-width: 75px;
+    font: 400 16px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+    background-color: white;
+    color: #113c66;
+    margin: auto;
+    text-align: center;
+    border-radius: 2px;
+    outline: auto;
+    border: 2px solid #113c66;
+  }
+  
+  .hc-secondary:hover, 
+  .hc-secondary:active {
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 2px;
+    min-height: 40px;
+    min-width: 75px;
+    font: 400 16px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 24px;
+    letter-spacing: 0;
+  }
+  
+  .hc-secondary:hover,
+  .hc-secondary:focus {
+    background-color: #002852;
+    color: white;
+  }
+  
+  .hc-secondary:active {
+    background-color: #0a1e48;
+  }
+  
+  .hc-secondary:disabled {
+    color: #c3c6c9;
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    border-radius: 2px;
+    outline: auto;
+    border: 2px solid #c3c6c9;
+  }
+  
+
+/* Danger button */
+.hc-danger {
+    min-height: 40px;
+    min-width: 75px;
+    font: 400 16px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    background-color: #ce1432;
+    color: white;
+    margin: auto;
+    text-align: center;
+    border-radius: 2px;
+    border: none;
+}
+
+.hc-danger:hover, .hc-danger:active {
+    min-height: 40px;
+    min-width: 75px;
+    font: 400 16px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    margin: auto;
+    text-align: center;
+    border-radius: 2px;
+    border: none;
+}
+
+.hc-danger:hover {
+    background-color: #ba001e;
+}
+
+.hc-danger:active {
+    background-color: #a6000a;
+}
+
+.hc-danger:disabled {
+    background-color: #c3c6c9;
+    color: #818283;
+}

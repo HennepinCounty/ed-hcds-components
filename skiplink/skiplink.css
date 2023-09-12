@@ -1,0 +1,37 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hc-skiplink {
+    min-height: 40px;
+    min-width: 130px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    padding: 15px;
+
+    text-decoration: none;
+    background-color: #113c66;
+    color: white;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid white;
+    border-style: double;
+    outline: 1px solid #113c66;
+} 
+
+
+.hc-skiplink:hover {
+
+    background-color: #002852;
+
+}
+
+.hc-skiplink:active {
+
+    background-color: #0a1e48;
+
+}

@@ -2,10 +2,10 @@ body{
     padding: 1rem;
 }
 button, div{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.alert {
+.hc-alert {
     position: relative;
     padding: 0.5rem 0.5rem;
     margin-bottom: 1rem;
@@ -13,57 +13,55 @@ button, div{
     justify-content: space-between;
     align-items: center;
 }
-.alert .close {
+.hc-alert .hc-close {
     padding: 0.75rem 1.25rem;
     color: inherit;
     font-size: 0.9rem;
     display: flex;
     align-items: center;
-}
-button{
     background-color:inherit;
     border: 0;
 }
 
-.alert .close:hover,
-.alert .close:focus {
+.hc-alert .hc-close:hover,
+.hc-alert .hc-close:focus {
     color: inherit;
 }
 
-.alert .close span[aria-hidden] {
+.hc-alert .hc-close span[aria-hidden] {
     font-size: 1.8rem;
     margin-top: -0.2rem;
 }
 
-.alert-primary{
+.hc-alert-primary{
     background-color: #113c66;
     color: white;
 }
-.alert-secondary{
+.hc-alert-secondary{
     background-color:#0058a4;
     color: white;
 }
-.alert-success{
+.hc-alert-success{
     background-color: #9fcc3b;
     color: black;
 }
-.alert-danger{
+.hc-alert-danger{
     background-color:#ce1432;
     color: white;
 }
-.alert-warning{
+.hc-alert-warning{
     background-color: #ffcb05;
     color: black;
 }
-.alert-info{
+.hc-alert-info{
     background-color:#44c8f5;
     color: black;
 }
-.alert-light{
+.hc-alert-light{
     background-color:#e9ecef;
     color: black;
 }
-.alert-dark{
+.hc-alert-dark{
     background-color:#343a40;
     color: white;
 }
