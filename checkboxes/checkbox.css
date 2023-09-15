@@ -1,45 +1,43 @@
-body{
-    font-family: Segoe UI;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
-    letter-spacing: 0em;
-    text-align: left;
+body {
+  font-family: Segoe UI;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
-fieldset legend{
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 24px;
-    text-align: left;
-    letter-spacing: 0em;
+fieldset legend {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: 0em;
 }
-.chkbox_item, fieldset{
-    border: 1px solid rgb(233, 232, 232);
-    padding: 1%;
-    margin-bottom: 1%;
+.chkbox_item,
+fieldset {
+  border: 1px solid rgb(233, 232, 232);
+  padding: 1%;
+  margin-bottom: 1%;
 }
 
-input[type=checkbox]{
-    width: 17px;
-    height: 17px;
-    padding: 10px
+input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  padding: 10px;
 }
 
 /* focus style update */
-.custom-focus{
-    max-width: 58%;
-    padding: 8px
+.custom-focus {
+  max-width: 58%;
+  padding: 8px;
 }
 
-input[type=checkbox]:focus-within {
-    outline: 2px solid;
-    outline-offset: 10px;
-}
-label{
-    padding-left: 8%;
+input[type="checkbox"]:focus-within {
+  outline: 2px solid;
+  outline-offset: 10px;
 }
 
-
-
-
+label {
+  padding-left: 8%;
+}
