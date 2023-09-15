@@ -1,11 +1,11 @@
 
 function openDrawer() {
-    const accordionHeaders = document.querySelectorAll('.accordion-header');
+    const accordionHeaders = document.querySelectorAll('.hc-accordion-header');
     console.log(accordionHeaders)
     accordionHeaders.forEach(header => {
         header.addEventListener('click', () => {
             header.classList.toggle('active');
-            const symbol = header.querySelector('.symbol');
+            const symbol = header.querySelector('.hc-accordion-symbol');
             symbol.textContent = header.classList.contains('active') ? "-" : "+";
             const content = header.nextElementSibling;
             if (content.style.display === 'block') {
