@@ -73,5 +73,52 @@
         </div>
       </fieldset>
     </div>
+
+    <!-- ============================= -->
+    <!-- new styling -->
+    <!-- ============================= -->
+
+    <!-- form group wrapper -->
+    <!-- this is a class used for all form groups -->
+    <!-- only styling is margin-bottom -->
+    <div class="hc-formgroup">
+      <!-- fieldset, this is semantic for accessibility -->
+      <fieldset class="hc-fieldset">
+        <!-- legend, this is semantic for accessibility -->
+        <legend class="hc-fieldset__legend" aria-describedby="fieldset-hint">
+          <!-- semantic heading tags can be nested inside of legend for accessibility -->
+          <!-- hc-fieldset__heading is set to inherit from the parent's styling (so won't use usual h3 styling) -->
+          <h3 class="hc-fieldset__header">Fieldset question asked to user</h3>
+        </legend>
+        <!-- secondary text/hint/helper text for question -->
+        <div class="hc-hint" id="fieldset-hint">
+          Helpful text to clarify the question
+        </div>
+
+        <!-- hc-checkboxes is a wrapper -->
+        <!-- govuk-checkboxes class isn't declared, no style attached to it, in the HTML for readability and BEM (base, element, modifier) naming convention reasons  -->
+
+        <div class="hc-checkboxes" data-module="hc-checkboxes"></div>
+
+        <!-- individual checkbox item, consists of input and label -->
+
+        <div class="hc-checkboxes__item">
+          <!-- this is for semantics/accessibility/function, but default browser styling is hidden through opacity: 0; -->
+          <!-- ::before and ::afterr pseudoclass for label is used to layer checkbox and checkmark on top of original input styling -->
+          <input
+            class="hc-checkboxes__input"
+            id="waste"
+            name="waste"
+            type="checkbox"
+            value="carcasses"
+          />
+
+          <!-- This contains the label and uses ::before to create the checkbox box, and ::after to create the checkmark -->
+          <label class="hc-label hc-checkboxes__label" for="waste">
+            Waste from animal carcasses
+          </label>
+        </div>
+      </fieldset>
+    </div>
   </body>
 </html>

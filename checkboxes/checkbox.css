@@ -7,13 +7,15 @@ body {
   text-align: left;
 }
 
-fieldset legend {
-  font-size: 18px;
+/* fieldset  */
+legend {
+  font-size: 24px;
   font-weight: 500;
   line-height: 24px;
   text-align: left;
   letter-spacing: 0em;
 }
+
 .chkbox_item,
 fieldset {
   border: 1px solid rgb(233, 232, 232);
@@ -21,11 +23,15 @@ fieldset {
   margin-bottom: 1%;
 }
 
-input[type="checkbox"] {
+/* commented out input[type=checkbox] */
+
+/* this would replace the default chekcbox styling without applying a class. That might cause conflict with other libraries that might be used in the proejct */
+/* instead this styling will be moved to a class so the styling only applies with <input class="{className}"> instead of applying with <input> */
+/* input[type="checkbox"] {
   width: 17px;
   height: 17px;
   padding: 10px;
-}
+} */
 
 /* focus style update */
 .custom-focus {
@@ -40,4 +46,72 @@ input[type="checkbox"]:focus-within {
 
 label {
   padding-left: 8%;
+}
+
+/* ====================================== */
+/* new styling based on govuk */
+/* https://github.com/alphagov/govuk-frontend/blob/9f05cea739d14d4cbf18e79b17228045ca84b3ba/packages/govuk-frontend/src/govuk/components/checkboxes/_index.scss */
+/* ====================================== */
+
+/* this can be moved into its own component. this should be a general class for groups of form elements */
+.hc-formgroup {
+  margin-bottom: 24px;
+}
+
+/* this can be moved into its own component. this should be a general class for groups of form elements */
+.hc-fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.hc-fieldset__legend {
+  font-size: 20px;
+  font-weight: 700;
+  /* govUK fix for legend text wrapping in Edge and IE
+    1. IE9-11 & Edge 12-13
+    2. IE8-11 */
+  box-sizing: border-box; /* 1 */
+  display: table; /* 2 */
+  max-width: 100%; /* 1 */
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+/* accessibly styling radio buttons/checkboxes */
+/* https://www.sarasoueidan.com/blog/inclusively-hiding-and-styling-checkboxes-and-radio-buttons/ */
+
+.hc-checkbox__item {
+}
+
+.hc-checkbox__item:last-child,
+.hc-checkbox__item:last-of-type {
+}
+
+.hc-checkbox__input {
+}
+
+.hc-checkbox__label {
+}
+
+.hc-checkbox__label::before {
+}
+.hc-checkbox__label::after {
+}
+.hc-checkbox__hint {
+}
+
+.hc-checkbox__input:focus + .hc-checkbox__label::before {
+}
+
+.hc-checkbox__input:checked + .hc-checkbox__label::after {
+}
+
+.hc-checkbox__input:disabled,
+.hc-checkbox__input:disabled + .hc-checkbox__label {
+}
+
+.hc-checkbox__input:disabled + .hc-checkbox__label,
+.hc-checkbox__input:disabled ~ .hc-hint {
 }
