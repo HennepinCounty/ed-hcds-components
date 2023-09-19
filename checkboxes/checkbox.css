@@ -19,9 +19,8 @@ legend {
 
 .chkbox_item,
 fieldset {
-  border: 1px solid rgb(233, 232, 232);
-  padding: 1%;
-  margin-bottom: 1%;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 /* commented out input[type=checkbox] */
@@ -36,8 +35,9 @@ fieldset {
 
 /* focus style update */
 .custom-focus {
-  padding-left: 3%;
-  padding-bottom: 1%;
+  padding-left: 24px;
+ 
+  padding-bottom: 8px;
 }
 
 input{
@@ -45,7 +45,7 @@ input{
   height: 17px;
   position: relative;
   top: 1px;
-  margin-right: 1%
+  margin-right: 10px
 }
 
 input[type=checkbox]{
