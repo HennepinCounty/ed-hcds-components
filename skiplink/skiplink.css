@@ -11,7 +11,7 @@ body {
     line-height: 24px;
     letter-spacing: 0em;
     padding: 15px;
-
+    opacity: 0;
     text-decoration: none;
     background-color: #113c66;
     color: white;
@@ -20,18 +20,21 @@ body {
     border-radius: 5px;
     border: 1px solid white;
     border-style: double;
-    outline: 1px solid #113c66;
+    outline: 1px solid #113c66; 
+    z-index: 999;
+
 } 
 
+.hc-skiplink:focus {
+    opacity: 1;
+}
 
-.hc-skiplink:hover {
-
+.hc-skiplink:focus:hover {
     background-color: #002852;
 
 }
 
 .hc-skiplink:active {
-
+    opacity: 1;
     background-color: #0a1e48;
-
 }
