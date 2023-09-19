@@ -5,6 +5,12 @@ button, div{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+h2, p{
+    font-size: 1rem;
+    font-weight: normal;
+    display: inline-block;
+}
+
 .hc-alert {
     position: relative;
     padding: 0.5rem 0.5rem;
