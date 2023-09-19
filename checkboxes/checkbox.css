@@ -35,17 +35,31 @@ fieldset {
 
 /* focus style update */
 .custom-focus {
-  max-width: 58%;
-  padding: 8px;
+  padding-left: 3%;
+  padding-bottom: 1%;
+}
+
+input{
+  width: 17px;
+  height: 17px;
+  position: relative;
+  top: 1px;
+  margin-right: 1%
+}
+
+input[type=checkbox]{
+  accent-color: #0058a4;
 }
 
 input[type="checkbox"]:focus-within {
   outline: 2px solid;
-  outline-offset: 10px;
+  outline-offset: 5px;
 }
 
 label {
-  padding-left: 8%;
+  display: block;
+  padding-left: 48px;
+  text-indent: -40px;
 }
 
 /* ====================================== */
