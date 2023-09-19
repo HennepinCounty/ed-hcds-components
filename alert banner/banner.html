@@ -1,67 +1,94 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="banner.css">
-    </head>
-    <body>
-        
-        <!-- primary alert -->
-        <div class="hc-alert hc-alert-primary" role="region">
-            <div><h2>A simple primary alert</h2><p>—check it out!</p></div>
-            <button type="button" class="hc-close" onclick="this.parentElement.style.display='none'">
-                Close&nbsp;<span aria-hidden="true">×</span>
-            </button>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="banner.css">
+</head>
+
+<body>
+
+    <!-- primary alert -->
+    <div class="hc-alert hc-alert-primary" role="region" aria-labelledby="alert-banner-heading">
+        <div>
+            <h2 id="alert-banner-heading">A simple primary alert</h2>
+            <p>—check it out!</p>
         </div>
-        <!-- secondary alert -->
-        <div class="hc-alert hc-alert-secondary" role="region">
-            <div><h2>A simple secondary alert</h2><p>—check it out!</p></div>
-            <button type="button" class="hc-close" onclick="this.parentElement.style.display='none'">
-                Close&nbsp;<span aria-hidden="true">×</span>
-            </button>
+        <button type="button" class="hc-close" onclick="this.parentElement.style.display='none'">
+            Close&nbsp;<span aria-hidden="true">×</span>
+        </button>
+    </div>
+    <!-- secondary alert -->
+    <div class="hc-alert hc-alert-secondary" role="region" aria-labelledby="alert-banner2-heading">
+        <div>
+            <h2 id="alert-banner2-heading">A simple secondary alert</h2>
+            <p>—check it out!</p>
         </div>
-        <!-- success alert -->
-        <div class="hc-alert hc-alert-success" role="region">
-            <div><h2>A simple success alert</h2><p>—check it out!</p></div>
-            <button type="button" class="hc-close" onclick="this.parentElement.style.display='none'">
-                Close&nbsp;<span aria-hidden="true">×</span>
-            </button>
+        <button type="button" class="hc-close" onclick="this.parentElement.style.display='none'">
+            Close&nbsp;<span aria-hidden="true">×</span>
+        </button>
+    </div>
+    <!-- success alert -->
+    <div class="hc-alert hc-alert-success" role="status" aria-labelledby="alert-banner3-heading">
+        <div>
+            <h2 id="alert-banner3-heading">A simple success alert</h2>
+            <p>—check it out!</p>
         </div>
-        <!-- danger alert -->
-        <div class="hc-alert hc-alert-danger" role="alert">
-            <div><h2>A simple danger alert</h2><p>—check it out!</p></div>
-            <button type="button" class="hc-close" onclick="this.parentElement.style.display='none'">
-                Close&nbsp;<span aria-hidden="true">×</span>
-            </button>
+        <button type="button" class="hc-close" onclick="this.parentElement.style.display='none'">
+            Close&nbsp;<span aria-hidden="true">×</span>
+        </button>
+    </div>
+    <!-- danger alert -->
+    <div class="hc-alert hc-alert-danger" role="alert">
+        <div>
+            <h2>A simple danger alert</h2>
+            <p>—check it out!</p>
         </div>
-        <!-- warning alert -->
-        <div class="hc-alert hc-alert-warning" role="alert">
-            <div><h2>A simple warning alert</h2><p>—check it out!</p></div>
-            <button type="button" class="hc-close" onclick="this.parentElement.style.display='none'">
-                Close&nbsp;<span aria-hidden="true">×</span>
-            </button>
+        <button type="button" class="hc-close" onclick="this.parentElement.style.display='none'">
+            Close&nbsp;<span aria-hidden="true">×</span>
+        </button>
+    </div>
+    <!-- warning alert -->
+    <div class="hc-alert hc-alert-warning" role="alert">
+        <div>
+            <h2>A simple warning alert</h2>
+            <p>—check it out!</p>
         </div>
-        <!-- information alert -->
-        <div class="hc-alert hc-alert-info" role="region">
-            <div><h2>A simple info alert</h2><p>—check it out!</p></div>
-            <button type="button" class="hc-close" onclick="this.parentElement.style.display='none'">
-                Close&nbsp;<span aria-hidden="true">×</span>
-            </button>
+        <button type="button" class="hc-close" onclick="this.parentElement.style.display='none'">
+            Close&nbsp;<span aria-hidden="true">×</span>
+        </button>
+    </div>
+    <!-- information alert -->
+    <div class="hc-alert hc-alert-info" role="region">
+        <div>
+            <h2>A simple info alert</h2>
+            <p>—check it out!</p>
         </div>
-        <!-- un-critical / light alert -->
-        <div class="hc-alert hc-alert-light" role="region">
-            <div><h2>A simple light alert</h2><p>—check it out!</p></div>
-            <button type="button" class="hc-close" onclick="this.parentElement.style.display='none'">
-                Close&nbsp;<span aria-hidden="true">×</span>
-            </button>
+        <button type="button" class="hc-close" onclick="this.parentElement.style.display='none'">
+            Close&nbsp;<span aria-hidden="true">×</span>
+        </button>
+    </div>
+    <!-- un-critical / light alert -->
+    <div class="hc-alert hc-alert-light" role="region">
+        <div>
+            <h2>A simple light alert</h2>
+            <p>—check it out!</p>
         </div>
-        <!-- dark theme alert -->
-        <div class="hc-alert hc-alert-dark" role="region">
-            <div><h2>A simple dark alert</h2><p>—check it out!</p></div>
-            <button type="button" class="hc-close" onclick="this.parentElement.style.display='none'">
-                Close&nbsp;<span aria-hidden="true">×</span>
-            </button>
+        <button type="button" class="hc-close" onclick="this.parentElement.style.display='none'">
+            Close&nbsp;<span aria-hidden="true">×</span>
+        </button>
+    </div>
+    <!-- dark theme alert -->
+    <div class="hc-alert hc-alert-dark" role="region">
+        <div>
+            <h2>A simple dark alert</h2>
+            <p>—check it out!</p>
         </div>
-    </body>
+        <button type="button" class="hc-close" onclick="this.parentElement.style.display='none'">
+            Close&nbsp;<span aria-hidden="true">×</span>
+        </button>
+    </div>
+</body>
+
 </html>
