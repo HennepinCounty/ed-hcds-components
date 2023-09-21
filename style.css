@@ -12,6 +12,7 @@
     letter-spacing: 0em;
     padding: 0 !important;
     margin-top: 20px;
+    display: block; /* added to display label at the top */
 }
 
 .hc-label:disabled{
@@ -148,22 +149,10 @@ a.btn.disabled {
     color: #000;
 }
 
-/* Test remove space between */
-.hc-r-space{
+/* Optional: adjustment for buttons to be parallel with component */
+.btn-adjust{
     display: inline;
     margin: 0;
-    margin-right:-3px;
-}
-.row{
-    padding-bottom: 8px;
-}
-label{
-    display:block;
-    font-weight: 500;
-    font-size: 18px;
-}
-
-/* adjust the button position for search component */
-.btn-adjust{
+    margin-left:-3px;
     margin-top: -2px;
 }
