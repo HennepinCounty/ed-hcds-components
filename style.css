@@ -162,3 +162,8 @@ label{
     font-weight: 500;
     font-size: 18px;
 }
+
+/* adjust the button position for search component */
+.btn-adjust{
+    margin-top: -2px;
+}
