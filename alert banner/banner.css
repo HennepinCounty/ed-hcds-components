@@ -1,11 +1,9 @@
-body{
+.hc-banner-body{
     padding: 1rem;
-}
-button, div{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h2, p{
+.hc-banner-h2, .hc-banner-p{
     font-size: 1rem;
     font-weight: normal;
     display: inline-block;
