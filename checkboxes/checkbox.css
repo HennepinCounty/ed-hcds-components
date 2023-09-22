@@ -1,4 +1,4 @@
-body {
+.hc-checkbox-body {
   font-family: Segoe UI;
   font-size: 18px;
   font-weight: 400;
@@ -8,7 +8,7 @@ body {
 }
 
 /* fieldset  */
-legend {
+.hc-checkbox-legend {
   font-size: 24px;
   font-weight: 500;
   line-height: 24px;
@@ -17,10 +17,11 @@ legend {
 }
 
 
-.chkbox_item,
-fieldset {
+.hc-chkbox_item,
+.hc-checkbox-fieldset {
   padding: 10px;
   margin-bottom: 10px;
+  border: none;
 }
 
 /* commented out input[type=checkbox] */
@@ -34,13 +35,13 @@ fieldset {
 } */
 
 /* focus style update */
-.custom-focus {
+.hc-checkbox-padding {
   padding-left: 24px;
  
   padding-bottom: 8px;
 }
 
-input{
+.hc-checkbox-input{
   width: 17px;
   height: 17px;
   position: relative;
@@ -48,85 +49,18 @@ input{
   margin-right: 10px
 }
 
-input[type=checkbox]{
+.hc-checkbox-input[type=checkbox]{
   accent-color: #0058a4;
 }
 
-input[type="checkbox"]:focus-within {
+.hc-checkbox-input[type="checkbox"]:focus-within {
   outline: 2px solid;
   outline-offset: 5px;
 }
 
-label {
+.hc-checkbox-label {
   display: block;
   padding-left: 48px;
   text-indent: -40px;
 }
 
-/* ====================================== */
-/* new styling based on govuk */
-/* https://github.com/alphagov/govuk-frontend/blob/9f05cea739d14d4cbf18e79b17228045ca84b3ba/packages/govuk-frontend/src/govuk/components/checkboxes/_index.scss */
-/* ====================================== */
-
-/* this can be moved into its own component. this should be a general class for groups of form elements */
-.hc-formgroup {
-  margin-bottom: 24px;
-}
-
-/* this can be moved into its own component. this should be a general class for groups of form elements */
-.hc-fieldset {
-  min-width: 0;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-.hc-fieldset__legend {
-  font-size: 20px;
-  font-weight: 700;
-  /* govUK fix for legend text wrapping in Edge and IE
-    1. IE9-11 & Edge 12-13
-    2. IE8-11 */
-  box-sizing: border-box; /* 1 */
-  display: table; /* 2 */
-  max-width: 100%; /* 1 */
-  margin-bottom: 16px;
-  padding: 0;
-}
-
-/* accessibly styling radio buttons/checkboxes */
-/* https://www.sarasoueidan.com/blog/inclusively-hiding-and-styling-checkboxes-and-radio-buttons/ */
-
-.hc-checkbox__item {
-}
-
-.hc-checkbox__item:last-child,
-.hc-checkbox__item:last-of-type {
-}
-
-.hc-checkbox__input {
-}
-
-.hc-checkbox__label {
-}
-
-.hc-checkbox__label::before {
-}
-.hc-checkbox__label::after {
-}
-.hc-checkbox__hint {
-}
-
-.hc-checkbox__input:focus + .hc-checkbox__label::before {
-}
-
-.hc-checkbox__input:checked + .hc-checkbox__label::after {
-}
-
-.hc-checkbox__input:disabled,
-.hc-checkbox__input:disabled + .hc-checkbox__label {
-}
-
-.hc-checkbox__input:disabled + .hc-checkbox__label,
-.hc-checkbox__input:disabled ~ .hc-hint {
-}

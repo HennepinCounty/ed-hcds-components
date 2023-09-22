@@ -4,57 +4,57 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="checkbox.css" />
-    <style></style>
   </head>
-  <body>
+
+  <body class="hc-checkbox-body">
     <!-- testing for different states -->
-    <div class="chkbox_item">
+    <div class="hc-chkbox_item">
       <!-- unchecked group -->
       <h2>Unchecked</h2>
 
       <!-- default state -->
-      <div class="custom-focus">
-        <label>
-          <input type="checkbox" id="label1" />
+      <div class="hc-checkbox-padding">
+        <label class="hc-checkbox-label">
+          <input type="checkbox" id="label1" class="hc-checkbox-input"/>
           Default checkbox 
         </label>
       </div>
 
       <!-- focus state -->
-      <div class="custom-focus">
-        <label>
-          <input type="checkbox" id="label2" />
+      <div class="hc-checkbox-padding">
+        <label class="hc-checkbox-label">
+          <input type="checkbox" id="label2" class="hc-checkbox-input"/>
           Focus checkbox 
         </label>
       </div>
 
       <!-- disabled state -->
-      <div class="custom-focus">
-        <label>
-          <input type="checkbox" id="label3" disabled />
+      <div class="hc-checkbox-padding">
+        <label class="hc-checkbox-label">
+          <input type="checkbox" id="label3" disabled class="hc-checkbox-input"/>
           Disabled checkbox 
         </label>
       </div>
 
       <!-- checked group -->
       <h2>Checked</h2>
-      <div class="custom-focus">
-        <label>
-          <input type="checkbox" id="label4" checked />
+      <div class="hc-checkbox-padding">
+        <label class="hc-checkbox-label">
+          <input type="checkbox" id="label4" checked class="hc-checkbox-input"/>
           Default checkbox 
         </label>
       </div>
 
-      <div class="custom-focus">
-        <label>
-          <input type="checkbox" checked id="label5" autofocus />
+      <div class="hc-checkbox-padding">
+        <label class="hc-checkbox-label">
+          <input type="checkbox" checked id="label5" autofocus class="hc-checkbox-input"/>
           Focus checkbox 
         </label>
       </div>
 
-      <div class="custom-focus">
-        <label>
-          <input type="checkbox" id="label6" checked disabled />
+      <div class="hc-checkbox-padding">
+        <label class="hc-checkbox-label">
+          <input type="checkbox" id="label6" checked disabled class="hc-checkbox-input" />
           Disabled checkbox 
         </label>
       </div>
@@ -62,80 +62,33 @@
 
     <!-- Fieldset -->
     <div>
-      <fieldset>
-        <legend>Choose your options</legend>
-        <div class="custom-focus">
-          <label>
-            <input type="checkbox" id="chk1" />
+      <fieldset class="hc-checkbox-fieldset">
+        <legend class="hc-checkbox-legend">Choose your options</legend>
+        <div class="hc-checkbox-padding">
+          <label class="hc-checkbox-label">
+            <input type="checkbox" id="chk1" class="hc-checkbox-input"/>
             Checkbox label
           </label>
         </div>
 
-        <div class="custom-focus">
-          <label>
-            <input type="checkbox" id="chk2" />
+        <div class="hc-checkbox-padding">
+          <label class="hc-checkbox-label">
+            <input type="checkbox" id="chk2" class="hc-checkbox-input"/>
             Checkbox label 
           </label>
         </div>
 
-        <div class="custom-focus">
-          <label>
-            <input type="checkbox" id="chk3" />
+        <div class="hc-checkbox-padding">
+          <label class="hc-checkbox-label">
+            <input type="checkbox" id="chk3" class="hc-checkbox-input"/>
             Checkbox label 
           </label>
         </div>
 
-        <div class="custom-focus">
-          <label>
-            <input type="checkbox" id="chk4" />
+        <div class="hc-checkbox-padding">
+          <label class="hc-checkbox-label">
+            <input type="checkbox" id="chk4" class="hc-checkbox-input"/>
             Checkbox label
-          </label>
-        </div>
-      </fieldset>
-    </div>
-
-    <!-- ============================= -->
-    <!-- new styling -->
-    <!-- ============================= -->
-
-    <!-- form group wrapper -->
-    <!-- this is a class used for all form groups -->
-    <!-- only styling is margin-bottom -->
-    <div class="hc-formgroup">
-      <!-- fieldset, this is semantic for accessibility -->
-      <fieldset class="hc-fieldset">
-        <!-- legend, this is semantic for accessibility -->
-        <legend class="hc-fieldset__legend" aria-describedby="fieldset-hint">
-          <!-- semantic heading tags can be nested inside of legend for accessibility -->
-          <!-- hc-fieldset__heading is set to inherit from the parent's styling (so won't use usual h3 styling) -->
-          <h3 class="hc-fieldset__header">Fieldset question asked to user</h3>
-        </legend>
-        <!-- secondary text/hint/helper text for question -->
-        <div class="hc-hint" id="fieldset-hint">
-          Helpful text to clarify the question
-        </div>
-
-        <!-- hc-checkboxes is a wrapper -->
-        <!-- govuk-checkboxes class isn't declared, no style attached to it, in the HTML for readability and BEM (base, element, modifier) naming convention reasons  -->
-
-        <div class="hc-checkboxes" data-module="hc-checkboxes"></div>
-
-        <!-- individual checkbox item, consists of input and label -->
-
-        <div class="hc-checkboxes__item">
-          <!-- this is for semantics/accessibility/function, but default browser styling is hidden through opacity: 0; -->
-          <!-- ::before and ::afterr pseudoclass for label is used to layer checkbox and checkmark on top of original input styling -->
-          <input
-            class="hc-checkboxes__input"
-            id="waste"
-            name="waste"
-            type="checkbox"
-            value="carcasses"
-          />
-
-          <!-- This contains the label and uses ::before to create the checkbox box, and ::after to create the checkmark -->
-          <label class="hc-label hc-checkboxes__label" for="waste">
-            Waste from animal carcasses
           </label>
         </div>
       </fieldset>

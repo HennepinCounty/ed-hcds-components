@@ -1,24 +1,16 @@
-.body {
+.hc-button-body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.indent {
+.hc-button-indent {
     margin-left: 20px;
 }
 
-.material-symbols-outlined {
-    display: inline-block;
-    vertical-align: bottom;
-
-}
-
-
-
 /* Primary button */
-.primary-idle,
-.primary-idle:hover,
-.primary-idle:active,
-.primary-idle:disabled {
+.hc-primary,
+.hc-primary:hover,
+.hc-primary:active,
+.hc-primary:disabled {
     min-height: 40px;
     min-width: 75px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -31,38 +23,38 @@
     margin: auto;
     text-align: center;
     border-radius: 2px;
-    border: none;
+    border: 2px solid transparent;
 }
 
-.primary-idle:focus,
-.secondary-idle:focus,
-.danger-idle:focus {
+.hc-primary:focus,
+.hc-secondary:focus,
+.hc-danger:focus {
     min-height: 40px !important;
     min-width: 75px !important;
-    border: .5px solid white;
+    border: 2px solid white;
     border-style: double;
     outline: 2px solid #113c66;
 }
 
-.primary-idle {
+.hc-primary {
     background-color: #113c66;
 }
 
-.primary-idle:hover {
+.hc-primary:hover {
     background-color: #002852;
 }
 
-.primary-idle:active {
+.hc-primary:active {
     background-color: #0a1e48;
 }
 
-.primary-idle:disabled {
+.hc-primary:disabled {
     background-color: #c3c6c9;
     color: #818283;
 }
 
 /* Secondary button */
-.secondary-idle {
+.hc-secondary {
     min-height: 40px;
     min-width: 75px;
     font: 400 16px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -77,14 +69,14 @@
     border: 2px solid #113c66;
 }
 
-.secondary-idle:hover {
+.hc-secondary:hover {
     color: white;
     border: 2px solid #002852;
     background-color: #002852;
 }
 
-/* .secondary-idle:hover, */
-.secondary-idle:active {
+/* .hc-secondary:hover, */
+.hc-secondary:active {
     /* border: 2px solid #113c66; */
     /* border: none; */
     /* color: white;
@@ -96,15 +88,15 @@
     /* letter-spacing: 0; */
 }
 
-/* .secondary-idle:hover, */
-.secondary-idle:focus {
+/* .hc-secondary:hover, */
+.hc-secondary:focus {
     min-height: 40px;
     min-width: 80px;
     background-color: #002852;
     color: white;
 }
 
-.secondary-idle:disabled {
+.hc-secondary:disabled {
     color: #c3c6c9;
     background-color: white;
     margin: auto;
@@ -116,7 +108,7 @@
 
 
 /* Danger button */
-.danger-idle {
+.hc-danger {
     min-height: 40px;
     min-width: 75px;
     font: 400 16px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -128,11 +120,11 @@
     margin: auto;
     text-align: center;
     border-radius: 2px;
-    border: none;
+    border: 2px solid transparent;
 }
 
-.danger-idle:hover,
-.danger-idle:active {
+.hc-danger:hover,
+.hc-danger:active {
     min-height: 40px;
     min-width: 75px;
     font: 400 16px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -143,25 +135,25 @@
     margin: auto;
     text-align: center;
     border-radius: 2px;
-    border: none;
+    border: 2px solid transparent;
 }
 
-.danger-idle:hover {
+.hc-danger:hover {
     background-color: #ba001e;
 }
 
-.danger-idle:active {
+.hc-danger:active {
     background-color: #a6000a;
 }
 
-.danger-idle:disabled {
+.hc-danger:disabled {
     background-color: #c3c6c9;
     color: #818283;
 }
 
 
 /* Icons */
-.closeIconBlue {
+.hc-closeIconBlue {
     background-image: url(material-symbols_close-rounded-blue.svg);
     height: 12px;
     width: 12px;
@@ -170,7 +162,7 @@
     outline-offset: -2px;
 }
 
-.closeIconWhite {
+.hc-closeIconWhite {
     background-image: url(material-symbols_close-rounded-white.svg);
     height: 12px;
     width: 12px;
@@ -179,7 +171,7 @@
     outline-offset: -2px;
 }
 
-.closeIconGrey {
+.hc-closeIconGrey {
     background-image: url(material-symbols_close-rounded.svg);
     height: 12px;
     width: 12px;
@@ -188,15 +180,15 @@
     outline-offset: -2px;
 }
 
-.secondary-idle:hover .closeIconBlue {
+.hc-secondary:hover .hc-closeIconBlue {
     background-image: url(material-symbols_close-rounded-white.svg);
     height: 12px;
     width: 12px;
 }
 
-.primary-idle:disabled .closeIconWhite,
-.secondary-idle:disabled .closeIconBlue,
-.danger-idle:disabled .closeIconWhite {
+.hc-primary:disabled .hc-closeIconWhite,
+.hc-secondary:disabled .hc-closeIconBlue,
+.hc-danger:disabled .hc-closeIconWhite {
     background-image: url(material-symbols_close-rounded.svg);
     height: 12px;
     width: 12px;
@@ -205,7 +197,7 @@
     outline-offset: -2px;
 }
 
-.danger-idle.closeIconWhite {
+.hc-danger.hc-closeIconWhite {
     background-image: url(material-symbols_close-rounded-white.svg);
     height: 12px;
     width: 12px;
