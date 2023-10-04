@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/style.css">
+        <script defer src="modal.js"></script>
+    </head>
+    <body>
+        
+        <div>
+            <button class="btn btn-primary" data-open-modal>Open new modal</button>
+        </div>
+
+        <dialog data-modal>
+            <div class="modal-content modal-width">
+                <div class="modal-header">
+                    <div class="h5 modal-title" id="exampleModalLabel">Modal title</div>
+                    <button type="button" aria-label="Close" icon>
+                        <span aria-hidden="true">X</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary" data-close-modal>Close</button>
+                    <button class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            
+        </dialog>
+        
+    </div>
+
+    </body>
+</html>
