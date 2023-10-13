@@ -1,0 +1,139 @@
+/*import for inter as font family placeholder*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/*font families*/
+:root {
+  --font-family: "Inter", sans-serif;
+
+  --font-size-base: 1rem;
+
+  --font-h1-size: calc(var(--font-size-base) * 2.5); /*40px*/
+  --font-h2-size: calc(var(--font-size-base) * 2); /*32px*/
+  --font-h3-size: calc(var(--font-size-base) * 1.66); /*26.6px*/
+  --font-h4-size: calc(var(--font-size-base) * 1.25); /*20px*/
+  --font-h5-size: calc(var(--font-size-base) * 1); /*16px*/
+  --font-h6-size: calc(var(--font-size-base) * 13.6); /*16px*/
+  --font-body-size: calc(var(--font-size-base) * 1.125); /*18px*/
+  --font-body-small-size: calc(var(--font-size-base) * 1); /*16px*/
+  --font-body-large-size: calc(var(--font-size-base) * 1.25); /*20px*/
+  --font-fieldlabel-size: calc(var(--font-size-base) * 1.125); /*18px*/
+  --font-hint-size: calc(var(--font-size-base) * 1); /*16px*/
+  --font-error-size: calc(var(--font-size-base) * 1); /*16px*/
+
+  h1 {
+    color: var(--text-primary, #191d21);
+
+    /* Headings/H1 */
+    font-family: var(--font-family);
+    font-size: var(--font-h1-size);
+    font-style: normal;
+    font-weight: 100;
+    line-height: 120%; /* 3rem */
+  }
+
+  h2 {
+    color: var(--text-primary, #191d21);
+
+    /* Headings/H2 */
+    font-family: var(--font-family);
+    font-size: var(--font-h2-size);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 2.4rem */
+  }
+
+  h3 {
+    color: var(--text-primary, #191d21);
+
+    /* Headings/H3 */
+    font-family: var(--font-family);
+    font-size: var(--font-h3-size);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 1.992rem */
+  }
+
+  h4 {
+    color: var(--text-primary, #191d21);
+
+    /* Headings/H4 */
+    font-family: var(--font-family);
+    font-size: var(--font-h4-size);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 1.5rem */
+  }
+
+  h5 {
+    color: var(--text-primary, #191d21);
+
+    /* Headings/H5 */
+    font-family: var(--font-family);
+    font-size: var(--font-h5-size);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 1.5rem */
+  }
+
+  h6 {
+    color: var(--text-primary, #191d21);
+
+    /* Headings/H6 */
+    font-family: var(--font-family);
+    font-size: var(--font-h6-size);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 1.02rem */
+  }
+
+  p {
+    color: var(--text-primary, #191d21);
+
+    /* Body/Body */
+    font-family: var(--font-family);
+    font-size: var(--font-body-size);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.6875rem */
+    letter-spacing: -0.01125rem;
+  }
+
+  .govuk-error-message {
+    color: var(--text-error);
+  }
+
+  .field-label {
+    color: var(--text-primary, #191d21);
+
+    /* Body/Body */
+    font-family: var(--font-family);
+    font-size: var(--font-fieldlabel-size);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 1.6875rem */
+    letter-spacing: -0.01%;
+  }
+
+  .text-hint {
+    color: var(--text-helper, #5c646d);
+
+    /* Body/Body-Small */
+    font-family: var(--font-family);
+    font-size: var(--font-hint-size);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 1.5rem */
+  }
+
+  .text-error {
+    color: var(--text-error);
+
+    /* Body/Body-Small */
+    font-family: var(--font-family);
+    font-size: var(--font-error-size);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 1.5rem */
+    margin: var(--spacing-00);
+  }
+}

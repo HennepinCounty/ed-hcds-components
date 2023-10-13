@@ -1,0 +1,9 @@
+:root {
+  --focus-inset: 2px 0px 0px 0px var(--white) inset,
+    -2px 0px 0px 0px var(--white) inset, 0px -2px 0px 0px var(--white) inset,
+    0px 2px 0px 0px var(--white) inset,
+    -4px 0px 0px 0px var(--background-brand) inset,
+    0px -4px 0px 0px var(--background-brand) inset,
+    0px 4px 0px 0px var(--background-brand) inset,
+    4px 0px 0px 0px var(--background-brand) inset;
+}

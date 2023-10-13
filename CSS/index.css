@@ -1,0 +1,1261 @@
+/*import for inter as font family placeholder*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/*
+
+based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7a1b35841e994255586/src/helpers/_visually-hidden.scss
+
+/// @link https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+///   - Hiding Content for Accessibility, Jonathan Snook, February 2011
+/// @link https://github.com/h5bp/html5-boilerplate/blob/9f13695d21ff92c55c78dfa9f16bb02a1b6e911f/src/css/main.css#L121-L158
+///   - h5bp/html5-boilerplate - Thanks!
+///
+/// @param {Boolean} $important [true] - Whether to mark as `!important`
+  @link https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+      -Beware smushed off-screen accessible text
+  // For long content, line feeds are not interpreted as spaces and small width
+// causes content to wrap 1 word per line:
+// https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(50%) !important;
+          clip-path: inset(50%) !important;
+  border: 0 !important;
+  /*
+   For long content, line feeds are not interpreted as spaces and small width
+   causes content to wrap 1 word per line:
+   https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+  */
+  white-space: nowrap !important;
+}
+
+.visually-hidden-focusable {
+  /*
+  /// Hide an element visually, but have it available for screen readers whilst
+  /// allowing the element to be focused when navigated to via the keyboard (e.g.
+  /// for the skip link)
+  ///
+  /// This is slightly less opinionated about borders and padding to make it
+  /// easier to style the focussed element.
+  */
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(50%) !important;
+          clip-path: inset(50%) !important;
+  /*
+  // For long content, line feeds are not interpreted as spaces and small width
+  // causes content to wrap 1 word per line:
+  // https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+  */
+  white-space: nowrap !important;
+}
+
+.visually-hidden-focusable:active,
+.visually-hidden-focusable:focus {
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  margin: inherit !important;
+  overflow: visible !important;
+  clip: auto !important;
+  -webkit-clip-path: none !important;
+          clip-path: none !important;
+  white-space: inherit !important;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --transparent: #ffffff, 0;
+  --green-10: #f1fee1;
+  --green-20: #cbf87c;
+  --green-30: #b2e34b;
+  --green-40: #9dc93a;
+  --green-50: #87ac3a;
+  --green-60: #648227;
+  --green-70: #475c1b;
+  --green-80: #2f3e10;
+  --green-90: #222e09;
+  --green-100: #182105;
+  --blue-10: #f5f9fe;
+  --blue-20: #ddebfd;
+  --blue-30: #b7d6fa;
+  --blue-40: #80b8f8;
+  --blue-50: #5a99f7;
+  --blue-60: #236ec3;
+  --blue-70: #0058a4;
+  --blue-80: #113c66;
+  --blue-90: #0c2640;
+  --blue-100: #081c2f;
+  --cyan-10: #e2f5ff;
+  --cyan-20: #c5edff;
+  --cyan-30: #a0e3fe;
+  --cyan-40: #44c8f5;
+  --cyan-50: #00aeef;
+  --cyan-60: #008dc2;
+  --cyan-70: #006a94;
+  --cyan-80: #004561;
+  --cyan-90: #003248;
+  --cyan-100: #001a27;
+  --red-10: #fff2f2;
+  --red-20: #ffdcdc;
+  --red-30: #feb9b9;
+  --red-40: #f99291;
+  --red-50: #f56664;
+  --red-60: #ef413d;
+  --red-70: #ce1432;
+  --red-80: #93001c;
+  --red-90: #60000e;
+  --red-100: #410007;
+  --yellow-10: #fff4dc;
+  --yellow-20: #ffdc7a;
+  --yellow-40: #ebba00;
+  --yellow-50: #c19900;
+  --yellow-30: #ffcb05;
+  --yellow-60: #8c6e00;
+  --yellow-70: #695200;
+  --yellow-80: #483700;
+  --yellow-90: #332600;
+  --yellow-100: #241a00;
+  --gray-10: #f3f5f6;
+  --gray-20: #e6e9ec;
+  --gray-30: #d0d1d2;
+  --gray-40: #b4b6bb;
+  --gray-50: #999ea3;
+  --gray-60: #6c757d;
+  --gray-70: #4a5158;
+  --gray-80: #343a40;
+  --gray-90: #24292d;
+  --gray-100: #171a1d;
+  --orange-10: #ffeee6;
+  --orange-20: #ffd8c4;
+  --orange-30: #ffb887;
+  --orange-40: #f7941e;
+  --orange-50: #d98219;
+  --orange-60: #ae670e;
+  --orange-70: #884f08;
+  --orange-80: #673a00;
+  --orange-90: #512c00;
+  --orange-100: #331a00;
+  --purple-10: #f3e4ff;
+  --purple-20: #e9cafe;
+  --purple-30: #ce87f6;
+  --purple-40: #b861e2;
+  --purple-50: #a53ad2;
+  --purple-60: #7e2aa2;
+  --purple-70: #672184;
+  --purple-80: #4d1764;
+  --purple-90: #3e1151;
+  --purple-100: #270834;
+  --gray-warm-10: #fbf6f4;
+  --gray-warm-20: #f0e7e3;
+  --gray-warm-30: #ded3ce;
+  --gray-warm-40: #c2b5ac;
+  --gray-warm-50: #a49e99;
+  --gray-warm-60: #928684;
+  --gray-warm-70: #6a615f;
+  --gray-warm-80: #47413f;
+  --gray-warm-90: #2f2b2a;
+  --gray-warm-100: #201d1c;
+  --lime-10: #f5ffb7;
+  --lime-20: #e3ed7e;
+  --lime-30: #cbdb2a;
+  --lime-40: #adbb22;
+  --lime-50: #909d11;
+  --lime-60: #727d0b;
+  --lime-70: #586106;
+  --lime-80: #383d02;
+  --lime-90: #262901;
+  --lime-100: #1c1c01;
+}
+
+:root {
+  --text-primary: var(--colors-gray-90);
+  --text-secondary: var(--colors-gray-70);
+  --background-default: var(--white);
+  --button-primary: var(--colors-cyan-60);
+  --button-secondary: var(--white);
+  --border-focus-01: #ffffff;
+  --button-danger: var(--colors-red-60);
+  --button-secondary-border: var(--colors-cyan-70);
+  --button-primary-hover: var(--colors-cyan-70);
+  --button-primary-active: var(--colors-cyan-80);
+  --button-secondary-hover: var(--colors-cyan-70);
+  --button-secondary-active: var(--colors-cyan-80);
+  --button-danger-hover: var(--colors-red-70);
+  --button-danger-active: var(--colors-red-80);
+  --button-disabled: var(--colors-gray-20);
+  --text-on-color: var(--white);
+  --text-placeholder: var(--colors-gray-40);
+  --text-helper: var(--colors-gray-60);
+  --text-error: var(--colors-red-60);
+  --text-inverse: var(--white);
+  --text-disabled: var(--colors-gray-40);
+  --text-on-color-disabled: var(--colors-gray-50);
+  --link-primary: var(--colors-cyan-60);
+  --link-inverse: var(--white);
+  --link-disabled: var(--text-disabled);
+  --background-hover: var(--colors-gray-10);
+  --background-active: var(--colors-gray-20);
+  --link-primary-hover: var(--colors-cyan-70);
+  --link-link-visited: var(--colors-purple-60);
+  --border-subtle-01: var(--colors-gray-20);
+  --border-subtle-selected-01: var(--colors-gray-30);
+  --border-disabled-01: var(--colors-gray-30);
+  --border-disabled-02: var(--colors-gray-10);
+  --border-inverse: var(--colors-gray-90);
+  --border-strong-01: var(--colors-gray-50);
+  --border-danger: var(--colors-red-60);
+  --border-error: var(--colors-red-60);
+  --button-separator: var(--colors-gray-20);
+  --icon-primary: var(--colors-gray-90);
+  --icon-secondary: var(--colors-gray-70);
+  --icon-on-color: var(--white);
+  --icon-inverse: var(--white);
+  --icon-disabled: var(--colors-gray-30);
+  --icon-icon-on-color-disabled: var(--colors-gray-60);
+  --field-background: var(--background-default);
+  --field-border: var(--border-strong-01);
+  --field-hover-01: var(--colors-gray-10);
+  --field-disabled: var(--colors-gray-10);
+  --background-inverse: var(--colors-gray-80);
+  --support-error: var(--colors-red-60);
+  --support-success: var(--colors-green-50);
+  --support-warning: var(--colors-yellow-30);
+  --support-info: var(--colors-blue-20);
+  --support-error-inverse: var(--colors-red-20);
+  --support-success-inverse: var(--colors-green-10);
+  --support-warning-inverse: var(--colors-yellow-80);
+  --support-info-inverse: var(--colors-blue-50);
+  --background-brand: var(--colors-cyan-60);
+  --background-selected: var(--colors-gray-20);
+  --background-brand-inverse: var(--colors-cyan-20);
+  --border-focus-02: var(--colors-cyan-60);
+  --background-background-disabled: var(--button-disabled);
+  --button-border: var(--colors-cyan-70);
+}
+
+/*font families*/
+:root {
+  --font-family: "Inter", sans-serif;
+  --font-size-base: 1rem;
+  --font-h1-size: calc(var(--font-size-base) * 2.5); /*40px*/
+  --font-h2-size: calc(var(--font-size-base) * 2); /*32px*/
+  --font-h3-size: calc(var(--font-size-base) * 1.66); /*26.6px*/
+  --font-h4-size: calc(var(--font-size-base) * 1.25); /*20px*/
+  --font-h5-size: calc(var(--font-size-base) * 1); /*16px*/
+  --font-h6-size: calc(var(--font-size-base) * 13.6); /*16px*/
+  --font-body-size: calc(var(--font-size-base) * 1.125); /*18px*/
+  --font-body-small-size: calc(var(--font-size-base) * 1); /*16px*/
+  --font-body-large-size: calc(var(--font-size-base) * 1.25); /*20px*/
+  --font-fieldlabel-size: calc(var(--font-size-base) * 1.125); /*18px*/
+  --font-hint-size: calc(var(--font-size-base) * 1); /*16px*/
+  --font-error-size: calc(var(--font-size-base) * 1); /*16px*/
+}
+:root h1 {
+  color: var(--text-primary, #191d21);
+  /* Headings/H1 */
+  font-family: var(--font-family);
+  font-size: var(--font-h1-size);
+  font-style: normal;
+  font-weight: 100;
+  line-height: 120%; /* 3rem */
+}
+:root h2 {
+  color: var(--text-primary, #191d21);
+  /* Headings/H2 */
+  font-family: var(--font-family);
+  font-size: var(--font-h2-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 2.4rem */
+}
+:root h3 {
+  color: var(--text-primary, #191d21);
+  /* Headings/H3 */
+  font-family: var(--font-family);
+  font-size: var(--font-h3-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 1.992rem */
+}
+:root h4 {
+  color: var(--text-primary, #191d21);
+  /* Headings/H4 */
+  font-family: var(--font-family);
+  font-size: var(--font-h4-size);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 1.5rem */
+}
+:root h5 {
+  color: var(--text-primary, #191d21);
+  /* Headings/H5 */
+  font-family: var(--font-family);
+  font-size: var(--font-h5-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 1.5rem */
+}
+:root h6 {
+  color: var(--text-primary, #191d21);
+  /* Headings/H6 */
+  font-family: var(--font-family);
+  font-size: var(--font-h6-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 1.02rem */
+}
+:root p {
+  color: var(--text-primary, #191d21);
+  /* Body/Body */
+  font-family: var(--font-family);
+  font-size: var(--font-body-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.6875rem */
+  letter-spacing: -0.01125rem;
+}
+:root .govuk-error-message {
+  color: var(--text-error);
+}
+:root .field-label {
+  color: var(--text-primary, #191d21);
+  /* Body/Body */
+  font-family: var(--font-family);
+  font-size: var(--font-fieldlabel-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 1.6875rem */
+  letter-spacing: -0.01%;
+}
+:root .text-hint {
+  color: var(--text-helper, #5c646d);
+  /* Body/Body-Small */
+  font-family: var(--font-family);
+  font-size: var(--font-hint-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 1.5rem */
+}
+:root .text-error {
+  color: var(--text-error);
+  /* Body/Body-Small */
+  font-family: var(--font-family);
+  font-size: var(--font-error-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 1.5rem */
+  margin: var(--spacing-00);
+}
+
+:root {
+  --focus-inset: 2px 0px 0px 0px var(--white) inset,
+    -2px 0px 0px 0px var(--white) inset, 0px -2px 0px 0px var(--white) inset,
+    0px 2px 0px 0px var(--white) inset,
+    -4px 0px 0px 0px var(--background-brand) inset,
+    0px -4px 0px 0px var(--background-brand) inset,
+    0px 4px 0px 0px var(--background-brand) inset,
+    4px 0px 0px 0px var(--background-brand) inset;
+}
+
+:root {
+  --radius-base: 1rem;
+  --radius-00: calc(var(--radius-base) * 0); /*0px*/
+  --radius-01: calc(var(--radius-base) * 0.125); /*2px*/
+  --radius-02: calc(var(--radius-base) * 0.25); /*4px*/
+  --radius-03: calc(var(--radius-base) * 0.5); /*8px*/
+  --radius-04: calc(var(--radius-base) * 0.75); /*12px*/
+}
+
+:root {
+  --spacing-base: 1rem;
+  --spacing-00: calc(var(--spacing-base) * 0); /*0px*/
+  --spacing-01: calc(var(--spacing-base) * 0.125); /*2px*/
+  --spacing-02: calc(var(--spacing-base) * 0.25); /*4px*/
+  --spacing-03: calc(var(--spacing-base) * 0.5); /*8px*/
+  --spacing-04: calc(var(--spacing-base) * 0.75); /*12px*/
+  --spacing-05: calc(var(--spacing-base) * 1); /*16px*/
+  --spacing-06: calc(var(--spacing-base) * 1.5); /*24px*/
+  --spacing-07: calc(var(--spacing-base) * 2); /*32px*/
+  --spacing-08: calc(var(--spacing-base) * 2.5); /*40px*/
+  --spacing-09: calc(var(--spacing-base) * 3); /*48px*/
+  --spacing-10: calc(var(--spacing-base) * 4); /*64px*/
+  --spacing-11: calc(var(--spacing-base) * 5); /*80px*/
+  --spacing-12: calc(var(--spacing-base) * 6); /*96px*/
+  --spacing-13: calc(var(--spacing-base) * 10); /*160px*/
+}
+
+/*Margin utility classes*/
+/*margin all*/
+.margin-xy-01 {
+  margin: var(--spacing-01);
+}
+
+.margin-xy-02 {
+  margin: var(--spacing-02);
+}
+
+.margin-xy-03 {
+  margin: var(--spacing-03);
+}
+
+.margin-xy-04 {
+  margin: var(--spacing-04);
+}
+
+.margin-xy-05 {
+  margin: var(--spacing-05);
+}
+
+.margin-xy-06 {
+  margin: var(--spacing-06);
+}
+
+.margin-xy-07 {
+  margin: var(--spacing-07);
+}
+
+.margin-xy-08 {
+  margin: var(--spacing-08);
+}
+
+.margin-xy-09 {
+  margin: var(--spacing-09);
+}
+
+.margin-xy-10 {
+  margin: var(--spacing-10);
+}
+
+.margin-xy-11 {
+  margin: var(--spacing-11);
+}
+
+.margin-xy-12 {
+  margin: var(--spacing-12);
+}
+
+.margin-xy-13 {
+  margin: var(--spacing-13);
+}
+
+/*margin left and right*/
+.margin-x-01 {
+  margin-left: var(--spacing-01);
+  margin-right: var(--spacing-01);
+}
+
+.margin-x-02 {
+  margin-left: var(--spacing-02);
+  margin-right: var(--spacing-02);
+}
+
+.margin-x-03 {
+  margin-left: var(--spacing-03);
+  margin-right: var(--spacing-03);
+}
+
+.margin-x-04 {
+  margin-left: var(--spacing-04);
+  margin-right: var(--spacing-04);
+}
+
+.margin-x-05 {
+  margin-left: var(--spacing-05);
+  margin-right: var(--spacing-05);
+}
+
+.margin-x-06 {
+  margin-left: var(--spacing-06);
+  margin-right: var(--spacing-06);
+}
+
+.margin-x-07 {
+  margin-left: var(--spacing-07);
+  margin-right: var(--spacing-07);
+}
+
+.margin-x-08 {
+  margin-left: var(--spacing-08);
+  margin-right: var(--spacing-08);
+}
+
+.margin-x-09 {
+  margin-left: var(--spacing-09);
+  margin-right: var(--spacing-09);
+}
+
+.margin-x-10 {
+  margin-left: var(--spacing-10);
+  margin-right: var(--spacing-10);
+}
+
+.margin-x-11 {
+  margin-left: var(--spacing-11);
+  margin-right: var(--spacing-11);
+}
+
+.margin-x-12 {
+  margin-left: var(--spacing-12);
+  margin-right: var(--spacing-12);
+}
+
+.margin-x-13 {
+  margin-left: var(--spacing-13);
+  margin-right: var(--spacing-13);
+}
+
+/*margin top and bottom*/
+.margin-y-01 {
+  margin-top: var(--spacing-01);
+  margin-bottom: var(--spacing-01);
+}
+
+.margin-y-02 {
+  margin-top: var(--spacing-02);
+  margin-bottom: var(--spacing-02);
+}
+
+.margin-y-03 {
+  margin-top: var(--spacing-03);
+  margin-bottom: var(--spacing-03);
+}
+
+.margin-y-04 {
+  margin-top: var(--spacing-04);
+  margin-bottom: var(--spacing-04);
+}
+
+.margin-y-05 {
+  margin-top: var(--spacing-05);
+  margin-bottom: var(--spacing-05);
+}
+
+.margin-y-06 {
+  margin-top: var(--spacing-06);
+  margin-bottom: var(--spacing-06);
+}
+
+.margin-y-07 {
+  margin-top: var(--spacing-07);
+  margin-bottom: var(--spacing-07);
+}
+
+.margin-y-08 {
+  margin-top: var(--spacing-08);
+  margin-bottom: var(--spacing-08);
+}
+
+.margin-y-09 {
+  margin-top: var(--spacing-09);
+  margin-bottom: var(--spacing-09);
+}
+
+.margin-y-10 {
+  margin-top: var(--spacing-10);
+  margin-bottom: var(--spacing-10);
+}
+
+.margin-y-11 {
+  margin-top: var(--spacing-11);
+  margin-bottom: var(--spacing-11);
+}
+
+.margin-y-12 {
+  margin-top: var(--spacing-12);
+  margin-bottom: var(--spacing-12);
+}
+
+.margin-y-13 {
+  margin-top: var(--spacing-13);
+  margin-bottom: var(--spacing-13);
+}
+
+/*margin top*/
+.margin-top-01 {
+  margin-top: var(--spacing-01);
+}
+
+.margin-top-02 {
+  margin-top: var(--spacing-02);
+}
+
+.margin-top-03 {
+  margin-top: var(--spacing-03);
+}
+
+.margin-top-04 {
+  margin-top: var(--spacing-04);
+}
+
+.margin-top-05 {
+  margin-top: var(--spacing-05);
+}
+
+.margin-top-06 {
+  margin-top: var(--spacing-06);
+}
+
+.margin-top-07 {
+  margin-top: var(--spacing-07);
+}
+
+.margin-top-08 {
+  margin-top: var(--spacing-08);
+}
+
+.margin-top-09 {
+  margin-top: var(--spacing-09);
+}
+
+.margin-top-10 {
+  margin-top: var(--spacing-10);
+}
+
+.margin-top-11 {
+  margin-top: var(--spacing-11);
+}
+
+.margin-top-12 {
+  margin-top: var(--spacing-12);
+}
+
+.margin-top-13 {
+  margin-top: var(--spacing-13);
+}
+
+/*margin bottom*/
+.margin-bottom-01 {
+  margin-bottom: var(--spacing-01);
+}
+
+.margin-bottom-02 {
+  margin-bottom: var(--spacing-02);
+}
+
+.margin-bottom-03 {
+  margin-bottom: var(--spacing-03);
+}
+
+.margin-bottom-04 {
+  margin-bottom: var(--spacing-04);
+}
+
+.margin-bottom-05 {
+  margin-bottom: var(--spacing-05);
+}
+
+.margin-bottom-06 {
+  margin-bottom: var(--spacing-06);
+}
+
+.margin-bottom-07 {
+  margin-bottom: var(--spacing-07);
+}
+
+.margin-bottom-08 {
+  margin-bottom: var(--spacing-08);
+}
+
+.margin-bottom-09 {
+  margin-bottom: var(--spacing-09);
+}
+
+.margin-bottom-10 {
+  margin-bottom: var(--spacing-10);
+}
+
+.margin-bottom-11 {
+  margin-bottom: var(--spacing-11);
+}
+
+.margin-bottom-12 {
+  margin-bottom: var(--spacing-12);
+}
+
+.margin-bottom-13 {
+  margin-bottom: var(--spacing-13);
+}
+
+/*margin left*/
+.margin-left-01 {
+  margin-left: var(--spacing-01);
+}
+
+.margin-left-02 {
+  margin-left: var(--spacing-02);
+}
+
+.margin-left-03 {
+  margin-left: var(--spacing-03);
+}
+
+.margin-left-04 {
+  margin-left: var(--spacing-04);
+}
+
+.margin-left-05 {
+  margin-left: var(--spacing-05);
+}
+
+.margin-left-06 {
+  margin-left: var(--spacing-06);
+}
+
+.margin-left-07 {
+  margin-left: var(--spacing-07);
+}
+
+.margin-left-08 {
+  margin-left: var(--spacing-08);
+}
+
+.margin-left-09 {
+  margin-left: var(--spacing-09);
+}
+
+.margin-left-10 {
+  margin-left: var(--spacing-10);
+}
+
+.margin-left-11 {
+  margin-left: var(--spacing-11);
+}
+
+.margin-left-12 {
+  margin-left: var(--spacing-12);
+}
+
+.margin-left-13 {
+  margin-left: var(--spacing-13);
+}
+
+/*margin right*/
+.margin-right-01 {
+  margin-right: var(--spacing-01);
+}
+
+.margin-right-02 {
+  margin-right: var(--spacing-02);
+}
+
+.margin-right-03 {
+  margin-right: var(--spacing-03);
+}
+
+.margin-right-04 {
+  margin-right: var(--spacing-04);
+}
+
+.margin-right-05 {
+  margin-right: var(--spacing-05);
+}
+
+.margin-right-06 {
+  margin-right: var(--spacing-06);
+}
+
+.margin-right-07 {
+  margin-right: var(--spacing-07);
+}
+
+.margin-right-08 {
+  margin-right: var(--spacing-08);
+}
+
+.margin-right-09 {
+  margin-right: var(--spacing-09);
+}
+
+.margin-right-10 {
+  margin-right: var(--spacing-10);
+}
+
+.margin-right-11 {
+  margin-right: var(--spacing-11);
+}
+
+.margin-right-12 {
+  margin-right: var(--spacing-12);
+}
+
+.margin-right-13 {
+  margin-right: var(--spacing-13);
+}
+
+/*Padding all*/
+.padding-01 {
+  padding: var(--spacing-01);
+}
+
+.padding-02 {
+  padding: var(--spacing-02);
+}
+
+.padding-03 {
+  padding: var(--spacing-03);
+}
+
+.padding-04 {
+  padding: var(--spacing-04);
+}
+
+.padding-05 {
+  padding: var(--spacing-05);
+}
+
+.padding-06 {
+  padding: var(--spacing-06);
+}
+
+.padding-07 {
+  padding: var(--spacing-07);
+}
+
+.padding-08 {
+  padding: var(--spacing-08);
+}
+
+.padding-09 {
+  padding: var(--spacing-09);
+}
+
+.padding-10 {
+  padding: var(--spacing-10);
+}
+
+.padding-11 {
+  padding: var(--spacing-11);
+}
+
+.padding-12 {
+  padding: var(--spacing-12);
+}
+
+.padding-13 {
+  padding: var(--spacing-13);
+}
+
+/*Padding left and right*/
+.padding-x-01 {
+  padding-top: var(--spacing-01);
+  padding-bottom: var(--spacing-01);
+}
+
+.padding-x-02 {
+  padding-top: var(--spacing-02);
+  padding-bottom: var(--spacing-02);
+}
+
+.padding-x-03 {
+  padding-top: var(--spacing-03);
+  padding-bottom: var(--spacing-03);
+}
+
+.padding-x-04 {
+  padding-top: var(--spacing-04);
+  padding-bottom: var(--spacing-04);
+}
+
+.padding-x-05 {
+  padding-top: var(--spacing-05);
+  padding-bottom: var(--spacing-05);
+}
+
+.padding-x-06 {
+  padding-top: var(--spacing-06);
+  padding-bottom: var(--spacing-06);
+}
+
+.padding-x-07 {
+  padding-top: var(--spacing-07);
+  padding-bottom: var(--spacing-07);
+}
+
+.padding-x-08 {
+  padding-top: var(--spacing-08);
+  padding-bottom: var(--spacing-08);
+}
+
+.padding-x-09 {
+  padding-top: var(--spacing-09);
+  padding-bottom: var(--spacing-09);
+}
+
+.padding-x-10 {
+  padding-top: var(--spacing-10);
+  padding-bottom: var(--spacing-10);
+}
+
+.padding-x-11 {
+  padding-top: var(--spacing-11);
+  padding-bottom: var(--spacing-11);
+}
+
+.padding-x-12 {
+  padding-top: var(--spacing-12);
+  padding-bottom: var(--spacing-12);
+}
+
+.padding-x-13 {
+  padding-top: var(--spacing-13);
+  padding-bottom: var(--spacing-13);
+}
+
+/*Padding top and bottom*/
+.padding-y-01 {
+  padding-top: var(--spacing-01);
+  padding-bottom: var(--spacing-01);
+}
+
+.padding-y-02 {
+  padding-top: var(--spacing-02);
+  padding-bottom: var(--spacing-02);
+}
+
+.padding-y-03 {
+  padding-top: var(--spacing-03);
+  padding-bottom: var(--spacing-03);
+}
+
+.padding-y-04 {
+  padding-top: var(--spacing-04);
+  padding-bottom: var(--spacing-04);
+}
+
+.padding-y-05 {
+  padding-top: var(--spacing-05);
+  padding-bottom: var(--spacing-05);
+}
+
+.padding-y-06 {
+  padding-top: var(--spacing-06);
+  padding-bottom: var(--spacing-06);
+}
+
+.padding-y-07 {
+  padding-top: var(--spacing-07);
+  padding-bottom: var(--spacing-07);
+}
+
+.padding-y-08 {
+  padding-top: var(--spacing-08);
+  padding-bottom: var(--spacing-08);
+}
+
+.padding-y-09 {
+  padding-top: var(--spacing-09);
+  padding-bottom: var(--spacing-09);
+}
+
+.padding-y-10 {
+  padding-top: var(--spacing-10);
+  padding-bottom: var(--spacing-10);
+}
+
+.padding-y-11 {
+  padding-top: var(--spacing-11);
+  padding-bottom: var(--spacing-11);
+}
+
+.padding-y-12 {
+  padding-top: var(--spacing-12);
+  padding-bottom: var(--spacing-12);
+}
+
+.padding-y-13 {
+  padding-top: var(--spacing-13);
+  padding-bottom: var(--spacing-13);
+}
+
+/*Padding top*/
+.padding-top-01 {
+  padding-top: var(--spacing-01);
+}
+
+.padding-top-02 {
+  padding-top: var(--spacing-02);
+}
+
+.padding-top-03 {
+  padding-top: var(--spacing-03);
+}
+
+.padding-top-04 {
+  padding-top: var(--spacing-04);
+}
+
+.padding-top-05 {
+  padding-top: var(--spacing-05);
+}
+
+.padding-top-06 {
+  padding-top: var(--spacing-06);
+}
+
+.padding-top-07 {
+  padding-top: var(--spacing-07);
+}
+
+.padding-top-08 {
+  padding-top: var(--spacing-08);
+}
+
+.padding-top-09 {
+  padding-top: var(--spacing-09);
+}
+
+.padding-top-10 {
+  padding-top: var(--spacing-10);
+}
+
+.padding-top-11 {
+  padding-top: var(--spacing-11);
+}
+
+.padding-top-12 {
+  padding-top: var(--spacing-12);
+}
+
+.padding-top-13 {
+  padding-top: var(--spacing-13);
+}
+
+/*Padding bottom*/
+.padding-bottom-01 {
+  padding-bottom: var(--spacing-01);
+}
+
+.padding-bottom-02 {
+  padding-bottom: var(--spacing-02);
+}
+
+.padding-bottom-03 {
+  padding-bottom: var(--spacing-03);
+}
+
+.padding-bottom-04 {
+  padding-bottom: var(--spacing-04);
+}
+
+.padding-bottom-05 {
+  padding-bottom: var(--spacing-05);
+}
+
+.padding-bottom-06 {
+  padding-bottom: var(--spacing-06);
+}
+
+.padding-bottom-07 {
+  padding-bottom: var(--spacing-07);
+}
+
+.padding-bottom-08 {
+  padding-bottom: var(--spacing-08);
+}
+
+.padding-bottom-09 {
+  padding-bottom: var(--spacing-09);
+}
+
+.padding-bottom-10 {
+  padding-bottom: var(--spacing-10);
+}
+
+.padding-bottom-11 {
+  padding-bottom: var(--spacing-11);
+}
+
+.padding-bottom-12 {
+  padding-bottom: var(--spacing-12);
+}
+
+.padding-bottom-13 {
+  padding-bottom: var(--spacing-13);
+}
+
+/*Padding left*/
+.padding-left-01 {
+  padding-left: var(--spacing-01);
+}
+
+.padding-left-02 {
+  padding-left: var(--spacing-02);
+}
+
+.padding-left-03 {
+  padding-left: var(--spacing-03);
+}
+
+.padding-left-04 {
+  padding-left: var(--spacing-04);
+}
+
+.padding-left-05 {
+  padding-left: var(--spacing-05);
+}
+
+.padding-left-06 {
+  padding-left: var(--spacing-06);
+}
+
+.padding-left-07 {
+  padding-left: var(--spacing-07);
+}
+
+.padding-left-08 {
+  padding-left: var(--spacing-08);
+}
+
+.padding-left-09 {
+  padding-left: var(--spacing-09);
+}
+
+.padding-left-10 {
+  padding-left: var(--spacing-10);
+}
+
+.padding-left-11 {
+  padding-left: var(--spacing-11);
+}
+
+.padding-left-12 {
+  padding-left: var(--spacing-12);
+}
+
+.padding-left-13 {
+  padding-left: var(--spacing-13);
+}
+
+/*Padding right*/
+.padding-right-01 {
+  padding-right: var(--spacing-01);
+}
+
+.padding-right-02 {
+  padding-right: var(--spacing-02);
+}
+
+.padding-right-03 {
+  padding-right: var(--spacing-03);
+}
+
+.padding-right-04 {
+  padding-right: var(--spacing-04);
+}
+
+.padding-right-05 {
+  padding-right: var(--spacing-05);
+}
+
+.padding-right-06 {
+  padding-right: var(--spacing-06);
+}
+
+.padding-right-07 {
+  padding-right: var(--spacing-07);
+}
+
+.padding-right-08 {
+  padding-right: var(--spacing-08);
+}
+
+.padding-right-09 {
+  padding-right: var(--spacing-09);
+}
+
+.padding-right-10 {
+  padding-right: var(--spacing-10);
+}
+
+.padding-right-11 {
+  padding-right: var(--spacing-11);
+}
+
+.padding-right-12 {
+  padding-right: var(--spacing-12);
+}
+
+.padding-right-13 {
+  padding-right: var(--spacing-13);
+}/*# sourceMappingURL=index.css.map */
