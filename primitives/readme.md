@@ -31,7 +31,7 @@ Primitives must be compiled by SASS in this order:
 Importing in this order is necessary so that variables get declared in early, and  classes using variables are declared later.
 
 
-# Primtiive descriptions
+# Primitive descriptions
 
 ## Base styles
 These styles are foundational styles that components are built upon. In atomic design, these might be considered sub-atomic elements
