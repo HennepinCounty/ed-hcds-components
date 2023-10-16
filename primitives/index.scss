@@ -1,3 +1,4 @@
+// Base styles
 @forward "./reset";
 @forward "./visually-hidden";
 @forward "./colors";
@@ -5,6 +6,15 @@
 @forward "./typography";
 @forward "./shadows";
 @forward "./borderRadius";
+
+// Layout styles
 @forward "./spacing";
 @forward "./margin";
 @forward "./padding";
+@forward "./grid";
+
+// Icons
+@forward "./icons";
+
+// Components
+@forward "../buttons/button.css";

@@ -1,65 +1,79 @@
+// Named colors / Colors with semantic naming
+
 :root {
-  --text-primary: var(--colors-gray-90);
-  --text-secondary: var(--colors-gray-70);
-  --background-default: var(--white);
-  --button-primary: var(--colors-cyan-60);
-  --button-secondary: var(--white);
-  --border-focus-01: #ffffff;
-  --button-danger: var(--colors-red-60);
-  --button-secondary-border: var(--colors-cyan-70);
-  --button-primary-hover: var(--colors-cyan-70);
-  --button-primary-active: var(--colors-cyan-80);
-  --button-secondary-hover: var(--colors-cyan-70);
-  --button-secondary-active: var(--colors-cyan-80);
-  --button-danger-hover: var(--colors-red-70);
-  --button-danger-active: var(--colors-red-80);
-  --button-disabled: var(--colors-gray-20);
-  --text-on-color: var(--white);
-  --text-placeholder: var(--colors-gray-40);
-  --text-helper: var(--colors-gray-60);
-  --text-error: var(--colors-red-60);
-  --text-inverse: var(--white);
-  --text-disabled: var(--colors-gray-40);
-  --text-on-color-disabled: var(--colors-gray-50);
-  --link-primary: var(--colors-cyan-60);
-  --link-inverse: var(--white);
-  --link-disabled: var(--text-disabled);
-  --background-hover: var(--colors-gray-10);
-  --background-active: var(--colors-gray-20);
-  --link-primary-hover: var(--colors-cyan-70);
-  --link-link-visited: var(--colors-purple-60);
-  --border-subtle-01: var(--colors-gray-20);
-  --border-subtle-selected-01: var(--colors-gray-30);
-  --border-disabled-01: var(--colors-gray-30);
-  --border-disabled-02: var(--colors-gray-10);
-  --border-inverse: var(--colors-gray-90);
-  --border-strong-01: var(--colors-gray-50);
-  --border-danger: var(--colors-red-60);
-  --border-error: var(--colors-red-60);
-  --button-separator: var(--colors-gray-20);
-  --icon-primary: var(--colors-gray-90);
-  --icon-secondary: var(--colors-gray-70);
-  --icon-on-color: var(--white);
-  --icon-inverse: var(--white);
-  --icon-disabled: var(--colors-gray-30);
-  --icon-icon-on-color-disabled: var(--colors-gray-60);
-  --field-background: var(--background-default);
-  --field-border: var(--border-strong-01);
-  --field-hover-01: var(--colors-gray-10);
-  --field-disabled: var(--colors-gray-10);
-  --background-inverse: var(--colors-gray-80);
-  --support-error: var(--colors-red-60);
-  --support-success: var(--colors-green-50);
-  --support-warning: var(--colors-yellow-30);
-  --support-info: var(--colors-blue-20);
-  --support-error-inverse: var(--colors-red-20);
-  --support-success-inverse: var(--colors-green-10);
-  --support-warning-inverse: var(--colors-yellow-80);
-  --support-info-inverse: var(--colors-blue-50);
-  --background-brand: var(--colors-cyan-60);
-  --background-selected: var(--colors-gray-20);
-  --background-brand-inverse: var(--colors-cyan-20);
-  --border-focus-02: var(--colors-cyan-60);
+  // Background colors
+  --background-default: var(--hc-white);
+  --background-hover: var(--hc-gray-10);
+  --background-active: var(--hc-gray-20);
+  --background-inverse: var(--hc-gray-80);
+  --background-brand: var(--hc-cyan-60);
+  --background-selected: var(--hc-gray-20);
+  --background-brand-inverse: var(--hc-cyan-20);
   --background-background-disabled: var(--button-disabled);
-  --button-border: var(--colors-cyan-70);
+
+  // Border colors
+  --border-subtle: var(--colors-gray-20);
+  --border-strong: var(--colors-gray-50);
+  --border-disabled: var(--colors-gray-30);
+  --border-focus: var(--colors-cyan-60);
+  --border-error: var(--colors-red-60);
+  --border-inverse: var(--colors-gray-90);
+  --border-field: var(--border-strong-01);
+  --border-focus-01: #ffffff;
+
+  // Button
+  --button-primary: var(--hc-cyan-60);
+  --button-secondary: var(--hc-white);
+  --button-danger: var(--hc-red-60);
+  --button-secondary-border: var(--hc-cyan-70);
+  --button-primary-hover: var(--hc-cyan-70);
+  --button-primary-active: var(--hc-cyan-80);
+  --button-secondary-hover: var(--hc-cyan-70);
+  --button-secondary-active: var(--hc-cyan-80);
+  --button-danger-hover: var(--hc-red-70);
+  --button-danger-active: var(--hc-red-80);
+  --button-disabled: var(--hc-gray-20);
+  --button-separator: var(--hc-gray-20);
+  --button-border: var(--hc-cyan-70);
+
+  // Link colors
+  --link-primary: var(--hc-cyan-60);
+  --link-inverse: var(--hc-white);
+  --link-disabled: var(--text-disabled);
+  --link-primary-hover: var(--hc-cyan-70);
+  --link-link-visited: var(--hc-purple-60);
+
+  // Icon colors
+  --icon-primary: var(--hc-gray-90);
+  --icon-secondary: var(--hc-gray-70);
+  --icon-on-color: var(--hc-white);
+  --icon-inverse: var(--hc-white);
+  --icon-disabled: var(--hc-gray-30);
+  --icon-on-color-disabled: var(--hc-gray-60);
+
+  // Field colors
+  --field-background: var(--background-default);
+  --field-hover-01: var(--hc-gray-10);
+  --field-disabled: var(--hc-gray-10);
+
+  // Support colors
+  --support-error: var(--hc-red-60);
+  --support-success: var(--hc-green-50);
+  --support-warning: var(--hc-yellow-30);
+  --support-info: var(--hc-blue-20);
+  --support-error-inverse: var(--hc-red-20);
+  --support-success-inverse: var(--hc-green-10);
+  --support-warning-inverse: var(--hc-yellow-80);
+  --support-info-inverse: var(--hc-blue-50);
+
+  // Text colors
+  --text-primary: var(--hc-gray-90);
+  --text-secondary: var(--hc-gray-70);
+  --text-on-color: var(--hc-white);
+  --text-placeholder: var(--hc-gray-40);
+  --text-helper: var(--hc-gray-60);
+  --text-error: var(--hc-red-60);
+  --text-inverse: var(--hc-white);
+  --text-disabled: var(--hc-gray-40);
+  --text-on-color-disabled: var(--hc-gray-50);
 }
