@@ -4,19 +4,19 @@
 /*font families*/
 :root {
   // Font families
-  --font-family: "Inter", sans-serif;
+  --hc-font-family: "Inter", sans-serif;
   //  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
   // Base for font sizes
-  --font-size-base: 1rem;
+  --hc-font-size-base: 1rem;
 
   // Heading sizes
-  --font-h1-size: calc(var(--font-size-base) * 2.5); /*40px*/
-  --font-h2-size: calc(var(--font-size-base) * 2); /*32px*/
-  --font-h3-size: calc(var(--font-size-base) * 1.66); /*26.6px*/
-  --font-h4-size: calc(var(--font-size-base) * 1.25); /*20px*/
-  --font-h5-size: calc(var(--font-size-base) * 1); /*16px*/
-  --font-h6-size: calc(var(--font-size-base) * 1); /*16px*/
+  --hc-font-h1-size: calc(var(--hc-font-size-base) * 2.5); /*40px*/
+  --hc-font-h2-size: calc(var(--hc-font-size-base) * 2); /*32px*/
+  --hc-font-h3-size: calc(var(--hc-font-size-base) * 1.66); /*26.6px*/
+  --hc-font-h4-size: calc(var(--hc-font-size-base) * 1.25); /*20px*/
+  --hc-font-h5-size: calc(var(--hc-font-size-base) * 1); /*16px*/
+  --hc-font-h6-size: calc(var(--hc-font-size-base) * 1); /*16px*/
 
   // Paragraph sizes
   --font-body-size-large: calc(var(--font-size-base) * 1.25); /*20px*/
@@ -24,9 +24,9 @@
   --font-body-size-small: calc(var(--font-size-base) * 1); /*16px*/
 
   // Labels and hint text sizes
-  --font-fieldLabel-size: calc(var(--font-body-regular) * 1.125); /*18px*/
-  --font-hint-size: calc(var(--font-body-small) * 1); /*16px*/
-  --font-error-size: calc(var(--font-body-regular) * 1); /*16px*/
+  --font-fieldLabel-size: var(--font-body-size-regular); /*18px*/
+  --font-hint-size: var(--font-body-size-small); /*16px*/
+  --font-error-size: var(--font-body-size-small); /*16px*/
 
   // Line heights
   --font-lineHeight-body-large: 1.5;
