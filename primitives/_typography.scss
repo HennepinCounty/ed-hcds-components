@@ -56,6 +56,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 2.4rem */
+    margin-bottom: var(--spacing-07);
   }
 
   h3 {
@@ -67,6 +68,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 1.992rem */
+    margin-bottom: var(--spacing-07);
   }
 
   h4 {
@@ -78,6 +80,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 120%; /* 1.5rem */
+    margin-bottom: var(--spacing-07);
   }
 
   h5 {
@@ -151,5 +154,133 @@
     font-weight: 400;
     line-height: 130%; /* 1.5rem */
     margin: var(--spacing-00);
+  }
+}
+
+/* ==================================================  */
+/* ==================================================  */
+/* additional padding for combinations of headings and paragraphs  */
+/* ==================================================  */
+/* ==================================================  */
+
+.hc-body-l + h2,
+.hc-body-lead + h2,
+.hc-body-l + .hc-heading-l,
+.hc-body-lead + .hc-heading-l {
+  padding-top: 5px;
+}
+
+/* Tablet and desktop */
+@media (min-width: 40.0625em) {
+  .hc-body-l + h2,
+  .hc-body-lead + h2,
+  .hc-body-l + .hc-heading-l,
+  .hc-body-lead + .hc-heading-l {
+    padding-top: 10px;
+  }
+}
+
+/* Mobile first */
+p + h2,
+.hc-body-m + h2,
+.hc-body + h2,
+p + .hc-heading-l,
+.hc-body-m + .hc-heading-l,
+.hc-body + .hc-heading-l,
+.hc-body-s + h2,
+.hc-body-s + .hc-heading-l,
+ul + h2,
+ol + h2,
+.hc-list + h2,
+ul + .hc-heading-l,
+ol + .hc-heading-l,
+.hc-list + .hc-heading-l {
+  padding-top: 15px;
+}
+
+/* Tablet and desktop */
+@media (min-width: 40.0625em) {
+  p + h2,
+  .hc-body-m + h2,
+  .hc-body + h2,
+  p + .hc-heading-l,
+  .hc-body-m + .hc-heading-l,
+  .hc-body + .hc-heading-l,
+  .hc-body-s + h2,
+  .hc-body-s + .hc-heading-l,
+  ul + h2,
+  ol + h2,
+  .hc-list + h2,
+  ul + .hc-heading-l,
+  ol + .hc-heading-l,
+  .hc-list + .hc-heading-l {
+    padding-top: 20px;
+  }
+}
+
+/* Mobile */
+p + h3,
+.hc-body-m + h3,
+.hc-body + h3,
+p + .hc-heading-m,
+.hc-body-m + .hc-heading-m,
+.hc-body + .hc-heading-m,
+.hc-body-s + h3,
+.hc-body-s + .hc-heading-m,
+ul + h3,
+ol + h3,
+.hc-list + h3,
+ul + .hc-heading-m,
+ol + .hc-heading-m,
+.hc-list + .hc-heading-m,
+p + h4,
+.hc-body-m + h4,
+.hc-body + h4,
+p + .hc-heading-s,
+.hc-body-m + .hc-heading-s,
+.hc-body + .hc-heading-s,
+.hc-body-s + h4,
+.hc-body-s + .hc-heading-s,
+ul + h4,
+ol + h4,
+.hc-list + h4,
+ul + .hc-heading-s,
+ol + .hc-heading-s,
+.hc-list + .hc-heading-s {
+  padding-top: 5px;
+}
+
+/* Tablet and desktop */
+@media (min-width: 40.0625em) {
+  p + h3,
+  p + .app-contact-panel__heading,
+  .hc-body-m + h3,
+  .hc-body + h3,
+  p + .hc-heading-m,
+  .hc-body-m + .hc-heading-m,
+  .hc-body + .hc-heading-m,
+  .hc-body-s + h3,
+  .hc-body-s + .hc-heading-m,
+  ul + h3,
+  ol + h3,
+  .hc-list + h3,
+  ul + .hc-heading-m,
+  ol + .hc-heading-m,
+  .hc-list + .hc-heading-m,
+  p + h4,
+  .hc-body-m + h4,
+  .hc-body + h4,
+  p + .hc-heading-s,
+  .hc-body-m + .hc-heading-s,
+  .hc-body + .hc-heading-s,
+  .hc-body-s + h4,
+  .hc-body-s + .hc-heading-s,
+  ul + h4,
+  ol + h4,
+  .hc-list + h4,
+  ul + .hc-heading-s,
+  ol + .hc-heading-s,
+  .hc-list + .hc-heading-s {
+    padding-top: 10px;
   }
 }

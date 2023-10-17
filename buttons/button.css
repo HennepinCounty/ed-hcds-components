@@ -17,18 +17,18 @@
   border: 2px solid transparent;
   min-height: 40px;
   min-width: 75px;
+  color: var(--text-on-color);
 }
 
+/* Focus styles */
 .hc-primary:focus,
 .hc-secondary:focus,
 .hc-danger:focus {
-  min-height: 40px !important;
-  min-width: 75px !important;
   border: 2px solid white;
-  border-style: double;
   outline: 2px solid #113c66;
 }
 
+/* Background colors */
 .hc-primary {
   background-color: #113c66;
 }
@@ -62,26 +62,17 @@
   border: 2px solid #113c66;
 }
 
+/* Background colors */
 .hc-secondary:hover {
   color: white;
   border: 2px solid #002852;
   background-color: #002852;
 }
 
-/* .hc-secondary:hover, */
 .hc-secondary:active {
-  /* border: 2px solid #113c66; */
-  /* border: none; */
-  /* color: white;
-    text-align: center; */
-  /* border-radius: 2px; */
-  /* font: 400 16px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   background-color: #0a1e48;
-  /* line-height: 24px; */
-  /* letter-spacing: 0; */
 }
 
-/* .hc-secondary:hover, */
 .hc-secondary:focus {
   min-height: 40px;
   min-width: 80px;
@@ -115,21 +106,6 @@
   border: 2px solid transparent;
 }
 
-.hc-danger:hover,
-.hc-danger:active {
-  min-height: 40px;
-  min-width: 75px;
-  font: 400 16px "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: white;
-  margin: auto;
-  text-align: center;
-  border-radius: 2px;
-  border: 2px solid transparent;
-}
-
 .hc-danger:hover {
   background-color: #ba001e;
 }
@@ -143,7 +119,13 @@
   color: #818283;
 }
 
+/*  */
+/*  */
 /* Icons */
+/*  */
+/*  */
+/*  */
+
 .hc-closeIconBlue {
   background-image: url(material-symbols_close-rounded-blue.svg);
   height: 12px;
