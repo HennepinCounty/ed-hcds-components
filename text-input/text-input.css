@@ -1,0 +1,92 @@
+/* don't need */
+.page-wrapper {
+  width: 30%;
+  /* margin-left: auto; */
+  margin-right: auto;
+}
+
+.hc-form-group {
+  display: block;
+  margin-bottom: 32px;
+}
+
+.hc-element {
+  margin-top: 20px;
+}
+
+/* Styling for label above text field */
+/* Set to display:block so that label is above the field */
+.hc-label {
+  display: block;
+  font-family: "Segoe UI";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  padding: 0 !important;
+  margin-top: 10px;
+  color: #191d21;
+}
+
+.hc-label:disabled {
+  color: #ccc;
+}
+
+/* Styling for field */
+.hc-input {
+  height: 38px;
+  border-radius: 2px !important;
+}
+
+/* error state for field, adds border */
+.hc-input-error {
+  height: 38px;
+  border: 1px solid #ce1432 !important;
+  border-radius: 3px !important;
+  background: url(material-symbols_close-rounded.svg) no-repeat right;
+  background-size: 30px;
+}
+
+.hc-input-error:focus {
+  outline-width: 0;
+  /* outline-color: #ce1432;
+    outline-offset: 2px; */
+  border: 2px solid #ce1432 !important;
+  border-radius: 2px !important;
+  font-weight: normal;
+}
+
+.hc-input:focus {
+  outline-width: 2px;
+  outline-color: #0058a4;
+  outline-offset: 2px;
+  border: 2px solid #cfcfcf;
+  border-radius: 2px;
+  font-weight: normal;
+}
+
+.required-class:after {
+  content: "(Required)";
+  color: #ce1432;
+  font-size: 12px;
+}
+
+.h3-underline {
+  border-bottom: 3px solid black;
+}
+
+.error-msg {
+  color: #ce1432;
+  font-size: 16px;
+  width: 100%;
+}
+
+.hc-helpertext {
+  font-family: "Segoe UI";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  padding: 0 !important;
+  color: #5c646d;
+}

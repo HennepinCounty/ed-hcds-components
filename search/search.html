@@ -1,50 +1,54 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="../style.css">
-    </head>
-    <body>
-    
-        <div class="example">
-          <h2>Search element</h2>
-            <div class="row">
-                <form action="./search">
-                  <label class="hc-label" for="search">Search item</label>
-                    <input type="search" class="hc-input" id="search"/>
-                    <button class="btn btn-primary btn-adjust">
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                      Search
-                  </button>
-                </form>
-            
-            </div>
-            <div class="row">
-                <form role="search" id="search2">
-                  <label class="hc-label" for="content">Search for city</label>
-                      <input
-                        type="search"
-                        class="hc-input"
-                        id="content"
-                        list="cityList"
-                        placeholder="Search for city…"
-                        aria-label="Search through site content" />
-                      <button class="btn btn-primary btn-adjust" >
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        Search
-                      </button>
-                </form>
-                  <!-- filter list sample-->
-                  <datalist id="cityList">
-                    <option value="Eagan">Eagan</option>
-                    <option value="Minneapolis">Minneapolis</option>
-                    <option value="St. Paul">St. Paul</option>
-                    <option value="St. Cloud">St. Cloud</option>
-                    <option value="Anoka">Anoka</option>
-                  </datalist>
-            </div>
-        </div>
-    </body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../CSS/index.css" />
+    <link rel="stylesheet" href="./search.css" />
+  </head>
+  <body>
+    <div class="example">
+      <h2>Search element</h2>
+      <div class="row">
+        <form action="./search">
+          <label class="hc-label" for="search">Search item</label>
+          <input type="search" class="hc-input" id="search" />
+          <button class="btn btn-primary btn-adjust">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Search
+          </button>
+        </form>
+      </div>
+      <div class="row">
+        <form role="search" id="search2">
+          <label class="hc-label" for="content">Search for city</label>
+          <input
+            type="search"
+            class="hc-input"
+            id="content"
+            list="cityList"
+            placeholder="Search for city…"
+            aria-label="Search through site content"
+          />
+          <button class="btn btn-primary btn-adjust">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Search
+          </button>
+        </form>
+        <!-- filter list sample-->
+        <datalist id="cityList">
+          <option value="Eagan">Eagan</option>
+          <option value="Minneapolis">Minneapolis</option>
+          <option value="St. Paul">St. Paul</option>
+          <option value="St. Cloud">St. Cloud</option>
+          <option value="Anoka">Anoka</option>
+        </datalist>
+      </div>
+    </div>
+  </body>
 </html>
