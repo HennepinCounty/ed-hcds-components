@@ -1,10 +1,10 @@
 // Border radius / corner rounding
 :root {
-  --radius-base: 1rem;
+  --hc-radius-base: 1rem;
 
-  --radius-00: calc(var(--radius-base) * 0); /*0px*/
-  --radius-01: calc(var(--radius-base) * 0.125); /*2px*/
-  --radius-02: calc(var(--radius-base) * 0.25); /*4px*/
-  --radius-03: calc(var(--radius-base) * 0.5); /*8px*/
-  --radius-04: calc(var(--radius-base) * 0.75); /*12px*/
+  --hc-radius-00: calc(var(--hc-radius-base) * 0); /*0px*/
+  --hc-radius-01: calc(var(--hc-radius-base) * 0.125); /*2px*/
+  --hc-radius-02: calc(var(--hc-radius-base) * 0.25); /*4px*/
+  --hc-radius-03: calc(var(--hc-radius-base) * 0.5); /*8px*/
+  --hc-radius-04: calc(var(--hc-radius-base) * 0.75); /*12px*/
 }

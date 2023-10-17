@@ -1,0 +1,85 @@
+:root {
+  // Text
+  --text-primary: var(--gray-100);
+  --text-secondary: var(--gray-80);
+  --text-on-color: var(--white);
+  --text-placeholder: var(--gray-40);
+  --text-hint: var(--gray-70);
+  --text-error: var(--support-error);
+  --text-inverse: var(--white);
+  --text-disabled: var(--gray-50);
+  --text-on-color-disabled: var(--gray-60);
+
+  //   Background
+  --background-default: var(--white);
+  --background-hover: var(--gray-10);
+  --background-active: var(--gray-20);
+  --background-selected: var(--gray-30);
+  --background-inverse: var(--gray-80);
+  --background-brand: var(--blue-70);
+  --background-brand-hover: var(--blue-80);
+  --background-brand-active: var(--blue-90);
+  --background-brand-inverse: var(--blue-20);
+  --background-brand-alternate: var(--blue-80);
+  --background-disabled: var(--gray-20);
+
+  //   Border colors
+  --border-focus-01: #ffffff;
+  --border-focus-02: var(--cyan-60);
+  --border-subtle: var(--gray-20);
+  --border-disabled-01: var(--gray-30);
+  --border-error: var(--support-error);
+  --border-on-color: var(--white);
+  --border-disabled-02: var(--gray-10);
+  --border-inverse: var(--gray-90);
+  --border-strong: var(--gray-40);
+
+  //   Button
+  --button-primary: var(--background-brand);
+  --button-primary-hover: var(--background-brand-hover);
+  --button-primary-active: var(--background-brand-active);
+  --button-secondary: var(--white);
+  --button-secondary-border: var(--cyan-70);
+  --button-secondary-hover: var(--cyan-70);
+  --button-secondary-active: var(--cyan-80);
+  --button-danger: var(--red-70);
+  --button-danger-hover: var(--red-80);
+  --button-danger-active: var(--red-90);
+  --button-disabled: var(--background-background-disabled);
+  --button-separator: var(--gray-20);
+  --button-border: var(--background-brand);
+
+  //   Link
+  --link-primary: var(--background-brand);
+  --link-inverse: var(--white);
+  --link-disabled: var(--text-disabled);
+  --link-primary-hover: var(--background-brand-hover);
+  --link-link-visited: var(--purple-60);
+
+  //   Icon
+  --icon-primary: var(--gray-100);
+  --icon-secondary: var(--gray-70);
+  --icon-on-color: var(--white);
+  --icon-inverse: var(--white);
+  --icon-disabled: var(--gray-50);
+  --icon-icon-on-color-disabled: var(--gray-40);
+  --icon-error: var(--support-error);
+  --icon-brand: var(--background-brand);
+
+  //   Field
+  --field-background: var(--background-default);
+  --field-border: var(--border-strong);
+  --field-hover-01: var(--gray-10);
+  --field-disabled: var(--gray-10);
+  --field-hover-02: var(--blue-60);
+
+  // Support
+  --support-error: var(--red-70);
+  --support-success: var(--green-10);
+  --support-warning: var(--yellow-30);
+  --support-info: var(--blue-20);
+  --support-error-inverse: var(--red-20);
+  --support-success-inverse: var(--green-40);
+  --support-warning-inverse: var(--yellow-80);
+  --support-info-inverse: var(--blue-70);
+}

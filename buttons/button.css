@@ -49,20 +49,20 @@
 
 /* Background colors */
 .hc-primary {
-  background-color: #113c66;
+  background-color: var(--button-primary);
 }
 
 .hc-primary:hover {
-  background-color: #002852;
+  background-color: var(--button-primary-hover);
 }
 
 .hc-primary:active {
-  background-color: #0a1e48;
+  background-color: var(--button-primary-active);
 }
 
 .hc-primary:disabled {
-  background-color: #c3c6c9;
-  color: #818283;
+  background-color: var(--button-disabled);
+  color: var(--text-disabled);
 }
 
 /* Secondary button */

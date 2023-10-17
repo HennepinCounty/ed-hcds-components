@@ -1,0 +1,11 @@
+// Border styling
+
+:root {
+  --hc-border-base: 1rem;
+
+  --hc-border-width-small: calc(var(--hc-border-base) * 0.125);
+  --hc-border-width-medium: calc(var(--hc-border-base) * 0.25);
+  --hc-border-width-large: calc(var(--hc-border-base) * 0.375);
+
+  --hc-border-hidden: var(--hc-transparent);
+}

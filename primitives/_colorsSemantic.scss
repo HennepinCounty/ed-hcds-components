@@ -2,83 +2,92 @@
 
 :root {
   // Background colors
-  --background-default: var(--hc-white);
-  --background-hover: var(--hc-gray-10);
-  --background-active: var(--hc-gray-20);
-  --background-selected: var(--hc-gray-20);
-  --background-inverse: var(--hc-gray-80);
-  --background-brand: var(--hc-cyan-60);
-  --background-brand-inverse: var(--hc-cyan-20);
-  --background-disabled: var(--button-disabled);
-
-  // Border colors
-  --border-subtle: var(--colors-gray-20);
-  --border-strong: var(--colors-gray-50);
-  --border-disabled: var(--colors-gray-30);
-  --border-focus: var(--colors-cyan-60);
-  --border-error: var(--colors-red-60);
-  --border-inverse: var(--colors-gray-90);
-  --border-field: var(--border-strong-01);
-  --border-focus: var(--hc-white);
-
-  // Button
-  --button-primary: var(--hc-cyan-60);
-  --button-secondary: var(--hc-white);
-  --button-danger: var(--hc-red-60);
-  --button-secondary-border: var(--hc-cyan-70);
-  --button-primary-hover: var(--hc-cyan-70);
-  --button-primary-active: var(--hc-cyan-80);
-  --button-secondary-hover: var(--hc-cyan-70);
-  --button-secondary-active: var(--hc-cyan-80);
-  --button-danger-hover: var(--hc-red-70);
-  --button-danger-active: var(--hc-red-80);
-  --button-disabled: var(--hc-gray-20);
-  --button-separator: var(--hc-gray-20);
-  --button-border: var(--hc-cyan-70);
-
-  // Divider
-  --divider-subtle: var(--hc-gray-30);
-  --divider-regular: var(--hc-gray-50);
-  --divider-strong: var(--hc-gray-80);
-
-  // Link colors
-  --link-primary: var(--hc-cyan-60);
-  --link-inverse: var(--hc-white);
-  --link-disabled: var(--text-disabled);
-  --link-primary-hover: var(--hc-cyan-70);
-  --link-link-visited: var(--hc-purple-60);
-
-  // Icon colors
-  --icon-primary: var(--hc-gray-90);
-  --icon-secondary: var(--hc-gray-70);
-  --icon-on-color: var(--hc-white);
-  --icon-inverse: var(--hc-white);
-  --icon-disabled: var(--hc-gray-30);
-  --icon-on-color-disabled: var(--hc-gray-60);
-
-  // Field colors
-  --field-background: var(--background-default);
-  --field-hover: var(--hc-gray-10);
-  --field-disabled: var(--hc-gray-10);
+  --hc-background-default: var(--hc-white);
+  --hc-background-hover: var(--hc-gray-10);
+  --hc-background-active: var(--hc-gray-20);
+  --hc-background-selected: var(--hc-gray-30);
+  --hc-background-inverse: var(--hc-gray-80);
+  --hc-background-brand: var(--hc-blue-70);
+  --hc-background-brand-hover: var(--hc-blue-80);
+  --hc-background-brand-active: var(--hc-blue-90);
+  --hc-background-brand-inverse: var(--hc-blue-20);
+  --hc-background-brand-alternate: var(--hc-blue-80);
+  --hc-background-disabled: var(--hc-gray-20);
 
   // Support colors
-  --support-error: var(--hc-red-60);
-  --support-success: var(--hc-green-50);
-  --support-warning: var(--hc-yellow-30);
-  --support-info: var(--hc-blue-20);
-  --support-error-inverse: var(--hc-red-20);
-  --support-success-inverse: var(--hc-green-10);
-  --support-warning-inverse: var(--hc-yellow-80);
-  --support-info-inverse: var(--hc-blue-50);
+  --hc-support-error: var(--hc-red-60);
+  --hc-support-success: var(--hc-green-50);
+  --hc-support-warning: var(--hc-yellow-30);
+  --hc-support-info: var(--hc-blue-20);
+  --hc-support-error-inverse: var(--hc-red-20);
+  --hc-support-success-inverse: var(--hc-green-10);
+  --hc-support-warning-inverse: var(--hc-yellow-80);
+  --hc-support-info-inverse: var(--hc-blue-50);
+
+  // Border colors
+  --hc-border-color-focus-01: var(
+    --hc-white
+  ); //use for bright color in focus states
+  --hc-border-color-focus-02: var(
+    --hc-cyan-60
+  ); //use for dark color in focus states
+  --hc-border-color-subtle: var(--hc-gray-20);
+  --hc-border-color-strong: var(--hc-gray-40);
+  --hc-border-color-disabled: var(--hc-gray-30);
+  --hc-border-color-error: var(--hc-support-error);
+  --hc-border-color-inverse: var(--hc-gray-90);
+
+  // Button
+  --hc-button-primary: var(--hc-background-brand);
+  --hc-button-primary-hover: var(--hc-background-brand-hover);
+  --hc-button-primary-active: var(--hc-background-brand-active);
+  --hc-button-secondary: var(--hc-white);
+  --hc-button-secondary-border: var(--hc-cyan-70);
+  --hc-button-secondary-hover: var(--hc-cyan-70);
+  --hc-button-secondary-active: var(--hc-cyan-80);
+  --hc-button-danger: var(--hc-red-70);
+  --hc-button-danger-hover: var(--hc-red-80);
+  --hc-button-danger-active: var(--hc-red-90);
+  --hc-button-separator: var(--hc-gray-20);
+  --hc-button-border: var(--hc-cyan-70); // Might remove later
+  --hc-button-disabled: var(--hc-background-disabled);
+
+  // Divider
+  --hc-divider-subtle: var(--hc-gray-30);
+  --hc-divider-regular: var(--hc-gray-50);
+  --hc-divider-strong: var(--hc-gray-80);
+
+  // Icon colors
+  --hc-icon-primary: var(--hc-gray-100);
+  --hc-icon-secondary: var(--hc-gray-70);
+  --hc-icon-on-color: var(--hc-white);
+  --hc-icon-inverse: var(--hc-white);
+  --hc-icon-disabled: var(--hc-gray-50);
+  --hc-icon-on-color-disabled: var(--hc-gray-40);
+  --hc-icon-error: var(--hc-support-error);
+  --hc-icon-brand: var(--hc-background-brand);
+
+  // Field colors
+  --hc-field-background: var(--hc-background-default);
+  --hc-field-hover: var(--hc-gray-10);
+  --hc-field-disabled: var(--hc-gray-10);
+  --hc-field-border-color: var(--hc-border-color-strong);
 
   // Text colors
-  --text-primary: var(--hc-gray-90);
-  --text-secondary: var(--hc-gray-70);
-  --text-on-color: var(--hc-white);
-  --text-placeholder: var(--hc-gray-40);
-  --text-helper: var(--hc-gray-60);
-  --text-error: var(--hc-red-60);
-  --text-inverse: var(--hc-white);
-  --text-disabled: var(--hc-gray-40);
-  --text-on-color-disabled: var(--hc-gray-50);
+  --hc-text-primary: var(--hc-gray-100);
+  --hc-text-secondary: var(--hc-gray-80);
+  --hc-text-on-color: var(--hc-white);
+  --hc-text-placeholder: var(--hc-gray-40);
+  --hc-text-helper: var(--hc-gray-70);
+  --hc-text-error: var(--hc-support-error);
+  --hc-text-inverse: var(--hc-white);
+  --hc-text-disabled: var(--hc-gray-50);
+  --hc-text-on-color-disabled: var(--hc-gray-60);
+
+  // Link colors
+  --hc-link-primary: var(--hc-background-brand);
+  --hc-link-inverse: var(--hc-white);
+  --hc-link-disabled: var(--hc-text-disabled);
+  --hc-link-primary-hover: var(--hc-background-brand-hover);
+  --hc-link-link-visited: var(--hc-purple-60);
 }
