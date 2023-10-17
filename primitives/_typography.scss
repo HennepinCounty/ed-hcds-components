@@ -32,6 +32,7 @@
   --font-lineHeight-body-large: 1.5;
   --font-lineHeight-body-regular: 1.5;
   --font-lineHeight-body-small: 1.5;
+  --button-text-lineheight-small: 1;
 
   //Weights
   --button-text-weight-regular: 400;
@@ -122,6 +123,7 @@
   }
 
   p + p {
+    margin-inline-start: var(--spacing-04);
   }
 
   .field-label {
