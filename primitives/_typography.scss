@@ -34,6 +34,9 @@
   --font-lineHeight-body-small: 1.5;
 
   //Weights
+  --button-text-weight-regular: 400;
+  --button-text-weight-semibold: 600;
+  --button-text-weight-bold: 700;
 
   h1 {
     color: var(--text-primary, #171a1d);
