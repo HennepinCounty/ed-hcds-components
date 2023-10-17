@@ -30,7 +30,7 @@
   min-width: 100%;
 }
 
-@media (min-width: 40.0625em) {
+@media (min-width: 40.0625rem) {
   .hc-primary,
   .hc-primary:hover,
   .hc-primary:active,

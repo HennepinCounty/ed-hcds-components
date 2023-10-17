@@ -332,23 +332,49 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   --hc-font-h4-size: calc(var(--hc-font-size-base) * 1.25); /*20px*/
   --hc-font-h5-size: calc(var(--hc-font-size-base) * 1); /*16px*/
   --hc-font-h6-size: calc(var(--hc-font-size-base) * 1); /*16px*/
-  --font-body-size-large: calc(var(--font-size-base) * 1.25); /*20px*/
-  --font-body-size-regular: calc(var(--font-size-base) * 1.125); /*18px*/
-  --font-body-size-small: calc(var(--font-size-base) * 1); /*16px*/
-  --font-fieldLabel-size: var(--font-body-size-regular); /*18px*/
-  --font-hint-size: var(--font-body-size-small); /*16px*/
-  --font-error-size: var(--font-body-size-small); /*16px*/
-  --font-lineHeight-body-large: 1.5;
-  --font-lineHeight-body-regular: 1.5;
-  --font-lineHeight-body-small: 1.5;
-  --button-text-lineheight-small: 1;
-  --button-text-weight-regular: 400;
-  --button-text-weight-semibold: 600;
-  --button-text-weight-bold: 700;
+  --hc-font-body-size-large: calc(var(--hc-font-size-base) * 1.25); /*20px*/
+  --hc-font-body-size-regular: calc(var(--hc-font-size-base) * 1.125); /*18px*/
+  --hc-font-body-size-small: calc(var(--hc-font-size-base) * 1); /*16px*/
+  --hc-font-fieldLabel-size: var(--hc-font-body-size-regular); /*18px*/
+  --hc-font-hint-size: var(--hc-font-body-size-small); /*16px*/
+  --hc-font-error-size: var(--hc-font-body-size-small); /*16px*/
+  --hc-font-lineHeight-body-large: 1.5;
+  --hc-font-lineHeight-body-regular: 1.5;
+  --hc-font-lineHeight-body-small: 1.5;
+  --hc-button-text-lineheight-small: 1;
+  --hc-button-text-weight-regular: 400;
+  --hc-button-text-weight-semibold: 600;
+  --hc-button-text-weight-bold: 700;
+}
+
+@media (min-width: 40.0625rem) {
+  :root {
+    --hc-font-h1-size: calc(var(--hc-font-size-base) * 2.5); /*40px*/
+    --hc-font-h2-size: calc(var(--hc-font-size-base) * 2); /*32px*/
+    --hc-font-h3-size: calc(var(--hc-font-size-base) * 1.66); /*26.6px*/
+    --hc-font-h4-size: calc(var(--hc-font-size-base) * 1.25); /*20px*/
+    --hc-font-h5-size: calc(var(--hc-font-size-base) * 1); /*16px*/
+    --hc-font-h6-size: calc(var(--hc-font-size-base) * 1); /*16px*/
+    --hc-font-body-size-large: calc(var(--hc-font-size-base) * 1.25); /*20px*/
+    --hc-font-body-size-regular: calc(
+      var(--hc-font-size-base) * 1.125
+    ); /*18px*/
+    --hc-font-body-size-small: calc(var(--hc-font-size-base) * 1); /*16px*/
+    --hc-font-fieldLabel-size: var(--hc-font-body-size-regular); /*18px*/
+    --hc-font-hint-size: var(--hc-font-body-size-small); /*16px*/
+    --hc-font-error-size: var(--hc-font-body-size-small); /*16px*/
+    --hc-font-lineHeight-body-large: 1.5;
+    --hc-font-lineHeight-body-regular: 1.5;
+    --hc-font-lineHeight-body-small: 1.5;
+    --hc-button-text-lineheight-small: 1;
+    --hc-button-text-weight-regular: 400;
+    --hc-button-text-weight-semibold: 600;
+    --hc-button-text-weight-bold: 700;
+  }
 }
 :root h1 {
   color: var(--text-primary, #171a1d);
-  /* Headings/H1 */
+  /* desktop Headings/H1 */
   font-family: var(--font-family);
   font-size: var(--font-h1-size);
   font-style: normal;
@@ -358,7 +384,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
 }
 :root h2 {
   color: var(--text-primary, #171a1d);
-  /* Headings/H2 */
+  /*desktop  Headings/H2 */
   font-family: var(--font-family);
   font-size: var(--font-h2-size);
   font-style: normal;
@@ -368,7 +394,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
 }
 :root h3 {
   color: var(--text-primary, #171a1d);
-  /* Headings/H3 */
+  /*desktop  Headings/H3 */
   font-family: var(--font-family);
   font-size: var(--font-h3-size);
   font-style: normal;
@@ -378,7 +404,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
 }
 :root h4 {
   color: var(--text-primary, #171a1d);
-  /* Headings/H4 */
+  /*desktop  Headings/H4 */
   font-family: var(--font-family);
   font-size: var(--font-h4-size);
   font-style: normal;
@@ -388,7 +414,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
 }
 :root h5 {
   color: var(--text-primary, #171a1d);
-  /* Headings/H5 */
+  /*desktop  Headings/H5 */
   font-family: var(--font-family);
   font-size: var(--font-h5-size);
   font-style: normal;
@@ -397,7 +423,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
 }
 :root h6 {
   color: var(--text-primary, #171a1d);
-  /* Headings/H6 */
+  /*desktop  Headings/H6 */
   font-family: var(--font-family);
   font-size: var(--font-h6-size);
   font-style: normal;
@@ -406,7 +432,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
 }
 :root p {
   color: var(--text-primary, #171a1d);
-  /* Body/Body */
+  /*desktop Body/Body */
   font-family: var(--font-family);
   font-size: var(--font-body-regular);
   font-style: normal;
@@ -2510,7 +2536,7 @@ html {
   min-width: 100%;
 }
 
-@media (min-width: 40.0625em) {
+@media (min-width: 40.0625rem) {
   .hc-primary,
   .hc-primary:hover,
   .hc-primary:active,
