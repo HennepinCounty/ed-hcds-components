@@ -52,7 +52,7 @@
   outline: 2px solid var(--hc-background-brand);
 }
 
-/* Background colors for states */
+/* Background colors for */
 .hc-button:hover {
   background-color: var(--hc-button-primary-hover);
 }
@@ -67,7 +67,7 @@
 }
 
 /* Secondary button */
-.hc-secondary {
+.hc-button--secondary {
   background-color: var(--hc-white);
   color: var(--text-primary);
   border: 2px solid var(--hc-background-brand);
@@ -75,21 +75,21 @@
 }
 
 /* Background colors */
-.hc-secondary:hover {
+.hc-button--secondary:hover {
   color: white;
   background-color: var(--hc-button-secondary-hover);
 }
 
-.hc-secondary:active {
+.hc-button--secondary:active {
   background-color: var(--hc-button-secondary-active);
 }
 
-.hc-secondary:focus {
+.hc-button--secondary:focus {
   background-color: #002852;
   color: white;
 }
 
-.hc-secondary:disabled {
+.hc-button--secondary:disabled {
   color: #c3c6c9;
   background-color: white;
   border-radius: 2px;
@@ -98,7 +98,7 @@
 }
 
 /* Danger button */
-.hc-danger {
+.hc-button--danger {
   background-color: var(--hc-button-danger);
   color: white;
   margin: auto;
@@ -107,15 +107,15 @@
   border: 2px solid transparent;
 }
 
-.hc-danger:hover {
+.hc-button--danger:hover {
   background-color: var(--hc-button-danger-hover);
 }
 
-.hc-danger:active {
+.hc-button--danger:active {
   background-color: var(--hc-button-danger-active);
 }
 
-.hc-danger:disabled {
+.hc-button--danger:disabled {
   background-color: #c3c6c9;
   color: #818283;
 }
@@ -163,15 +163,15 @@
   outline-offset: -2px;
 }
 
-.hc-secondary:hover .hc-closeIconBlue {
+.hc-button-secondary:hover .hc-closeIconBlue {
   background-image: url(material-symbols_close-rounded-white.svg);
   height: 12px;
   width: 12px;
 }
 
 .hc-primary:disabled .hc-closeIconWhite,
-.hc-secondary:disabled .hc-closeIconBlue,
-.hc-danger:disabled .hc-closeIconWhite {
+.hc-button-secondary:disabled .hc-closeIconBlue,
+.hc-button-danger:disabled .hc-closeIconWhite {
   background-image: url(material-symbols_close-rounded.svg);
   height: 12px;
   width: 12px;
@@ -180,7 +180,7 @@
   outline-offset: -2px;
 }
 
-.hc-danger.hc-closeIconWhite {
+.hc-button-danger.hc-closeIconWhite {
   background-image: url(material-symbols_close-rounded-white.svg);
   height: 12px;
   width: 12px;
