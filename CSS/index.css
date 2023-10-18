@@ -343,9 +343,9 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   --hc-font-h4-lineHeight: 120%;
   --hc-font-h5-lineHeight: 130%;
   --hc-font-h6-lineHeight: 130%;
-  --hc-font-body-large-lineHeight: 1.5;
-  --hc-font-body-regular-lineHeight: 1.5;
-  --hc-font-body-small-lineHeight: 1.5;
+  --hc-font-body-lineHeight-large: 1.5;
+  --hc-font-body-lineHeight-regular: 1.5;
+  --hc-font-body-lineHeight-small: 1.5;
   --hc-button-text-small-lineHeight: 1;
   --hc-text-weight-regular: 400;
   --hc-text-weight-semibold: 600;
@@ -380,13 +380,16 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
     --hc-font-fieldLabel-size: var(--hc-font-body-size-regular); /*18px*/
     --hc-font-hint-size: var(--hc-font-body-size-small); /*16px*/
     --hc-font-error-size: var(--hc-font-body-size-small); /*16px*/
-    --hc-font-lineHeight-body-large: 1.5;
-    --hc-font-lineHeight-body-regular: 1.5;
-    --hc-font-lineHeight-body-small: 1.5;
-    --hc-button-text-lineheight-small: 1;
-    --hc-button-text-weight-regular: 400;
-    --hc-button-text-weight-semibold: 600;
-    --hc-button-text-weight-bold: 700;
+    --hc-font-h1-lineHeight: 1.09;
+    --hc-font-h2-lineHeight: 1.15;
+    --hc-font-h3-lineHeight: 1.3;
+    --hc-font-h4-lineHeight: 1.4;
+    --hc-font-h5-lineHeight: 1.5;
+    --hc-font-h6-lineHeight: 1.5;
+    --hc-font-body-lineHeight-large: 1.5;
+    --hc-font-body-lineHeight-regular: 1.5;
+    --hc-font-body-lineHeight-small: 1.5;
+    --hc-font-button-lineHeight: 1;
     --hc-font-h1-bottom-margin: var(--hc-spacing-09);
     --hc-font-h2-bottom-margin: var(--hc-spacing-07);
     --hc-font-h3-bottom-margin: var(--hc-spacing-06);
