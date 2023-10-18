@@ -143,7 +143,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
 :root {
   --hc-white: #ffffff;
   --hc-black: #000000;
-  --hc-transparent: #ffffff, 0;
+  --hc-transparent: rgba(255, 255, 255, 0);
   --hc-green-10: #f1fee1;
   --hc-green-20: #cbf87c;
   --hc-green-30: #b2e34b;
@@ -277,6 +277,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   --hc-border-color-disabled: var(--hc-gray-30);
   --hc-border-color-error: var(--hc-support-error);
   --hc-border-color-inverse: var(--hc-gray-90);
+  --hc-border-color-transparent: var(--hc-transparent);
   --hc-button-primary: var(--hc-background-brand);
   --hc-button-primary-hover: var(--hc-background-brand-hover);
   --hc-button-primary-active: var(--hc-background-brand-active);
@@ -662,12 +663,12 @@ ol + .hc-heading-s,
 }
 
 :root {
-  --hc-radius-base: 1rem;
-  --hc-radius-00: calc(var(--hc-radius-base) * 0); /*0px*/
-  --hc-radius-01: calc(var(--hc-radius-base) * 0.125); /*2px*/
-  --hc-radius-02: calc(var(--hc-radius-base) * 0.25); /*4px*/
-  --hc-radius-03: calc(var(--hc-radius-base) * 0.5); /*8px*/
-  --hc-radius-04: calc(var(--hc-radius-base) * 0.75); /*12px*/
+  --hc-border-radius-base: 1rem;
+  --hc-border-radius-00: calc(var(--hc-border-radius-base) * 0); /*0px*/
+  --hc-border-radius-01: calc(var(--hc-border-radius-base) * 0.125); /*2px*/
+  --hc-border-radius-02: calc(var(--hc-border-radius-base) * 0.25); /*4px*/
+  --hc-border-radius-03: calc(var(--hc-border-radius-base) * 0.5); /*8px*/
+  --hc-border-radius-04: calc(var(--hc-border-radius-base) * 0.75); /*12px*/
 }
 
 .hc-gap-00 {
@@ -1144,399 +1145,399 @@ ol + .hc-heading-s,
 
 /*Padding all*/
 .hc-padding-01 {
-  padding: var(--spacing-01);
+  padding: var(--hc-spacing-01);
 }
 
 .hc-padding-02 {
-  padding: var(--spacing-02);
+  padding: var(--hc-spacing-02);
 }
 
 .hc-padding-03 {
-  padding: var(--spacing-03);
+  padding: var(--hc-spacing-03);
 }
 
 .hc-padding-04 {
-  padding: var(--spacing-04);
+  padding: var(--hc-spacing-04);
 }
 
 .hc-padding-05 {
-  padding: var(--spacing-05);
+  padding: var(--hc-spacing-05);
 }
 
 .hc-padding-06 {
-  padding: var(--spacing-06);
+  padding: var(--hc-spacing-06);
 }
 
 .hc-padding-07 {
-  padding: var(--spacing-07);
+  padding: var(--hc-spacing-07);
 }
 
 .hc-padding-08 {
-  padding: var(--spacing-08);
+  padding: var(--hc-spacing-08);
 }
 
 .hc-padding-09 {
-  padding: var(--spacing-09);
+  padding: var(--hc-spacing-09);
 }
 
 .hc-padding-10 {
-  padding: var(--spacing-10);
+  padding: var(--hc-spacing-10);
 }
 
 .hc-padding-11 {
-  padding: var(--spacing-11);
+  padding: var(--hc-spacing-11);
 }
 
 .hc-padding-12 {
-  padding: var(--spacing-12);
+  padding: var(--hc-spacing-12);
 }
 
 .hc-padding-13 {
-  padding: var(--spacing-13);
+  padding: var(--hc-spacing-13);
 }
 
 /*Padding left and right*/
 .hc-padding-x-01 {
-  padding-top: var(--spacing-01);
-  padding-bottom: var(--spacing-01);
+  padding-left: var(--hc-spacing-01);
+  padding-right: var(--hc-spacing-01);
 }
 
 .hc-padding-x-02 {
-  padding-top: var(--spacing-02);
-  padding-bottom: var(--spacing-02);
+  padding-left: var(--hc-spacing-02);
+  padding-right: var(--hc-spacing-02);
 }
 
 .hc-padding-x-03 {
-  padding-top: var(--spacing-03);
-  padding-bottom: var(--spacing-03);
+  padding-left: var(--hc-spacing-03);
+  padding-right: var(--hc-spacing-03);
 }
 
 .hc-padding-x-04 {
-  padding-top: var(--spacing-04);
-  padding-bottom: var(--spacing-04);
+  padding-left: var(--hc-spacing-04);
+  padding-right: var(--hc-spacing-04);
 }
 
 .hc-padding-x-05 {
-  padding-top: var(--spacing-05);
-  padding-bottom: var(--spacing-05);
+  padding-left: var(--hc-spacing-05);
+  padding-right: var(--hc-spacing-05);
 }
 
 .hc-padding-x-06 {
-  padding-top: var(--spacing-06);
-  padding-bottom: var(--spacing-06);
+  padding-left: var(--hc-spacing-06);
+  padding-right: var(--hc-spacing-06);
 }
 
 .hc-padding-x-07 {
-  padding-top: var(--spacing-07);
-  padding-bottom: var(--spacing-07);
+  padding-left: var(--hc-spacing-07);
+  padding-right: var(--hc-spacing-07);
 }
 
 .hc-padding-x-08 {
-  padding-top: var(--spacing-08);
-  padding-bottom: var(--spacing-08);
+  padding-left: var(--hc-spacing-08);
+  padding-right: var(--hc-spacing-08);
 }
 
 .hc-padding-x-09 {
-  padding-top: var(--spacing-09);
-  padding-bottom: var(--spacing-09);
+  padding-left: var(--hc-spacing-09);
+  padding-right: var(--hc-spacing-09);
 }
 
 .hc-padding-x-10 {
-  padding-top: var(--spacing-10);
-  padding-bottom: var(--spacing-10);
+  padding-left: var(--hc-spacing-10);
+  padding-right: var(--hc-spacing-10);
 }
 
 .hc-padding-x-11 {
-  padding-top: var(--spacing-11);
-  padding-bottom: var(--spacing-11);
+  padding-left: var(--hc-spacing-11);
+  padding-right: var(--hc-spacing-11);
 }
 
 .hc-padding-x-12 {
-  padding-top: var(--spacing-12);
-  padding-bottom: var(--spacing-12);
+  padding-left: var(--hc-spacing-12);
+  padding-right: var(--hc-spacing-12);
 }
 
 .hc-padding-x-13 {
-  padding-top: var(--spacing-13);
-  padding-bottom: var(--spacing-13);
+  padding-left: var(--hc-spacing-13);
+  padding-right: var(--hc-spacing-13);
 }
 
 /*Padding top and bottom*/
 .hc-padding-y-01 {
-  padding-top: var(--spacing-01);
-  padding-bottom: var(--spacing-01);
+  padding-top: var(--hc-spacing-01);
+  padding-bottom: var(--hc-spacing-01);
 }
 
 .hc-padding-y-02 {
-  padding-top: var(--spacing-02);
-  padding-bottom: var(--spacing-02);
+  padding-top: var(--hc-spacing-02);
+  padding-bottom: var(--hc-spacing-02);
 }
 
 .hc-padding-y-03 {
-  padding-top: var(--spacing-03);
-  padding-bottom: var(--spacing-03);
+  padding-top: var(--hc-spacing-03);
+  padding-bottom: var(--hc-spacing-03);
 }
 
 .hc-padding-y-04 {
-  padding-top: var(--spacing-04);
-  padding-bottom: var(--spacing-04);
+  padding-top: var(--hc-spacing-04);
+  padding-bottom: var(--hc-spacing-04);
 }
 
 .hc-padding-y-05 {
-  padding-top: var(--spacing-05);
-  padding-bottom: var(--spacing-05);
+  padding-top: var(--hc-spacing-05);
+  padding-bottom: var(--hc-spacing-05);
 }
 
 .hc-padding-y-06 {
-  padding-top: var(--spacing-06);
-  padding-bottom: var(--spacing-06);
+  padding-top: var(--hc-spacing-06);
+  padding-bottom: var(--hc-spacing-06);
 }
 
 .hc-padding-y-07 {
-  padding-top: var(--spacing-07);
-  padding-bottom: var(--spacing-07);
+  padding-top: var(--hc-spacing-07);
+  padding-bottom: var(--hc-spacing-07);
 }
 
 .hc-padding-y-08 {
-  padding-top: var(--spacing-08);
-  padding-bottom: var(--spacing-08);
+  padding-top: var(--hc-spacing-08);
+  padding-bottom: var(--hc-spacing-08);
 }
 
 .hc-padding-y-09 {
-  padding-top: var(--spacing-09);
-  padding-bottom: var(--spacing-09);
+  padding-top: var(--hc-spacing-09);
+  padding-bottom: var(--hc-spacing-09);
 }
 
 .hc-padding-y-10 {
-  padding-top: var(--spacing-10);
-  padding-bottom: var(--spacing-10);
+  padding-top: var(--hc-spacing-10);
+  padding-bottom: var(--hc-spacing-10);
 }
 
 .hc-padding-y-11 {
-  padding-top: var(--spacing-11);
-  padding-bottom: var(--spacing-11);
+  padding-top: var(--hc-spacing-11);
+  padding-bottom: var(--hc-spacing-11);
 }
 
 .hc-padding-y-12 {
-  padding-top: var(--spacing-12);
-  padding-bottom: var(--spacing-12);
+  padding-top: var(--hc-spacing-12);
+  padding-bottom: var(--hc-spacing-12);
 }
 
 .hc-padding-y-13 {
-  padding-top: var(--spacing-13);
-  padding-bottom: var(--spacing-13);
+  padding-top: var(--hc-spacing-13);
+  padding-bottom: var(--hc-spacing-13);
 }
 
 /*Padding top*/
 .hc-padding-top-01 {
-  padding-top: var(--spacing-01);
+  padding-top: var(--hc-spacing-01);
 }
 
 .hc-padding-top-02 {
-  padding-top: var(--spacing-02);
+  padding-top: var(--hc-spacing-02);
 }
 
 .hc-padding-top-03 {
-  padding-top: var(--spacing-03);
+  padding-top: var(--hc-spacing-03);
 }
 
 .hc-padding-top-04 {
-  padding-top: var(--spacing-04);
+  padding-top: var(--hc-spacing-04);
 }
 
 .hc-padding-top-05 {
-  padding-top: var(--spacing-05);
+  padding-top: var(--hc-spacing-05);
 }
 
 .hc-padding-top-06 {
-  padding-top: var(--spacing-06);
+  padding-top: var(--hc-spacing-06);
 }
 
 .hc-padding-top-07 {
-  padding-top: var(--spacing-07);
+  padding-top: var(--hc-spacing-07);
 }
 
 .hc-padding-top-08 {
-  padding-top: var(--spacing-08);
+  padding-top: var(--hc-spacing-08);
 }
 
 .hc-padding-top-09 {
-  padding-top: var(--spacing-09);
+  padding-top: var(--hc-spacing-09);
 }
 
 .hc-padding-top-10 {
-  padding-top: var(--spacing-10);
+  padding-top: var(--hc-spacing-10);
 }
 
 .hc-padding-top-11 {
-  padding-top: var(--spacing-11);
+  padding-top: var(--hc-spacing-11);
 }
 
 .hc-padding-top-12 {
-  padding-top: var(--spacing-12);
+  padding-top: var(--hc-spacing-12);
 }
 
 .hc-padding-top-13 {
-  padding-top: var(--spacing-13);
+  padding-top: var(--hc-spacing-13);
 }
 
 /*Padding bottom*/
 .hc-padding-bottom-01 {
-  padding-bottom: var(--spacing-01);
+  padding-bottom: var(--hc-spacing-01);
 }
 
 .hc-padding-bottom-02 {
-  padding-bottom: var(--spacing-02);
+  padding-bottom: var(--hc-spacing-02);
 }
 
 .hc-padding-bottom-03 {
-  padding-bottom: var(--spacing-03);
+  padding-bottom: var(--hc-spacing-03);
 }
 
 .hc-padding-bottom-04 {
-  padding-bottom: var(--spacing-04);
+  padding-bottom: var(--hc-spacing-04);
 }
 
 .hc-padding-bottom-05 {
-  padding-bottom: var(--spacing-05);
+  padding-bottom: var(--hc-spacing-05);
 }
 
 .hc-padding-bottom-06 {
-  padding-bottom: var(--spacing-06);
+  padding-bottom: var(--hc-spacing-06);
 }
 
 .hc-padding-bottom-07 {
-  padding-bottom: var(--spacing-07);
+  padding-bottom: var(--hc-spacing-07);
 }
 
 .hc-padding-bottom-08 {
-  padding-bottom: var(--spacing-08);
+  padding-bottom: var(--hc-spacing-08);
 }
 
 .hc-padding-bottom-09 {
-  padding-bottom: var(--spacing-09);
+  padding-bottom: var(--hc-spacing-09);
 }
 
 .hc-padding-bottom-10 {
-  padding-bottom: var(--spacing-10);
+  padding-bottom: var(--hc-spacing-10);
 }
 
 .hc-padding-bottom-11 {
-  padding-bottom: var(--spacing-11);
+  padding-bottom: var(--hc-spacing-11);
 }
 
 .hc-padding-bottom-12 {
-  padding-bottom: var(--spacing-12);
+  padding-bottom: var(--hc-spacing-12);
 }
 
 .hc-padding-bottom-13 {
-  padding-bottom: var(--spacing-13);
+  padding-bottom: var(--hc-spacing-13);
 }
 
 /*Padding left*/
 .hc-padding-left-01 {
-  padding-left: var(--spacing-01);
+  padding-left: var(--hc-spacing-01);
 }
 
 .hc-padding-left-02 {
-  padding-left: var(--spacing-02);
+  padding-left: var(--hc-spacing-02);
 }
 
 .hc-padding-left-03 {
-  padding-left: var(--spacing-03);
+  padding-left: var(--hc-spacing-03);
 }
 
 .hc-padding-left-04 {
-  padding-left: var(--spacing-04);
+  padding-left: var(--hc-spacing-04);
 }
 
 .hc-padding-left-05 {
-  padding-left: var(--spacing-05);
+  padding-left: var(--hc-spacing-05);
 }
 
 .hc-padding-left-06 {
-  padding-left: var(--spacing-06);
+  padding-left: var(--hc-spacing-06);
 }
 
 .hc-padding-left-07 {
-  padding-left: var(--spacing-07);
+  padding-left: var(--hc-spacing-07);
 }
 
 .hc-padding-left-08 {
-  padding-left: var(--spacing-08);
+  padding-left: var(--hc-spacing-08);
 }
 
 .hc-padding-left-09 {
-  padding-left: var(--spacing-09);
+  padding-left: var(--hc-spacing-09);
 }
 
 .hc-padding-left-10 {
-  padding-left: var(--spacing-10);
+  padding-left: var(--hc-spacing-10);
 }
 
 .hc-padding-left-11 {
-  padding-left: var(--spacing-11);
+  padding-left: var(--hc-spacing-11);
 }
 
 .hc-padding-left-12 {
-  padding-left: var(--spacing-12);
+  padding-left: var(--hc-spacing-12);
 }
 
 .hc-padding-left-13 {
-  padding-left: var(--spacing-13);
+  padding-left: var(--hc-spacing-13);
 }
 
 /*Padding right*/
 .hc-padding-right-01 {
-  padding-right: var(--spacing-01);
+  padding-right: var(--hc-spacing-01);
 }
 
 .hc-padding-right-02 {
-  padding-right: var(--spacing-02);
+  padding-right: var(--hc-spacing-02);
 }
 
 .hc-padding-right-03 {
-  padding-right: var(--spacing-03);
+  padding-right: var(--hc-spacing-03);
 }
 
 .hc-padding-right-04 {
-  padding-right: var(--spacing-04);
+  padding-right: var(--hc-spacing-04);
 }
 
 .hc-padding-right-05 {
-  padding-right: var(--spacing-05);
+  padding-right: var(--hc-spacing-05);
 }
 
 .hc-padding-right-06 {
-  padding-right: var(--spacing-06);
+  padding-right: var(--hc-spacing-06);
 }
 
 .hc-padding-right-07 {
-  padding-right: var(--spacing-07);
+  padding-right: var(--hc-spacing-07);
 }
 
 .hc-padding-right-08 {
-  padding-right: var(--spacing-08);
+  padding-right: var(--hc-spacing-08);
 }
 
 .hc-padding-right-09 {
-  padding-right: var(--spacing-09);
+  padding-right: var(--hc-spacing-09);
 }
 
 .hc-padding-right-10 {
-  padding-right: var(--spacing-10);
+  padding-right: var(--hc-spacing-10);
 }
 
 .hc-padding-right-11 {
-  padding-right: var(--spacing-11);
+  padding-right: var(--hc-spacing-11);
 }
 
 .hc-padding-right-12 {
-  padding-right: var(--spacing-12);
+  padding-right: var(--hc-spacing-12);
 }
 
 .hc-padding-right-13 {
-  padding-right: var(--spacing-13);
+  padding-right: var(--hc-spacing-13);
 }
 
 /*!
@@ -2561,90 +2562,83 @@ html {
 /*  */
 /*  */
 /* Primary button */
-.hc-primary,
-.hc-primary:hover,
-.hc-primary:active,
-.hc-primary:disabled {
-  font-family: var(--font-family), "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: var(--font-body-size-regular), 1rem;
-  font-weight: var(--button-text-weight-regular), 400;
-  line-height: var(--button-text-lineheight-small), 1;
+.hc-button,
+.hc-button:hover,
+.hc-button:active,
+.hc-button:disabled {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row;
+  gap: var(--hc-spacing-02);
+  font-family: var(--hc-font-family), "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: var(--hc-font-body-size-regular, 1rem);
+  font-weight: 400;
+  line-height: 1;
   letter-spacing: 0em;
   text-align: left;
-  text-align: center;
-  margin: auto;
-  color: var(--text-on-color);
-  border-radius: 2px;
+  color: var(--hc-text-on-color);
+  border-radius: var(--hc-border-radius-01, 2px);
   border: 2px solid transparent;
-  min-height: 40px;
-  color: var(--text-on-color);
+  margin: auto;
+  min-height: 44px;
   min-width: 100%;
+  background-color: var(--hc-button-primary);
 }
 
+/* Desktop */
+/* this min-width probably needs to be adjusted */
 @media (min-width: 40.0625rem) {
-  .hc-primary,
-  .hc-primary:hover,
-  .hc-primary:active,
-  .hc-primary:disabled {
+  .hc-button,
+  .hc-button:hover,
+  .hc-button:active,
+  .hc-button:disabled {
     min-width: auto;
   }
 }
 /* Focus styles */
-.hc-primary:focus,
-.hc-secondary:focus,
-.hc-danger:focus {
-  border: 2px solid white;
-  outline: 2px solid #113c66;
+/* Focus should be defined once on the core button style so that it doesn't have to be repeated for the other variants */
+.hc-button:focus {
+  border: 2px solid var(--hc-white);
+  outline: 2px solid var(--hc-background-brand);
 }
 
 /* Background colors */
-.hc-primary {
-  background-color: var(--button-primary);
+.hc-button {
+  background-color: var(--hc-button-primary);
 }
 
-.hc-primary:hover {
-  background-color: var(--button-primary-hover);
+.hc-button:hover {
+  background-color: var(--hc-button-primary-hover);
 }
 
-.hc-primary:active {
-  background-color: var(--button-primary-active);
+.hc-button:active {
+  background-color: var(--hc-button-primary-active);
 }
 
-.hc-primary:disabled {
-  background-color: var(--button-disabled);
+.hc-button:disabled {
+  background-color: var(--hc-button-disabled);
   color: var(--text-disabled);
 }
 
 /* Secondary button */
 .hc-secondary {
-  min-height: 40px;
-  min-width: 75px;
-  font: 400 16px "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 24px;
-  letter-spacing: 0;
-  text-align: left;
-  background-color: white;
-  color: #113c66;
-  margin: auto;
-  text-align: center;
+  background-color: var(--hc-white);
+  color: var(--text-primary);
+  border: 2px solid var(--hc-background-brand);
   border-radius: 2px;
-  border: 2px solid #113c66;
 }
 
 /* Background colors */
 .hc-secondary:hover {
   color: white;
-  border: 2px solid #002852;
-  background-color: #002852;
+  background-color: var(--hc-button-secondary-hover);
 }
 
 .hc-secondary:active {
-  background-color: #0a1e48;
+  background-color: var(--hc-button-secondary-active);
 }
 
 .hc-secondary:focus {
-  min-height: 40px;
-  min-width: 80px;
   background-color: #002852;
   color: white;
 }
@@ -2652,8 +2646,6 @@ html {
 .hc-secondary:disabled {
   color: #c3c6c9;
   background-color: white;
-  margin: auto;
-  text-align: center;
   border-radius: 2px;
   outline: auto;
   border: 2px solid #c3c6c9;
@@ -2661,13 +2653,7 @@ html {
 
 /* Danger button */
 .hc-danger {
-  min-height: 40px;
-  min-width: 75px;
-  font: 400 16px "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
-  background-color: #ce1432;
+  background-color: var(--hc-button-danger);
   color: white;
   margin: auto;
   text-align: center;
@@ -2676,11 +2662,11 @@ html {
 }
 
 .hc-danger:hover {
-  background-color: #ba001e;
+  background-color: var(--hc-button-danger-hover);
 }
 
 .hc-danger:active {
-  background-color: #a6000a;
+  background-color: var(--hc-button-danger-active);
 }
 
 .hc-danger:disabled {
