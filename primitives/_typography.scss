@@ -211,7 +211,8 @@
     line-height: 150%; /* 1.5rem */
   }
 
-  h6 {
+  h6,
+  .hc-heading-xs {
     color: var(--text-primary, #171a1d);
 
     /*desktop  Headings/H6 */

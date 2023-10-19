@@ -278,6 +278,8 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   --hc-border-color-error: var(--hc-support-error);
   --hc-border-color-inverse: var(--hc-gray-90);
   --hc-border-color-transparent: var(--hc-transparent);
+  --hc-border-style-focus: 2px solid var(--hc-white);
+  --hc-outline-style-focus: 3px solid var(--hc-background-brand);
   --hc-button-primary: var(--hc-background-brand);
   --hc-button-primary-hover: var(--hc-background-brand-hover);
   --hc-button-primary-active: var(--hc-background-brand-active);
@@ -467,7 +469,8 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   font-weight: 600;
   line-height: 150%; /* 1.5rem */
 }
-:root h6 {
+:root h6,
+:root .hc-heading-xs {
   color: var(--text-primary, #171a1d);
   /*desktop  Headings/H6 */
   font-family: var(--hc-font-family);
@@ -2576,6 +2579,7 @@ html {
 /* ======================== */
 .hc-button {
   --button-height: 38px;
+  box-sizing: border-box;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -2606,8 +2610,12 @@ html {
 /* Focus styles */
 /* Focus should be defined once on the core button style so that it doesn't have to be repeated for the other variants */
 .hc-button:focus {
+  border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
+  /* commented out to test replacing with variables */
+  /* 
   border: 2px solid var(--hc-white);
-  outline: 3px solid var(--hc-background-brand);
+  outline: 3px solid var(--hc-background-brand); */
 }
 
 /* Background colors for */
@@ -2630,19 +2638,19 @@ html {
 /* ======================== */
 /* ======================== */
 .hc-button--secondary {
-  background-color: var(--hc-white);
+  background-color: var(--hc-transparent);
   color: var(--text-primary);
   border: 2px solid var(--hc-background-brand);
-  border-radius: 2px;
 }
 
 /* Background colors */
 .hc-button--secondary:hover {
-  color: white;
+  color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-hover);
 }
 
 .hc-button--secondary:active {
+  color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-active);
 }
 
@@ -2651,8 +2659,7 @@ html {
   color: var(--hc-text-disabled);
   background-color: var(--hc-white);
   border-radius: var(--hc-border-radius-01);
-  outline: auto;
-  border: 2px solid #c3c6c9;
+  border: 2px solid var(--hc-border-color-disabled);
 }
 
 /* ======================== */
@@ -2662,7 +2669,7 @@ html {
 /* ======================== */
 .hc-button--danger {
   background-color: var(--hc-button-danger);
-  color: white;
+  color: var(--hc-text-on-color);
   margin: auto;
   text-align: center;
   border-radius: 2px;

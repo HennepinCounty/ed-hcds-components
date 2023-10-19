@@ -19,6 +19,7 @@
 .hc-button:active,
 .hc-button:disabled  */ {
   --button-height: 38px;
+  box-sizing: border-box;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -49,8 +50,13 @@
 /* Focus styles */
 /* Focus should be defined once on the core button style so that it doesn't have to be repeated for the other variants */
 .hc-button:focus {
+  border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
+
+  /* commented out to test replacing with variables */
+  /* 
   border: 2px solid var(--hc-white);
-  outline: 3px solid var(--hc-background-brand);
+  outline: 3px solid var(--hc-background-brand); */
 }
 
 /* Background colors for */
@@ -74,19 +80,19 @@
 /* ======================== */
 
 .hc-button--secondary {
-  background-color: var(--hc-white);
+  background-color: var(--hc-transparent);
   color: var(--text-primary);
   border: 2px solid var(--hc-background-brand);
-  border-radius: 2px;
 }
 
 /* Background colors */
 .hc-button--secondary:hover {
-  color: white;
+  color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-hover);
 }
 
 .hc-button--secondary:active {
+  color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-active);
 }
 
@@ -96,8 +102,7 @@
   color: var(--hc-text-disabled);
   background-color: var(--hc-white);
   border-radius: var(--hc-border-radius-01);
-  outline: auto;
-  border: 2px solid #c3c6c9;
+  border: 2px solid var(--hc-border-color-disabled);
 }
 
 /* ======================== */
