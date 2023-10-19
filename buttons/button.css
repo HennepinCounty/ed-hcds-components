@@ -8,11 +8,17 @@
 /*  */
 /*  */
 
+/* ======================== */
+/* ======================== */
 /* Primary button */
-.hc-button,
+/* ======================== */
+/* ======================== */
+.hc-button
+/* ,
 .hc-button:hover,
 .hc-button:active,
-.hc-button:disabled {
+.hc-button:disabled  */ {
+  --button-height: 38px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -28,28 +34,23 @@
   color: var(--hc-text-on-color);
   border-radius: var(--hc-border-radius-01, 2px);
   border: 2px solid var(--hc-transparent);
-  margin: auto;
-  min-height: 44px;
-  min-width: 100%;
+  margin: 0;
+  height: var(--button-height);
   background-color: var(--hc-button-primary);
+  width: max-content;
 }
 
 /* Desktop */
 /* this min-width probably needs to be adjusted */
-@media (min-width: 40.0625rem) {
-  .hc-button,
-  .hc-button:hover,
-  .hc-button:active,
-  .hc-button:disabled {
-    min-width: auto;
-  }
+.hc-button--large {
+  --button-height: 44px;
 }
 
 /* Focus styles */
 /* Focus should be defined once on the core button style so that it doesn't have to be repeated for the other variants */
 .hc-button:focus {
   border: 2px solid var(--hc-white);
-  outline: 2px solid var(--hc-background-brand);
+  outline: 3px solid var(--hc-background-brand);
 }
 
 /* Background colors for */
@@ -63,10 +64,15 @@
 
 .hc-button:disabled {
   background-color: var(--hc-button-disabled);
-  color: var(--text-disabled);
+  color: var(--hc-text-disabled);
 }
 
+/* ======================== */
+/* ======================== */
 /* Secondary button */
+/* ======================== */
+/* ======================== */
+
 .hc-button--secondary {
   background-color: var(--hc-white);
   color: var(--text-primary);
@@ -84,20 +90,21 @@
   background-color: var(--hc-button-secondary-active);
 }
 
-.hc-button--secondary:focus {
-  background-color: #002852;
-  color: white;
-}
+/* focus for secondary -- commented out for now */
 
 .hc-button--secondary:disabled {
-  color: #c3c6c9;
-  background-color: white;
-  border-radius: 2px;
+  color: var(--hc-text-disabled);
+  background-color: var(--hc-white);
+  border-radius: var(--hc-border-radius-01);
   outline: auto;
   border: 2px solid #c3c6c9;
 }
 
+/* ======================== */
+/* ======================== */
 /* Danger button */
+/* ======================== */
+/* ======================== */
 .hc-button--danger {
   background-color: var(--hc-button-danger);
   color: white;
@@ -116,9 +123,19 @@
 }
 
 .hc-button--danger:disabled {
+  background-color: var(--hc-button-danger-active);
+}
+
+.hc-button--danger:disabled {
+  background-color: var(--hc-button-disabled);
+  color: var(--hc-text-disabled);
+}
+
+/* Don't delete -- this looks good as an alternative */
+/* .hc-button--danger:disabled {
   background-color: #c3c6c9;
   color: #818283;
-}
+} */
 
 /*  */
 /*  */

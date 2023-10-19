@@ -92,8 +92,8 @@
 
     // Labels and hint text sizes
     --hc-font-fieldLabel-size: var(--hc-font-body-size-regular); /*18px*/
-    --hc-font-hint-size: var(--hc-font-body-size-small); /*16px*/
-    --hc-font-error-size: var(--hc-font-body-size-small); /*16px*/
+    --hc-font-hint-size: var(--hc-font-body-size-regular); /*18px*/
+    --hc-font-error-size: var(--hc-font-body-size-regular); /*18px*/
 
     // Line heights
     --hc-font-h1-lineHeight: 1.09;
@@ -153,7 +153,7 @@
     /* desktop Headings/H1 */
     display: block;
     font-family: var(--hc-font-family);
-    color: var(--text-primary);
+    color: var(--hc-text-primary);
     font-size: 32px;
     font-size: var(--hc-font-h1-size);
     font-style: normal;
@@ -168,20 +168,20 @@
     color: var(--text-primary, #171a1d);
 
     /*desktop  Headings/H2 */
-    font-family: var(--font-family);
-    font-size: var(--font-h2-size);
+    font-family: var(--hc-font-family);
+    font-size: var(--hc-font-h2-size);
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 2.4rem */
-    margin-bottom: var(--spacing-07);
+    margin-bottom: var(--hc-spacing-06);
   }
 
   h3 {
     color: var(--text-primary, #171a1d);
 
     /*desktop  Headings/H3 */
-    font-family: var(--font-family);
-    font-size: var(--font-h3-size);
+    font-family: var(--hc-font-family);
+    font-size: var(--hc-font-h3-size);
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 1.992rem */
@@ -192,8 +192,8 @@
     color: var(--text-primary, #171a1d);
 
     /*desktop  Headings/H4 */
-    font-family: var(--font-family);
-    font-size: var(--font-h4-size);
+    font-family: var(--hc-font-family);
+    font-size: var(--hc-font-h4-size);
     font-style: normal;
     font-weight: 700;
     line-height: 120%; /* 1.5rem */
@@ -204,7 +204,7 @@
     color: var(--text-primary, #171a1d);
 
     /*desktop  Headings/H5 */
-    font-family: var(--font-family);
+    font-family: var(--hc-font-family);
     font-size: var(--font-h5-size);
     font-style: normal;
     font-weight: 600;
@@ -215,7 +215,7 @@
     color: var(--text-primary, #171a1d);
 
     /*desktop  Headings/H6 */
-    font-family: var(--font-family);
+    font-family: var(--hc-font-family);
     font-size: var(--font-h6-size);
     font-style: normal;
     font-weight: 600;
@@ -226,7 +226,7 @@
     color: var(--text-primary, #171a1d);
 
     /*desktop Body/Body */
-    font-family: var(--font-family);
+    font-family: var(--hc-font-family);
     font-size: var(--font-body-regular);
     font-style: normal;
     font-weight: 400;
@@ -243,7 +243,7 @@
     color: var(--text-primary, #171a1d);
 
     /* Body/Body */
-    font-family: var(--font-family);
+    font-family: var(--hc-font-family);
     font-size: var(--font-fieldlabel-size);
     font-style: normal;
     font-weight: 600;
@@ -255,7 +255,7 @@
     color: var(--text-helper, #5c646d);
 
     /* Body/Body-Small */
-    font-family: var(--font-family);
+    font-family: var(--hc-font-family);
     font-size: var(--font-hint-size);
     font-style: normal;
     font-weight: 400;
@@ -266,7 +266,7 @@
     color: var(--text-error, #ef413d);
 
     /* Body/Body-Small */
-    font-family: var(--font-family);
+    font-family: var(--hc-font-family);
     font-size: var(--font-error-size);
     font-style: normal;
     font-weight: 400;

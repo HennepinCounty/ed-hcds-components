@@ -379,8 +379,8 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
     ); /*18px*/
     --hc-font-body-size-small: calc(var(--hc-font-size-base) * 1); /*16px*/
     --hc-font-fieldLabel-size: var(--hc-font-body-size-regular); /*18px*/
-    --hc-font-hint-size: var(--hc-font-body-size-small); /*16px*/
-    --hc-font-error-size: var(--hc-font-body-size-small); /*16px*/
+    --hc-font-hint-size: var(--hc-font-body-size-regular); /*18px*/
+    --hc-font-error-size: var(--hc-font-body-size-regular); /*18px*/
     --hc-font-h1-lineHeight: 1.09;
     --hc-font-h2-lineHeight: 1.15;
     --hc-font-h3-lineHeight: 1.3;
@@ -418,7 +418,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   /* desktop Headings/H1 */
   display: block;
   font-family: var(--hc-font-family);
-  color: var(--text-primary);
+  color: var(--hc-text-primary);
   font-size: 32px;
   font-size: var(--hc-font-h1-size);
   font-style: normal;
@@ -431,18 +431,18 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
 :root h2 {
   color: var(--text-primary, #171a1d);
   /*desktop  Headings/H2 */
-  font-family: var(--font-family);
-  font-size: var(--font-h2-size);
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-h2-size);
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 2.4rem */
-  margin-bottom: var(--spacing-07);
+  margin-bottom: var(--hc-spacing-06);
 }
 :root h3 {
   color: var(--text-primary, #171a1d);
   /*desktop  Headings/H3 */
-  font-family: var(--font-family);
-  font-size: var(--font-h3-size);
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-h3-size);
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 1.992rem */
@@ -451,8 +451,8 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
 :root h4 {
   color: var(--text-primary, #171a1d);
   /*desktop  Headings/H4 */
-  font-family: var(--font-family);
-  font-size: var(--font-h4-size);
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-h4-size);
   font-style: normal;
   font-weight: 700;
   line-height: 120%; /* 1.5rem */
@@ -461,7 +461,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
 :root h5 {
   color: var(--text-primary, #171a1d);
   /*desktop  Headings/H5 */
-  font-family: var(--font-family);
+  font-family: var(--hc-font-family);
   font-size: var(--font-h5-size);
   font-style: normal;
   font-weight: 600;
@@ -470,7 +470,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
 :root h6 {
   color: var(--text-primary, #171a1d);
   /*desktop  Headings/H6 */
-  font-family: var(--font-family);
+  font-family: var(--hc-font-family);
   font-size: var(--font-h6-size);
   font-style: normal;
   font-weight: 600;
@@ -479,7 +479,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
 :root p {
   color: var(--text-primary, #171a1d);
   /*desktop Body/Body */
-  font-family: var(--font-family);
+  font-family: var(--hc-font-family);
   font-size: var(--font-body-regular);
   font-style: normal;
   font-weight: 400;
@@ -493,7 +493,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
 :root .field-label {
   color: var(--text-primary, #171a1d);
   /* Body/Body */
-  font-family: var(--font-family);
+  font-family: var(--hc-font-family);
   font-size: var(--font-fieldlabel-size);
   font-style: normal;
   font-weight: 600;
@@ -503,7 +503,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
 :root .text-hint {
   color: var(--text-helper, #5c646d);
   /* Body/Body-Small */
-  font-family: var(--font-family);
+  font-family: var(--hc-font-family);
   font-size: var(--font-hint-size);
   font-style: normal;
   font-weight: 400;
@@ -512,7 +512,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
 :root .text-error {
   color: var(--text-error, #ef413d);
   /* Body/Body-Small */
-  font-family: var(--font-family);
+  font-family: var(--hc-font-family);
   font-size: var(--font-error-size);
   font-style: normal;
   font-weight: 400;
@@ -672,59 +672,67 @@ ol + .hc-heading-s,
 }
 
 .hc-gap-00 {
-  gap: var(--spacing-00);
+  gap: var(--hc-spacing-00);
 }
 
 .hc-gap-01 {
-  gap: var(--spacing-01);
+  gap: var(--hc-spacing-01);
 }
 
 .hc-gap-02 {
-  gap: var(--spacing-02);
+  gap: var(--hc-spacing-02);
 }
 
 .hc-gap-03 {
-  gap: var(--spacing-03);
+  gap: var(--hc-spacing-03);
 }
 
 .hc-gap-04 {
-  gap: var(--spacing-04);
+  gap: var(--hc-spacing-04);
 }
 
 .hc-gap-05 {
-  gap: var(--spacing-05);
+  gap: var(--hc-spacing-05);
 }
 
 .hc-gap-06 {
-  gap: var(--spacing-06);
+  gap: var(--hc-spacing-06);
 }
 
 .hc-gap-07 {
-  gap: var(--spacing-07);
+  gap: var(--hc-spacing-07);
 }
 
 .hc-gap-08 {
-  gap: var(--spacing-08);
+  gap: var(--hc-spacing-08);
 }
 
 .hc-gap-09 {
-  gap: var(--spacing-09);
+  gap: var(--hc-spacing-09);
 }
 
 .hc-gap-10 {
-  gap: var(--spacing-10);
+  gap: var(--hc-spacing-10);
 }
 
 .hc-gap-11 {
-  gap: var(--spacing-11);
+  gap: var(--hc-spacing-11);
 }
 
 .hc-gap-12 {
-  gap: var(--spacing-12);
+  gap: var(--hc-spacing-12);
 }
 
 .hc-gap-13 {
-  gap: var(--spacing-13);
+  gap: var(--hc-spacing-13);
+}
+
+.hc-flex {
+  display: flex;
+}
+
+.hc-flex-start {
+  justify-content: flex-start;
 }
 
 :root {
@@ -2540,12 +2548,12 @@ html {
   direction: ltr;
 }
 
-.hc-icon-size-regular {
-  font-size: 1.5rem; /* 16px */
+.hc-icon-size-small {
+  font-size: 1.125rem; /* 18px */
 }
 
-.hc-icon-size-small {
-  font-size: 1rem; /* 24px */
+.hc-icon-size-regular {
+  font-size: 1.5rem; /* 24px */
 }
 
 .hc-icon-size-large {
@@ -2561,13 +2569,16 @@ html {
 /*  */
 /*  */
 /*  */
+/* ======================== */
+/* ======================== */
 /* Primary button */
-.hc-button,
-.hc-button:hover,
-.hc-button:active,
-.hc-button:disabled {
+/* ======================== */
+/* ======================== */
+.hc-button {
+  --button-height: 38px;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   flex-direction: row;
   gap: var(--hc-spacing-02);
   font-family: var(--hc-font-family), "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -2578,23 +2589,20 @@ html {
   text-align: left;
   color: var(--hc-text-on-color);
   border-radius: var(--hc-border-radius-01, 2px);
-  border: 2px solid transparent;
-  margin: auto;
-  min-height: 44px;
-  min-width: 100%;
+  border: 2px solid var(--hc-transparent);
+  margin: 0;
+  height: var(--button-height);
   background-color: var(--hc-button-primary);
+  width: -moz-max-content;
+  width: max-content;
 }
 
 /* Desktop */
 /* this min-width probably needs to be adjusted */
-@media (min-width: 40.0625rem) {
-  .hc-button,
-  .hc-button:hover,
-  .hc-button:active,
-  .hc-button:disabled {
-    min-width: auto;
-  }
+.hc-button--large {
+  --button-height: 44px;
 }
+
 /* Focus styles */
 /* Focus should be defined once on the core button style so that it doesn't have to be repeated for the other variants */
 .hc-button:focus {
@@ -2602,11 +2610,7 @@ html {
   outline: 2px solid var(--hc-background-brand);
 }
 
-/* Background colors */
-.hc-button {
-  background-color: var(--hc-button-primary);
-}
-
+/* Background colors for */
 .hc-button:hover {
   background-color: var(--hc-button-primary-hover);
 }
@@ -2617,11 +2621,15 @@ html {
 
 .hc-button:disabled {
   background-color: var(--hc-button-disabled);
-  color: var(--text-disabled);
+  color: var(--hc-text-disabled);
 }
 
+/* ======================== */
+/* ======================== */
 /* Secondary button */
-.hc-secondary {
+/* ======================== */
+/* ======================== */
+.hc-button--secondary {
   background-color: var(--hc-white);
   color: var(--text-primary);
   border: 2px solid var(--hc-background-brand);
@@ -2629,30 +2637,35 @@ html {
 }
 
 /* Background colors */
-.hc-secondary:hover {
+.hc-button--secondary:hover {
   color: white;
   background-color: var(--hc-button-secondary-hover);
 }
 
-.hc-secondary:active {
+.hc-button--secondary:active {
   background-color: var(--hc-button-secondary-active);
 }
 
-.hc-secondary:focus {
-  background-color: #002852;
-  color: white;
-}
-
-.hc-secondary:disabled {
-  color: #c3c6c9;
-  background-color: white;
-  border-radius: 2px;
+/* focus for secondary -- commented out for now */
+.hc-button--secondary:disabled {
+  color: var(--hc-text-disabled);
+  background-color: var(--hc-white);
+  border-radius: var(--hc-border-radius-01);
   outline: auto;
   border: 2px solid #c3c6c9;
 }
 
+.hc-button--secondary:focus {
+  border: 2px solid var(--hc-white);
+  outline: 4px solid var(--hc-background-brand);
+}
+
+/* ======================== */
+/* ======================== */
 /* Danger button */
-.hc-danger {
+/* ======================== */
+/* ======================== */
+.hc-button--danger {
   background-color: var(--hc-button-danger);
   color: white;
   margin: auto;
@@ -2661,25 +2674,43 @@ html {
   border: 2px solid transparent;
 }
 
-.hc-danger:hover {
+.hc-button--danger:hover {
   background-color: var(--hc-button-danger-hover);
 }
 
-.hc-danger:active {
+.hc-button--danger:active {
   background-color: var(--hc-button-danger-active);
 }
 
-.hc-danger:disabled {
-  background-color: #c3c6c9;
-  color: #818283;
+.hc-button--danger:disabled {
+  background-color: var(--hc-button-danger-active);
 }
 
+.hc-button--danger:disabled {
+  background-color: var(--hc-button-disabled);
+  color: var(--hc-text-disabled);
+}
+
+/* Don't delete -- this looks good as an alternative */
+/* .hc-button--danger:disabled {
+  background-color: #c3c6c9;
+  color: #818283;
+} */
 /*  */
 /*  */
 /* Icons */
 /*  */
 /*  */
 /*  */
+/* Icon left */
+.hc-icon-left {
+  justify-content: flex-start;
+}
+
+.hc-icon-right {
+  justify-content: space-between;
+}
+
 .hc-closeIconBlue {
   background-image: url(material-symbols_close-rounded-blue.svg);
   height: 12px;
@@ -2707,15 +2738,15 @@ html {
   outline-offset: -2px;
 }
 
-.hc-secondary:hover .hc-closeIconBlue {
+.hc-button-secondary:hover .hc-closeIconBlue {
   background-image: url(material-symbols_close-rounded-white.svg);
   height: 12px;
   width: 12px;
 }
 
 .hc-primary:disabled .hc-closeIconWhite,
-.hc-secondary:disabled .hc-closeIconBlue,
-.hc-danger:disabled .hc-closeIconWhite {
+.hc-button-secondary:disabled .hc-closeIconBlue,
+.hc-button-danger:disabled .hc-closeIconWhite {
   background-image: url(material-symbols_close-rounded.svg);
   height: 12px;
   width: 12px;
@@ -2724,7 +2755,7 @@ html {
   outline-offset: -2px;
 }
 
-.hc-danger.hc-closeIconWhite {
+.hc-button-danger.hc-closeIconWhite {
   background-image: url(material-symbols_close-rounded-white.svg);
   height: 12px;
   width: 12px;
