@@ -282,9 +282,9 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   --hc-button-primary-hover: var(--hc-background-brand-hover);
   --hc-button-primary-active: var(--hc-background-brand-active);
   --hc-button-secondary: var(--hc-white);
-  --hc-button-secondary-border: var(--hc-cyan-70);
   --hc-button-secondary-hover: var(--hc-cyan-70);
   --hc-button-secondary-active: var(--hc-cyan-80);
+  --hc-button-secondary-border: var(--hc-cyan-70);
   --hc-button-danger: var(--hc-red-70);
   --hc-button-danger-hover: var(--hc-red-80);
   --hc-button-danger-active: var(--hc-red-90);
@@ -2607,7 +2607,7 @@ html {
 /* Focus should be defined once on the core button style so that it doesn't have to be repeated for the other variants */
 .hc-button:focus {
   border: 2px solid var(--hc-white);
-  outline: 2px solid var(--hc-background-brand);
+  outline: 3px solid var(--hc-background-brand);
 }
 
 /* Background colors for */
@@ -2653,11 +2653,6 @@ html {
   border-radius: var(--hc-border-radius-01);
   outline: auto;
   border: 2px solid #c3c6c9;
-}
-
-.hc-button--secondary:focus {
-  border: 2px solid var(--hc-white);
-  outline: 4px solid var(--hc-background-brand);
 }
 
 /* ======================== */

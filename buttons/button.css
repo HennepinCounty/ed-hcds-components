@@ -107,7 +107,7 @@
 /* ======================== */
 .hc-button--danger {
   background-color: var(--hc-button-danger);
-  color: white;
+  color: var(--hc-text-on-color);
   margin: auto;
   text-align: center;
   border-radius: 2px;
