@@ -469,8 +469,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   font-weight: 600;
   line-height: 150%; /* 1.5rem */
 }
-:root h6,
-:root .hc-heading-xs {
+:root h6 {
   color: var(--text-primary, #171a1d);
   /*desktop  Headings/H6 */
   font-family: var(--hc-font-family);
@@ -2578,10 +2577,9 @@ html {
 /* ======================== */
 /* ======================== */
 .hc-button {
-  --button-height: 38px;
   box-sizing: border-box;
   display: inline-flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   flex-direction: row;
   gap: var(--hc-spacing-02);
@@ -2595,16 +2593,14 @@ html {
   border-radius: var(--hc-border-radius-01, 2px);
   border: 2px solid var(--hc-transparent);
   margin: 0;
-  height: var(--button-height);
   background-color: var(--hc-button-primary);
   width: -moz-max-content;
   width: max-content;
+  padding: var(--hc-spacing-01) var(--hc-spacing-03);
 }
 
-/* Desktop */
-/* this min-width probably needs to be adjusted */
 .hc-button--large {
-  --button-height: 44px;
+  padding: var(--hc-spacing-01), var(--hc-spacing-03);
 }
 
 /* Focus styles */
@@ -2698,12 +2694,11 @@ html {
   background-color: #c3c6c9;
   color: #818283;
 } */
-/*  */
-/*  */
+/* ======================== */
+/* ======================== */
 /* Icons */
-/*  */
-/*  */
-/*  */
+/* ======================== */
+/* ======================== */
 /* Icon left */
 .hc-icon-left {
   justify-content: flex-start;

@@ -18,11 +18,10 @@
 .hc-button:hover,
 .hc-button:active,
 .hc-button:disabled  */ {
-  --button-height: 38px;
   box-sizing: border-box;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   flex-direction: row;
   gap: var(--hc-spacing-02);
   font-family: var(--hc-font-family), "Segoe UI", Tahoma, Geneva, Verdana,
@@ -31,20 +30,17 @@
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0em;
-  text-align: left;
   color: var(--hc-text-on-color);
   border-radius: var(--hc-border-radius-01, 2px);
   border: 2px solid var(--hc-transparent);
   margin: 0;
-  height: var(--button-height);
   background-color: var(--hc-button-primary);
   width: max-content;
+  padding: var(--hc-spacing-03) var(--hc-spacing-03);
 }
 
-/* Desktop */
-/* this min-width probably needs to be adjusted */
 .hc-button--large {
-  --button-height: 44px;
+  padding: var(--hc-spacing-04) var(--hc-spacing-05);
 }
 
 /* Focus styles */
@@ -142,12 +138,11 @@
   color: #818283;
 } */
 
-/*  */
-/*  */
+/* ======================== */
+/* ======================== */
 /* Icons */
-/*  */
-/*  */
-/*  */
+/* ======================== */
+/* ======================== */
 
 /* Icon left */
 .hc-icon-left {
