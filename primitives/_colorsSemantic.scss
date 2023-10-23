@@ -54,7 +54,9 @@
   --hc-button-danger-hover: var(--hc-red-80);
   --hc-button-danger-active: var(--hc-red-90);
   --hc-button-separator: var(--hc-gray-20);
-  --hc-button-border: var(--hc-cyan-70); // Might remove later
+  --hc-button-border: var(
+    --hc-cyan-70
+  ); // Might remove later or set to transparent or undefined
   --hc-button-disabled: var(--hc-background-disabled);
 
   // Divider

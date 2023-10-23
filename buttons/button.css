@@ -23,24 +23,29 @@
   align-items: center;
   justify-content: left;
   flex-direction: row;
+  text-align: left;
   gap: var(--hc-spacing-02);
   font-family: var(--hc-font-family), "Segoe UI", Tahoma, Geneva, Verdana,
     sans-serif;
-  font-size: var(--hc-font-body-size-regular, 1rem);
+  font-size: var(--hc-font-body-size-large, 1rem);
   font-weight: 400;
   line-height: 1;
-  letter-spacing: 0em;
+  letter-spacing: 0.02em;
   color: var(--hc-text-on-color);
   border-radius: var(--hc-border-radius-01, 2px);
   border: 2px solid var(--hc-transparent);
   margin: 0;
   background-color: var(--hc-button-primary);
   width: max-content;
-  padding: var(--hc-spacing-03) var(--hc-spacing-03);
+  /* height: 42px; */
+  padding: var(--hc-spacing-04) var(--hc-spacing-04);
+  vertical-align: top;
 }
 
 .hc-button--large {
-  padding: var(--hc-spacing-04) var(--hc-spacing-05);
+  line-height: 1;
+  height: 44;
+  /* padding: var(--hc-spacing-04) var(--hc-spacing-05); */
 }
 
 /* Focus styles */

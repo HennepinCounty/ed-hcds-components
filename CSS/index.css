@@ -291,7 +291,9 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   --hc-button-danger-hover: var(--hc-red-80);
   --hc-button-danger-active: var(--hc-red-90);
   --hc-button-separator: var(--hc-gray-20);
-  --hc-button-border: var(--hc-cyan-70);
+  --hc-button-border: var(
+    --hc-cyan-70
+  );
   --hc-button-disabled: var(--hc-background-disabled);
   --hc-divider-subtle: var(--hc-gray-30);
   --hc-divider-regular: var(--hc-gray-50);
@@ -2579,16 +2581,16 @@ html {
 .hc-button {
   box-sizing: border-box;
   display: inline-flex;
-  align-items: left;
-  justify-content: center;
+  align-items: center;
+  justify-content: left;
   flex-direction: row;
+  text-align: left;
   gap: var(--hc-spacing-02);
   font-family: var(--hc-font-family), "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: var(--hc-font-body-size-regular, 1rem);
+  font-size: var(--hc-font-body-size-large, 1rem);
   font-weight: 400;
   line-height: 1;
-  letter-spacing: 0em;
-  text-align: left;
+  letter-spacing: 0.02em;
   color: var(--hc-text-on-color);
   border-radius: var(--hc-border-radius-01, 2px);
   border: 2px solid var(--hc-transparent);
@@ -2596,11 +2598,15 @@ html {
   background-color: var(--hc-button-primary);
   width: -moz-max-content;
   width: max-content;
-  padding: var(--hc-spacing-01) var(--hc-spacing-03);
+  /* height: 42px; */
+  padding: var(--hc-spacing-04) var(--hc-spacing-04);
+  vertical-align: top;
 }
 
 .hc-button--large {
-  padding: var(--hc-spacing-01), var(--hc-spacing-03);
+  line-height: 1;
+  height: 44;
+  /* padding: var(--hc-spacing-04) var(--hc-spacing-05); */
 }
 
 /* Focus styles */
