@@ -649,6 +649,7 @@ ol + .hc-heading-s,
   }
 }
 :root {
+  --hc-shadow-style-focus: none;
   --focus-inset: 2px 0px 0px 0px var(--white) inset,
     -2px 0px 0px 0px var(--white) inset, 0px -2px 0px 0px var(--white) inset,
     0px 2px 0px 0px var(--white) inset,

@@ -13,11 +13,7 @@
 /* Primary button */
 /* ======================== */
 /* ======================== */
-.hc-button
-/* ,
-.hc-button:hover,
-.hc-button:active,
-.hc-button:disabled  */ {
+.hc-button {
   box-sizing: border-box;
   display: inline-flex;
   align-items: center;
@@ -53,6 +49,7 @@
 .hc-button:focus {
   border: var(--hc-border-style-focus);
   outline: var(--hc-outline-style-focus);
+  box-shadow: var(--hc-shadow-style-focus);
 
   /* commented out to test replacing with variables */
   /* 
