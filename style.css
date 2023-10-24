@@ -273,13 +273,6 @@ a.btn.disabled {
   .input-error {
     outline: 2px solid red;
   }
-  .error-msg{
-    color: red;
-  }
-  .result{
-    padding-top: 2%;
-    padding-bottom: 2%;
-  }
   .blk{
     display: block;
   }
