@@ -19,34 +19,35 @@
 
                     <div style="display: inline-block">
                         <label class="hc-label blk" for="month">Month</label>
-                        <input id="month" class="hc-input" name="month" onblur="checkInput('#month')"
+                        <input id="month" class="hc-input hc-input-sm" name="month" onblur="checkInput('#month')"
                             type="text" inputmode="numeric" 
                            maxlength="2">
                     </div>
 
                     <div style="display: inline-block">
                         <label class="hc-label blk" for="day">Day</label>
-                        <input id="day" class="hc-input" name="day" onblur="checkInput('#day')"
+                        <input id="day" class="hc-input hc-input-sm" name="day" onblur="checkInput('#day')"
                             type="text" inputmode="numeric" 
                            maxlength="2">
                     </div>
 
                     <div style="display: inline-block">
                         <label class="hc-label blk" for="year">Year</label>
-                        <input type="text" class="hc-input" name="year" onblur="checkInput('#year')"
+                        <input type="text" class="hc-input hc-input-md" name="year" onblur="checkInput('#year')"
                             minlength="4"  maxlength="4" 
                             id="year" inputmode="numeric"
                             >
                     </div>
                     
+                    <span>
+                        <button type="button" class="btn btn-primary" onclick="checkDOBirth()">Check DOB</button>
+                    </span>
                 </div>
                 <div class="result">
                     <p id="date"></p>
                     <p class="error-msg" id="err"> </p>
                 </div>
-                <div>
-                    <button type="button" class="btn btn-primary" onclick="checkDOBirth()">Check DOB</button>
-                </div>
+                
             </fieldset>
         </div>
     </body>

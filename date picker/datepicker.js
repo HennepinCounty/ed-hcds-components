@@ -64,6 +64,7 @@ function checkDOBirth() {
     let month = document.querySelector("#month").value;
     let year = document.querySelector("#year").value;
     let date = document.querySelector("#date");
+    date.innerHTML = "";
 
     let dob = month + '/' + day + '/' + year;
     let valDate = new Date(dob);
@@ -72,6 +73,8 @@ function checkDOBirth() {
 }
 
 function checkDay(input, id, errMsg) {
+  let date = document.querySelector("#date");
+  date.innerHTML = "";
   if(id === "day"){
     if (input > 31 || input < 1) {
       errMsg.innerHTML = id+" should be between 1 - 31";

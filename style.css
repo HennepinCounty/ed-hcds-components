@@ -283,3 +283,9 @@ a.btn.disabled {
   .blk{
     display: block;
   }
+  .hc-input-sm{
+    width: 50px;
+  }
+  .hc-input-md{
+    width: 80px;
+  }
