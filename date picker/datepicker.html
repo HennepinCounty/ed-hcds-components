@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HC Design datepicker</title>
-        <link rel="stylesheet" href="datepicker.css">
+        <link rel="stylesheet" href="/style.css">
         <script defer src="datepicker.js"></script>
     </head>
     <body>
@@ -14,25 +14,26 @@
             <legend>
                 <h1 class="">Provide your date of birth</h1>
             </legend>
-            <div id="hint">For example, 27 3 2007</div>
+            <div id="hint">For example, 3 27 2007</div>
                 <div id="passport-issued">
+
                     <div style="display: inline-block">
-                        <label style="display: block" for="day">Day</label>
-                        <input id="day" name="day" onblur="checkInput('#day')"
+                        <label class="hc-label blk" for="month">Month</label>
+                        <input id="month" class="hc-input" name="month" onblur="checkInput('#month')"
                             type="text" inputmode="numeric" 
                            maxlength="2">
                     </div>
 
                     <div style="display: inline-block">
-                        <label style="display: block" for="month">Month</label>
-                        <input id="month" name="month" onblur="checkInput('#month')"
+                        <label class="hc-label blk" for="day">Day</label>
+                        <input id="day" class="hc-input" name="day" onblur="checkInput('#day')"
                             type="text" inputmode="numeric" 
                            maxlength="2">
                     </div>
 
                     <div style="display: inline-block">
-                        <label style="display: block" for="year">Year</label>
-                        <input type="text" name="year" onblur="checkInput('#year')"
+                        <label class="hc-label blk" for="year">Year</label>
+                        <input type="text" class="hc-input" name="year" onblur="checkInput('#year')"
                             minlength="4"  maxlength="4" 
                             id="year" inputmode="numeric"
                             >
@@ -44,7 +45,7 @@
                     <p class="error-msg" id="err"> </p>
                 </div>
                 <div>
-                    <button type="button" onclick="checkDOBirth()">Check DOB</button>
+                    <button type="button" class="btn btn-primary" onclick="checkDOBirth()">Check DOB</button>
                 </div>
             </fieldset>
         </div>

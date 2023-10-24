@@ -268,3 +268,18 @@ a.btn.disabled {
   }
 
 /* -- End Modal Style-- */
+
+/* style for the datepicker design1 */
+  .input-error {
+    outline: 2px solid red;
+  }
+  .error-msg{
+    color: red;
+  }
+  .result{
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  .blk{
+    display: block;
+  }
