@@ -74,14 +74,14 @@ function checkDOBirth() {
 function checkDay(input, id, errMsg) {
   if(id === "day"){
     if (input > 31 || input < 0) {
-      errMsg.innerHTML = id+" shoul be between 1 - 31";
-      return 0;
+      errMsg.innerHTML = id+" should be between 1 - 31";
+      return "";
     }
   }
   if(id === "month"){
     if (input > 12 || input < 0) {
-      errMsg.innerHTML = id+" shoul be between 1 - 12";
-      return 0;
+      errMsg.innerHTML = id+" should be between 1 - 12";
+      return "";
     }
   }
 }
