@@ -73,13 +73,13 @@ function checkDOBirth() {
 
 function checkDay(input, id, errMsg) {
   if(id === "day"){
-    if (input > 31 || input < 0) {
+    if (input > 31 || input < 1) {
       errMsg.innerHTML = id+" should be between 1 - 31";
       return "";
     }
   }
   if(id === "month"){
-    if (input > 12 || input < 0) {
+    if (input > 12 || input < 1) {
       errMsg.innerHTML = id+" should be between 1 - 12";
       return "";
     }
