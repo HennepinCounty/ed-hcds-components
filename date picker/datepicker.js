@@ -4,7 +4,7 @@ function setInputFilter(textbox, inputFilter, errMsg) {
       if (inputFilter(this.value)) {
         // Accepted value.
         if ([ "keydown", "mousedown", "focusout" ].indexOf(e.type) >= 0){
-          this.classList.remove("input-error");
+          this.classList.remove("hc-input-error");
           this.setCustomValidity("");
         }
 
@@ -14,7 +14,7 @@ function setInputFilter(textbox, inputFilter, errMsg) {
       }
       else if (this.hasOwnProperty("oldValue")) {
         // Rejected value: restore the previous one.
-        this.classList.add("input-error");
+        this.classList.add("hc-input-error");
         this.setCustomValidity(errMsg);
         this.reportValidity();
         this.value = this.oldValue;
@@ -52,7 +52,6 @@ function checkInput(ev){
         document.querySelector(ev).value = input.toString();
         errMsg.innerHTML;
         document.querySelector(ev).focus();
-        //console.log(errMsg);
     }
     catch (Exception) { }
   }
