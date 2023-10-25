@@ -2565,6 +2565,14 @@ html {
   font-size: 2rem; /* 32px */
 }
 
+.hc-icon-left {
+  justify-content: flex-start;
+}
+
+.hc-icon-right {
+  justify-content: space-between;
+}
+
 /*  */
 /*  */
 /*  */
@@ -2580,41 +2588,50 @@ html {
 /* ======================== */
 /* ======================== */
 .hc-button {
-  box-sizing: border-box;
+  border: 2px solid var(--hc-transparent);
   display: inline-flex;
   align-items: center;
+  vertical-align: top;
   justify-content: left;
   flex-direction: row;
   text-align: left;
   gap: var(--hc-spacing-02);
   font-family: var(--hc-font-family), "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: var(--hc-font-body-size-large, 1rem);
+  font-size: var(--hc-font-body-size-regular, 1rem);
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0.02em;
   color: var(--hc-text-on-color);
-  border-radius: var(--hc-border-radius-01, 2px);
-  border: 2px solid var(--hc-transparent);
+  border-radius: var(--hc-border-radius-02, 2px);
   margin: 0;
   background-color: var(--hc-button-primary);
-  width: -moz-max-content;
-  width: max-content;
-  /* height: 42px; */
-  padding: var(--hc-spacing-04) var(--hc-spacing-04);
-  vertical-align: top;
+  height: 2.5rem;
+  padding-left: var(--hc-spacing-05);
+  padding-right: var(--hc-spacing-05);
+  /*  */
+  /* width: max-content; */
+}
+
+.hc-button--small {
+  font-size: var(--hc-font-body-size-small, 1rem);
+  height: 2.125rem;
+  padding-left: var(--hc-spacing-05);
+  padding-right: var(--hc-spacing-05);
 }
 
 .hc-button--large {
-  line-height: 1;
-  height: 44;
-  /* padding: var(--hc-spacing-04) var(--hc-spacing-05); */
+  font-size: var(--hc-font-body-size-large, 1rem);
+  height: 3rem;
+  padding-left: var(--hc-spacing-0);
+  padding-right: var(--hc-spacing-05);
 }
 
 /* Focus styles */
 /* Focus should be defined once on the core button style so that it doesn't have to be repeated for the other variants */
 .hc-button:focus {
-  border: var(--hc-border-style-focus);
+  /* border: var(--hc-border-style-focus); */
   outline: var(--hc-outline-style-focus);
+  /* box-shadow: var(--hc-shadow-style-focus); */
   /* commented out to test replacing with variables */
   /* 
   border: 2px solid var(--hc-white);
@@ -2675,8 +2692,6 @@ html {
   color: var(--hc-text-on-color);
   margin: auto;
   text-align: center;
-  border-radius: 2px;
-  border: 2px solid transparent;
 }
 
 .hc-button--danger:hover {
@@ -2706,15 +2721,63 @@ html {
 /* Icons */
 /* ======================== */
 /* ======================== */
-/* Icon left */
-.hc-icon-left {
-  justify-content: flex-start;
+/* Icon sizing and position stored in _icons.scss*/
+/* These below classes can probably all be deleted after they're replaced in the HTML */
+.hc-button.hc-button--icon-left {
+  padding-left: var(--hc-spacing-03);
 }
 
-.hc-icon-right {
-  justify-content: space-between;
+.hc-button.hc-button--icon-right {
+  padding-right: var(--hc-spacing-03);
 }
 
+.hc-button.hc-button--icon-only {
+  align-items: center;
+  justify-content: center;
+  padding-left: var(--hc-spacing-03);
+  padding-right: var(--hc-spacing-03);
+}
+
+/* .hc-button--small.hc-button--icon-only {
+  align-items: center;
+  justify-content: center;
+  padding-left: var(--hc-spacing-02);
+  padding-right: var(--hc-spacing-02);
+}
+
+.hc-button--large.hc-button--icon-only {
+  align-items: center;
+  justify-content: center;
+  padding-left: var(--hc-spacing-04);
+  padding-right: var(--hc-spacing-04);
+} */
+/*  
+reular
+padding: var(--hc-spacing-03) var(--hc-spacing-05);
+small
+  padding: var(--hc-spacing-02) var(--hc-spacing-03);
+lare
+  font-size: var(--hc-font-body-size-large, 1rem);
+ */
+/* .hc-button--small .hc-button--icon-left {
+  padding: ;
+}
+
+.hc-button--large .hc-button--icon-left {
+  padding: ;
+}
+
+.hc-button .hc-button--icon-right {
+  padding: ;
+}
+
+.hc-button--small .hc-button--icon-right {
+  padding: ;
+}
+
+.hc-button--large .hc-button--icon-right {
+  padding: ;
+} */
 .hc-closeIconBlue {
   background-image: url(material-symbols_close-rounded-blue.svg);
   height: 12px;
