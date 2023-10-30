@@ -15,7 +15,7 @@
   --hc-background-disabled: var(--hc-gray-20);
 
   // Support colors
-  --hc-support-error: var(--hc-red-60);
+  --hc-support-error: var(--hc-red-70);
   --hc-support-success: var(--hc-green-50);
   --hc-support-warning: var(--hc-yellow-30);
   --hc-support-info: var(--hc-blue-20);
@@ -37,10 +37,8 @@
   --hc-border-color-error: var(--hc-support-error);
   --hc-border-color-inverse: var(--hc-gray-90);
   --hc-border-color-transparent: var(--hc-transparent);
-  --hc-border-style-focus: 2px solid var(--hc-white);
 
   //Outline colors
-  --hc-outline-style-focus: 3px solid var(--hc-background-brand);
 
   // Button
   --hc-button-primary: var(--hc-background-brand);
@@ -54,9 +52,9 @@
   --hc-button-danger-hover: var(--hc-red-80);
   --hc-button-danger-active: var(--hc-red-90);
   --hc-button-separator: var(--hc-gray-20);
-  --hc-button-border: var(
-    --hc-cyan-70
-  ); // Might remove later or set to transparent or undefined
+  --hc-button-border: var(--hc-cyan-70);
+
+  // Might remove later or set to transparent or undefined
   --hc-button-disabled: var(--hc-background-disabled);
 
   // Divider

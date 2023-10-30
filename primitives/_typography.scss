@@ -148,7 +148,7 @@
 
 :root {
   h1 {
-    color: var(--text-primary, #171a1d);
+    color: var(--hc-text-primary, #171a1d);
 
     /* desktop Headings/H1 */
     display: block;
@@ -165,7 +165,7 @@
   }
 
   h2 {
-    color: var(--text-primary, #171a1d);
+    color: var(--hc-text-primary, #171a1d);
 
     /*desktop  Headings/H2 */
     font-family: var(--hc-font-family);
@@ -185,7 +185,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 1.992rem */
-    margin-bottom: var(--spacing-07);
+    margin-bottom: var(--hc-spacing-07);
   }
 
   h4 {
@@ -197,7 +197,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 120%; /* 1.5rem */
-    margin-bottom: var(--spacing-07);
+    margin-bottom: var(--hc-spacing-07);
   }
 
   h5 {
@@ -205,7 +205,7 @@
 
     /*desktop  Headings/H5 */
     font-family: var(--hc-font-family);
-    font-size: var(--font-h5-size);
+    font-size: var(--hc-font-h5-size);
     font-style: normal;
     font-weight: 600;
     line-height: 150%; /* 1.5rem */
@@ -216,18 +216,18 @@
 
     /*desktop  Headings/H6 */
     font-family: var(--hc-font-family);
-    font-size: var(--font-h6-size);
+    font-size: var(--hc-font-h6-size);
     font-style: normal;
     font-weight: 600;
     line-height: 120%; /* 1.02rem */
   }
 
   p {
-    color: var(--text-primary, #171a1d);
+    color: var(--hc-text-primary, #171a1d);
 
     /*desktop Body/Body */
     font-family: var(--hc-font-family);
-    font-size: var(--font-body-regular);
+    font-size: var(--hc-font-body-regular);
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 1.6875rem */
@@ -236,24 +236,25 @@
   }
 
   p + p {
-    margin-inline-start: var(--spacing-04);
+    margin-inline-start: var(--hc-spacing-04);
   }
 
-  .field-label {
-    color: var(--text-primary, #171a1d);
+  .hc-field-label {
+    display: block;
+    color: var(--hc-text-primary, #171a1d);
 
     /* Body/Body */
     font-family: var(--hc-font-family);
-    font-size: var(--font-fieldlabel-size);
+    font-size: var(--hc-font-fieldLabel-size);
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 130%; /* 1.6875rem */
-    letter-spacing: -0.01%;
+    letter-spacing: -0.01em;
   }
 
-  .text-hint {
-    color: var(--text-helper, #5c646d);
-
+  .hc-text-hint {
+    display: block;
+    color: var(--hc-text-helper, #5c646d);
     /* Body/Body-Small */
     font-family: var(--hc-font-family);
     font-size: var(--font-hint-size);
@@ -262,16 +263,16 @@
     line-height: 130%; /* 1.5rem */
   }
 
-  .text-error {
-    color: var(--text-error, #ef413d);
-
+  .hc-text-error {
+    display: block;
+    color: var(--hc-text-error, #ef413d);
     /* Body/Body-Small */
     font-family: var(--hc-font-family);
-    font-size: var(--font-error-size);
+    font-size: var(--hc-font-error-size);
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 1.5rem */
-    margin: var(--spacing-00);
+    margin: var(--hc-spacing-00);
   }
 }
 

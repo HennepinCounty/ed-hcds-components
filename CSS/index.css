@@ -258,7 +258,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   --hc-background-brand-inverse: var(--hc-blue-20);
   --hc-background-brand-alternate: var(--hc-blue-80);
   --hc-background-disabled: var(--hc-gray-20);
-  --hc-support-error: var(--hc-red-60);
+  --hc-support-error: var(--hc-red-70);
   --hc-support-success: var(--hc-green-50);
   --hc-support-warning: var(--hc-yellow-30);
   --hc-support-info: var(--hc-blue-20);
@@ -278,8 +278,6 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   --hc-border-color-error: var(--hc-support-error);
   --hc-border-color-inverse: var(--hc-gray-90);
   --hc-border-color-transparent: var(--hc-transparent);
-  --hc-border-style-focus: 2px solid var(--hc-white);
-  --hc-outline-style-focus: 3px solid var(--hc-background-brand);
   --hc-button-primary: var(--hc-background-brand);
   --hc-button-primary-hover: var(--hc-background-brand-hover);
   --hc-button-primary-active: var(--hc-background-brand-active);
@@ -324,6 +322,12 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   --hc-link-disabled: var(--hc-text-disabled);
   --hc-link-primary-hover: var(--hc-background-brand-hover);
   --hc-link-link-visited: var(--hc-purple-60);
+}
+
+:root {
+  --hc-height--small: 2.25rem;
+  --hc-height--medium: 2.5rem;
+  --hc-height--large: 3rem;
 }
 
 /*import for inter as font family placeholder*/
@@ -418,7 +422,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   }
 }
 :root h1 {
-  color: var(--text-primary, #171a1d);
+  color: var(--hc-text-primary, #171a1d);
   /* desktop Headings/H1 */
   display: block;
   font-family: var(--hc-font-family);
@@ -433,7 +437,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   -moz-osx-font-smoothing: grayscale;
 }
 :root h2 {
-  color: var(--text-primary, #171a1d);
+  color: var(--hc-text-primary, #171a1d);
   /*desktop  Headings/H2 */
   font-family: var(--hc-font-family);
   font-size: var(--hc-font-h2-size);
@@ -450,7 +454,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 1.992rem */
-  margin-bottom: var(--spacing-07);
+  margin-bottom: var(--hc-spacing-07);
 }
 :root h4 {
   color: var(--text-primary, #171a1d);
@@ -460,13 +464,13 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   font-style: normal;
   font-weight: 700;
   line-height: 120%; /* 1.5rem */
-  margin-bottom: var(--spacing-07);
+  margin-bottom: var(--hc-spacing-07);
 }
 :root h5 {
   color: var(--text-primary, #171a1d);
   /*desktop  Headings/H5 */
   font-family: var(--hc-font-family);
-  font-size: var(--font-h5-size);
+  font-size: var(--hc-font-h5-size);
   font-style: normal;
   font-weight: 600;
   line-height: 150%; /* 1.5rem */
@@ -475,16 +479,16 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   color: var(--text-primary, #171a1d);
   /*desktop  Headings/H6 */
   font-family: var(--hc-font-family);
-  font-size: var(--font-h6-size);
+  font-size: var(--hc-font-h6-size);
   font-style: normal;
   font-weight: 600;
   line-height: 120%; /* 1.02rem */
 }
 :root p {
-  color: var(--text-primary, #171a1d);
+  color: var(--hc-text-primary, #171a1d);
   /*desktop Body/Body */
   font-family: var(--hc-font-family);
-  font-size: var(--font-body-regular);
+  font-size: var(--hc-font-body-regular);
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 1.6875rem */
@@ -492,20 +496,22 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   max-width: 80ch;
 }
 :root p + p {
-  margin-inline-start: var(--spacing-04);
+  margin-inline-start: var(--hc-spacing-04);
 }
-:root .field-label {
-  color: var(--text-primary, #171a1d);
+:root .hc-field-label {
+  display: block;
+  color: var(--hc-text-primary, #171a1d);
   /* Body/Body */
   font-family: var(--hc-font-family);
-  font-size: var(--font-fieldlabel-size);
+  font-size: var(--hc-font-fieldLabel-size);
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 130%; /* 1.6875rem */
-  letter-spacing: -0.01%;
+  letter-spacing: -0.01em;
 }
-:root .text-hint {
-  color: var(--text-helper, #5c646d);
+:root .hc-text-hint {
+  display: block;
+  color: var(--hc-text-helper, #5c646d);
   /* Body/Body-Small */
   font-family: var(--hc-font-family);
   font-size: var(--font-hint-size);
@@ -513,15 +519,16 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   font-weight: 400;
   line-height: 130%; /* 1.5rem */
 }
-:root .text-error {
-  color: var(--text-error, #ef413d);
+:root .hc-text-error {
+  display: block;
+  color: var(--hc-text-error, #ef413d);
   /* Body/Body-Small */
   font-family: var(--hc-font-family);
-  font-size: var(--font-error-size);
+  font-size: var(--hc-font-error-size);
   font-style: normal;
   font-weight: 400;
   line-height: 130%; /* 1.5rem */
-  margin: var(--spacing-00);
+  margin: var(--hc-spacing-00);
 }
 
 /* ==================================================  */
@@ -674,6 +681,11 @@ ol + .hc-heading-s,
   --hc-border-radius-02: calc(var(--hc-border-radius-base) * 0.25); /*4px*/
   --hc-border-radius-03: calc(var(--hc-border-radius-base) * 0.5); /*8px*/
   --hc-border-radius-04: calc(var(--hc-border-radius-base) * 0.75); /*12px*/
+}
+
+:root {
+  --hc-border-style-focus: 2px solid var(--hc-white);
+  --hc-outline-style-focus: 3px solid var(--hc-background-brand);
 }
 
 .hc-gap-00 {
@@ -2605,31 +2617,29 @@ html {
   border-radius: var(--hc-border-radius-02, 2px);
   margin: 0;
   background-color: var(--hc-button-primary);
-  height: 2.5rem;
+  height: var(--hc-height--medium, 2.5rem);
   padding-left: var(--hc-spacing-05);
   padding-right: var(--hc-spacing-05);
-  /*  */
-  /* width: max-content; */
 }
 
 .hc-button--small {
   font-size: var(--hc-font-body-size-small, 1rem);
-  height: 2.125rem;
+  height: var(--hc-height--small, 2.25rem);
   padding-left: var(--hc-spacing-05);
   padding-right: var(--hc-spacing-05);
 }
 
 .hc-button--large {
   font-size: var(--hc-font-body-size-large, 1rem);
-  height: 3rem;
-  padding-left: var(--hc-spacing-0);
+  height: var(--hc-height--medium, 3rem);
+  padding-left: var(--hc-spacing-05);
   padding-right: var(--hc-spacing-05);
 }
 
 /* Focus styles */
 /* Focus should be defined once on the core button style so that it doesn't have to be repeated for the other variants */
 .hc-button:focus {
-  /* border: var(--hc-border-style-focus); */
+  border: var(--hc-border-style-focus);
   outline: var(--hc-outline-style-focus);
   /* box-shadow: var(--hc-shadow-style-focus); */
   /* commented out to test replacing with variables */
@@ -2738,7 +2748,7 @@ html {
   padding-right: var(--hc-spacing-03);
 }
 
-/* .hc-button--small.hc-button--icon-only {
+.hc-button--small.hc-button--icon-only {
   align-items: center;
   justify-content: center;
   padding-left: var(--hc-spacing-02);
@@ -2750,7 +2760,8 @@ html {
   justify-content: center;
   padding-left: var(--hc-spacing-04);
   padding-right: var(--hc-spacing-04);
-} */
+}
+
 /*  
 reular
 padding: var(--hc-spacing-03) var(--hc-spacing-05);

@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://www.hennepin.us/assets/css/main-branding.css?v=5.24"
     /> -->
+
     <link rel="stylesheet" href="../CSS/index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
@@ -18,8 +19,11 @@
     />
     <link rel="stylesheet" href="text-input.css" />
   </head>
-  <body>
-    <label class="hc-label" for="hc-id1">Label</label>
+  <body class="hc-padding-x-03" style="background-color: black">
+    <h1>hc-input</h1>
+
+    <h4>Default</h4>
+    <label class="hc-field-label" for="hc-id1">Label</label>
     <input
       class="hc-input"
       id="hc-id1"
@@ -28,8 +32,8 @@
       spellcheck="true"
     />
 
-    <span>User Input</span>
-    <label class="hc-label" for="hc-id2">Label</label>
+    <h4>User Input</h4>
+    <label class="hc-field-label" for="hc-id2">Label</label>
     <input
       class="hc-input"
       id="hc-id2"
@@ -38,8 +42,8 @@
       type="text"
     />
 
-    <span>Error</span>
-    <label class="hc-label" for="hc-id3">Label</label>
+    <h4>Error</h4>
+    <label class="hc-field-label" for="hc-id3">Label</label>
     <input
       class="hc-input-error"
       id="hc-id3"
@@ -47,10 +51,10 @@
       type="text"
       value="Input text"
     />
-    <div class="error-msg">Error Message</div>
+    <div class="hc-text-error">Error Message</div>
 
-    <span>Focus/Active</span>
-    <label class="hc-label" for="hc-id4">Label</label>
+    <h4>Focus/Active</h4>
+    <label class="hc-field-label" for="hc-id4">Label</label>
     <input
       class="hc-input"
       id="hc-id4"
@@ -60,26 +64,24 @@
       autofocus
     />
 
-    <span>Disabled</span>
-    <label class="hc-label disabled" for="hc-id5">Label</label>
+    <h4>Disabled</h4>
+    <label class="hc-field-label disabled" for="hc-id5">Label</label>
     <input class="hc-input" id="hc-id5" name="hc-name5" type="text" disabled />
 
     <h3 class="h3-underline">With helper text and label</h3>
-    <div class="hc-element">
-      <span>Placeholder</span>
-      <label class="hc-label" for="hc-id6">Label</label>
-      <div class="hc-helpertext">Helper text</div>
-      <input
-        class="hc-input"
-        id="hc-id6"
-        name="hc-name6"
-        type="text"
-        spellcheck="true"
-      />
-    </div>
+    <span>Placeholder</span>
+    <label class="hc-field-label" for="hc-id6">Label</label>
+    <div class="hc-helpertext">Helper text</div>
+    <input
+      class="hc-input"
+      id="hc-id6"
+      name="hc-name6"
+      type="text"
+      spellcheck="true"
+    />
     <div class="hc-element">
       <span>User Input</span>
-      <label class="hc-label" for="hc-id7">Label</label>
+      <label class="hc-field-label" for="hc-id7">Label</label>
       <div class="hc-helpertext">Helper text</div>
       <input
         class="hc-input"
@@ -91,7 +93,7 @@
     </div>
     <div class="hc-element">
       <span>Error</span>
-      <label class="hc-label" for="hc-id8">Label</label>
+      <label class="hc-field-label" for="hc-id8">Label</label>
       <div class="hc-helpertext">Helper text</div>
       <input
         class="hc-input-error"
@@ -100,11 +102,11 @@
         type="text"
         value="Input text"
       />
-      <div class="error-msg">Error Message</div>
+      <div class="hc-text-error">Error Message</div>
     </div>
     <div class="hc-element">
       <span>Focus/Active</span>
-      <label class="hc-label" for="hc-id9">Label</label>
+      <label class="hc-field-label" for="hc-id9">Label</label>
       <div class="hc-helpertext">Helper text</div>
       <input
         class="hc-input"
@@ -117,7 +119,7 @@
     </div>
     <div class="hc-element">
       <span>Disabled</span>
-      <label class="hc-label disabled" for="hc-id10">Label</label>
+      <label class="hc-field-label disabled" for="hc-id10">Label</label>
       <div class="hc-helpertext">Helper text</div>
       <input
         class="hc-input"

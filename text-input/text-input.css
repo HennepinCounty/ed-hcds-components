@@ -1,10 +1,3 @@
-/* don't need */
-.page-wrapper {
-  width: 30%;
-  /* margin-left: auto; */
-  margin-right: auto;
-}
-
 .hc-form-group {
   display: block;
   margin-bottom: 32px;
@@ -16,16 +9,16 @@
 
 /* Styling for label above text field */
 /* Set to display:block so that label is above the field */
-.hc-label {
+.hc-field-label {
   display: block;
-  font-family: "Segoe UI";
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0em;
-  padding: 0 !important;
-  margin-top: 10px;
-  color: #191d21;
+  color: var(--text-primary, #171a1d);
+  /* Body/Body */
+  font-family: var(--hc-font-family);
+  font-size: var(--font-fieldlabel-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 1.6875rem */
+  letter-spacing: -0.01%;
 }
 
 .hc-label:disabled {
@@ -35,7 +28,30 @@
 /* Styling for field */
 .hc-input {
   height: 38px;
-  border-radius: 2px !important;
+  border-radius: var(--hc-border-radius-02);
+  padding: var(--hc-spacing-03);
+  border: 2px solid var(--hc-border-color-strong);
+}
+
+.hc-input:focus {
+  /* outline-width: 2px;
+  outline-color: #0058a4;
+  outline-offset: 4px; */
+  /* outline: var(--hc-outline-style-focus); */
+  /* border: 2px solid #000000; */
+  border: var(--hc-border-style-focus);
+  outline-color: red;
+  outline-offset: 4px;
+}
+
+/* Text inside of input field */
+input.hc-input[type="text"] {
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-body-size-regular);
+  font-style: normal;
+  color: var(--text-primary, #171a1d);
+  font-weight: 400;
+  line-height: 100%;
 }
 
 /* error state for field, adds border */
@@ -46,22 +62,21 @@
   background: url(material-symbols_close-rounded.svg) no-repeat right;
   background-size: 30px;
 }
+input.hc-input-error[type="text"] {
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-body-size-regular);
+  font-style: normal;
+  color: var(--text-primary, #171a1d);
+  font-weight: 400;
+  line-height: 100%;
+}
 
 .hc-input-error:focus {
   outline-width: 0;
-  /* outline-color: #ce1432;
-    outline-offset: 2px; */
+  outline-color: #ce1432;
+  outline-offset: 2px;
   border: 2px solid #ce1432 !important;
   border-radius: 2px !important;
-  font-weight: normal;
-}
-
-.hc-input:focus {
-  outline-width: 2px;
-  outline-color: #0058a4;
-  outline-offset: 2px;
-  border: 2px solid #cfcfcf;
-  border-radius: 2px;
   font-weight: normal;
 }
 
