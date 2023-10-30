@@ -273,7 +273,8 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
     --hc-cyan-60
   );
   --hc-border-color-subtle: var(--hc-gray-20);
-  --hc-border-color-strong: var(--hc-gray-40);
+  --hc-border-color-regular: var(--hc-gray-50);
+  --hc-border-color-strong: var(--hc-gray-80);
   --hc-border-color-disabled: var(--hc-gray-30);
   --hc-border-color-error: var(--hc-support-error);
   --hc-border-color-inverse: var(--hc-gray-90);
@@ -289,13 +290,11 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   --hc-button-danger-hover: var(--hc-red-80);
   --hc-button-danger-active: var(--hc-red-90);
   --hc-button-separator: var(--hc-gray-20);
-  --hc-button-border: var(
-    --hc-cyan-70
-  );
+  --hc-button-border: var(--hc-cyan-70);
   --hc-button-disabled: var(--hc-background-disabled);
   --hc-divider-subtle: var(--hc-gray-30);
-  --hc-divider-regular: var(--hc-gray-50);
-  --hc-divider-strong: var(--hc-gray-80);
+  --hc-divider-regular: var(--hc-gray-70);
+  --hc-divider-strong: var(--hc-gray-90);
   --hc-icon-primary: var(--hc-gray-100);
   --hc-icon-secondary: var(--hc-gray-70);
   --hc-icon-on-color: var(--hc-white);
@@ -686,6 +685,8 @@ ol + .hc-heading-s,
 :root {
   --hc-border-style-focus: 2px solid var(--hc-white);
   --hc-outline-style-focus: 3px solid var(--hc-background-brand);
+  --hc-border-brand: 2px solid var(--hc-background-brand);
+  --hc-border-style-focus: 2px solid var(--hc-background-brand);
 }
 
 .hc-gap-00 {
@@ -750,6 +751,14 @@ ol + .hc-heading-s,
 
 .hc-flex-start {
   justify-content: flex-start;
+}
+
+.hc-flex-column {
+  flex-direction: column;
+}
+
+.hc-flex-row {
+  flex-direction: row;
 }
 
 :root {

@@ -32,7 +32,8 @@
     --hc-cyan-60
   ); //use for dark color in focus states
   --hc-border-color-subtle: var(--hc-gray-20);
-  --hc-border-color-strong: var(--hc-gray-40);
+  --hc-border-color-regular: var(--hc-gray-50);
+  --hc-border-color-strong: var(--hc-gray-80);
   --hc-border-color-disabled: var(--hc-gray-30);
   --hc-border-color-error: var(--hc-support-error);
   --hc-border-color-inverse: var(--hc-gray-90);
@@ -59,8 +60,8 @@
 
   // Divider
   --hc-divider-subtle: var(--hc-gray-30);
-  --hc-divider-regular: var(--hc-gray-50);
-  --hc-divider-strong: var(--hc-gray-80);
+  --hc-divider-regular: var(--hc-gray-70);
+  --hc-divider-strong: var(--hc-gray-90);
 
   // Icon colors
   --hc-icon-primary: var(--hc-gray-100);

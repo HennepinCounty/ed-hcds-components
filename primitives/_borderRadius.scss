@@ -1,4 +1,8 @@
 // Border radius / corner rounding
+
+// Use small radius for smaller elements like buttons
+// Use larger radius for larger elements like cards or containers
+
 :root {
   --hc-border-radius-base: 1rem;
 

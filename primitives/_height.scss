@@ -9,6 +9,14 @@
 // Table cells
 // Select / Dropdown / Combobox
 
+// These are sized with variables so that the different sized field/button/etc will line up neatly when placed horizontally next to each other
+
+// Heights are sized Small / Regular / Large
+
+// Small is meant to be used in dense or complex interfaces
+// Regular is meant to be used 90% of the time
+// Large is meant to be used on CTAs and mobile
+
 :root {
   --hc-height--small: 2.25rem;
   --hc-height--medium: 2.5rem;
