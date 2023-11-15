@@ -1,0 +1,94 @@
+<h1>Table</h1>
+
+<!--Start table-->
+<div>
+  <p-table
+    #dt1
+    [value]="tableExampleList"
+    [columns]="columns"
+    [responsive]="true"
+    id="tbl-TableExample"
+    styleClass="p-datatable-gridlines p-datatable-striped"
+    [paginator]="true"
+    [showCurrentPageReport]="true"
+    responsiveLayout="scroll"
+    currentPageReportTemplate="Showing {first} - {last} of {totalRecords}"
+    [rows]="10"
+    [totalRecords]="tableRowCount"
+    [globalFilterFields]="['Name', 'Description', 'SortOrder', 'Active']"
+    sortField="SortOrder"
+  >
+    <!--Start global table search-->
+    <ng-template pTemplate="caption">
+      <div class="p-display-fr">
+        <div class="p-input-icon-left p-float-r">
+          <label for="txt-search-bar" style="margin: 5px">Search:</label>
+          <span class="p-input-icon-left">
+            <i class="pi pi-search"></i>
+            <input
+              pInputText
+              type="text"
+              #searchFilter
+              id="txt-search-bar"
+              [(ngModel)]="searchBar"
+              (input)="dt1.filterGlobal($any($event.target).value, 'contains')"
+              (keydown.enter)="$event.preventDefault()"
+            />
+          </span>
+        </div>
+        <button
+          pButton
+          label="Clear"
+          aria-label="Clear search filter"
+          class="button-with-icon p-float-l ui-button-secondary"
+          icon="pi pi-filter-slash"
+          (click)="clear(dt1)"
+        ></button>
+      </div>
+    </ng-template>
+
+    <!--Edit button column / rest of columns (sortable) -->
+    <ng-template pTemplate="header" let-columns>
+      <tr>
+        <th class="one-action-icon">Action</th>
+        <th *ngFor="let col of columns" [pSortableColumn]="col.field">
+          {{ col.header }}
+          <p-sortIcon [field]="col.field"></p-sortIcon>
+        </th>
+      </tr>
+    </ng-template>
+
+    <!--Body of table -->
+    <ng-template
+      pTemplate="body"
+      let-rowData
+      let-rowIndex="rowIndex"
+      let-columns="columns"
+    >
+      <tr>
+        <td class="one-action-icon">
+          <button
+            #editBtn
+            pButton
+            type="button"
+            icon="pi pi-pencil"
+            class="button-with-icon"
+            aria-label="Edit table row"
+            title="Edit table row"
+            [attr.id]="'btn-EditTableExample' + rowData.ChildTraumaId"
+            alt="Edit"
+          ></button>
+        </td>
+        <td *ngFor="let col of columns">
+          <ng-template [ngIf]="col.field == 'snapshotDate'" [ngIfElse]="text">
+            {{
+              castDateToString(rowData[col.field]) | date : "MM/dd/yyyy"
+            }}</ng-template
+          >
+          <ng-template #text>{{ rowData[col.field] }}</ng-template>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+</div>
+<!--End table area-->

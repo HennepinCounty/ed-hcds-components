@@ -1,0 +1,181 @@
+<h1>Modal</h1>
+
+<!--Confirm modal open button-->
+<button
+  #btnModalExample
+  pButton
+  label="Confirm modal"
+  id="btn-ConfirmModal"
+  type="button"
+  (click)="onSubmit()"
+></button>
+
+<div style="margin-top: 2rem"></div>
+
+<!--Form modal open button-->
+<button
+  #btnModalForm
+  pButton
+  label="Validation form modal"
+  id="btn-FormModal"
+  type="button"
+  (click)="openFormModal()"
+></button>
+
+<!-- Are you sure you want to save popup  -->
+<p-confirmDialog
+  key="confirmModalExample"
+  #confirmModalExample
+  appendTo="body"
+  [baseZIndex]="999999"
+  id="dlg-confirmModalExample"
+>
+  <ng-template pTemplate="header">
+    <label class="p-dialog-title">Default confirm modal </label>
+  </ng-template>
+  <ng-template pTemplate="footer">
+    <button
+      type="button"
+      pButton
+      label="Cancel"
+      class="secondary-btn"
+      (click)="confirmModalExample.reject()"
+    ></button>
+    <button
+      type="button"
+      pButton
+      label="Save changes"
+      (click)="confirmModalExample.accept()"
+    ></button>
+  </ng-template>
+</p-confirmDialog>
+
+<!--Show form modal-->
+<p-dialog
+  [(visible)]="showFormModal"
+  [closable]="false"
+  [contentStyle]="{
+    'max-height': '600px',
+    'max-width': '835px',
+    'min-width': '835px',
+    'min-height': '400px',
+    'z-index': '99999',
+    appendTo: 'body'
+  }"
+  [modal]="true"
+  id="modal-ModalExample"
+  (keyup.esc)="closeFormModal()"
+  (onHide)="closeFormModal()"
+>
+  <!--Modal header-->
+  <ng-template
+    pTemplate="header"
+    style="padding-bottom: 5px"
+    id="hdr-ModalExample"
+    aria-labelledby="modal-ModalExample"
+  >
+    <p class="p-dialog-title" id="pr_id_7-label">Modal title</p>
+    <button
+      autofocus
+      id="btn-hdr-close"
+      class="p-dialog-header-icon p-dialog-header-close p-link p-ripple"
+      style="margin-left: auto"
+      aria-label="Close"
+      (click)="closeFormModal()"
+    >
+      <span class="p-dialog-header-close-icon pi pi-times"></span>
+    </button>
+  </ng-template>
+
+  <!--Initilize form for radio buttons / inputs -->
+  <form [formGroup]="formModalForm">
+    <div class="formgrid grid">
+      <!--Text input with helptext on bottom-->
+      <div class="field col">
+        <label for="firstname2" class="label-bold">Firstname</label>
+        <input
+          id="firstname2"
+          type="text"
+          class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+        />
+        <p>Helper text</p>
+      </div>
+      <!--Text input with helptext on top-->
+      <div class="field col">
+        <label for="lastname2" class="label-bold">Lastname</label>
+        <p>Helper text</p>
+        <input
+          id="lastname2"
+          type="text"
+          class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+        />
+      </div>
+    </div>
+
+    <div class="formgrid grid">
+      <!--Text input longer helptext -->
+      <div class="field col">
+        <label for="firstname2" class="label-bold">Firstname</label>
+        <input
+          id="firstname2"
+          type="text"
+          class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+        />
+        <p>Longer helper text, longer helper text, longer</p>
+      </div>
+      <!--Text input no helptext -->
+      <div class="field col">
+        <label for="lastname2" class="label-bold">Lastname</label>
+        <input
+          id="lastname2"
+          type="text"
+          class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+        />
+      </div>
+    </div>
+
+    <!--Radio button example-->
+    <div class="p-field p-grid">
+      <fieldset class="p-fieldset p-col-12">
+        <legend class="label-bold">
+          Group label <span class="alertAsterisk">&nbsp;*</span>
+        </legend>
+        <div class="p-col-6" style="margin-top: 7px">
+          <div class="ui-g-3">
+            <p-radioButton
+              name="radioExample"
+              [value]="1"
+              label="Yes"
+              formControlName="radioExample"
+              inputId="radioExampleYes"
+              class="p-field-radiobutton focus-container"
+              (keydown.enter)="$event.preventDefault()"
+            ></p-radioButton>
+          </div>
+          <div class="ui-g-3">
+            <p-radioButton
+              name="radioExample"
+              [value]="0"
+              label="No"
+              formControlName="radioExample"
+              inputId="radioExampleNo"
+              class="p-field-radiobutton focus-container"
+              (keydown.enter)="$event.preventDefault()"
+            ></p-radioButton>
+          </div>
+        </div>
+      </fieldset>
+      
+      <div style="margin-top: 16px; float: right">
+  
+        <button pButton type="button" type="button" class="secondary-btn"  label="Cancel" id="btn-SubmitReasonCancel" (click)="closeFormModal()">
+        </button>
+
+        <button pButton type="submit" style="margin-left: 16px" label="Save changes" id="btn-SubmitChildTrauma">
+        </button>
+
+      </div>
+
+    </div>
+  </form>
+</p-dialog>

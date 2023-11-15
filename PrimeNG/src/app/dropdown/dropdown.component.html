@@ -1,0 +1,18 @@
+<div>
+  <h1>Dropdown</h1>
+  <!--Initilize form for dropdown / inputs -->
+  <form [formGroup]="formDropdownForm">
+    <div class="formgrid grid">
+      <!--Dropdown -->
+      <div class="field col">
+        <label for="ColorOption" class="label-bold">Color</label><br />
+        <p-dropdown
+          [options]="colorOptions"
+          scrollHeight="350px"
+          inputId="ColorOption"
+          placeholder="Please select a color"
+        ></p-dropdown>
+      </div>
+    </div>
+  </form>
+</div>
