@@ -4,8 +4,8 @@
 }
 
 /*Headings and paragraph*/
-/* h2.hc-banner-h2,
-p.hc-banner-p {
+/* h2.hc-alert-heading,
+p.hc-alert-paragraph {
   font-size: 1rem;
   font-weight: normal;
   display: inline-block;
@@ -27,15 +27,15 @@ p.hc-banner-p {
   gap: var(--hc-spacing-08);
 }
 
-h2.hc-banner-h2 {
+h2.hc-alert-heading {
   font-size: var(--hc-font-h4-size);
-  font-weight: normal;
+  font-weight: 500;
   display: inline-block;
   margin-bottom: 0rem;
   color: var(--hc-white);
 }
 
-p.hc-banner-p {
+p.hc-alert-paragraph {
   font-size: var(--hc-font-body-size-regular);
   font-weight: normal;
   display: inline-block;
@@ -43,7 +43,7 @@ p.hc-banner-p {
   color: var(--hc-white);
 }
 
-/* .hc-alert > .hc-alert-content > h2.hc-banner-h2 {
+/* .hc-alert > .hc-alert-content > h2.hc-alert-heading {
   font-size: var(--hc-font-h4-size);
   font-weight: normal;
   display: inline-block;
@@ -51,7 +51,7 @@ p.hc-banner-p {
   color: white;
 }
 
-.hc-alert > .hc-alert-content > p.hc-banner-p {
+.hc-alert > .hc-alert-content > p.hc-alert-paragraph {
   font-size: var(--hc-font-body-size-regular);
   font-weight: normal;
   display: inline-block;
@@ -65,12 +65,12 @@ p.hc-banner-p {
 /* For now leaving all text as black or white and commenting the code out, but leaving it in the file in case we want to update the text to match field color */
 
 /* success heading styling */
-/* .hc-alert.hc-alert-success > .hc-alert-content > h2.hc-banner-h2 {
+/* .hc-alert.hc-alert-success > .hc-alert-content > h2.hc-alert-heading {
   color: var(--hc-green-90);
 } */
 
 /* success paragraph styling */
-/* .hc-alert.hc-alert-success > .hc-alert-content > p.hc-banner-p {
+/* .hc-alert.hc-alert-success > .hc-alert-content > p.hc-alert-paragraph {
   color: var(--hc-green-90);
 } */
 
@@ -84,11 +84,6 @@ p.hc-banner-p {
 /* Default styling for the close button */
 .hc-alert .hc-close {
   color: inherit;
-  display: flex;
-  align-items: center;
-  /* background-color: inherit; */
-  border-style: solid;
-  border-width: var(--hc-border-width-small);
   border-color: var(--hc-white);
 }
 
@@ -101,23 +96,23 @@ p.hc-banner-p {
 /* Success styling */
 .hc-alert-success {
   background-color: var(--hc-support-success);
-  color: black;
 }
 
 /* success heading styling */
-.hc-alert.hc-alert-success > .hc-alert-content > h2.hc-banner-h2 {
+.hc-alert.hc-alert-success > .hc-alert-content > h2.hc-alert-heading {
   color: var(--hc-black);
 }
 
 /* success paragraph styling */
-.hc-alert.hc-alert-success > .hc-alert-content > p.hc-banner-p {
+.hc-alert.hc-alert-success > .hc-alert-content > p.hc-alert-paragraph {
   color: var(--hc-black);
 }
 
 /* success close button styling */
 .hc-alert.hc-alert-success > .hc-close {
-  background-color: var(--hc-support-success);
+  color: var(--hc-black);
   border-color: var(--hc-black);
+  background-color: var(--hc-support-success);
 }
 .hc-alert.hc-alert-success > .hc-close:hover {
   background-color: var(--hc-support-success--hover);
@@ -129,35 +124,73 @@ p.hc-banner-p {
 /*Danger styling */
 .hc-alert-danger {
   background-color: var(--hc-support-error);
-  color: white;
+}
+
+/* Danger close button styling */
+.hc-alert.hc-alert-danger > .hc-close {
+  background-color: var(--hc-support-error);
+}
+.hc-alert.hc-alert-danger > .hc-close:hover {
+  background-color: var(--hc-support-error--hover);
+}
+.hc-alert.hc-alert-danger > .hc-close:active {
+  background-color: var(--hc-support-error--active);
 }
 
 /*Warning styling */
 .hc-alert-warning {
   background-color: var(--hc-support-warning);
-  color: black;
+}
+
+/* warning heading styling */
+.hc-alert.hc-alert-warning > .hc-alert-content > h2.hc-alert-heading {
+  color: var(--hc-black);
+}
+
+/* warning paragraph styling */
+.hc-alert.hc-alert-warning > .hc-alert-content > p.hc-alert-paragraph {
+  color: var(--hc-black);
+}
+
+/* Warning close button styling */
+.hc-alert.hc-alert-warning > .hc-close {
+  color: var(--hc-black);
+  background-color: var(--hc-support-warning);
+  border-color: var(--hc-black);
+}
+.hc-alert.hc-alert-warning > .hc-close:hover {
+  background-color: var(--hc-support-warning--hover);
+}
+.hc-alert.hc-alert-warning > .hc-close:active {
+  background-color: var(--hc-support-warning--active);
 }
 
 /*Info styling? We maybe can delete this one, Primary alert serves this purpose */
 .hc-alert-info {
-  background-color: #44c8f5;
-  color: black;
+  background-color: var(--hc-support-info);
 }
 
-/* backup of close button */
-/* .hc-alert .hc-close {
-  padding: 0.75rem 1.25rem;
-  color: inherit;
-  font-size: 0.9rem;
-  display: flex;
-  align-items: center;
-  background-color: inherit;
-  border-style: solid;
-  border-width: var(--hc-border-width-small);
-  border-color: var(--hc-black);
-} */
+/* info heading styling */
+.hc-alert.hc-alert-info > .hc-alert-content > h2.hc-alert-heading {
+  color: var(--hc-black);
+}
 
-/* .hc-alert .hc-close:hover,
-.hc-alert .hc-close:focus {
-  color: inherit;
-} */
+/* info paragraph styling */
+.hc-alert.hc-alert-info > .hc-alert-content > p.hc-alert-paragraph {
+  color: var(--hc-black);
+}
+
+/* info close button styling */
+.hc-alert.hc-alert-info > .hc-close {
+  color: var(--hc-black);
+  background-color: var(--hc-support-info);
+  border-color: var(--hc-black);
+}
+.hc-alert.hc-alert-info > .hc-close:hover {
+  color: var(--hc-white);
+  background-color: var(--hc-support-info--hover);
+}
+.hc-alert.hc-alert-info > .hc-close:active {
+  color: var(--hc-white);
+  background-color: var(--hc-support-info--active);
+}
