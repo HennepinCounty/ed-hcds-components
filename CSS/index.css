@@ -92,7 +92,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   overflow: hidden !important;
   clip: rect(0 0 0 0) !important;
   -webkit-clip-path: inset(50%) !important;
-  clip-path: inset(50%) !important;
+          clip-path: inset(50%) !important;
   border: 0 !important;
   /*
    For long content, line feeds are not interpreted as spaces and small width
@@ -118,7 +118,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   overflow: hidden !important;
   clip: rect(0 0 0 0) !important;
   -webkit-clip-path: inset(50%) !important;
-  clip-path: inset(50%) !important;
+          clip-path: inset(50%) !important;
   /*
   // For long content, line feeds are not interpreted as spaces and small width
   // causes content to wrap 1 word per line:
@@ -136,7 +136,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   overflow: visible !important;
   clip: auto !important;
   -webkit-clip-path: none !important;
-  clip-path: none !important;
+          clip-path: none !important;
   white-space: inherit !important;
 }
 
@@ -261,9 +261,9 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   --hc-support-error: var(--hc-red-70);
   --hc-support-error--hover: var(--hc-red-80);
   --hc-support-error--active: var(--hc-red-90);
-  --hc-support-success: var(--hc-green-40);
-  --hc-support-success--hover: var(--hc-green-30);
-  --hc-support-success--active: var(--hc-green-20);
+  --hc-support-success: var(--hc-green-50);
+  --hc-support-success--hover: var(--hc-green-40);
+  --hc-support-success--active: var(--hc-green-30);
   --hc-support-warning: var(--hc-yellow-30);
   --hc-support-warning--hover: var(--hc-yellow-40);
   --hc-support-warning--active: var(--hc-yellow-50);
@@ -274,8 +274,12 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   --hc-support-success-inverse: var(--hc-green-10);
   --hc-support-warning-inverse: var(--hc-yellow-80);
   --hc-support-info-inverse: var(--hc-blue-50);
-  --hc-border-color-focus-01: var(--hc-white);
-  --hc-border-color-focus-02: var(--hc-cyan-60);
+  --hc-border-color-focus-01: var(
+    --hc-white
+  );
+  --hc-border-color-focus-02: var(
+    --hc-cyan-60
+  );
   --hc-border-color-subtle: var(--hc-gray-20);
   --hc-border-color-regular: var(--hc-gray-50);
   --hc-border-color-strong: var(--hc-gray-80);
@@ -489,14 +493,13 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
 }
 :root p {
   color: var(--hc-text-primary, #171a1d);
-  /*desktop Body/Body */
   font-family: var(--hc-font-family);
-  font-size: var(--hc-font-body-regular);
+  font-size: var(--hc-font-body-size-regular);
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 1.6875rem */
   letter-spacing: -0.01125rem;
-  max-width: 80ch;
+  max-width: 90ch;
 }
 :root p + p {
   margin-inline-start: var(--hc-spacing-04);
@@ -1739,7 +1742,7 @@ html {
 }
 
 .hc-no-gutters > .col,
-.hc-no-gutters > [class*="col-"] {
+.hc-no-gutters > [class*=col-] {
   padding-right: 0;
   padding-left: 0;
 }
@@ -2622,8 +2625,7 @@ html {
   flex-direction: row;
   text-align: left;
   gap: var(--hc-spacing-02);
-  font-family: var(--hc-font-family), "Segoe UI", Tahoma, Geneva, Verdana,
-    sans-serif;
+  font-family: var(--hc-font-family), "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: var(--hc-font-body-size-regular, 1rem);
   font-weight: 400;
   line-height: 1;
@@ -2639,7 +2641,7 @@ html {
 
 .hc-button--small {
   font-size: var(--hc-font-body-size-small, 1rem);
-  height: 4;
+  height: var(--hc-height--small, 2.25rem);
   padding-left: var(--hc-spacing-03);
   padding-right: var(--hc-spacing-03);
 }
@@ -2853,4 +2855,4 @@ lare
   background-image: url(material-symbols_close-rounded-white.svg);
   height: 12px;
   width: 12px;
-} /*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */

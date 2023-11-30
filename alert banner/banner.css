@@ -1,18 +1,3 @@
-.hc-banner-body {
-  padding: 1rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/*Headings and paragraph*/
-/* h2.hc-alert-heading,
-p.hc-alert-paragraph {
-  font-size: 1rem;
-  font-weight: normal;
-  display: inline-block;
-  margin-bottom: 0rem;
-  color: white;
-} */
-
 /* Base styling for alerts */
 .hc-alert {
   padding: var(--hc-spacing-05);
@@ -30,49 +15,14 @@ p.hc-alert-paragraph {
 h2.hc-alert-heading {
   font-size: var(--hc-font-h4-size);
   font-weight: 500;
-  display: inline-block;
   margin-bottom: 0rem;
   color: var(--hc-white);
 }
 
+/* Needed to override color */
 p.hc-alert-paragraph {
-  font-size: var(--hc-font-body-size-regular);
-  font-weight: normal;
-  display: inline-block;
-  margin-bottom: 0rem;
   color: var(--hc-white);
 }
-
-/* .hc-alert > .hc-alert-content > h2.hc-alert-heading {
-  font-size: var(--hc-font-h4-size);
-  font-weight: normal;
-  display: inline-block;
-  margin-bottom: 0rem;
-  color: white;
-}
-
-.hc-alert > .hc-alert-content > p.hc-alert-paragraph {
-  font-size: var(--hc-font-body-size-regular);
-  font-weight: normal;
-  display: inline-block;
-  margin-bottom: 0rem;
-  color: white;
-} */
-
-/* overcomplicated way of styling text */
-/* might make sense for adding colors for various combos like hc-alert-error */
-/* This lets all text and content use the same class but still have different styling depending on the class of their parent container */
-/* For now leaving all text as black or white and commenting the code out, but leaving it in the file in case we want to update the text to match field color */
-
-/* success heading styling */
-/* .hc-alert.hc-alert-success > .hc-alert-content > h2.hc-alert-heading {
-  color: var(--hc-green-90);
-} */
-
-/* success paragraph styling */
-/* .hc-alert.hc-alert-success > .hc-alert-content > p.hc-alert-paragraph {
-  color: var(--hc-green-90);
-} */
 
 /* Different styling for alert types */
 .hc-alert-content {
