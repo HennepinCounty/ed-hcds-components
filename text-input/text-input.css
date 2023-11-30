@@ -33,7 +33,7 @@
   border: 2px solid var(--hc-border-color-regular);
 }
 
-/* Current issue -- Focus state IS applied but another state overrides it when a user is inputtin text and that border color needs to be overrriden, maybe inheritin from label style?? */
+/* Current issue -- Focus state IS applied but another state overrides it when a user is inputting text and that border color needs to be overrriden, maybe inheriting from label style?? */
 .hc-input:focus {
   /* outline-width: 2px;
   outline-color: #0058a4;
@@ -64,7 +64,10 @@ input.hc-input[type="text"] {
   border-radius: 3px !important;
   background: url(material-symbols_close-rounded.svg) no-repeat right;
   background-size: 30px;
+  padding: var(--hc-spacing-03);
 }
+
+/*Text entered into field*/
 input.hc-input-error[type="text"] {
   font-family: var(--hc-font-family);
   font-size: var(--hc-font-body-size-regular);
@@ -97,14 +100,4 @@ input.hc-input-error[type="text"] {
   color: #ce1432;
   font-size: 16px;
   width: 100%;
-}
-
-.hc-helpertext {
-  font-family: "Segoe UI";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0em;
-  padding: 0 !important;
-  color: #5c646d;
 }

@@ -254,13 +254,14 @@
 
   .hc-text-hint {
     display: block;
-    color: var(--hc-text-helper, #5c646d);
+    color: var(--hc-text-hint, #5c646d);
     /* Body/Body-Small */
     font-family: var(--hc-font-family);
     font-size: var(--font-hint-size);
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 1.5rem */
+    margin-bottom: var(--hc-spacing-02);
   }
 
   .hc-text-error {
