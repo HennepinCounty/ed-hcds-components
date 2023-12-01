@@ -147,7 +147,8 @@
 // ===========================================================================
 
 :root {
-  h1 {
+  h1,
+  .hc-heading-xl {
     color: var(--hc-text-primary, #171a1d);
 
     /* desktop Headings/H1 */
@@ -164,7 +165,8 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  h2 {
+  h2,
+  .hc-heading-l {
     color: var(--hc-text-primary, #171a1d);
 
     /*desktop  Headings/H2 */
@@ -176,7 +178,8 @@
     margin-bottom: var(--hc-spacing-06);
   }
 
-  h3 {
+  h3,
+  .hc-heading-m {
     color: var(--text-primary, #171a1d);
 
     /*desktop  Headings/H3 */
@@ -188,7 +191,8 @@
     margin-bottom: var(--hc-spacing-07);
   }
 
-  h4 {
+  h4,
+  .hc-heading-s {
     color: var(--text-primary, #171a1d);
 
     /*desktop  Headings/H4 */
@@ -200,7 +204,8 @@
     margin-bottom: var(--hc-spacing-07);
   }
 
-  h5 {
+  h5,
+  .hc-heading-xs {
     color: var(--text-primary, #171a1d);
 
     /*desktop  Headings/H5 */
@@ -211,7 +216,8 @@
     line-height: 150%; /* 1.5rem */
   }
 
-  h6 {
+  h6,
+  .hc-heading-xxs {
     color: var(--text-primary, #171a1d);
 
     /*desktop  Headings/H6 */
@@ -222,13 +228,37 @@
     line-height: 120%; /* 1.02rem */
   }
 
-  p {
+  p,
+  .hc-body,
+  .hc-body-m {
     color: var(--hc-text-primary, #171a1d);
     font-family: var(--hc-font-family);
     font-size: var(--hc-font-body-size-regular);
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 1.6875rem */
+    letter-spacing: -0.01125rem;
+    max-width: 90ch;
+  }
+
+  .hc-body-l {
+    color: var(--hc-text-primary, #171a1d);
+    font-family: var(--hc-font-family);
+    font-size: var(--hc-font-body-size-large);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.6875rem */
+    letter-spacing: -0.01125rem;
+    max-width: 90ch;
+  }
+
+  .hc-body-s {
+    color: var(--hc-text-primary, #171a1d);
+    font-family: var(--hc-font-family);
+    font-size: var(--hc-font-body-size-small);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 1.6875rem */
     letter-spacing: -0.01125rem;
     max-width: 90ch;
   }
@@ -308,6 +338,8 @@
 /* additional padding for combinations of headings and paragraphs  */
 /* ==================================================  */
 /* ==================================================  */
+
+// hc-headin-xl, hc-headin-xs, hc-headin-xxs need to be added to the below
 
 .hc-body-l + h2,
 .hc-body-lead + h2,

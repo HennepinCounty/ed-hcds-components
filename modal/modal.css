@@ -39,11 +39,6 @@
   transition: transform 0.3s ease-out;
   transform: translate(0, -50px);
 }
-@media (prefers-reduced-motion: reduce) {
-  .modal.fade .modal-dialog {
-    transition: none;
-  }
-}
 .modal.show .modal-dialog {
   transform: none;
 }
@@ -107,6 +102,12 @@
   .modal-dialog {
     max-width: 500px;
     margin: 1.75rem auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .modal.fade .modal-dialog {
+    transition: none;
   }
 }
 

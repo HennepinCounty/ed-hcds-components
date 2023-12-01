@@ -2,20 +2,32 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="../CSS/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="modal.css" />
+
     <script defer src="modal.js"></script>
   </head>
   <body>
     <div>
-      <button class="btn btn-primary" data-open-modal>Open new modal</button>
+      <!-- Replace with new button class -->
+      <button class="hc-button" data-open-modal>Open new modal</button>
     </div>
 
     <dialog data-modal>
       <div class="modal-content">
         <div class="modal-header">
-          <div class="h5 modal-title" id="exampleModalLabel">Modal title</div>
-          <button type="btn btn-primary" aria-label="Close" icon>
-            <span aria-hidden="true">X</span>
+          <h3 class="hc-margin-bottom-00">Modal title</h3>
+          <button
+            class="hc-button hc-button--small hc-button--icon-only"
+            aria-label="Close"
+            icon
+          >
+            <!-- Replace "add" with desired icon from material symbols library -->
+            <span class="material-symbols-outlined"> close </span>
           </button>
         </div>
         <div class="modal-body">
@@ -27,14 +39,16 @@
           </p>
         </div>
         <div class="modal-footer">
+          <!-- Replace with new button class -->
+          <!-- class="hc-button hc-button--secondary btn-outline-primary" -->
           <button
             type="button"
-            class="btn btn-outline-primary"
+            class="hc-button hc-button--secondary btn-outline-primary"
             data-close-modal
           >
             Close
           </button>
-          <button class="btn btn-primary">Save changes</button>
+          <button class="hc-button">Save changes</button>
         </div>
       </div>
     </dialog>
