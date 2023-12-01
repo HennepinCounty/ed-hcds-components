@@ -1,7 +1,16 @@
 /* -- Modal Style Here -- */
 
+/* center modal */
+/* Override this to position the modal elsewhere */
+dialog[open] {
+  display: block;
+  margin: auto;
+  max-width: 48rem;
+}
+
 /* Modal positioning */
-.modal {
+/* this class is unused and can be deleted */
+/* .modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,24 +20,86 @@
   height: 100%;
   overflow: hidden;
   outline: 0;
-}
+  margin: auto;
+} */
 
-/* Rename to modal-container (most parent modal wrapper)*/
+/* This class can probably be deleted */
+/*  */
 .modal-content {
-  position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  pointer-events: auto;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0;
-  outline: 0;
-  width: 400px;
-  min-width: auto;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--hc-spacing-05);
+  padding-right: var(--hc-spacing-07);
 }
 
+.modal-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: var(--hc-spacing-05);
+}
+
+.close {
+  padding: 1rem 1rem;
+  margin: -1rem -1rem -1rem auto;
+}
+
+/* This might not be needed depending on how things are groued */
+.modal-title {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* This positions the button-group on the right-hand side of the modal */
+
+/* Not sure what this does, I think it makes the modal window scrollable if content is vertically very large but not totally sure */
+/* It's not used in the html, not sure what to do with this */
+/* .modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+} */
+
+/* Think this can be deleted*/
+/* @media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 500px;
+    margin: 1.75rem auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .modal.fade .modal-dialog {
+    transition: none;
+  } 
+}
+*/
+/* -- End Modal Style-- */
+
+/* This doesn't work */
+/* Not sure if JS or CSS issue*/
+/* ::backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+}
+.modal-backdrop.fade {
+  opacity: 0;
+}
+.modal-backdrop.show {
+  opacity: 0.5;
+} */
+
+/* I think this can all be deleted, but not sure if it's related to the backdrop */
+/* 
 .modal-dialog {
   position: relative;
   width: auto;
@@ -41,93 +112,4 @@
 }
 .modal.show .modal-dialog {
   transform: none;
-}
-
-/* This class can probably be deleted */
-/*  */
-.modal-header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 1rem 1rem;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  margin: 0;
-}
-
-.modal-header .close {
-  padding: 1rem 1rem;
-  margin: -1rem -1rem -1rem auto;
-}
-
-/* This might not be needed depending on how things are groued */
-.modal-title {
-  margin: 0;
-  line-height: 1.5;
-}
-
-/* This can be reworked into a modal-slot for contents to be added to modal. Needs gap */
-.modal-body {
-  position: relative;
-  flex: 1 1 auto;
-  padding: 1rem;
-}
-
-/* This positions the button-group on the right-hand side of the modal */
-.modal-footer {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 0.75rem;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-/* I think this can be removed? Or renamed to modal-section? I think right now all this does is add extra paddin to the bottom of the modal, that could be done on modal-container  */
-.modal-footer > * {
-  margin: 0.25rem;
-}
-
-/* Not sure what this does, I think it makes the modal window scrollable if content is vertically very large but not totally sure */
-.modal-scrollbar-measure {
-  position: absolute;
-  top: -9999px;
-  width: 50px;
-  height: 50px;
-  overflow: scroll;
-}
-
-@media (min-width: 576px) {
-  .modal-dialog {
-    max-width: 500px;
-    margin: 1.75rem auto;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .modal.fade .modal-dialog {
-    transition: none;
-  }
-}
-
-/* -- End Modal Style-- */
-
-/* This doesn't work */
-/* JS needs to be redone I think */
-/* .modal-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1040;
-    width: 100vw;
-    height: 100vh;
-    background-color: #000;
-  }
-  .modal-backdrop.fade {
-    opacity: 0;
-  }
-  .modal-backdrop.show {
-    opacity: 0.5;
-  }
-   */
+} */

@@ -3,8 +3,14 @@
   margin-bottom: 32px;
 }
 
-.hc-element {
-  margin-top: 20px;
+.hc-form-element {
+  margin-top: 1.2rem;
+}
+
+.hc-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--hc-spacing-03);
 }
 
 /* Styling for label above text field */

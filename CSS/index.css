@@ -291,9 +291,11 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   --hc-button-primary-hover: var(--hc-background-brand-hover);
   --hc-button-primary-active: var(--hc-background-brand-active);
   --hc-button-secondary: var(--hc-white);
-  --hc-button-secondary-hover: var(--hc-cyan-70);
-  --hc-button-secondary-active: var(--hc-cyan-80);
+  --hc-button-secondary-hover: var(--hc-background-brand);
+  --hc-button-secondary-active: var(--hc-background-brand-active);
   --hc-button-secondary-border: var(--hc-cyan-70);
+  --hc-button-secondary-border-hover: var(--hc-background-brand);
+  --hc-button-secondary-border-active: var(--hc-background-brand-active);
   --hc-button-danger: var(--hc-red-70);
   --hc-button-danger-hover: var(--hc-red-80);
   --hc-button-danger-active: var(--hc-red-90);
@@ -2602,6 +2604,7 @@ html {
 /* ======================== */
 /* ======================== */
 .hc-button {
+  box-sizing: border-box;
   border: 2px solid var(--hc-transparent);
   display: inline-flex;
   align-items: center;
@@ -2614,7 +2617,6 @@ html {
   font-size: var(--hc-font-body-size-regular, 1rem);
   font-weight: 400;
   line-height: 1;
-  letter-spacing: 0.02em;
   color: var(--hc-text-on-color);
   border-radius: var(--hc-border-radius-02, 2px);
   margin: 0;
@@ -2670,20 +2672,25 @@ html {
 /* ======================== */
 /* ======================== */
 .hc-button--secondary {
-  background-color: var(--hc-transparent);
+  box-sizing: border-box;
+  background-color: var(--hc-white);
   color: var(--text-primary);
-  border: 2px solid var(--hc-background-brand);
+  border: 2px solid var(--hc-button-secondary-border);
 }
 
 /* Background colors */
 .hc-button--secondary:hover {
+  box-sizing: border-box;
   color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-hover);
+  border: 2px solid var(--hc-button-secondary-border-hover);
 }
 
 .hc-button--secondary:active {
+  box-sizing: border-box;
   color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-active);
+  border: 2px solid var(--hc-button-secondary-border-active);
 }
 
 /* focus for secondary -- commented out for now */
@@ -2764,34 +2771,8 @@ html {
   padding-right: var(--hc-spacing-04);
 }
 
-/*  
-reular
-padding: var(--hc-spacing-03) var(--hc-spacing-05);
-small
-  padding: var(--hc-spacing-02) var(--hc-spacing-03);
-lare
-  font-size: var(--hc-font-body-size-large, 1rem);
- */
-/* .hc-button--small .hc-button--icon-left {
-  padding: ;
-}
-
-.hc-button--large .hc-button--icon-left {
-  padding: ;
-}
-
-.hc-button .hc-button--icon-right {
-  padding: ;
-}
-
-.hc-button--small .hc-button--icon-right {
-  padding: ;
-}
-
-.hc-button--large .hc-button--icon-right {
-  padding: ;
-} */
-/* The below can all be deleted and is no loner in use -- double check and then delete */
+/* The below can all be deleted and is no longer in use -- double check and then delete */
+/* 
 .hc-closeIconBlue {
   background-image: url(material-symbols_close-rounded-blue.svg);
   height: 12px;
@@ -2840,4 +2821,12 @@ lare
   background-image: url(material-symbols_close-rounded-white.svg);
   height: 12px;
   width: 12px;
+} */
+.button-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--hc-spacing-03);
 }/*# sourceMappingURL=index.css.map */

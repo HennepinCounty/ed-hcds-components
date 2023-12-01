@@ -54,9 +54,11 @@
   --hc-button-primary-hover: var(--hc-background-brand-hover);
   --hc-button-primary-active: var(--hc-background-brand-active);
   --hc-button-secondary: var(--hc-white);
-  --hc-button-secondary-hover: var(--hc-cyan-70);
-  --hc-button-secondary-active: var(--hc-cyan-80);
+  --hc-button-secondary-hover: var(--hc-background-brand);
+  --hc-button-secondary-active: var(--hc-background-brand-active);
   --hc-button-secondary-border: var(--hc-cyan-70);
+  --hc-button-secondary-border-hover: var(--hc-background-brand);
+  --hc-button-secondary-border-active: var(--hc-background-brand-active);
   --hc-button-danger: var(--hc-red-70);
   --hc-button-danger-hover: var(--hc-red-80);
   --hc-button-danger-active: var(--hc-red-90);

@@ -13,43 +13,87 @@
   </head>
   <body>
     <div>
-      <!-- Replace with new button class -->
+      <!-- button to launch modal -->
       <button class="hc-button" data-open-modal>Open new modal</button>
     </div>
 
+    <!-- dialog element is actual modal in semantic html -->
     <dialog data-modal>
+      <!-- container for all modal content -->
+
+      <!-- container for header and button -->
+      <div class="modal-header">
+        <h3 class="hc-margin-bottom-00">Modal title</h3>
+        <!-- Icon close button -->
+        <button
+          class="hc-button hc-button--small hc-button--icon-only"
+          aria-label="Close"
+          icon
+        >
+          <!-- Replace "add" with desired icon from material symbols library -->
+          <span class="material-symbols-outlined"> close </span>
+        </button>
+      </div>
       <div class="modal-content">
-        <div class="modal-header">
-          <h3 class="hc-margin-bottom-00">Modal title</h3>
-          <button
-            class="hc-button hc-button--small hc-button--icon-only"
-            aria-label="Close"
-            icon
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+
+        <div class="hc-form-element">
+          <label class="hc-field-label" for="hc-id1"
+            >Example input field 1</label
           >
-            <!-- Replace "add" with desired icon from material symbols library -->
-            <span class="material-symbols-outlined"> close </span>
-          </button>
+          <input
+            class="hc-input"
+            id="hc-id1"
+            name="hc-name1"
+            type="text"
+            spellcheck="true"
+          />
         </div>
-        <div class="modal-body">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-        <div class="modal-footer">
-          <!-- Replace with new button class -->
-          <!-- class="hc-button hc-button--secondary btn-outline-primary" -->
-          <button
-            type="button"
-            class="hc-button hc-button--secondary btn-outline-primary"
-            data-close-modal
+        <div class="hc-form-element">
+          <label class="hc-field-label" for="hc-id1"
+            >Example input field 2</label
           >
-            Close
-          </button>
-          <button class="hc-button">Save changes</button>
+          <input
+            class="hc-input"
+            id="hc-id1"
+            name="hc-name1"
+            type="text"
+            spellcheck="true"
+          />
         </div>
+        <div class="hc-form-element">
+          <label class="hc-field-label" for="hc-id1"
+            >Example input field 3</label
+          >
+          <input
+            class="hc-input"
+            id="hc-id1"
+            name="hc-name1"
+            type="text"
+            spellcheck="true"
+          />
+        </div>
+      </div>
+
+      <div class="button-group">
+        <!-- Replace with new button class -->
+        <!-- class="hc-button hc-button--secondary btn-outline-primary" -->
+
+        <!-- Close button -->
+        <button
+          type="button"
+          class="hc-button hc-button--secondary btn-outline-primary"
+          data-close-modal
+        >
+          Close
+        </button>
+        <!-- Save button -->
+        <button class="hc-button">Save changes</button>
       </div>
     </dialog>
   </body>

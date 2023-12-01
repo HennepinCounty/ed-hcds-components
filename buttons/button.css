@@ -14,6 +14,7 @@
 /* ======================== */
 /* ======================== */
 .hc-button {
+  box-sizing: border-box;
   border: 2px solid var(--hc-transparent);
   display: inline-flex;
   align-items: center;
@@ -84,20 +85,25 @@
 /* ======================== */
 
 .hc-button--secondary {
-  background-color: var(--hc-transparent);
+  box-sizing: border-box;
+  background-color: var(--hc-white);
   color: var(--text-primary);
-  border: 2px solid var(--hc-background-brand);
+  border: 2px solid var(--hc-button-secondary-border);
 }
 
 /* Background colors */
 .hc-button--secondary:hover {
+  box-sizing: border-box;
   color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-hover);
+  border: 2px solid var(--hc-button-secondary-border-hover);
 }
 
 .hc-button--secondary:active {
+  box-sizing: border-box;
   color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-active);
+  border: 2px solid var(--hc-button-secondary-border-active);
 }
 
 /* focus for secondary -- commented out for now */
@@ -183,7 +189,7 @@
 }
 
 /* The below can all be deleted and is no longer in use -- double check and then delete */
-
+/* 
 .hc-closeIconBlue {
   background-image: url(material-symbols_close-rounded-blue.svg);
   height: 12px;
@@ -232,4 +238,13 @@
   background-image: url(material-symbols_close-rounded-white.svg);
   height: 12px;
   width: 12px;
+} */
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--hc-spacing-03);
 }

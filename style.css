@@ -1,4 +1,4 @@
-.page-wrapper {
+/* .page-wrapper {
   width: 98%;
   margin-left: auto;
   margin-right: auto;
@@ -13,8 +13,8 @@
   padding: 0 !important;
   margin-top: 20px;
   display: block; /* added to display label at the top */
-}
-
+/* }  */
+/* 
 .hc-label:disabled {
   color: #ccc;
 }
@@ -30,17 +30,17 @@
   border-radius: 3px !important;
   background: url(material-symbols_close-rounded.svg) no-repeat right;
   background-size: 30px;
-}
+} */
 
-.hc-input-error:focus {
+/* .hc-input-error:focus {
   outline-width: 0;
-  /* outline-color: #ce1432;
-    outline-offset: 2px; */
+   outline-color: #ce1432;
+    outline-offset: 2px; 
   border: 2px solid #ce1432 !important;
   border-radius: 2px !important;
   font-weight: normal;
-}
-
+} */
+/* 
 .hc-input:focus {
   outline-width: 2px;
   outline-color: #0058a4;
@@ -73,9 +73,9 @@
   line-height: 24px;
   letter-spacing: 0em;
   padding: 0 !important;
-}
+} */
 /* Button style */
-.btn {
+/* .btn {
   display: inline-block;
   font-weight: 400;
   color: #000;
@@ -147,10 +147,10 @@ a.btn.disabled {
   background-color: #44c8f5;
   border-color: #000;
   color: #000;
-}
+} */
 
 /* -- Modal Style Here -- */
-
+/* 
 .modal {
   position: fixed;
   top: 0;
@@ -257,6 +257,6 @@ a.btn.disabled {
     max-width: 500px;
     margin: 1.75rem auto;
   }
-}
+} */
 
 /* -- End Modal Style-- */
