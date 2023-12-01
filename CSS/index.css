@@ -504,6 +504,25 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
 :root p + p {
   margin-inline-start: var(--hc-spacing-04);
 }
+:root a,
+:root a:link {
+  color: var(--hc-link-primary);
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-body-size-regular);
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-thickness: max(1px, 0.0625rem);
+  text-underline-offset: 0.1578em;
+}
+:root a:hover {
+  color: var(--hc-link-primary-hover);
+}
+:root a:visited {
+  color: var(--hc-link-link-visited);
+}
+:root a:disabled {
+  color: var(--hc-link-disabled);
+}
 :root .hc-field-label {
   display: block;
   color: var(--hc-text-primary, #171a1d);

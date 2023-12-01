@@ -237,6 +237,30 @@
     margin-inline-start: var(--hc-spacing-04);
   }
 
+  a,
+  a:link {
+    color: var(--hc-link-primary);
+    font-family: var(--hc-font-family);
+    font-size: var(--hc-font-body-size-regular);
+    font-weight: 400;
+    text-decoration: underline;
+    text-decoration-thickness: max(1px, 0.0625rem);
+    text-underline-offset: 0.1578em;
+    // decoration thickness and underline offset values taken from govuk as sensible defaults for link styling
+  }
+
+  a:hover {
+    color: var(--hc-link-primary-hover);
+  }
+
+  a:visited {
+    color: var(--hc-link-link-visited);
+  }
+
+  a:disabled {
+    color: var(--hc-link-disabled);
+  }
+
   .hc-field-label {
     display: block;
     color: var(--hc-text-primary, #171a1d);
