@@ -13,12 +13,6 @@
   outline: 0;
 }
 
-/* Merge with modal-content */
-.modal-width {
-  width: 400px;
-  min-width: auto;
-}
-
 /* Rename to modal-container (most parent modal wrapper)*/
 .modal-content {
   position: relative;
@@ -31,6 +25,8 @@
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0;
   outline: 0;
+  width: 400px;
+  min-width: auto;
 }
 
 .modal-dialog {
@@ -68,15 +64,21 @@
   padding: 1rem 1rem;
   margin: -1rem -1rem -1rem auto;
 }
+
+/* This might not be needed depending on how things are groued */
 .modal-title {
   margin: 0;
   line-height: 1.5;
 }
+
+/* This can be reworked into a modal-slot for contents to be added to modal. Needs gap */
 .modal-body {
   position: relative;
   flex: 1 1 auto;
   padding: 1rem;
 }
+
+/* This positions the button-group on the right-hand side of the modal */
 .modal-footer {
   display: flex;
   flex-wrap: wrap;
@@ -86,9 +88,13 @@
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
+
+/* I think this can be removed? Or renamed to modal-section? I think right now all this does is add extra paddin to the bottom of the modal, that could be done on modal-container  */
 .modal-footer > * {
   margin: 0.25rem;
 }
+
+/* Not sure what this does, I think it makes the modal window scrollable if content is vertically very large but not totally sure */
 .modal-scrollbar-measure {
   position: absolute;
   top: -9999px;
@@ -107,6 +113,7 @@
 /* -- End Modal Style-- */
 
 /* This doesn't work */
+/* JS needs to be redone I think */
 /* .modal-backdrop {
     position: fixed;
     top: 0;
