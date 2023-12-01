@@ -63,4 +63,16 @@
   padding-left: 48px;
   text-indent: -40px;
 }
+/* Styling for disabled checkboxes */
+
+.hc-checkbox-input[aria-disabled="true"] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.hc-checkbox-input[type="checkbox"][aria-disabled="true"]:checked {
+    background-color: #6c757d; 
+  }
+
+
 

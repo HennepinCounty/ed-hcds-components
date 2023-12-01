@@ -3,7 +3,8 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="checkbox.css" />
+    <link rel="stylesheet" href="Checkbox.css" />
+    <script src="Checkbox.js" defer></script>
   </head>
 
   <body class="hc-checkbox-body">
@@ -31,8 +32,8 @@
       <!-- disabled state -->
       <div class="hc-checkbox-padding">
         <label class="hc-checkbox-label">
-          <input type="checkbox" id="label3" disabled class="hc-checkbox-input"/>
-          Disabled checkbox 
+          <input type="checkbox" id="label3" aria-disabled="true" class="hc-checkbox-input"/>
+          Focusable but disabled checkbox
         </label>
       </div>
 
@@ -54,11 +55,11 @@
 
       <div class="hc-checkbox-padding">
         <label class="hc-checkbox-label">
-          <input type="checkbox" id="label6" checked disabled class="hc-checkbox-input" />
+          <input type="checkbox" id="label6" checked aria-disabled="true" class="hc-checkbox-input" />
           Disabled checkbox 
         </label>
       </div>
-    </div>
+      
 
     <!-- Fieldset -->
     <div>
@@ -93,5 +94,8 @@
         </div>
       </fieldset>
     </div>
+
+  <!-- Update message area -->
+  <div id="updateMessage"></div>
   </body>
 </html>
