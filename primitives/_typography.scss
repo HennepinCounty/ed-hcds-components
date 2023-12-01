@@ -257,6 +257,10 @@
     color: var(--hc-link-link-visited);
   }
 
+  a:visited:hover {
+    color: var(--hc-link-primary-hover);
+  }
+
   a:disabled {
     color: var(--hc-link-disabled);
   }

@@ -520,6 +520,9 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
 :root a:visited {
   color: var(--hc-link-link-visited);
 }
+:root a:visited:hover {
+  color: var(--hc-link-primary-hover);
+}
 :root a:disabled {
   color: var(--hc-link-disabled);
 }

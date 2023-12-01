@@ -5,24 +5,30 @@ https://github.com/alphagov/govuk-frontend/blob/a2ff2e41967a38785aaef33135dc7e41
 .hc-breadcrumb__list {
   display: flex;
   flex-wrap: wrap;
-  padding: 0.75rem 1rem;
-  margin-bottom: 1rem;
+  padding: 0rem;
+  margin-bottom: var(--hc-spacing-10);
   list-style: none;
-  border-radius: 0;
 }
 
+/* Max-width keeps any individual title from being too long and difficult to read */
 .hc-breadcrumbs__list-item {
   display: flex;
+  color: var(--hc-link-primary);
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-body-size-regular);
+  font-weight: 400;
+  max-width: 70ch;
+  line-height: 125%;
 }
 
 .hc-breadcrumbs__list-item + .hc-breadcrumbs__list-item {
-  padding-left: 0.5rem;
+  padding-left: var(--hc-spacing-03);
 }
 
 .hc-breadcrumbs__list-item + .hc-breadcrumbs__list-item::before {
   display: inline-block;
-  padding-right: 0.5rem;
-  color: #6c757d;
+  padding-right: var(--hc-spacing-03);
+  color: var(--hc-text-hint);
   content: ">";
 }
 
@@ -34,6 +40,6 @@ https://github.com/alphagov/govuk-frontend/blob/a2ff2e41967a38785aaef33135dc7e41
   text-decoration: none;
 }
 
-.hc-breadcrumbs__list-item.active {
-  color: #6c757d;
+.hc-breadcrumbs__list-item.hc-breadcrumbs__list-item--active {
+  color: var(--hc-text-hint);
 }

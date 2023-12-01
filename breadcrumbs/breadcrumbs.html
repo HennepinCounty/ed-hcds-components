@@ -15,7 +15,7 @@
   suggest removing nav from breadcrumb wrapper per GovUK research finding 
   -too many nav elements on a single page creates confusion and 
   - some nav elements can be determined by their context and don't need to be tagged as nav (such as links in footer)
-  Their implementation doesn't show the current page, only parent pages, so they don't use aria-current="page"
+  Their implementation doesn't show the current page, only parent pages, so theydon't use aria-current="page"
   
   - https://insidegovuk.blog.gov.uk/2013/07/03/rethinking-navigation/
 - https://github.com/alphagov/static/pull/238
@@ -41,7 +41,10 @@
       <ol class="hc-breadcrumb__list">
         <li class="hc-breadcrumbs__list-item"><a href="#">Home</a></li>
         <li class="hc-breadcrumbs__list-item"><a href="#">Library</a></li>
-        <li class="hc-breadcrumbs__list-item active" aria-current="page">
+        <li
+          class="hc-breadcrumbs__list-item hc-breadcrumbs__list-item--active"
+          aria-current="page"
+        >
           Data
         </li>
       </ol>
@@ -60,7 +63,10 @@
         <li class="hc-breadcrumbs__list-item">
           <a href="#">Contracting with Hennepin County</a>
         </li>
-        <li class="hc-breadcrumbs__list-item active" aria-current="page">
+        <li
+          class="hc-breadcrumbs__list-item hc-breadcrumbs__list-item--active"
+          aria-current="page"
+        >
           Building maintenance services roster program
         </li>
       </ol>
