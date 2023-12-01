@@ -16,7 +16,6 @@
   letter-spacing: 0em;
 }
 
-
 .hc-chkbox_item,
 .hc-checkbox-fieldset {
   padding: 10px;
@@ -37,19 +36,19 @@
 /* focus style update */
 .hc-checkbox-padding {
   padding-left: 24px;
- 
+
   padding-bottom: 8px;
 }
 
-.hc-checkbox-input{
+.hc-checkbox-input {
   width: 17px;
   height: 17px;
   position: relative;
   top: 1px;
-  margin-right: 10px
+  margin-right: 10px;
 }
 
-.hc-checkbox-input[type=checkbox]{
+.hc-checkbox-input[type="checkbox"] {
   accent-color: #0058a4;
 }
 
@@ -64,3 +63,11 @@
   text-indent: -40px;
 }
 
+.hc-checkbox-input[aria-disabled="true"] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.hc-checkbox-input[type="checkbox"][aria-disabled="true"]:checked {
+  background-color: #6c757d;
+}
