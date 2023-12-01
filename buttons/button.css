@@ -27,7 +27,6 @@
   font-size: var(--hc-font-body-size-regular, 1rem);
   font-weight: 400;
   line-height: 1;
-  letter-spacing: 0.02em;
   color: var(--hc-text-on-color);
   border-radius: var(--hc-border-radius-02, 2px);
   margin: 0;
@@ -183,36 +182,7 @@
   padding-right: var(--hc-spacing-04);
 }
 
-/*  
-reular
-padding: var(--hc-spacing-03) var(--hc-spacing-05);
-small
-  padding: var(--hc-spacing-02) var(--hc-spacing-03);
-lare
-  font-size: var(--hc-font-body-size-large, 1rem);
- */
-
-/* .hc-button--small .hc-button--icon-left {
-  padding: ;
-}
-
-.hc-button--large .hc-button--icon-left {
-  padding: ;
-}
-
-.hc-button .hc-button--icon-right {
-  padding: ;
-}
-
-.hc-button--small .hc-button--icon-right {
-  padding: ;
-}
-
-.hc-button--large .hc-button--icon-right {
-  padding: ;
-} */
-
-/* The below can all be deleted and is no loner in use -- double check and then delete */
+/* The below can all be deleted and is no longer in use -- double check and then delete */
 
 .hc-closeIconBlue {
   background-image: url(material-symbols_close-rounded-blue.svg);
