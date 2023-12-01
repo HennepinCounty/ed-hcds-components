@@ -1,5 +1,8 @@
 :root {
-  --hc-spacing-base: 1rem;
+  // uses absolute units for spacing instead of rem per
+  // https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/
+
+  --hc-spacing-base: 16px;
 
   --hc-spacing-00: calc(var(--hc-spacing-base) * 0); /*0px*/
   --hc-spacing-01: calc(var(--hc-spacing-base) * 0.125); /*2px*/
