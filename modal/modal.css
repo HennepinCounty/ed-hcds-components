@@ -1,14 +1,46 @@
 /* -- Modal Style Here -- */
 
-/* center modal */
-/* Override this to position the modal elsewhere */
+/* This styles the modal container */
 dialog[open] {
   display: block;
   margin: auto;
   max-width: 48rem;
 }
 
+/* This contains the modal headin and close button */
+.modal-header-and-close {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: var(--hc-spacing-03);
+}
+
+/* This contains content inside the modal */
+/* Gap is added in case this section is used to stack form elements or other nested components */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--hc-spacing-05);
+  padding-right: var(--hc-spacing-07);
+  padding-bottom: var(--hc-spacing-07);
+}
+
+/* =========== */
+/* =========== */
+/* Backdrop is still not working */
+/* =========== */
+/* =========== */
+
+/* =========== */
+/* =========== */
+/* Everything below here can be deleted after backdrop is figured out */
+/* =========== */
+/* =========== */
+
 /* Modal positioning */
+/* center modal */
 /* this class is unused and can be deleted */
 /* .modal {
   position: fixed;
@@ -22,37 +54,6 @@ dialog[open] {
   outline: 0;
   margin: auto;
 } */
-
-/* This class can probably be deleted */
-/*  */
-.modal-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: var(--hc-spacing-05);
-  padding-right: var(--hc-spacing-07);
-}
-
-.modal-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: var(--hc-spacing-05);
-}
-
-.close {
-  padding: 1rem 1rem;
-  margin: -1rem -1rem -1rem auto;
-}
-
-/* This might not be needed depending on how things are groued */
-.modal-title {
-  margin: 0;
-  line-height: 1.5;
-}
-
-/* This positions the button-group on the right-hand side of the modal */
 
 /* Not sure what this does, I think it makes the modal window scrollable if content is vertically very large but not totally sure */
 /* It's not used in the html, not sure what to do with this */

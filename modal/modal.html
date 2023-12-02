@@ -11,7 +11,7 @@
 
     <script defer src="modal.js"></script>
   </head>
-  <body>
+  <body class="hc-padding-04">
     <div>
       <!-- button to launch modal -->
       <button class="hc-button" data-open-modal>Open new modal</button>
@@ -22,7 +22,7 @@
       <!-- container for all modal content -->
 
       <!-- container for header and button -->
-      <div class="modal-header">
+      <div class="modal-header-and-close">
         <h3 class="hc-margin-bottom-00">Modal title</h3>
         <!-- Icon close button -->
         <button
@@ -34,6 +34,8 @@
           <span class="material-symbols-outlined"> close </span>
         </button>
       </div>
+
+      <!-- This section can be used to add any nested components that would be used in a modal -->
       <div class="modal-content">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -41,43 +43,6 @@
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
-
-        <div class="hc-form-element">
-          <label class="hc-field-label" for="hc-id1"
-            >Example input field 1</label
-          >
-          <input
-            class="hc-input"
-            id="hc-id1"
-            name="hc-name1"
-            type="text"
-            spellcheck="true"
-          />
-        </div>
-        <div class="hc-form-element">
-          <label class="hc-field-label" for="hc-id1"
-            >Example input field 2</label
-          >
-          <input
-            class="hc-input"
-            id="hc-id1"
-            name="hc-name1"
-            type="text"
-            spellcheck="true"
-          />
-        </div>
-        <div class="hc-form-element">
-          <label class="hc-field-label" for="hc-id1"
-            >Example input field 3</label
-          >
-          <input
-            class="hc-input"
-            id="hc-id1"
-            name="hc-name1"
-            type="text"
-            spellcheck="true"
-          />
-        </div>
       </div>
 
       <div class="button-group">

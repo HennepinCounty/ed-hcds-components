@@ -291,11 +291,11 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   --hc-button-primary-hover: var(--hc-background-brand-hover);
   --hc-button-primary-active: var(--hc-background-brand-active);
   --hc-button-secondary: var(--hc-white);
-  --hc-button-secondary-hover: var(--hc-background-brand);
+  --hc-button-secondary-hover: var(--hc-background-brand-hover);
   --hc-button-secondary-active: var(--hc-background-brand-active);
-  --hc-button-secondary-border: var(--hc-cyan-70);
-  --hc-button-secondary-border-hover: var(--hc-background-brand);
-  --hc-button-secondary-border-active: var(--hc-background-brand-active);
+  --hc-button-secondary-border: var(--hc-background-brand);
+  --hc-button-secondary-border-hover: var(--hc-button-secondary-hover);
+  --hc-button-secondary-border-active: var(--hc-button-secondary-active);
   --hc-button-danger: var(--hc-red-70);
   --hc-button-danger-hover: var(--hc-red-80);
   --hc-button-danger-active: var(--hc-red-90);
@@ -2553,6 +2553,13 @@ html {
 .hc-img-fluid {
   max-width: 100%;
   height: auto;
+}
+
+:root .hc-width-full {
+  width: 100%;
+}
+:root .hc-width-auto {
+  width: auto;
 }
 
 .material-symbols-outlined {
