@@ -15,79 +15,121 @@
     <link rel="stylesheet" href="../CSS/index.css" />
     <link rel="stylesheet" href="./search.css" />
   </head>
-  <body>
+  <body class="hc-padding-x-04">
     <!-- example class can be deleted -->
-    <div class="example">
-      <h2>Search element</h2>
-      <div class="row">
-        <form action="./search">
-          <label class="hc-label" for="search">Search item</label>
-          <input type="search" class="hc-input" id="search" />
-          <button class="btn btn-primary btn-adjust">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            Search
-          </button>
-        </form>
-      </div>
 
-      <!-- Above redone with new classes -->
-      <h2>New test</h2>
-      <div class="row">
-        <form action="./search">
-          <label class="hc-field-label" for="search">Search item</label>
-          <div class="hc-search-wrapper">
-            <input type="search" class="hc-input hc-input--small" id="search" />
-            <button class="hc-button hc-button--small">
-              <i class="fa-solid fa-magnifying-glass"></i>
-              Search
-            </button>
-          </div>
-        </form>
-      </div>
+    <!-- Above redone with new classes -->
+    <!-- Small -->
+    <h4>Small</h4>
+    <p>
+      Along with size change, this version also shows border radius changed on
+      the sides where input field and button connect
+    </p>
 
-      <!-- Regular size input and button -->
-      <h2>Regular size</h2>
-      <div class="hc-form-element">
-        <label class="hc-field-label" for="hc-id1">Label</label>
-        <div class="hc-search-wrapper hc-gap-03">
-          <input
-            class="hc-input"
-            id="hc-id1"
-            name="hc-name1"
-            type="text"
-            spellcheck="true"
-          />
-          <button class="hc-button hc-button--icon-left">
-            <span class="material-symbols-outlined"> search </span>
-            Search
-          </button>
-        </div>
+    <div class="hc-form-element">
+      <!-- might remove form action -- see how other design systems and bootstrap handle this -->
+      <!-- Including the form action means that on click it'll go to a browser error page -->
+      <!-- <form action="./search"> -->
+      <label class="hc-field-label hc-field-label--small" for="search"
+        >Search</label
+      >
+      <div class="hc-search-wrapper">
+        <!-- Might decide to use type="text" instead of type="search" -->
+        <!-- https://adrianroselli.com/2019/07/ignore-typesearch.html -->
+        <input
+          type="search"
+          class="hc-input hc-input--small hc-input-search"
+          id="search"
+          name="hc-name1"
+          spellcheck="true"
+        />
+        <button
+          class="hc-button hc-button--small hc-button--icon-left hc-button-search"
+        >
+          <span class="material-symbols-outlined"> search </span>
+          Search
+        </button>
       </div>
+      <!-- </form> -->
+    </div>
 
-      <!-- Large size input and button -->
-      <h2>Large field</h2>
-      <div class="hc-form-element">
-        <label class="hc-field-label" for="hc-id1">Label</label>
-        <!-- Consider if these utilities should become their own class for search field component -->
-        <div class="hc-search-wrapper">
-          <input
-            class="hc-input hc-input--large"
-            id="hc-id1"
-            name="hc-name1"
-            type="text"
-            spellcheck="true"
-          />
-          <button class="hc-button hc-button--large hc-button--icon-left">
-            <span class="material-symbols-outlined"> search </span>
-            Search
-          </button>
-        </div>
+    <!-- Regular size input and button -->
+    <h4>Regular size with gap and hidden label</h4>
+    <p>
+      This version has label visually hidden so that screenreaders will announce
+      it.
+    </p>
+    <p>
+      Label may not need to be visible because that information is contained in
+      search button as well, and the label may not contrast against backround
+      colors in top-navs that this might be placed in.
+    </p>
+    <p>
+      This version also has small space between field button as an example of
+      different option.
+    </p>
+    <div class="hc-form-element">
+      <label class="hc-visually-hidden" for="hc-id1">Search</label>
+      <div class="hc-search-wrapper hc-gap-01">
+        <input
+          class="hc-input"
+          id="hc-id1"
+          name="hc-name1"
+          type="search"
+          spellcheck="true"
+        />
+        <button class="hc-button hc-button--icon-left">
+          <span class="material-symbols-outlined"> search </span>
+          Search
+        </button>
       </div>
+    </div>
 
-      <h2>With list inside field</h2>
-      <!-- This is a different example with a list inside of search field-->
-      <div class="row">
-        <form role="search" id="search2">
+    <!-- Reular size without space and with label -->
+    <h4>Regular size without gap and with visible label</h4>
+    <div class="hc-form-element">
+      <label class="hc-field-label" for="hc-id1">Search</label>
+      <div class="hc-search-wrapper">
+        <input
+          class="hc-input"
+          id="hc-id1"
+          name="hc-name1"
+          type="search"
+          spellcheck="true"
+        />
+        <button class="hc-button hc-button--icon-left">
+          <span class="material-symbols-outlined"> search </span>
+          Search
+        </button>
+      </div>
+    </div>
+
+    <!-- Large size input and button -->
+    <h4>Large field</h4>
+    <div class="hc-form-element">
+      <label class="hc-field-label hc-field-label--large" for="hc-id1"
+        >Search</label
+      >
+      <!-- Consider if these utilities should become their own class for search field component -->
+      <div class="hc-search-wrapper">
+        <input
+          class="hc-input hc-input--large"
+          id="hc-id1"
+          name="hc-name1"
+          type="search"
+          spellcheck="true"
+        />
+        <button class="hc-button hc-button--large hc-button--icon-left">
+          <span class="material-symbols-outlined"> search </span>
+          Search
+        </button>
+      </div>
+    </div>
+
+    <h4>With list inside field</h4>
+    <!-- This is a different example with a list inside of search field-->
+    <!-- <div class="row">
+        <form role="search" id="search4">
           <label class="hc-label" for="content">Search for city</label>
           <input
             type="search"
@@ -101,17 +143,16 @@
             <i class="fa-solid fa-magnifying-glass"></i>
             Search
           </button>
-        </form>
+        </form> -->
 
-        <!-- filter list sample-->
-        <datalist id="cityList">
+    <!-- filter list sample-->
+    <!-- <datalist id="cityList">
           <option value="Eagan">Eagan</option>
           <option value="Minneapolis">Minneapolis</option>
           <option value="St. Paul">St. Paul</option>
           <option value="St. Cloud">St. Cloud</option>
           <option value="Anoka">Anoka</option>
-        </datalist>
-      </div>
-    </div>
+        </datalist> -->
+    <!-- </div> -->
   </body>
 </html>

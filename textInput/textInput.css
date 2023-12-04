@@ -7,7 +7,11 @@
   margin-top: 1.2rem;
 }
 
-/* This could be used as a wrapper for a group of input fields*/
+/* This could be used as a wrapper to create consistent spacing for a group of form elements*/
+/* Would need to create example of this */
+/* Would want to rename to "hc-form-wrapper" or something to make it more generic (can be used with radios, checklist, etc -- all should probably have the same gap between each other) */
+/* this also might be done through ".hc-form-element + .hc-form-element" */
+/* Or because .hc-form-element already adds margin-top, this might not be needed at all (spacing would be determined by top-margin of object instead of gap assigned by parent container) */
 .hc-input-wrapper {
   display: flex;
   flex-direction: column;
@@ -16,44 +20,48 @@
 
 /* Styling for label above text field */
 /* Set to display:block so that label is above the field */
-.hc-field-label {
+
+/* Label styling moved to _typography.scss */
+/* .hc-field-label {
   display: block;
   color: var(--text-primary, #171a1d);
-  /* Body/Body */
+  
   font-family: var(--hc-font-family);
-  font-size: var(--font-fieldlabel-size);
+  font-size: var(--hc-font-fieldLabel-size-regular);
   font-style: normal;
   font-weight: 600;
-  line-height: 130%; /* 1.6875rem */
-  letter-spacing: -0.01%;
+  line-height: 130%; /* 1.6875rem 
+  letter-spacing: -0.01em;
 }
+
+.hc-field-label--small {
+  font-size: var(--hc-font-fieldLabel-size-small);
+}
+
+.hc-field-label--large {
+  font-size: var(--hc-font-fieldLabel-size-large);
+} 
 
 .hc-label:disabled {
   color: #ccc;
-}
+} */
 
 /* Styling for field */
 .hc-input {
-  height: 38px;
+  height: 40px;
+  height: var(--hc-height--medium);
   border-radius: var(--hc-border-radius-02);
   padding: var(--hc-spacing-03);
   border: 2px solid var(--hc-border-color-regular);
-  height: var(--hc-height--medium);
 }
 
 .hc-input--small {
-  height: 38px;
-  border-radius: var(--hc-border-radius-02);
-  padding: var(--hc-spacing-03);
-  border: 2px solid var(--hc-border-color-regular);
+  height: 32px;
   height: var(--hc-height--small);
 }
 
 .hc-input--large {
-  height: 38px;
-  border-radius: var(--hc-border-radius-02);
-  padding: var(--hc-spacing-03);
-  border: 2px solid var(--hc-border-color-regular);
+  height: 48px;
   height: var(--hc-height--large);
 }
 

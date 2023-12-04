@@ -11,3 +11,21 @@
   flex-direction: row;
   gap: var(--hc-spacing-00);
 }
+
+input.hc-input[type="search"] {
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-body-size-regular);
+  font-style: normal;
+  color: var(--hc-text-primary, #171a1d);
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.hc-input-search {
+  border-radius: 4px 0px 0px 4px;
+}
+
+.hc-button-search {
+  border-radius: 0px 4px 4px 0px;
+  margin-inline-start: -2px;
+}

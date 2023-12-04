@@ -15,7 +15,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
 // https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
 */
 
-.visually-hidden {
+.hc-visually-hidden {
   position: absolute !important;
 
   width: 1px !important;
@@ -37,7 +37,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   white-space: nowrap !important;
 }
 
-.visually-hidden-focusable {
+.hc-visually-hidden-focusable {
   /*
 /// Hide an element visually, but have it available for screen readers whilst
 /// allowing the element to be focused when navigated to via the keyboard (e.g.
@@ -65,8 +65,8 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   white-space: nowrap !important;
 }
 
-.visually-hidden-focusable:active,
-.visually-hidden-focusable:focus {
+.hc-visually-hidden-focusable:active,
+.hc-visually-hidden-focusable:focus {
   position: static !important;
 
   width: auto !important;
