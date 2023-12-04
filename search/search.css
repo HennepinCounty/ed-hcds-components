@@ -5,3 +5,9 @@
   margin-left: -3px;
   margin-top: -2px;
 }
+
+.hc-search-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: var(--hc-spacing-00);
+}

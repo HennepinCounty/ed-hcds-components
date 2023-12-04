@@ -749,59 +749,46 @@ ol + .hc-heading-s,
   --hc-border-style-focus-alternate: 2px solid var(--hc-background-brand);
 }
 
-.hc-gap-00 {
+:root .hc-gap-00 {
   gap: var(--hc-spacing-00);
 }
-
-.hc-gap-01 {
+:root .hc-gap-01 {
   gap: var(--hc-spacing-01);
 }
-
-.hc-gap-02 {
+:root .hc-gap-02 {
   gap: var(--hc-spacing-02);
 }
-
-.hc-gap-03 {
+:root .hc-gap-03 {
   gap: var(--hc-spacing-03);
 }
-
-.hc-gap-04 {
+:root .hc-gap-04 {
   gap: var(--hc-spacing-04);
 }
-
-.hc-gap-05 {
+:root .hc-gap-05 {
   gap: var(--hc-spacing-05);
 }
-
-.hc-gap-06 {
+:root .hc-gap-06 {
   gap: var(--hc-spacing-06);
 }
-
-.hc-gap-07 {
+:root .hc-gap-07 {
   gap: var(--hc-spacing-07);
 }
-
-.hc-gap-08 {
+:root .hc-gap-08 {
   gap: var(--hc-spacing-08);
 }
-
-.hc-gap-09 {
+:root .hc-gap-09 {
   gap: var(--hc-spacing-09);
 }
-
-.hc-gap-10 {
+:root .hc-gap-10 {
   gap: var(--hc-spacing-10);
 }
-
-.hc-gap-11 {
+:root .hc-gap-11 {
   gap: var(--hc-spacing-11);
 }
-
-.hc-gap-12 {
+:root .hc-gap-12 {
   gap: var(--hc-spacing-12);
 }
-
-.hc-gap-13 {
+:root .hc-gap-13 {
   gap: var(--hc-spacing-13);
 }
 
@@ -2836,4 +2823,396 @@ html {
   align-items: center;
   justify-content: flex-end;
   gap: var(--hc-spacing-03);
-}/*# sourceMappingURL=index.css.map */
+}
+
+.hc-form-group {
+  display: block;
+  margin-bottom: 32px;
+}
+
+.hc-form-element {
+  margin-top: 1.2rem;
+}
+
+.hc-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--hc-spacing-03);
+}
+
+/* Styling for label above text field */
+/* Set to display:block so that label is above the field */
+.hc-field-label {
+  display: block;
+  color: var(--text-primary, #171a1d);
+  /* Body/Body */
+  font-family: var(--hc-font-family);
+  font-size: var(--font-fieldlabel-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 1.6875rem */
+  letter-spacing: -0.01%;
+}
+
+.hc-label:disabled {
+  color: #ccc;
+}
+
+/* Styling for field */
+.hc-input {
+  height: 38px;
+  border-radius: var(--hc-border-radius-02);
+  padding: var(--hc-spacing-03);
+  border: 2px solid var(--hc-border-color-regular);
+  height: var(--hc-height--medium);
+}
+
+.hc-input--small {
+  height: 38px;
+  border-radius: var(--hc-border-radius-02);
+  padding: var(--hc-spacing-03);
+  border: 2px solid var(--hc-border-color-regular);
+  height: var(--hc-height--small);
+}
+
+.hc-input--large {
+  height: 38px;
+  border-radius: var(--hc-border-radius-02);
+  padding: var(--hc-spacing-03);
+  border: 2px solid var(--hc-border-color-regular);
+  height: var(--hc-height--large);
+}
+
+/* Current issue -- Focus state IS applied but another state overrides it when a user is inputting text and that border color needs to be overrriden, maybe inheriting from label style?? */
+.hc-input:focus {
+  /* outline-width: 2px;
+  outline-color: #0058a4;
+  outline-offset: 4px; */
+  /* outline: var(--hc-outline-style-focus); */
+  /* border: 2px solid #000000; */
+  border: var(--hc-border-style-focus);
+  /* outline: var(--hc-outline-style-focus); */
+  /*   
+  outline-color: red;
+  outline-offset: 4px; */
+}
+
+/* Text inside of input field */
+input.hc-input[type=text] {
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-body-size-regular);
+  font-style: normal;
+  color: var(--hc-text-primary, #171a1d);
+  font-weight: 400;
+  line-height: 100%;
+}
+
+/* error state for field, adds border */
+.hc-input-error {
+  height: 38px;
+  border: 1px solid #ce1432 !important;
+  border-radius: 3px !important;
+  background: url(material-symbols_close-rounded.svg) no-repeat right;
+  background-size: 30px;
+  padding: var(--hc-spacing-03);
+}
+
+/*Text entered into field*/
+input.hc-input-error[type=text] {
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-body-size-regular);
+  font-style: normal;
+  color: var(--text-primary, #171a1d);
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.hc-input-error:focus {
+  outline-width: 0;
+  outline-color: #ce1432;
+  outline-offset: 2px;
+  border: 2px solid #ce1432 !important;
+  border-radius: 2px !important;
+  font-weight: normal;
+}
+
+.required-class:after {
+  content: "(Required)";
+  color: #ce1432;
+  font-size: 12px;
+}
+
+.h3-underline {
+  border-bottom: 3px solid black;
+}
+
+.error-msg {
+  color: #ce1432;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Base styling for alerts */
+.hc-alert {
+  padding: var(--hc-spacing-05);
+  margin-bottom: var(--hc-spacing-05);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: var(--hc-background-brand);
+  color: white;
+  max-width: 768px;
+  gap: var(--hc-spacing-08);
+}
+
+h2.hc-alert-heading {
+  font-size: var(--hc-font-h4-size);
+  font-weight: 500;
+  margin-bottom: 0rem;
+  color: var(--hc-white);
+}
+
+/* Needed to override color */
+p.hc-alert-paragraph {
+  color: var(--hc-white);
+}
+
+/* Different styling for alert types */
+.hc-alert-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--hc-spacing-03);
+}
+
+/* Default styling for the close button */
+.hc-alert .hc-close {
+  color: inherit;
+  border-color: var(--hc-white);
+}
+
+/* IDK what this does, I think it's related to the X icon in the close button */
+.hc-alert .hc-close span[aria-hidden] {
+  font-size: 1.8rem;
+  margin-top: -0.2rem;
+}
+
+/* Success styling */
+.hc-alert-success {
+  background-color: var(--hc-support-success);
+}
+
+/* success heading styling */
+.hc-alert.hc-alert-success > .hc-alert-content > h2.hc-alert-heading {
+  color: var(--hc-black);
+}
+
+/* success paragraph styling */
+.hc-alert.hc-alert-success > .hc-alert-content > p.hc-alert-paragraph {
+  color: var(--hc-black);
+}
+
+/* success close button styling */
+.hc-alert.hc-alert-success > .hc-close {
+  color: var(--hc-black);
+  border-color: var(--hc-black);
+  background-color: var(--hc-support-success);
+}
+
+.hc-alert.hc-alert-success > .hc-close:hover {
+  background-color: var(--hc-support-success--hover);
+}
+
+.hc-alert.hc-alert-success > .hc-close:active {
+  background-color: var(--hc-support-success--active);
+}
+
+/*Danger styling */
+.hc-alert-danger {
+  background-color: var(--hc-support-error);
+}
+
+/* Danger close button styling */
+.hc-alert.hc-alert-danger > .hc-close {
+  background-color: var(--hc-support-error);
+}
+
+.hc-alert.hc-alert-danger > .hc-close:hover {
+  background-color: var(--hc-support-error--hover);
+}
+
+.hc-alert.hc-alert-danger > .hc-close:active {
+  background-color: var(--hc-support-error--active);
+}
+
+/*Warning styling */
+.hc-alert-warning {
+  background-color: var(--hc-support-warning);
+}
+
+/* warning heading styling */
+.hc-alert.hc-alert-warning > .hc-alert-content > h2.hc-alert-heading {
+  color: var(--hc-black);
+}
+
+/* warning paragraph styling */
+.hc-alert.hc-alert-warning > .hc-alert-content > p.hc-alert-paragraph {
+  color: var(--hc-black);
+}
+
+/* Warning close button styling */
+.hc-alert.hc-alert-warning > .hc-close {
+  color: var(--hc-black);
+  background-color: var(--hc-support-warning);
+  border-color: var(--hc-black);
+}
+
+.hc-alert.hc-alert-warning > .hc-close:hover {
+  background-color: var(--hc-support-warning--hover);
+}
+
+.hc-alert.hc-alert-warning > .hc-close:active {
+  background-color: var(--hc-support-warning--active);
+}
+
+/*Info styling? We maybe can delete this one, Primary alert serves this purpose */
+.hc-alert-info {
+  background-color: var(--hc-support-info);
+}
+
+/* info heading styling */
+.hc-alert.hc-alert-info > .hc-alert-content > h2.hc-alert-heading {
+  color: var(--hc-black);
+}
+
+/* info paragraph styling */
+.hc-alert.hc-alert-info > .hc-alert-content > p.hc-alert-paragraph {
+  color: var(--hc-black);
+}
+
+/* info close button styling */
+.hc-alert.hc-alert-info > .hc-close {
+  color: var(--hc-black);
+  background-color: var(--hc-support-info);
+  border-color: var(--hc-black);
+}
+
+.hc-alert.hc-alert-info > .hc-close:hover {
+  color: var(--hc-white);
+  background-color: var(--hc-support-info--hover);
+}
+
+.hc-alert.hc-alert-info > .hc-close:active {
+  color: var(--hc-white);
+  background-color: var(--hc-support-info--active);
+}
+
+/* -- Modal Style Here -- */
+/* This styles the modal container */
+dialog[open] {
+  display: block;
+  margin: auto;
+  max-width: 48rem;
+}
+
+/* This contains the modal headin and close button */
+.modal-header-and-close {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: var(--hc-spacing-03);
+}
+
+/* This contains content inside the modal */
+/* Gap is added in case this section is used to stack form elements or other nested components */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--hc-spacing-05);
+  padding-right: var(--hc-spacing-07);
+  padding-bottom: var(--hc-spacing-07);
+}
+
+/* =========== */
+/* =========== */
+/* Backdrop is still not working */
+/* =========== */
+/* =========== */
+/* =========== */
+/* =========== */
+/* Everything below here can be deleted after backdrop is figured out */
+/* =========== */
+/* =========== */
+/* Modal positioning */
+/* center modal */
+/* this class is unused and can be deleted */
+/* .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+  margin: auto;
+} */
+/* Not sure what this does, I think it makes the modal window scrollable if content is vertically very large but not totally sure */
+/* It's not used in the html, not sure what to do with this */
+/* .modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+} */
+/* Think this can be deleted*/
+/* @media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 500px;
+    margin: 1.75rem auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .modal.fade .modal-dialog {
+    transition: none;
+  } 
+}
+*/
+/* -- End Modal Style-- */
+/* This doesn't work */
+/* Not sure if JS or CSS issue*/
+/* ::backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+}
+.modal-backdrop.fade {
+  opacity: 0;
+}
+.modal-backdrop.show {
+  opacity: 0.5;
+} */
+/* I think this can all be deleted, but not sure if it's related to the backdrop */
+/* 
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 0.5rem;
+  pointer-events: none;
+}
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+  transform: translate(0, -50px);
+}
+.modal.show .modal-dialog {
+  transform: none;
+} *//*# sourceMappingURL=index.css.map */

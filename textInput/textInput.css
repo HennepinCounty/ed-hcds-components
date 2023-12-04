@@ -7,6 +7,7 @@
   margin-top: 1.2rem;
 }
 
+/* This could be used as a wrapper for a group of input fields*/
 .hc-input-wrapper {
   display: flex;
   flex-direction: column;
@@ -37,6 +38,23 @@
   border-radius: var(--hc-border-radius-02);
   padding: var(--hc-spacing-03);
   border: 2px solid var(--hc-border-color-regular);
+  height: var(--hc-height--medium);
+}
+
+.hc-input--small {
+  height: 38px;
+  border-radius: var(--hc-border-radius-02);
+  padding: var(--hc-spacing-03);
+  border: 2px solid var(--hc-border-color-regular);
+  height: var(--hc-height--small);
+}
+
+.hc-input--large {
+  height: 38px;
+  border-radius: var(--hc-border-radius-02);
+  padding: var(--hc-spacing-03);
+  border: 2px solid var(--hc-border-color-regular);
+  height: var(--hc-height--large);
 }
 
 /* Current issue -- Focus state IS applied but another state overrides it when a user is inputting text and that border color needs to be overrriden, maybe inheriting from label style?? */
