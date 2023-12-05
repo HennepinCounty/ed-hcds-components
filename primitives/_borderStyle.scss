@@ -5,8 +5,11 @@
 
   //These needd to be rewritten -- BorderSize should handle sizing
 
-  --hc-border-style-focus: 2px solid var(--hc-white);
-  --hc-outline-style-focus: 3px solid var(--hc-background-brand);
+  // Border
   --hc-border-brand: 2px solid var(--hc-background-brand);
+  --hc-border-style-focus: 2px solid var(--hc-white);
   --hc-border-style-focus-alternate: 2px solid var(--hc-background-brand);
+
+  // Outline
+  --hc-outline-style-focus: 3px solid var(--hc-background-brand);
 }

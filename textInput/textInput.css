@@ -63,10 +63,16 @@ input.hc-input[type="text"] {
   background-size: 30px;
 }
 
-/* Current issue -- Focus state IS applied but another state overrides it when a user is inputting text and that border color needs to be overrriden, maybe inheriting from label style?? */
+/* Focus state, changes border color to white then adds blue stroke with outline to give appearance of growing on focus */
 .hc-input:focus {
   border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
 }
+
+/* input.hc-input[type="text"]:focus {
+  border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
+} */
 
 .hc-input:disabled {
   border-color: var(--hc-border-color-disabled);
