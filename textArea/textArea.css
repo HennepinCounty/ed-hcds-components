@@ -19,14 +19,19 @@
 } */
 
 .hc-textarea {
-  border-radius: 2px !important;
-  margin-bottom: 0 !important;
+  font-family: var(--hc-font-family);
+  min-height: 40px;
+  border-radius: var(--hc-border-radius-02);
+  padding: var(--hc-spacing-03);
+  border: 2px solid var(--hc-border-color-regular);
+  /* width: 100%;  */
+  /* setting width 100% would match govuk styling, textarea is set to 100% width and actual width is handled by parent container */
+  /* Downside is that dev would need to know to include a parent container to control width */
 }
 
 .hc-textarea-error {
   /* height: 38px; */
-  border: 1px solid #ce1432 !important;
-  border-radius: 3px !important;
+  border: 1px solid var(--hc-border-color-error);
   background: url(material-symbols_close-rounded.svg) no-repeat right;
   background-size: 30px;
   margin-bottom: 0 !important;

@@ -572,8 +572,8 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   line-height: 130%; /* 1.6875rem */
   letter-spacing: -0.01em;
 }
-:root .hc-field-label:disabled {
-  color: #ccc;
+:root .hc-field-label--disabled {
+  color: var(--hc-text-disabled);
 }
 :root .hc-field-label--small {
   font-size: var(--hc-font-fieldLabel-size-small);
@@ -591,6 +591,9 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   font-weight: 400;
   line-height: 130%; /* 1.5rem */
   margin-bottom: var(--hc-spacing-02);
+}
+:root .hc-text-hint--disabled {
+  color: var(--hc-text-disabled);
 }
 :root .hc-text-error {
   display: block;
@@ -2894,14 +2897,35 @@ html {
   border: 2px solid var(--hc-border-color-regular);
 }
 
+/* Small variant for dense or complex UIs */
+/* Sized to same height as button so they can appear naturla on a row together */
 .hc-input--small {
   height: 32px;
   height: var(--hc-height--small);
 }
 
+/* Large variant for mobile */
+/* Sized to same height as button so they can appear naturla on a row together */
 .hc-input--large {
   height: 48px;
   height: var(--hc-height--large);
+}
+
+/* Text inside of input field */
+input.hc-input[type=text] {
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-body-size-regular);
+  font-style: normal;
+  color: var(--hc-text-primary, #171a1d);
+  font-weight: 400;
+  line-height: 100%;
+}
+
+/* error state for field, adds border */
+.hc-input--error {
+  border: 2px solid var(--hc-border-color-error);
+  background: url(material-symbols_close-rounded.svg) no-repeat right;
+  background-size: 30px;
 }
 
 /* Current issue -- Focus state IS applied but another state overrides it when a user is inputting text and that border color needs to be overrriden, maybe inheriting from label style?? */
@@ -2918,61 +2942,34 @@ html {
   outline-offset: 4px; */
 }
 
-/* Text inside of input field */
-input.hc-input[type=text] {
-  font-family: var(--hc-font-family);
-  font-size: var(--hc-font-body-size-regular);
-  font-style: normal;
-  color: var(--hc-text-primary, #171a1d);
-  font-weight: 400;
-  line-height: 100%;
-}
-
-/* error state for field, adds border */
-.hc-input-error {
-  height: 38px;
-  border: 1px solid #ce1432 !important;
-  border-radius: 3px !important;
-  background: url(material-symbols_close-rounded.svg) no-repeat right;
-  background-size: 30px;
-  padding: var(--hc-spacing-03);
-}
-
+/* ===================== */
+/* ===================== */
+/* Below can be deleted */
+/* ===================== */
+/* ===================== */
 /*Text entered into field*/
-input.hc-input-error[type=text] {
+/* This might be able to be deleted? */
+/* input.hc-input-error[type="text"] {
   font-family: var(--hc-font-family);
   font-size: var(--hc-font-body-size-regular);
   font-style: normal;
   color: var(--text-primary, #171a1d);
   font-weight: 400;
   line-height: 100%;
-}
-
-.hc-input-error:focus {
+} */
+/* .hc-input-error:focus {
   outline-width: 0;
   outline-color: #ce1432;
   outline-offset: 2px;
   border: 2px solid #ce1432 !important;
   border-radius: 2px !important;
   font-weight: normal;
-}
-
-.required-class:after {
+} */
+/* .required-class:after {
   content: "(Required)";
   color: #ce1432;
   font-size: 12px;
-}
-
-.h3-underline {
-  border-bottom: 3px solid black;
-}
-
-.error-msg {
-  color: #ce1432;
-  font-size: 16px;
-  width: 100%;
-}
-
+} */
 /* Base styling for alerts */
 .hc-alert {
   padding: var(--hc-spacing-05);

@@ -22,29 +22,6 @@
 /* Set to display:block so that label is above the field */
 
 /* Label styling moved to _typography.scss */
-/* .hc-field-label {
-  display: block;
-  color: var(--text-primary, #171a1d);
-  
-  font-family: var(--hc-font-family);
-  font-size: var(--hc-font-fieldLabel-size-regular);
-  font-style: normal;
-  font-weight: 600;
-  line-height: 130%; /* 1.6875rem 
-  letter-spacing: -0.01em;
-}
-
-.hc-field-label--small {
-  font-size: var(--hc-font-fieldLabel-size-small);
-}
-
-.hc-field-label--large {
-  font-size: var(--hc-font-fieldLabel-size-large);
-} 
-
-.hc-label:disabled {
-  color: #ccc;
-} */
 
 /* Styling for field */
 .hc-input {
@@ -55,28 +32,18 @@
   border: 2px solid var(--hc-border-color-regular);
 }
 
+/* Small variant for dense or complex UIs */
+/* Sized to same height as button so they can appear naturla on a row together */
 .hc-input--small {
   height: 32px;
   height: var(--hc-height--small);
 }
 
+/* Large variant for mobile */
+/* Sized to same height as button so they can appear naturla on a row together */
 .hc-input--large {
   height: 48px;
   height: var(--hc-height--large);
-}
-
-/* Current issue -- Focus state IS applied but another state overrides it when a user is inputting text and that border color needs to be overrriden, maybe inheriting from label style?? */
-.hc-input:focus {
-  /* outline-width: 2px;
-  outline-color: #0058a4;
-  outline-offset: 4px; */
-  /* outline: var(--hc-outline-style-focus); */
-  /* border: 2px solid #000000; */
-  border: var(--hc-border-style-focus);
-  /* outline: var(--hc-outline-style-focus); */
-  /*   
-  outline-color: red;
-  outline-offset: 4px; */
 }
 
 /* Text inside of input field */
@@ -90,46 +57,18 @@ input.hc-input[type="text"] {
 }
 
 /* error state for field, adds border */
-.hc-input-error {
-  height: 38px;
-  border: 1px solid #ce1432 !important;
-  border-radius: 3px !important;
+.hc-input--error {
+  border: 2px solid var(--hc-border-color-error);
   background: url(material-symbols_close-rounded.svg) no-repeat right;
   background-size: 30px;
-  padding: var(--hc-spacing-03);
 }
 
-/*Text entered into field*/
-input.hc-input-error[type="text"] {
-  font-family: var(--hc-font-family);
-  font-size: var(--hc-font-body-size-regular);
-  font-style: normal;
-  color: var(--text-primary, #171a1d);
-  font-weight: 400;
-  line-height: 100%;
+/* Current issue -- Focus state IS applied but another state overrides it when a user is inputting text and that border color needs to be overrriden, maybe inheriting from label style?? */
+.hc-input:focus {
+  border: var(--hc-border-style-focus);
 }
 
-.hc-input-error:focus {
-  outline-width: 0;
-  outline-color: #ce1432;
-  outline-offset: 2px;
-  border: 2px solid #ce1432 !important;
-  border-radius: 2px !important;
-  font-weight: normal;
-}
-
-.required-class:after {
-  content: "(Required)";
-  color: #ce1432;
-  font-size: 12px;
-}
-
-.h3-underline {
-  border-bottom: 3px solid black;
-}
-
-.error-msg {
-  color: #ce1432;
-  font-size: 16px;
-  width: 100%;
+.hc-input:disabled {
+  border-color: var(--hc-border-color-disabled);
+  background-color: disabled;
 }
