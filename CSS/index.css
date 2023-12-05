@@ -257,7 +257,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   --hc-background-brand-active: var(--hc-blue-90);
   --hc-background-brand-inverse: var(--hc-blue-20);
   --hc-background-brand-alternate: var(--hc-blue-80);
-  --hc-background-disabled: var(--hc-gray-20);
+  --hc-background-disabled: var(--hc-gray-10);
   --hc-support-error: var(--hc-red-70);
   --hc-support-error--hover: var(--hc-red-80);
   --hc-support-error--active: var(--hc-red-90);
@@ -2870,7 +2870,7 @@ html {
   height: 40px;
   height: var(--hc-height--medium);
   border-radius: var(--hc-border-radius-02);
-  padding: var(--hc-spacing-03);
+  padding: var(--hc-spacing-02);
   border: 2px solid var(--hc-border-color-regular);
 }
 
@@ -2898,7 +2898,7 @@ input.hc-input[type=text] {
   line-height: 100%;
 }
 
-/* error state for field, adds border */
+/* error state for field, adds border and icon */
 .hc-input--error {
   border: 2px solid var(--hc-border-color-error);
   background: url(material-symbols_close-rounded.svg) no-repeat right;
@@ -2917,7 +2917,11 @@ input.hc-input[type=text] {
 } */
 .hc-input:disabled {
   border-color: var(--hc-border-color-disabled);
-  background-color: disabled;
+  background-color: var(--hc-background-disabled);
+}
+
+input.hc-input[type=text]:disabled {
+  color: var(--hc-text-disabled);
 }
 
 /* Base styling for alerts */

@@ -22,41 +22,42 @@
   font-family: var(--hc-font-family);
   min-height: 40px;
   border-radius: var(--hc-border-radius-02);
-  padding: var(--hc-spacing-03);
+  padding: var(--hc-spacing-02);
   border: 2px solid var(--hc-border-color-regular);
   /* width: 100%;  */
   /* setting width 100% would match govuk styling, textarea is set to 100% width and actual width is handled by parent container */
   /* Downside is that dev would need to know to include a parent container to control width */
 }
 
+/* error state for field, adds border and icon*/
 .hc-textarea-error {
-  /* height: 38px; */
-  border: 1px solid var(--hc-border-color-error);
+  border: 2px solid var(--hc-border-color-error);
   background: url(material-symbols_close-rounded.svg) no-repeat right;
   background-size: 30px;
-  margin-bottom: 0 !important;
 }
 
 /* This might get deleted or changed */
-.hc-textarea-error:focus {
+/* .hc-textarea-error:focus {
   outline-width: 0;
-  /* outline-color: #ce1432;
-    outline-offset: 2px; */
+   outline-color: #ce1432; //Mihgt delete
+    outline-offset: 2px; //Might delete
   border: 2px solid #ce1432 !important;
   border-radius: 2px !important;
   font-weight: normal;
-}
+} */
 
 .hc-textarea:focus {
-  outline-width: 2px;
-  outline-color: #0058a4;
-  outline-offset: 2px;
-  border: 2px solid #cfcfcf;
-  border-radius: 2px;
-  font-weight: normal;
+  border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
 }
 
-/* Figure out waht this is for */
+.hc-textarea:disabled {
+  color: var(--hc-text-disabled);
+  border-color: var(--hc-border-color-disabled);
+  background-color: var(--hc-background-disabled);
+}
+
+/* Figure out what this is for */
 .required-class:after {
   content: "(Required)";
   color: #ce1432;
