@@ -1,87 +1,63 @@
-.hc-accordion-body {
-    background-color: #2f2f2f;
-    width: auto;
-    height: auto;
-    overflow: auto;
-    background-color: white;
+/* Wrapper for accordion group */
+.hc-accordion-group {
+  /* background-color: white; */
+  border-radius: var(--hc-border-radius-01);
+  max-width: 768px;
 }
 
-.hc-accordion {
-    /* background-color: white; */
-    border: 1px solid #fff;
-    border-radius: 5px;
-    max-width: 50%;
+/* Div wrapping accordion button with its expandable content */
+.hc-accordion-item {
+  margin-bottom: var(--hc-spacing-02);
 }
 
+/* Class attached to button to make the accordion clickable */
 .hc-accordion-header {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    color: black;
-    background-color: #f7f7f7;
-    line-height: 27px;
-    letter-spacing: 0em;
-    text-align: left;
-    cursor: pointer;
-    padding: 10px;
-    transition: background-color 0.3s ease;
-    min-width: 100%;
-    border: 4px solid transparent;
-    border-radius: 4px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: var(--hc-font-h4-size);
+  color: var(--hc-text-primary);
+  background-color: var(--hc-gray-10);
+  line-height: 130%;
+  text-align: left;
+  cursor: pointer;
+  padding: var(--hc-spacing-04);
+  transition: background-color 0.08s ease-in-out;
+  min-width: 100%;
+  /* border: 4px solid transparent; */
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: var(--hc-border-style-transparent);
 }
-
-.hc-drawer {
-    /* padding-bottom: 2px; */
-    margin-bottom: 2px;
-}
-
 .hc-accordion-header:focus {
-    /* border: 2px solid #44c8f5; */
-    border: 4px solid white;
-    border-style: double;
-    outline: 2px solid #113c66;
-    outline-offset: -2px;
+  border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
 }
 
 .hc-accordion-header:hover {
-    background-color: #ddd;
+  background-color: var(--hc-gray-20);
 }
 
-
-.hc-accordion-symbol {
-    float: right;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.hc-accordion-content-header {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 27px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
+/* Positioning for content inside the accordion */
 .hc-accordion-content {
-    font-family:
-        "Segoe UI",
-        Arial,
-        sans-serif;
-        padding: 10px;
-    display: none;
-    /* margin-bottom: 32px; */
+  font-family: "Segoe UI", Arial, sans-serif;
+  padding-top: var(--hc-spacing-04);
+  padding-left: var(--hc-spacing-04);
+  padding-right: var(--hc-spacing-07);
+  display: none;
+  margin-bottom: 32px;
+  max-width: 80ch;
 }
 
-
-
-.hc-accordion-active .hc-accordion-symbol {
-    content: "-";
+/* Class added by JS when clicked */
+/* JS changes from display:none to display:block, maybe that can be done in this class instead of JS? */
+.hc-accordion-content--expanded {
+  padding-bottom: var(--hc-spacing-03);
 }
 
-.hc-accordion-active .hc-accordion-content {
-    display: block;
-}
-
+/* Different way of adding icon -- this doesn't add an icon, and instead adds text */
+/* Changged to an icon so that sizing can be consistent (+ and - text versions have different widths) */
+/* .hc-accordion-active .hc-accordion-symbol {
+  content: "-";
+} */

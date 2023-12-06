@@ -763,6 +763,7 @@ ol + .hc-heading-s,
   --hc-border-brand: 2px solid var(--hc-background-brand);
   --hc-border-style-focus: 2px solid var(--hc-white);
   --hc-border-style-focus-alternate: 2px solid var(--hc-background-brand);
+  --hc-border-style-transparent: 2px solid var(--hc-transparent);
   --hc-outline-style-focus: 3px solid var(--hc-background-brand);
 }
 
@@ -2615,6 +2616,7 @@ html {
 /* ======================== */
 /* ======================== */
 .hc-button {
+  cursor: pointer;
   box-sizing: border-box;
   border: 2px solid var(--hc-transparent);
   display: inline-flex;
