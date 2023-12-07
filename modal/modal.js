@@ -4,7 +4,7 @@ const modal = document.querySelector("[data-modal]");
 const iconClose = document.querySelector("[icon]");
 
 openButton.addEventListener("click", () => {
-  modal.show();
+  modal.showModal();
 });
 
 closeButton.addEventListener("click", () => {

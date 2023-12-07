@@ -18,7 +18,7 @@
     </div>
 
     <!-- dialog element is actual modal in semantic html -->
-    <dialog data-modal>
+    <dialog class="hc-modal" data-modal>
       <!-- container for all modal content -->
 
       <!-- container for header and button -->
@@ -30,12 +30,11 @@
           aria-label="Close"
           icon
         >
-          <!-- Replace "add" with desired icon from material symbols library -->
           <span class="material-symbols-outlined"> close </span>
         </button>
       </div>
 
-      <!-- This section can be used to add any nested components that would be used in a modal -->
+      <!-- The modal-content section can be used to add any nested components that would be used in a modal -->
       <div class="modal-content">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -46,13 +45,10 @@
       </div>
 
       <div class="button-group">
-        <!-- Replace with new button class -->
-        <!-- class="hc-button hc-button--secondary btn-outline-primary" -->
-
         <!-- Close button -->
         <button
           type="button"
-          class="hc-button hc-button--secondary btn-outline-primary"
+          class="hc-button hc-button--secondary"
           data-close-modal
         >
           Close

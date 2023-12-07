@@ -1,13 +1,13 @@
 /* -- Modal Style Here -- */
 
 /* This styles the modal container */
-dialog[open] {
+dialog.hc-modal[open] {
   display: block;
   margin: auto;
   max-width: 48rem;
 }
 
-/* This contains the modal headin and close button */
+/* This contains the modal heading and close button */
 .modal-header-and-close {
   display: flex;
   flex-direction: row;
@@ -25,6 +25,10 @@ dialog[open] {
   gap: var(--hc-spacing-05);
   padding-right: var(--hc-spacing-07);
   padding-bottom: var(--hc-spacing-07);
+}
+
+dialog.hc-modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* =========== */

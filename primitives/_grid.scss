@@ -19,6 +19,7 @@ html {
   -ms-overflow-style: scrollbar;
 }
 
+// maybe can be removed because reset file might have this
 *,
 *::before,
 *::after {
@@ -26,6 +27,7 @@ html {
   box-sizing: inherit;
 }
 
+// maybe can be removed because reset file might have this
 .hc-clearfix::after {
   display: block;
   clear: both;
