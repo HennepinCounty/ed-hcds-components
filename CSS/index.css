@@ -286,7 +286,9 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   --hc-border-color-disabled: var(--hc-gray-30);
   --hc-border-color-error: var(--hc-support-error);
   --hc-border-color-inverse: var(--hc-gray-90);
-  --hc-border-color-transparent: var(--hc-transparent);
+  --hc-border-color-transparent: var(
+    --hc-transparent
+  );
   --hc-button-primary: var(--hc-background-brand);
   --hc-button-primary-hover: var(--hc-background-brand-hover);
   --hc-button-primary-active: var(--hc-background-brand-active);
@@ -2616,7 +2618,6 @@ html {
 /* ======================== */
 /* ======================== */
 .hc-button {
-  cursor: pointer;
   box-sizing: border-box;
   border: 2px solid var(--hc-transparent);
   display: inline-flex;
@@ -3083,7 +3084,7 @@ p.hc-alert-paragraph {
 
 /* -- Modal Style Here -- */
 /* This styles the modal container */
-dialog[open] {
+dialog.hc-modal[open] {
   display: block;
   margin: auto;
   max-width: 48rem;
@@ -3109,15 +3110,8 @@ dialog[open] {
   padding-bottom: var(--hc-spacing-07);
 }
 
-dialog::backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1040;
-  width: 100vw;
-  height: 100vh;
-  background-color: #000;
-  box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.2);
+dialog.hc-modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* =========== */

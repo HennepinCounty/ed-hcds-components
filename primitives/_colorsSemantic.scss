@@ -33,6 +33,8 @@
   --hc-support-info-inverse: var(--hc-blue-50);
 
   // Border colors
+  // These need to be reconciled with the _borderStyle.scss primitives
+
   --hc-border-color-focus-01: var(
     --hc-white
   ); //use for bright color in focus states
@@ -45,7 +47,9 @@
   --hc-border-color-disabled: var(--hc-gray-30);
   --hc-border-color-error: var(--hc-support-error);
   --hc-border-color-inverse: var(--hc-gray-90);
-  --hc-border-color-transparent: var(--hc-transparent); //Can be deleted
+  --hc-border-color-transparent: var(
+    --hc-transparent
+  ); //Probably able to be deleted -- we probably just need --hc-transparent and this is overkill
 
   //Outline colors
 
