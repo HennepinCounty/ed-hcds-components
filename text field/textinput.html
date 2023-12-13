@@ -15,7 +15,7 @@
       <h3 class="h3-underline">With label</h3>
       <div class="hc-element">
         <span>Default</span>
-        <label class="hc-label" for="hc-id1">Label</label>
+        <label class="hc-label" for="hc-id1">Label </label>
         <input class="hc-input" id="hc-id1" name="hc-name1" type="text" spellcheck="true">
       </div>
       <div class="hc-element">
@@ -40,38 +40,40 @@
         <input class="hc-input" id="hc-id5" name="hc-name5" type="text" disabled>
       </div>        
     </div>
+
+    <!-- helper text  -->
     <h3 class="h3-underline">With helper text and label</h3>
     <div class="hc-element">
       <span>Placeholder</span>
       <label class="hc-label" for="hc-id6">Label</label>
-      <div class="hc-helpertext">Helper text</div>
-      <input class="hc-input" id="hc-id6" name="hc-name6" type="text" spellcheck="true">
+      <div id="placeholder-helper-text" class="hc-helpertext">Placeholder helper text</div>
+      <input class="hc-input" id="hc-id6" name="hc-name6" aria-describedby="placeholder-helper-text" type="text" spellcheck="true">
     </div>
     <div class="hc-element">
       <span>User Input</span>
       <label class="hc-label" for="hc-id7">Label</label>
-      <div class="hc-helpertext">Helper text</div>
-      <input class="hc-input" id="hc-id7" name="hc-name7" value="Input text" type="text">
+      <div id="user-input-helper-text" class="hc-helpertext">User input helper text</div>
+      <input class="hc-input" id="hc-id7" aria-describedby="user-input-helper-text" name="hc-name7" value="Input text" type="text">
     </div>
     <div class="hc-element">
       <span>Error</span>
       <label class="hc-label" for="hc-id8">Label</label>
-      <div class="hc-helpertext">Helper text</div>
-      <input class="hc-input-error" id="hc-id8" name="hc-name8" type="text" value="Input text">
-      <div class="error-msg">Error Message</div>
+      <div id="error-helper-text" class="hc-helpertext">Error helper text</div>
+      <input class="hc-input-error" id="hc-id8" name="hc-name8" aria-describedby="error-helper-text error-message" type="text" value="Input text">
+      <div class="error-msg" id="error-message">Error message</div>
     </div>
     <div class="hc-element">
       <span>Focus/Active</span>
       <label class="hc-label" for="hc-id9">Label</label>
-      <div class="hc-helpertext">Helper text</div>
-      <input class="hc-input" id="hc-id9" name="hc-name9" type="text" value="Input text" autofocus>
+      <div class="hc-helpertext" id="focus-helper-text">Focus/Active helper text</div>
+      <input class="hc-input" id="hc-id9" name="hc-name9" aria-describedby="focus-helper-text" type="text" value="Input text" autofocus>
     </div>
     <div class="hc-element">
       <span>Disabled</span>
       <label class="hc-label disabled" for="hc-id10">Label</label>
-      <div class="hc-helpertext">Helper text</div>
-      <input class="hc-input" id="hc-id10" name="hc-name10" type="text" disabled>
+      <div class="hc-helpertext" id="disabled-helper-text">Disabled helper text</div>
+      <input class="hc-input" id="hc-id10" name="hc-name10" aria-describedby="disabled-helper-text" type="text" disabled>
     </div>    
   </div>
 </body>
-</html>
+</html>h
