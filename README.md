@@ -43,8 +43,6 @@ Use to update compiled CSS from index.scss after any file save in project.
 
 **index.scss is currently in the primtives folder**
 
-<summary>Compile settings currently used</summary>
-<details>
 ```
 {
   "telemetry.enableTelemetry": false,
@@ -91,8 +89,6 @@ Use to update compiled CSS from index.scss after any file save in project.
   "liveSassCompile.settings.forceBaseDirectory": ""
 }
 ```
-
-</details>
 
 [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 Use for code formatting. Currently using default settings.
