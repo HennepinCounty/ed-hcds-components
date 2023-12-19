@@ -373,7 +373,8 @@ a:disabled {
 }
 
 .hc-fieldset__legend {
-  font-size: var(--hc-font-fieldLabel-size);
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-fieldLabel-size-regular);
   line-height: 1.3;
   font-weight: 500;
   /* govUK fix for legend text wrapping in Edge and IE
