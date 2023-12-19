@@ -84,14 +84,14 @@
 /* ===================================================== */
 /* ===================================================== */
 
-body {
+/* body {
   font-family: Segoe UI;
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
   letter-spacing: 0em;
   text-align: left;
-}
+} */
 
 /* fieldset legend {
   font-size: 24px;
@@ -120,15 +120,15 @@ fieldset {
 } */
 
 /* focus style update */
-.custom-focus {
+/* .custom-focus {
   max-width: 58%;
   padding: 8px;
-}
+} */
 
-input[type="checkbox"]:focus-within {
+/* input[type="checkbox"]:focus-within {
   outline: 2px solid;
   outline-offset: 10px;
-}
+} */
 
 /* label {
   padding-left: 8%;
@@ -167,8 +167,6 @@ input[type="checkbox"]:focus-within {
   left: 1px;
 
   z-index: 1;
-  /* top: $input-offset * -1;
-  left: $input-offset * -1; */
   width: 32px;
   height: 32px;
   margin: 0;
@@ -178,11 +176,15 @@ input[type="checkbox"]:focus-within {
 }
 
 .hc-checkbox__label {
+  font-size: var(--hc-font-fieldLabel-size-regular);
+  color: var(--hc-text-primary, #171a1d);
+  font-weight: 400;
+
   display: inline-block;
   margin-bottom: 0px;
   padding-left: var(--hc-spacing-03);
   cursor: pointer;
-  /* touch-action: manipulation; */
+  touch-action: manipulation;
 }
 
 /* [ ] Check box styling */
@@ -195,7 +197,7 @@ input[type="checkbox"]:focus-within {
   width: 32px;
   height: 32px;
   border: var(--hc-border-width-medium) solid var(--hc-border-color-strong);
-  background: transparent;
+  background: var(--hc-transparent);
   border-radius: 4px;
   cursor: pointer;
 }
@@ -257,5 +259,5 @@ input[type="checkbox"]:focus-within {
 
 .hc-checkbox__input:disabled + .hc-checkbox__label,
 .hc-checkbox__input:disabled ~ .hc-hint {
-  color: (--hc-text-disabled);
+  color: var(--hc-text-disabled);
 }

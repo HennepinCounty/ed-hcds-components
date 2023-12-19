@@ -4,8 +4,8 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../../CSS/index.css" />
-    <link rel="stylesheet" href="Checkbox.css" />
-    <script src="Checkbox.js" defer></script>
+    <link rel="stylesheet" href="checkbox.css" />
+    <script src="checkbox.js" defer></script>
   </head>
 
   <body class="hc-padding-06">
@@ -165,7 +165,7 @@
             />
 
             <!-- This contains the label and uses ::before to create the checkbox box, and ::after to create the checkmark -->
-            <label class="hc-label hc-checkbox__label" for="waste">
+            <label class="hc-field-label hc-checkbox__label" for="waste">
               Waste from animal carcasses
             </label>
           </div>
@@ -181,7 +181,7 @@
             />
 
             <!-- This contains the label and uses ::before to create the checkbox box, and ::after to create the checkmark -->
-            <label class="hc-label hc-checkbox__label" for="id2">
+            <label class="hc-field-label hc-checkbox__label" for="id2">
               Waste from animal carcasses
             </label>
           </div>
@@ -199,12 +199,45 @@
             />
 
             <!-- This contains the label and uses ::before to create the checkbox box, and ::after to create the checkmark -->
-            <label class="hc-label hc-checkbox__label" for="Example">
+            <label class="hc-field-label hc-checkbox__label" for="Example">
               Waste from animal carcasses
             </label>
             <div id="example-hint" class="hc-text-hint hc-checkbox__hint">
               Example of hint text
             </div>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <!-- ============================== -->
+    <!-- ============================== -->
+    <!-- Easy copy  + paste -->
+    <!-- ============================== -->
+    <!-- ============================== -->
+
+    <div class="hc-form-group">
+      <fieldset class="hc-fieldset">
+        <legend class="hc-fieldset__legend" aria-describedby="fieldset-hint">
+          Title for legend
+        </legend>
+        <div class="hc-text-hint" id="fieldset-hint">
+          Hint text preview to provide ccontext for question
+        </div>
+        <div class="hc-checkboxes" data-module="hc-checkbox">
+          <div class="hc-checkbox__item">
+            <input
+              class="hc-checkbox__input"
+              id="waste"
+              name="waste"
+              type="checkbox"
+              value="carcasses"
+              disabled
+            />
+
+            <label class="hc-field-label hc-checkbox__label" for="waste">
+              Waste from animal carcasses
+            </label>
           </div>
         </div>
       </fieldset>

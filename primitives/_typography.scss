@@ -148,258 +148,256 @@
 // ===========================================================================
 // ===========================================================================
 
-:root {
-  h1,
-  .hc-heading-xl {
-    color: var(--hc-text-primary, #171a1d);
+h1,
+.hc-heading-xl {
+  color: var(--hc-text-primary, #171a1d);
 
-    /* desktop Headings/H1 */
-    display: block;
-    font-family: var(--hc-font-family);
-    color: var(--hc-text-primary);
-    font-size: 32px;
-    font-size: var(--hc-font-h1-size);
-    font-style: normal;
-    font-weight: 100;
-    line-height: 108%;
-    margin-bottom: var(--hc-font-h1-margin-bottom);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+  /* desktop Headings/H1 */
+  display: block;
+  font-family: var(--hc-font-family);
+  color: var(--hc-text-primary);
+  font-size: 32px;
+  font-size: var(--hc-font-h1-size);
+  font-style: normal;
+  font-weight: 100;
+  line-height: 108%;
+  margin-bottom: var(--hc-font-h1-margin-bottom);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-  h2,
-  .hc-heading-l {
-    color: var(--hc-text-primary, #171a1d);
+h2,
+.hc-heading-l {
+  color: var(--hc-text-primary, #171a1d);
 
-    /*desktop  Headings/H2 */
-    font-family: var(--hc-font-family);
-    font-size: var(--hc-font-h2-size);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%; /* 2.4rem */
-    margin-bottom: var(--hc-font-h2-margin-bottom);
-  }
+  /*desktop  Headings/H2 */
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-h2-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 2.4rem */
+  margin-bottom: var(--hc-font-h2-margin-bottom);
+}
 
-  h3,
-  .hc-heading-m {
-    color: var(--text-primary, #171a1d);
+h3,
+.hc-heading-m {
+  color: var(--text-primary, #171a1d);
 
-    /*desktop  Headings/H3 */
-    font-family: var(--hc-font-family);
-    font-size: var(--hc-font-h3-size);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%; /* 1.992rem */
-    margin-bottom: var(--hc-font-h3-margin-bottom);
-  }
+  /*desktop  Headings/H3 */
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-h3-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 1.992rem */
+  margin-bottom: var(--hc-font-h3-margin-bottom);
+}
 
-  h4,
-  .hc-heading-s {
-    color: var(--text-primary, #171a1d);
+h4,
+.hc-heading-s {
+  color: var(--text-primary, #171a1d);
 
-    /*desktop  Headings/H4 */
-    font-family: var(--hc-font-family);
-    font-size: var(--hc-font-h4-size);
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%; /* 1.5rem */
-    margin-bottom: var(--hc-font-h4-margin-bottom);
-    margin-top: var(--hc-font-h4-margin-top);
-  }
+  /*desktop  Headings/H4 */
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-h4-size);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 1.5rem */
+  margin-bottom: var(--hc-font-h4-margin-bottom);
+  margin-top: var(--hc-font-h4-margin-top);
+}
 
-  h5,
-  .hc-heading-xs {
-    color: var(--text-primary, #171a1d);
+h5,
+.hc-heading-xs {
+  color: var(--text-primary, #171a1d);
 
-    /*desktop  Headings/H5 */
-    font-family: var(--hc-font-family);
-    font-size: var(--hc-font-h5-size);
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%; /* 1.5rem */
-    margin-bottom: var(--hc-font-h5-margin-bottom);
-  }
+  /*desktop  Headings/H5 */
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-h5-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 1.5rem */
+  margin-bottom: var(--hc-font-h5-margin-bottom);
+}
 
-  h6,
-  .hc-heading-xxs {
-    color: var(--text-primary, #171a1d);
+h6,
+.hc-heading-xxs {
+  color: var(--text-primary, #171a1d);
 
-    /*desktop  Headings/H6 */
-    font-family: var(--hc-font-family);
-    font-size: var(--hc-font-h6-size);
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%; /* 1.02rem */
-    margin-bottom: var(--hc-font-h6-margin-bottom);
-  }
+  /*desktop  Headings/H6 */
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-h6-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 1.02rem */
+  margin-bottom: var(--hc-font-h6-margin-bottom);
+}
 
-  p,
-  .hc-body,
-  .hc-body-m {
-    color: var(--hc-text-primary, #171a1d);
-    font-family: var(--hc-font-family);
-    font-size: var(--hc-font-body-size-regular);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 1.6875rem */
-    letter-spacing: -0.01125rem;
-    max-width: 90ch;
-  }
+p,
+.hc-body,
+.hc-body-m {
+  color: var(--hc-text-primary, #171a1d);
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-body-size-regular);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.6875rem */
+  letter-spacing: -0.01125rem;
+  max-width: 90ch;
+}
 
-  .hc-body-l {
-    color: var(--hc-text-primary, #171a1d);
-    font-family: var(--hc-font-family);
-    font-size: var(--hc-font-body-size-large);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 1.6875rem */
-    letter-spacing: -0.01125rem;
-    max-width: 90ch;
-  }
+.hc-body-l {
+  color: var(--hc-text-primary, #171a1d);
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-body-size-large);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.6875rem */
+  letter-spacing: -0.01125rem;
+  max-width: 90ch;
+}
 
-  .hc-body-s {
-    color: var(--hc-text-primary, #171a1d);
-    font-family: var(--hc-font-family);
-    font-size: var(--hc-font-body-size-small);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 1.6875rem */
-    letter-spacing: -0.01125rem;
-    max-width: 90ch;
-  }
+.hc-body-s {
+  color: var(--hc-text-primary, #171a1d);
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-body-size-small);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 1.6875rem */
+  letter-spacing: -0.01125rem;
+  max-width: 90ch;
+}
 
-  p + p {
-    margin-block-start: var(--hc-spacing-04);
-  }
+p + p {
+  margin-block-start: var(--hc-spacing-04);
+}
 
-  a,
-  a:link {
-    color: var(--hc-link-primary);
-    font-family: var(--hc-font-family);
-    font-size: var(--hc-font-body-size-regular);
-    font-weight: 400;
-    text-decoration: underline;
-    text-decoration-thickness: max(1px, 0.0625rem);
-    text-underline-offset: 0.1578em;
-    // decoration thickness and underline offset values taken from govuk as sensible defaults for link styling
-  }
+a,
+a:link {
+  color: var(--hc-link-primary);
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-body-size-regular);
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-thickness: max(1px, 0.0625rem);
+  text-underline-offset: 0.1578em;
+  // decoration thickness and underline offset values taken from govuk as sensible defaults for link styling
+}
 
-  a:hover {
-    color: var(--hc-link-primary-hover);
-  }
+a:hover {
+  color: var(--hc-link-primary-hover);
+}
 
-  a:visited {
-    color: var(--hc-link-link-visited);
-  }
+a:visited {
+  color: var(--hc-link-link-visited);
+}
 
-  a:visited:hover {
-    color: var(--hc-link-primary-hover);
-  }
+a:visited:hover {
+  color: var(--hc-link-primary-hover);
+}
 
-  a:disabled {
-    color: var(--hc-link-disabled);
-  }
+a:disabled {
+  color: var(--hc-link-disabled);
+}
 
-  .hc-field-label {
-    display: block;
-    color: var(--hc-text-primary, #171a1d);
+.hc-field-label {
+  display: block;
+  color: var(--hc-text-primary, #171a1d);
 
-    /* Body/Body */
-    font-family: var(--hc-font-family);
-    font-size: var(--hc-font-fieldLabel-size);
-    font-style: normal;
-    font-weight: 500;
-    line-height: 130%; /* 1.6875rem */
-    letter-spacing: -0.01em;
-  }
+  /* Body/Body */
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-fieldLabel-size-regular);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 1.6875rem */
+  letter-spacing: -0.01em;
+}
 
-  .hc-field-label--disabled {
-    color: var(--hc-text-disabled);
-  }
+.hc-field-label--disabled {
+  color: var(--hc-text-disabled);
+}
 
-  .hc-field-label--small {
-    font-size: var(--hc-font-fieldLabel-size-small);
-  }
+.hc-field-label--small {
+  font-size: var(--hc-font-fieldLabel-size-small);
+}
 
-  .hc-field-label--large {
-    font-size: var(--hc-font-fieldLabel-size-large);
-  }
+.hc-field-label--large {
+  font-size: var(--hc-font-fieldLabel-size-large);
+}
 
-  .hc-text-hint {
-    display: block;
-    color: var(--hc-text-hint, #5c646d);
-    /* Body/Body-Small */
-    font-family: var(--hc-font-family);
-    font-size: var(--font-hint-size);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 1.5rem */
-    margin-bottom: var(--hc-spacing-05);
-  }
+.hc-text-hint {
+  display: block;
+  color: var(--hc-text-hint, #5c646d);
+  /* Body/Body-Small */
+  font-family: var(--hc-font-family);
+  font-size: var(--font-hint-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 1.5rem */
+  margin-bottom: var(--hc-spacing-05);
+}
 
-  .hc-text-hint--disabled {
-    color: var(--hc-text-disabled);
-  }
+.hc-text-hint--disabled {
+  color: var(--hc-text-disabled);
+}
 
-  .hc-text-error {
-    display: block;
-    color: var(--hc-text-error, #ef413d);
-    /* Body/Body-Small */
-    font-family: var(--hc-font-family);
-    font-size: var(--hc-font-error-size);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 1.5rem */
-    margin: var(--hc-spacing-00);
-  }
+.hc-text-error {
+  display: block;
+  color: var(--hc-text-error, #ef413d);
+  /* Body/Body-Small */
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-error-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 1.5rem */
+  margin: var(--hc-spacing-00);
+}
 
-  // ========================
-  // ========================
-  //  Form element styling
-  // ========================
-  // ========================
+// ========================
+// ========================
+//  Form element styling
+// ========================
+// ========================
 
-  /* this can be moved into its own component. this should be a general class for groups of form items */
-  .hc-formgroup {
-    margin-bottom: 24px;
-  }
+/* this can be moved into its own component. this should be a general class for groups of form items */
+.hc-formgroup {
+  margin-bottom: 24px;
+}
 
-  /* this can be moved into its own component. this should be a general class for groups of form items */
+/* this can be moved into its own component. this should be a general class for groups of form items */
 
-  .hc-fieldset {
-    min-width: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-  }
+.hc-fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 
-  .hc-fieldset__legend {
-    font-size: var(--hc-font-fieldLabel-size);
-    line-height: 1.3;
-    font-weight: 500;
-    /* govUK fix for legend text wrapping in Edge and IE
+.hc-fieldset__legend {
+  font-size: var(--hc-font-fieldLabel-size);
+  line-height: 1.3;
+  font-weight: 500;
+  /* govUK fix for legend text wrapping in Edge and IE
     1. IE9-11 & Edge 12-13
     2. IE8-11 */
-    box-sizing: border-box; /* 1 */
-    display: table; /* 2 */
-    max-width: 100%; /* 1 */
-    margin-bottom: var(--hc-spacing-02); //review spacing later
-    padding: 0px;
-  }
-
-  /* Set to inherit from fieldset__legend */
-  /* override so that things can be tagged as a heading for accessibility but inherit the legend styling */
-  /* https://github.com/alphagov/govuk-frontend/pull/684 */
-  /* We probably don't need bc our legends aren't headings (but if we do one question per page in the future for forms, it may make sense to add this) */
-
-  // .hc-fieldset__header {
-  //   font-size: inherit;
-  //   font-weight: inherit;
-  //   line-height: inherit;
-  //   margin-top: inherit;
-  //   margin-bottom: inherit;
-  // }
+  box-sizing: border-box; /* 1 */
+  display: table; /* 2 */
+  max-width: 100%; /* 1 */
+  margin-bottom: var(--hc-spacing-02); //review spacing later
+  padding: 0px;
 }
+
+/* Set to inherit from fieldset__legend */
+/* override so that things can be tagged as a heading for accessibility but inherit the legend styling */
+/* https://github.com/alphagov/govuk-frontend/pull/684 */
+/* We probably don't need bc our legends aren't headings (but if we do one question per page in the future for forms, it may make sense to add this) */
+
+// .hc-fieldset__header {
+//   font-size: inherit;
+//   font-weight: inherit;
+//   line-height: inherit;
+//   margin-top: inherit;
+//   margin-bottom: inherit;
+// }
 
 /* ==================================================  */
 /* ==================================================  */
