@@ -88,10 +88,6 @@ Contains CSS variables for shadow styling.
 
 Contains CSS variables for border radius.
 
-## Layout
-
-These files contain classes and variables used for layouts, such as padding variables or grid classes.
-
-## Icons
+### Icons
 
 Creates basic icon sizing. Classes expect Material Symbols font family to be imported as a stylesheet in the HTML.
