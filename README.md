@@ -43,9 +43,9 @@ Use to update compiled CSS from index.scss after any file save in project.
 
 **index.scss is currently in the primtives folder**
 
-```
 <summary>Compile settings currently used</summary>
 <details>
+```
 {
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
