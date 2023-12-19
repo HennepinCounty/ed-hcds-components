@@ -15,9 +15,13 @@ Contains HTML, CSS, and JS for each component
 
 ## CSS
 
-## index.css
+Contains combined CSS output from utilities and primitives
 
-Precompiled CSS of all files. This file, along with JS files in some components, contain the complete design system. This file does not contain any JS.
+### index.css
+
+Precompiled CSS of all files. This file, along with JS files in some components, contain the complete design system.
+
+This file does not contain any JS.
 
 ## Primitives
 
@@ -29,33 +33,19 @@ Contains utility classes similar to Tailwind CSS
 
 # Recommended extensions
 
-[CSS Navigation](https://marketplace.visualstudio.com/items?itemName=pucelle.vscode-css-navigation)
+[CSS Navigation](https://marketplace.visualstudio.com/items?itemName=pucelle.vscode-css-navigation) Adds autocomplete and "Go to defintion" for CSS classes.
 
-Adds autocomplete and "Go to defintion" for CSS classes.
+[CSS Variable Autocomplete](https://marketplace.visualstudio.com/items?itemName=vunguyentuan.vscode-css-variables) Adds autocomplete and "Go to defintion" for CSS variables.
 
-[CSS Variable Autocomplete](https://marketplace.visualstudio.com/items?itemName=vunguyentuan.vscode-css-variables)
+[Figma for VS Code](https://marketplace.visualstudio.com/items?itemName=figma.figma-vscode-extension) Integrates Figma and VS Code.
 
-Adds autocomplete and "Go to defintion" for CSS variables.
+[htmltagwrap](https://marketplace.visualstudio.com/items?itemName=bradgashler.htmltagwrap) Highlight code then press alt+W to instantly wrap the selected in opening/closing brackets
 
-[Figma for VS Code](https://marketplace.visualstudio.com/items?itemName=figma.figma-vscode-extension)
+[Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) Host a local server window inside VS Code, so that you don't need to switch between VS Code and browsers.
 
-Integrates Figma and VS Code.
+[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) Use for code formatting. Currently using default settings.
 
-[htmltagwrap](https://marketplace.visualstudio.com/items?itemName=bradgashler.htmltagwrap)
-
-Highlight code then press alt+W to instantly wrap the selected in opening/closing brackets
-
-[Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server)
-
-Host a local server window inside VS Code, so that you don't need to switch between VS Code and browsers.
-
-[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-
-Use for code formatting. Currently using default settings.
-
-[Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
-
-Use to update compiled CSS from index.scss after any file save in project.
+[Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) Use to update compiled CSS from index.scss after any file save in project.
 
 **Live Sass Compiler currently uses these settings**
 
