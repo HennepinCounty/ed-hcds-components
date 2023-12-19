@@ -252,6 +252,7 @@ fieldset {
   border: var(--hc-border-brand);
 }
 
+/* Disabled stylig */
 .hc-checkbox__input:disabled,
 .hc-checkbox__input:disabled + .hc-checkbox__label {
   cursor: not-allowed;
@@ -260,4 +261,8 @@ fieldset {
 .hc-checkbox__input:disabled + .hc-checkbox__label,
 .hc-checkbox__input:disabled ~ .hc-hint {
   color: var(--hc-text-disabled);
+}
+
+.hc-checkbox__input:disabled + .hc-checkbox__label::before {
+  border-color: var(--hc-border-color-disabled);
 }
