@@ -323,7 +323,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   --hc-text-secondary: var(--hc-gray-80);
   --hc-text-on-color: var(--hc-white);
   --hc-text-placeholder: var(--hc-gray-40);
-  --hc-text-hint: var(--hc-gray-70);
+  --hc-text-hint: var(--hc-gray-60);
   --hc-text-error: var(--hc-support-error);
   --hc-text-inverse: var(--hc-white);
   --hc-text-disabled: var(--hc-gray-50);
@@ -433,6 +433,14 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
     font-size: 32pt;
     line-height: 1.15;
   }
+}
+:root {
+  /* this can be moved into its own component. this should be a general class for groups of form items */
+  /* this can be moved into its own component. this should be a general class for groups of form items */
+  /* Set to inherit from fieldset__legend */
+  /* override so that things can be tagged as a heading for accessibility but inherit the legend styling */
+  /* https://github.com/alphagov/govuk-frontend/pull/684 */
+  /* We probably don't need bc our legends aren't headings (but if we do one question per page in the future for forms, it may make sense to add this) */
 }
 :root h1,
 :root .hc-heading-xl {
@@ -592,7 +600,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   font-style: normal;
   font-weight: 400;
   line-height: 130%; /* 1.5rem */
-  margin-bottom: var(--hc-spacing-02);
+  margin-bottom: var(--hc-spacing-05);
 }
 :root .hc-text-hint--disabled {
   color: var(--hc-text-disabled);
@@ -607,6 +615,28 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   font-weight: 400;
   line-height: 130%; /* 1.5rem */
   margin: var(--hc-spacing-00);
+}
+:root .hc-formgroup {
+  margin-bottom: 24px;
+}
+:root .hc-fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+:root .hc-fieldset__legend {
+  font-size: var(--hc-font-fieldLabel-size);
+  line-height: 1.3;
+  font-weight: 500;
+  /* govUK fix for legend text wrapping in Edge and IE
+  1. IE9-11 & Edge 12-13
+  2. IE8-11 */
+  box-sizing: border-box; /* 1 */
+  display: table; /* 2 */
+  max-width: 100%; /* 1 */
+  margin-bottom: var(--hc-spacing-02);
+  padding: 0px;
 }
 
 /* ==================================================  */
@@ -769,6 +799,31 @@ ol + .hc-heading-s,
   --hc-outline-style-focus: 3px solid var(--hc-background-brand);
 }
 
+:root {
+  --hc-spacing-base: 16px;
+  --hc-spacing-00: calc(var(--hc-spacing-base) * 0); /*0px*/
+  --hc-spacing-01: calc(var(--hc-spacing-base) * 0.125); /*2px*/
+  --hc-spacing-02: calc(var(--hc-spacing-base) * 0.25); /*4px*/
+  --hc-spacing-03: calc(var(--hc-spacing-base) * 0.5); /*8px*/
+  --hc-spacing-04: calc(var(--hc-spacing-base) * 0.75); /*12px*/
+  --hc-spacing-05: calc(var(--hc-spacing-base) * 1); /*16px*/
+  --hc-spacing-06: calc(var(--hc-spacing-base) * 1.5); /*24px*/
+  --hc-spacing-07: calc(var(--hc-spacing-base) * 2); /*32px*/
+  --hc-spacing-08: calc(var(--hc-spacing-base) * 2.5); /*40px*/
+  --hc-spacing-09: calc(var(--hc-spacing-base) * 3); /*48px*/
+  --hc-spacing-10: calc(var(--hc-spacing-base) * 4); /*64px*/
+  --hc-spacing-11: calc(var(--hc-spacing-base) * 5); /*80px*/
+  --hc-spacing-12: calc(var(--hc-spacing-base) * 6); /*96px*/
+  --hc-spacing-13: calc(var(--hc-spacing-base) * 10); /*160px*/
+}
+
+:root .hc-width-full {
+  width: 100%;
+}
+:root .hc-width-auto {
+  width: auto;
+}
+
 :root .hc-gap-00 {
   gap: var(--hc-spacing-00);
 }
@@ -826,24 +881,6 @@ ol + .hc-heading-s,
 
 .hc-flex-row {
   flex-direction: row;
-}
-
-:root {
-  --hc-spacing-base: 16px;
-  --hc-spacing-00: calc(var(--hc-spacing-base) * 0); /*0px*/
-  --hc-spacing-01: calc(var(--hc-spacing-base) * 0.125); /*2px*/
-  --hc-spacing-02: calc(var(--hc-spacing-base) * 0.25); /*4px*/
-  --hc-spacing-03: calc(var(--hc-spacing-base) * 0.5); /*8px*/
-  --hc-spacing-04: calc(var(--hc-spacing-base) * 0.75); /*12px*/
-  --hc-spacing-05: calc(var(--hc-spacing-base) * 1); /*16px*/
-  --hc-spacing-06: calc(var(--hc-spacing-base) * 1.5); /*24px*/
-  --hc-spacing-07: calc(var(--hc-spacing-base) * 2); /*32px*/
-  --hc-spacing-08: calc(var(--hc-spacing-base) * 2.5); /*40px*/
-  --hc-spacing-09: calc(var(--hc-spacing-base) * 3); /*48px*/
-  --hc-spacing-10: calc(var(--hc-spacing-base) * 4); /*64px*/
-  --hc-spacing-11: calc(var(--hc-spacing-base) * 5); /*80px*/
-  --hc-spacing-12: calc(var(--hc-spacing-base) * 6); /*96px*/
-  --hc-spacing-13: calc(var(--hc-spacing-base) * 10); /*160px*/
 }
 
 :root {
@@ -2562,13 +2599,6 @@ html {
   height: auto;
 }
 
-:root .hc-width-full {
-  width: 100%;
-}
-:root .hc-width-auto {
-  width: auto;
-}
-
 .material-symbols-outlined {
   font-family: "Material Symbols Outlined";
   font-weight: normal;
@@ -2640,20 +2670,6 @@ html {
   padding-right: var(--hc-spacing-03);
 }
 
-.hc-button--small {
-  font-size: var(--hc-font-body-size-small, 1rem);
-  height: var(--hc-height--small, 2.25rem);
-  padding-left: var(--hc-spacing-03);
-  padding-right: var(--hc-spacing-03);
-}
-
-.hc-button--large {
-  font-size: var(--hc-font-body-size-large, 1rem);
-  height: var(--hc-height--large, 3rem);
-  padding-left: var(--hc-spacing-05);
-  padding-right: var(--hc-spacing-05);
-}
-
 /* Focus styles */
 /* Focus should be defined once on the core button style so that it doesn't have to be repeated for the other variants */
 .hc-button:focus {
@@ -2680,13 +2696,28 @@ html {
   color: var(--hc-text-disabled);
 }
 
+/* Size variations */
+.hc-button--small {
+  font-size: var(--hc-font-body-size-small, 1rem);
+  height: var(--hc-height--small, 2.25rem);
+  padding-left: var(--hc-spacing-03);
+  padding-right: var(--hc-spacing-03);
+}
+
+.hc-button--large {
+  font-size: var(--hc-font-body-size-large, 1rem);
+  height: var(--hc-height--large, 3rem);
+  padding-left: var(--hc-spacing-05);
+  padding-right: var(--hc-spacing-05);
+}
+
 /* ======================== */
 /* ======================== */
 /* Secondary button */
 /* ======================== */
 /* ======================== */
 .hc-button--secondary {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   background-color: var(--hc-white);
   color: var(--text-primary);
   border: 2px solid var(--hc-button-secondary-border);
@@ -2694,14 +2725,14 @@ html {
 
 /* Background colors */
 .hc-button--secondary:hover {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-hover);
   border: 2px solid var(--hc-button-secondary-border-hover);
 }
 
 .hc-button--secondary:active {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-active);
   border: 2px solid var(--hc-button-secondary-border-active);
@@ -2723,8 +2754,8 @@ html {
 .hc-button--danger {
   background-color: var(--hc-button-danger);
   color: var(--hc-text-on-color);
-  margin: auto;
-  text-align: center;
+  /* margin: auto; */
+  /* text-align: center; */
 }
 
 .hc-button--danger:hover {
@@ -2735,10 +2766,10 @@ html {
   background-color: var(--hc-button-danger-active);
 }
 
-.hc-button--danger:disabled {
+/* should be able to delete */
+/* .hc-button--danger:disabled {
   background-color: var(--hc-button-danger-active);
-}
-
+} */
 .hc-button--danger:disabled {
   background-color: var(--hc-button-disabled);
   color: var(--hc-text-disabled);
@@ -2757,32 +2788,49 @@ html {
 /* Icon sizing and position stored in _icons.scss*/
 /* These below classes can probably all be deleted after they're replaced in the HTML */
 .hc-button.hc-button--icon-left {
-  padding-left: var(--hc-spacing-03);
+  /* padding-left: var(--hc-spacing-03); */
+  padding-inline-start: var(--hc-spacing-03);
 }
 
 .hc-button.hc-button--icon-right {
-  padding-right: var(--hc-spacing-03);
+  /* padding-right: var(--hc-spacing-03); */
+  padding-inline-end: var(--hc-spacing-03);
 }
 
 .hc-button.hc-button--icon-only {
   align-items: center;
   justify-content: center;
-  padding-left: var(--hc-spacing-03);
-  padding-right: var(--hc-spacing-03);
+  /* padding-left: var(--hc-spacing-03);
+  padding-right: var(--hc-spacing-03); */
+  padding-inline-start: var(--hc-spacing-03);
+  padding-inline-end: var(--hc-spacing-03);
 }
 
 .hc-button--small.hc-button--icon-only {
   align-items: center;
   justify-content: center;
-  padding-left: var(--hc-spacing-02);
-  padding-right: var(--hc-spacing-02);
+  /* padding-left: var(--hc-spacing-02);
+  padding-right: var(--hc-spacing-02); */
+  padding-inline-start: var(--hc-spacing-02);
+  padding-inline-end: var(--hc-spacing-02);
 }
 
 .hc-button--large.hc-button--icon-only {
   align-items: center;
   justify-content: center;
-  padding-left: var(--hc-spacing-04);
-  padding-right: var(--hc-spacing-04);
+  /* padding-left: var(--hc-spacing-04);
+  padding-right: var(--hc-spacing-04); */
+  padding-inline-start: var(--hc-spacing-04);
+  padding-inline-end: var(--hc-spacing-04);
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--hc-spacing-03);
 }
 
 /* The below can all be deleted and is no longer in use -- double check and then delete */
@@ -2836,20 +2884,6 @@ html {
   height: 12px;
   width: 12px;
 } */
-.button-group {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-end;
-  gap: var(--hc-spacing-03);
-}
-
-.hc-form-group {
-  display: block;
-  margin-bottom: 32px;
-}
-
 .hc-form-element {
   margin-top: 1.2rem;
 }
@@ -2863,6 +2897,14 @@ html {
   display: flex;
   flex-direction: column;
   gap: var(--hc-spacing-03);
+}
+
+/* Different version of hc-input-wrapper, does the exact same thing with margin instead of gap */
+/* One or both of these methods should be deleted */
+/* Prefer to use hc-form-group because it matches Govuk as a reference */
+.hc-form-group {
+  display: block;
+  margin-bottom: 32px;
 }
 
 /* Styling for label above text field */

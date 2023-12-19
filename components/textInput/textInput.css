@@ -15,6 +15,7 @@
 
 /* Different version of hc-input-wrapper, does the exact same thing with margin instead of gap */
 /* One or both of these methods should be deleted */
+/* Prefer to use hc-form-group because it matches Govuk as a reference */
 .hc-form-group {
   display: block;
   margin-bottom: 32px;

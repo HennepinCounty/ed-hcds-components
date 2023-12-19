@@ -9,21 +9,21 @@
 @forward "./borderSize";
 @forward "./borderRadius";
 @forward "./borderStyle";
-@forward "./gap";
-@forward "./flex";
+@forward "./spacing";
+@forward "./width";
 
 // Layout styles
-@forward "./spacing";
-@forward "./margin";
-@forward "./padding";
-@forward "./grid";
-@forward "./width";
+@forward "../utiltities/gap";
+@forward "../utiltities/flex";
+@forward "../utiltities/margin";
+@forward "../utiltities/padding";
+@forward "../utiltities/grid";
 
 // Icons
 @forward "./icons";
 
 // Components
-@forward "../buttons/button.css";
-@forward "../textInput/textInput.css";
-@forward "../alertBanner/alert.css";
-@forward "../modal/modal.css";
+@forward "../components/buttons/button.css";
+@forward "../components/textInput/textInput.css";
+@forward "../components/alertBanner/alert.css";
+@forward "../components/modal/modal.css";

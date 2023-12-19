@@ -334,7 +334,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 1.5rem */
-    margin-bottom: var(--hc-spacing-02);
+    margin-bottom: var(--hc-spacing-05);
   }
 
   .hc-text-hint--disabled {
@@ -352,6 +352,53 @@
     line-height: 130%; /* 1.5rem */
     margin: var(--hc-spacing-00);
   }
+
+  // ========================
+  // ========================
+  //  Form element styling
+  // ========================
+  // ========================
+
+  /* this can be moved into its own component. this should be a general class for groups of form items */
+  .hc-formgroup {
+    margin-bottom: 24px;
+  }
+
+  /* this can be moved into its own component. this should be a general class for groups of form items */
+
+  .hc-fieldset {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .hc-fieldset__legend {
+    font-size: var(--hc-font-fieldLabel-size);
+    line-height: 1.3;
+    font-weight: 500;
+    /* govUK fix for legend text wrapping in Edge and IE
+    1. IE9-11 & Edge 12-13
+    2. IE8-11 */
+    box-sizing: border-box; /* 1 */
+    display: table; /* 2 */
+    max-width: 100%; /* 1 */
+    margin-bottom: var(--hc-spacing-02); //review spacing later
+    padding: 0px;
+  }
+
+  /* Set to inherit from fieldset__legend */
+  /* override so that things can be tagged as a heading for accessibility but inherit the legend styling */
+  /* https://github.com/alphagov/govuk-frontend/pull/684 */
+  /* We probably don't need bc our legends aren't headings (but if we do one question per page in the future for forms, it may make sense to add this) */
+
+  // .hc-fieldset__header {
+  //   font-size: inherit;
+  //   font-weight: inherit;
+  //   line-height: inherit;
+  //   margin-top: inherit;
+  //   margin-bottom: inherit;
+  // }
 }
 
 /* ==================================================  */

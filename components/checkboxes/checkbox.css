@@ -1,0 +1,261 @@
+.hc-checkbox-body {
+  font-family: Segoe UI;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+/* fieldset  */
+.hc-checkbox-legend {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: 0em;
+}
+
+/* Needs name update, not sure what this is for */
+.hc-checkbox-fieldset {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+/* commented out input[type=checkbox] */
+
+/* this would replace the default chekcbox styling without applying a class. That might cause conflict with other libraries that might be used in the proejct */
+/* instead this styling will be moved to a class so the styling only applies with <input class="{className}"> instead of applying with <input> */
+/* input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  padding: 10px;
+} */
+
+/* focus style update */
+.hc-checkbox-padding {
+  padding-left: 24px;
+
+  padding-bottom: 8px;
+}
+
+.hc-checkbox-input {
+  width: 17px;
+  height: 17px;
+  position: relative;
+  top: 1px;
+  margin-right: 10px;
+}
+
+.hc-checkbox-input[type="checkbox"] {
+  accent-color: #0058a4;
+}
+
+.hc-checkbox-input[type="checkbox"]:focus-within {
+  outline: 2px solid;
+  outline-offset: 5px;
+}
+
+.hc-checkbox-label {
+  display: block;
+  padding-left: 48px;
+  text-indent: -40px;
+}
+/* Styling for disabled checkboxes */
+
+.hc-checkbox-input[aria-disabled="true"] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.hc-checkbox-input[type="checkbox"][aria-disabled="true"]:checked {
+  background-color: #6c757d;
+}
+
+/* ===================================================== */
+/* ===================================================== */
+/* ===================================================== */
+/* ===================================================== */
+/* ===================================================== */
+/* ===================================================== */
+/* ===================================================== */
+/* ===================================================== */
+/* ===================================================== */
+/* ===================================================== */
+
+body {
+  font-family: Segoe UI;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+/* fieldset legend {
+  font-size: 24px;
+
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: 0em;
+} */
+
+.chkbox_item,
+fieldset {
+  border: 1px solid rgb(233, 232, 232);
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+/* commented out input[type=checkbox] */
+
+/* this would replace the default chekcbox styling without applying a class. That might cause conflict with other libraries that might be used in the proejct */
+/* instead this styling will be moved to a class so the styling only applies with <input class="{className}"> instead of applying with <input> */
+/* input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  padding: 10px;
+} */
+
+/* focus style update */
+.custom-focus {
+  max-width: 58%;
+  padding: 8px;
+}
+
+input[type="checkbox"]:focus-within {
+  outline: 2px solid;
+  outline-offset: 10px;
+}
+
+/* label {
+  padding-left: 8%;
+} */
+
+/* ====================================== */
+/* new styling based on govuk */
+/* https://github.com/alphagov/govuk-frontend/blob/9f05cea739d14d4cbf18e79b17228045ca84b3ba/packages/govuk-frontend/src/govuk/components/checkboxes/_index.scss */
+/* ====================================== */
+
+/* accessibly styling radio buttons/checkboxes */
+/* https://www.sarasoueidan.com/blog/inclusively-hiding-and-styling-checkboxes-and-radio-buttons/ */
+
+/* wrapper for input and label */
+/* includes min-height for consistent sizing of form elements */
+/* margin-bottom adds space between items (this might be changed to gap) */
+/* position: relative so that absolute positioning can be used for label and input */
+.hc-checkbox__item {
+  display: block;
+  position: relative;
+  min-height: 32px;
+  padding-left: 32px; /* This should equal width of the checkbox size*/
+  margin-bottom: var(--hc-spacing-05);
+  clear: left;
+}
+
+/* removes margin bottom from last element */
+.hc-checkbox__item:last-child,
+.hc-checkbox__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.hc-checkbox__input {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+
+  z-index: 1;
+  /* top: $input-offset * -1;
+  left: $input-offset * -1; */
+  width: 32px;
+  height: 32px;
+  margin: 0;
+
+  opacity: 0;
+  cursor: pointer;
+}
+
+.hc-checkbox__label {
+  display: inline-block;
+  margin-bottom: 0px;
+  padding-left: var(--hc-spacing-03);
+  cursor: pointer;
+  /* touch-action: manipulation; */
+}
+
+/* [ ] Check box styling */
+.hc-checkbox__label::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 32px;
+  height: 32px;
+  border: var(--hc-border-width-medium) solid var(--hc-border-color-strong);
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* The check mark is a box with a border on the left and bottom side (└──),
+ rotated 45 degrees */
+.hc-checkbox__label::after {
+  content: "";
+  box-sizing: border-box;
+
+  position: absolute;
+  top: 7px;
+  left: 6px;
+  width: 21px;
+  height: 12px;
+  color: white;
+  transform: rotate(-45deg);
+  border: solid;
+  border-width: 0 0 3px 3px;
+  /* Fix bug in IE11 caused by transform rotate (-45deg). */
+  /* See: alphagov/govuk_elements/issues/518 */
+  border-top-color: transparent;
+
+  opacity: 0;
+
+  background: transparent;
+  cursor: pointer;
+}
+
+.hc-checkbox__hint {
+  padding-left: var(--hc-spacing-03);
+}
+
+/* Focus state */
+.hc-checkbox__input:focus + .hc-checkbox__label::before {
+  /* border: var(--hc-border-style-focus); */
+  outline: var(--hc-outline-style-focus);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.hc-checkbox__input:checked + .hc-checkbox__label::after {
+  opacity: 1;
+  transition: 0.1ms;
+}
+
+/* checked state styling */
+.hc-checkbox__input:checked + .hc-checkbox__label::before {
+  background-color: var(
+    --hc-background-brand
+  ); /*adds blue backround in checked state*/
+  border: var(--hc-border-brand);
+}
+
+.hc-checkbox__input:disabled,
+.hc-checkbox__input:disabled + .hc-checkbox__label {
+  cursor: not-allowed;
+}
+
+.hc-checkbox__input:disabled + .hc-checkbox__label,
+.hc-checkbox__input:disabled ~ .hc-hint {
+  color: (--hc-text-disabled);
+}
