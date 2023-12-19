@@ -21,6 +21,12 @@ Precompiled CSS of all files. This file, along with JS files in some components,
 
 ## Primitives
 
+Contains variables for colors and spacing
+
+## Utilities
+
+Contains utility classes similar to Tailwind CSS
+
 # Recommended extensions
 
 [CSS Navigation](https://marketplace.visualstudio.com/items?itemName=pucelle.vscode-css-navigation)
@@ -43,8 +49,6 @@ Use for code formatting. Currently using default settings.
 
 [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
 Use to update compiled CSS from index.scss after any file save in project.
-
-**index.scss is currently in the primitives folder**
 
 **Live Sass Compiler currently uses these settings**
 
