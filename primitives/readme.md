@@ -4,42 +4,58 @@
 
 The primitives \_{name}.scss files are all written in vanilla CSS. The SCSS extension allows them to be imported into index.scss and then compiled into a single CSS file.
 
-Primitives must be compiled by SASS in this order:
+Must be compiled by SASS in this order:
 
 ```
-// Base styles
+// Primitives
 @forward "./reset";
 @forward "./visually-hidden";
 @forward "./colors";
 @forward "./colorsSemantic";
+@forward "./height";
 @forward "./typography";
 @forward "./shadows";
+@forward "./borderSize";
 @forward "./borderRadius";
-
-// Layout and utilities
+@forward "./borderStyle";
 @forward "./spacing";
-@forward "./margin";
-@forward "./padding";
-@forward "./grid";
+
+// Utilities
+@forward "../utiltities/width";
+@forward "../utiltities/gap";
+@forward "../utiltities/flex";
+@forward "../utiltities/margin";
+@forward "../utiltities/padding";
+@forward "../utiltities/grid";
 
 // Icons
 @forward "./icons";
 
 // Components
-@forward "../buttons/button.css";
+
+// Used in other components
+@forward "../components/buttons/button.css";
+@forward "../components/textInput/textInput.css";
+
+// Add if desired
+@forward "../components/modal/modal.css";
+@forward "../components/alertBanner/alert.css";
+
 ```
 
-Importing in this order is necessary so that variables get declared in early, and classes using variables are declared later.
+Importing in this order is necessary so that CSS variables get declared at the start of the file, and classes using those variables are declared later.
+
+It's also necessary to import components like buttons before other classes that use those components, like modals and alerts.
 
 # Primitive descriptions
 
-## Base styles
+## Tokens
 
-These styles are foundational styles that components are built upon. In atomic design, these might be considered sub-atomic elements
+These are foundational styles that components are built upon.
 
 ### Reset
 
-This file removes margin from basic HTML elements, adds `box-sizing: border-box;` to elements to make sizing calculations more intuitive
+This file removes margin from basic HTML elements, adds `box-sizing: border-box;` to elements to make sizing calculations more intuitive.
 
 ### Visually hidden
 
@@ -66,11 +82,11 @@ Contains class styling for paragraphs, headings, and other repeatable text eleme
 
 ### Shadows
 
-Contains CSS variables for shadow styling
+Contains CSS variables for shadow styling.
 
 ### Border radius
 
-Contains CSS variables for border radius
+Contains CSS variables for border radius.
 
 ## Layout
 

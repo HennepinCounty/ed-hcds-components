@@ -1,4 +1,4 @@
-// Base styles
+// Primtiives
 @forward "./reset";
 @forward "./visually-hidden";
 @forward "./colors";
@@ -10,9 +10,9 @@
 @forward "./borderRadius";
 @forward "./borderStyle";
 @forward "./spacing";
-@forward "./width";
 
-// Layout styles
+// Utilities
+@forward "../utiltities/width";
 @forward "../utiltities/gap";
 @forward "../utiltities/flex";
 @forward "../utiltities/margin";
