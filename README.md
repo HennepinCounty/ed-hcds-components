@@ -38,10 +38,15 @@ Highlight code then press alt+W to instantly wrap the selected in opening/closin
 [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server)
 Host a local server window inside VS Code, so that you don't need to switch between VS Code and browsers.
 
+[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+Use for code formatting. Currently using default settings.
+
 [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
 Use to update compiled CSS from index.scss after any file save in project.
 
-**index.scss is currently in the primtives folder**
+**index.scss is currently in the primitives folder**
+
+**Live Sass Compiler currently uses these settings**
 
 ```
 {
@@ -89,6 +94,3 @@ Use to update compiled CSS from index.scss after any file save in project.
   "liveSassCompile.settings.forceBaseDirectory": ""
 }
 ```
-
-[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-Use for code formatting. Currently using default settings.
