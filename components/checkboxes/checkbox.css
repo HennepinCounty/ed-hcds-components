@@ -146,6 +146,11 @@ fieldset {
 /* includes min-height for consistent sizing of form elements */
 /* margin-bottom adds space between items (this might be changed to gap) */
 /* position: relative so that absolute positioning can be used for label and input */
+
+.hc-checkboxes {
+  margin-top: var(--hc-spacing-05);
+}
+
 .hc-checkbox__item {
   display: block;
   position: relative;
@@ -252,7 +257,7 @@ fieldset {
   border: var(--hc-border-brand);
 }
 
-/* Disabled stylig */
+/* Disabled styling */
 .hc-checkbox__input:disabled,
 .hc-checkbox__input:disabled + .hc-checkbox__label {
   cursor: not-allowed;
@@ -266,3 +271,20 @@ fieldset {
 .hc-checkbox__input:disabled + .hc-checkbox__label::before {
   border-color: var(--hc-border-color-disabled);
 }
+
+/* This doesn't work for now
+.hc-checkbox-input[type="checkbox"][aria-disabled="true"],
+.hc-checkbox-input[type="checkbox"][aria-disabled="true"]:checked {
+  color: var(--hc-text-disabled); 
+}
+
+
+
+ .hc-checkbox-input[aria-disabled="true"] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.hc-checkbox-input[type="checkbox"][aria-disabled="true"]:checked {
+    background-color: #6c757d; 
+  } */

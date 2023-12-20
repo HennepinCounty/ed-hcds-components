@@ -326,7 +326,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   --hc-text-hint: var(--hc-gray-60);
   --hc-text-error: var(--hc-support-error);
   --hc-text-inverse: var(--hc-white);
-  --hc-text-disabled: var(--hc-gray-50);
+  --hc-text-disabled: var(--hc-gray-60);
   --hc-text-on-color-disabled: var(--hc-gray-60);
   --hc-link-primary: var(--hc-background-brand);
   --hc-link-inverse: var(--hc-white);
@@ -607,11 +607,11 @@ a:disabled {
   color: var(--hc-text-hint, #5c646d);
   /* Body/Body-Small */
   font-family: var(--hc-font-family);
-  font-size: var(--font-hint-size);
+  font-size: var(--hc-font-body-size-small);
   font-style: normal;
   font-weight: 400;
   line-height: 130%; /* 1.5rem */
-  margin-bottom: var(--hc-spacing-05);
+  margin-bottom: var(--hc-spacing-02);
 }
 
 .hc-text-hint--disabled {
@@ -623,11 +623,12 @@ a:disabled {
   color: var(--hc-text-error, #ef413d);
   /* Body/Body-Small */
   font-family: var(--hc-font-family);
-  font-size: var(--hc-font-error-size);
+  font-size: var(--hc-font-body-size-small);
   font-style: normal;
   font-weight: 400;
   line-height: 130%; /* 1.5rem */
   margin: var(--hc-spacing-00);
+  margin-bottom: var(--hc-spacing-02);
 }
 
 /* this can be moved into its own component. this should be a general class for groups of form items */

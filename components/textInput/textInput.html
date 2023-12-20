@@ -135,52 +135,56 @@
 
     <div class="hc-form-element">
       <label class="hc-field-label" for="hc-id6">Label</label>
-      <span class="hc-text-hint">Helper text</span>
+      <div class="hc-text-hint" id="placeholder-helper-text">Helper text</div>
       <input
         class="hc-input"
         id="hc-id6"
         name="hc-name6"
         type="text"
         spellcheck="true"
+        aria-describedby="placeholder-helper-text"
       />
     </div>
 
     <h4>User Input</h4>
     <div class="hc-form-element">
       <label class="hc-field-label" for="hc-id7">Label</label>
-      <div class="hc-text-hint">Helper text</div>
+      <div class="hc-text-hint" id="user-input-helper-text">Helper text</div>
       <input
         class="hc-input"
         id="hc-id7"
         name="hc-name7"
         value="Input text"
         type="text"
+        aria-describedby="user-input-helper-text"
       />
     </div>
     <h4>Error</h4>
 
     <div class="hc-form-element">
       <label class="hc-field-label" for="hc-id8">Label</label>
-      <div class="hc-text-hint">Helper text</div>
+      <div class="hc-text-hint" id="error-helper-text">Helper text</div>
+      <div class="hc-text-error" id="error-message">Error Message</div>
       <input
         class="hc-input hc-input--error"
         id="hc-id8"
         name="hc-name8"
         type="text"
         value="Input text"
+        aria-describedby="error-helper-text error-message"
       />
-      <div class="hc-text-error">Error Message</div>
     </div>
     <div class="hc-form-element">
       <h4>Focus/Active</h4>
       <label class="hc-field-label" for="hc-id9">Label</label>
-      <div class="hc-text-hint">Helper text</div>
+      <div class="hc-text-hint" id="focus-helper-text">Helper text</div>
       <input
         class="hc-input"
         id="hc-id9"
         name="hc-name9"
         type="text"
         value="Input text"
+        aria-describedby="focus-helper-text"
         autofocus
       />
     </div>
@@ -190,11 +194,17 @@
       <label class="hc-field-label hc-field-label--disabled" for="hc-id10"
         >Label</label
       >
-      <div class="hc-text-hint hc-text-hint--disabled">Helper text</div>
+      <div
+        class="hc-text-hint hc-text-hint--disabled"
+        id="disabled-helper-text"
+      >
+        Helper text
+      </div>
       <input
         class="hc-input"
         id="hc-id10"
         name="hc-name10"
+        aria-describedby="disabled-helper-text"
         type="text"
         value="Input text"
         disabled
