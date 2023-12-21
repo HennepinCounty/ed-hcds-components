@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Text input</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=1"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://www.hennepin.us/assets/css/main-branding.css?v=5.24"
+    /> -->
+
+    <link rel="stylesheet" href="../../CSS/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="textInput.css" />
+  </head>
+  <body class="hc-padding-x-05 hc-padding-y-08">
+    <h1>hc-input</h1>
+
+    <!-- ========================= -->
+    <!-- ========================= -->
+    <!-- Default sizing with all different states -->
+    <!-- ========================= -->
+    <!-- ========================= -->
+
+    <h4>Default</h4>
+    <div class="hc-form-element">
+      <label class="hc-field-label" for="hc-id1">Label</label>
+      <input
+        class="hc-input"
+        id="hc-id1"
+        name="hc-name1"
+        type="text"
+        spellcheck="true"
+      />
+    </div>
+
+    <h4>User Input</h4>
+    <div class="hc-form-element">
+      <label class="hc-field-label" for="hc-id2">Label</label>
+      <input
+        class="hc-input"
+        id="hc-id2"
+        name="hc-name2"
+        value="Input text"
+        type="text"
+      />
+    </div>
+
+    <h4>Error</h4>
+    <div class="hc-form-element">
+      <label class="hc-field-label" for="hc-id3">Label</label>
+      <input
+        class="hc-input hc-input--error"
+        id="hc-id3"
+        name="hc-name3"
+        type="text"
+        value="Input text"
+      />
+      <div class="hc-text-error">Error message</div>
+    </div>
+
+    <h4>Focus/Active</h4>
+    <div class="hc-form-element">
+      <label class="hc-field-label" for="hc-id4">Label</label>
+      <input
+        class="hc-input"
+        id="hc-id4"
+        name="hc-name4"
+        type="text"
+        value="Input text"
+        autofocus
+      />
+    </div>
+    <h4>Disabled</h4>
+    <div class="hc-form-element">
+      <label class="hc-field-label hc-field-label--disabled" for="hc-id5"
+        >Label</label
+      >
+      <input
+        class="hc-input"
+        id="hc-id5"
+        name="hc-name5"
+        type="text"
+        value="Input text"
+        disabled
+      />
+    </div>
+
+    <!-- ========================= -->
+    <!-- ========================= -->
+    <!-- Size variations -->
+    <!-- ========================= -->
+    <!-- ========================= -->
+    <hr class="hc-margin-y-10" />
+    <h1>Size variations</h1>
+    <div class="hc-form-element">
+      <label class="hc-field-label hc-field-label--small" for="hc-id1"
+        >Label</label
+      >
+      <input
+        class="hc-input hc-input--small"
+        id="hc-id1"
+        name="hc-name1"
+        type="text"
+        spellcheck="true"
+      />
+    </div>
+    <div class="hc-form-element">
+      <label class="hc-field-label hc-field-label--large" for="hc-id1"
+        >Label</label
+      >
+      <input
+        class="hc-input hc-input--large"
+        id="hc-id1"
+        name="hc-name1"
+        type="text"
+        spellcheck="true"
+      />
+    </div>
+
+    <!-- ========================= -->
+    <!-- ========================= -->
+    <!-- With helper text -->
+    <!-- ========================= -->
+    <!-- ========================= -->
+    <hr class="hc-margin-y-10" />
+    <h1>With helper text</h1>
+    <h4>Default</h4>
+
+    <div class="hc-form-element">
+      <label class="hc-field-label" for="hc-id6">Label</label>
+      <div class="hc-text-hint" id="placeholder-helper-text">Helper text</div>
+      <input
+        class="hc-input"
+        id="hc-id6"
+        name="hc-name6"
+        type="text"
+        spellcheck="true"
+        aria-describedby="placeholder-helper-text"
+      />
+    </div>
+
+    <h4>User Input</h4>
+    <div class="hc-form-element">
+      <label class="hc-field-label" for="hc-id7">Label</label>
+      <div class="hc-text-hint" id="user-input-helper-text">Helper text</div>
+      <input
+        class="hc-input"
+        id="hc-id7"
+        name="hc-name7"
+        value="Input text"
+        type="text"
+        aria-describedby="user-input-helper-text"
+      />
+    </div>
+    <h4>Error</h4>
+
+    <div class="hc-form-element">
+      <label class="hc-field-label" for="hc-id8">Label</label>
+      <div class="hc-text-hint" id="error-helper-text">Helper text</div>
+      <div class="hc-text-error" id="error-message">Error Message</div>
+      <input
+        class="hc-input hc-input--error"
+        id="hc-id8"
+        name="hc-name8"
+        type="text"
+        value="Input text"
+        aria-describedby="error-helper-text error-message"
+      />
+    </div>
+    <div class="hc-form-element">
+      <h4>Focus/Active</h4>
+      <label class="hc-field-label" for="hc-id9">Label</label>
+      <div class="hc-text-hint" id="focus-helper-text">Helper text</div>
+      <input
+        class="hc-input"
+        id="hc-id9"
+        name="hc-name9"
+        type="text"
+        value="Input text"
+        aria-describedby="focus-helper-text"
+        autofocus
+      />
+    </div>
+    <h4>Disabled</h4>
+
+    <div class="hc-form-element">
+      <label class="hc-field-label hc-field-label--disabled" for="hc-id10"
+        >Label</label
+      >
+      <div
+        class="hc-text-hint hc-text-hint--disabled"
+        id="disabled-helper-text"
+      >
+        Helper text
+      </div>
+      <input
+        class="hc-input"
+        id="hc-id10"
+        name="hc-name10"
+        aria-describedby="disabled-helper-text"
+        type="text"
+        value="Input text"
+        disabled
+      />
+    </div>
+  </body>
+</html>

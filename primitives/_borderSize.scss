@@ -1,0 +1,19 @@
+// Border styling
+
+// Use smaller width for a more subtle effect
+// Use larger width to add more emphasis
+
+// These are also used in focus styles
+
+// Change borders to absolute px instead of rem
+// https://github.com/alphagov/govuk-frontend/pull/2998
+
+:root {
+  --hc-border-base: 16px;
+
+  --hc-border-width-small: calc(var(--hc-border-base) * 0.125);
+  --hc-border-width-medium: calc(var(--hc-border-base) * 0.25);
+  --hc-border-width-large: calc(var(--hc-border-base) * 0.375);
+
+  --hc-border-hidden: var(--hc-transparent);
+}

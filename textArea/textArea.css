@@ -1,0 +1,90 @@
+.hc-element {
+  margin: 20px;
+}
+
+.hc-textarea {
+  font-family: var(--hc-font-family);
+  min-height: 40px;
+  border-radius: var(--hc-border-radius-02);
+  padding: var(--hc-spacing-02);
+  border: 2px solid var(--hc-border-color-regular);
+  /* width: 100%;  */
+  /* setting width 100% would match govuk styling, textarea is set to 100% width and actual width is handled by parent container */
+  /* Downside is that dev would need to know to include a parent container to control width */
+}
+
+/* error state for field, adds border and icon*/
+.hc-textarea-error {
+  border: 2px solid var(--hc-border-color-error);
+  background: url(material-symbols_close-rounded.svg) no-repeat right;
+  background-size: 30px;
+}
+
+/* Focus state, changes border color to white then adds blue stroke with outline to give appearance of growing on focus */
+.hc-textarea:focus {
+  border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
+}
+
+.hc-textarea:disabled {
+  color: var(--hc-text-disabled);
+  border-color: var(--hc-border-color-disabled);
+  background-color: var(--hc-background-disabled);
+}
+
+/* Figure out what this is for */
+/* .required-class:after {
+  content: "(Required)";
+  color: #ce1432;
+  font-size: 12px;
+} */
+
+/* This can be deleted */
+/* .h3-underline {
+  border-bottom: 3px solid black;
+} */
+
+/* This can be deleted, defined elsewhere */
+/* .error-msg {
+  color: #ce1432;
+  font-size: 16px;
+  width: 100%;
+} */
+
+/* This can be deleted, defind elsewhere */
+/* .hc-helpertext {
+  font-family: "Segoe UI";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  padding: 0 !important;
+  margin: 0 !important;
+  color: #5c646d;
+} */
+
+/* label styled elsewhere, can delete */
+/* .hc-label {
+  font-family: "Segoe UI";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  padding: 0 !important;
+  margin-top: 10px;
+  color: #191d21;
+} */
+
+/* .hc-label:disabled {
+  color: #ccc;
+} */
+
+/* This might get deleted or changed */
+/* .hc-textarea-error:focus {
+  outline-width: 0;
+   outline-color: #ce1432; //Mihgt delete
+    outline-offset: 2px; //Might delete
+  border: 2px solid #ce1432 !important;
+  border-radius: 2px !important;
+  font-weight: normal;
+} */

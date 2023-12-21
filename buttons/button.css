@@ -1,204 +1,261 @@
-.hc-button-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+/*  */
+/*  */
+/*  */
+/* Deprectate hc-primary and rename to hc-button */
+/* This allows hc-button to be base of all buttons */
+/* could add class="hc-button hc-button-error" to apply variant styling */
+/*  */
+/*  */
+/*  */
 
-.hc-button-indent {
-    margin-left: 20px;
-}
-
+/* ======================== */
+/* ======================== */
 /* Primary button */
-.hc-primary,
-.hc-primary:hover,
-.hc-primary:active,
-.hc-primary:disabled {
-    min-height: 40px;
-    min-width: 75px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: white;
-    margin: auto;
-    text-align: center;
-    border-radius: 2px;
-    border: 2px solid transparent;
+/* ======================== */
+/* ======================== */
+.hc-button {
+  box-sizing: border-box;
+  border: 2px solid var(--hc-transparent);
+  display: inline-flex;
+  align-items: center;
+  vertical-align: top;
+  justify-content: left;
+  flex-direction: row;
+  text-align: left;
+  gap: var(--hc-spacing-02);
+  font-family: var(--hc-font-family), "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+  font-size: var(--hc-font-body-size-regular, 1rem);
+  font-weight: 400;
+  line-height: 1;
+  color: var(--hc-text-on-color);
+  border-radius: var(--hc-border-radius-02, 2px);
+  margin: 0;
+  background-color: var(--hc-button-primary);
+  height: var(--hc-height--medium, 2.5rem);
+  padding-left: var(--hc-spacing-03);
+  padding-right: var(--hc-spacing-03);
+  cursor: pointer;
 }
 
-.hc-primary:focus,
-.hc-secondary:focus,
-.hc-danger:focus {
-    min-height: 40px !important;
-    min-width: 75px !important;
-    border: 2px solid white;
-    border-style: double;
-    outline: 2px solid #113c66;
+/* Focus styles */
+/* Focus should be defined once on the core button style so that it doesn't have to be repeated for the other variants */
+.hc-button:focus {
+  border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
+  /* box-shadow: var(--hc-shadow-style-focus); */
+
+  /* commented out to test replacing with variables */
+  /* 
+  border: 2px solid var(--hc-white);
+  outline: 3px solid var(--hc-background-brand); */
 }
 
-.hc-primary {
-    background-color: #113c66;
+/* Background colors for */
+.hc-button:hover {
+  background-color: var(--hc-button-primary-hover);
 }
 
-.hc-primary:hover {
-    background-color: #002852;
+.hc-button:active {
+  background-color: var(--hc-button-primary-active);
 }
 
-.hc-primary:active {
-    background-color: #0a1e48;
+.hc-button:disabled {
+  background-color: var(--hc-button-disabled);
+  color: var(--hc-text-disabled);
 }
 
-.hc-primary:disabled {
-    background-color: #c3c6c9;
-    color: #818283;
+/* Size variations */
+.hc-button--small {
+  font-size: var(--hc-font-body-size-small, 1rem);
+  height: var(--hc-height--small, 2.25rem);
+  padding-left: var(--hc-spacing-03);
+  padding-right: var(--hc-spacing-03);
 }
 
+.hc-button--large {
+  font-size: var(--hc-font-body-size-large, 1rem);
+  height: var(--hc-height--large, 3rem);
+  padding-left: var(--hc-spacing-05);
+  padding-right: var(--hc-spacing-05);
+}
+
+/* ======================== */
+/* ======================== */
 /* Secondary button */
-.hc-secondary {
-    min-height: 40px;
-    min-width: 75px;
-    font: 400 16px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 24px;
-    letter-spacing: 0;
-    text-align: left;
-    background-color: white;
-    color: #113c66;
-    margin: auto;
-    text-align: center;
-    border-radius: 2px;
-    border: 2px solid #113c66;
+/* ======================== */
+/* ======================== */
+
+.hc-button--secondary {
+  /* box-sizing: border-box; */
+  background-color: var(--hc-white);
+  color: var(--text-primary);
+  border: 2px solid var(--hc-button-secondary-border);
 }
 
-.hc-secondary:hover {
-    color: white;
-    border: 2px solid #002852;
-    background-color: #002852;
+/* Background colors */
+.hc-button--secondary:hover {
+  /* box-sizing: border-box; */
+  color: var(--hc-text-on-color);
+  background-color: var(--hc-button-secondary-hover);
+  border: 2px solid var(--hc-button-secondary-border-hover);
 }
 
-/* .hc-secondary:hover, */
-.hc-secondary:active {
-    /* border: 2px solid #113c66; */
-    /* border: none; */
-    /* color: white;
-    text-align: center; */
-    /* border-radius: 2px; */
-    /* font: 400 16px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    background-color: #0a1e48;
-    /* line-height: 24px; */
-    /* letter-spacing: 0; */
+.hc-button--secondary:active {
+  /* box-sizing: border-box; */
+  color: var(--hc-text-on-color);
+  background-color: var(--hc-button-secondary-active);
+  border: 2px solid var(--hc-button-secondary-border-active);
 }
 
-/* .hc-secondary:hover, */
-.hc-secondary:focus {
-    min-height: 40px;
-    min-width: 80px;
-    background-color: #002852;
-    color: white;
+/* focus for secondary -- commented out for now */
+
+.hc-button--secondary:disabled {
+  color: var(--hc-text-disabled);
+  background-color: var(--hc-white);
+  border-radius: var(--hc-border-radius-01);
+  border: 2px solid var(--hc-border-color-disabled);
 }
 
-.hc-secondary:disabled {
-    color: #c3c6c9;
-    background-color: white;
-    margin: auto;
-    text-align: center;
-    border-radius: 2px;
-    outline: auto;
-    border: 2px solid #c3c6c9;
-}
-
-
+/* ======================== */
+/* ======================== */
 /* Danger button */
-.hc-danger {
-    min-height: 40px;
-    min-width: 75px;
-    font: 400 16px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-    background-color: #ce1432;
-    color: white;
-    margin: auto;
-    text-align: center;
-    border-radius: 2px;
-    border: 2px solid transparent;
+/* ======================== */
+/* ======================== */
+.hc-button--danger {
+  background-color: var(--hc-button-danger);
+  color: var(--hc-text-on-color);
+  /* margin: auto; */
+  /* text-align: center; */
 }
 
-.hc-danger:hover,
-.hc-danger:active {
-    min-height: 40px;
-    min-width: 75px;
-    font: 400 16px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: white;
-    margin: auto;
-    text-align: center;
-    border-radius: 2px;
-    border: 2px solid transparent;
+.hc-button--danger:hover {
+  background-color: var(--hc-button-danger-hover);
 }
 
-.hc-danger:hover {
-    background-color: #ba001e;
+.hc-button--danger:active {
+  background-color: var(--hc-button-danger-active);
 }
 
-.hc-danger:active {
-    background-color: #a6000a;
+/* should be able to delete */
+/* .hc-button--danger:disabled {
+  background-color: var(--hc-button-danger-active);
+} */
+
+.hc-button--danger:disabled {
+  background-color: var(--hc-button-disabled);
+  color: var(--hc-text-disabled);
 }
 
-.hc-danger:disabled {
-    background-color: #c3c6c9;
-    color: #818283;
-}
+/* Don't delete -- this looks good as an alternative */
+/* .hc-button--danger:disabled {
+  background-color: #c3c6c9;
+  color: #818283;
+} */
 
-
+/* ======================== */
+/* ======================== */
 /* Icons */
+/* ======================== */
+/* ======================== */
+
+/* Icon sizing and position stored in _icons.scss*/
+/* These below classes can probably all be deleted after they're replaced in the HTML */
+
+.hc-button.hc-button--icon-left {
+  /* padding-left: var(--hc-spacing-03); */
+  padding-inline-start: var(--hc-spacing-03);
+}
+
+.hc-button.hc-button--icon-right {
+  /* padding-right: var(--hc-spacing-03); */
+  padding-inline-end: var(--hc-spacing-03);
+}
+
+.hc-button.hc-button--icon-only {
+  align-items: center;
+  justify-content: center;
+  /* padding-left: var(--hc-spacing-03);
+  padding-right: var(--hc-spacing-03); */
+  padding-inline-start: var(--hc-spacing-03);
+  padding-inline-end: var(--hc-spacing-03);
+}
+
+.hc-button--small.hc-button--icon-only {
+  align-items: center;
+  justify-content: center;
+  /* padding-left: var(--hc-spacing-02);
+  padding-right: var(--hc-spacing-02); */
+  padding-inline-start: var(--hc-spacing-02);
+  padding-inline-end: var(--hc-spacing-02);
+}
+
+.hc-button--large.hc-button--icon-only {
+  align-items: center;
+  justify-content: center;
+  /* padding-left: var(--hc-spacing-04);
+  padding-right: var(--hc-spacing-04); */
+  padding-inline-start: var(--hc-spacing-04);
+  padding-inline-end: var(--hc-spacing-04);
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--hc-spacing-03);
+}
+
+/* The below can all be deleted and is no longer in use -- double check and then delete */
+/* 
 .hc-closeIconBlue {
-    background-image: url(material-symbols_close-rounded-blue.svg);
-    height: 12px;
-    width: 12px;
-    background-size: cover;
-    border: none;
-    outline-offset: -2px;
+  background-image: url(material-symbols_close-rounded-blue.svg);
+  height: 12px;
+  width: 12px;
+  background-size: cover;
+  border: none;
+  outline-offset: -2px;
 }
 
 .hc-closeIconWhite {
-    background-image: url(material-symbols_close-rounded-white.svg);
-    height: 12px;
-    width: 12px;
-    background-size: cover;
-    border: none;
-    outline-offset: -2px;
+  background-image: url(material-symbols_close-rounded-white.svg);
+  height: 12px;
+  width: 12px;
+  background-size: cover;
+  border: none;
+  outline-offset: -2px;
 }
 
 .hc-closeIconGrey {
-    background-image: url(material-symbols_close-rounded.svg);
-    height: 12px;
-    width: 12px;
-    background-size: cover;
-    border: none;
-    outline-offset: -2px;
+  background-image: url(material-symbols_close-rounded.svg);
+  height: 12px;
+  width: 12px;
+  background-size: cover;
+  border: none;
+  outline-offset: -2px;
 }
 
-.hc-secondary:hover .hc-closeIconBlue {
-    background-image: url(material-symbols_close-rounded-white.svg);
-    height: 12px;
-    width: 12px;
+.hc-button-secondary:hover .hc-closeIconBlue {
+  background-image: url(material-symbols_close-rounded-white.svg);
+  height: 12px;
+  width: 12px;
 }
 
 .hc-primary:disabled .hc-closeIconWhite,
-.hc-secondary:disabled .hc-closeIconBlue,
-.hc-danger:disabled .hc-closeIconWhite {
-    background-image: url(material-symbols_close-rounded.svg);
-    height: 12px;
-    width: 12px;
-    background-size: cover;
-    border: none;
-    outline-offset: -2px;
+.hc-button-secondary:disabled .hc-closeIconBlue,
+.hc-button-danger:disabled .hc-closeIconWhite {
+  background-image: url(material-symbols_close-rounded.svg);
+  height: 12px;
+  width: 12px;
+  background-size: cover;
+  border: none;
+  outline-offset: -2px;
 }
 
-.hc-danger.hc-closeIconWhite {
-    background-image: url(material-symbols_close-rounded-white.svg);
-    height: 12px;
-    width: 12px;
-}
+.hc-button-danger.hc-closeIconWhite {
+  background-image: url(material-symbols_close-rounded-white.svg);
+  height: 12px;
+  width: 12px;
+} */

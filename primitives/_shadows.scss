@@ -1,0 +1,15 @@
+// To be used as value for shadow properties
+// focus variable is meant to add two colors to focus state for interactive elements
+// this is so that there is a bright and dark color to add contrast against a large number of backgrounds
+
+:root {
+  --hc-shadow-style-focus: none;
+
+  --focus-inset: 2px 0px 0px 0px var(--white) inset,
+    -2px 0px 0px 0px var(--white) inset, 0px -2px 0px 0px var(--white) inset,
+    0px 2px 0px 0px var(--white) inset,
+    -4px 0px 0px 0px var(--background-brand) inset,
+    0px -4px 0px 0px var(--background-brand) inset,
+    0px 4px 0px 0px var(--background-brand) inset,
+    4px 0px 0px 0px var(--background-brand) inset;
+}

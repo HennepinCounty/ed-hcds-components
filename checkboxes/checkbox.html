@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../CSS/index.css" />
+    <link rel="stylesheet" href="checkbox.css" />
+    <script src="checkbox.js" defer></script>
+  </head>
+
+  <body class="hc-padding-06">
+    <!-- testing for different states -->
+    <!-- unchecked group -->
+    <h2>Unchecked</h2>
+
+    <!-- default state -->
+    <div class="hc-checkbox-padding">
+      <label class="hc-checkbox-label">
+        <input type="checkbox" id="label1" class="hc-checkbox-input" />
+        Default checkbox
+      </label>
+    </div>
+
+    <!-- focus state -->
+    <div class="hc-checkbox-padding">
+      <label class="hc-checkbox-label">
+        <input type="checkbox" id="label2" class="hc-checkbox-input" />
+        Focus checkbox
+      </label>
+    </div>
+
+    <!-- disabled state -->
+    <div class="hc-checkbox-padding">
+      <label class="hc-checkbox-label">
+        <input
+          type="checkbox"
+          id="label3"
+          aria-disabled="true"
+          class="hc-checkbox-input"
+        />
+        Focusable but disabled checkbox
+      </label>
+    </div>
+
+    <!-- checked group -->
+    <h2>Checked</h2>
+    <div class="hc-checkbox-padding">
+      <label class="hc-checkbox-label">
+        <input type="checkbox" id="label4" checked class="hc-checkbox-input" />
+        Default checkbox
+      </label>
+    </div>
+
+    <div class="hc-checkbox-padding">
+      <label class="hc-checkbox-label">
+        <input
+          type="checkbox"
+          checked
+          id="label5"
+          autofocus
+          class="hc-checkbox-input"
+        />
+        Focus checkbox
+      </label>
+    </div>
+
+    <div class="hc-checkbox-padding">
+      <label class="hc-checkbox-label">
+        <input
+          type="checkbox"
+          id="label6"
+          checked
+          aria-disabled="true"
+          class="hc-checkbox-input"
+        />
+        Disabled checkbox
+      </label>
+    </div>
+
+    <!-- Fieldset -->
+    <div>
+      <fieldset class="hc-checkbox-fieldset">
+        <legend class="hc-checkbox-legend">Choose your options</legend>
+        <div class="hc-checkbox-padding">
+          <label class="hc-checkbox-label">
+            <input type="checkbox" id="chk1" class="hc-checkbox-input" />
+            Checkbox label 1
+          </label>
+        </div>
+
+        <div class="hc-checkbox-padding">
+          <label class="hc-checkbox-label">
+            <input type="checkbox" id="chk2" class="hc-checkbox-input" />
+            Checkbox label 2
+          </label>
+        </div>
+
+        <div class="hc-checkbox-padding">
+          <label class="hc-checkbox-label">
+            <input type="checkbox" id="chk3" class="hc-checkbox-input" />
+            Checkbox label 3
+          </label>
+        </div>
+
+        <div class="hc-checkbox-padding">
+          <label class="hc-checkbox-label">
+            <input type="checkbox" id="chk4" class="hc-checkbox-input" />
+            Checkbox label 4
+          </label>
+        </div>
+      </fieldset>
+    </div>
+
+    <!-- Update message area -->
+    <div id="updateMessage"></div>
+
+    <hr class="hc-margin-y-08" />
+    <!-- ============================== -->
+    <!-- ============================== -->
+    <!-- ============================== -->
+    <!-- ============================== -->
+    <!-- New radio button classes -->
+    <!-- ============================== -->
+    <!-- ============================== -->
+    <!-- ============================== -->
+    <!-- ============================== -->
+
+    <!-- ============================= -->
+    <!-- new styling -->
+    <!-- ============================= -->
+
+    <h2>New styling</h2>
+    <!-- form group wrapper -->
+    <!-- this is a class used for all form groups -->
+    <!-- only styling is margin-bottom -->
+    <div class="hc-form-group">
+      <!-- fieldset, this is semantic for accessibility -->
+      <fieldset class="hc-fieldset">
+        <!-- legend, this is semantic for accessibility -->
+        <legend
+          class="hc-fieldset__legend"
+          aria-describedby="fieldset-hint-homeownership"
+        >
+          Title for legend
+        </legend>
+        <!-- secondary text/hint/helper text for question -->
+        <div class="hc-text-hint" id="fieldset-hint-homeownership">
+          Hint text preview to provide context for question
+        </div>
+
+        <!-- hc-checkboxes is a wrapper -->
+        <!-- govuk-checkbox class isn't declared, no style attached to it, in the HTML for readability and BEM (base, element, modifier) naming convention reasons  -->
+        <!-- govuk might be using this for the data module part -->
+        <div class="hc-checkboxes" data-module="hc-checkbox">
+          <!-- individual checkbox item, consists of input and label -->
+          <!-- wrapper for input and label
+        includes min-height for consistent sizing of form elements
+         margin-bottom adds space between items (this might be changed to gap)
+        position: relative so that absolute positioning can be used for label and input  -->
+
+          <div class="hc-checkbox__item">
+            <!-- this is for semantics/accessibility/function, but default browser styling is hidden through opacity: 0; -->
+            <!-- ::before and ::after pseudoclass for label is used to layer checkbox and checkmark on top of original input styling -->
+            <input
+              class="hc-checkbox__input"
+              id="renting"
+              name="exampleCheckboxGroup"
+              type="checkbox"
+              value="rent"
+            />
+
+            <!-- This contains the label and uses ::before to create the checkbox box, and ::after to create the checkmark -->
+            <label class="hc-field-label hc-checkbox__label" for="renting">
+              I am renting
+            </label>
+          </div>
+          <div class="hc-checkbox__item">
+            <!-- this is for semantics/accessibility/function, but default browser styling is hidden through opacity: 0; -->
+            <!-- ::before and ::after pseudoclass for label is used to layer checkbox and checkmark on top of original input styling -->
+            <input
+              class="hc-checkbox__input"
+              id="owning"
+              name="exampleCheckboxGroup"
+              type="checkbox"
+              value="buy"
+            />
+
+            <!-- This contains the label and uses ::before to create the checkbox box, and ::after to create the checkmark -->
+            <label class="hc-field-label hc-checkbox__label" for="owning">
+              I own my home
+            </label>
+          </div>
+
+          <div class="hc-checkbox__item">
+            <!-- this is for semantics/accessibility/function, but default browser styling of input is hidden through opacity: 0; -->
+            <!-- ::before and ::after pseudoclass for label is used to layer checkbox and checkmark on top of original input styling -->
+            <input
+              class="hc-checkbox__input"
+              id="subletting"
+              name="exampleCheckboxGroup"
+              type="checkbox"
+              value="sublet"
+              aria-describedby="example-hint"
+            />
+
+            <!-- This contains the label and uses ::before to create the checkbox box, and ::after to create the checkmark -->
+            <label class="hc-field-label hc-checkbox__label" for="subletting">
+              I am subletting to someone else
+            </label>
+            <div id="example-hint" class="hc-text-hint hc-checkbox__hint">
+              Hint text explaining what sublet means
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <!-- ============================== -->
+    <!-- ============================== -->
+    <!-- Disabled state -->
+    <!-- ============================== -->
+    <!-- ============================== -->
+
+    <h3>Disabled with aria -- Unchecked</h3>
+
+    <div class="hc-form-group">
+      <fieldset class="hc-fieldset">
+        <legend class="hc-fieldset__legend" aria-describedby="fieldset-hint">
+          Title for legend
+        </legend>
+        <div class="hc-text-hint" id="fieldset-hint">
+          Hint text preview to provide ccontext for question
+        </div>
+        <div class="hc-checkboxes" data-module="hc-checkbox">
+          <div class="hc-checkbox__item">
+            <input
+              class="hc-checkbox__input"
+              id="disabled-1"
+              name="disabledCheckboxUnchecked"
+              type="checkbox"
+              value="disabled-Unchecked"
+              aria-disabled="true"
+            />
+
+            <label class="hc-field-label hc-checkbox__label" for="disabled-1">
+              Disabled checkbox unchecked
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <h3>Disabled with aria -- Checked</h3>
+    <div class="hc-form-group">
+      <fieldset class="hc-fieldset">
+        <legend class="hc-fieldset__legend" aria-describedby="fieldset-hint">
+          Title for legend
+        </legend>
+        <div class="hc-text-hint" id="fieldset-hint">
+          Hint text preview to provide ccontext for question
+        </div>
+        <div class="hc-checkboxes" data-module="hc-checkbox">
+          <div class="hc-checkbox__item">
+            <input
+              class="hc-checkbox__input"
+              id="waste-1"
+              name="waste"
+              type="checkbox"
+              value="runoff"
+              aria-disabled="true"
+              checked
+            />
+
+            <label class="hc-field-label hc-checkbox__label" for="waste-1">
+              Waste from stream runoff
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <!-- ============================== -->
+    <!-- ============================== -->
+    <!-- Error state -->
+    <!-- ============================== -->
+    <!-- ============================== -->
+
+    <h3>Error state</h3>
+    <h4 class="hc-margin-bottom-06">Error with hint</h4>
+    <div class="hc-form-group">
+      <fieldset class="hc-fieldset">
+        <legend
+          class="hc-fieldset__legend"
+          aria-describedby="fieldset-hint-3 fieldset-error-1"
+        >
+          Title for legend
+        </legend>
+        <div class="hc-text-hint" id="fieldset-hint-3">
+          Hint text preview to provide context for question
+        </div>
+        <p class="hc-text-error" id="fieldset-error-1">
+          <span class="hc-visually-hidden">Error:</span> Select if you have done
+          X or Y
+        </p>
+        <div class="hc-checkboxes" data-module="hc-checkbox">
+          <div class="hc-checkbox__item">
+            <input
+              class="hc-checkbox__input"
+              id="errorExample-1"
+              name="errorWithHintExample"
+              type="checkbox"
+              value="Have-not"
+            />
+
+            <label
+              class="hc-field-label hc-checkbox__label"
+              for="errorExample-1"
+            >
+              I have not done X
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <!-- ============================== -->
+    <!-- ============================== -->
+    <!-- Easy copy  + paste -->
+    <!-- ============================== -->
+    <!-- ============================== -->
+    <h3>Easy copy paste (ignore)</h3>
+    <div class="hc-form-group">
+      <fieldset class="hc-fieldset">
+        <legend class="hc-fieldset__legend" aria-describedby="fieldset-hint">
+          Title for legend
+        </legend>
+        <div class="hc-text-hint" id="fieldset-hint">
+          Hint text preview to provide context for question
+        </div>
+        <div class="hc-checkboxes" data-module="hc-checkbox">
+          <div class="hc-checkbox__item">
+            <input
+              class="hc-checkbox__input"
+              id="copyPaste-1"
+              name="copyPasteExample"
+              type="checkbox"
+              value="easyPaste"
+            />
+            <label class="hc-field-label hc-checkbox__label" for="copyPaste-1">
+              This checkbox is for easy copy paste
+            </label>
+          </div>
+
+          <div class="hc-checkbox__item">
+            <input
+              class="hc-checkbox__input"
+              id="copyPaste-2"
+              name="copyPasteExample"
+              type="checkbox"
+              value="secondEasyPaste"
+            />
+            <label class="hc-field-label hc-checkbox__label" for="copyPaste-2">
+              Another checkbox for easy copy paste
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+  </body>
+</html>

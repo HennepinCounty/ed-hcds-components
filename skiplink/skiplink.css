@@ -1,40 +1,160 @@
 .hc-skiplink-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* .hc-skiplink {
+  min-height: var(--hc-height--medium);
+  min-width: 130px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: var(--hc-font-body-size-regular);
+  font-weight: var(--hc-text-weight-regular);
+  line-height: 1;
+  padding-left: var(--hc-spacing-03);
+  padding-right: var(--hc-spacing-03);
+  opacity: 0;
+  text-decoration: none;
+  background-color: var(--hc-background-brand);
+  color: white;
+  margin: auto;
+  text-align: center;
+  border-radius: 5px;
+  /* border: 1px solid white;
+  outline: 2px solid var(--hc-white); */
+/* position: static; 
+  z-index: 999;
+} */
+
+/* .hc-button {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: top;
+  justify-content: left;
+  flex-direction: row;
+  text-align: left;
+  gap: var(--hc-spacing-02);
+  font-family: var(--hc-font-family), "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+  font-size: var(--hc-font-body-size-regular, 1rem);
+  font-weight: 400;
+  line-height: 1;
+  color: var(--hc-text-on-color);
+  border-radius: var(--hc-border-radius-02, 2px);
+  margin: 0;
+  background-color: var(--hc-button-primary);
+} */
+
+/* .hc-skiplink {
+  cursor: pointer;
+  opacity: 0;
+
+  height: var(--hc-height--medium, 2.5rem);
+  min-width: 130px;
+  
+  border: 2px solid var(--hc-transparent);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  padding: 15px;
+  opacity: 0;
+  text-decoration: none;
+  background-color: #113c66;
+  color: white;
+  margin: auto;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid white;
+  border-style: double;
+  outline: 1px solid #113c66;
+  z-index: 999;
+} */
 
 .hc-skiplink {
-    min-height: 40px;
-    min-width: 130px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-    padding: 15px;
-    opacity: 0;
-    text-decoration: none;
-    background-color: #113c66;
-    color: white;
-    margin: auto;
-    text-align: center;
-    border-radius: 5px;
-    border: 1px solid white;
-    border-style: double;
-    outline: 1px solid #113c66; 
-    z-index: 999;
-
-} 
-
-.hc-skiplink:focus {
-    opacity: 1;
+  /* taken from govuk
+  https://github.com/alphagov/govuk-frontend/blob/b44d7b0fe66847fb34881841b6550174111ea9ba/packages/govuk-frontend/src/govuk/helpers/_visually-hidden.scss#L4
+  /// Hide an element visually, but have it available for screen readers whilst
+  /// allowing the element to be focused when navigated to via the keyboard (e.g.
+  /// for the skip link)
+  ///
+  /// This is slightly less opinionated about borders and padding to make it
+  /// easier to style the focused element.
+  */
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  /*
+  // For long content, line feeds are not interpreted as spaces and small width
+  // causes content to wrap 1 word per line:
+  // https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+  */
+  white-space: nowrap !important;
 }
 
-.hc-skiplink:focus:hover {
-    background-color: #002852;
+.hc-skiplink:focus:active,
+.hc-skiplink:focus:focus {
+  position: absolute !important;
+  width: auto !important;
+  height: 36px !important;
+  margin: inherit !important;
+  overflow: visible !important;
+  clip: auto !important;
+  -webkit-clip-path: none !important;
+  clip-path: none !important;
+  white-space: inherit !important;
+  background-color: var(--hc-background-brand);
+  border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
+  border-radius: var(--hc-border-radius-02);
+  padding-left: var(--hc-spacing-03);
+  padding-right: var(--hc-spacing-03);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.hc-skiplink:focus:focus {
+  background-color: var(--hc-red-70);
+}
+.hc-skiplink:focus:hover {
+  background-color: var(--hc-red-80);
+}
+
+.hc-skiplink:focus:active {
+  background-color: var(--hc-red-90);
+}
+
+a.hc-skiplink:hover {
+  color: var(--hc-gray-10) !important;
+}
+
+a.hc-skiplink:visited {
+  color: var(--hc-white);
+}
+
+/* .hc-skiplink:focus {
+  opacity: 1;
+} */
+
+/* .hc-skiplink:focus:hover {
+  background-color: #002852;
+}
+
+
+
+.hc-skiplink:active {
+  opacity: 1;
+  background-color: #0a1e48;
 }
 
 .hc-skiplink:active {
-    opacity: 1;
-    background-color: #0a1e48;
+  opacity: 1;
+  background-color: #0a1e48;
 }
+
+*/

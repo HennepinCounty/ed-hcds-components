@@ -1,0 +1,39 @@
+/* Glues the input field and button toether */
+.hc-search-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: var(--hc-spacing-00);
+}
+
+/* Stylin for font typed into field */
+input.hc-input[type="search"] {
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-body-size-regular);
+  font-style: normal;
+  color: var(--hc-text-primary, #171a1d);
+  font-weight: 400;
+  line-height: 100%;
+}
+
+/* input.hc-input:focus {
+  border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
+} */
+
+/* Un-rounds the corners of input field to be flush against button */
+.hc-input-search {
+  border-radius: 4px 0px 0px 4px;
+}
+
+/* Focus styling */
+/* Commented out because it's causing layout shift and don't know why */
+/* .hc-input-search:focus {
+  border: 3px solid var(--hc-background-brand); //Makes larger border similar to normal input focus styling 
+ outline: none;  //Overrides outline in focus from hc-input 
+ } */
+
+/* Un-rounds the corners of button to be flush against input field */
+.hc-button-search {
+  border-radius: 0px 4px 4px 0px;
+  margin-inline-start: -2px;
+}

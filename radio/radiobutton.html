@@ -1,83 +1,118 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../CSS/index.css" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
-
-</head>
-<body>
+  </head>
+  <body>
     <h2>Radio Item</h2>
     <div class="grid-container">
-            <div class="grid-item">
-                <p>State</p>
-                <div>
-                    <p>Unselected</p>
-                </div>
-                <div>
-                    <p>Selected</p>
-                </div>
-                
-            </div>
-            <div class="grid-item">
-                <p>Default</p>
-                <div class="radio">
-                    <input type="radio" id="radiobutton1" name="button" value="radiobutton1"/>
-                    <label for="radiobutton1" class="radio-label">Radio label</label>
-                </div>
-                <div class="radio">
-                    <input type="radio" id="radiobutton2" name="button" value="radiobutton2" checked="checked"/>
-                    <label for="radiobutton2" class="radio-label">Radio label</label>
-                </div>
-            </div>
-            <div class="grid-item">
-                <p>Focus</p>
-                <div class="radio">
-                    <input class="focus1" type="radio" id="focusradiobutton1" name="focusbutton" value="focusradiobutton1"/>
-                    <label for="focusradiobutton1" class="radio-label">Radio label</label>
-                </div>
-                <div class="radio">
-                    <input type="radio" id="focusradiobutton2" name="focusbutton" checked="checked" value="focusradiobutton2" autofocus/>
-                    <label for="focusradiobutton2" class="radio-label">Radio label</label>
-                </div>
-            </div>
-            <div class="grid-item">
-                <p>Disabled</p>
-                <div class="radio">
-                    <input type="radio" id="disabledRB1" name="disabledRB" value="disabledRB1" disabled="true"/>
-                    <label for="disabledRB1" class="radio-label">Radio label</label>
-                </div>
-                <div class="radio">
-                    <input type="radio" id="disabledRB2" name="disabledRB" value="disabledRB2" checked="checked" disabled="true"/>
-                    <label for="disabledRB2" class="radio-label">Radio label</label>
-                </div>
-            </div>
+      <div class="grid-item">
+        <p>State</p>
+        <div>
+          <p>Unselected</p>
+        </div>
+        <div>
+          <p>Selected</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <p>Default</p>
+        <div class="radio">
+          <input
+            type="radio"
+            id="radiobutton1"
+            name="button"
+            value="radiobutton1"
+          />
+          <label for="radiobutton1" class="radio-label">Radio label</label>
+        </div>
+        <div class="radio">
+          <input
+            type="radio"
+            id="radiobutton2"
+            name="button"
+            value="radiobutton2"
+            checked="checked"
+          />
+          <label for="radiobutton2" class="radio-label">Radio label</label>
+        </div>
+      </div>
+      <div class="grid-item">
+        <p>Focus</p>
+        <div class="radio">
+          <input
+            class="focus1"
+            type="radio"
+            id="focusradiobutton1"
+            name="focusbutton"
+            value="focusradiobutton1"
+          />
+          <label for="focusradiobutton1" class="radio-label">Radio label</label>
+        </div>
+        <div class="radio">
+          <input
+            type="radio"
+            id="focusradiobutton2"
+            name="focusbutton"
+            checked="checked"
+            value="focusradiobutton2"
+            autofocus
+          />
+          <label for="focusradiobutton2" class="radio-label">Radio label</label>
+        </div>
+      </div>
+      <div class="grid-item">
+        <p>Disabled</p>
+        <div class="radio">
+          <input
+            type="radio"
+            id="disabledRB1"
+            name="disabledRB"
+            value="disabledRB1"
+            disabled="true"
+          />
+          <label for="disabledRB1" class="radio-label">Radio label</label>
+        </div>
+        <div class="radio">
+          <input
+            type="radio"
+            id="disabledRB2"
+            name="disabledRB"
+            value="disabledRB2"
+            checked="checked"
+            disabled="true"
+          />
+          <label for="disabledRB2" class="radio-label">Radio label</label>
+        </div>
+      </div>
     </div>
     <div class="container">
-        <h2>Radio Group</h2>
-        <p>Group Label</p>
-        <div class="radio">
-            <input type="radio" id="radio" name="radio" value="radio"/>
-            <label for="radio" class="radio-label">Radio label</label>
-        </div>
-        <div class="radio">
-            <input type="radio" id="radio1" name="radio" value="radio1"/>
-            <label for="radio1" class="radio-label">Radio label</label>
-        </div>
-        <div class="radio">
-            <input type="radio" id="radio2" name="radio" value="radio2"/>
-            <label for="radio2" class="radio-label">Radio label</label>
-        </div>
-        <div class="radio">
-            <input type="radio" id="radio3" name="radio" value="radio3"/>
-            <label for="radio3" class="radio-label">Radio label</label>
-        </div>
-        <div class="radio">
-            <input type="radio" id="radio4" name="radio" value="radio4"/>
-            <label for="radio4" class="radio-label">Radio label</label>
-        </div>
-
+      <h2>Radio Group</h2>
+      <p>Group Label</p>
+      <div class="radio">
+        <input type="radio" id="radio" name="radio" value="radio" />
+        <label for="radio" class="radio-label">Radio label</label>
+      </div>
+      <div class="radio">
+        <input type="radio" id="radio1" name="radio" value="radio1" />
+        <label for="radio1" class="radio-label">Radio label</label>
+      </div>
+      <div class="radio">
+        <input type="radio" id="radio2" name="radio" value="radio2" />
+        <label for="radio2" class="radio-label">Radio label</label>
+      </div>
+      <div class="radio">
+        <input type="radio" id="radio3" name="radio" value="radio3" />
+        <label for="radio3" class="radio-label">Radio label</label>
+      </div>
+      <div class="radio">
+        <input type="radio" id="radio4" name="radio" value="radio4" />
+        <label for="radio4" class="radio-label">Radio label</label>
+      </div>
     </div>
-</body>
+  </body>
 </html>

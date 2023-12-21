@@ -1,36 +1,61 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/style.css">
-        <script defer src="modal.js"></script>
-    </head>
-    <body>
-        
-        <div>
-            <button class="btn btn-primary" data-open-modal>Open new modal</button>
-        </div>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../CSS/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="modal.css" />
 
-        <dialog data-modal>
-            <div class="modal-content modal-width">
-                <div class="modal-header">
-                    <div class="h5 modal-title" id="exampleModalLabel">Modal title</div>
-                    <button type="button" aria-label="Close" icon>
-                        <span aria-hidden="true">X</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-primary" data-close-modal>Close</button>
-                    <button class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-            
-        </dialog>
-        
+    <script defer src="modal.js"></script>
+  </head>
+  <body class="hc-padding-04">
+    <div>
+      <!-- button to launch modal -->
+      <button class="hc-button" data-open-modal>Open new modal</button>
     </div>
 
-    </body>
+    <!-- dialog element is actual modal in semantic html -->
+    <dialog class="hc-modal" data-modal>
+      <!-- container for all modal content -->
+
+      <!-- container for header and button -->
+      <div class="modal-header-and-close">
+        <h3 class="hc-margin-bottom-00">Modal title</h3>
+        <!-- Icon close button -->
+        <button
+          class="hc-button hc-button--small hc-button--icon-only"
+          aria-label="Close"
+          icon
+        >
+          <span class="material-symbols-outlined"> close </span>
+        </button>
+      </div>
+
+      <!-- The modal-content section can be used to add any nested components that would be used in a modal -->
+      <div class="modal-content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+
+      <div class="button-group">
+        <!-- Close button -->
+        <button
+          type="button"
+          class="hc-button hc-button--secondary"
+          data-close-modal
+        >
+          Close
+        </button>
+        <!-- Save button -->
+        <button class="hc-button">Save changes</button>
+      </div>
+    </dialog>
+  </body>
 </html>

@@ -1,0 +1,120 @@
+/* -- Modal Style Here -- */
+
+/* This styles the modal container */
+dialog.hc-modal[open] {
+  display: block;
+  margin: auto;
+  max-width: 48rem;
+}
+
+/* This contains the modal heading and close button */
+.modal-header-and-close {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: var(--hc-spacing-03);
+}
+
+/* This contains content inside the modal */
+/* Gap is added in case this section is used to stack form elements or other nested components */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--hc-spacing-05);
+  padding-right: var(--hc-spacing-07);
+  padding-bottom: var(--hc-spacing-07);
+}
+
+dialog.hc-modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* =========== */
+/* =========== */
+/* Backdrop is still not working */
+/* =========== */
+/* =========== */
+
+/* =========== */
+/* =========== */
+/* Everything below here can be deleted after backdrop is figured out */
+/* =========== */
+/* =========== */
+
+/* Modal positioning */
+/* center modal */
+/* this class is unused and can be deleted */
+/* .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+  margin: auto;
+} */
+
+/* Not sure what this does, I think it makes the modal window scrollable if content is vertically very large but not totally sure */
+/* It's not used in the html, not sure what to do with this */
+/* .modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+} */
+
+/* Think this can be deleted*/
+/* @media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 500px;
+    margin: 1.75rem auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .modal.fade .modal-dialog {
+    transition: none;
+  } 
+}
+*/
+/* -- End Modal Style-- */
+
+/* This doesn't work */
+/* Not sure if JS or CSS issue*/
+/* ::backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+}
+.modal-backdrop.fade {
+  opacity: 0;
+}
+.modal-backdrop.show {
+  opacity: 0.5;
+} */
+
+/* I think this can all be deleted, but not sure if it's related to the backdrop */
+/* 
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 0.5rem;
+  pointer-events: none;
+}
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+  transform: translate(0, -50px);
+}
+.modal.show .modal-dialog {
+  transform: none;
+} */

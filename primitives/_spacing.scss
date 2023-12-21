@@ -1,0 +1,21 @@
+:root {
+  // uses absolute units for spacing instead of rem per
+  // https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/
+
+  --hc-spacing-base: 16px;
+
+  --hc-spacing-00: calc(var(--hc-spacing-base) * 0); /*0px*/
+  --hc-spacing-01: calc(var(--hc-spacing-base) * 0.125); /*2px*/
+  --hc-spacing-02: calc(var(--hc-spacing-base) * 0.25); /*4px*/
+  --hc-spacing-03: calc(var(--hc-spacing-base) * 0.5); /*8px*/
+  --hc-spacing-04: calc(var(--hc-spacing-base) * 0.75); /*12px*/
+  --hc-spacing-05: calc(var(--hc-spacing-base) * 1); /*16px*/
+  --hc-spacing-06: calc(var(--hc-spacing-base) * 1.5); /*24px*/
+  --hc-spacing-07: calc(var(--hc-spacing-base) * 2); /*32px*/
+  --hc-spacing-08: calc(var(--hc-spacing-base) * 2.5); /*40px*/
+  --hc-spacing-09: calc(var(--hc-spacing-base) * 3); /*48px*/
+  --hc-spacing-10: calc(var(--hc-spacing-base) * 4); /*64px*/
+  --hc-spacing-11: calc(var(--hc-spacing-base) * 5); /*80px*/
+  --hc-spacing-12: calc(var(--hc-spacing-base) * 6); /*96px*/
+  --hc-spacing-13: calc(var(--hc-spacing-base) * 10); /*160px*/
+}
