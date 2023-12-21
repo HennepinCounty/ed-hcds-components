@@ -1,0 +1,131 @@
+:host {
+.p-checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+.p-checkbox .p-checkbox-box {
+    border: 2px solid #ced4da;
+    background: #ffffff;
+    width: 20px;
+    height: 20px;
+    color: #495057;
+    border-radius: 3px;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.p-checkbox .p-checkbox-box .p-checkbox-icon {
+    transition-duration: 0.2s;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.p-checkbox .p-checkbox-box:not(.p-disabled):hover {
+    border-color: #113c66;
+}
+
+.p-checkbox .p-checkbox-box:not(.p-disabled).p-focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: 0 0 0 0.2rem #a6d5fa;
+    border-color: #113c66;
+}
+
+.p-checkbox .p-checkbox-box.p-highlight {
+    border-color: #113c66;
+    background: #113c66;
+}
+
+.p-checkbox .p-checkbox-box.p-highlight:not(.p-disabled):hover {
+    border-color: #0b7ad1;
+    background: #0b7ad1;
+    color: #ffffff;
+}
+
+.p-checkbox.p-error>.p-checkbox-box,
+.p-checkbox.p-invalid>.p-checkbox-box {
+    border-color: #f44336;
+}
+
+p-checkbox.ng-dirty.ng-invalid>.p-checkbox>.p-checkbox-box {
+    border-color: #f44336;
+}
+
+.p-input-filled .p-checkbox .p-checkbox-box {
+    background-color: #f8f9fa;
+}
+
+.p-input-filled .p-checkbox .p-checkbox-box:not(.p-disabled):hover {
+    background-color: #f8f9fa;
+}
+
+.p-input-filled .p-checkbox .p-checkbox-box.p-highlight {
+    background: #113c66;
+}
+
+.p-input-filled .p-checkbox .p-checkbox-box.p-highlight:not(.p-disabled):hover {
+    background: #0b7ad1;
+}
+
+.p-checkbox-label {
+    margin-left: 0.5rem;
+}
+
+.p-highlight .p-checkbox .p-checkbox-box {
+    border-color: #ffffff;
+}
+
+
+.p-fieldset {
+    border: 1px solid #dee2e6;
+    background: #ffffff;
+    color: #495057;
+    border-radius: 3px;
+}
+
+.p-fieldset .p-fieldset-legend {
+    padding: 1rem;
+    border: 1px solid #dee2e6;
+    color: #495057;
+    background: #f8f9fa;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+.p-fieldset.p-fieldset-toggleable .p-fieldset-legend {
+    padding: 0;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.p-fieldset.p-fieldset-toggleable .p-fieldset-legend a {
+    padding: 1rem;
+    color: #495057;
+    border-radius: 3px;
+    transition: box-shadow 0.2s;
+}
+
+.p-fieldset.p-fieldset-toggleable .p-fieldset-legend a .p-fieldset-toggler {
+    margin-right: 0.5rem;
+}
+
+.p-fieldset.p-fieldset-toggleable .p-fieldset-legend a:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: 0 0 0 0.2rem #a6d5fa;
+}
+
+.p-fieldset.p-fieldset-toggleable .p-fieldset-legend:hover {
+    background: #e9ecef;
+    border-color: #dee2e6;
+    color: #495057;
+}
+
+.p-fieldset .p-fieldset-content {
+    padding: 1rem;
+}
+
+
+.label-bold {
+    font-weight: bold;
+}
+}

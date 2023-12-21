@@ -1,0 +1,97 @@
+<h1>Form validation</h1>
+
+<!--Initilize form for radio buttons / inputs -->
+<form [formGroup]="formModalForm">
+  <div class="formgrid grid">
+    <!--Text input with helptext on bottom-->
+    <div class="field col col-6">
+      <label for="firstname2" style="padding-left: 0" class="col-12 label-bold">Label</label>
+      <input
+        pInputText
+        id="firstname2"
+        type="text"
+        aria-describedby="firstname2-requried"
+        class="ng-invalid ng-dirty"
+      />
+
+      <br> 
+
+      <span
+        data-for="firstname2"
+        id="firstname2-requried"
+        class="alertNotification"
+      >
+        Firstname field is required
+      </span>
+    </div>
+
+    <!--Text input with helptext on top-->
+    <div class="field col">
+      <label for="lastname2" class="label-bold">Lastname</label>
+      <p class="helper-text ">Helper text</p>
+      <input
+        pInputText
+        id="lastname2"
+        type="text"
+        class=""
+      />
+    </div>
+  </div>
+
+  <div class="formgrid grid">
+    <!--Text input longer helptext -->
+    <div class="field col">
+      <label for="firstname2" class="label-bold">Firstname</label>
+      <input
+        pInputText
+        id="firstname2"
+        type="text"
+        class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+      />
+      <p>Longer helper text, longer helper text, longer</p>
+    </div>
+    <!--Text input no helptext -->
+    <div class="field col">
+      <label for="lastname2" class="label-bold">Lastname</label>
+      <input
+        pInputText
+        id="lastname2"
+        type="text"
+        class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+      />
+    </div>
+  </div>
+
+  <!--Radio button example-->
+  <div class="p-field p-grid">
+    <fieldset class="p-fieldset p-col-12">
+      <legend class="label-bold">
+        Group label <span class="alertAsterisk">&nbsp;*</span>
+      </legend>
+      <div class="p-col-6" style="margin-top: 7px">
+        <div class="ui-g-3">
+          <p-radioButton
+            name="radioExample"
+            [value]="1"
+            label="Yes"
+            formControlName="radioExample"
+            inputId="radioExampleYes"
+            class="p-field-radiobutton focus-container"
+            (keydown.enter)="$event.preventDefault()"
+          ></p-radioButton>
+        </div>
+        <div class="ui-g-3">
+          <p-radioButton
+            name="radioExample"
+            [value]="0"
+            label="No"
+            formControlName="radioExample"
+            inputId="radioExampleNo"
+            class="p-field-radiobutton focus-container"
+            (keydown.enter)="$event.preventDefault()"
+          ></p-radioButton>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+</form>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.hennepin.us/assets/css/main-branding.css?v=5.24">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <form onsubmit="return validateForm()">
+        <div class="row">
+            <label class="hc-label" for="hc-id1" required>First name</label>
+            <input class="hc-input" id="hc-id1" name="hc-name1" type="text" spellcheck="true" required>
+            <span class="error-msg" id="firstNameError"></span>
+
+            <label class="hc-label" for="hc-prompt">Enter a comment (50 characters or less)</label>
+            <input class="hc-input" id="hc-id2" name="hc-prompt" type="text" spellcheck="true">
+            <span class="error-msg" id="commentError"></span>
+        </div>
+
+        <br />
+
+        <div class="row">
+            <br />
+            <p>Which of these do you require? (Must select at least 2)</p>
+            <div class="hc-checkbox-padding">
+                <label class="hc-checkbox-label">
+                    <input type="checkbox" id="checkbox1" class="hc-checkbox-input" />
+                    A
+                </label>
+                <label class="hc-checkbox-label">
+                    <input type="checkbox" id="checkbox2" class="hc-checkbox-input" />
+                    B
+                </label>
+                <label class="hc-checkbox-label">
+                    <input type="checkbox" id="checkbox3" class="hc-checkbox-input" />
+                    C
+                </label>
+            </div>
+            <span class="error-msg" id="checkboxErrors"></span>
+        </div>
+        <label for="inputDate">Enter birth date</label>
+        <input type="date" id="inputDate" class="inputDate" required>
+        <span class="error-msg" id="dateError"></span>
+        <br />
+        <div class="radio">
+            <input type="radio" id="radiobutton1" name="button" />
+            <label for="radiobutton1" class="radio-label" required>Do you agree to the terms and conditions?</label>
+            <span class="error-msg" id="radioError"></span>
+        </div>
+        <input type="submit" value="Submit" class="primary-idle">
+    </form>
+</body>
+
+</html>
