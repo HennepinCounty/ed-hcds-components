@@ -1,22 +1,19 @@
-.hc-element {
-  margin: 20px;
-}
-
 .hc-textarea {
   font-family: var(--hc-font-family);
   min-height: 40px;
   border-radius: var(--hc-border-radius-02);
   padding: var(--hc-spacing-02);
   border: 2px solid var(--hc-border-color-regular);
+  padding-right: var(--hc-spacing-07);
   /* width: 100%;  */
   /* setting width 100% would match govuk styling, textarea is set to 100% width and actual width is handled by parent container */
   /* Downside is that dev would need to know to include a parent container to control width */
 }
 
 /* error state for field, adds border and icon*/
-.hc-textarea-error {
+.hc-textarea--error {
   border: 2px solid var(--hc-border-color-error);
-  background: url(material-symbols_close-rounded.svg) no-repeat right;
+  background: url(material-symbols_close-rounded.svg) no-repeat top right;
   background-size: 30px;
 }
 
