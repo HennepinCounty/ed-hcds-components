@@ -303,7 +303,8 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   --hc-button-danger-active: var(--hc-red-90);
   --hc-button-separator: var(--hc-gray-20);
   --hc-button-border: var(--hc-cyan-70);
-  --hc-button-disabled: var(--hc-background-disabled);
+  --hc-button-disabled-background: var(--hc-gray-40);
+  --hc-button-disabled-text: var(--hc-text-disabled);
   --hc-divider-subtle: var(--hc-gray-30);
   --hc-divider-regular: var(--hc-gray-70);
   --hc-divider-strong: var(--hc-gray-90);
@@ -2700,11 +2701,6 @@ html {
 .hc-button:focus {
   border: var(--hc-border-style-focus);
   outline: var(--hc-outline-style-focus);
-  /* box-shadow: var(--hc-shadow-style-focus); */
-  /* commented out to test replacing with variables */
-  /* 
-  border: 2px solid var(--hc-white);
-  outline: 3px solid var(--hc-background-brand); */
 }
 
 /* Background colors for */
@@ -2717,8 +2713,8 @@ html {
 }
 
 .hc-button:disabled {
-  background-color: var(--hc-button-disabled);
-  color: var(--hc-text-disabled);
+  background-color: var(--hc-button-disabled-background);
+  color: var(--hc-button-disabled-text);
 }
 
 /* Size variations */
@@ -2742,7 +2738,6 @@ html {
 /* ======================== */
 /* ======================== */
 .hc-button--secondary {
-  /* box-sizing: border-box; */
   background-color: var(--hc-white);
   color: var(--text-primary);
   border: 2px solid var(--hc-button-secondary-border);
@@ -2750,14 +2745,12 @@ html {
 
 /* Background colors */
 .hc-button--secondary:hover {
-  /* box-sizing: border-box; */
   color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-hover);
   border: 2px solid var(--hc-button-secondary-border-hover);
 }
 
 .hc-button--secondary:active {
-  /* box-sizing: border-box; */
   color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-active);
   border: 2px solid var(--hc-button-secondary-border-active);
@@ -2779,8 +2772,6 @@ html {
 .hc-button--danger {
   background-color: var(--hc-button-danger);
   color: var(--hc-text-on-color);
-  /* margin: auto; */
-  /* text-align: center; */
 }
 
 .hc-button--danger:hover {
@@ -2791,20 +2782,11 @@ html {
   background-color: var(--hc-button-danger-active);
 }
 
-/* should be able to delete */
-/* .hc-button--danger:disabled {
-  background-color: var(--hc-button-danger-active);
-} */
 .hc-button--danger:disabled {
   background-color: var(--hc-button-disabled);
   color: var(--hc-text-disabled);
 }
 
-/* Don't delete -- this looks good as an alternative */
-/* .hc-button--danger:disabled {
-  background-color: #c3c6c9;
-  color: #818283;
-} */
 /* ======================== */
 /* ======================== */
 /* Icons */
@@ -2858,57 +2840,6 @@ html {
   gap: var(--hc-spacing-03);
 }
 
-/* The below can all be deleted and is no longer in use -- double check and then delete */
-/* 
-.hc-closeIconBlue {
-  background-image: url(material-symbols_close-rounded-blue.svg);
-  height: 12px;
-  width: 12px;
-  background-size: cover;
-  border: none;
-  outline-offset: -2px;
-}
-
-.hc-closeIconWhite {
-  background-image: url(material-symbols_close-rounded-white.svg);
-  height: 12px;
-  width: 12px;
-  background-size: cover;
-  border: none;
-  outline-offset: -2px;
-}
-
-.hc-closeIconGrey {
-  background-image: url(material-symbols_close-rounded.svg);
-  height: 12px;
-  width: 12px;
-  background-size: cover;
-  border: none;
-  outline-offset: -2px;
-}
-
-.hc-button-secondary:hover .hc-closeIconBlue {
-  background-image: url(material-symbols_close-rounded-white.svg);
-  height: 12px;
-  width: 12px;
-}
-
-.hc-primary:disabled .hc-closeIconWhite,
-.hc-button-secondary:disabled .hc-closeIconBlue,
-.hc-button-danger:disabled .hc-closeIconWhite {
-  background-image: url(material-symbols_close-rounded.svg);
-  height: 12px;
-  width: 12px;
-  background-size: cover;
-  border: none;
-  outline-offset: -2px;
-}
-
-.hc-button-danger.hc-closeIconWhite {
-  background-image: url(material-symbols_close-rounded-white.svg);
-  height: 12px;
-  width: 12px;
-} */
 .hc-form-element {
   margin-top: 1.2rem;
 }

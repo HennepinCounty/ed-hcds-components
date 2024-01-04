@@ -43,12 +43,6 @@
 .hc-button:focus {
   border: var(--hc-border-style-focus);
   outline: var(--hc-outline-style-focus);
-  /* box-shadow: var(--hc-shadow-style-focus); */
-
-  /* commented out to test replacing with variables */
-  /* 
-  border: 2px solid var(--hc-white);
-  outline: 3px solid var(--hc-background-brand); */
 }
 
 /* Background colors for */
@@ -61,23 +55,9 @@
 }
 
 .hc-button:disabled {
-  background-color: var(--hc-button-disabled);
-  color: var(--hc-text-disabled);
-}
-
-/* Size variations */
-.hc-button--small {
-  font-size: var(--hc-font-body-size-small, 1rem);
-  height: var(--hc-height--small, 2.25rem);
-  padding-left: var(--hc-spacing-03);
-  padding-right: var(--hc-spacing-03);
-}
-
-.hc-button--large {
-  font-size: var(--hc-font-body-size-large, 1rem);
-  height: var(--hc-height--large, 3rem);
-  padding-left: var(--hc-spacing-05);
-  padding-right: var(--hc-spacing-05);
+  background-color: var(--hc-button-disabled-background);
+  color: var(--hc-button-disabled-text);
+  cursor: not-allowed;
 }
 
 /* ======================== */
@@ -87,7 +67,6 @@
 /* ======================== */
 
 .hc-button--secondary {
-  /* box-sizing: border-box; */
   background-color: var(--hc-white);
   color: var(--text-primary);
   border: 2px solid var(--hc-button-secondary-border);
@@ -95,14 +74,12 @@
 
 /* Background colors */
 .hc-button--secondary:hover {
-  /* box-sizing: border-box; */
   color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-hover);
   border: 2px solid var(--hc-button-secondary-border-hover);
 }
 
 .hc-button--secondary:active {
-  /* box-sizing: border-box; */
   color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-active);
   border: 2px solid var(--hc-button-secondary-border-active);
@@ -115,6 +92,7 @@
   background-color: var(--hc-white);
   border-radius: var(--hc-border-radius-01);
   border: 2px solid var(--hc-border-color-disabled);
+  cursor: not-allowed;
 }
 
 /* ======================== */
@@ -125,8 +103,6 @@
 .hc-button--danger {
   background-color: var(--hc-button-danger);
   color: var(--hc-text-on-color);
-  /* margin: auto; */
-  /* text-align: center; */
 }
 
 .hc-button--danger:hover {
@@ -137,21 +113,11 @@
   background-color: var(--hc-button-danger-active);
 }
 
-/* should be able to delete */
-/* .hc-button--danger:disabled {
-  background-color: var(--hc-button-danger-active);
-} */
-
 .hc-button--danger:disabled {
-  background-color: var(--hc-button-disabled);
-  color: var(--hc-text-disabled);
+  background-color: var(--hc-button-disabled-background);
+  color: var(--hc-button-disabled-text);
+  cursor: not-allowed;
 }
-
-/* Don't delete -- this looks good as an alternative */
-/* .hc-button--danger:disabled {
-  background-color: #c3c6c9;
-  color: #818283;
-} */
 
 /* ======================== */
 /* ======================== */
@@ -181,24 +147,6 @@
   padding-inline-end: var(--hc-spacing-03);
 }
 
-.hc-button--small.hc-button--icon-only {
-  align-items: center;
-  justify-content: center;
-  /* padding-left: var(--hc-spacing-02);
-  padding-right: var(--hc-spacing-02); */
-  padding-inline-start: var(--hc-spacing-02);
-  padding-inline-end: var(--hc-spacing-02);
-}
-
-.hc-button--large.hc-button--icon-only {
-  align-items: center;
-  justify-content: center;
-  /* padding-left: var(--hc-spacing-04);
-  padding-right: var(--hc-spacing-04); */
-  padding-inline-start: var(--hc-spacing-04);
-  padding-inline-end: var(--hc-spacing-04);
-}
-
 .button-group {
   display: flex;
   flex-direction: row;
@@ -207,55 +155,3 @@
   justify-content: flex-end;
   gap: var(--hc-spacing-03);
 }
-
-/* The below can all be deleted and is no longer in use -- double check and then delete */
-/* 
-.hc-closeIconBlue {
-  background-image: url(material-symbols_close-rounded-blue.svg);
-  height: 12px;
-  width: 12px;
-  background-size: cover;
-  border: none;
-  outline-offset: -2px;
-}
-
-.hc-closeIconWhite {
-  background-image: url(material-symbols_close-rounded-white.svg);
-  height: 12px;
-  width: 12px;
-  background-size: cover;
-  border: none;
-  outline-offset: -2px;
-}
-
-.hc-closeIconGrey {
-  background-image: url(material-symbols_close-rounded.svg);
-  height: 12px;
-  width: 12px;
-  background-size: cover;
-  border: none;
-  outline-offset: -2px;
-}
-
-.hc-button-secondary:hover .hc-closeIconBlue {
-  background-image: url(material-symbols_close-rounded-white.svg);
-  height: 12px;
-  width: 12px;
-}
-
-.hc-primary:disabled .hc-closeIconWhite,
-.hc-button-secondary:disabled .hc-closeIconBlue,
-.hc-button-danger:disabled .hc-closeIconWhite {
-  background-image: url(material-symbols_close-rounded.svg);
-  height: 12px;
-  width: 12px;
-  background-size: cover;
-  border: none;
-  outline-offset: -2px;
-}
-
-.hc-button-danger.hc-closeIconWhite {
-  background-image: url(material-symbols_close-rounded-white.svg);
-  height: 12px;
-  width: 12px;
-} */
