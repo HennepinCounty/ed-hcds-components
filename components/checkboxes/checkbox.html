@@ -112,6 +112,50 @@
 
     <!-- ============================== -->
     <!-- ============================== -->
+    <!-- Error state -->
+    <!-- ============================== -->
+    <!-- ============================== -->
+
+    <h3>Error state</h3>
+    <h4 class="hc-margin-bottom-06">Error with hint</h4>
+    <div class="hc-form-group">
+      <fieldset class="hc-fieldset">
+        <legend
+          class="hc-fieldset__legend"
+          aria-describedby="fieldset-hint-3 fieldset-error-1"
+        >
+          Title for legend
+        </legend>
+        <div class="hc-text-hint" id="fieldset-hint-3">
+          Hint text preview to provide context for question
+        </div>
+        <p class="hc-text-error" id="fieldset-error-1">
+          <span class="hc-visually-hidden">Error:</span> Select if you have done
+          X or Y
+        </p>
+        <div class="hc-checkboxes" data-module="hc-checkbox">
+          <div class="hc-checkbox__item">
+            <input
+              class="hc-checkbox__input"
+              id="errorExample-1"
+              name="errorWithHintExample"
+              type="checkbox"
+              value="Have-not"
+            />
+
+            <label
+              class="hc-field-label hc-checkbox__label"
+              for="errorExample-1"
+            >
+              I have not done X
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <!-- ============================== -->
+    <!-- ============================== -->
     <!-- Disabled state -->
     <!-- ============================== -->
     <!-- ============================== -->
@@ -168,50 +212,6 @@
 
             <label class="hc-field-label hc-checkbox__label" for="waste-1">
               Waste from stream runoff
-            </label>
-          </div>
-        </div>
-      </fieldset>
-    </div>
-
-    <!-- ============================== -->
-    <!-- ============================== -->
-    <!-- Error state -->
-    <!-- ============================== -->
-    <!-- ============================== -->
-
-    <h3>Error state</h3>
-    <h4 class="hc-margin-bottom-06">Error with hint</h4>
-    <div class="hc-form-group">
-      <fieldset class="hc-fieldset">
-        <legend
-          class="hc-fieldset__legend"
-          aria-describedby="fieldset-hint-3 fieldset-error-1"
-        >
-          Title for legend
-        </legend>
-        <div class="hc-text-hint" id="fieldset-hint-3">
-          Hint text preview to provide context for question
-        </div>
-        <p class="hc-text-error" id="fieldset-error-1">
-          <span class="hc-visually-hidden">Error:</span> Select if you have done
-          X or Y
-        </p>
-        <div class="hc-checkboxes" data-module="hc-checkbox">
-          <div class="hc-checkbox__item">
-            <input
-              class="hc-checkbox__input"
-              id="errorExample-1"
-              name="errorWithHintExample"
-              type="checkbox"
-              value="Have-not"
-            />
-
-            <label
-              class="hc-field-label hc-checkbox__label"
-              for="errorExample-1"
-            >
-              I have not done X
             </label>
           </div>
         </div>
