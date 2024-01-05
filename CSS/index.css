@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -2839,20 +2840,6 @@ html {
   border: 2px solid var(--hc-border-color-regular);
 }
 
-/* Small variant for dense or complex UIs */
-/* Sized to same height as button so they can appear naturla on a row together */
-.hc-input--small {
-  height: 32px;
-  height: var(--hc-height--small);
-}
-
-/* Large variant for mobile */
-/* Sized to same height as button so they can appear naturla on a row together */
-.hc-input--large {
-  height: 48px;
-  height: var(--hc-height--large);
-}
-
 /* Text inside of input field */
 input.hc-input[type=text] {
   font-family: var(--hc-font-family);
@@ -2876,10 +2863,6 @@ input.hc-input[type=text] {
   outline: var(--hc-outline-style-focus);
 }
 
-/* input.hc-input[type="text"]:focus {
-  border: var(--hc-border-style-focus);
-  outline: var(--hc-outline-style-focus);
-} */
 .hc-input:disabled {
   border-color: var(--hc-border-color-disabled);
   background-color: var(--hc-background-disabled);
@@ -3073,4 +3056,404 @@ dialog.hc-modal[open] {
 
 dialog.hc-modal::backdrop {
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Wrapper for accordion group */
+.hc-accordion-group {
+  /* background-color: white; */
+  border-radius: var(--hc-border-radius-01);
+  max-width: 768px;
+}
+
+/* Div wrapping accordion button with its expandable content */
+.hc-accordion-item {
+  margin-bottom: var(--hc-spacing-02);
+}
+
+/* Class attached to button to make the accordion clickable */
+.hc-accordion-header {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: var(--hc-font-h4-size);
+  color: var(--hc-text-primary);
+  background-color: var(--hc-gray-10);
+  line-height: 130%;
+  text-align: left;
+  cursor: pointer;
+  padding: var(--hc-spacing-04);
+  transition: background-color 0.08s ease-in-out;
+  min-width: 100%;
+  /* border: 4px solid transparent; */
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: var(--hc-border-style-transparent);
+}
+
+.hc-accordion-section-heading {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: var(--hc-font-h4-size);
+  color: var(--hc-text-primary);
+  line-height: 130%;
+  text-align: left;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.hc-accordion-header:focus {
+  border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
+}
+
+.hc-accordion-header:hover {
+  background-color: var(--hc-gray-20);
+}
+
+/* Positioning for content inside the accordion */
+.hc-accordion-content {
+  font-family: "Segoe UI", Arial, sans-serif;
+  padding-top: var(--hc-spacing-04);
+  padding-left: var(--hc-spacing-04);
+  padding-right: var(--hc-spacing-07);
+  display: none;
+  margin-bottom: 32px;
+  max-width: 80ch;
+}
+
+/* Class added by JS when clicked */
+/* JS changes from display:none to display:block, maybe that can be done in this class instead of JS? */
+.hc-accordion-content--expanded {
+  padding-bottom: var(--hc-spacing-03);
+}
+
+/* Different way of adding icon -- this doesn't add an icon, and instead adds text */
+/* Changged to an icon so that sizing can be consistent (+ and - text versions have different widths) */
+/* .hc-accordion-active .hc-accordion-symbol {
+  content: "-";
+} */
+/* govuk example
+https://github.com/alphagov/govuk-frontend/blob/a2ff2e41967a38785aaef33135dc7e41cbd6d00b/packages/govuk-frontend/src/govuk/components/breadcrumbs/_index.scss
+ */
+.hc-breadcrumb__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0rem;
+  margin-bottom: var(--hc-spacing-10);
+  list-style: none;
+}
+
+/* Max-width keeps any individual title from being too long and difficult to read */
+.hc-breadcrumbs__list-item {
+  display: flex;
+  color: var(--hc-link-primary);
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-body-size-regular);
+  font-weight: 400;
+  max-width: 70ch;
+  line-height: 125%;
+}
+
+.hc-breadcrumbs__list-item + .hc-breadcrumbs__list-item {
+  padding-left: var(--hc-spacing-03);
+}
+
+.hc-breadcrumbs__list-item + .hc-breadcrumbs__list-item::before {
+  display: inline-block;
+  padding-right: var(--hc-spacing-03);
+  color: var(--hc-text-hint);
+  content: ">";
+}
+
+.hc-breadcrumbs__list-item + .hc-breadcrumbs__list-item:hover::before {
+  text-decoration: underline;
+}
+
+.hc-breadcrumbs__list-item + .hc-breadcrumbs__list-item:hover::before {
+  text-decoration: none;
+}
+
+.hc-breadcrumbs__list-item.hc-breadcrumbs__list-item--active {
+  color: var(--hc-text-hint);
+}
+
+/* ====================================== */
+/* new styling based on govuk */
+/* https://github.com/alphagov/govuk-frontend/blob/9f05cea739d14d4cbf18e79b17228045ca84b3ba/packages/govuk-frontend/src/govuk/components/checkboxes/_index.scss */
+/* ====================================== */
+/* accessibly styling radio buttons/checkboxes */
+/* https://www.sarasoueidan.com/blog/inclusively-hiding-and-styling-checkboxes-and-radio-buttons/ */
+/* wrapper for input and label */
+/* includes min-height for consistent sizing of form elements */
+/* margin-bottom adds space between items (this might be changed to gap) */
+/* position: relative so that absolute positioning can be used for label and input */
+.hc-checkboxes {
+  margin-top: var(--hc-spacing-05);
+}
+
+.hc-checkbox__item {
+  display: block;
+  position: relative;
+  min-height: 32px;
+  padding-left: 32px; /* This should equal width of the checkbox size*/
+  margin-bottom: var(--hc-spacing-05);
+  clear: left;
+}
+
+/* removes margin bottom from last element */
+.hc-checkbox__item:last-child,
+.hc-checkbox__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.hc-checkbox__input {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  z-index: 1;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.hc-checkbox__label {
+  font-size: var(--hc-font-fieldLabel-size-regular);
+  color: var(--hc-text-primary, #171a1d);
+  font-weight: 400;
+  display: inline-block;
+  margin-bottom: 0px;
+  padding-left: var(--hc-spacing-03);
+  cursor: pointer;
+  touch-action: manipulation;
+  max-width: 80ch;
+}
+
+/* [ ] Check box styling */
+.hc-checkbox__label::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 32px;
+  height: 32px;
+  border: var(--hc-border-width-medium) solid var(--hc-border-color-strong);
+  background: var(--hc-transparent);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* The check mark is a box with a border on the left and bottom side (└──),
+ rotated 45 degrees */
+.hc-checkbox__label::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 7px;
+  left: 6px;
+  width: 21px;
+  height: 12px;
+  color: white;
+  transform: rotate(-45deg);
+  border: solid;
+  border-width: 0 0 3px 3px;
+  /* Fix bug in IE11 caused by transform rotate (-45deg). */
+  /* See: alphagov/govuk_elements/issues/518 */
+  border-top-color: transparent;
+  opacity: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.hc-checkbox__hint {
+  padding-left: var(--hc-spacing-03);
+}
+
+/* Focus state */
+.hc-checkbox__input:focus + .hc-checkbox__label::before {
+  /* border: var(--hc-border-style-focus); */
+  outline: var(--hc-outline-style-focus);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Makes checkbox visible */
+.hc-checkbox__input:checked + .hc-checkbox__label::after {
+  opacity: 1;
+  transition: 0.1ms;
+}
+
+/* checked state styling */
+.hc-checkbox__input:checked + .hc-checkbox__label::before {
+  background-color: var(--hc-background-brand); /*adds blue backround in checked state*/
+  border: var(--hc-border-brand);
+}
+
+/* Disabled styling */
+.hc-checkbox__input:disabled,
+.hc-checkbox__input:disabled + .hc-checkbox__label,
+.hc-checkbox__input[aria-disabled=true] {
+  cursor: not-allowed;
+}
+
+.hc-checkbox__input:disabled + .hc-checkbox__label,
+.hc-checkbox__input:disabled ~ .hc-hint,
+.hc-checkbox__input[aria-disabled=true] + .hc-checkbox__label {
+  color: var(--hc-text-disabled);
+}
+
+/* chanes border and backround color unchecked state for aria disabled state */
+.hc-checkbox__input:disabled + .hc-checkbox__label::before,
+.hc-checkbox__input[aria-disabled=true] + .hc-checkbox__label::before {
+  border-color: var(--hc-border-color-disabled);
+}
+
+/* chanes border and backround color checked state for aria disabled state */
+.hc-checkbox__input[aria-disabled=true]:checked + .hc-checkbox__label::before {
+  background-color: var(--hc-checkbox-background-disabled); /*adds blue backround in checked state*/
+  border-color: var(--hc-border-color-disabled);
+  cursor: not-allowed;
+  border-width: 4px;
+}
+
+/* Glues the input field and button toether */
+.hc-search-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: var(--hc-spacing-00);
+}
+
+/* Stylin for font typed into field */
+input.hc-input[type=search] {
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-body-size-regular);
+  font-style: normal;
+  color: var(--hc-text-primary, #171a1d);
+  font-weight: 400;
+  line-height: 100%;
+}
+
+/* input.hc-input:focus {
+  border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
+} */
+/* Un-rounds the corners of input field to be flush against button */
+.hc-input-search {
+  border-radius: 4px 0px 0px 4px;
+}
+
+/* Focus styling */
+/* Commented out because it's causing layout shift and don't know why */
+/* .hc-input-search:focus {
+  border: 3px solid var(--hc-background-brand); //Makes larger border similar to normal input focus styling 
+ outline: none;  //Overrides outline in focus from hc-input 
+ } */
+/* Un-rounds the corners of button to be flush against input field */
+.hc-button-search {
+  border-radius: 0px 4px 4px 0px;
+  margin-inline-start: -2px;
+}
+
+.hc-skiplink {
+  /* taken from govuk
+  https://github.com/alphagov/govuk-frontend/blob/b44d7b0fe66847fb34881841b6550174111ea9ba/packages/govuk-frontend/src/govuk/helpers/_visually-hidden.scss#L4
+  /// Hide an element visually, but have it available for screen readers whilst
+  /// allowing the element to be focused when navigated to via the keyboard (e.g.
+  /// for the skip link)
+  ///
+  /// This is slightly less opinionated about borders and padding to make it
+  /// easier to style the focused element.
+  */
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  /*
+  // For long content, line feeds are not interpreted as spaces and small width
+  // causes content to wrap 1 word per line:
+  // https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+  */
+  white-space: nowrap !important;
+}
+
+.hc-skiplink:focus:active,
+.hc-skiplink:focus:focus {
+  position: absolute !important;
+  width: auto !important;
+  height: 36px !important;
+  margin: inherit !important;
+  overflow: visible !important;
+  clip: auto !important;
+  -webkit-clip-path: none !important;
+  clip-path: none !important;
+  white-space: inherit !important;
+  background-color: var(--hc-background-brand);
+  border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
+  border-radius: var(--hc-border-radius-02);
+  padding-left: var(--hc-spacing-03);
+  padding-right: var(--hc-spacing-03);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hc-skiplink:focus:focus {
+  background-color: var(--hc-red-70);
+}
+
+.hc-skiplink:focus:hover {
+  background-color: var(--hc-red-80);
+}
+
+.hc-skiplink:focus:active {
+  background-color: var(--hc-red-90);
+}
+
+a.hc-skiplink:hover {
+  color: var(--hc-gray-10) !important;
+}
+
+a.hc-skiplink:visited {
+  color: var(--hc-white);
+}
+
+.hc-textarea {
+  font-family: var(--hc-font-family);
+  min-height: 40px;
+  border-radius: var(--hc-border-radius-02);
+  padding: var(--hc-spacing-02);
+  border: 2px solid var(--hc-border-color-regular);
+  padding-right: var(--hc-spacing-07);
+  /* width: 100%;  */
+  /* setting width 100% would match govuk styling, textarea is set to 100% width and actual width is handled by parent container */
+  /* Downside is that dev would need to know to include a parent container to control width */
+}
+
+/* error state for field, adds border and icon*/
+.hc-textarea--error {
+  border: 2px solid var(--hc-border-color-error);
+  background: url(material-symbols_close-rounded.svg) no-repeat top right;
+  background-size: 30px;
+}
+
+/* Focus state, changes border color to white then adds blue stroke with outline to give appearance of growing on focus */
+.hc-textarea:focus {
+  border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
+}
+
+.hc-textarea:disabled {
+  color: var(--hc-text-disabled);
+  border-color: var(--hc-border-color-disabled);
+  background-color: var(--hc-background-disabled);
 }/*# sourceMappingURL=index.css.map */
