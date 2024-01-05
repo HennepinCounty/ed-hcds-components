@@ -107,6 +107,7 @@
   border-radius: 2px;
 }
 
+/* Makes checkbox visible */
 .hc-checkbox__input:checked + .hc-checkbox__label::after {
   opacity: 1;
   transition: 0.1ms;
