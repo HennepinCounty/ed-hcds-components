@@ -36,18 +36,20 @@
 }
 
 /* Small variant for dense or complex UIs */
-/* Sized to same height as button so they can appear naturla on a row together */
-.hc-input--small {
+/* Sized to same height as button so they can appear natural on a row together */
+/* Commented out until discussion about size variants */
+/* .hc-input--small {
   height: 32px;
   height: var(--hc-height--small);
-}
+} */
 
-/* Large variant for mobile */
-/* Sized to same height as button so they can appear naturla on a row together */
-.hc-input--large {
+/* Small variant for dense or complex UIs */
+/* Sized to same height as button so they can appear natural on a row together */
+/* Commented out until discussion about size variants */
+/* .hc-input--large {
   height: 48px;
   height: var(--hc-height--large);
-}
+} */
 
 /* Text inside of input field */
 input.hc-input[type="text"] {
