@@ -31,18 +31,6 @@
             cols="50"
           ></textarea>
         </div>
-        <h3>Focus/Active</h3>
-        <div class="hc-form-element">
-          <label class="hc-field-label" for="hc-textarea2">Label</label>
-          <textarea
-            class="hc-textarea"
-            id="hc-textarea2"
-            name="hc-textarea"
-            rows="5"
-            cols="50"
-            autofocus
-          ></textarea>
-        </div>
         <h3>Preloaded text</h3>
         <div class="hc-form-element">
           <label class="hc-field-label" for="hc-textarea3"
@@ -79,11 +67,11 @@ This is disabled textarea example for the Hennepin County Design System Componen
 
         <h3>Error</h3>
         <div class="hc-form-element">
-          <label class="hc-field-label" for="hc-textarea6">Label</label>
+          <label class="hc-field-label" for="hc-textarea5">Label</label>
           <div class="hc-text-error">Error Message</div>
           <textarea
             class="hc-textarea hc-textarea--error"
-            id="hc-textarea6"
+            id="hc-textarea5"
             name="hc-textarea"
             rows="5"
             cols="50"
@@ -92,47 +80,66 @@ This is disabled textarea example for the Hennepin County Design System Componen
       </div>
     </div>
 
+    <!-- =========================== -->
+    <!-- =========================== -->
+    <!-- Examples with helper text -->
+    <!-- =========================== -->
+    <!-- =========================== -->
+
     <h1 class="hc-margin-top-09">With helper text</h1>
 
     <h3>Default</h3>
     <div class="hc-form-element">
-      <label class="hc-field-label" for="hc-textarea5">Label</label>
-      <div class="hc-text-hint">Helper text</div>
+      <label class="hc-field-label" for="hc-textarea-with-helper-1"
+        >Label</label
+      >
+      <div id="hint-example-1" class="hc-text-hint">Helper text</div>
       <textarea
         class="hc-textarea"
-        id="hc-textarea5"
+        id="hc-textarea-with-helper-1"
         name="hc-textarea"
         rows="5"
         cols="50"
-      ></textarea>
+        aria-describedby="hint-example-1"
+      >
+      ></textarea
+      >
     </div>
 
     <h2>Error</h2>
     <div class="hc-form-element">
-      <label class="hc-field-label" for="hc-textarea6">Label</label>
-      <div class="hc-text-hint">Helper text</div>
-      <div class="hc-text-error">Error Message</div>
+      <label class="hc-field-label" for="hc-textarea-with-helper-2"
+        >Label</label
+      >
+      <div id="hint-example-2" class="hc-text-hint">Helper text</div>
+      <div id="error-example-1" class="hc-text-error">Error Message</div>
       <textarea
         class="hc-textarea hc-textarea--error"
-        id="hc-textarea6"
+        id="hc-textarea-with-helper-2"
         name="hc-textarea"
         rows="5"
         cols="50"
+        aria-describedby="hint-example-2 error-example-1"
       ></textarea>
     </div>
 
     <h2 class="hc-margin-top-07">Disabled</h2>
     <div class="hc-form-element">
-      <label class="hc-field-label hc-field-label--disabled" for="hc-textarea5"
+      <label
+        class="hc-field-label hc-field-label--disabled"
+        for="hc-textarea-with-helper-3"
         >Label</label
       >
-      <div class="hc-text-hint hc-text-hint--disabled">Helper text</div>
+      <div id="hint-example-3" class="hc-text-hint hc-text-hint--disabled">
+        Helper text
+      </div>
       <textarea
         class="hc-textarea"
-        id="hc-textarea5"
+        id="hc-textarea-with-helper-3"
         name="hc-textarea"
         rows="5"
         cols="50"
+        aria-describedby="hint-example-3"
         disabled
       >
 This is disabled textarea example for the Hennepin County Design System Components. Disabled textarea is a read only field and cannot be edited</textarea
