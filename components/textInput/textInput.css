@@ -35,22 +35,6 @@
   border: 2px solid var(--hc-border-color-regular);
 }
 
-/* Small variant for dense or complex UIs */
-/* Sized to same height as button so they can appear natural on a row together */
-/* Commented out until discussion about size variants */
-/* .hc-input--small {
-  height: 32px;
-  height: var(--hc-height--small);
-} */
-
-/* Small variant for dense or complex UIs */
-/* Sized to same height as button so they can appear natural on a row together */
-/* Commented out until discussion about size variants */
-/* .hc-input--large {
-  height: 48px;
-  height: var(--hc-height--large);
-} */
-
 /* Text inside of input field */
 input.hc-input[type="text"] {
   font-family: var(--hc-font-family);
@@ -73,11 +57,6 @@ input.hc-input[type="text"] {
   border: var(--hc-border-style-focus);
   outline: var(--hc-outline-style-focus);
 }
-
-/* input.hc-input[type="text"]:focus {
-  border: var(--hc-border-style-focus);
-  outline: var(--hc-outline-style-focus);
-} */
 
 .hc-input:disabled {
   border-color: var(--hc-border-color-disabled);
