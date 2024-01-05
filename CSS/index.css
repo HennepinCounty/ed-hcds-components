@@ -304,7 +304,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   --hc-button-danger-active: var(--hc-red-90);
   --hc-button-separator: var(--hc-gray-20);
   --hc-button-border: var(--hc-cyan-70);
-  --hc-button-disabled-background: var(--hc-gray-40);
+  --hc-button-disabled-background: var(--hc-gray-30);
   --hc-button-disabled-text: var(--hc-text-disabled);
   --hc-divider-subtle: var(--hc-gray-30);
   --hc-divider-regular: var(--hc-gray-70);
@@ -2660,15 +2660,6 @@ html {
   justify-content: space-between;
 }
 
-/*  */
-/*  */
-/*  */
-/* Deprectate hc-primary and rename to hc-button */
-/* This allows hc-button to be base of all buttons */
-/* could add class="hc-button hc-button-error" to apply variant styling */
-/*  */
-/*  */
-/*  */
 /* ======================== */
 /* ======================== */
 /* Primary button */
@@ -2803,6 +2794,7 @@ html {
   padding-inline-end: var(--hc-spacing-03);
 }
 
+/* Undocumented class, used in modals */
 .button-group {
   display: flex;
   flex-direction: row;

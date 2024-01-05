@@ -1,13 +1,3 @@
-/*  */
-/*  */
-/*  */
-/* Deprectate hc-primary and rename to hc-button */
-/* This allows hc-button to be base of all buttons */
-/* could add class="hc-button hc-button-error" to apply variant styling */
-/*  */
-/*  */
-/*  */
-
 /* ======================== */
 /* ======================== */
 /* Primary button */
@@ -147,6 +137,7 @@
   padding-inline-end: var(--hc-spacing-03);
 }
 
+/* Undocumented class, used in modals */
 .button-group {
   display: flex;
   flex-direction: row;
