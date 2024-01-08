@@ -1,33 +1,50 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.hc-select {
+  margin-top: var(--hc-spacing-01);
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-body-size-regular);
+  line-height: 125%;
+  min-width: 280px;
+  padding-top: var(--hc-spacing-03);
+  padding-bottom: var(--hc-spacing-03);
+  padding-left: var(--hc-spacing-02);
+  padding-right: var(--hc-spacing-03);
+  border: 2px solid var(--hc-field-border-color);
+  border-radius: var(--hc-border-radius-02);
+  max-width: 100%;
+  background-color: var(--hc-white);
+  min-width: 11.5em;
+  max-width: 100%;
+  appearance: none;
+  background: url(carbon_chevron-down.svg) no-repeat;
+  background-position: right 5px top 50%;
 }
 
-.select {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 600;
-    size: 16px;
-    line-height: 150%;
-    direction: horizontal;
-    display: flex;
-    min-width: 280px;
-    padding: 4.5px 12px;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    padding-left: 8px;
-    padding-right: 8px;
-}
-select {
-    background: url(carbon_chevron-down.svg) no-repeat;
-    appearance: none;
-    background-position: right 5px top 50%;
-}
-select:focus {
-    outline-offset: -2px ;
-    outline: 2px solid #0058a4;
-}
-select:active {
-    outline-offset: -2px ;
-    outline: 2px solid #0058a4;
+.hc-select:focus {
+  border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
 }
 
+/* =================== */
+/* =================== */
+/* Error state styling */
+/* =================== */
+/* =================== */
+.hc-select--error {
+  border: 2px solid var(--hc-border-color-error);
+}
+
+/* =================== */
+/* =================== */
+/* Disabled styling */
+/* =================== */
+/* =================== */
+
+.hc-select:disabled,
+.hc-select[aria-disabled="true"] {
+  background-color: var(--hc-background-disabled);
+  color: var(--hc-text-disabled);
+  border-color: var(--hc-border-color-disabled);
+  background: url(carbon_chevron-down-disabled.svg) no-repeat;
+  background-position: right 5px top 50%;
+  cursor: not-allowed;
+}
