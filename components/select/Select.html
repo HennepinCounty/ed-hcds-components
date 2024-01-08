@@ -11,7 +11,7 @@
   <body class="hc-padding-xy-05">
     <h1>Select</h1>
 
-    <h2>without helper text</h2>
+    <h2>Without helper text</h2>
 
     <div class="hc-form-group">
       <label class="hc-field-label" for="select1">Select an option</label>
@@ -25,7 +25,7 @@
       </select>
     </div>
 
-    <h2>with helper text</h2>
+    <h2>With helper text</h2>
 
     <div class="hc-form-group">
       <label class="hc-field-label" for="select2">Select an option</label>
@@ -47,7 +47,7 @@
       </select>
     </div>
 
-    <h2>with error</h2>
+    <h2>With error</h2>
     <div class="hc-form-group">
       <label class="hc-field-label" for="select2">Select an option</label>
       <div id="helpful-error" class="hc-text-error">
@@ -92,7 +92,30 @@
       </select>
     </div>
 
-    <h2>disabled</h2>
+    <h2>Disabled</h2>
+
+    <div class="hc-form-group">
+      <label
+        class="hc-field-label hc-field-label--disabled"
+        for="disabled-select-example"
+        >Select an option</label
+      >
+      <select
+        class="hc-select"
+        name="disabled-select-example"
+        id="disabled-select-example"
+        disabled
+      >
+        <option value="item1" selected>Item 1</option>
+        <option value="item2">Item 2</option>
+        <option value="item3">Item 3</option>
+        <option value="item4">Item 4</option>
+        <option value="item5">Item 5</option>
+        <option value="item6">Item 6</option>
+      </select>
+    </div>
+
+    <h2>Disabled with helper</h2>
 
     <div class="hc-form-group">
       <label
