@@ -15,7 +15,7 @@
   min-width: 11.5em;
   max-width: 100%;
   appearance: none;
-  background: url(carbon_chevron-down.svg) no-repeat;
+  background: url(./icons/carbon_chevron-down.svg) no-repeat;
   background-position: right 5px top 50%;
 }
 
@@ -44,7 +44,7 @@
   background-color: var(--hc-background-disabled);
   color: var(--hc-text-disabled);
   border-color: var(--hc-border-color-disabled);
-  background: url(carbon_chevron-down-disabled.svg) no-repeat;
+  background: url(./icons/carbon_chevron-down-disabled.svg) no-repeat;
   background-position: right 5px top 50%;
   cursor: not-allowed;
 }

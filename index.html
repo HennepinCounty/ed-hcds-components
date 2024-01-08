@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/index.css" />
+  </head>
+  <body class="hc-padding-xy-06" style="background-color: #000000">
+    <h1>Select</h1>
 
+    <h2>Without helper text</h2>
+
+    <div class="hc-form-group">
+      <label class="hc-field-label" for="select1">Select an option</label>
+      <select class="hc-select" name="select1" id="select1">
+        <option value="item1" selected>Item 1</option>
+        <option value="item2">Item 2</option>
+        <option value="item3">Item 3</option>
+        <option value="item4">Item 4</option>
+        <option value="item5">Item 5</option>
+        <option value="item6">Item 6</option>
+      </select>
+    </div>
+
+    <h2>With helper text</h2>
+
+    <div class="hc-form-group">
+      <label class="hc-field-label" for="select2">Select an option</label>
+      <div id="helpful-hint" class="hc-text-hint">
+        Text with helpful information for someone completing this task
+      </div>
+      <select
+        class="hc-select"
+        name="select2"
+        id="select2"
+        aria-describedby="helpful-hint"
+      >
+        <option value="item1" selected>Item 1</option>
+        <option value="item2">Item 2</option>
+        <option value="item3">Item 3</option>
+        <option value="item4">Item 4</option>
+        <option value="item5">Item 5</option>
+        <option value="item6">Item 6</option>
+      </select>
+    </div>
+
+    <h2>With error</h2>
+    <div class="hc-form-group">
+      <label class="hc-field-label" for="select2">Select an option</label>
+      <div id="helpful-error" class="hc-text-error">
+        Text with error information describing what user needs to change
+      </div>
+      <select
+        class="hc-select hc-select--error"
+        name="select2"
+        id="select2"
+        aria-describedby="helpful-error"
+      >
+        <option value="item1" selected>Item 1</option>
+        <option value="item2">Item 2</option>
+        <option value="item3">Item 3</option>
+        <option value="item4">Item 4</option>
+        <option value="item5">Item 5</option>
+        <option value="item6">Item 6</option>
+      </select>
+    </div>
+
+    <h2>With helper and error</h2>
+    <div class="hc-form-group">
+      <label class="hc-field-label" for="select-3">Select an option</label>
+      <div id="hint-example-3" class="hc-text-hint">
+        Text with helpful information for someone completing this task
+      </div>
+      <div id="error-example-3" class="hc-text-error">
+        Text with error information describing what user needs to change
+      </div>
+      <select
+        class="hc-select hc-select--error"
+        name="select-3"
+        id="select-3"
+        aria-describedby="helpful-error"
+      >
+        <option value="item1" selected>Item 1</option>
+        <option value="item2">Item 2</option>
+        <option value="item3">Item 3</option>
+        <option value="item4">Item 4</option>
+        <option value="item5">Item 5</option>
+        <option value="item6">Item 6</option>
+      </select>
+    </div>
+
+    <h2>Disabled</h2>
+
+    <div class="hc-form-group">
+      <label
+        class="hc-field-label hc-field-label--disabled"
+        for="disabled-select-example"
+        >Select an option</label
+      >
+      <select
+        class="hc-select"
+        name="disabled-select-example"
+        id="disabled-select-example"
+        disabled
+      >
+        <option value="item1" selected>Item 1</option>
+        <option value="item2">Item 2</option>
+        <option value="item3">Item 3</option>
+        <option value="item4">Item 4</option>
+        <option value="item5">Item 5</option>
+        <option value="item6">Item 6</option>
+      </select>
+    </div>
+
+    <h2>Disabled with helper</h2>
+
+    <div class="hc-form-group">
+      <label
+        class="hc-field-label hc-field-label--disabled"
+        for="disabled-select-example"
+        >Select an option</label
+      >
+      <div id="disabled-hint" class="hc-text-hint hc-text-hint--disabled">
+        Text with error information describing what user needs to change
+      </div>
+      <select
+        class="hc-select"
+        name="disabled-select-example"
+        id="disabled-select-example"
+        aria-describedby="disabled-hint"
+        disabled
+      >
+        <option value="item1" selected>Item 1</option>
+        <option value="item2">Item 2</option>
+        <option value="item3">Item 3</option>
+        <option value="item4">Item 4</option>
+        <option value="item5">Item 5</option>
+        <option value="item6">Item 6</option>
+      </select>
+    </div>
+  </body>
+</html>
