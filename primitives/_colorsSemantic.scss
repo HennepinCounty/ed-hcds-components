@@ -43,13 +43,12 @@
     --hc-cyan-60
   ); //use for dark color in focus states
   --hc-border-color-subtle: var(--hc-gray-20);
-  --hc-border-color-regular: var(--hc-gray-50);
+  --hc-border-color-regular: var(--hc-gray-60);
   --hc-border-color-strong: var(--hc-gray-80);
   --hc-border-color-disabled: var(--hc-gray-30);
   --hc-border-color-error: var(--hc-support-error);
-  --hc-border-color-inverse: var(--hc-gray-90);
-  --hc-border-color-transparent: var(
-    --hc-transparent
+  --hc-border-color-inverse: var(
+    --hc-gray-90
   ); //Probably able to be deleted -- we probably just need --hc-transparent and this is overkill
 
   //Outline colors
@@ -98,7 +97,7 @@
   --hc-text-secondary: var(--hc-gray-80);
   --hc-text-on-color: var(--hc-white);
   --hc-text-placeholder: var(--hc-gray-40);
-  --hc-text-hint: var(--hc-gray-60);
+  --hc-text-hint: var(--hc-gray-70);
   --hc-text-error: var(--hc-support-error);
   --hc-text-inverse: var(--hc-white);
   --hc-text-disabled: var(--hc-gray-50);

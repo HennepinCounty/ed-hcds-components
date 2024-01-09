@@ -283,13 +283,12 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
     --hc-cyan-60
   );
   --hc-border-color-subtle: var(--hc-gray-20);
-  --hc-border-color-regular: var(--hc-gray-50);
+  --hc-border-color-regular: var(--hc-gray-60);
   --hc-border-color-strong: var(--hc-gray-80);
   --hc-border-color-disabled: var(--hc-gray-30);
   --hc-border-color-error: var(--hc-support-error);
-  --hc-border-color-inverse: var(--hc-gray-90);
-  --hc-border-color-transparent: var(
-    --hc-transparent
+  --hc-border-color-inverse: var(
+    --hc-gray-90
   );
   --hc-button-primary: var(--hc-background-brand);
   --hc-button-primary-hover: var(--hc-background-brand-hover);
@@ -326,7 +325,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   --hc-text-secondary: var(--hc-gray-80);
   --hc-text-on-color: var(--hc-white);
   --hc-text-placeholder: var(--hc-gray-40);
-  --hc-text-hint: var(--hc-gray-60);
+  --hc-text-hint: var(--hc-gray-70);
   --hc-text-error: var(--hc-support-error);
   --hc-text-inverse: var(--hc-white);
   --hc-text-disabled: var(--hc-gray-50);
@@ -610,7 +609,7 @@ a:disabled {
   color: var(--hc-text-hint, #5c646d);
   /* Body/Body-Small */
   font-family: var(--hc-font-family);
-  font-size: var(--hc-font-body-size-small);
+  font-size: var(--hc-font-body-size-regular);
   font-style: normal;
   font-weight: 400;
   line-height: 130%; /* 1.5rem */
@@ -627,7 +626,7 @@ a:disabled {
   color: var(--hc-text-error, #ef413d);
   /* Body/Body-Small */
   font-family: var(--hc-font-family);
-  font-size: var(--hc-font-body-size-small);
+  font-size: var(--hc-font-body-size-regular);
   font-style: normal;
   font-weight: 400;
   line-height: 130%; /* 1.5rem */
@@ -2801,7 +2800,7 @@ html {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: var(--hc-spacing-03);
 }
 
@@ -2837,7 +2836,7 @@ html {
   height: var(--hc-height--medium);
   border-radius: var(--hc-border-radius-02);
   padding: var(--hc-spacing-02);
-  border: 2px solid var(--hc-border-color-regular);
+  border: 2px solid var(--hc-field-border-color);
 }
 
 /* Text inside of input field */
@@ -2853,7 +2852,7 @@ input.hc-input[type=text] {
 /* error state for field, adds border and icon */
 .hc-input--error {
   border: 2px solid var(--hc-border-color-error);
-  background: url(material-symbols_close-rounded.svg) no-repeat right;
+  background: url(./icons/material-symbols_close-rounded.svg) no-repeat right;
   background-size: 30px;
 }
 
@@ -2866,6 +2865,7 @@ input.hc-input[type=text] {
 .hc-input:disabled {
   border-color: var(--hc-border-color-disabled);
   background-color: var(--hc-background-disabled);
+  cursor: not-allowed;
 }
 
 input.hc-input[type=text]:disabled {
@@ -3432,7 +3432,7 @@ a.hc-skiplink:visited {
   min-height: 40px;
   border-radius: var(--hc-border-radius-02);
   padding: var(--hc-spacing-02);
-  border: 2px solid var(--hc-border-color-regular);
+  border: 2px solid var(--hc-field-border-color);
   padding-right: var(--hc-spacing-07);
   /* width: 100%;  */
   /* setting width 100% would match govuk styling, textarea is set to 100% width and actual width is handled by parent container */
@@ -3442,7 +3442,7 @@ a.hc-skiplink:visited {
 /* error state for field, adds border and icon*/
 .hc-textarea--error {
   border: 2px solid var(--hc-border-color-error);
-  background: url(material-symbols_close-rounded.svg) no-repeat top right;
+  background: url(./icons/material-symbols_close-rounded.svg) no-repeat top right;
   background-size: 30px;
 }
 
@@ -3456,6 +3456,7 @@ a.hc-skiplink:visited {
   color: var(--hc-text-disabled);
   border-color: var(--hc-border-color-disabled);
   background-color: var(--hc-background-disabled);
+  cursor: not-allowed;
 }
 
 .hc-select {
