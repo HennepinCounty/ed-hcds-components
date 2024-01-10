@@ -116,7 +116,6 @@
 /* ======================== */
 
 /* Icon sizing and position stored in _icons.scss*/
-/* These below classes can probably all be deleted after they're replaced in the HTML */
 
 .hc-button.hc-button--icon-left {
   /* padding-left: var(--hc-spacing-03); */
