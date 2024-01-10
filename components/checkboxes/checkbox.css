@@ -18,8 +18,8 @@
 .hc-checkbox__item {
   display: block;
   position: relative;
-  min-height: 32px;
-  padding-left: 32px; /* This should equal width of the checkbox size*/
+  min-height: 44px;
+  padding-left: 44px; /* This should equal width of the checkbox size*/
   margin-bottom: var(--hc-spacing-05);
   clear: left;
 }
@@ -36,8 +36,8 @@
   left: 1px;
 
   z-index: 1;
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
   margin: 0;
 
   opacity: 0;
@@ -51,7 +51,9 @@
 
   display: inline-block;
   margin-bottom: 0px;
-  padding-left: var(--hc-spacing-03);
+  padding-left: var(--hc-spacing-04);
+  padding-right: var(--hc-spacing-04);
+  padding-bottom: var(--hc-spacing-01);
   cursor: pointer;
   touch-action: manipulation;
   max-width: 80ch;
@@ -65,8 +67,8 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
   border: var(--hc-border-width-medium) solid var(--hc-border-color-strong);
   background: var(--hc-transparent);
   border-radius: 4px;
@@ -80,14 +82,14 @@
   box-sizing: border-box;
 
   position: absolute;
-  top: 7px;
-  left: 6px;
-  width: 21px;
-  height: 12px;
+  top: 10px;
+  left: 10px;
+  width: 24px;
+  height: 14px;
   color: white;
   transform: rotate(-45deg);
   border: solid;
-  border-width: 0 0 3px 3px;
+  border-width: 0 0 4px 4px;
   /* Fix bug in IE11 caused by transform rotate (-45deg). */
   /* See: alphagov/govuk_elements/issues/518 */
   border-top-color: transparent;
