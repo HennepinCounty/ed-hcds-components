@@ -51,6 +51,10 @@
 /* ======================================== */
 /* ======================================== */
 
+.hc-radios {
+  margin-top: var(--hc-spacing-04);
+}
+
 /* Styling for radio item */
 .hc-radios__item {
   font-family: var(--hc-font-family);
@@ -58,7 +62,7 @@
   display: block;
   position: relative;
   min-height: 40px;
-  margin-bottom: var(--hc-spacing-04);
+  margin-bottom: var(--hc-spacing-05);
   padding-left: 40px;
   clear: left;
 }

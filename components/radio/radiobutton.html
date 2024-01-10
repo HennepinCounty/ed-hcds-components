@@ -15,10 +15,8 @@
     <!-- Disable browser validation for any examples that include form elements -->
     <form action="/form-handler" method="post" novalidate="">
       <div class="hc-form-group">
-        <fieldset class="hc-fieldset" aria-describedby="whereDoYouLive-error">
-          <legend class="hc-fieldset__legend hc-fieldset__legend--l">
-            Where do you live?
-          </legend>
+        <fieldset class="hc-fieldset">
+          <legend class="hc-fieldset__legend">Where do you live?</legend>
           <div class="hc-radios" data-module="hc-radios">
             <div class="hc-radios__item">
               <input
@@ -26,7 +24,7 @@
                 id="whereDoYouLive"
                 name="whereDoYouLive"
                 type="radio"
-                value="england"
+                value="hennepin"
               />
               <label class="hc-label hc-radios__label" for="whereDoYouLive">
                 Hennepin county
@@ -38,7 +36,7 @@
                 id="whereDoYouLive-2"
                 name="whereDoYouLive"
                 type="radio"
-                value="scotland"
+                value="otherCounty"
               />
               <label class="hc-label hc-radios__label" for="whereDoYouLive-2">
                 A county in Minnesota that isn't Hennepin County
@@ -50,7 +48,7 @@
                 id="whereDoYouLive-3"
                 name="whereDoYouLive"
                 type="radio"
-                value="wales"
+                value="outsideMN"
               />
               <label class="hc-label hc-radios__label" for="whereDoYouLive-3">
                 Outside of Minnesota
@@ -62,7 +60,7 @@
                 id="whereDoYouLive-4"
                 name="whereDoYouLive"
                 type="radio"
-                value="northern-ireland"
+                value="outsideUS"
               />
               <label class="hc-label hc-radios__label" for="whereDoYouLive-4">
                 Outside of the US
@@ -85,6 +83,7 @@
 
     <div style="clear: both; display: block; height: 0px"></div>
 
+    <hr class="hc-margin-y-08" />
     <h3>Old styling</h3>
 
     <div class="grid-container">
