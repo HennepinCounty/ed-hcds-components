@@ -23,10 +23,3 @@
   border: var(--hc-border-style-focus);
   outline: var(--hc-outline-style-focus);
 }
-
-.hc-textarea:disabled {
-  color: var(--hc-text-disabled);
-  border-color: var(--hc-border-color-disabled);
-  background-color: var(--hc-background-disabled);
-  cursor: not-allowed;
-}

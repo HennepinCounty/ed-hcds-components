@@ -57,13 +57,3 @@ input.hc-input[type="text"] {
   border: var(--hc-border-style-focus);
   outline: var(--hc-outline-style-focus);
 }
-
-.hc-input:disabled {
-  border-color: var(--hc-border-color-disabled);
-  background-color: var(--hc-background-disabled);
-  cursor: not-allowed;
-}
-
-input.hc-input[type="text"]:disabled {
-  color: var(--hc-text-disabled);
-}

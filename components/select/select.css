@@ -32,19 +32,3 @@
 .hc-select--error {
   border: 2px solid var(--hc-border-color-error);
 }
-
-/* =================== */
-/* =================== */
-/* Disabled styling */
-/* =================== */
-/* =================== */
-
-.hc-select:disabled,
-.hc-select[aria-disabled="true"] {
-  background-color: var(--hc-background-disabled);
-  color: var(--hc-text-disabled);
-  border-color: var(--hc-border-color-disabled);
-  background: url(./icons/carbon_chevron-down-disabled.svg) no-repeat;
-  background-position: right 5px top 50%;
-  cursor: not-allowed;
-}
