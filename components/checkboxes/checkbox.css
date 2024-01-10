@@ -58,6 +58,7 @@
 }
 
 /* [ ] Check box styling */
+/* Should update to 44px but will need to redo the checkbox and label padddins */
 .hc-checkbox__label::before {
   content: "";
   box-sizing: border-box;

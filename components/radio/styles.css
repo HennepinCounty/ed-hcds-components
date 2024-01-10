@@ -1,4 +1,4 @@
-.grid-container {
+/* .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
   padding: 10px;
@@ -43,7 +43,7 @@
 }
 .radio input[type="radio"] + .radio-label:empty:before {
   margin-right: 0;
-}
+} */
 
 /* ======================================== */
 /* ======================================== */
@@ -58,7 +58,7 @@
   display: block;
   position: relative;
   min-height: 40px;
-  margin-bottom: var(--hc-spacing-02);
+  margin-bottom: var(--hc-spacing-04);
   padding-left: 40px;
   clear: left;
 }
@@ -69,7 +69,7 @@
   margin-bottom: 0px;
 }
 
-/* Not sure what this affects yet */
+/* This hides the default browser stylin of inputs */
 .hc-radios__input {
   position: absolute;
   z-index: 1;
@@ -82,14 +82,14 @@
   cursor: pointer;
 }
 
-/* This is for label */
+/* This pushes input text to the riht to make room for radios */
 .hc-radios__label {
   font-size: var(--hc-font-fieldLabel-size-regular);
   display: inline-block;
   margin-bottom: 0;
   padding-top: 8px;
-  padding-left: var(--hc-spacing-03);
-  padding-right: var(--hc-spacing-03);
+  padding-left: var(--hc-spacing-04);
+  padding-right: var(--hc-spacing-04);
   padding-bottom: var(--hc-spacing-01);
   cursor: pointer;
   /* remove 300ms pause on mobile */
@@ -118,13 +118,15 @@
   content: "";
 
   position: absolute;
-  top: var(--hc-spacing-02);
-  left: var(--hc-spacing-02);
+  /* position or adio */
+  top: var(--hc-spacing-04);
+  left: var(--hc-spacing-04);
 
-  width: 0;
-  height: 0;
+  width: 0px;
+  height: 0px;
 
-  border: var(--hc-border-width-medium) solid var(--hc-border-color-strong);
+  /* defines size of radio */
+  border: 10px solid var(--hc-border-color-strong);
   border-radius: 50%;
   opacity: 0;
   background: currentcolor;
@@ -145,7 +147,9 @@
   outline, which becomes solid (text-coloured) in that context, we ensure
   the focus remains clearly visible. */
   outline: var(--hc-outline-style-focus);
-  outline-offset: 1px;
+  outline: 3px solid var(--hc-background-brand);
+  outline-offset: 3px;
+  border: 4px solid var(--hc-black);
 
   /* When in an explicit forced-color mode, we can use the Highlight system
   color for the outline to better match focus states of native controls */
@@ -157,18 +161,18 @@
 }
 
 /* Selected state */
-.govuk-radios__input:checked + .govuk-radios__label::after {
+.hc-radios__input:checked + .hc-radios__label::after {
   opacity: 1;
 }
 
 /* Disabled state */
-.govuk-radios__input:disabled,
-.govuk-radios__input:disabled + .govuk-radios__label {
+.hc-radios__input:disabled,
+.hc-radios__input:disabled + .hc-radios__label {
   cursor: not-allowed;
 }
 
-.govuk-radios__input:disabled + .govuk-radios__label,
-.govuk-radios__input:disabled ~ .govuk-hint {
+.hc-radios__input:disabled + .hc-radios__label,
+.hc-radios__input:disabled ~ .hc-hint {
   opacity: 0.5;
 }
 

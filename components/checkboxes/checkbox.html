@@ -8,7 +8,7 @@
     <script src="checkbox.js" defer></script>
   </head>
 
-  <body class="hc-padding-06">
+  <body class="hc-padding-xy-06">
     <h1>Checkboxes</h1>
     <!-- ============================== -->
     <!-- ============================== -->
@@ -17,7 +17,10 @@
     <!-- ============================== -->
     <h2>Checkbox - regular</h2>
     <div class="hc-form-group">
-      <fieldset class="hc-fieldset">
+      <fieldset
+        class="hc-fieldset"
+        aria-describedby="fieldset-hint-homeownership"
+      >
         <legend class="hc-fieldset__legend">Title for legend</legend>
         <div class="hc-checkboxes" data-module="hc-checkbox">
           <div class="hc-checkbox__item">
@@ -62,14 +65,12 @@
     <!-- only styling is margin-bottom -->
     <div class="hc-form-group">
       <!-- fieldset, this is semantic for accessibility -->
-      <fieldset class="hc-fieldset">
+      <fieldset
+        class="hc-fieldset"
+        aria-describedby="fieldset-hint-homeownership"
+      >
         <!-- legend, this is semantic for accessibility -->
-        <legend
-          class="hc-fieldset__legend"
-          aria-describedby="fieldset-hint-homeownership"
-        >
-          Title for legend
-        </legend>
+        <legend class="hc-fieldset__legend">Title for legend</legend>
         <!-- secondary text/hint/helper text for question -->
         <div class="hc-text-hint" id="fieldset-hint-homeownership">
           Hint text preview to provide context for question
@@ -148,13 +149,11 @@
       <h3>Error state</h3>
       <h4 class="hc-margin-bottom-06">Error with hint</h4>
       <div class="hc-form-group">
-        <fieldset class="hc-fieldset">
-          <legend
-            class="hc-fieldset__legend"
-            aria-describedby="fieldset-hint-example-1 fieldset-error-example-1"
-          >
-            Title for legend
-          </legend>
+        <fieldset
+          class="hc-fieldset"
+          aria-describedby="fieldset-hint-example-1 fieldset-error-example-1"
+        >
+          <legend class="hc-fieldset__legend">Title for legend</legend>
           <div class="hc-text-hint" id="fieldset-hint-example-1">
             Hint text preview to provide context for question
           </div>
@@ -192,13 +191,11 @@
     <h3>Disabled with aria -- Unchecked</h3>
     <form action="/form-handler" method="post" novalidate="">
       <div class="hc-form-group">
-        <fieldset class="hc-fieldset">
-          <legend
-            class="hc-fieldset__legend"
-            aria-describedby="fieldset-hint-example-2"
-          >
-            Title for legend
-          </legend>
+        <fieldset
+          class="hc-fieldset"
+          aria-describedby="fieldset-hint-example-2"
+        >
+          <legend class="hc-fieldset__legend">Title for legend</legend>
           <div class="hc-text-hint" id="fieldset-hint-example-2">
             Hint text preview to provide ccontext for question
           </div>
@@ -228,13 +225,11 @@
     <h3>Disabled with aria -- Checked</h3>
     <form action="/form-handler" method="post" novalidate="">
       <div class="hc-form-group">
-        <fieldset class="hc-fieldset">
-          <legend
-            class="hc-fieldset__legend"
-            aria-describedby="fieldset-hint-example-2"
-          >
-            Title for legend
-          </legend>
+        <fieldset
+          class="hc-fieldset"
+          aria-describedby="fieldset-hint-example-2"
+        >
+          <legend class="hc-fieldset__legend">Title for legend</legend>
           <div class="hc-text-hint" id="fieldset-hint-example-2">
             Hint text preview to provide ccontext for question
           </div>
