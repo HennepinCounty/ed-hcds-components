@@ -12,6 +12,12 @@
 
     <h3>New styling</h3>
 
+    <!-- ================ -->
+    <!-- ================ -->
+    <!-- Default state -->
+    <!-- ================ -->
+    <!-- ================ -->
+
     <!-- Disable browser validation for any examples that include form elements -->
     <form action="/form-handler" method="post" novalidate="">
       <div class="hc-form-group">
@@ -39,7 +45,7 @@
                 value="otherCounty"
               />
               <label class="hc-label hc-radios__label" for="whereDoYouLive-2">
-                A county in Minnesota that isn't Hennepin County
+                A county in Minnesota that is not Hennepin County
               </label>
             </div>
             <div class="hc-radios__item">
@@ -51,7 +57,7 @@
                 value="outsideMN"
               />
               <label class="hc-label hc-radios__label" for="whereDoYouLive-3">
-                Outside of Minnesota
+                A US state that is not Minnesota
               </label>
             </div>
             <div class="hc-radios__item">
@@ -71,125 +77,172 @@
       </div>
     </form>
 
-    <!-- Not sure what this does -->
-    <!-- <script
-        type="module"
-        src="/javascripts/application-example-3914f16158df009633b0900347038ac1.js"
-      ></script>
-      <script
-        type="text/javascript"
-        src="https://design-system.service.gov.uk/f070625d08bfdb64705a5c5b39e9cbc3ed06158e78ba105f546f73133add88d7/inject.js"
-      ></script> -->
-
-    <div style="clear: both; display: block; height: 0px"></div>
-
-    <hr class="hc-margin-y-08" />
-    <h3>Old styling</h3>
-
-    <div class="grid-container">
-      <div class="grid-item">
-        <p>State</p>
-        <div>
-          <p>Unselected</p>
-        </div>
-        <div>
-          <p>Selected</p>
-        </div>
+    <!-- ================ -->
+    <!-- ================ -->
+    <!-- With hint -->
+    <!-- ================ -->
+    <!-- ================ -->
+    <form action="/form-handler" method="post" novalidate="">
+      <div class="hc-form-group">
+        <fieldset
+          class="hc-fieldset"
+          aria-describedby="fieldset-hint-when-did-you-move"
+        >
+          <legend class="hc-fieldset__legend">
+            Did you move to Minnesota within the last year?
+          </legend>
+          <div class="hc-text-hint" id="fieldset-hint-when-did-you-move">
+            Hint text preview to provide context for question
+          </div>
+          <div class="hc-radios" data-module="hc-radios">
+            <div class="hc-radios__item">
+              <input
+                class="hc-radios__input"
+                id="whenDidYouMove-1"
+                name="whenDidYouMove"
+                type="radio"
+                value="hennepin"
+              />
+              <label class="hc-label hc-radios__label" for="whenDidYouMove-1">
+                Yes
+              </label>
+            </div>
+            <div class="hc-radios__item">
+              <input
+                class="hc-radios__input"
+                id="whenDidYouMove-2"
+                name="whenDidYouMove"
+                type="radio"
+                value="otherCounty"
+              />
+              <label class="hc-label hc-radios__label" for="whenDidYouMove-2">
+                No
+              </label>
+            </div>
+          </div>
+        </fieldset>
       </div>
-      <div class="grid-item">
-        <p>Default</p>
-        <div class="radio">
-          <input
-            type="radio"
-            id="radiobutton1"
-            name="button"
-            value="radiobutton1"
-          />
-          <label for="radiobutton1" class="radio-label">Radio label</label>
-        </div>
-        <div class="radio">
-          <input
-            type="radio"
-            id="radiobutton2"
-            name="button"
-            value="radiobutton2"
-            checked="checked"
-          />
-          <label for="radiobutton2" class="radio-label">Radio label</label>
-        </div>
+    </form>
+    <!-- ================ -->
+    <!-- ================ -->
+    <!-- With error -->
+    <!-- ================ -->
+    <!-- ================ -->
+    <form action="/form-handler" method="post" novalidate="">
+      <div class="hc-form-group">
+        <fieldset
+          class="hc-fieldset"
+          aria-describedby="fieldset-error-example-1"
+        >
+          <legend class="hc-fieldset__legend">I want a replacement of</legend>
+          <p class="hc-text-error" id="fieldset-error-example-1">
+            <span class="hc-visually-hidden">Error:</span> Select what you are
+            trying to replace
+          </p>
+          <div class="hc-radios__item">
+            <input
+              class="hc-radios__input"
+              id="check-1"
+              name="checkReplacement"
+              type="radio"
+              value="SNAP"
+            />
+            <label class="hc-label hc-radios__label" for="check-1">
+              Supplemental Nutrition Assistance Program (SNAP)/food benefits -
+              food purchased with benefits was destroyed in a household
+              misfortune or disaster
+            </label>
+          </div>
+          <div class="hc-radios" data-module="hc-radios">
+            <div class="hc-radios__item">
+              <input
+                class="hc-radios__input"
+                id="check-2"
+                name="checkReplacement"
+                type="radio"
+                value="notReceived"
+              />
+              <label class="hc-label hc-radios__label" for="check-2">
+                Mailed check not received
+              </label>
+            </div>
+            <div class="hc-radios__item">
+              <input
+                class="hc-radios__input"
+                id="check-3"
+                name="checkReplacement"
+                type="radio"
+                value="lostOrStolen"
+              />
+              <label class="hc-label hc-radios__label" for="check-3">
+                Check lost or stolen after received
+              </label>
+            </div>
+            <div class="hc-radios__item">
+              <input
+                class="hc-radios__input"
+                id="check-4"
+                name="checkReplacement"
+                type="radio"
+                value="destroyedCheck"
+              />
+              <label class="hc-label hc-radios__label" for="check-4">
+                Mutilated or incorrectly printed check
+              </label>
+            </div>
+          </div>
+        </fieldset>
       </div>
-      <div class="grid-item">
-        <p>Focus</p>
-        <div class="radio">
-          <input
-            class="focus1"
-            type="radio"
-            id="focusradiobutton1"
-            name="focusbutton"
-            value="focusradiobutton1"
-          />
-          <label for="focusradiobutton1" class="radio-label">Radio label</label>
-        </div>
-        <div class="radio">
-          <input
-            type="radio"
-            id="focusradiobutton2"
-            name="focusbutton"
-            checked="checked"
-            value="focusradiobutton2"
-            autofocus
-          />
-          <label for="focusradiobutton2" class="radio-label">Radio label</label>
-        </div>
+    </form>
+    <!-- ================ -->
+    <!-- ================ -->
+    <!-- With error and hint -->
+    <!-- ================ -->
+    <!-- ================ -->
+    <form action="/form-handler" method="post" novalidate="">
+      <div class="hc-form-group">
+        <fieldset
+          class="hc-fieldset"
+          aria-describedby="fieldset-hint-example-2 fieldset-error-example-2"
+        >
+          <legend class="hc-fieldset__legend">
+            Have you changed your name?
+          </legend>
+          <div class="hc-text-hint" id="fieldset-hint-example-2">
+            This includes changing of spelling
+          </div>
+          <p class="hc-text-error" id="fieldset-error-example-2">
+            <span class="hc-visually-hidden">Error:</span> Select whether you
+            have changed your name
+          </p>
+          <div class="hc-radios__item">
+            <input
+              class="hc-radios__input"
+              id="nameChange-1"
+              name="Name change"
+              type="radio"
+              value="yes"
+            />
+            <label class="hc-label hc-radios__label" for="nameChange-1">
+              Yes
+            </label>
+          </div>
+          <div class="hc-radios" data-module="hc-radios">
+            <div class="hc-radios__item">
+              <input
+                class="hc-radios__input"
+                id="nameChange-2"
+                name="Name change"
+                type="radio"
+                value="no"
+              />
+              <label class="hc-label hc-radios__label" for="check-2">
+                No
+              </label>
+            </div>
+          </div>
+        </fieldset>
       </div>
-      <div class="grid-item">
-        <p>Disabled</p>
-        <div class="radio">
-          <input
-            type="radio"
-            id="disabledRB1"
-            name="disabledRB"
-            value="disabledRB1"
-            disabled="true"
-          />
-          <label for="disabledRB1" class="radio-label">Radio label</label>
-        </div>
-        <div class="radio">
-          <input
-            type="radio"
-            id="disabledRB2"
-            name="disabledRB"
-            value="disabledRB2"
-            checked="checked"
-            disabled="true"
-          />
-          <label for="disabledRB2" class="radio-label">Radio label</label>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <h2>Radio Group</h2>
-      <p>Group Label</p>
-      <div class="radio">
-        <input type="radio" id="radio" name="radio" value="radio" />
-        <label for="radio" class="radio-label">Radio label</label>
-      </div>
-      <div class="radio">
-        <input type="radio" id="radio1" name="radio" value="radio1" />
-        <label for="radio1" class="radio-label">Radio label</label>
-      </div>
-      <div class="radio">
-        <input type="radio" id="radio2" name="radio" value="radio2" />
-        <label for="radio2" class="radio-label">Radio label</label>
-      </div>
-      <div class="radio">
-        <input type="radio" id="radio3" name="radio" value="radio3" />
-        <label for="radio3" class="radio-label">Radio label</label>
-      </div>
-      <div class="radio">
-        <input type="radio" id="radio4" name="radio" value="radio4" />
-        <label for="radio4" class="radio-label">Radio label</label>
-      </div>
-    </div>
+    </form>
   </body>
 </html>

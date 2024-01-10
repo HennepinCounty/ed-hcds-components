@@ -98,6 +98,7 @@
   cursor: pointer;
   /* remove 300ms pause on mobile */
   touch-action: manipulation;
+  max-width: 80ch;
 }
 
 /* ( ) Radio ring */

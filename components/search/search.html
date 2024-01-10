@@ -20,11 +20,7 @@
 
     <!-- Above redone with new classes -->
     <!-- Small -->
-    <h4>Small</h4>
-    <p>
-      Along with size change, this version also shows border radius changed on
-      the sides where input field and button connect
-    </p>
+    <h4>Search component</h4>
 
     <div class="hc-form-element">
       <!-- might remove form action -- see how other design systems and bootstrap handle this -->
@@ -40,121 +36,17 @@
         <!-- https://adrianroselli.com/2019/07/ignore-typesearch.html -->
         <input
           type="search"
-          class="hc-input hc-input--small hc-input-search"
+          class="hc-input hc-input-search"
           id="search"
           name="hc-name1"
           spellcheck="true"
         />
-        <button
-          class="hc-button hc-button--small hc-button--icon-left hc-button-search"
-        >
+        <button class="hc-button hc-button--icon-left hc-button-search">
           <span class="material-symbols-outlined"> search </span>
           Search
         </button>
       </div>
       <!-- </form> -->
     </div>
-
-    <!-- Regular size input and button -->
-    <h4>Regular size with gap and hidden label</h4>
-    <p>
-      This version has label visually hidden so that screenreaders will announce
-      it.
-    </p>
-    <p>
-      Label may not need to be visible because that information is contained in
-      search button as well, and the label may not contrast against backround
-      colors in top-navs that this might be placed in.
-    </p>
-    <p>
-      This version also has small space between field button as an example of
-      different option.
-    </p>
-    <div class="hc-form-element">
-      <label class="hc-visually-hidden" for="hc-id1">Search</label>
-      <div class="hc-search-wrapper hc-gap-01">
-        <input
-          class="hc-input"
-          id="hc-id1"
-          name="hc-name1"
-          type="search"
-          spellcheck="true"
-        />
-        <button class="hc-button hc-button--icon-left">
-          <span class="material-symbols-outlined"> search </span>
-          Search
-        </button>
-      </div>
-    </div>
-
-    <!-- Reular size without space and with label -->
-    <h4>Regular size without gap and with visible label</h4>
-    <div class="hc-form-element">
-      <label class="hc-field-label" for="hc-id1">Search</label>
-      <div class="hc-search-wrapper">
-        <input
-          class="hc-input"
-          id="hc-id1"
-          name="hc-name1"
-          type="search"
-          spellcheck="true"
-        />
-        <button class="hc-button hc-button--icon-left">
-          <span class="material-symbols-outlined"> search </span>
-          Search
-        </button>
-      </div>
-    </div>
-
-    <!-- Large size input and button -->
-    <h4>Large field</h4>
-    <div class="hc-form-element">
-      <label class="hc-field-label hc-field-label--large" for="hc-id1"
-        >Search</label
-      >
-      <!-- Consider if these utilities should become their own class for search field component -->
-      <div class="hc-search-wrapper">
-        <input
-          class="hc-input hc-input--large"
-          id="hc-id1"
-          name="hc-name1"
-          type="search"
-          spellcheck="true"
-        />
-        <button class="hc-button hc-button--large hc-button--icon-left">
-          <span class="material-symbols-outlined"> search </span>
-          Search
-        </button>
-      </div>
-    </div>
-
-    <h4>With list inside field</h4>
-    <!-- This is a different example with a list inside of search field-->
-    <!-- <div class="row">
-        <form role="search" id="search4">
-          <label class="hc-label" for="content">Search for city</label>
-          <input
-            type="search"
-            class="hc-input"
-            id="content"
-            list="cityList"
-            placeholder="Search for city…"
-            aria-label="Search through site content"
-          />
-          <button class="btn btn-primary btn-adjust">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            Search
-          </button>
-        </form> -->
-
-    <!-- filter list sample-->
-    <!-- <datalist id="cityList">
-          <option value="Eagan">Eagan</option>
-          <option value="Minneapolis">Minneapolis</option>
-          <option value="St. Paul">St. Paul</option>
-          <option value="St. Cloud">St. Cloud</option>
-          <option value="Anoka">Anoka</option>
-        </datalist> -->
-    <!-- </div> -->
   </body>
 </html>
