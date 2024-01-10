@@ -123,33 +123,3 @@
   ); /*adds blue backround in checked state*/
   border: var(--hc-border-brand);
 }
-
-/* Disabled styling */
-.hc-checkbox__input:disabled,
-.hc-checkbox__input:disabled + .hc-checkbox__label,
-.hc-checkbox__input[aria-disabled="true"] {
-  cursor: not-allowed;
-}
-
-.hc-checkbox__input:disabled + .hc-checkbox__label,
-.hc-checkbox__input:disabled ~ .hc-hint,
-.hc-checkbox__input[aria-disabled="true"] + .hc-checkbox__label {
-  color: var(--hc-text-disabled);
-}
-
-/* chanes border and backround color unchecked state for aria disabled state */
-.hc-checkbox__input:disabled + .hc-checkbox__label::before,
-.hc-checkbox__input[aria-disabled="true"] + .hc-checkbox__label::before {
-  border-color: var(--hc-border-color-disabled);
-}
-
-/* chanes border and backround color checked state for aria disabled state */
-.hc-checkbox__input[aria-disabled="true"]:checked
-  + .hc-checkbox__label::before {
-  background-color: var(
-    --hc-checkbox-background-disabled
-  ); /*adds blue backround in checked state*/
-  border-color: var(--hc-border-color-disabled);
-  cursor: not-allowed;
-  border-width: 4px;
-}

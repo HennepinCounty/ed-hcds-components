@@ -12,7 +12,7 @@
 
 /* Class attached to button to make the accordion clickable */
 .hc-accordion-header {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--hc-font-family);
   font-weight: 400;
   font-size: var(--hc-font-h4-size);
   color: var(--hc-text-primary);
@@ -32,7 +32,7 @@
 }
 
 .hc-accordion-section-heading {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--hc-font-family);
   font-weight: 400;
   font-size: var(--hc-font-h4-size);
   color: var(--hc-text-primary);

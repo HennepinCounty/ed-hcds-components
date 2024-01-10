@@ -15,38 +15,30 @@
     <link rel="stylesheet" href="../../CSS/index.css" />
     <link rel="stylesheet" href="./search.css" />
   </head>
-  <body class="hc-padding-x-04">
-    <!-- example class can be deleted -->
-
-    <!-- Above redone with new classes -->
-    <!-- Small -->
-    <h4>Search component</h4>
+  <body class="hc-padding-xy-04">
+    <h1>Search component</h1>
 
     <div class="hc-form-element">
-      <!-- might remove form action -- see how other design systems and bootstrap handle this -->
-      <!-- Including the form action means that on click it'll go to a browser error page -->
-      <!-- <form action="./search"> -->
-      <label
-        class="hc-field-label hc-field-label--small hc-visually-hidden"
-        for="search"
-        >Search</label
-      >
-      <div class="hc-search-wrapper">
-        <!-- Might decide to use type="text" instead of type="search" -->
-        <!-- https://adrianroselli.com/2019/07/ignore-typesearch.html -->
-        <input
-          type="search"
-          class="hc-input hc-input-search"
-          id="search"
-          name="hc-name1"
-          spellcheck="true"
-        />
-        <button class="hc-button hc-button--icon-left hc-button-search">
-          <span class="material-symbols-outlined"> search </span>
-          Search
-        </button>
-      </div>
-      <!-- </form> -->
+      <form action="./search">
+        <label
+          class="hc-field-label hc-field-label--small hc-visually-hidden"
+          for="search"
+          >Search</label
+        >
+        <div class="hc-search-wrapper">
+          <input
+            type="search"
+            class="hc-input hc-input-search"
+            id="search"
+            name="hc-name1"
+            spellcheck="true"
+          />
+          <button class="hc-button hc-button--icon-left hc-button-search">
+            <span class="material-symbols-outlined"> search </span>
+            Search
+          </button>
+        </div>
+      </form>
     </div>
   </body>
 </html>
