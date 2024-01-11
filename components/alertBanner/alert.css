@@ -69,6 +69,7 @@ p.hc-alert-paragraph {
 }
 .hc-alert.hc-alert-success > .hc-close:active {
   background-color: var(--hc-support-success--active);
+  color: var(--hc-text-on-color);
 }
 
 /*Danger styling */
@@ -104,8 +105,8 @@ p.hc-alert-paragraph {
 
 /* Warning close button styling */
 .hc-alert.hc-alert-warning > .hc-close {
-  color: var(--hc-black);
-  background-color: var(--hc-support-warning);
+  color: var(--hc-text-on-color);
+  background-color: var(--hc-support-warning-inverse);
   border-color: var(--hc-black);
 }
 .hc-alert.hc-alert-warning > .hc-close:hover {

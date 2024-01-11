@@ -145,151 +145,81 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   --hc-white: #ffffff;
   --hc-black: #000000;
   --hc-transparent: rgba(255, 255, 255, 0);
-  --hc-green-10: #f1fee1;
-  --hc-green-20: #cbf87c;
-  --hc-green-30: #b2e34b;
-  --hc-green-40: #9dc93a;
-  --hc-green-50: #87ac3a;
-  --hc-green-60: #648227;
-  --hc-green-70: #475c1b;
-  --hc-green-80: #2f3e10;
-  --hc-green-90: #222e09;
-  --hc-green-100: #182105;
-  --hc-blue-10: #f5f9fe;
-  --hc-blue-20: #ddebfd;
-  --hc-blue-30: #b7d6fa;
-  --hc-blue-40: #80b8f8;
-  --hc-blue-50: #5a99f7;
-  --hc-blue-60: #236ec3;
-  --hc-blue-70: #0058a4;
-  --hc-blue-80: #113c66;
-  --hc-blue-90: #0c2640;
-  --hc-blue-100: #081c2f;
-  --hc-cyan-10: #e2f5ff;
-  --hc-cyan-20: #c5edff;
-  --hc-cyan-30: #a0e3fe;
-  --hc-cyan-40: #44c8f5;
-  --hc-cyan-50: #00aeef;
-  --hc-cyan-60: #008dc2;
-  --hc-cyan-70: #006a94;
-  --hc-cyan-80: #004561;
-  --hc-cyan-90: #003248;
-  --hc-cyan-100: #001a27;
-  --hc-red-10: #fff2f2;
-  --hc-red-20: #ffdcdc;
-  --hc-red-30: #feb9b9;
-  --hc-red-40: #f99291;
-  --hc-red-50: #f56664;
-  --hc-red-60: #ef413d;
-  --hc-red-70: #ce1432;
-  --hc-red-80: #93001c;
-  --hc-red-90: #60000e;
-  --hc-red-100: #410007;
-  --hc-yellow-10: #fff4dc;
-  --hc-yellow-20: #ffdc7a;
-  --hc-yellow-40: #ebba00;
-  --hc-yellow-50: #c19900;
-  --hc-yellow-30: #ffcb05;
-  --hc-yellow-60: #8c6e00;
-  --hc-yellow-70: #695200;
-  --hc-yellow-80: #483700;
-  --hc-yellow-90: #332600;
-  --hc-yellow-100: #241a00;
-  --hc-gray-10: #f3f5f6;
-  --hc-gray-20: #e6e9ec;
-  --hc-gray-30: #d0d1d2;
-  --hc-gray-40: #b4b6bb;
-  --hc-gray-50: #999ea3;
-  --hc-gray-60: #6c757d;
-  --hc-gray-70: #4a5158;
-  --hc-gray-80: #343a40;
-  --hc-gray-90: #24292d;
-  --hc-gray-100: #171a1d;
-  --hc-orange-10: #ffeee6;
-  --hc-orange-20: #ffd8c4;
-  --hc-orange-30: #ffb887;
-  --hc-orange-40: #f7941e;
-  --hc-orange-50: #d98219;
-  --hc-orange-60: #ae670e;
-  --hc-orange-70: #884f08;
-  --hc-orange-80: #673a00;
-  --hc-orange-90: #512c00;
-  --hc-orange-100: #331a00;
-  --hc-purple-10: #f3e4ff;
-  --hc-purple-20: #e9cafe;
-  --hc-purple-30: #ce87f6;
-  --hc-purple-40: #b861e2;
-  --hc-purple-50: #a53ad2;
-  --hc-purple-60: #7e2aa2;
-  --hc-purple-70: #672184;
-  --hc-purple-80: #4d1764;
-  --hc-purple-90: #3e1151;
-  --hc-purple-100: #270834;
-  --hc-gray-warm-10: #fbf6f4;
-  --hc-gray-warm-20: #f0e7e3;
-  --hc-gray-warm-30: #ded3ce;
-  --hc-gray-warm-40: #c2b5ac;
-  --hc-gray-warm-50: #a49e99;
-  --hc-gray-warm-60: #928684;
-  --hc-gray-warm-70: #6a615f;
-  --hc-gray-warm-80: #47413f;
-  --hc-gray-warm-90: #2f2b2a;
-  --hc-gray-warm-100: #201d1c;
-  --hc-lime-10: #f5ffb7;
-  --hc-lime-20: #e3ed7e;
-  --hc-lime-30: #cbdb2a;
-  --hc-lime-40: #adbb22;
-  --hc-lime-50: #909d11;
-  --hc-lime-60: #727d0b;
-  --hc-lime-70: #586106;
-  --hc-lime-80: #383d02;
-  --hc-lime-90: #262901;
-  --hc-lime-100: #1c1c01;
+  --hc-green-100: #dce843;
+  --hc-green-200: #cbdb2a;
+  --hc-green-300: #9fcc3b;
+  --hc-green-400: #5ab344;
+  --hc-green-500: #007f3e;
+  --hc-green-600: #004a1f;
+  --hc-blue-100: #abe1fa;
+  --hc-blue-200: #7ed3f7;
+  --hc-blue-300: #00aeef;
+  --hc-blue-400: #007cc2;
+  --hc-blue-500: #0058a4;
+  --hc-blue-600: #113c66;
+  --hc-red-100: #ffaa8c;
+  --hc-red-200: #ff6e59;
+  --hc-red-300: #ef413d;
+  --hc-red-400: #ce1432;
+  --hc-red-500: #a70b20;
+  --hc-red-600: #570018;
+  --hc-yellow-100: #ffdf50;
+  --hc-yellow-200: #ffcb05;
+  --hc-yellow-300: #f7941d;
+  --hc-yellow-400: #cc7b16;
+  --hc-yellow-500: #905501;
+  --hc-yellow-600: #6a3c00;
+  --hc-gray-100: #e5e5e5;
+  --hc-gray-200: #bababa;
+  --hc-gray-300: #919191;
+  --hc-gray-400: #696969;
+  --hc-gray-500: #404040;
+  --hc-gray-600: #1a1a1a;
+  --hc-purple-100: #d2a0c7;
+  --hc-purple-200: #b06caf;
+  --hc-purple-300: #8c4b90;
+  --hc-purple-400: #6d3a7a;
+  --hc-purple-500: #471d58;
+  --hc-purple-600: #36004a;
 }
 
 :root {
-  --hc-background-default: var(--hc-white);
-  --hc-background-hover: var(--hc-gray-10);
-  --hc-background-active: var(--hc-gray-20);
-  --hc-background-selected: var(--hc-gray-30);
-  --hc-background-inverse: var(--hc-gray-80);
-  --hc-background-brand: var(--hc-blue-70);
-  --hc-background-brand-hover: var(--hc-blue-80);
-  --hc-background-brand-active: var(--hc-blue-90);
-  --hc-background-brand-inverse: var(--hc-blue-20);
-  --hc-background-brand-alternate: var(--hc-blue-80);
-  --hc-background-disabled: var(--hc-gray-10);
-  --hc-checkbox-background-disabled: var(--hc-gray-30);
-  --hc-support-error: var(--hc-red-70);
-  --hc-support-error--hover: var(--hc-red-80);
-  --hc-support-error--active: var(--hc-red-90);
-  --hc-support-success: var(--hc-green-40);
-  --hc-support-success--hover: var(--hc-green-30);
-  --hc-support-success--active: var(--hc-green-20);
-  --hc-support-warning: var(--hc-yellow-30);
-  --hc-support-warning--hover: var(--hc-yellow-40);
-  --hc-support-warning--active: var(--hc-yellow-50);
-  --hc-support-info: var(--hc-cyan-40);
-  --hc-support-info--hover: var(--hc-cyan-50);
-  --hc-support-info--active: var(--hc-cyan-60);
-  --hc-support-error-inverse: var(--hc-red-20);
-  --hc-support-success-inverse: var(--hc-green-10);
-  --hc-support-warning-inverse: var(--hc-yellow-80);
-  --hc-support-info-inverse: var(--hc-blue-50);
-  --hc-border-color-focus-01: var(
-    --hc-white
-  );
-  --hc-border-color-focus-02: var(
-    --hc-cyan-60
-  );
-  --hc-border-color-subtle: var(--hc-gray-20);
-  --hc-border-color-regular: var(--hc-gray-60);
-  --hc-border-color-strong: var(--hc-gray-80);
-  --hc-border-color-disabled: var(--hc-gray-30);
+  --hc-background-default: var(--hc-gray-100);
+  --hc-background-hover: var(--hc-gray-200);
+  --hc-background-active: var(--hc-gray-300);
+  --hc-background-selected: var(--hc-gray-300);
+  --hc-background-inverse: var(--hc-gray-600);
+  --hc-background-brand: var(--hc-blue-500);
+  --hc-background-brand-hover: var(--hc-blue-600);
+  --hc-background-brand-active: var(--hc-purple-600);
+  --hc-background-brand-inverse: var(--hc-blue-200);
+  --hc-background-brand-alternate: var(--hc-blue-600);
+  --hc-background-disabled: var(--hc-gray-100);
+  --hc-checkbox-background-disabled: var(--hc-gray-300);
+  --hc-support-info: var(--hc-blue-400);
+  --hc-support-info--hover: var(--hc-blue-500);
+  --hc-support-info--active: var(--hc-blue-600);
+  --hc-support-info-inverse: var(--hc-blue-200);
+  --hc-support-success: var(--hc-green-300);
+  --hc-support-success--hover: var(--hc-green-400);
+  --hc-support-success--active: var(--hc-green-500);
+  --hc-support-success-inverse: var(--hc-green-200);
+  --hc-support-warning: var(--hc-yellow-200);
+  --hc-support-warning--hover: var(--hc-yellow-500);
+  --hc-support-warning--active: var(--hc-yellow-400);
+  --hc-support-warning-inverse: var(--hc-yellow-600);
+  --hc-support-error: var(--hc-red-400);
+  --hc-support-error--hover: var(--hc-red-500);
+  --hc-support-error--active: var(--hc-red-600);
+  --hc-support-error-inverse: var(--hc-red-200);
+  --hc-border-color-focus-01: var(--hc-white);
+  --hc-border-color-focus-02: var(--hc-blue-500);
+  --hc-border-color-subtle: var(--hc-gray-200);
+  --hc-border-color-regular: var(--hc-gray-500);
+  --hc-border-color-strong: var(--hc-gray-600);
+  --hc-border-color-disabled: var(--hc-gray-300);
   --hc-border-color-error: var(--hc-support-error);
-  --hc-border-color-inverse: var(
-    --hc-gray-90
-  );
+  --hc-border-color-inverse: var(--hc-gray-100);
   --hc-button-primary: var(--hc-background-brand);
   --hc-button-primary-hover: var(--hc-background-brand-hover);
   --hc-button-primary-active: var(--hc-background-brand-active);
@@ -299,42 +229,37 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   --hc-button-secondary-border: var(--hc-background-brand);
   --hc-button-secondary-border-hover: var(--hc-button-secondary-hover);
   --hc-button-secondary-border-active: var(--hc-button-secondary-active);
-  --hc-button-danger: var(--hc-red-70);
-  --hc-button-danger-hover: var(--hc-red-80);
-  --hc-button-danger-active: var(--hc-red-90);
-  --hc-button-separator: var(--hc-gray-20);
-  --hc-button-border: var(--hc-cyan-70);
-  --hc-button-disabled-background: var(--hc-gray-30);
+  --hc-button-danger: var(--hc-red-400);
+  --hc-button-danger-hover: var(--hc-red-500);
+  --hc-button-danger-active: var(--hc-red-600);
+  --hc-button-disabled-background: var(--hc-gray-300);
   --hc-button-disabled-text: var(--hc-text-disabled);
-  --hc-divider-subtle: var(--hc-gray-30);
-  --hc-divider-regular: var(--hc-gray-70);
-  --hc-divider-strong: var(--hc-gray-90);
-  --hc-icon-primary: var(--hc-gray-100);
-  --hc-icon-secondary: var(--hc-gray-70);
+  --hc-icon-primary: var(--hc-gray-600);
+  --hc-icon-secondary: var(--hc-gray-400);
   --hc-icon-on-color: var(--hc-white);
   --hc-icon-inverse: var(--hc-white);
-  --hc-icon-disabled: var(--hc-gray-50);
-  --hc-icon-on-color-disabled: var(--hc-gray-40);
+  --hc-icon-disabled: var(--hc-gray-400);
+  --hc-icon-on-color-disabled: var(--hc-gray-300);
   --hc-icon-error: var(--hc-support-error);
   --hc-icon-brand: var(--hc-background-brand);
   --hc-field-background: var(--hc-background-default);
-  --hc-field-hover: var(--hc-gray-10);
-  --hc-field-disabled: var(--hc-gray-10);
+  --hc-field-hover: var(--hc-gray-100);
+  --hc-field-disabled: var(--hc-gray-100);
   --hc-field-border-color: var(--hc-border-color-strong);
-  --hc-text-primary: var(--hc-gray-100);
-  --hc-text-secondary: var(--hc-gray-80);
+  --hc-text-primary: var(--hc-gray-600);
+  --hc-text-secondary: var(--hc-gray-500);
   --hc-text-on-color: var(--hc-white);
-  --hc-text-placeholder: var(--hc-gray-40);
-  --hc-text-hint: var(--hc-gray-70);
+  --hc-text-placeholder: var(--hc-gray-400);
+  --hc-text-hint: var(--hc-gray-500);
   --hc-text-error: var(--hc-support-error);
   --hc-text-inverse: var(--hc-white);
-  --hc-text-disabled: var(--hc-gray-50);
-  --hc-text-on-color-disabled: var(--hc-gray-60);
+  --hc-text-disabled: var(--hc-gray-400);
+  --hc-text-on-color-disabled: var(--hc-gray-400);
   --hc-link-primary: var(--hc-background-brand);
   --hc-link-inverse: var(--hc-white);
   --hc-link-disabled: var(--hc-text-disabled);
   --hc-link-primary-hover: var(--hc-background-brand-hover);
-  --hc-link-link-visited: var(--hc-purple-60);
+  --hc-link-link-visited: var(--hc-purple-500);
 }
 
 :root {
@@ -792,13 +717,14 @@ ol + .hc-heading-s,
 }
 :root {
   --hc-shadow-style-focus: none;
-  --focus-inset: 2px 0px 0px 0px var(--white) inset,
-    -2px 0px 0px 0px var(--white) inset, 0px -2px 0px 0px var(--white) inset,
-    0px 2px 0px 0px var(--white) inset,
-    -4px 0px 0px 0px var(--background-brand) inset,
-    0px -4px 0px 0px var(--background-brand) inset,
-    0px 4px 0px 0px var(--background-brand) inset,
-    4px 0px 0px 0px var(--background-brand) inset;
+  --focus-inset: 2px 0px 0px 0px var(--hc-white) inset,
+    -2px 0px 0px 0px var(--hc-white) inset,
+    0px -2px 0px 0px var(--hc-white) inset,
+    0px 2px 0px 0px var(--hc-white) inset,
+    -4px 0px 0px 0px var(--hc-background-brand) inset,
+    0px -4px 0px 0px var(--hc-background-brand) inset,
+    0px 4px 0px 0px var(--hc-background-brand) inset,
+    4px 0px 0px 0px var(--hc-background-brand) inset;
 }
 
 :root {
@@ -823,7 +749,7 @@ ol + .hc-heading-s,
   --hc-border-style-focus: 2px solid var(--hc-white);
   --hc-border-style-focus-alternate: 2px solid var(--hc-background-brand);
   --hc-border-style-transparent: 2px solid var(--hc-transparent);
-  --hc-outline-style-focus: 3px solid var(--hc-background-brand);
+  --hc-outline-style-focus: var(--hc-background-brand) solid 3px;
 }
 
 :root {
@@ -2774,7 +2700,6 @@ html {
 /* ======================== */
 /* ======================== */
 /* Icon sizing and position stored in _icons.scss*/
-/* These below classes can probably all be deleted after they're replaced in the HTML */
 .hc-button.hc-button--icon-left {
   /* padding-left: var(--hc-spacing-03); */
   padding-inline-start: var(--hc-spacing-03);
@@ -2935,6 +2860,7 @@ p.hc-alert-paragraph {
 
 .hc-alert.hc-alert-success > .hc-close:active {
   background-color: var(--hc-support-success--active);
+  color: var(--hc-text-on-color);
 }
 
 /*Danger styling */
@@ -2972,8 +2898,8 @@ p.hc-alert-paragraph {
 
 /* Warning close button styling */
 .hc-alert.hc-alert-warning > .hc-close {
-  color: var(--hc-black);
-  background-color: var(--hc-support-warning);
+  color: var(--hc-text-on-color);
+  background-color: var(--hc-support-warning-inverse);
   border-color: var(--hc-black);
 }
 
@@ -3066,12 +2992,12 @@ dialog.hc-modal::backdrop {
   font-weight: 400;
   font-size: var(--hc-font-h4-size);
   color: var(--hc-text-primary);
-  background-color: var(--hc-gray-10);
+  background-color: var(--hc-background-default);
   line-height: 130%;
   text-align: left;
   cursor: pointer;
   padding: var(--hc-spacing-04);
-  transition: background-color 0.08s ease-in-out;
+  /* transition: background-color 0.08s ease-in-out; */
   min-width: 100%;
   /* border: 4px solid transparent; */
   border-radius: 4px;
@@ -3100,7 +3026,7 @@ dialog.hc-modal::backdrop {
 }
 
 .hc-accordion-header:hover {
-  background-color: var(--hc-gray-20);
+  background-color: var(--hc-background-hover);
 }
 
 /* Positioning for content inside the accordion */
