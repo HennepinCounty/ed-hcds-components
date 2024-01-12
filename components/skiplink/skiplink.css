@@ -47,14 +47,14 @@
 }
 
 .hc-skiplink:focus:focus {
-  background-color: var(--hc-red-70);
+  background-color: var(--hc-red-400);
 }
 .hc-skiplink:focus:hover {
-  background-color: var(--hc-red-80);
+  background-color: var(--hc-red-500);
 }
 
 .hc-skiplink:focus:active {
-  background-color: var(--hc-red-90);
+  background-color: var(--hc-red-600);
 }
 
 a.hc-skiplink:hover {
