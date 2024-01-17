@@ -2,54 +2,51 @@
 
 :root {
   // Background colors
-  --hc-background-default: var(--hc-white);
-  --hc-background-hover: var(--hc-gray-10);
-  --hc-background-active: var(--hc-gray-20);
-  --hc-background-selected: var(--hc-gray-30);
-  --hc-background-inverse: var(--hc-gray-80);
-  --hc-background-brand: var(--hc-blue-70);
-  --hc-background-brand-hover: var(--hc-blue-80);
-  --hc-background-brand-active: var(--hc-blue-90);
-  --hc-background-brand-inverse: var(--hc-blue-20);
-  --hc-background-brand-alternate: var(--hc-blue-80);
-  --hc-background-disabled: var(--hc-gray-10);
-  --hc-checkbox-background-disabled: var(--hc-gray-30);
+  --hc-background-default: var(--hc-gray-100);
+  --hc-background-hover: var(--hc-gray-200);
+  --hc-background-active: var(--hc-gray-300);
+  --hc-background-selected: var(--hc-gray-300);
+  --hc-background-inverse: var(--hc-gray-600);
+  --hc-background-brand: var(--hc-blue-500);
+  --hc-background-brand-hover: var(--hc-blue-600);
+  --hc-background-brand-active: var(--hc-purple-600);
+  --hc-background-brand-inverse: var(--hc-blue-200);
+  --hc-background-brand-alternate: var(--hc-blue-600);
+  --hc-background-disabled: var(--hc-gray-100);
+  --hc-checkbox-background-disabled: var(--hc-gray-300);
 
   // Support colors
-  --hc-support-error: var(--hc-red-70);
-  --hc-support-error--hover: var(--hc-red-80);
-  --hc-support-error--active: var(--hc-red-90);
-  --hc-support-success: var(--hc-green-40);
-  --hc-support-success--hover: var(--hc-green-30);
-  --hc-support-success--active: var(--hc-green-20);
-  --hc-support-warning: var(--hc-yellow-30);
-  --hc-support-warning--hover: var(--hc-yellow-40);
-  --hc-support-warning--active: var(--hc-yellow-50);
-  --hc-support-info: var(--hc-cyan-40);
-  --hc-support-info--hover: var(--hc-cyan-50);
-  --hc-support-info--active: var(--hc-cyan-60);
-  --hc-support-error-inverse: var(--hc-red-20);
-  --hc-support-success-inverse: var(--hc-green-10);
-  --hc-support-warning-inverse: var(--hc-yellow-80);
-  --hc-support-info-inverse: var(--hc-blue-50);
+  --hc-support-info: var(--hc-blue-200);
+  --hc-support-info--hover: var(--hc-blue-500);
+  --hc-support-info--active: var(--hc-blue-600);
+  --hc-support-info-inverse: var(--hc-blue-200);
+  --hc-support-success: var(--hc-green-300);
+  --hc-support-success--hover: var(--hc-green-400);
+  --hc-support-success--active: var(--hc-green-500);
+  --hc-support-success-inverse: var(--hc-green-200);
+  --hc-support-warning: var(--hc-yellow-200);
+  --hc-support-warning--hover: var(--hc-yellow-500);
+  --hc-support-warning--active: var(--hc-yellow-400);
+  --hc-support-warning-inverse: var(--hc-yellow-600);
+  --hc-support-error: var(--hc-red-400);
+  --hc-support-error--hover: var(--hc-red-500);
+  --hc-support-error--active: var(--hc-red-600);
+  --hc-support-error-inverse: var(--hc-red-200);
 
   // Border colors
   // These need to be reconciled with the _borderStyle.scss primitives
 
-  --hc-border-color-focus-01: var(
-    --hc-white
-  ); //use for bright color in focus states
-  --hc-border-color-focus-02: var(
-    --hc-cyan-60
-  ); //use for dark color in focus states
-  --hc-border-color-subtle: var(--hc-gray-20);
-  --hc-border-color-regular: var(--hc-gray-60);
-  --hc-border-color-strong: var(--hc-gray-80);
-  --hc-border-color-disabled: var(--hc-gray-30);
+  //use for bright color in focus states
+  --hc-border-color-focus-01: var(--hc-white);
+
+  //use for dark color in focus states
+  --hc-border-color-focus-02: var(--hc-blue-500);
+  --hc-border-color-subtle: var(--hc-gray-200);
+  --hc-border-color-regular: var(--hc-gray-500);
+  --hc-border-color-strong: var(--hc-gray-600);
+  --hc-border-color-disabled: var(--hc-gray-300);
   --hc-border-color-error: var(--hc-support-error);
-  --hc-border-color-inverse: var(
-    --hc-gray-90
-  ); //Probably able to be deleted -- we probably just need --hc-transparent and this is overkill
+  --hc-border-color-inverse: var(--hc-gray-100);
 
   //Outline colors
 
@@ -63,50 +60,43 @@
   --hc-button-secondary-border: var(--hc-background-brand);
   --hc-button-secondary-border-hover: var(--hc-button-secondary-hover);
   --hc-button-secondary-border-active: var(--hc-button-secondary-active);
-  --hc-button-danger: var(--hc-red-70);
-  --hc-button-danger-hover: var(--hc-red-80);
-  --hc-button-danger-active: var(--hc-red-90);
-  --hc-button-separator: var(--hc-gray-20);
-  --hc-button-border: var(--hc-cyan-70);
-  --hc-button-disabled-background: var(--hc-gray-30);
+  --hc-button-danger: var(--hc-red-400);
+  --hc-button-danger-hover: var(--hc-red-500);
+  --hc-button-danger-active: var(--hc-red-600);
+  --hc-button-disabled-background: var(--hc-gray-300);
   --hc-button-disabled-text: var(--hc-text-disabled);
 
-  // Divider
-  --hc-divider-subtle: var(--hc-gray-30);
-  --hc-divider-regular: var(--hc-gray-70);
-  --hc-divider-strong: var(--hc-gray-90);
-
   // Icon colors
-  --hc-icon-primary: var(--hc-gray-100);
-  --hc-icon-secondary: var(--hc-gray-70);
+  --hc-icon-primary: var(--hc-gray-600);
+  --hc-icon-secondary: var(--hc-gray-400);
   --hc-icon-on-color: var(--hc-white);
   --hc-icon-inverse: var(--hc-white);
-  --hc-icon-disabled: var(--hc-gray-50);
-  --hc-icon-on-color-disabled: var(--hc-gray-40);
+  --hc-icon-disabled: var(--hc-gray-400);
+  --hc-icon-on-color-disabled: var(--hc-gray-300);
   --hc-icon-error: var(--hc-support-error);
   --hc-icon-brand: var(--hc-background-brand);
 
   // Field colors
   --hc-field-background: var(--hc-background-default);
-  --hc-field-hover: var(--hc-gray-10);
-  --hc-field-disabled: var(--hc-gray-10);
+  --hc-field-hover: var(--hc-gray-100);
+  --hc-field-disabled: var(--hc-gray-100);
   --hc-field-border-color: var(--hc-border-color-strong);
 
   // Text colors
-  --hc-text-primary: var(--hc-gray-100);
-  --hc-text-secondary: var(--hc-gray-80);
+  --hc-text-primary: var(--hc-gray-600);
+  --hc-text-secondary: var(--hc-gray-500);
   --hc-text-on-color: var(--hc-white);
-  --hc-text-placeholder: var(--hc-gray-40);
-  --hc-text-hint: var(--hc-gray-70);
+  --hc-text-placeholder: var(--hc-gray-400);
+  --hc-text-hint: var(--hc-gray-500);
   --hc-text-error: var(--hc-support-error);
   --hc-text-inverse: var(--hc-white);
-  --hc-text-disabled: var(--hc-gray-50);
-  --hc-text-on-color-disabled: var(--hc-gray-60);
+  --hc-text-disabled: var(--hc-gray-400);
+  --hc-text-on-color-disabled: var(--hc-gray-400);
 
   // Link colors
   --hc-link-primary: var(--hc-background-brand);
   --hc-link-inverse: var(--hc-white);
   --hc-link-disabled: var(--hc-text-disabled);
   --hc-link-primary-hover: var(--hc-background-brand-hover);
-  --hc-link-link-visited: var(--hc-purple-60);
+  --hc-link-link-visited: var(--hc-purple-500);
 }

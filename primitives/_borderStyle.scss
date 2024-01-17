@@ -3,7 +3,7 @@
   //Border needs to be the internal color
   //Outline needs to be the external color because of offset
 
-  //These needd to be rewritten -- BorderSize should handle sizing
+  //These could be rewritten -- BorderSize should handle sizing
 
   // Border
 
@@ -12,5 +12,5 @@
   --hc-border-style-focus-alternate: 2px solid var(--hc-background-brand);
   --hc-border-style-transparent: 2px solid var(--hc-transparent);
   // Outline
-  --hc-outline-style-focus: 3px solid var(--hc-background-brand);
+  --hc-outline-style-focus: var(--hc-background-brand) solid 3px;
 }

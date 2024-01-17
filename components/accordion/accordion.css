@@ -16,12 +16,12 @@
   font-weight: 400;
   font-size: var(--hc-font-h4-size);
   color: var(--hc-text-primary);
-  background-color: var(--hc-gray-10);
+  background-color: var(--hc-background-default);
   line-height: 130%;
   text-align: left;
   cursor: pointer;
   padding: var(--hc-spacing-04);
-  transition: background-color 0.08s ease-in-out;
+  /* transition: background-color 0.08s ease-in-out; */
   min-width: 100%;
   /* border: 4px solid transparent; */
   border-radius: 4px;
@@ -50,7 +50,7 @@
 }
 
 .hc-accordion-header:hover {
-  background-color: var(--hc-gray-20);
+  background-color: var(--hc-background-hover);
 }
 
 /* Positioning for content inside the accordion */
