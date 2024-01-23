@@ -272,12 +272,12 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
 :root {
   --hc-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --hc-font-size-base: 1rem;
-  --hc-font-h1-size: calc(var(--hc-font-size-base) * 2); /*32px*/
-  --hc-font-h2-size: calc(var(--hc-font-size-base) * 1.75); /*28px*/
-  --hc-font-h3-size: calc(var(--hc-font-size-base) * 1.5); /*24px*/
+  --hc-font-h1-size: calc(var(--hc-font-size-base) * 2.5); /*40px*/
+  --hc-font-h2-size: calc(var(--hc-font-size-base) * 2); /*32px*/
+  --hc-font-h3-size: calc(var(--hc-font-size-base) * 1.66); /*26.6px*/
   --hc-font-h4-size: calc(var(--hc-font-size-base) * 1.25); /*20px*/
-  --hc-font-h5-size: calc(var(--hc-font-size-base) * 1.25); /*20px*/
-  --hc-font-h6-size: calc(var(--hc-font-size-base) * 1.25); /*20px*/
+  --hc-font-h5-size: calc(var(--hc-font-size-base) * 1.125); /*18px*/
+  --hc-font-h6-size: calc(var(--hc-font-size-base) * 1.125); /*18px*/
   --hc-font-body-size-small: calc(var(--hc-font-size-base) * 1); /*16px*/
   --hc-font-body-size-regular: calc(var(--hc-font-size-base) * 1.125); /*18px*/
   --hc-font-body-size-large: calc(var(--hc-font-size-base) * 1.25); /*20px*/
@@ -319,8 +319,8 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
     --hc-font-h2-size: calc(var(--hc-font-size-base) * 2); /*32px*/
     --hc-font-h3-size: calc(var(--hc-font-size-base) * 1.66); /*26.6px*/
     --hc-font-h4-size: calc(var(--hc-font-size-base) * 1.25); /*20px*/
-    --hc-font-h5-size: calc(var(--hc-font-size-base) * 1); /*16px*/
-    --hc-font-h6-size: calc(var(--hc-font-size-base) * 1); /*16px*/
+    --hc-font-h5-size: calc(var(--hc-font-size-base) * 1.125); /*18px*/
+    --hc-font-h6-size: calc(var(--hc-font-size-base) * 1.125); /*18px*/
     --hc-font-body-size-large: calc(var(--hc-font-size-base) * 1.25); /*20px*/
     --hc-font-body-size-regular: calc(
       var(--hc-font-size-base) * 1.125
@@ -345,12 +345,12 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
     --hc-font-h4-margin-top: var(--hc-spacing-06);
     --hc-font-h5-margin-top: var(--hc-spacing-04);
     --hc-font-h6-margin-top: var(--hc-spacing-04);
-    --hc-font-h1-margin-bottom: var(--hc-spacing-09);
-    --hc-font-h2-margin-bottom: var(--hc-spacing-07);
-    --hc-font-h3-margin-bottom: var(--hc-spacing-06);
-    --hc-font-h4-margin-bottom: var(--hc-spacing-01);
-    --hc-font-h5-margin-bottom: var(--hc-spacing-06);
-    --hc-font-h6-margin-bottom: var(--hc-spacing-06);
+    --hc-font-h1-margin-bottom: var(--hc-spacing-07);
+    --hc-font-h2-margin-bottom: var(--hc-spacing-06);
+    --hc-font-h3-margin-bottom: var(--hc-spacing-05);
+    --hc-font-h4-margin-bottom: var(--hc-spacing-05);
+    --hc-font-h5-margin-bottom: var(--hc-spacing-05);
+    --hc-font-h6-margin-bottom: var(--hc-spacing-05);
   }
 }
 @media print {
@@ -412,7 +412,6 @@ h4,
   font-weight: 700;
   line-height: 120%; /* 1.5rem */
   margin-bottom: var(--hc-font-h4-margin-bottom);
-  margin-top: var(--hc-font-h4-margin-top);
 }
 
 h5,
@@ -474,8 +473,8 @@ p,
   max-width: 90ch;
 }
 
-p + p {
-  margin-block-start: var(--hc-spacing-04);
+p {
+  margin-block-end: var(--hc-spacing-04);
 }
 
 a,
