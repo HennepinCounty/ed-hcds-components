@@ -72,6 +72,6 @@
 
 /* Different way of adding icon -- this doesn't add an icon, and instead adds text */
 /* Changged to an icon so that sizing can be consistent (+ and - text versions have different widths) */
-/* .hc-accordion-active .hc-accordion-symbol {
+.hc-accordion-active .hc-accordion-symbol {
   content: "-";
-} */
+}
