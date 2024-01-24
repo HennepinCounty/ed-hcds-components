@@ -2569,14 +2569,6 @@ html {
   fill: currentColor;
 }
 
-.hc-icon-left {
-  justify-content: flex-start;
-}
-
-.hc-icon-right {
-  justify-content: space-between;
-}
-
 /* ======================== */
 /* ======================== */
 /* Primary button */
@@ -2716,7 +2708,7 @@ html {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: var(--hc-spacing-03);
 }
 
@@ -3039,9 +3031,10 @@ dialog.hc-modal::backdrop {
 
 /* Different way of adding icon -- this doesn't add an icon, and instead adds text */
 /* Changged to an icon so that sizing can be consistent (+ and - text versions have different widths) */
-/* .hc-accordion-active .hc-accordion-symbol {
+.hc-accordion-active .hc-accordion-symbol {
   content: "-";
-} */
+}
+
 /* govuk example
 https://github.com/alphagov/govuk-frontend/blob/a2ff2e41967a38785aaef33135dc7e41cbd6d00b/packages/govuk-frontend/src/govuk/components/breadcrumbs/_index.scss
  */
