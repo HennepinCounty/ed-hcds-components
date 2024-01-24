@@ -43,7 +43,7 @@ Contains CSS variables for border radius.
 
 ### Icons
 
-Creates basic icon sizing. Classes expect Material Symbols font family to be imported as a stylesheet in the HTML.
+Creates basic icon sizing.
 
 # Compiling primitives
 

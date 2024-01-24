@@ -272,12 +272,12 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
 :root {
   --hc-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --hc-font-size-base: 1rem;
-  --hc-font-h1-size: calc(var(--hc-font-size-base) * 2); /*32px*/
-  --hc-font-h2-size: calc(var(--hc-font-size-base) * 1.75); /*28px*/
-  --hc-font-h3-size: calc(var(--hc-font-size-base) * 1.5); /*24px*/
+  --hc-font-h1-size: calc(var(--hc-font-size-base) * 2.5); /*40px*/
+  --hc-font-h2-size: calc(var(--hc-font-size-base) * 2); /*32px*/
+  --hc-font-h3-size: calc(var(--hc-font-size-base) * 1.66); /*26.6px*/
   --hc-font-h4-size: calc(var(--hc-font-size-base) * 1.25); /*20px*/
-  --hc-font-h5-size: calc(var(--hc-font-size-base) * 1.25); /*20px*/
-  --hc-font-h6-size: calc(var(--hc-font-size-base) * 1.25); /*20px*/
+  --hc-font-h5-size: calc(var(--hc-font-size-base) * 1.125); /*18px*/
+  --hc-font-h6-size: calc(var(--hc-font-size-base) * 1.125); /*18px*/
   --hc-font-body-size-small: calc(var(--hc-font-size-base) * 1); /*16px*/
   --hc-font-body-size-regular: calc(var(--hc-font-size-base) * 1.125); /*18px*/
   --hc-font-body-size-large: calc(var(--hc-font-size-base) * 1.25); /*20px*/
@@ -319,8 +319,8 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
     --hc-font-h2-size: calc(var(--hc-font-size-base) * 2); /*32px*/
     --hc-font-h3-size: calc(var(--hc-font-size-base) * 1.66); /*26.6px*/
     --hc-font-h4-size: calc(var(--hc-font-size-base) * 1.25); /*20px*/
-    --hc-font-h5-size: calc(var(--hc-font-size-base) * 1); /*16px*/
-    --hc-font-h6-size: calc(var(--hc-font-size-base) * 1); /*16px*/
+    --hc-font-h5-size: calc(var(--hc-font-size-base) * 1.125); /*18px*/
+    --hc-font-h6-size: calc(var(--hc-font-size-base) * 1.125); /*18px*/
     --hc-font-body-size-large: calc(var(--hc-font-size-base) * 1.25); /*20px*/
     --hc-font-body-size-regular: calc(
       var(--hc-font-size-base) * 1.125
@@ -345,12 +345,12 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
     --hc-font-h4-margin-top: var(--hc-spacing-06);
     --hc-font-h5-margin-top: var(--hc-spacing-04);
     --hc-font-h6-margin-top: var(--hc-spacing-04);
-    --hc-font-h1-margin-bottom: var(--hc-spacing-09);
-    --hc-font-h2-margin-bottom: var(--hc-spacing-07);
-    --hc-font-h3-margin-bottom: var(--hc-spacing-06);
-    --hc-font-h4-margin-bottom: var(--hc-spacing-01);
-    --hc-font-h5-margin-bottom: var(--hc-spacing-06);
-    --hc-font-h6-margin-bottom: var(--hc-spacing-06);
+    --hc-font-h1-margin-bottom: var(--hc-spacing-07);
+    --hc-font-h2-margin-bottom: var(--hc-spacing-06);
+    --hc-font-h3-margin-bottom: var(--hc-spacing-05);
+    --hc-font-h4-margin-bottom: var(--hc-spacing-05);
+    --hc-font-h5-margin-bottom: var(--hc-spacing-05);
+    --hc-font-h6-margin-bottom: var(--hc-spacing-05);
   }
 }
 @media print {
@@ -412,7 +412,6 @@ h4,
   font-weight: 700;
   line-height: 120%; /* 1.5rem */
   margin-bottom: var(--hc-font-h4-margin-bottom);
-  margin-top: var(--hc-font-h4-margin-top);
 }
 
 h5,
@@ -474,8 +473,8 @@ p,
   max-width: 90ch;
 }
 
-p + p {
-  margin-block-start: var(--hc-spacing-04);
+p {
+  margin-block-end: var(--hc-spacing-04);
 }
 
 a,
@@ -2552,38 +2551,22 @@ html {
   height: auto;
 }
 
-.material-symbols-outlined {
-  font-family: "Material Symbols Outlined";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.5rem; /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
+.hc-icon-size--small {
+  width: 1rem; /* 16px */
+  height: 1rem; /* 16px */
+  fill: currentColor;
 }
 
-.hc-icon-size-small {
-  font-size: 1.125rem; /* 18px */
+.hc-icon-size--regular {
+  width: 1.5rem; /* 24px */
+  height: 1.5rem; /* 24px */
+  fill: currentColor;
 }
 
-.hc-icon-size-regular {
-  font-size: 1.5rem; /* 24px */
-}
-
-.hc-icon-size-large {
-  font-size: 2rem; /* 32px */
-}
-
-.hc-icon-left {
-  justify-content: flex-start;
-}
-
-.hc-icon-right {
-  justify-content: space-between;
+.hc-icon-size--large {
+  width: 2rem; /* 32px */
+  height: 2rem; /* 32px */
+  fill: currentColor;
 }
 
 /* ======================== */
@@ -2597,7 +2580,7 @@ html {
   display: inline-flex;
   align-items: center;
   vertical-align: top;
-  justify-content: left;
+  justify-content: center;
   flex-direction: row;
   text-align: left;
   gap: var(--hc-spacing-02);
@@ -2725,7 +2708,7 @@ html {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: var(--hc-spacing-03);
 }
 
@@ -2777,8 +2760,9 @@ input.hc-input[type=text] {
 /* error state for field, adds border and icon */
 .hc-input--error {
   border: 2px solid var(--hc-border-color-error);
-  background: url(./icons/material-symbols_close-rounded.svg) no-repeat right;
-  background-size: 30px;
+  background: no-repeat center right;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 -960 960 960'><path fill='%23ce1432' d='m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z'></path></svg>");
+  background-size: 32px;
 }
 
 /* Focus state, changes border color to white then adds blue stroke with outline to give appearance of growing on focus */
@@ -3046,11 +3030,6 @@ dialog.hc-modal::backdrop {
   padding-bottom: var(--hc-spacing-03);
 }
 
-/* Different way of adding icon -- this doesn't add an icon, and instead adds text */
-/* Changged to an icon so that sizing can be consistent (+ and - text versions have different widths) */
-/* .hc-accordion-active .hc-accordion-symbol {
-  content: "-";
-} */
 /* govuk example
 https://github.com/alphagov/govuk-frontend/blob/a2ff2e41967a38785aaef33135dc7e41cbd6d00b/packages/govuk-frontend/src/govuk/components/breadcrumbs/_index.scss
  */
@@ -3334,8 +3313,9 @@ a.hc-skiplink:visited {
 /* error state for field, adds border and icon*/
 .hc-textarea--error {
   border: 2px solid var(--hc-border-color-error);
-  background: url(./icons/material-symbols_close-rounded.svg) no-repeat top right;
-  background-size: 30px;
+  background: no-repeat top right;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 -960 960 960'><path fill='%23ce1432' d='m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z'></path></svg>");
+  background-size: 32px;
 }
 
 /* Focus state, changes border color to white then adds blue stroke with outline to give appearance of growing on focus */
