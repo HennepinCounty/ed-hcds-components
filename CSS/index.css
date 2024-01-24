@@ -2760,8 +2760,9 @@ input.hc-input[type=text] {
 /* error state for field, adds border and icon */
 .hc-input--error {
   border: 2px solid var(--hc-border-color-error);
-  background: url(./icons/material-symbols_close-rounded.svg) no-repeat right;
-  background-size: 30px;
+  background: no-repeat center right;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 -960 960 960'><path fill='%23ce1432' d='m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z'></path></svg>");
+  background-size: 32px;
 }
 
 /* Focus state, changes border color to white then adds blue stroke with outline to give appearance of growing on focus */
@@ -3027,12 +3028,6 @@ dialog.hc-modal::backdrop {
 /* JS changes from display:none to display:block, maybe that can be done in this class instead of JS? */
 .hc-accordion-content--expanded {
   padding-bottom: var(--hc-spacing-03);
-}
-
-/* Different way of adding icon -- this doesn't add an icon, and instead adds text */
-/* Changged to an icon so that sizing can be consistent (+ and - text versions have different widths) */
-.hc-accordion-active .hc-accordion-symbol {
-  content: "-";
 }
 
 /* govuk example
@@ -3318,8 +3313,9 @@ a.hc-skiplink:visited {
 /* error state for field, adds border and icon*/
 .hc-textarea--error {
   border: 2px solid var(--hc-border-color-error);
-  background: url(./icons/material-symbols_close-rounded.svg) no-repeat top right;
-  background-size: 30px;
+  background: no-repeat top right;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 -960 960 960'><path fill='%23ce1432' d='m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z'></path></svg>");
+  background-size: 32px;
 }
 
 /* Focus state, changes border color to white then adds blue stroke with outline to give appearance of growing on focus */
