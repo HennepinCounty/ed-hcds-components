@@ -17,16 +17,6 @@ accordionHeaders.forEach((header) => {
       symbol.setAttribute(`d`, `M200-440v-80h560v80H200`);
     }
 
-    // header.classList.toggle("hc-accordion-active");
-    // symbol.setAttribute = header.classList.contains("hc-accordion-active")
-    //   ? "-"
-    //   : "+";
-
-    // header.classList.toggle("hc-accordion-active");
-    // symbol.textContent = header.classList.contains("hc-accordion-active")
-    //   ? "remove"
-    //   : "add";
-
     if (isExpanded) {
       header.setAttribute("aria-expanded", "false");
       content.classList.remove("hc-accordion-content--expanded");
