@@ -9,7 +9,7 @@
   display: inline-flex;
   align-items: center;
   vertical-align: top;
-  justify-content: left;
+  justify-content: center;
   flex-direction: row;
   text-align: left;
   gap: var(--hc-spacing-02);
@@ -142,6 +142,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: var(--hc-spacing-03);
 }

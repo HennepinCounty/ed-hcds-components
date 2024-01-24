@@ -14,30 +14,22 @@
 //      </button>
 //
 
-.material-symbols-outlined {
-  font-family: "Material Symbols Outlined";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.5rem; /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
+.hc-icon-size--small {
+  width: 1rem; /* 16px */
+  height: 1rem; /* 16px */
+  fill: currentColor;
 }
 
-.hc-icon-size-small {
-  font-size: 1.125rem; /* 18px */
+.hc-icon-size--regular {
+  width: 1.5rem; /* 24px */
+  height: 1.5rem; /* 24px */
+  fill: currentColor;
 }
 
-.hc-icon-size-regular {
-  font-size: 1.5rem; /* 24px */
-}
-
-.hc-icon-size-large {
-  font-size: 2rem; /* 32px */
+.hc-icon-size--large {
+  width: 2rem; /* 32px */
+  height: 2rem; /* 32px */
+  fill: currentColor;
 }
 
 //might delete
