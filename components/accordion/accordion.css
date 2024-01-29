@@ -27,7 +27,8 @@
   border-radius: 4px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: start;
+  gap: var(--hc-spacing-03);
   border: var(--hc-border-style-transparent);
 }
 
