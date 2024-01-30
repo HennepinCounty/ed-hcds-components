@@ -205,7 +205,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   --hc-support-success--active: var(--hc-green-500);
   --hc-support-success-inverse: var(--hc-green-200);
   --hc-support-warning: var(--hc-yellow-200);
-  --hc-support-warning--hover: var(--hc-yellow-500);
+  --hc-support-warning--hover: var(--hc-yellow-300);
   --hc-support-warning--active: var(--hc-yellow-400);
   --hc-support-warning-inverse: var(--hc-yellow-600);
   --hc-support-error: var(--hc-red-400);
@@ -295,7 +295,6 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   --hc-font-body-lineHeight-large: 1.5;
   --hc-font-body-lineHeight-regular: 1.5;
   --hc-font-body-lineHeight-small: 1.5;
-  --hc-button-text-small-lineHeight: 1;
   --hc-text-weight-regular: 400;
   --hc-text-weight-semibold: 600;
   --hc-text-weight-bold: 700;
@@ -563,7 +562,7 @@ a:disabled {
   margin-bottom: 24px;
 }
 
-/* this can be moved into its own component. this should be a general class for groups of form items */
+/* this is a general class for groups of form items */
 .hc-fieldset {
   min-width: 0;
   margin: 0;
@@ -586,10 +585,6 @@ a:disabled {
   padding: 0px;
 }
 
-/* Set to inherit from fieldset__legend */
-/* override so that things can be tagged as a heading for accessibility but inherit the legend styling */
-/* https://github.com/alphagov/govuk-frontend/pull/684 */
-/* We probably don't need bc our legends aren't headings (but if we do one question per page in the future for forms, it may make sense to add this) */
 /* ==================================================  */
 /* ==================================================  */
 /* additional padding for combinations of headings and paragraphs  */
@@ -2647,7 +2642,7 @@ html {
 /* focus for secondary -- commented out for now */
 .hc-button--secondary:disabled {
   color: var(--hc-text-disabled);
-  background-color: var(--hc-white);
+  background-color: var(--hc-button-disabled-background);
   border-radius: var(--hc-border-radius-01);
   border: 2px solid var(--hc-border-color-disabled);
   cursor: not-allowed;
@@ -2882,8 +2877,8 @@ p.hc-alert-paragraph {
 
 /* Warning close button styling */
 .hc-alert.hc-alert-warning > .hc-close {
-  color: var(--hc-text-on-color);
-  background-color: var(--hc-support-warning-inverse);
+  color: var(--hc-text-primary);
+  background-color: var(--hc-support-warning);
   border-color: var(--hc-black);
 }
 

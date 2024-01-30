@@ -22,6 +22,7 @@
   --hc-font-h4-size: calc(var(--hc-font-size-base) * 1.25); /*20px*/
   --hc-font-h5-size: calc(var(--hc-font-size-base) * 1.125); /*18px*/
   --hc-font-h6-size: calc(var(--hc-font-size-base) * 1.125); /*18px*/
+
   // Paragraph sizes
   --hc-font-body-size-small: calc(var(--hc-font-size-base) * 1); /*16px*/
   --hc-font-body-size-regular: calc(var(--hc-font-size-base) * 1.125); /*18px*/
@@ -44,7 +45,6 @@
   --hc-font-body-lineHeight-large: 1.5;
   --hc-font-body-lineHeight-regular: 1.5;
   --hc-font-body-lineHeight-small: 1.5;
-  --hc-button-text-small-lineHeight: 1;
 
   //Weights
   --hc-text-weight-regular: 400;
@@ -71,6 +71,7 @@
 // ============================
 // ============================
 // Desktop breakpoint styling
+// Currently same as mobile styling
 // ============================
 // ============================
 
@@ -326,6 +327,7 @@ a:disabled {
 .hc-text-hint {
   display: block;
   color: var(--hc-text-hint, #5c646d);
+
   /* Body/Body-Small */
   font-family: var(--hc-font-family);
   font-size: var(--hc-font-body-size-regular);
@@ -343,6 +345,7 @@ a:disabled {
 .hc-text-error {
   display: block;
   color: var(--hc-text-error, #ef413d);
+
   /* Body/Body-Small */
   font-family: var(--hc-font-family);
   font-size: var(--hc-font-body-size-regular);
@@ -360,12 +363,12 @@ a:disabled {
 // ========================
 
 /* this can be moved into its own component. this should be a general class for groups of form items */
+// Adds spacing below formgroup wrapper used in form elements like checkbox, radio button, input field, etc.
 .hc-formgroup {
   margin-bottom: 24px;
 }
 
-/* this can be moved into its own component. this should be a general class for groups of form items */
-
+/* this is a general class for groups of form items */
 .hc-fieldset {
   min-width: 0;
   margin: 0;
@@ -387,19 +390,6 @@ a:disabled {
   margin-bottom: var(--hc-spacing-02); //review spacing later
   padding: 0px;
 }
-
-/* Set to inherit from fieldset__legend */
-/* override so that things can be tagged as a heading for accessibility but inherit the legend styling */
-/* https://github.com/alphagov/govuk-frontend/pull/684 */
-/* We probably don't need bc our legends aren't headings (but if we do one question per page in the future for forms, it may make sense to add this) */
-
-// .hc-fieldset__header {
-//   font-size: inherit;
-//   font-weight: inherit;
-//   line-height: inherit;
-//   margin-top: inherit;
-//   margin-bottom: inherit;
-// }
 
 /* ==================================================  */
 /* ==================================================  */

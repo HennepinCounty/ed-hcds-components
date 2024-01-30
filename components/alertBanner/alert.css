@@ -105,8 +105,8 @@ p.hc-alert-paragraph {
 
 /* Warning close button styling */
 .hc-alert.hc-alert-warning > .hc-close {
-  color: var(--hc-text-on-color);
-  background-color: var(--hc-support-warning-inverse);
+  color: var(--hc-text-primary);
+  background-color: var(--hc-support-warning);
   border-color: var(--hc-black);
 }
 .hc-alert.hc-alert-warning > .hc-close:hover {
