@@ -7,7 +7,7 @@
 
 /* Div wrapping accordion button with its expandable content */
 .hc-accordion-item {
-  margin-bottom: var(--hc-spacing-02);
+  margin-bottom: var(--hc-spacing-04);
 }
 
 /* Class attached to button to make the accordion clickable */
