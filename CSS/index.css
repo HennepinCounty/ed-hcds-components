@@ -68,79 +68,6 @@ h6 {
   isolation: isolate;
 }
 
-/*
-
-based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7a1b35841e994255586/src/helpers/_visually-hidden.scss
-
-/// @link https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-///   - Hiding Content for Accessibility, Jonathan Snook, February 2011
-/// @link https://github.com/h5bp/html5-boilerplate/blob/9f13695d21ff92c55c78dfa9f16bb02a1b6e911f/src/css/main.css#L121-L158
-///   - h5bp/html5-boilerplate - Thanks!
-///
-/// @param {Boolean} $important [true] - Whether to mark as `!important`
-  @link https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-      -Beware smushed off-screen accessible text
-  // For long content, line feeds are not interpreted as spaces and small width
-// causes content to wrap 1 word per line:
-// https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-*/
-.hc-visually-hidden {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  margin: -1px !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  clip: rect(0 0 0 0) !important;
-  -webkit-clip-path: inset(50%) !important;
-          clip-path: inset(50%) !important;
-  border: 0 !important;
-  /*
-   For long content, line feeds are not interpreted as spaces and small width
-   causes content to wrap 1 word per line:
-   https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-  */
-  white-space: nowrap !important;
-}
-
-.hc-visually-hidden-focusable {
-  /*
-  /// Hide an element visually, but have it available for screen readers whilst
-  /// allowing the element to be focused when navigated to via the keyboard (e.g.
-  /// for the skip link)
-  ///
-  /// This is slightly less opinionated about borders and padding to make it
-  /// easier to style the focussed element.
-  */
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0 0 0 0) !important;
-  -webkit-clip-path: inset(50%) !important;
-          clip-path: inset(50%) !important;
-  /*
-  // For long content, line feeds are not interpreted as spaces and small width
-  // causes content to wrap 1 word per line:
-  // https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-  */
-  white-space: nowrap !important;
-}
-
-.hc-visually-hidden-focusable:active,
-.hc-visually-hidden-focusable:focus {
-  position: static !important;
-  width: auto !important;
-  height: auto !important;
-  margin: inherit !important;
-  overflow: visible !important;
-  clip: auto !important;
-  -webkit-clip-path: none !important;
-          clip-path: none !important;
-  white-space: inherit !important;
-}
-
 :root {
   --hc-white: #ffffff;
   --hc-black: #000000;
@@ -205,7 +132,7 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   --hc-support-success--active: var(--hc-green-500);
   --hc-support-success-inverse: var(--hc-green-200);
   --hc-support-warning: var(--hc-yellow-200);
-  --hc-support-warning--hover: var(--hc-yellow-500);
+  --hc-support-warning--hover: var(--hc-yellow-300);
   --hc-support-warning--active: var(--hc-yellow-400);
   --hc-support-warning-inverse: var(--hc-yellow-600);
   --hc-support-error: var(--hc-red-400);
@@ -295,7 +222,6 @@ based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7
   --hc-font-body-lineHeight-large: 1.5;
   --hc-font-body-lineHeight-regular: 1.5;
   --hc-font-body-lineHeight-small: 1.5;
-  --hc-button-text-small-lineHeight: 1;
   --hc-text-weight-regular: 400;
   --hc-text-weight-semibold: 600;
   --hc-text-weight-bold: 700;
@@ -563,7 +489,7 @@ a:disabled {
   margin-bottom: 24px;
 }
 
-/* this can be moved into its own component. this should be a general class for groups of form items */
+/* this is a general class for groups of form items */
 .hc-fieldset {
   min-width: 0;
   margin: 0;
@@ -586,10 +512,6 @@ a:disabled {
   padding: 0px;
 }
 
-/* Set to inherit from fieldset__legend */
-/* override so that things can be tagged as a heading for accessibility but inherit the legend styling */
-/* https://github.com/alphagov/govuk-frontend/pull/684 */
-/* We probably don't need bc our legends aren't headings (but if we do one question per page in the future for forms, it may make sense to add this) */
 /* ==================================================  */
 /* ==================================================  */
 /* additional padding for combinations of headings and paragraphs  */
@@ -1565,992 +1487,6 @@ ol + .hc-heading-s,
   padding-right: var(--hc-spacing-13);
 }
 
-/*!
- * Bootstrap Grid Only (grid and responsive utilities extracted from Bootstrap 4.1.3)
- * GitHub: https://github.com/dmhendricks/bootstrap-grid-css
- * Bootstrap License: MIT (https://github.com/twbs/bootstrap/blob/v4-dev/LICENSE)
- * Credits: Twitter, Inc. & The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
- */
-html {
-  box-sizing: border-box;
-  -ms-overflow-style: scrollbar;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-.hc-clearfix::after {
-  display: block;
-  clear: both;
-  content: "";
-}
-
-.hc-visible {
-  visibility: visible !important;
-}
-
-.hc-invisible {
-  visibility: hidden !important;
-}
-
-.hc-hidden-xs-up {
-  display: none !important;
-}
-
-@media (max-width: 575.98px) {
-  .hc-hidden-xs-down {
-    display: none !important;
-  }
-}
-@media (min-width: 576px) {
-  .hc-hidden-sm-up {
-    display: none !important;
-  }
-}
-@media (max-width: 767.98px) {
-  .hc-hidden-sm-down {
-    display: none !important;
-  }
-}
-@media (min-width: 768px) {
-  .hc-hidden-md-up {
-    display: none !important;
-  }
-}
-@media (max-width: 991.98px) {
-  .hc-hidden-md-down {
-    display: none !important;
-  }
-}
-@media (min-width: 992px) {
-  .hc-hidden-lg-up {
-    display: none !important;
-  }
-}
-@media (max-width: 1199.98px) {
-  .hc-hidden-lg-down {
-    display: none !important;
-  }
-}
-@media (min-width: 1200px) {
-  .hc-hidden-xl-up {
-    display: none !important;
-  }
-}
-.hc-hidden-xl-down {
-  display: none !important;
-}
-
-.hc-visible-print-block {
-  display: none !important;
-}
-
-@media print {
-  .hc-visible-print-block {
-    display: block !important;
-  }
-}
-.hc-visible-print-inline {
-  display: none !important;
-}
-
-@media print {
-  .hc-visible-print-inline {
-    display: inline !important;
-  }
-}
-.hc-visible-print-inline-block {
-  display: none !important;
-}
-
-@media print {
-  .hc-visible-print-inline-block {
-    display: inline-block !important;
-  }
-}
-@media print {
-  .hc-hidden-print {
-    display: none !important;
-  }
-}
-.hc-container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media (min-width: 576px) {
-  .hc-container {
-    max-width: 540px;
-  }
-}
-@media (min-width: 768px) {
-  .hc-container {
-    max-width: 720px;
-  }
-}
-@media (min-width: 992px) {
-  .hc-container {
-    max-width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .hc-container {
-    max-width: 1140px;
-  }
-}
-.hc-container-fluid {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.hc-row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-.hc-no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.hc-no-gutters > .col,
-.hc-no-gutters > [class*=col-] {
-  padding-right: 0;
-  padding-left: 0;
-}
-
-.hc-col-1,
-.hc-col-2,
-.hc-col-3,
-.hc-col-4,
-.hc-col-5,
-.hc-col-6,
-.hc-col-7,
-.hc-col-8,
-.hc-col-9,
-.hc-col-10,
-.hc-col-11,
-.hc-col-12,
-.hc-col,
-.hc-col-auto,
-.hc-col-sm-1,
-.hc-col-sm-2,
-.hc-col-sm-3,
-.hc-col-sm-4,
-.hc-col-sm-5,
-.hc-col-sm-6,
-.hc-col-sm-7,
-.hc-col-sm-8,
-.hc-col-sm-9,
-.hc-col-sm-10,
-.hc-col-sm-11,
-.hc-col-sm-12,
-.hc-col-sm,
-.hc-col-sm-auto,
-.hc-col-md-1,
-.hc-col-md-2,
-.hc-col-md-3,
-.hc-col-md-4,
-.hc-col-md-5,
-.hc-col-md-6,
-.hc-col-md-7,
-.hc-col-md-8,
-.hc-col-md-9,
-.hc-col-md-10,
-.hc-col-md-11,
-.hc-col-md-12,
-.hc-col-md,
-.hc-col-md-auto,
-.hc-col-lg-1,
-.hc-col-lg-2,
-.hc-col-lg-3,
-.hc-col-lg-4,
-.hc-col-lg-5,
-.hc-col-lg-6,
-.hc-col-lg-7,
-.hc-col-lg-8,
-.hc-col-lg-9,
-.hc-col-lg-10,
-.hc-col-lg-11,
-.hc-col-lg-12,
-.hc-col-lg,
-.hc-col-lg-auto,
-.hc-col-xl-1,
-.hc-col-xl-2,
-.hc-col-xl-3,
-.hc-col-xl-4,
-.hc-col-xl-5,
-.hc-col-xl-6,
-.hc-col-xl-7,
-.hc-col-xl-8,
-.hc-col-xl-9,
-.hc-col-xl-10,
-.hc-col-xl-11,
-.hc-col-xl-12,
-.hc-col-xl,
-.hc-col-xl-auto {
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.hc-col {
-  flex-basis: 0;
-  flex-grow: 1;
-  max-width: 100%;
-}
-
-.hc-col-auto {
-  flex: 0 0 auto;
-  width: auto;
-  max-width: 100%;
-}
-
-.hc-col-1 {
-  flex: 0 0 8.3333333333%;
-  max-width: 8.3333333333%;
-}
-
-.hc-col-2 {
-  flex: 0 0 16.6666666667%;
-  max-width: 16.6666666667%;
-}
-
-.hc-col-3 {
-  flex: 0 0 25%;
-  max-width: 25%;
-}
-
-.hc-col-4 {
-  flex: 0 0 33.3333333333%;
-  max-width: 33.3333333333%;
-}
-
-.hc-col-5 {
-  flex: 0 0 41.6666666667%;
-  max-width: 41.6666666667%;
-}
-
-.hc-col-6 {
-  flex: 0 0 50%;
-  max-width: 50%;
-}
-
-.hc-col-7 {
-  flex: 0 0 58.3333333333%;
-  max-width: 58.3333333333%;
-}
-
-.hc-col-8 {
-  flex: 0 0 66.6666666667%;
-  max-width: 66.6666666667%;
-}
-
-.hc-col-9 {
-  flex: 0 0 75%;
-  max-width: 75%;
-}
-
-.hc-col-10 {
-  flex: 0 0 83.3333333333%;
-  max-width: 83.3333333333%;
-}
-
-.hc-col-11 {
-  flex: 0 0 91.6666666667%;
-  max-width: 91.6666666667%;
-}
-
-.hc-col-12 {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-
-.hc-order-first {
-  order: -1;
-}
-
-.hc-order-last {
-  order: 13;
-}
-
-.hc-order-0 {
-  order: 0;
-}
-
-.hc-order-1 {
-  order: 1;
-}
-
-.hc-order-2 {
-  order: 2;
-}
-
-.hc-order-3 {
-  order: 3;
-}
-
-.hc-order-4 {
-  order: 4;
-}
-
-.hc-order-5 {
-  order: 5;
-}
-
-.hc-order-6 {
-  order: 6;
-}
-
-.hc-order-7 {
-  order: 7;
-}
-
-.hc-order-8 {
-  order: 8;
-}
-
-.hc-order-9 {
-  order: 9;
-}
-
-.hc-order-10 {
-  order: 10;
-}
-
-.hc-order-11 {
-  order: 11;
-}
-
-.hc-order-12 {
-  order: 12;
-}
-
-.hc-offset-1 {
-  margin-left: 8.3333333333%;
-}
-
-.hc-offset-2 {
-  margin-left: 16.6666666667%;
-}
-
-.hc-offset-3 {
-  margin-left: 25%;
-}
-
-.hc-offset-4 {
-  margin-left: 33.3333333333%;
-}
-
-.hc-offset-5 {
-  margin-left: 41.6666666667%;
-}
-
-.hc-offset-6 {
-  margin-left: 50%;
-}
-
-.hc-offset-7 {
-  margin-left: 58.3333333333%;
-}
-
-.hc-offset-8 {
-  margin-left: 66.6666666667%;
-}
-
-.hc-offset-9 {
-  margin-left: 75%;
-}
-
-.hc-offset-10 {
-  margin-left: 83.3333333333%;
-}
-
-.hc-offset-11 {
-  margin-left: 91.6666666667%;
-}
-
-@media (min-width: 576px) {
-  .hc-col-sm {
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%;
-  }
-  .hc-col-sm-auto {
-    flex: 0 0 auto;
-    width: auto;
-    max-width: 100%;
-  }
-  .hc-col-sm-1 {
-    flex: 0 0 8.3333333333%;
-    max-width: 8.3333333333%;
-  }
-  .hc-col-sm-2 {
-    flex: 0 0 16.6666666667%;
-    max-width: 16.6666666667%;
-  }
-  .hc-col-sm-3 {
-    flex: 0 0 25%;
-    max-width: 25%;
-  }
-  .hc-col-sm-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
-  }
-  .hc-col-sm-5 {
-    flex: 0 0 41.6666666667%;
-    max-width: 41.6666666667%;
-  }
-  .hc-col-sm-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-  .hc-col-sm-7 {
-    flex: 0 0 58.3333333333%;
-    max-width: 58.3333333333%;
-  }
-  .hc-col-sm-8 {
-    flex: 0 0 66.6666666667%;
-    max-width: 66.6666666667%;
-  }
-  .hc-col-sm-9 {
-    flex: 0 0 75%;
-    max-width: 75%;
-  }
-  .hc-col-sm-10 {
-    flex: 0 0 83.3333333333%;
-    max-width: 83.3333333333%;
-  }
-  .hc-col-sm-11 {
-    flex: 0 0 91.6666666667%;
-    max-width: 91.6666666667%;
-  }
-  .hc-col-sm-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  .hc-order-sm-first {
-    order: -1;
-  }
-  .hc-order-sm-last {
-    order: 13;
-  }
-  .hc-order-sm-0 {
-    order: 0;
-  }
-  .hc-order-sm-1 {
-    order: 1;
-  }
-  .hc-order-sm-2 {
-    order: 2;
-  }
-  .hc-order-sm-3 {
-    order: 3;
-  }
-  .hc-order-sm-4 {
-    order: 4;
-  }
-  .hc-order-sm-5 {
-    order: 5;
-  }
-  .hc-order-sm-6 {
-    order: 6;
-  }
-  .hc-order-sm-7 {
-    order: 7;
-  }
-  .hc-order-sm-8 {
-    order: 8;
-  }
-  .hc-order-sm-9 {
-    order: 9;
-  }
-  .hc-order-sm-10 {
-    order: 10;
-  }
-  .hc-order-sm-11 {
-    order: 11;
-  }
-  .hc-order-sm-12 {
-    order: 12;
-  }
-  .hc-offset-sm-0 {
-    margin-left: 0;
-  }
-  .hc-offset-sm-1 {
-    margin-left: 8.3333333333%;
-  }
-  .hc-offset-sm-2 {
-    margin-left: 16.6666666667%;
-  }
-  .hc-offset-sm-3 {
-    margin-left: 25%;
-  }
-  .hc-offset-sm-4 {
-    margin-left: 33.3333333333%;
-  }
-  .hc-offset-sm-5 {
-    margin-left: 41.6666666667%;
-  }
-  .hc-offset-sm-6 {
-    margin-left: 50%;
-  }
-  .hc-offset-sm-7 {
-    margin-left: 58.3333333333%;
-  }
-  .hc-offset-sm-8 {
-    margin-left: 66.6666666667%;
-  }
-  .hc-offset-sm-9 {
-    margin-left: 75%;
-  }
-  .hc-offset-sm-10 {
-    margin-left: 83.3333333333%;
-  }
-  .hc-offset-sm-11 {
-    margin-left: 91.6666666667%;
-  }
-}
-@media (min-width: 768px) {
-  .hc-col-md {
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%;
-  }
-  .hc-col-md-auto {
-    flex: 0 0 auto;
-    width: auto;
-    max-width: 100%;
-  }
-  .hc-col-md-1 {
-    flex: 0 0 8.3333333333%;
-    max-width: 8.3333333333%;
-  }
-  .hc-col-md-2 {
-    flex: 0 0 16.6666666667%;
-    max-width: 16.6666666667%;
-  }
-  .hc-col-md-3 {
-    flex: 0 0 25%;
-    max-width: 25%;
-  }
-  .hc-col-md-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
-  }
-  .hc-col-md-5 {
-    flex: 0 0 41.6666666667%;
-    max-width: 41.6666666667%;
-  }
-  .hc-col-md-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-  .hc-col-md-7 {
-    flex: 0 0 58.3333333333%;
-    max-width: 58.3333333333%;
-  }
-  .hc-col-md-8 {
-    flex: 0 0 66.6666666667%;
-    max-width: 66.6666666667%;
-  }
-  .hc-col-md-9 {
-    flex: 0 0 75%;
-    max-width: 75%;
-  }
-  .hc-col-md-10 {
-    flex: 0 0 83.3333333333%;
-    max-width: 83.3333333333%;
-  }
-  .hc-col-md-11 {
-    flex: 0 0 91.6666666667%;
-    max-width: 91.6666666667%;
-  }
-  .hc-col-md-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  .hc-order-md-first {
-    order: -1;
-  }
-  .hc-order-md-last {
-    order: 13;
-  }
-  .hc-order-md-0 {
-    order: 0;
-  }
-  .hc-order-md-1 {
-    order: 1;
-  }
-  .hc-order-md-2 {
-    order: 2;
-  }
-  .hc-order-md-3 {
-    order: 3;
-  }
-  .hc-order-md-4 {
-    order: 4;
-  }
-  .hc-order-md-5 {
-    order: 5;
-  }
-  .hc-order-md-6 {
-    order: 6;
-  }
-  .hc-order-md-7 {
-    order: 7;
-  }
-  .hc-order-md-8 {
-    order: 8;
-  }
-  .hc-order-md-9 {
-    order: 9;
-  }
-  .hc-order-md-10 {
-    order: 10;
-  }
-  .hc-order-md-11 {
-    order: 11;
-  }
-  .hc-order-md-12 {
-    order: 12;
-  }
-  .hc-offset-md-0 {
-    margin-left: 0;
-  }
-  .hc-offset-md-1 {
-    margin-left: 8.3333333333%;
-  }
-  .hc-offset-md-2 {
-    margin-left: 16.6666666667%;
-  }
-  .hc-offset-md-3 {
-    margin-left: 25%;
-  }
-  .hc-offset-md-4 {
-    margin-left: 33.3333333333%;
-  }
-  .hc-offset-md-5 {
-    margin-left: 41.6666666667%;
-  }
-  .hc-offset-md-6 {
-    margin-left: 50%;
-  }
-  .hc-offset-md-7 {
-    margin-left: 58.3333333333%;
-  }
-  .hc-offset-md-8 {
-    margin-left: 66.6666666667%;
-  }
-  .hc-offset-md-9 {
-    margin-left: 75%;
-  }
-  .hc-offset-md-10 {
-    margin-left: 83.3333333333%;
-  }
-  .hc-offset-md-11 {
-    margin-left: 91.6666666667%;
-  }
-}
-@media (min-width: 992px) {
-  .hc-col-lg {
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%;
-  }
-  .hc-col-lg-auto {
-    flex: 0 0 auto;
-    width: auto;
-    max-width: 100%;
-  }
-  .hc-col-lg-1 {
-    flex: 0 0 8.3333333333%;
-    max-width: 8.3333333333%;
-  }
-  .hc-col-lg-2 {
-    flex: 0 0 16.6666666667%;
-    max-width: 16.6666666667%;
-  }
-  .hc-col-lg-3 {
-    flex: 0 0 25%;
-    max-width: 25%;
-  }
-  .hc-col-lg-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
-  }
-  .hc-col-lg-5 {
-    flex: 0 0 41.6666666667%;
-    max-width: 41.6666666667%;
-  }
-  .hc-col-lg-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-  .hc-col-lg-7 {
-    flex: 0 0 58.3333333333%;
-    max-width: 58.3333333333%;
-  }
-  .hc-col-lg-8 {
-    flex: 0 0 66.6666666667%;
-    max-width: 66.6666666667%;
-  }
-  .hc-col-lg-9 {
-    flex: 0 0 75%;
-    max-width: 75%;
-  }
-  .hc-col-lg-10 {
-    flex: 0 0 83.3333333333%;
-    max-width: 83.3333333333%;
-  }
-  .hc-col-lg-11 {
-    flex: 0 0 91.6666666667%;
-    max-width: 91.6666666667%;
-  }
-  .hc-col-lg-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  .hc-order-lg-first {
-    order: -1;
-  }
-  .hc-order-lg-last {
-    order: 13;
-  }
-  .hc-order-lg-0 {
-    order: 0;
-  }
-  .hc-order-lg-1 {
-    order: 1;
-  }
-  .hc-order-lg-2 {
-    order: 2;
-  }
-  .hc-order-lg-3 {
-    order: 3;
-  }
-  .hc-order-lg-4 {
-    order: 4;
-  }
-  .hc-order-lg-5 {
-    order: 5;
-  }
-  .hc-order-lg-6 {
-    order: 6;
-  }
-  .hc-order-lg-7 {
-    order: 7;
-  }
-  .hc-order-lg-8 {
-    order: 8;
-  }
-  .hc-order-lg-9 {
-    order: 9;
-  }
-  .hc-order-lg-10 {
-    order: 10;
-  }
-  .hc-order-lg-11 {
-    order: 11;
-  }
-  .hc-order-lg-12 {
-    order: 12;
-  }
-  .hc-offset-lg-0 {
-    margin-left: 0;
-  }
-  .hc-offset-lg-1 {
-    margin-left: 8.3333333333%;
-  }
-  .hc-offset-lg-2 {
-    margin-left: 16.6666666667%;
-  }
-  .hc-offset-lg-3 {
-    margin-left: 25%;
-  }
-  .hc-offset-lg-4 {
-    margin-left: 33.3333333333%;
-  }
-  .hc-offset-lg-5 {
-    margin-left: 41.6666666667%;
-  }
-  .hc-offset-lg-6 {
-    margin-left: 50%;
-  }
-  .hc-offset-lg-7 {
-    margin-left: 58.3333333333%;
-  }
-  .hc-offset-lg-8 {
-    margin-left: 66.6666666667%;
-  }
-  .hc-offset-lg-9 {
-    margin-left: 75%;
-  }
-  .hc-offset-lg-10 {
-    margin-left: 83.3333333333%;
-  }
-  .hc-offset-lg-11 {
-    margin-left: 91.6666666667%;
-  }
-}
-@media (min-width: 1200px) {
-  .hc-col-xl {
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%;
-  }
-  .hc-col-xl-auto {
-    flex: 0 0 auto;
-    width: auto;
-    max-width: 100%;
-  }
-  .hc-col-xl-1 {
-    flex: 0 0 8.3333333333%;
-    max-width: 8.3333333333%;
-  }
-  .hc-col-xl-2 {
-    flex: 0 0 16.6666666667%;
-    max-width: 16.6666666667%;
-  }
-  .hc-col-xl-3 {
-    flex: 0 0 25%;
-    max-width: 25%;
-  }
-  .hc-col-xl-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
-  }
-  .hc-col-xl-5 {
-    flex: 0 0 41.6666666667%;
-    max-width: 41.6666666667%;
-  }
-  .hc-col-xl-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-  .hc-col-xl-7 {
-    flex: 0 0 58.3333333333%;
-    max-width: 58.3333333333%;
-  }
-  .hc-col-xl-8 {
-    flex: 0 0 66.6666666667%;
-    max-width: 66.6666666667%;
-  }
-  .hc-col-xl-9 {
-    flex: 0 0 75%;
-    max-width: 75%;
-  }
-  .hc-col-xl-10 {
-    flex: 0 0 83.3333333333%;
-    max-width: 83.3333333333%;
-  }
-  .hc-col-xl-11 {
-    flex: 0 0 91.6666666667%;
-    max-width: 91.6666666667%;
-  }
-  .hc-col-xl-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  .hc-order-xl-first {
-    order: -1;
-  }
-  .hc-order-xl-last {
-    order: 13;
-  }
-  .hc-order-xl-0 {
-    order: 0;
-  }
-  .hc-order-xl-1 {
-    order: 1;
-  }
-  .hc-order-xl-2 {
-    order: 2;
-  }
-  .hc-order-xl-3 {
-    order: 3;
-  }
-  .hc-order-xl-4 {
-    order: 4;
-  }
-  .hc-order-xl-5 {
-    order: 5;
-  }
-  .hc-order-xl-6 {
-    order: 6;
-  }
-  .hc-order-xl-7 {
-    order: 7;
-  }
-  .hc-order-xl-8 {
-    order: 8;
-  }
-  .hc-order-xl-9 {
-    order: 9;
-  }
-  .hc-order-xl-10 {
-    order: 10;
-  }
-  .hc-order-xl-11 {
-    order: 11;
-  }
-  .hc-order-xl-12 {
-    order: 12;
-  }
-  .hc-offset-xl-0 {
-    margin-left: 0;
-  }
-  .hc-offset-xl-1 {
-    margin-left: 8.3333333333%;
-  }
-  .hc-offset-xl-2 {
-    margin-left: 16.6666666667%;
-  }
-  .hc-offset-xl-3 {
-    margin-left: 25%;
-  }
-  .hc-offset-xl-4 {
-    margin-left: 33.3333333333%;
-  }
-  .hc-offset-xl-5 {
-    margin-left: 41.6666666667%;
-  }
-  .hc-offset-xl-6 {
-    margin-left: 50%;
-  }
-  .hc-offset-xl-7 {
-    margin-left: 58.3333333333%;
-  }
-  .hc-offset-xl-8 {
-    margin-left: 66.6666666667%;
-  }
-  .hc-offset-xl-9 {
-    margin-left: 75%;
-  }
-  .hc-offset-xl-10 {
-    margin-left: 83.3333333333%;
-  }
-  .hc-offset-xl-11 {
-    margin-left: 91.6666666667%;
-  }
-}
-.hc-img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-
 .hc-icon-size--small {
   width: 1rem; /* 16px */
   height: 1rem; /* 16px */
@@ -2599,7 +1535,6 @@ html {
 }
 
 /* Focus styles */
-/* Focus should be defined once on the core button style so that it doesn't have to be repeated for the other variants */
 .hc-button:focus {
   border: var(--hc-border-style-focus);
   outline: var(--hc-outline-style-focus);
@@ -2647,7 +1582,7 @@ html {
 /* focus for secondary -- commented out for now */
 .hc-button--secondary:disabled {
   color: var(--hc-text-disabled);
-  background-color: var(--hc-white);
+  background-color: var(--hc-button-disabled-background);
   border-radius: var(--hc-border-radius-01);
   border: 2px solid var(--hc-border-color-disabled);
   cursor: not-allowed;
@@ -2682,22 +1617,18 @@ html {
 /* Icons */
 /* ======================== */
 /* ======================== */
-/* Icon sizing and position stored in _icons.scss*/
+/* Icon sizing stored in _icons.scss*/
 .hc-button.hc-button--icon-left {
-  /* padding-left: var(--hc-spacing-03); */
   padding-inline-start: var(--hc-spacing-03);
 }
 
 .hc-button.hc-button--icon-right {
-  /* padding-right: var(--hc-spacing-03); */
   padding-inline-end: var(--hc-spacing-03);
 }
 
 .hc-button.hc-button--icon-only {
   align-items: center;
   justify-content: center;
-  /* padding-left: var(--hc-spacing-03);
-  padding-right: var(--hc-spacing-03); */
   padding-inline-start: var(--hc-spacing-03);
   padding-inline-end: var(--hc-spacing-03);
 }
@@ -2735,9 +1666,6 @@ html {
   margin-bottom: 32px;
 }
 
-/* Styling for label above text field */
-/* Set to display:block so that label is above the field */
-/* Label styling moved to _typography.scss */
 /* Styling for field */
 .hc-input {
   height: 40px;
@@ -2794,7 +1722,7 @@ h2.hc-alert-heading {
 
 /* Needed to override color */
 p.hc-alert-paragraph {
-  color: var(--hc-white);
+  color: var(--hc-text-on-color);
 }
 
 /* Different styling for alert types */
@@ -2872,18 +1800,18 @@ p.hc-alert-paragraph {
 
 /* warning heading styling */
 .hc-alert.hc-alert-warning > .hc-alert-content > h2.hc-alert-heading {
-  color: var(--hc-black);
+  color: var(--hc-text-primary);
 }
 
 /* warning paragraph styling */
 .hc-alert.hc-alert-warning > .hc-alert-content > p.hc-alert-paragraph {
-  color: var(--hc-black);
+  color: var(--hc-text-primary);
 }
 
 /* Warning close button styling */
 .hc-alert.hc-alert-warning > .hc-close {
-  color: var(--hc-text-on-color);
-  background-color: var(--hc-support-warning-inverse);
+  color: var(--hc-text-primary);
+  background-color: var(--hc-support-warning);
   border-color: var(--hc-black);
 }
 
@@ -2895,7 +1823,7 @@ p.hc-alert-paragraph {
   background-color: var(--hc-support-warning--active);
 }
 
-/*Info styling? We maybe can delete this one, Primary alert serves this purpose */
+/*Info styling */
 .hc-alert-info {
   background-color: var(--hc-support-info);
 }
@@ -2967,7 +1895,7 @@ dialog.hc-modal::backdrop {
 
 /* Div wrapping accordion button with its expandable content */
 .hc-accordion-item {
-  margin-bottom: var(--hc-spacing-02);
+  margin-bottom: var(--hc-spacing-04);
 }
 
 /* Class attached to button to make the accordion clickable */
@@ -2981,9 +1909,7 @@ dialog.hc-modal::backdrop {
   text-align: left;
   cursor: pointer;
   padding: var(--hc-spacing-04);
-  /* transition: background-color 0.08s ease-in-out; */
   min-width: 100%;
-  /* border: 4px solid transparent; */
   border-radius: 4px;
   display: flex;
   flex-direction: row;
@@ -3016,7 +1942,7 @@ dialog.hc-modal::backdrop {
 
 /* Positioning for content inside the accordion */
 .hc-accordion-content {
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: var(--hc-font-family);
   padding-top: var(--hc-spacing-04);
   padding-left: var(--hc-spacing-04);
   padding-right: var(--hc-spacing-07);
@@ -3026,7 +1952,6 @@ dialog.hc-modal::backdrop {
 }
 
 /* Class added by JS when clicked */
-/* JS changes from display:none to display:block, maybe that can be done in this class instead of JS? */
 .hc-accordion-content--expanded {
   padding-bottom: var(--hc-spacing-03);
 }
@@ -3084,7 +2009,7 @@ https://github.com/alphagov/govuk-frontend/blob/a2ff2e41967a38785aaef33135dc7e41
 /* https://www.sarasoueidan.com/blog/inclusively-hiding-and-styling-checkboxes-and-radio-buttons/ */
 /* wrapper for input and label */
 /* includes min-height for consistent sizing of form elements */
-/* margin-bottom adds space between items (this might be changed to gap) */
+/* margin-bottom adds space between items */
 /* position: relative so that absolute positioning can be used for label and input */
 .hc-checkboxes {
   margin-top: var(--hc-spacing-05);
@@ -3162,15 +2087,10 @@ https://github.com/alphagov/govuk-frontend/blob/a2ff2e41967a38785aaef33135dc7e41
   border: solid;
   border-width: 0 0 4px 4px;
   /* Fix bug in IE11 caused by transform rotate (-45deg). */
-  /* See: alphagov/govuk_elements/issues/518 */
   border-top-color: transparent;
   opacity: 0;
   background: transparent;
   cursor: pointer;
-}
-
-.hc-checkbox__hint {
-  padding-left: var(--hc-spacing-03);
 }
 
 /* Focus state */
@@ -3193,14 +2113,14 @@ https://github.com/alphagov/govuk-frontend/blob/a2ff2e41967a38785aaef33135dc7e41
   border: var(--hc-border-brand);
 }
 
-/* Glues the input field and button toether */
+/* Glues the input field and button together */
 .hc-search-wrapper {
   display: flex;
   flex-direction: row;
   gap: var(--hc-spacing-00);
 }
 
-/* Stylin for font typed into field */
+/* Styling for font typed into field */
 input.hc-input[type=search] {
   font-family: var(--hc-font-family);
   font-size: var(--hc-font-body-size-regular);
@@ -3210,21 +2130,11 @@ input.hc-input[type=search] {
   line-height: 100%;
 }
 
-/* input.hc-input:focus {
-  border: var(--hc-border-style-focus);
-  outline: var(--hc-outline-style-focus);
-} */
 /* Un-rounds the corners of input field to be flush against button */
 .hc-input-search {
   border-radius: 4px 0px 0px 4px;
 }
 
-/* Focus styling */
-/* Commented out because it's causing layout shift and don't know why */
-/* .hc-input-search:focus {
-  border: 3px solid var(--hc-background-brand); //Makes larger border similar to normal input focus styling 
- outline: none;  //Overrides outline in focus from hc-input 
- } */
 /* Un-rounds the corners of button to be flush against input field */
 .hc-button-search {
   border-radius: 0px 4px 4px 0px;
@@ -3285,14 +2195,12 @@ input.hc-input[type=search] {
 
 .hc-skiplink:focus:hover {
   background-color: var(--hc-red-500);
+  color: var(--hc-text-on-color);
 }
 
 .hc-skiplink:focus:active {
   background-color: var(--hc-red-600);
-}
-
-a.hc-skiplink:hover {
-  color: var(--hc-gray-10) !important;
+  color: var(--hc-text-on-color);
 }
 
 a.hc-skiplink:visited {
@@ -3306,9 +2214,6 @@ a.hc-skiplink:visited {
   padding: var(--hc-spacing-02);
   border: 2px solid var(--hc-field-border-color);
   padding-right: var(--hc-spacing-07);
-  /* width: 100%;  */
-  /* setting width 100% would match govuk styling, textarea is set to 100% width and actual width is handled by parent container */
-  /* Downside is that dev would need to know to include a parent container to control width */
 }
 
 /* error state for field, adds border and icon*/
@@ -3337,7 +2242,6 @@ a.hc-skiplink:visited {
   padding-right: var(--hc-spacing-03);
   border: 2px solid var(--hc-field-border-color);
   border-radius: var(--hc-border-radius-02);
-  max-width: 100%;
   background-color: var(--hc-white);
   min-width: 11.5em;
   max-width: 100%;
@@ -3437,7 +2341,7 @@ a.hc-skiplink:visited {
 .hc-radios__label::after {
   content: "";
   position: absolute;
-  /* position or adio */
+  /* position of radio */
   top: var(--hc-spacing-04);
   left: var(--hc-spacing-04);
   width: 0px;
@@ -3459,16 +2363,8 @@ a.hc-skiplink:visited {
 .hc-radios__input:focus + .hc-radios__label::before {
   border-width: 4px;
   outline: var(--hc-outline-style-focus);
-  /* outline: 3px solid var(--hc-background-brand); */
   outline-offset: 3px;
   border: 4px solid var(--hc-black);
-}
-
-/* When in an explicit forced-color mode, we can use a different system
-  color for the outline to better match focus states of native controls */
-/* @media screen and (forced-colors: active), (-ms-high-contrast: active) {
-    outline-color: var(--hc-outline-style-focus--alt);
-  }
 }
 
 /* Selected state */

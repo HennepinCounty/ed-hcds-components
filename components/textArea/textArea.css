@@ -5,9 +5,6 @@
   padding: var(--hc-spacing-02);
   border: 2px solid var(--hc-field-border-color);
   padding-right: var(--hc-spacing-07);
-  /* width: 100%;  */
-  /* setting width 100% would match govuk styling, textarea is set to 100% width and actual width is handled by parent container */
-  /* Downside is that dev would need to know to include a parent container to control width */
 }
 
 /* error state for field, adds border and icon*/

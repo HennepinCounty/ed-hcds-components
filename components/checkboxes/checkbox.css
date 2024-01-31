@@ -8,7 +8,7 @@
 
 /* wrapper for input and label */
 /* includes min-height for consistent sizing of form elements */
-/* margin-bottom adds space between items (this might be changed to gap) */
+/* margin-bottom adds space between items */
 /* position: relative so that absolute positioning can be used for label and input */
 
 .hc-checkboxes {
@@ -91,15 +91,10 @@
   border: solid;
   border-width: 0 0 4px 4px;
   /* Fix bug in IE11 caused by transform rotate (-45deg). */
-  /* See: alphagov/govuk_elements/issues/518 */
   border-top-color: transparent;
   opacity: 0;
   background: transparent;
   cursor: pointer;
-}
-
-.hc-checkbox__hint {
-  padding-left: var(--hc-spacing-03);
 }
 
 /* Focus state */

@@ -21,11 +21,6 @@
   margin-bottom: 32px;
 }
 
-/* Styling for label above text field */
-/* Set to display:block so that label is above the field */
-
-/* Label styling moved to _typography.scss */
-
 /* Styling for field */
 .hc-input {
   height: 40px;

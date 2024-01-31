@@ -25,7 +25,7 @@
   --hc-support-success--active: var(--hc-green-500);
   --hc-support-success-inverse: var(--hc-green-200);
   --hc-support-warning: var(--hc-yellow-200);
-  --hc-support-warning--hover: var(--hc-yellow-500);
+  --hc-support-warning--hover: var(--hc-yellow-300);
   --hc-support-warning--active: var(--hc-yellow-400);
   --hc-support-warning-inverse: var(--hc-yellow-600);
   --hc-support-error: var(--hc-red-400);
@@ -34,7 +34,6 @@
   --hc-support-error-inverse: var(--hc-red-200);
 
   // Border colors
-  // These need to be reconciled with the _borderStyle.scss primitives
 
   //use for bright color in focus states
   --hc-border-color-focus-01: var(--hc-white);
@@ -47,8 +46,6 @@
   --hc-border-color-disabled: var(--hc-gray-300);
   --hc-border-color-error: var(--hc-support-error);
   --hc-border-color-inverse: var(--hc-gray-100);
-
-  //Outline colors
 
   // Button
   --hc-button-primary: var(--hc-background-brand);

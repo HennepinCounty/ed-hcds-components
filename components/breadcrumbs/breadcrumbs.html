@@ -11,27 +11,6 @@
     <link rel="stylesheet" href="breadcrumbs.css" />
   </head>
 
-  <!-- 
-  suggest removing nav from breadcrumb wrapper per GovUK research finding 
-  -too many nav elements on a single page creates confusion and 
-  - some nav elements can be determined by their context and don't need to be tagged as nav (such as links in footer)
-  Their implementation doesn't show the current page, only parent pages, so theydon't use aria-current="page"
-  
-  - https://insidegovuk.blog.gov.uk/2013/07/03/rethinking-navigation/
-- https://github.com/alphagov/static/pull/238
-- https://github.com/alphagov/govuk-frontend/issues/1604#issuecomment-539524177
-- https://github.com/alphagov/govuk-design-system-backlog/issues/33
-- https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html
-- https://tink.uk/enhancing-aria-landmarks-with-aria-labelledby/
-- https://tink.uk/using-the-aria-current-attribute/
-- https://github.com/alphagov/govuk-frontend/issues/4451
-- https://github.com/alphagov/govuk_publishing_components/pull/2045 
--->
-
-  <!-- 
-  might in future size for chevron in rem per
-  https://github.com/alphagov/govuk-design-system-backlog/issues/33 -->
-
   <body class="hc-padding-x-03">
     <h1 style="margin-bottom: 2rem">Breadcrumbs</h1>
 
@@ -46,34 +25,6 @@
           aria-current="page"
         >
           Data
-        </li>
-      </ol>
-    </nav>
-
-    <!-- =============================================== -->
-    <!-- =============================================== -->
-    <!-- This is an example with longer breadcrumbs, not a new variant -->
-    <!-- =============================================== -->
-    <!-- =============================================== -->
-
-    <h3>Very long breadcrumbs</h3>
-
-    <nav aria-label="breadcrumb">
-      <ol class="hc-breadcrumb__list">
-        <li class="hc-breadcrumbs__list-item">
-          <a href="#">Hennepin County</a>
-        </li>
-        <li class="hc-breadcrumbs__list-item">
-          <a href="#">Work with Hennepin County</a>
-        </li>
-        <li class="hc-breadcrumbs__list-item">
-          <a href="#">Contracting with Hennepin County</a>
-        </li>
-        <li
-          class="hc-breadcrumbs__list-item hc-breadcrumbs__list-item--active"
-          aria-current="page"
-        >
-          Building maintenance services roster program
         </li>
       </ol>
     </nav>
