@@ -68,79 +68,6 @@ h6 {
   isolation: isolate;
 }
 
-/*
-
-based on https://github.com/David-Way/govuk-frontend/blob/8f94319fc5d5d372c257d7a1b35841e994255586/src/helpers/_visually-hidden.scss
-
-/// @link https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-///   - Hiding Content for Accessibility, Jonathan Snook, February 2011
-/// @link https://github.com/h5bp/html5-boilerplate/blob/9f13695d21ff92c55c78dfa9f16bb02a1b6e911f/src/css/main.css#L121-L158
-///   - h5bp/html5-boilerplate - Thanks!
-///
-/// @param {Boolean} $important [true] - Whether to mark as `!important`
-  @link https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-      -Beware smushed off-screen accessible text
-  // For long content, line feeds are not interpreted as spaces and small width
-// causes content to wrap 1 word per line:
-// https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-*/
-.hc-visually-hidden {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  margin: -1px !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  clip: rect(0 0 0 0) !important;
-  -webkit-clip-path: inset(50%) !important;
-          clip-path: inset(50%) !important;
-  border: 0 !important;
-  /*
-   For long content, line feeds are not interpreted as spaces and small width
-   causes content to wrap 1 word per line:
-   https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-  */
-  white-space: nowrap !important;
-}
-
-.hc-visually-hidden-focusable {
-  /*
-  /// Hide an element visually, but have it available for screen readers whilst
-  /// allowing the element to be focused when navigated to via the keyboard (e.g.
-  /// for the skip link)
-  ///
-  /// This is slightly less opinionated about borders and padding to make it
-  /// easier to style the focussed element.
-  */
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0 0 0 0) !important;
-  -webkit-clip-path: inset(50%) !important;
-          clip-path: inset(50%) !important;
-  /*
-  // For long content, line feeds are not interpreted as spaces and small width
-  // causes content to wrap 1 word per line:
-  // https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-  */
-  white-space: nowrap !important;
-}
-
-.hc-visually-hidden-focusable:active,
-.hc-visually-hidden-focusable:focus {
-  position: static !important;
-  width: auto !important;
-  height: auto !important;
-  margin: inherit !important;
-  overflow: visible !important;
-  clip: auto !important;
-  -webkit-clip-path: none !important;
-          clip-path: none !important;
-  white-space: inherit !important;
-}
-
 :root {
   --hc-white: #ffffff;
   --hc-black: #000000;
@@ -1608,7 +1535,6 @@ ol + .hc-heading-s,
 }
 
 /* Focus styles */
-/* Focus should be defined once on the core button style so that it doesn't have to be repeated for the other variants */
 .hc-button:focus {
   border: var(--hc-border-style-focus);
   outline: var(--hc-outline-style-focus);
@@ -1691,22 +1617,18 @@ ol + .hc-heading-s,
 /* Icons */
 /* ======================== */
 /* ======================== */
-/* Icon sizing and position stored in _icons.scss*/
+/* Icon sizing stored in _icons.scss*/
 .hc-button.hc-button--icon-left {
-  /* padding-left: var(--hc-spacing-03); */
   padding-inline-start: var(--hc-spacing-03);
 }
 
 .hc-button.hc-button--icon-right {
-  /* padding-right: var(--hc-spacing-03); */
   padding-inline-end: var(--hc-spacing-03);
 }
 
 .hc-button.hc-button--icon-only {
   align-items: center;
   justify-content: center;
-  /* padding-left: var(--hc-spacing-03);
-  padding-right: var(--hc-spacing-03); */
   padding-inline-start: var(--hc-spacing-03);
   padding-inline-end: var(--hc-spacing-03);
 }
@@ -1744,9 +1666,6 @@ ol + .hc-heading-s,
   margin-bottom: 32px;
 }
 
-/* Styling for label above text field */
-/* Set to display:block so that label is above the field */
-/* Label styling moved to _typography.scss */
 /* Styling for field */
 .hc-input {
   height: 40px;
@@ -1803,7 +1722,7 @@ h2.hc-alert-heading {
 
 /* Needed to override color */
 p.hc-alert-paragraph {
-  color: var(--hc-white);
+  color: var(--hc-text-on-color);
 }
 
 /* Different styling for alert types */
@@ -1881,12 +1800,12 @@ p.hc-alert-paragraph {
 
 /* warning heading styling */
 .hc-alert.hc-alert-warning > .hc-alert-content > h2.hc-alert-heading {
-  color: var(--hc-black);
+  color: var(--hc-text-primary);
 }
 
 /* warning paragraph styling */
 .hc-alert.hc-alert-warning > .hc-alert-content > p.hc-alert-paragraph {
-  color: var(--hc-black);
+  color: var(--hc-text-primary);
 }
 
 /* Warning close button styling */
@@ -1904,7 +1823,7 @@ p.hc-alert-paragraph {
   background-color: var(--hc-support-warning--active);
 }
 
-/*Info styling? We maybe can delete this one, Primary alert serves this purpose */
+/*Info styling */
 .hc-alert-info {
   background-color: var(--hc-support-info);
 }
@@ -1990,9 +1909,7 @@ dialog.hc-modal::backdrop {
   text-align: left;
   cursor: pointer;
   padding: var(--hc-spacing-04);
-  /* transition: background-color 0.08s ease-in-out; */
   min-width: 100%;
-  /* border: 4px solid transparent; */
   border-radius: 4px;
   display: flex;
   flex-direction: row;
@@ -2025,7 +1942,7 @@ dialog.hc-modal::backdrop {
 
 /* Positioning for content inside the accordion */
 .hc-accordion-content {
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: var(--hc-font-family);
   padding-top: var(--hc-spacing-04);
   padding-left: var(--hc-spacing-04);
   padding-right: var(--hc-spacing-07);
@@ -2035,7 +1952,6 @@ dialog.hc-modal::backdrop {
 }
 
 /* Class added by JS when clicked */
-/* JS changes from display:none to display:block, maybe that can be done in this class instead of JS? */
 .hc-accordion-content--expanded {
   padding-bottom: var(--hc-spacing-03);
 }
@@ -2093,7 +2009,7 @@ https://github.com/alphagov/govuk-frontend/blob/a2ff2e41967a38785aaef33135dc7e41
 /* https://www.sarasoueidan.com/blog/inclusively-hiding-and-styling-checkboxes-and-radio-buttons/ */
 /* wrapper for input and label */
 /* includes min-height for consistent sizing of form elements */
-/* margin-bottom adds space between items (this might be changed to gap) */
+/* margin-bottom adds space between items */
 /* position: relative so that absolute positioning can be used for label and input */
 .hc-checkboxes {
   margin-top: var(--hc-spacing-05);
@@ -2171,15 +2087,10 @@ https://github.com/alphagov/govuk-frontend/blob/a2ff2e41967a38785aaef33135dc7e41
   border: solid;
   border-width: 0 0 4px 4px;
   /* Fix bug in IE11 caused by transform rotate (-45deg). */
-  /* See: alphagov/govuk_elements/issues/518 */
   border-top-color: transparent;
   opacity: 0;
   background: transparent;
   cursor: pointer;
-}
-
-.hc-checkbox__hint {
-  padding-left: var(--hc-spacing-03);
 }
 
 /* Focus state */
@@ -2202,14 +2113,14 @@ https://github.com/alphagov/govuk-frontend/blob/a2ff2e41967a38785aaef33135dc7e41
   border: var(--hc-border-brand);
 }
 
-/* Glues the input field and button toether */
+/* Glues the input field and button together */
 .hc-search-wrapper {
   display: flex;
   flex-direction: row;
   gap: var(--hc-spacing-00);
 }
 
-/* Stylin for font typed into field */
+/* Styling for font typed into field */
 input.hc-input[type=search] {
   font-family: var(--hc-font-family);
   font-size: var(--hc-font-body-size-regular);
@@ -2219,21 +2130,11 @@ input.hc-input[type=search] {
   line-height: 100%;
 }
 
-/* input.hc-input:focus {
-  border: var(--hc-border-style-focus);
-  outline: var(--hc-outline-style-focus);
-} */
 /* Un-rounds the corners of input field to be flush against button */
 .hc-input-search {
   border-radius: 4px 0px 0px 4px;
 }
 
-/* Focus styling */
-/* Commented out because it's causing layout shift and don't know why */
-/* .hc-input-search:focus {
-  border: 3px solid var(--hc-background-brand); //Makes larger border similar to normal input focus styling 
- outline: none;  //Overrides outline in focus from hc-input 
- } */
 /* Un-rounds the corners of button to be flush against input field */
 .hc-button-search {
   border-radius: 0px 4px 4px 0px;
@@ -2294,14 +2195,12 @@ input.hc-input[type=search] {
 
 .hc-skiplink:focus:hover {
   background-color: var(--hc-red-500);
+  color: var(--hc-text-on-color);
 }
 
 .hc-skiplink:focus:active {
   background-color: var(--hc-red-600);
-}
-
-a.hc-skiplink:hover {
-  color: var(--hc-gray-10) !important;
+  color: var(--hc-text-on-color);
 }
 
 a.hc-skiplink:visited {
@@ -2315,9 +2214,6 @@ a.hc-skiplink:visited {
   padding: var(--hc-spacing-02);
   border: 2px solid var(--hc-field-border-color);
   padding-right: var(--hc-spacing-07);
-  /* width: 100%;  */
-  /* setting width 100% would match govuk styling, textarea is set to 100% width and actual width is handled by parent container */
-  /* Downside is that dev would need to know to include a parent container to control width */
 }
 
 /* error state for field, adds border and icon*/
@@ -2346,7 +2242,6 @@ a.hc-skiplink:visited {
   padding-right: var(--hc-spacing-03);
   border: 2px solid var(--hc-field-border-color);
   border-radius: var(--hc-border-radius-02);
-  max-width: 100%;
   background-color: var(--hc-white);
   min-width: 11.5em;
   max-width: 100%;
@@ -2446,7 +2341,7 @@ a.hc-skiplink:visited {
 .hc-radios__label::after {
   content: "";
   position: absolute;
-  /* position or adio */
+  /* position of radio */
   top: var(--hc-spacing-04);
   left: var(--hc-spacing-04);
   width: 0px;
@@ -2468,16 +2363,8 @@ a.hc-skiplink:visited {
 .hc-radios__input:focus + .hc-radios__label::before {
   border-width: 4px;
   outline: var(--hc-outline-style-focus);
-  /* outline: 3px solid var(--hc-background-brand); */
   outline-offset: 3px;
   border: 4px solid var(--hc-black);
-}
-
-/* When in an explicit forced-color mode, we can use a different system
-  color for the outline to better match focus states of native controls */
-/* @media screen and (forced-colors: active), (-ms-high-contrast: active) {
-    outline-color: var(--hc-outline-style-focus--alt);
-  }
 }
 
 /* Selected state */

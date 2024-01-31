@@ -10,7 +10,6 @@
   padding-right: var(--hc-spacing-03);
   border: 2px solid var(--hc-field-border-color);
   border-radius: var(--hc-border-radius-02);
-  max-width: 100%;
   background-color: var(--hc-white);
   min-width: 11.5em;
   max-width: 100%;

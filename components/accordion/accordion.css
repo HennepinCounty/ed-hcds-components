@@ -21,9 +21,7 @@
   text-align: left;
   cursor: pointer;
   padding: var(--hc-spacing-04);
-  /* transition: background-color 0.08s ease-in-out; */
   min-width: 100%;
-  /* border: 4px solid transparent; */
   border-radius: 4px;
   display: flex;
   flex-direction: row;
@@ -56,7 +54,7 @@
 
 /* Positioning for content inside the accordion */
 .hc-accordion-content {
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: var(--hc-font-family);
   padding-top: var(--hc-spacing-04);
   padding-left: var(--hc-spacing-04);
   padding-right: var(--hc-spacing-07);
@@ -66,7 +64,6 @@
 }
 
 /* Class added by JS when clicked */
-/* JS changes from display:none to display:block, maybe that can be done in this class instead of JS? */
 .hc-accordion-content--expanded {
   padding-bottom: var(--hc-spacing-03);
 }

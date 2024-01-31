@@ -21,7 +21,7 @@ h2.hc-alert-heading {
 
 /* Needed to override color */
 p.hc-alert-paragraph {
-  color: var(--hc-white);
+  color: var(--hc-text-on-color);
 }
 
 /* Different styling for alert types */
@@ -95,12 +95,12 @@ p.hc-alert-paragraph {
 
 /* warning heading styling */
 .hc-alert.hc-alert-warning > .hc-alert-content > h2.hc-alert-heading {
-  color: var(--hc-black);
+  color: var(--hc-text-primary);
 }
 
 /* warning paragraph styling */
 .hc-alert.hc-alert-warning > .hc-alert-content > p.hc-alert-paragraph {
-  color: var(--hc-black);
+  color: var(--hc-text-primary);
 }
 
 /* Warning close button styling */
@@ -116,7 +116,7 @@ p.hc-alert-paragraph {
   background-color: var(--hc-support-warning--active);
 }
 
-/*Info styling? We maybe can delete this one, Primary alert serves this purpose */
+/*Info styling */
 .hc-alert-info {
   background-color: var(--hc-support-info);
 }
