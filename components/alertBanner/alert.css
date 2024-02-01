@@ -32,13 +32,13 @@ p.hc-alert-paragraph {
 }
 
 /* Default styling for the close button */
-.hc-alert .hc-close {
+.hc-alert .hc-alert-close-button {
   color: inherit;
   border-color: var(--hc-white);
 }
 
 /* IDK what this does, I think it's related to the X icon in the close button */
-.hc-alert .hc-close span[aria-hidden] {
+.hc-alert .hc-alert-close-button span[aria-hidden] {
   font-size: 1.8rem;
   margin-top: -0.2rem;
 }
@@ -59,15 +59,15 @@ p.hc-alert-paragraph {
 }
 
 /* success close button styling */
-.hc-alert.hc-alert-success > .hc-close {
+.hc-alert.hc-alert-success > .hc-alert-close-button {
   color: var(--hc-black);
   border-color: var(--hc-black);
   background-color: var(--hc-support-success);
 }
-.hc-alert.hc-alert-success > .hc-close:hover {
+.hc-alert.hc-alert-success > .hc-alert-close-button:hover {
   background-color: var(--hc-support-success--hover);
 }
-.hc-alert.hc-alert-success > .hc-close:active {
+.hc-alert.hc-alert-success > .hc-alert-close-button:active {
   background-color: var(--hc-support-success--active);
   color: var(--hc-text-on-color);
 }
@@ -78,13 +78,13 @@ p.hc-alert-paragraph {
 }
 
 /* Danger close button styling */
-.hc-alert.hc-alert-danger > .hc-close {
+.hc-alert.hc-alert-danger > .hc-alert-close-button {
   background-color: var(--hc-support-error);
 }
-.hc-alert.hc-alert-danger > .hc-close:hover {
+.hc-alert.hc-alert-danger > .hc-alert-close-button:hover {
   background-color: var(--hc-support-error--hover);
 }
-.hc-alert.hc-alert-danger > .hc-close:active {
+.hc-alert.hc-alert-danger > .hc-alert-close-button:active {
   background-color: var(--hc-support-error--active);
 }
 
@@ -104,15 +104,15 @@ p.hc-alert-paragraph {
 }
 
 /* Warning close button styling */
-.hc-alert.hc-alert-warning > .hc-close {
+.hc-alert.hc-alert-warning > .hc-alert-close-button {
   color: var(--hc-text-primary);
   background-color: var(--hc-support-warning);
   border-color: var(--hc-black);
 }
-.hc-alert.hc-alert-warning > .hc-close:hover {
+.hc-alert.hc-alert-warning > .hc-alert-close-button:hover {
   background-color: var(--hc-support-warning--hover);
 }
-.hc-alert.hc-alert-warning > .hc-close:active {
+.hc-alert.hc-alert-warning > .hc-alert-close-button:active {
   background-color: var(--hc-support-warning--active);
 }
 
@@ -132,16 +132,16 @@ p.hc-alert-paragraph {
 }
 
 /* info close button styling */
-.hc-alert.hc-alert-info > .hc-close {
+.hc-alert.hc-alert-info > .hc-alert-close-button {
   color: var(--hc-black);
   background-color: var(--hc-support-info);
   border-color: var(--hc-black);
 }
-.hc-alert.hc-alert-info > .hc-close:hover {
+.hc-alert.hc-alert-info > .hc-alert-close-button:hover {
   color: var(--hc-white);
   background-color: var(--hc-support-info--hover);
 }
-.hc-alert.hc-alert-info > .hc-close:active {
+.hc-alert.hc-alert-info > .hc-alert-close-button:active {
   color: var(--hc-white);
   background-color: var(--hc-support-info--active);
 }

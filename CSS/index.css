@@ -1570,13 +1570,11 @@ ol + .hc-heading-s,
 .hc-button--secondary:hover {
   color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-hover);
-  border: 2px solid var(--hc-button-secondary-border-hover);
 }
 
 .hc-button--secondary:active {
   color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-active);
-  border: 2px solid var(--hc-button-secondary-border-active);
 }
 
 /* focus for secondary -- commented out for now */
@@ -2012,14 +2010,14 @@ https://github.com/alphagov/govuk-frontend/blob/a2ff2e41967a38785aaef33135dc7e41
 /* margin-bottom adds space between items */
 /* position: relative so that absolute positioning can be used for label and input */
 .hc-checkboxes {
-  margin-top: var(--hc-spacing-05);
+  margin-top: var(--hc-spacing-03);
 }
 
 .hc-checkbox__item {
   display: block;
   position: relative;
-  min-height: 44px;
-  padding-left: 44px; /* This should equal width of the checkbox size*/
+  min-height: 36px;
+  padding-left: 36px; /* This should equal width of the checkbox size*/
   margin-bottom: var(--hc-spacing-05);
   clear: left;
 }
@@ -2035,8 +2033,8 @@ https://github.com/alphagov/govuk-frontend/blob/a2ff2e41967a38785aaef33135dc7e41
   top: 1px;
   left: 1px;
   z-index: 1;
-  width: 44px;
-  height: 44px;
+  width: 36px;
+  height: 36px;
   margin: 0;
   opacity: 0;
   cursor: pointer;
@@ -2057,16 +2055,16 @@ https://github.com/alphagov/govuk-frontend/blob/a2ff2e41967a38785aaef33135dc7e41
 }
 
 /* [ ] Check box styling */
-/* Should update to 44px but will need to redo the checkbox and label padddins */
+/* Should update to 36px but will need to redo the checkbox and label padddins */
 .hc-checkbox__label::before {
   content: "";
   box-sizing: border-box;
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 44px;
-  height: 44px;
-  border: var(--hc-border-width-medium) solid var(--hc-border-color-strong);
+  width: 36px;
+  height: 36px;
+  border: var(--hc-border-width-small) solid var(--hc-border-color-strong);
   background: var(--hc-transparent);
   border-radius: 4px;
   cursor: pointer;
@@ -2078,9 +2076,9 @@ https://github.com/alphagov/govuk-frontend/blob/a2ff2e41967a38785aaef33135dc7e41
   content: "";
   box-sizing: border-box;
   position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 24px;
+  top: 7px;
+  left: 7px;
+  width: 22px;
   height: 14px;
   color: white;
   transform: rotate(-45deg);
@@ -2242,14 +2240,16 @@ a.hc-skiplink:visited {
   padding-right: var(--hc-spacing-03);
   border: 2px solid var(--hc-field-border-color);
   border-radius: var(--hc-border-radius-02);
-  background-color: var(--hc-white);
+  /* background-color: var(--hc-white); */
   min-width: 11.5em;
   max-width: 100%;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: url(./icons/carbon_chevron-down.svg) no-repeat;
-  background-position: right 5px top 50%;
+  background: no-repeat right;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg width%3D%2224%22 height%3D%2224%22 viewBox%3D%220 0 32 32%22 fill%3D%22none%22 xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath d%3D%22M16 22L6 12L7.4 10.6L16 19.2L24.6 10.6L26 12L16 22Z%22 fill%3D%22black%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-color: transparent;
+  background-size: 32px;
 }
 
 .hc-select:focus {
@@ -2281,9 +2281,9 @@ a.hc-skiplink:visited {
   font-size: var(--hc-font-body-size-regular);
   display: block;
   position: relative;
-  min-height: 40px;
+  min-height: 36px;
   margin-bottom: var(--hc-spacing-05);
-  padding-left: 40px;
+  padding-left: 36px;
   clear: left;
 }
 
@@ -2299,8 +2299,8 @@ a.hc-skiplink:visited {
   z-index: 1;
   top: 1px;
   left: 1px;
-  width: 44px;
-  height: 44px;
+  width: 36px;
+  height: 36px;
   margin: 0;
   opacity: 0;
   cursor: pointer;
@@ -2309,9 +2309,10 @@ a.hc-skiplink:visited {
 /* This pushes input text to the right to make room for radios */
 .hc-radios__label {
   font-size: var(--hc-font-fieldLabel-size-regular);
+  font-weight: 400;
   display: inline-block;
   margin-bottom: 0;
-  padding-top: 8px;
+  padding-top: 0px;
   padding-left: var(--hc-spacing-04);
   padding-right: var(--hc-spacing-04);
   padding-bottom: var(--hc-spacing-01);
@@ -2328,9 +2329,9 @@ a.hc-skiplink:visited {
   position: absolute;
   top: 0;
   left: 0;
-  width: 44px;
-  height: 44px;
-  border: var(--hc-border-width-medium) solid var(--hc-border-color-strong);
+  width: 36px;
+  height: 36px;
+  border: var(--hc-border-width-small) solid var(--hc-border-color-strong);
   border-radius: 50%;
   background: transparent;
 }
@@ -2342,12 +2343,12 @@ a.hc-skiplink:visited {
   content: "";
   position: absolute;
   /* position of radio */
-  top: var(--hc-spacing-04);
-  left: var(--hc-spacing-04);
+  top: 10px;
+  left: 10px;
   width: 0px;
   height: 0px;
   /* defines size of radio */
-  border: 10px solid var(--hc-border-color-strong);
+  border: 8px solid var(--hc-border-color-strong);
   border-radius: 50%;
   opacity: 0;
   background: currentcolor;
@@ -2361,10 +2362,10 @@ a.hc-skiplink:visited {
 
 /* Focused state */
 .hc-radios__input:focus + .hc-radios__label::before {
-  border-width: 4px;
+  border-width: 2px;
   outline: var(--hc-outline-style-focus);
   outline-offset: 3px;
-  border: 4px solid var(--hc-black);
+  border: 2px solid var(--hc-black);
 }
 
 /* Selected state */
