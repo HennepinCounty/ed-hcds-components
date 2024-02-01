@@ -646,6 +646,7 @@ ol + .hc-heading-s,
     0px -4px 0px 0px var(--hc-background-brand) inset,
     0px 4px 0px 0px var(--hc-background-brand) inset,
     4px 0px 0px 0px var(--hc-background-brand) inset;
+  --hc-shadow-focus-outer-ring: 0px 0px 0px 4px var(--hc-white);
 }
 
 :root {
@@ -670,7 +671,7 @@ ol + .hc-heading-s,
   --hc-border-style-focus: 2px solid var(--hc-white);
   --hc-border-style-focus-alternate: 2px solid var(--hc-background-brand);
   --hc-border-style-transparent: 2px solid var(--hc-transparent);
-  --hc-outline-style-focus: var(--hc-background-brand) solid 3px;
+  --hc-outline-style-focus: var(--hc-background-brand) solid 4px;
 }
 
 :root {
@@ -1731,13 +1732,19 @@ p.hc-alert-paragraph {
 }
 
 /* Default styling for the close button */
-.hc-alert .hc-close {
+.hc-alert .hc-alert-close-button {
   color: inherit;
   border-color: var(--hc-white);
 }
 
+.hc-alert .hc-alert-close-button:focus {
+  border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
+  box-shadow: var(--hc-shadow-focus-outer-ring);
+}
+
 /* IDK what this does, I think it's related to the X icon in the close button */
-.hc-alert .hc-close span[aria-hidden] {
+.hc-alert .hc-alert-close-button span[aria-hidden] {
   font-size: 1.8rem;
   margin-top: -0.2rem;
 }
@@ -1758,19 +1765,24 @@ p.hc-alert-paragraph {
 }
 
 /* success close button styling */
-.hc-alert.hc-alert-success > .hc-close {
+.hc-alert.hc-alert-success > .hc-alert-close-button {
   color: var(--hc-black);
   border-color: var(--hc-black);
   background-color: var(--hc-support-success);
 }
 
-.hc-alert.hc-alert-success > .hc-close:hover {
+.hc-alert.hc-alert-success > .hc-alert-close-button:hover {
   background-color: var(--hc-support-success--hover);
 }
 
-.hc-alert.hc-alert-success > .hc-close:active {
+.hc-alert.hc-alert-success > .hc-alert-close-button:active {
   background-color: var(--hc-support-success--active);
   color: var(--hc-text-on-color);
+}
+
+.hc-alert.hc-alert-success > .hc-alert-close-button:focus {
+  border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
 }
 
 /*Danger styling */
@@ -1779,15 +1791,15 @@ p.hc-alert-paragraph {
 }
 
 /* Danger close button styling */
-.hc-alert.hc-alert-danger > .hc-close {
+.hc-alert.hc-alert-danger > .hc-alert-close-button {
   background-color: var(--hc-support-error);
 }
 
-.hc-alert.hc-alert-danger > .hc-close:hover {
+.hc-alert.hc-alert-danger > .hc-alert-close-button:hover {
   background-color: var(--hc-support-error--hover);
 }
 
-.hc-alert.hc-alert-danger > .hc-close:active {
+.hc-alert.hc-alert-danger > .hc-alert-close-button:active {
   background-color: var(--hc-support-error--active);
 }
 
@@ -1807,18 +1819,23 @@ p.hc-alert-paragraph {
 }
 
 /* Warning close button styling */
-.hc-alert.hc-alert-warning > .hc-close {
+.hc-alert.hc-alert-warning > .hc-alert-close-button {
   color: var(--hc-text-primary);
   background-color: var(--hc-support-warning);
   border-color: var(--hc-black);
 }
 
-.hc-alert.hc-alert-warning > .hc-close:hover {
+.hc-alert.hc-alert-warning > .hc-alert-close-button:hover {
   background-color: var(--hc-support-warning--hover);
 }
 
-.hc-alert.hc-alert-warning > .hc-close:active {
+.hc-alert.hc-alert-warning > .hc-alert-close-button:active {
   background-color: var(--hc-support-warning--active);
+}
+
+.hc-alert.hc-alert-warning > .hc-alert-close-button:focus {
+  border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
 }
 
 /*Info styling */
@@ -1837,20 +1854,25 @@ p.hc-alert-paragraph {
 }
 
 /* info close button styling */
-.hc-alert.hc-alert-info > .hc-close {
+.hc-alert.hc-alert-info > .hc-alert-close-button {
   color: var(--hc-black);
   background-color: var(--hc-support-info);
   border-color: var(--hc-black);
 }
 
-.hc-alert.hc-alert-info > .hc-close:hover {
+.hc-alert.hc-alert-info > .hc-alert-close-button:hover {
   color: var(--hc-white);
   background-color: var(--hc-support-info--hover);
 }
 
-.hc-alert.hc-alert-info > .hc-close:active {
+.hc-alert.hc-alert-info > .hc-alert-close-button:active {
   color: var(--hc-white);
   background-color: var(--hc-support-info--active);
+}
+
+.hc-alert.hc-alert-info > .hc-alert-close-button:focus {
+  border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
 }
 
 /* This styles the modal container */
