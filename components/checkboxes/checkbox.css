@@ -12,14 +12,14 @@
 /* position: relative so that absolute positioning can be used for label and input */
 
 .hc-checkboxes {
-  margin-top: var(--hc-spacing-05);
+  margin-top: var(--hc-spacing-03);
 }
 
 .hc-checkbox__item {
   display: block;
   position: relative;
-  min-height: 44px;
-  padding-left: 44px; /* This should equal width of the checkbox size*/
+  min-height: 36px;
+  padding-left: 36px; /* This should equal width of the checkbox size*/
   margin-bottom: var(--hc-spacing-05);
   clear: left;
 }
@@ -36,8 +36,8 @@
   left: 1px;
 
   z-index: 1;
-  width: 44px;
-  height: 44px;
+  width: 36px;
+  height: 36px;
   margin: 0;
 
   opacity: 0;
@@ -60,16 +60,16 @@
 }
 
 /* [ ] Check box styling */
-/* Should update to 44px but will need to redo the checkbox and label padddins */
+/* Should update to 36px but will need to redo the checkbox and label padddins */
 .hc-checkbox__label::before {
   content: "";
   box-sizing: border-box;
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 44px;
-  height: 44px;
-  border: var(--hc-border-width-medium) solid var(--hc-border-color-strong);
+  width: 36px;
+  height: 36px;
+  border: var(--hc-border-width-small) solid var(--hc-border-color-strong);
   background: var(--hc-transparent);
   border-radius: 4px;
   cursor: pointer;
@@ -82,9 +82,9 @@
   box-sizing: border-box;
 
   position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 24px;
+  top: 7px;
+  left: 7px;
+  width: 22px;
   height: 14px;
   color: white;
   transform: rotate(-45deg);
