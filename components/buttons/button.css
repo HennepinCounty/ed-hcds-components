@@ -72,6 +72,21 @@
   background-color: var(--hc-button-secondary-active);
 }
 
+.hc-button--secondary:focus {
+  color: var(--hc-text-on-color);
+  background-color: var(--hc-button-secondary-focus-background);
+}
+
+.hc-button--secondary:focus:hover {
+  color: var(--hc-text-on-color);
+  background-color: var(--hc-button-secondary-hover);
+}
+
+.hc-button--secondary:focus:active {
+  color: var(--hc-text-on-color);
+  background-color: var(--hc-button-secondary-active);
+}
+
 /* focus for secondary -- commented out for now */
 
 .hc-button--secondary:disabled {

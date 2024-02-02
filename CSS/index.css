@@ -151,8 +151,9 @@ h6 {
   --hc-button-primary-hover: var(--hc-background-brand-hover);
   --hc-button-primary-active: var(--hc-background-brand-active);
   --hc-button-secondary: var(--hc-white);
-  --hc-button-secondary-hover: var(--hc-background-brand-hover);
-  --hc-button-secondary-active: var(--hc-background-brand-active);
+  --hc-button-secondary-focus-background: var(--hc-purple-400);
+  --hc-button-secondary-hover: var(--hc-purple-500);
+  --hc-button-secondary-active: var(--hc-purple-600);
   --hc-button-secondary-border: var(--hc-background-brand);
   --hc-button-secondary-border-hover: var(--hc-button-secondary-hover);
   --hc-button-secondary-border-active: var(--hc-button-secondary-active);
@@ -671,7 +672,7 @@ ol + .hc-heading-s,
   --hc-border-style-focus: 2px solid var(--hc-white);
   --hc-border-style-focus-alternate: 2px solid var(--hc-background-brand);
   --hc-border-style-transparent: 2px solid var(--hc-transparent);
-  --hc-outline-style-focus: var(--hc-background-brand) solid 2px;
+  --hc-outline-style-focus: var(--hc-background-brand) solid 3px;
 }
 
 :root {
@@ -1578,6 +1579,21 @@ ol + .hc-heading-s,
   background-color: var(--hc-button-secondary-active);
 }
 
+.hc-button--secondary:focus {
+  color: var(--hc-text-on-color);
+  background-color: var(--hc-purple-400);
+}
+
+.hc-button--secondary:focus:hover {
+  color: var(--hc-text-on-color);
+  background-color: var(--hc-button-secondary-hover);
+}
+
+.hc-button--secondary:focus:active {
+  color: var(--hc-text-on-color);
+  background-color: var(--hc-button-secondary-active);
+}
+
 /* focus for secondary -- commented out for now */
 .hc-button--secondary:disabled {
   color: var(--hc-text-disabled);
@@ -2115,7 +2131,6 @@ https://github.com/alphagov/govuk-frontend/blob/a2ff2e41967a38785aaef33135dc7e41
 
 /* Focus state */
 .hc-checkbox__input:focus + .hc-checkbox__label::before {
-  /* border: var(--hc-border-style-focus); */
   outline: var(--hc-outline-style-focus);
   outline-offset: 3px;
   border-radius: 2px;
