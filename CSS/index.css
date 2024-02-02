@@ -671,7 +671,7 @@ ol + .hc-heading-s,
   --hc-border-style-focus: 2px solid var(--hc-white);
   --hc-border-style-focus-alternate: 2px solid var(--hc-background-brand);
   --hc-border-style-transparent: 2px solid var(--hc-transparent);
-  --hc-outline-style-focus: var(--hc-background-brand) solid 4px;
+  --hc-outline-style-focus: var(--hc-background-brand) solid 2px;
 }
 
 :root {
