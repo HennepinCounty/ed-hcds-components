@@ -1572,6 +1572,7 @@ ol + .hc-heading-s,
 .hc-button--secondary:hover {
   color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-hover);
+  border: 2px solid var(--hc-transparent);
 }
 
 .hc-button--secondary:active {
@@ -1581,7 +1582,7 @@ ol + .hc-heading-s,
 
 .hc-button--secondary:focus {
   color: var(--hc-text-on-color);
-  background-color: var(--hc-purple-400);
+  background-color: var(--hc-button-secondary-focus-background);
 }
 
 .hc-button--secondary:focus:hover {

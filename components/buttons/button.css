@@ -65,6 +65,7 @@
 .hc-button--secondary:hover {
   color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-hover);
+  border: 2px solid var(--hc-transparent);
 }
 
 .hc-button--secondary:active {
