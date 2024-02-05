@@ -757,7 +757,7 @@ ol + .hc-heading-s,
   flex-direction: row;
 }
 
-:root {
+/* :root { */   /*Joey do we need this? It was commented out */
   /*Margin utility classes*/
   /*margin all*/
   /*margin left and right*/
@@ -766,7 +766,8 @@ ol + .hc-heading-s,
   /*margin bottom*/
   /*margin left*/
   /*margin right*/
-}
+/* } */
+
 :root .hc-margin-xy-00 {
   margin: var(--hc-spacing-00);
 }
