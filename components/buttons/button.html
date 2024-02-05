@@ -7,6 +7,7 @@
     <title>Buttons</title>
     <link rel="stylesheet" href="../../CSS/index.css" />
     <link rel="stylesheet" href="button.css" />
+    <script src="button.js"></script>
   </head>
 
   <body class="hc-padding-x-03">
@@ -20,24 +21,24 @@
     <!-- ======================== -->
 
     <!-- <h3>Regular</h3> -->
-    <button class="hc-button">Button</button>
-    <button class="hc-button" disabled>Button</button>
+    <button class="hc-button">Primary</button>
+    <button class="hc-button" aria-disabled="true">Primary</button>
 
     <!-- ======================== -->
     <h2 class="hc-margin-top-08 hc-margin-bottom-03">Secondary Button</h2>
     <!-- ======================== -->
 
     <!-- <h3>Regular</h3> -->
-    <button class="hc-button hc-button--secondary">Button</button>
-    <button class="hc-button hc-button--secondary" disabled>Button</button>
+    <button class="hc-button hc-button--secondary">Secondary</button>
+    <button class="hc-button hc-button--secondary" aria-disabled="true">Secondary</button>
 
     <!-- ======================== -->
     <h2 class="hc-margin-top-08 hc-margin-bottom-03">Danger button</h2>
     <!-- ======================== -->
 
     <!-- <h3>Regular</h3> -->
-    <button class="hc-button hc-button--danger">Button</button>
-    <button class="hc-button hc-button--danger" disabled>Button</button>
+    <button class="hc-button hc-button--danger">Danger</button>
+    <button class="hc-button hc-button--danger" aria-disabled="true">Danger</button>
 
     <hr />
 
@@ -63,9 +64,9 @@
       >
         <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
       </svg>
-      Button
+      Primary
     </button>
-    <button class="hc-button hc-button--icon-left" disabled>
+    <button class="hc-button hc-button--icon-left" aria-disabled="true">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="hc-icon-size--regular"
@@ -73,7 +74,7 @@
       >
         <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
       </svg>
-      Button
+      Primary
     </button>
 
     <!-- ======================== -->
@@ -90,11 +91,11 @@
       >
         <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
       </svg>
-      Button
+      Secondary
     </button>
     <button
       class="hc-button hc-button--secondary hc-button--icon-left"
-      disabled
+      aria-disabled="true"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +104,7 @@
       >
         <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
       </svg>
-      Button
+      Secondary
     </button>
 
     <!-- ======================== -->
@@ -120,9 +121,9 @@
       >
         <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
       </svg>
-      Button
+      Danger
     </button>
-    <button class="hc-button hc-button--danger hc-button--icon-left" disabled>
+    <button class="hc-button hc-button--danger hc-button--icon-left" aria-disabled="true">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="hc-icon-size--regular"
@@ -130,7 +131,7 @@
       >
         <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
       </svg>
-      Button
+      Danger
     </button>
 
     <hr />
@@ -150,7 +151,7 @@
     <!-- ======================== -->
 
     <button class="hc-button hc-button--icon-right">
-      Button
+      Primary
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="hc-icon-size--regular"
@@ -159,8 +160,8 @@
         <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
       </svg>
     </button>
-    <button class="hc-button hc-button--icon-right" disabled>
-      Button
+    <button class="hc-button hc-button--icon-right" aria-disabled="true">
+      Primary
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="hc-icon-size--regular"
@@ -177,7 +178,7 @@
     <!-- ======================== -->
 
     <button class="hc-button hc-button--secondary hc-button--icon-right">
-      Button
+      Secondary
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="hc-icon-size--regular"
@@ -188,9 +189,9 @@
     </button>
     <button
       class="hc-button hc-button--secondary hc-button--icon-right"
-      disabled
+      aria-disabled="true"
     >
-      Button
+      Secondary
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="hc-icon-size--regular"
@@ -208,7 +209,7 @@
 
     <!-- <h3>Regular</h3> -->
     <button class="hc-button hc-button--danger hc-button--icon-right">
-      Button
+      Danger
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="hc-icon-size--regular"
@@ -217,8 +218,8 @@
         <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
       </svg>
     </button>
-    <button class="hc-button hc-button--danger hc-button--icon-right" disabled>
-      Button
+    <button class="hc-button hc-button--danger hc-button--icon-right" aria-disabled="true">
+      Danger
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="hc-icon-size--regular"
@@ -250,7 +251,7 @@
         <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
       </svg>
     </button>
-    <button class="hc-button hc-button--icon-only" disabled>
+    <button class="hc-button hc-button--icon-only" aria-disabled="true">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="hc-icon-size--regular"
@@ -277,7 +278,7 @@
     </button>
     <button
       class="hc-button hc-button--secondary hc-button--icon-only"
-      disabled
+      aria-disabled="true"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -303,7 +304,7 @@
         <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
       </svg>
     </button>
-    <button class="hc-button hc-button--danger hc-button--icon-only" disabled>
+    <button class="hc-button hc-button--danger hc-button--icon-only" aria-disabled="true">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="hc-icon-size--regular"
