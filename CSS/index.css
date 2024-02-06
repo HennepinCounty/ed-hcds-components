@@ -151,6 +151,7 @@ h6 {
   --hc-button-primary-hover: var(--hc-background-brand-hover);
   --hc-button-primary-active: var(--hc-background-brand-active);
   --hc-button-secondary: var(--hc-white);
+  --hc-button-secondary-focus-background: var(--hc-background-brand);
   --hc-button-secondary-hover: var(--hc-background-brand-hover);
   --hc-button-secondary-active: var(--hc-background-brand-active);
   --hc-button-secondary-border: var(--hc-background-brand);
@@ -484,9 +485,9 @@ a:disabled {
   margin-bottom: var(--hc-spacing-02);
 }
 
-/* this can be moved into its own component. this should be a general class for groups of form items */
-.hc-formgroup {
-  margin-bottom: 24px;
+.hc-form-group {
+  display: block;
+  margin-bottom: var(--hc-spacing-07);
 }
 
 /* this is a general class for groups of form items */
@@ -646,6 +647,7 @@ ol + .hc-heading-s,
     0px -4px 0px 0px var(--hc-background-brand) inset,
     0px 4px 0px 0px var(--hc-background-brand) inset,
     4px 0px 0px 0px var(--hc-background-brand) inset;
+  --hc-shadow-focus-outer-ring: 0px 0px 0px 4px var(--hc-white);
 }
 
 :root {
@@ -757,7 +759,7 @@ ol + .hc-heading-s,
   flex-direction: row;
 }
 
-/* :root { */   /*Joey do we need this? It was commented out */
+:root {
   /*Margin utility classes*/
   /*margin all*/
   /*margin left and right*/
@@ -766,8 +768,7 @@ ol + .hc-heading-s,
   /*margin bottom*/
   /*margin left*/
   /*margin right*/
-/* } */
-
+}
 :root .hc-margin-xy-00 {
   margin: var(--hc-spacing-00);
 }
@@ -1555,7 +1556,7 @@ ol + .hc-heading-s,
   color: var(--hc-button-disabled-text);
   cursor: not-allowed;
 } */
-.hc-button[aria-disabled="true"] {
+.hc-button[aria-disabled=true] {
   background-color: var(--hc-button-disabled-background);
   color: var(--hc-button-disabled-text);
   cursor: not-allowed;
@@ -1576,9 +1577,26 @@ ol + .hc-heading-s,
 .hc-button--secondary:hover {
   color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-hover);
+  border: 2px solid var(--hc-transparent);
 }
 
 .hc-button--secondary:active {
+  color: var(--hc-text-on-color);
+  background-color: var(--hc-button-secondary-active);
+}
+
+.hc-button--secondary:focus {
+  color: var(--hc-text-on-color);
+  background-color: var(--hc-button-secondary-focus-background);
+  border: var(--hc-border-style-focus);
+}
+
+.hc-button--secondary:focus:hover {
+  color: var(--hc-text-on-color);
+  background-color: var(--hc-button-secondary-hover);
+}
+
+.hc-button--secondary:focus:active {
   color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-active);
 }
@@ -1591,11 +1609,21 @@ ol + .hc-heading-s,
   border: 2px solid var(--hc-border-color-disabled);
   cursor: not-allowed;
 } */
-.hc-button--secondary[aria-disabled="true"] {
+.hc-button--secondary[aria-disabled=true] {
   color: var(--hc-text-disabled);
   background-color: var(--hc-button-disabled-background);
-  border: 2px solid var(--hc-border-color-disabled);
+  border: var(--hc-border-style-focus);
   cursor: not-allowed;
+}
+
+.hc-button--secondary:focus:hover[aria-disabled=true] {
+  color: var(--hc-text-disabled);
+  background-color: var(--hc-button-disabled-background);
+}
+
+.hc-button--secondary:focus:active[aria-disabled=true] {
+  color: var(--hc-text-disabled);
+  background-color: var(--hc-button-disabled-background);
 }
 
 /* ======================== */
@@ -1621,8 +1649,7 @@ ol + .hc-heading-s,
   color: var(--hc-button-disabled-text);
   cursor: not-allowed;
 } */
-
-.hc-button--danger[aria-disabled="true"] {
+.hc-button--danger[aria-disabled=true] {
   background-color: var(--hc-button-disabled-background);
   color: var(--hc-button-disabled-text);
   cursor: not-allowed;
@@ -1657,29 +1684,6 @@ ol + .hc-heading-s,
   align-items: center;
   justify-content: flex-start;
   gap: var(--hc-spacing-03);
-}
-
-.hc-form-element {
-  margin-top: 1.2rem;
-}
-
-/* This could be used as a wrapper to create consistent spacing for a group of form elements*/
-/* Would need to create example of this */
-/* Would want to rename to "hc-form-wrapper" or something to make it more generic (can be used with radios, checklist, etc -- all should probably have the same gap between each other) */
-/* this also might be done through ".hc-form-element + .hc-form-element" */
-/* Or because .hc-form-element already adds margin-top, this might not be needed at all (spacing would be determined by top-margin of object instead of gap assigned by parent container) */
-.hc-input-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: var(--hc-spacing-03);
-}
-
-/* Different version of hc-input-wrapper, does the exact same thing with margin instead of gap */
-/* One or both of these methods should be deleted */
-/* Prefer to use hc-form-group because it matches Govuk as a reference */
-.hc-form-group {
-  display: block;
-  margin-bottom: 32px;
 }
 
 /* Styling for field */
@@ -1749,13 +1753,19 @@ p.hc-alert-paragraph {
 }
 
 /* Default styling for the close button */
-.hc-alert .hc-close {
+.hc-alert .hc-alert-close-button {
   color: inherit;
   border-color: var(--hc-white);
 }
 
+.hc-alert .hc-alert-close-button:focus {
+  border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
+  box-shadow: var(--hc-shadow-focus-outer-ring);
+}
+
 /* IDK what this does, I think it's related to the X icon in the close button */
-.hc-alert .hc-close span[aria-hidden] {
+.hc-alert .hc-alert-close-button span[aria-hidden] {
   font-size: 1.8rem;
   margin-top: -0.2rem;
 }
@@ -1776,19 +1786,24 @@ p.hc-alert-paragraph {
 }
 
 /* success close button styling */
-.hc-alert.hc-alert-success > .hc-close {
+.hc-alert.hc-alert-success > .hc-alert-close-button {
   color: var(--hc-black);
   border-color: var(--hc-black);
   background-color: var(--hc-support-success);
 }
 
-.hc-alert.hc-alert-success > .hc-close:hover {
+.hc-alert.hc-alert-success > .hc-alert-close-button:hover {
   background-color: var(--hc-support-success--hover);
 }
 
-.hc-alert.hc-alert-success > .hc-close:active {
+.hc-alert.hc-alert-success > .hc-alert-close-button:active {
   background-color: var(--hc-support-success--active);
   color: var(--hc-text-on-color);
+}
+
+.hc-alert.hc-alert-success > .hc-alert-close-button:focus {
+  border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
 }
 
 /*Danger styling */
@@ -1797,15 +1812,15 @@ p.hc-alert-paragraph {
 }
 
 /* Danger close button styling */
-.hc-alert.hc-alert-danger > .hc-close {
+.hc-alert.hc-alert-danger > .hc-alert-close-button {
   background-color: var(--hc-support-error);
 }
 
-.hc-alert.hc-alert-danger > .hc-close:hover {
+.hc-alert.hc-alert-danger > .hc-alert-close-button:hover {
   background-color: var(--hc-support-error--hover);
 }
 
-.hc-alert.hc-alert-danger > .hc-close:active {
+.hc-alert.hc-alert-danger > .hc-alert-close-button:active {
   background-color: var(--hc-support-error--active);
 }
 
@@ -1825,18 +1840,23 @@ p.hc-alert-paragraph {
 }
 
 /* Warning close button styling */
-.hc-alert.hc-alert-warning > .hc-close {
+.hc-alert.hc-alert-warning > .hc-alert-close-button {
   color: var(--hc-text-primary);
   background-color: var(--hc-support-warning);
   border-color: var(--hc-black);
 }
 
-.hc-alert.hc-alert-warning > .hc-close:hover {
+.hc-alert.hc-alert-warning > .hc-alert-close-button:hover {
   background-color: var(--hc-support-warning--hover);
 }
 
-.hc-alert.hc-alert-warning > .hc-close:active {
+.hc-alert.hc-alert-warning > .hc-alert-close-button:active {
   background-color: var(--hc-support-warning--active);
+}
+
+.hc-alert.hc-alert-warning > .hc-alert-close-button:focus {
+  border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
 }
 
 /*Info styling */
@@ -1855,20 +1875,25 @@ p.hc-alert-paragraph {
 }
 
 /* info close button styling */
-.hc-alert.hc-alert-info > .hc-close {
+.hc-alert.hc-alert-info > .hc-alert-close-button {
   color: var(--hc-black);
   background-color: var(--hc-support-info);
   border-color: var(--hc-black);
 }
 
-.hc-alert.hc-alert-info > .hc-close:hover {
+.hc-alert.hc-alert-info > .hc-alert-close-button:hover {
   color: var(--hc-white);
   background-color: var(--hc-support-info--hover);
 }
 
-.hc-alert.hc-alert-info > .hc-close:active {
+.hc-alert.hc-alert-info > .hc-alert-close-button:active {
   color: var(--hc-white);
   background-color: var(--hc-support-info--active);
+}
+
+.hc-alert.hc-alert-info > .hc-alert-close-button:focus {
+  border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
 }
 
 /* This styles the modal container */
@@ -1876,6 +1901,8 @@ dialog.hc-modal[open] {
   display: block;
   margin: auto;
   max-width: 48rem;
+  border: none;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
 }
 
 /* This contains the modal heading and close button */
@@ -2111,7 +2138,6 @@ https://github.com/alphagov/govuk-frontend/blob/a2ff2e41967a38785aaef33135dc7e41
 
 /* Focus state */
 .hc-checkbox__input:focus + .hc-checkbox__label::before {
-  /* border: var(--hc-border-style-focus); */
   outline: var(--hc-outline-style-focus);
   outline-offset: 3px;
   border-radius: 2px;
@@ -2370,12 +2396,6 @@ a.hc-skiplink:visited {
   border-radius: 50%;
   opacity: 0;
   background: currentcolor;
-}
-
-.hc-checkbox__hint {
-  display: block;
-  padding-left: var(--hc-spacing-03);
-  padding-right: var(--hc-spacing-03);
 }
 
 /* Focused state */

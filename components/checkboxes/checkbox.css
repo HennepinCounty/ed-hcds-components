@@ -99,7 +99,6 @@
 
 /* Focus state */
 .hc-checkbox__input:focus + .hc-checkbox__label::before {
-  /* border: var(--hc-border-style-focus); */
   outline: var(--hc-outline-style-focus);
   outline-offset: 3px;
   border-radius: 2px;
