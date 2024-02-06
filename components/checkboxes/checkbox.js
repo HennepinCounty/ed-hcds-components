@@ -1,8 +1,9 @@
+// Checkbox validation 
+
 document.addEventListener('DOMContentLoaded', () => {
   const checkboxes = document.querySelectorAll('.hc-checkboxes input[type="checkbox"]');
   const errorElement = document.getElementById('fieldset-error-example-1');
   
-  // Function to check if any checkbox is checked
   function validateCheckboxes() {
     const isChecked = document.querySelector('.hc-checkboxes input[type="checkbox"]:checked');
     if (!isChecked) {
@@ -16,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   checkboxes.forEach((checkbox, index) => {
     checkbox.addEventListener('change', validateCheckboxes);
 
-    // If it's the last checkbox, add a 'blur' event listener
+    // Add a 'blur' event listener if last checkbox is tabbed past
     if (index === checkboxes.length - 1) {
       checkbox.addEventListener('blur', validateCheckboxes);
     }
@@ -26,8 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('form').addEventListener('submit', function(event) {
     const isChecked = document.querySelector('.hc-checkboxes input[type="checkbox"]:checked');
     if (!isChecked) {
-      event.preventDefault(); // Prevent form submission
-      errorElement.style.display = 'block'; // Show error message
+      event.preventDefault(); 
+      errorElement.style.display = 'block'; 
     }
   });
 });

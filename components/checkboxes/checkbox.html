@@ -19,7 +19,7 @@
     <form action="/form-handler" method="post" novalidate="">
       <div class="hc-form-group">
         <fieldset class="hc-fieldset">
-          <legend class="hc-fieldset__legend">Title for legend</legend>
+          <legend class="hc-fieldset__legend">Legend title for checkbox group</legend>
           <div class="hc-checkboxes" data-module="hc-checkbox">
             <div class="hc-checkbox__item">
               <input
@@ -56,6 +56,8 @@
         </fieldset>
       </div>
     </form>
+
+
     <h2>With hint text</h2>
 
     <form action="/form-handler" method="post" novalidate="">
@@ -64,9 +66,9 @@
           class="hc-fieldset"
           aria-describedby="fieldset-hint-homeownership"
         >
-          <legend class="hc-fieldset__legend">Title for legend</legend>
+          <legend class="hc-fieldset__legend">Legend title for checkbox group</legend>
           <div class="hc-text-hint" id="fieldset-hint-homeownership">
-            Hint text preview to provide context for question
+            Hint text for all options
           </div>
           <div class="hc-checkboxes" data-module="hc-checkbox">
             <div class="hc-checkbox__item">
@@ -78,7 +80,7 @@
                 value="rent"
               />
               <label class="hc-field-label hc-checkbox__label" for="renting">
-                I am renting
+                I like pizza
               </label>
             </div>
             <div class="hc-checkbox__item">
@@ -90,7 +92,7 @@
                 value="buy"
               />
               <label class="hc-field-label hc-checkbox__label" for="owning">
-                I own my home
+                I like pineapple
               </label>
             </div>
             <div class="hc-checkbox__item">
@@ -102,31 +104,34 @@
                 value="sublet"
               />
               <label class="hc-field-label hc-checkbox__label" for="subletting">
-                I am subletting to someone else
+                I like pineapple on pizza
               </label>
             </div>
           </div>
         </fieldset>
       </div>
     </form>
+
     <!-- ============================== -->
     <!-- ============================== -->
-    <!-- Error state -->
+    <!-- Validation state -->
     <!-- ============================== -->
     <!-- ============================== -->
-    <h3>Error state</h3>
-    <h4 class="hc-margin-bottom-06">Error with hint</h4>
+    <h2>Validation state</h2>
+    <h3 class="hc-margin-bottom-06">With hint and error text</h3>
 
     <form action="/form-handler" method="post">
       <div class="hc-form-group">
-        <fieldset class="hc-fieldset" aria-describedby="fieldset-hint-example-1 fieldset-error-example-1">
-          <legend class="hc-fieldset__legend">Title for legend</legend>
+        <fieldset class="hc-fieldset" aria-describedby="fieldset-hint-example-1">
+          <legend class="hc-fieldset__legend">Legend title for checkbox group</legend>
           <div class="hc-text-hint" id="fieldset-hint-example-1">
-            Hint text preview to provide context for question
+            Hint text for all options
           </div>
-          <p class="hc-text-error" id="fieldset-error-example-1" style="display:none;">
-            <span class="hc-visually-hidden">Error:</span> Select if you have done X or Y
-          </p>
+          <div aria-live="polite">
+            <p class="hc-text-error" id="fieldset-error-example-1" style="display:none;">
+              <span class="hc-visually-hidden">Error:</span> checkbox not checked
+            </p>
+          </div>
           <div class="hc-checkboxes" data-module="hc-checkbox">
             <div class="hc-checkbox__item">
               <input

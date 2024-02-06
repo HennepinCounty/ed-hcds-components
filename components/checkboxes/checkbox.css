@@ -117,15 +117,15 @@
 .hc-checkbox__input:checked + .hc-checkbox__label::before {
   background-color: var(
     --hc-background-brand
-  ); /*adds blue backround in checked state*/
+  ); /*adds blue background in checked state*/
   border: var(--hc-border-brand);
 }
 
 .hc-text-error {
-  display: none; /* Hide by default */
-  color: red; /* Error message color */
+  display: none; 
+  color: red; 
 }
 
 .hc-fieldset[aria-invalid="true"] {
-  border: 2px solid red; /* Visual cue for error state */
+  border: 2px solid red; 
 }
