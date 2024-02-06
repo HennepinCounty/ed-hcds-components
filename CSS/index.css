@@ -151,9 +151,9 @@ h6 {
   --hc-button-primary-hover: var(--hc-background-brand-hover);
   --hc-button-primary-active: var(--hc-background-brand-active);
   --hc-button-secondary: var(--hc-white);
-  --hc-button-secondary-focus-background: var(--hc-purple-400);
-  --hc-button-secondary-hover: var(--hc-purple-500);
-  --hc-button-secondary-active: var(--hc-purple-600);
+  --hc-button-secondary-focus-background: var(--hc-background-brand);
+  --hc-button-secondary-hover: var(--hc-background-brand-hover);
+  --hc-button-secondary-active: var(--hc-background-brand-active);
   --hc-button-secondary-border: var(--hc-background-brand);
   --hc-button-secondary-border-hover: var(--hc-button-secondary-hover);
   --hc-button-secondary-border-active: var(--hc-button-secondary-active);
@@ -1897,6 +1897,8 @@ dialog.hc-modal[open] {
   display: block;
   margin: auto;
   max-width: 48rem;
+  border: none;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
 }
 
 /* This contains the modal heading and close button */

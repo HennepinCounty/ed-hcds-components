@@ -76,6 +76,7 @@
 .hc-button--secondary:focus {
   color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-focus-background);
+  border: var(--hc-border-style-focus);
 }
 
 .hc-button--secondary:focus:hover {
