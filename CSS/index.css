@@ -759,7 +759,7 @@ ol + .hc-heading-s,
   flex-direction: row;
 }
 
-:root {
+/* :root { */   /*Joey do we need this? It was commented out */
   /*Margin utility classes*/
   /*margin all*/
   /*margin left and right*/
@@ -768,7 +768,8 @@ ol + .hc-heading-s,
   /*margin bottom*/
   /*margin left*/
   /*margin right*/
-}
+/* } */
+
 :root .hc-margin-xy-00 {
   margin: var(--hc-spacing-00);
 }
@@ -1551,7 +1552,12 @@ ol + .hc-heading-s,
   background-color: var(--hc-button-primary-active);
 }
 
-.hc-button:disabled {
+/* .hc-button:disabled {
+  background-color: var(--hc-button-disabled-background);
+  color: var(--hc-button-disabled-text);
+  cursor: not-allowed;
+} */
+.hc-button[aria-disabled="true"] {
   background-color: var(--hc-button-disabled-background);
   color: var(--hc-button-disabled-text);
   cursor: not-allowed;
@@ -1597,10 +1603,16 @@ ol + .hc-heading-s,
 }
 
 /* focus for secondary -- commented out for now */
-.hc-button--secondary:disabled {
+/* .hc-button--secondary:disabled {
   color: var(--hc-text-disabled);
   background-color: var(--hc-button-disabled-background);
   border-radius: var(--hc-border-radius-01);
+  border: 2px solid var(--hc-border-color-disabled);
+  cursor: not-allowed;
+} */
+.hc-button--secondary[aria-disabled="true"] {
+  color: var(--hc-text-disabled);
+  background-color: var(--hc-button-disabled-background);
   border: 2px solid var(--hc-border-color-disabled);
   cursor: not-allowed;
 }
@@ -1623,7 +1635,13 @@ ol + .hc-heading-s,
   background-color: var(--hc-button-danger-active);
 }
 
-.hc-button--danger:disabled {
+/* .hc-button--danger:disabled {
+  background-color: var(--hc-button-disabled-background);
+  color: var(--hc-button-disabled-text);
+  cursor: not-allowed;
+} */
+
+.hc-button--danger[aria-disabled="true"] {
   background-color: var(--hc-button-disabled-background);
   color: var(--hc-button-disabled-text);
   cursor: not-allowed;
