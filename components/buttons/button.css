@@ -107,10 +107,19 @@
 .hc-button--secondary[aria-disabled="true"] {
   color: var(--hc-text-disabled);
   background-color: var(--hc-button-disabled-background);
-  border: 2px solid var(--hc-border-color-disabled);
+  border: var(--hc-border-style-focus);
   cursor: not-allowed;
 }
 
+.hc-button--secondary:focus:hover[aria-disabled="true"] {
+  color: var(--hc-text-disabled);
+  background-color: var(--hc-button-disabled-background);
+}
+
+.hc-button--secondary:focus:active[aria-disabled="true"] {
+  color: var(--hc-text-disabled);
+  background-color: var(--hc-button-disabled-background);
+}
 
 /* ======================== */
 /* ======================== */
@@ -141,7 +150,6 @@
   color: var(--hc-button-disabled-text);
   cursor: not-allowed;
 }
-
 
 /* ======================== */
 /* ======================== */
