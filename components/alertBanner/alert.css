@@ -36,6 +36,11 @@ p.hc-alert-paragraph {
   color: inherit;
   border-color: var(--hc-white);
 }
+.hc-alert .hc-alert-close-button:focus {
+  border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
+  box-shadow: var(--hc-shadow-focus-outer-ring);
+}
 
 /* IDK what this does, I think it's related to the X icon in the close button */
 .hc-alert .hc-alert-close-button span[aria-hidden] {
@@ -70,6 +75,11 @@ p.hc-alert-paragraph {
 .hc-alert.hc-alert-success > .hc-alert-close-button:active {
   background-color: var(--hc-support-success--active);
   color: var(--hc-text-on-color);
+}
+
+.hc-alert.hc-alert-success > .hc-alert-close-button:focus {
+  border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
 }
 
 /*Danger styling */
@@ -116,6 +126,11 @@ p.hc-alert-paragraph {
   background-color: var(--hc-support-warning--active);
 }
 
+.hc-alert.hc-alert-warning > .hc-alert-close-button:focus {
+  border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
+}
+
 /*Info styling */
 .hc-alert-info {
   background-color: var(--hc-support-info);
@@ -144,4 +159,9 @@ p.hc-alert-paragraph {
 .hc-alert.hc-alert-info > .hc-alert-close-button:active {
   color: var(--hc-white);
   background-color: var(--hc-support-info--active);
+}
+
+.hc-alert.hc-alert-info > .hc-alert-close-button:focus {
+  border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
 }

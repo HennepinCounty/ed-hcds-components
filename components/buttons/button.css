@@ -71,9 +71,26 @@
 .hc-button--secondary:hover {
   color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-hover);
+  border: 2px solid var(--hc-transparent);
 }
 
 .hc-button--secondary:active {
+  color: var(--hc-text-on-color);
+  background-color: var(--hc-button-secondary-active);
+}
+
+.hc-button--secondary:focus {
+  color: var(--hc-text-on-color);
+  background-color: var(--hc-button-secondary-focus-background);
+  border: var(--hc-border-style-focus);
+}
+
+.hc-button--secondary:focus:hover {
+  color: var(--hc-text-on-color);
+  background-color: var(--hc-button-secondary-hover);
+}
+
+.hc-button--secondary:focus:active {
   color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-active);
 }
