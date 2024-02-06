@@ -196,7 +196,6 @@ h6 {
   --hc-height--large: 3rem;
 }
 
-/*import for inter as font family placeholder*/
 :root {
   --hc-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --hc-font-size-base: 1rem;
