@@ -16,13 +16,12 @@
 }
 
 .hc-checkbox__item {
-  display: block;
-  position: relative;
-  min-height: 36px;
-  padding-left: 36px; /* This should equal width of the checkbox size*/
-  margin-bottom: var(--hc-spacing-05);
-  clear: left;
+  display: flex;
+  align-items: center;
+  position: relative; /* If not already positioned, for the absolute positioning of pseudo-elements */
 }
+
+
 
 /* removes margin bottom from last element */
 .hc-checkbox__item:last-child,
@@ -48,16 +47,15 @@
   font-size: var(--hc-font-fieldLabel-size-regular);
   color: var(--hc-text-primary, #171a1d);
   font-weight: 400;
-
-  display: inline-block;
-  margin-bottom: 0px;
-  padding-left: var(--hc-spacing-04);
+  margin-bottom: 0;
+  padding-left: var(--hc-spacing-04); /* Adjust based on visual preference */
   padding-right: var(--hc-spacing-04);
-  padding-bottom: var(--hc-spacing-01);
   cursor: pointer;
   touch-action: manipulation;
-  max-width: 80ch;
+  /* `max-width` might need adjustment based on the label length and container size */
+  max-width: 80ch; /* Or adjust as needed for your design */
 }
+
 
 /* [ ] Check box styling */
 /* Should update to 36px but will need to redo the checkbox and label padddins */
