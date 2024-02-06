@@ -485,9 +485,9 @@ a:disabled {
   margin-bottom: var(--hc-spacing-02);
 }
 
-/* this can be moved into its own component. this should be a general class for groups of form items */
-.hc-formgroup {
-  margin-bottom: 24px;
+.hc-form-group {
+  display: block;
+  margin-bottom: var(--hc-spacing-07);
 }
 
 /* this is a general class for groups of form items */
@@ -1583,6 +1583,7 @@ ol + .hc-heading-s,
 .hc-button--secondary:focus {
   color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-focus-background);
+  border: var(--hc-border-style-focus);
 }
 
 .hc-button--secondary:focus:hover {
@@ -1657,29 +1658,6 @@ ol + .hc-heading-s,
   align-items: center;
   justify-content: flex-start;
   gap: var(--hc-spacing-03);
-}
-
-.hc-form-element {
-  margin-top: 1.2rem;
-}
-
-/* This could be used as a wrapper to create consistent spacing for a group of form elements*/
-/* Would need to create example of this */
-/* Would want to rename to "hc-form-wrapper" or something to make it more generic (can be used with radios, checklist, etc -- all should probably have the same gap between each other) */
-/* this also might be done through ".hc-form-element + .hc-form-element" */
-/* Or because .hc-form-element already adds margin-top, this might not be needed at all (spacing would be determined by top-margin of object instead of gap assigned by parent container) */
-.hc-input-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: var(--hc-spacing-03);
-}
-
-/* Different version of hc-input-wrapper, does the exact same thing with margin instead of gap */
-/* One or both of these methods should be deleted */
-/* Prefer to use hc-form-group because it matches Govuk as a reference */
-.hc-form-group {
-  display: block;
-  margin-bottom: 32px;
 }
 
 /* Styling for field */
@@ -2392,12 +2370,6 @@ a.hc-skiplink:visited {
   border-radius: 50%;
   opacity: 0;
   background: currentcolor;
-}
-
-.hc-checkbox__hint {
-  display: block;
-  padding-left: var(--hc-spacing-03);
-  padding-right: var(--hc-spacing-03);
 }
 
 /* Focused state */

@@ -362,10 +362,10 @@ a:disabled {
 // ========================
 // ========================
 
-/* this can be moved into its own component. this should be a general class for groups of form items */
 // Adds spacing below formgroup wrapper used in form elements like checkbox, radio button, input field, etc.
-.hc-formgroup {
-  margin-bottom: 24px;
+.hc-form-group {
+  display: block;
+  margin-bottom: var(--hc-spacing-07);
 }
 
 /* this is a general class for groups of form items */
