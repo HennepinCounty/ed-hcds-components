@@ -1550,11 +1550,6 @@ ol + .hc-heading-s,
   background-color: var(--hc-button-primary-active);
 }
 
-/* .hc-button:disabled {
-  background-color: var(--hc-button-disabled-background);
-  color: var(--hc-button-disabled-text);
-  cursor: not-allowed;
-} */
 .hc-button[aria-disabled=true] {
   background-color: var(--hc-button-disabled-background);
   color: var(--hc-button-disabled-text);
@@ -1600,14 +1595,6 @@ ol + .hc-heading-s,
   background-color: var(--hc-button-secondary-active);
 }
 
-/* focus for secondary -- commented out for now */
-/* .hc-button--secondary:disabled {
-  color: var(--hc-text-disabled);
-  background-color: var(--hc-button-disabled-background);
-  border-radius: var(--hc-border-radius-01);
-  border: 2px solid var(--hc-border-color-disabled);
-  cursor: not-allowed;
-} */
 .hc-button--secondary[aria-disabled=true] {
   color: var(--hc-text-disabled);
   background-color: var(--hc-button-disabled-background);
@@ -1643,11 +1630,6 @@ ol + .hc-heading-s,
   background-color: var(--hc-button-danger-active);
 }
 
-/* .hc-button--danger:disabled {
-  background-color: var(--hc-button-disabled-background);
-  color: var(--hc-button-disabled-text);
-  cursor: not-allowed;
-} */
 .hc-button--danger[aria-disabled=true] {
   background-color: var(--hc-button-disabled-background);
   color: var(--hc-button-disabled-text);
