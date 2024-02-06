@@ -121,6 +121,7 @@
   border: var(--hc-border-brand);
 }
 
+/* error message for validation checkbox */
 .hc-text-error {
   display: none; 
   color: red; 
