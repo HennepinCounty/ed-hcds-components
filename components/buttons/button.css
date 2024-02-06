@@ -19,7 +19,7 @@
   font-weight: 400;
   line-height: 1;
   color: var(--hc-text-on-color);
-  border-radius: var(--hc-border-radius-02, 2px);
+  border-radius: var(--hc-border-radius-02, 4px);
   margin: 0;
   background-color: var(--hc-button-primary);
   height: var(--hc-height--medium, 2.5rem);
@@ -107,7 +107,15 @@
 .hc-button--secondary[aria-disabled="true"] {
   color: var(--hc-text-disabled);
   background-color: var(--hc-button-disabled-background);
+  border: 2px solid var(--hc-transparent);
+  cursor: not-allowed;
+}
+
+.hc-button--secondary:focus[aria-disabled="true"] {
+  color: var(--hc-text-disabled);
+  background-color: var(--hc-button-disabled-background);
   border: var(--hc-border-style-focus);
+
   cursor: not-allowed;
 }
 
