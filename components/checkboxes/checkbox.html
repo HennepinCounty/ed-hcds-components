@@ -100,7 +100,6 @@
                 name="exampleCheckboxGroup"
                 type="checkbox"
                 value="sublet"
-                aria-describedby="example-hint"
               />
               <label class="hc-field-label hc-checkbox__label" for="subletting">
                 I am subletting to someone else
@@ -118,19 +117,15 @@
     <h3>Error state</h3>
     <h4 class="hc-margin-bottom-06">Error with hint</h4>
 
-    <form action="/form-handler" method="post" novalidate="">
+    <form action="/form-handler" method="post">
       <div class="hc-form-group">
-        <fieldset
-          class="hc-fieldset"
-          aria-describedby="fieldset-hint-example-1 fieldset-error-example-1"
-        >
+        <fieldset class="hc-fieldset" aria-describedby="fieldset-hint-example-1 fieldset-error-example-1">
           <legend class="hc-fieldset__legend">Title for legend</legend>
           <div class="hc-text-hint" id="fieldset-hint-example-1">
             Hint text preview to provide context for question
           </div>
-          <p class="hc-text-error" id="fieldset-error-example-1">
-            <span class="hc-visually-hidden">Error:</span> Select if you have
-            done X or Y
+          <p class="hc-text-error" id="fieldset-error-example-1" style="display:none;">
+            <span class="hc-visually-hidden">Error:</span> Select if you have done X or Y
           </p>
           <div class="hc-checkboxes" data-module="hc-checkbox">
             <div class="hc-checkbox__item">
@@ -141,11 +136,7 @@
                 type="checkbox"
                 value="Have-not"
               />
-
-              <label
-                class="hc-field-label hc-checkbox__label"
-                for="checkbox-error-example-1"
-              >
+              <label class="hc-field-label hc-checkbox__label" for="checkbox-error-example-1">
                 I have not done X
               </label>
             </div>
@@ -153,5 +144,6 @@
         </fieldset>
       </div>
     </form>
+    
   </body>
 </html>

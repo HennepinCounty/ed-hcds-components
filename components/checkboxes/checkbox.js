@@ -1,28 +1,33 @@
-function onClick(event) {
-  event.preventDefault();
-}
-
-function toggleDisabled(element, status, update) {
-  // Should (status) be changed to (!status) ? The below is turnin all aria-disabled=true to aria-disabled=false which doesn't seem correct
-  if (status) {
-    element.disabled = false;
-    element.setAttribute("aria-disabled", "false");
-    update.textContent = "The checkbox is now enabled.";
-    element.addEventListener("click", onClick);
-  } else {
-    element.disabled = true;
-    element.setAttribute("aria-disabled", "true");
-    update.textContent = "The checkbox is now disabled.";
-    element.removeEventListener("click", onClick);
+document.addEventListener('DOMContentLoaded', () => {
+  const checkboxes = document.querySelectorAll('.hc-checkboxes input[type="checkbox"]');
+  const errorElement = document.getElementById('fieldset-error-example-1');
+  
+  // Function to check if any checkbox is checked
+  function validateCheckboxes() {
+    const isChecked = document.querySelector('.hc-checkboxes input[type="checkbox"]:checked');
+    if (!isChecked) {
+      errorElement.style.display = 'block';
+    } else {
+      errorElement.style.display = 'none';
+    }
   }
-}
 
-// Call toggleDisabled for all checkboxes with aria-disabled="true"
-const disabledCheckboxes = document.querySelectorAll(
-  'input[aria-disabled="true"]'
-);
-const updateElement = document.getElementById("updateMessage"); // Assuming you have an element to display the update message
+  // Add change event listener to all checkboxes
+  checkboxes.forEach((checkbox, index) => {
+    checkbox.addEventListener('change', validateCheckboxes);
 
-disabledCheckboxes.forEach((checkbox) => {
-  toggleDisabled(checkbox, true, updateElement);
+    // If it's the last checkbox, add a 'blur' event listener
+    if (index === checkboxes.length - 1) {
+      checkbox.addEventListener('blur', validateCheckboxes);
+    }
+  });
+
+  // Validate on form submit as well
+  document.querySelector('form').addEventListener('submit', function(event) {
+    const isChecked = document.querySelector('.hc-checkboxes input[type="checkbox"]:checked');
+    if (!isChecked) {
+      event.preventDefault(); // Prevent form submission
+      errorElement.style.display = 'block'; // Show error message
+    }
+  });
 });

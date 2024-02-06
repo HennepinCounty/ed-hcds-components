@@ -16,11 +16,13 @@
 }
 
 .hc-checkbox__item {
-  display: flex;
-  align-items: center;
-  position: relative; /* If not already positioned, for the absolute positioning of pseudo-elements */
+  display: block;
+  position: relative;
+  min-height: 36px;
+  padding-left: 36px; /* This should equal width of the checkbox size*/
+  margin-bottom: var(--hc-spacing-05);
+  clear: left;
 }
-
 
 
 /* removes margin bottom from last element */
@@ -47,13 +49,15 @@
   font-size: var(--hc-font-fieldLabel-size-regular);
   color: var(--hc-text-primary, #171a1d);
   font-weight: 400;
-  margin-bottom: 0;
-  padding-left: var(--hc-spacing-04); /* Adjust based on visual preference */
+
+  display: inline-block;
+  margin-bottom: 0px;
+  padding-left: var(--hc-spacing-04);
   padding-right: var(--hc-spacing-04);
+  padding-bottom: var(--hc-spacing-01);
   cursor: pointer;
   touch-action: manipulation;
-  /* `max-width` might need adjustment based on the label length and container size */
-  max-width: 80ch; /* Or adjust as needed for your design */
+  max-width: 80ch;
 }
 
 
@@ -115,4 +119,13 @@
     --hc-background-brand
   ); /*adds blue backround in checked state*/
   border: var(--hc-border-brand);
+}
+
+.hc-text-error {
+  display: none; /* Hide by default */
+  color: red; /* Error message color */
+}
+
+.hc-fieldset[aria-invalid="true"] {
+  border: 2px solid red; /* Visual cue for error state */
 }
