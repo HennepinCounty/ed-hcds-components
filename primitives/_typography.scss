@@ -1,6 +1,3 @@
-/*import for inter as font family placeholder*/
-// @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 // ============================
 // ============================
 // Mobile breakpoint styling
@@ -8,7 +5,6 @@
 // ============================
 :root {
   // Font families
-  //"Inter", sans-serif;
   --hc-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   //  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
@@ -362,10 +358,10 @@ a:disabled {
 // ========================
 // ========================
 
-/* this can be moved into its own component. this should be a general class for groups of form items */
-// Adds spacing below formgroup wrapper used in form elements like checkbox, radio button, input field, etc.
-.hc-formgroup {
-  margin-bottom: 24px;
+// Adds spacing below, wrapper used in form elements like checkbox, radio button, input field, etc.
+.hc-form-group {
+  display: block;
+  margin-bottom: var(--hc-spacing-07);
 }
 
 /* this is a general class for groups of form items */

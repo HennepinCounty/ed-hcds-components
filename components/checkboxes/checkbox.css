@@ -1,11 +1,3 @@
-/* ====================================== */
-/* new styling based on govuk */
-/* https://github.com/alphagov/govuk-frontend/blob/9f05cea739d14d4cbf18e79b17228045ca84b3ba/packages/govuk-frontend/src/govuk/components/checkboxes/_index.scss */
-/* ====================================== */
-
-/* accessibly styling radio buttons/checkboxes */
-/* https://www.sarasoueidan.com/blog/inclusively-hiding-and-styling-checkboxes-and-radio-buttons/ */
-
 /* wrapper for input and label */
 /* includes min-height for consistent sizing of form elements */
 /* margin-bottom adds space between items */
@@ -101,7 +93,6 @@
 
 /* Focus state */
 .hc-checkbox__input:focus + .hc-checkbox__label::before {
-  /* border: var(--hc-border-style-focus); */
   outline: var(--hc-outline-style-focus);
   outline-offset: 3px;
   border-radius: 2px;
@@ -120,3 +111,38 @@
   ); /*adds blue background in checked state*/
   border: var(--hc-border-brand);
 }
+
+/* ====================================== */
+/* styling based on govuk */
+/* https://github.com/alphagov/govuk-frontend/blob/9f05cea739d14d4cbf18e79b17228045ca84b3ba/packages/govuk-frontend/src/govuk/components/checkboxes/_index.scss */
+/* ====================================== */
+/* ======================================== */
+/* ======================================== */
+/* The MIT License (MIT)
+
+Copyright (C) 2017 Crown Copyright (Government Digital Service)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE. */
+
+/* ======================================== */
+/* ======================================== */
+/* Other resources for accessibly styling radio buttons/checkboxes */
+/* https://www.sarasoueidan.com/blog/inclusively-hiding-and-styling-checkboxes-and-radio-buttons/ */
+/* ======================================== */
+/* ======================================== */
