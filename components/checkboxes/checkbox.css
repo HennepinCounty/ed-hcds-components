@@ -120,13 +120,3 @@
   ); /*adds blue background in checked state*/
   border: var(--hc-border-brand);
 }
-
-/* error message for validation checkbox */
-.hc-text-error {
-  display: none; 
-  color: red; 
-}
-
-.hc-fieldset[aria-invalid="true"] {
-  border: 2px solid red; 
-}

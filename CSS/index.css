@@ -2112,17 +2112,6 @@ https://github.com/alphagov/govuk-frontend/blob/a2ff2e41967a38785aaef33135dc7e41
   border: var(--hc-border-brand);
 }
 
-/* error message for validation checkbox*/
-.hc-text-error {
-  display: none; 
-  color: red; 
-}
-
-.hc-fieldset[aria-invalid="true"] {
-  border: 2px solid red; 
-}
-
-
 /* Glues the input field and button together */
 .hc-search-wrapper {
   display: flex;
