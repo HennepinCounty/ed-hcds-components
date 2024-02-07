@@ -16,6 +16,7 @@
   clear: left;
 }
 
+
 /* removes margin bottom from last element */
 .hc-checkbox__item:last-child,
 .hc-checkbox__item:last-of-type {
@@ -50,6 +51,7 @@
   touch-action: manipulation;
   max-width: 80ch;
 }
+
 
 /* [ ] Check box styling */
 /* Should update to 36px but will need to redo the checkbox and label padddins */
@@ -106,7 +108,7 @@
 .hc-checkbox__input:checked + .hc-checkbox__label::before {
   background-color: var(
     --hc-background-brand
-  ); /*adds blue backround in checked state*/
+  ); /*adds blue background in checked state*/
   border: var(--hc-border-brand);
 }
 
