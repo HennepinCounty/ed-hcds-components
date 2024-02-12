@@ -1,3 +1,4 @@
+// function to close alerts
 document.addEventListener('DOMContentLoaded', function() {
     const closeButtons = document.querySelectorAll('.hc-alert-close-button');
     
