@@ -8,25 +8,34 @@
     <script defer src="modal.js"></script>
   </head>
 
-  
+
   <body class="hc-padding-xy-09">
     <h1 class="hc-margin-top-06">Modal</h1>
     <div>
       <button class="hc-button" data-open-modal>Open new modal</button>
     </div>
 
-    <dialog class="hc-modal" data-modal>
+    <dialog 
+      class="hc-modal" 
+      data-modal
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+    >
       <div class="modal-header-and-close">
-        <h3 class="hc-margin-bottom-00">Modal title</h3>
-        <button class="hc-button hc-button--icon-only" aria-label="Close" icon>
+        <h3 id="modalTitle" class="hc-margin-bottom-00">Modal title</h3>
+        <button 
+          class="hc-button hc-button--icon-only" 
+          aria-label="Close" 
+          data-close-modal
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="hc-icon-size--regular"
             viewbox="0 -960 960 960"
           >
             <path
-              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-            />
+             d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            />            
           </svg>
         </button>
       </div>
