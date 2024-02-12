@@ -42,7 +42,7 @@ p.hc-alert-paragraph {
   box-shadow: var(--hc-shadow-focus-outer-ring);
 }
 
-/* IDK what this does, I think it's related to the X icon in the close button */
+/* Adjusts size and position of the "x" icon */
 .hc-alert .hc-alert-close-button span[aria-hidden] {
   font-size: 1.8rem;
   margin-top: -0.2rem;
