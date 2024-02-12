@@ -29,10 +29,6 @@
 }
 
 .hc-breadcrumbs__list-item + .hc-breadcrumbs__list-item:hover::before {
-  text-decoration: underline;
-}
-
-.hc-breadcrumbs__list-item + .hc-breadcrumbs__list-item:hover::before {
   text-decoration: none;
 }
 

@@ -2014,10 +2014,6 @@ https://github.com/alphagov/govuk-frontend/blob/a2ff2e41967a38785aaef33135dc7e41
 }
 
 .hc-breadcrumbs__list-item + .hc-breadcrumbs__list-item:hover::before {
-  text-decoration: underline;
-}
-
-.hc-breadcrumbs__list-item + .hc-breadcrumbs__list-item:hover::before {
   text-decoration: none;
 }
 
