@@ -1983,7 +1983,7 @@ dialog.hc-modal::backdrop {
 /* govuk example
 https://github.com/alphagov/govuk-frontend/blob/a2ff2e41967a38785aaef33135dc7e41cbd6d00b/packages/govuk-frontend/src/govuk/components/breadcrumbs/_index.scss
  */
-.hc-breadcrumb__list {
+.hc-breadcrumbs__list {
   display: flex;
   flex-wrap: wrap;
   padding: 0rem;
