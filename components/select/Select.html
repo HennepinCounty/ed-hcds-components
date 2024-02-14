@@ -16,12 +16,10 @@
     <div class="hc-form-group">
       <label class="hc-field-label" for="select1">Select an option</label>
       <select class="hc-select" name="select1" id="select1">
-        <option value="item1" selected>Item 1</option>
+        <option value="">--Choose an option--</option>
+        <option value="item1">Item 1</option>
         <option value="item2">Item 2</option>
         <option value="item3">Item 3</option>
-        <option value="item4">Item 4</option>
-        <option value="item5">Item 5</option>
-        <option value="item6">Item 6</option>
       </select>
     </div>
 
@@ -38,12 +36,10 @@
         id="select2"
         aria-describedby="helpful-hint1"
       >
-        <option value="item1" selected>Item 1</option>
+        <option value="">--Choose an option--</option>
+        <option value="item1">Item 1</option>
         <option value="item2">Item 2</option>
         <option value="item3">Item 3</option>
-        <option value="item4">Item 4</option>
-        <option value="item5">Item 5</option>
-        <option value="item6">Item 6</option>
       </select>
     </div>
 
@@ -51,20 +47,22 @@
     <div class="hc-form-group">
       <label class="hc-field-label" for="select3">Select an option</label>
       <div id="helpful-error2" class="hc-text-error">
-        Text with error information describing what user needs to change
+        Error text - please choose an option
       </div>
+      
+      <!-- aria-invalid="true" toggled by validation  -->
+      <!-- this is useful for screen reader users -->
       <select
         class="hc-select hc-select--error"
         name="select3"
         id="select3"
         aria-describedby="helpful-error2"
+        aria-invalid="true"
       >
-        <option value="item1" selected>Item 1</option>
+        <option value="">--Choose an option--</option>
+        <option value="item1">Item 1</option>
         <option value="item2">Item 2</option>
         <option value="item3">Item 3</option>
-        <option value="item4">Item 4</option>
-        <option value="item5">Item 5</option>
-        <option value="item6">Item 6</option>
       </select>
     </div>
 
@@ -75,20 +73,22 @@
         Text with helpful information for someone completing this task
       </div>
       <div id="error-example-3" class="hc-text-error">
-        Text with error information describing what user needs to change
+        Error text - please choose an option
       </div>
+
+      <!-- aria-invalid="true" should be toggled based on validity of selection -->
+      <!-- this is useful for screen reader users -->
       <select
         class="hc-select hc-select--error"
         name="select4"
         id="select4"
         aria-describedby="hint-example-3 error-example-3"
+        aria-invalid="true"
       >
-        <option value="item1" selected>Item 1</option>
+        <option value="">--Choose an option--</option>
+        <option value="item1">Item 1</option>
         <option value="item2">Item 2</option>
         <option value="item3">Item 3</option>
-        <option value="item4">Item 4</option>
-        <option value="item5">Item 5</option>
-        <option value="item6">Item 6</option>
       </select>
     </div>
   </body>
