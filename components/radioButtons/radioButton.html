@@ -21,6 +21,7 @@
         <fieldset class="hc-fieldset">
           <legend class="hc-fieldset__legend">Where do you live?</legend>
           <div class="hc-radios" data-module="hc-radios">
+
             <div class="hc-radios__item">
               <input
                 class="hc-radios__input"
@@ -36,6 +37,7 @@
                 Hennepin county
               </label>
             </div>
+
             <div class="hc-radios__item">
               <input
                 class="hc-radios__input"
@@ -51,6 +53,7 @@
                 A county in Minnesota that is not Hennepin County
               </label>
             </div>
+
             <div class="hc-radios__item">
               <input
                 class="hc-radios__input"
@@ -66,6 +69,7 @@
                 A US state that is not Minnesota
               </label>
             </div>
+
             <div class="hc-radios__item">
               <input
                 class="hc-radios__input"
@@ -81,6 +85,7 @@
                 Outside of the US
               </label>
             </div>
+
           </div>
         </fieldset>
       </div>
@@ -145,122 +150,143 @@
 
     <!-- ================ -->
     <!-- ================ -->
-    <!-- With error -->
+    <!-- Validation state -->
     <!-- ================ -->
     <!-- ================ -->
+
+    <!-- Styling and accessibility guidance for validation -->
+    <!-- You might not need both the error and hint examples on each radio button -->
+    <!-- Determine need based on the context of the radio button question -->
     <form action="/form-handler" method="post" novalidate="">
       <div class="hc-form-group">
-        <fieldset
-          class="hc-fieldset"
-          aria-describedby="fieldset-error-example-1"
-        >
-          <legend class="hc-fieldset__legend">I want a replacement of</legend>
-          <p class="hc-text-error" id="fieldset-error-example-1">
+        <fieldset class="hc-fieldset" aria-describedby="fieldset-error-example-1">
+          <legend class="hc-fieldset__legend">I need to replace:</legend>
+          <p 
+            class="hc-text-error" 
+            id="fieldset-error-example-1" 
+            role="alert"
+          >
             Select what you are trying to replace
           </p>
-          <div class="hc-radios__item">
-            <input
-              class="hc-radios__input"
-              id="check-1"
-              name="checkReplacement"
-              type="radio"
-              value="SNAP"
-            />
-            <label class="hc-field-label hc-radios__label" for="check-1">
-              Supplemental Nutrition Assistance Program (SNAP)/food benefits -
-              food purchased with benefits was destroyed in a household
-              misfortune or disaster
-            </label>
-          </div>
           <div class="hc-radios" data-module="hc-radios">
+
             <div class="hc-radios__item">
-              <input
-                class="hc-radios__input"
-                id="check-2"
-                name="checkReplacement"
-                type="radio"
-                value="notReceived"
+              <input 
+                class="hc-radios__input" 
+                id="check-1" 
+                name="checkReplacement" 
+                type="radio" 
+                value="SNAP" 
+                aria-describedby="fieldset-error-example-1" 
+              />
+              <label class="hc-field-label hc-radios__label" for="check-1">
+                Supplemental Nutrition Assistance Program (SNAP)/food benefits card
+              </label>
+            </div>
+
+            <div class="hc-radios__item">
+              <input 
+                class="hc-radios__input" 
+                id="check-2" 
+                name="checkReplacement" 
+                type="radio" 
+                value="notReceived" 
+                aria-describedby="fieldset-error-example-1" 
               />
               <label class="hc-field-label hc-radios__label" for="check-2">
                 Mailed check not received
               </label>
             </div>
+
             <div class="hc-radios__item">
-              <input
-                class="hc-radios__input"
-                id="check-3"
-                name="checkReplacement"
-                type="radio"
-                value="lostOrStolen"
+              <input 
+                class="hc-radios__input" 
+                id="check-3" 
+                name="checkReplacement" 
+                type="radio" 
+                value="lostOrStolen" 
+                aria-describedby="fieldset-error-example-1" 
               />
               <label class="hc-field-label hc-radios__label" for="check-3">
                 Check lost or stolen after received
               </label>
             </div>
+
             <div class="hc-radios__item">
-              <input
-                class="hc-radios__input"
-                id="check-4"
-                name="checkReplacement"
-                type="radio"
-                value="destroyedCheck"
+              <input 
+                class="hc-radios__input" 
+                id="check-4" 
+                name="checkReplacement" 
+                type="radio" 
+                value="destroyedCheck" 
+                aria-describedby="fieldset-error-example-1" 
               />
               <label class="hc-field-label hc-radios__label" for="check-4">
                 Mutilated or incorrectly printed check
               </label>
             </div>
+
           </div>
         </fieldset>
       </div>
     </form>
+    
     <!-- ================ -->
     <!-- ================ -->
-    <!-- With error and hint -->
+    <!-- Validation state with hint -->
     <!-- ================ -->
     <!-- ================ -->
-    <form action="/form-handler" method="post" novalidate="">
+
+    <!-- Styling and accessibility guidance for validation -->
+    <!-- You might not need both the error and hint examples on each radio button -->
+    <!-- Determine need based on the context of the radio button question -->
+    <form action="/form-handler" method="post" novalidate>
       <div class="hc-form-group">
-        <fieldset
-          class="hc-fieldset"
-          aria-describedby="fieldset-hint-example-2 fieldset-error-example-2"
-        >
+        <fieldset class="hc-fieldset" aria-describedby="fieldset-hint-example-2 fieldset-error-example-2">
           <legend class="hc-fieldset__legend">
             Have you changed your name?
           </legend>
           <div class="hc-text-hint" id="fieldset-hint-example-2">
-            This includes changing of spelling
+            This includes changing of spelling.
           </div>
           <p class="hc-text-error" id="fieldset-error-example-2">
-            Select whether you have changed your name
+            Select whether you have changed your name.
           </p>
-          <div class="hc-radios__item">
-            <input
-              class="hc-radios__input"
-              id="nameChange-1"
-              name="Name change"
-              type="radio"
-              value="yes"
-            />
-            <label class="hc-field-label hc-radios__label" for="nameChange-1">
-              Yes
-            </label>
-          </div>
           <div class="hc-radios" data-module="hc-radios">
+
+            <div class="hc-radios__item">
+              <input
+                class="hc-radios__input"
+                id="nameChange-1"
+                name="nameChange"
+                type="radio"
+                value="yes"
+                aria-describedby="fieldset-hint-example-2 fieldset-error-example-2"
+              />
+              <label class="hc-field-label hc-radios__label" for="nameChange-1">
+                Yes
+              </label>
+            </div>
+
             <div class="hc-radios__item">
               <input
                 class="hc-radios__input"
                 id="nameChange-2"
-                name="Name change"
+                name="nameChange"
                 type="radio"
                 value="no"
+                aria-describedby="fieldset-hint-example-2 fieldset-error-example-2"
               />
-              <label class="hc-field-label hc-radios__label" for="check-2">
+              <label class="hc-field-label hc-radios__label" for="nameChange-2">
                 No
               </label>
             </div>
+
           </div>
         </fieldset>
       </div>
     </form>
+    
+
   </body>
 </html>
