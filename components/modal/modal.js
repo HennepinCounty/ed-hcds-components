@@ -13,6 +13,9 @@ const updateFocusableElements = () => {
   lastFocusableElement = focusableElements[focusableElements.length - 1];
 };
 
+
+// return focus to element that triggered modal to open
+// restores page scroll behavior
 const closeModal = () => {
   modal.close();
   if (lastFocusedElement) lastFocusedElement.focus();
@@ -25,13 +28,23 @@ closeButtons.forEach(button => {
   button.addEventListener("click", closeModal);
 });
 
+
+// Listen for click events on the open modal button
 openButton.addEventListener("click", () => {
+
+  // Save the last focused element to return focus back to it when the modal closes
   lastFocusedElement = document.activeElement;
   modal.showModal();
+
+  // Prevent scrolling on the main document body while the modal is open to enhance user experience
   document.body.style.overflow = 'hidden';
+
+  // Update the list of focusable elements within the modal for focus trapping
+  // Immediately move focus to the first focusable element in the modal
   updateFocusableElements();
   firstFocusableElement.focus();
 });
+
 
 // Global keydown listener for trapping focus
 document.addEventListener('keydown', (e) => {
