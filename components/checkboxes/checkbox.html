@@ -9,11 +9,12 @@
 
   <body class="hc-padding-xy-06">
     <h1 class="hc-margin-top-06">Checkboxes</h1>
-    <!-- ============================== -->
-    <!-- ============================== -->
-    <!-- Regular  -->
-    <!-- ============================== -->
-    <!-- ============================== -->
+    <!-- ================ -->
+    <!-- ================ -->
+    <!-- Regular state -->
+    <!-- ================ -->
+    <!-- ================ -->
+    
     <h2>Checkbox - regular</h2>
     <form action="/form-handler" method="post" novalidate>
       <div class="hc-form-group">
@@ -111,11 +112,11 @@
       </div>
     </form>
 
-    <!-- ============================== -->
-    <!-- ============================== -->
+    <!-- ================ -->
+    <!-- ================ -->
     <!-- Validation state -->
-    <!-- ============================== -->
-    <!-- ============================== -->
+    <!-- ================ -->
+    <!-- ================ -->
 
     <!-- Styling and accessibility guidance for validation -->
     
@@ -124,7 +125,13 @@
 
     <form action="/form-handler" method="post" novalidate>
       <div class="hc-form-group">
-        <fieldset class="hc-fieldset" aria-describedby="fieldset-hint-example-1">
+
+        <!-- aria-invalid="true" should be added/remove dynamically based on validation logic -->
+        <fieldset 
+          class="hc-fieldset" 
+          aria-describedby="fieldset-hint-example-1"
+          aria-invalid="true"
+        >
           <legend class="hc-fieldset__legend">Legend title for checkbox group</legend>
           <div class="hc-text-hint" id="fieldset-hint-example-1">
             Hint text for all options

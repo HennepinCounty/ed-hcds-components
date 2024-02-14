@@ -43,6 +43,16 @@
       </select>
     </div>
 
+    <!-- ================ -->
+    <!-- ================ -->
+    <!-- Validation state -->
+    <!-- ================ -->
+    <!-- ================ -->
+
+    <!-- Styling and accessibility guidance for validation -->
+    <!-- You might not need both the error and hint examples on each radio button -->
+    <!-- Determine need based on the context of the radio button question -->
+
     <h2>With error</h2>
     <div class="hc-form-group">
       <label class="hc-field-label" for="select3">Select an option</label>
@@ -50,8 +60,7 @@
         Error text - please choose an option
       </div>
       
-      <!-- aria-invalid="true" toggled by validation  -->
-      <!-- this is useful for screen reader users -->
+      <!-- aria-invalid="true" should be added/removed dynamically based on validation logic -->
       <select
         class="hc-select hc-select--error"
         name="select3"
@@ -66,6 +75,11 @@
       </select>
     </div>
 
+
+    <!-- Styling and accessibility guidance for validation -->
+    <!-- You might not need both the error and hint examples on each radio button -->
+    <!-- Determine need based on the context of the radio button question -->
+    
     <h2>With helper and error</h2>
     <div class="hc-form-group">
       <label class="hc-field-label" for="select4">Select an option</label>
@@ -76,8 +90,7 @@
         Error text - please choose an option
       </div>
 
-      <!-- aria-invalid="true" should be toggled based on validity of selection -->
-      <!-- this is useful for screen reader users -->
+      <!-- aria-invalid="true" should be added/removed dynamically based on validation logic -->
       <select
         class="hc-select hc-select--error"
         name="select4"

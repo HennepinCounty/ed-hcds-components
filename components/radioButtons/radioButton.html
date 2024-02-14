@@ -159,7 +159,13 @@
     <!-- Determine need based on the context of the radio button question -->
     <form action="/form-handler" method="post" novalidate="">
       <div class="hc-form-group">
-        <fieldset class="hc-fieldset" aria-describedby="fieldset-error-example-1">
+
+        <!-- aria-invalid="true" should be added/removed dynamically based on validation logic -->
+        <fieldset 
+          class="hc-fieldset" 
+          aria-describedby="fieldset-error-example-1"
+          aria-invalid="true"
+        >
           <legend class="hc-fieldset__legend">I need to replace:</legend>
           <p 
             class="hc-text-error" 
@@ -233,7 +239,7 @@
     
     <!-- ================ -->
     <!-- ================ -->
-    <!-- Validation state with hint -->
+    <!-- Validation with hint -->
     <!-- ================ -->
     <!-- ================ -->
 
@@ -242,7 +248,13 @@
     <!-- Determine need based on the context of the radio button question -->
     <form action="/form-handler" method="post" novalidate>
       <div class="hc-form-group">
-        <fieldset class="hc-fieldset" aria-describedby="fieldset-hint-example-2 fieldset-error-example-2">
+
+        <!-- aria-invalid="true" should be added/removed dynamically based on validation logic -->
+        <fieldset 
+          class="hc-fieldset" 
+          aria-describedby="fieldset-hint-example-2 fieldset-error-example-2"
+          aria-invalid="true"
+        >
           <legend class="hc-fieldset__legend">
             Have you changed your name?
           </legend>
