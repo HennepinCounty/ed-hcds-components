@@ -2,37 +2,56 @@ const openButton = document.querySelector("[data-open-modal]");
 const modal = document.querySelector("[data-modal]");
 let lastFocusedElement;
 
-// Selects all elements that can close the modal
-const closeButtons = document.querySelectorAll("[data-close-modal]");
+const focusableElementsString = 'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex="0"], [contenteditable]';
+let firstFocusableElement;
+let lastFocusableElement;
 
-
-// when modal opens, focus is saved on element that opened modal
-// and scrolling prevented in background
-openButton.addEventListener("click", () => {
-  lastFocusedElement = document.activeElement; 
-  modal.showModal();
-  document.body.style.overflow = 'hidden'; 
-});
-
-
-// when modal closes, focus is on element that opened modal
-// restores scrolling on background
-const closeModal = () => {
-  modal.close();
-  if (lastFocusedElement) lastFocusedElement.focus(); 
-  document.body.style.overflow = ''; 
+// Function to update the list of focusable elements and set the first and last
+const updateFocusableElements = () => {
+  const focusableElements = modal.querySelectorAll(focusableElementsString);
+  firstFocusableElement = focusableElements[0];
+  lastFocusableElement = focusableElements[focusableElements.length - 1];
 };
 
+const closeModal = () => {
+  modal.close();
+  if (lastFocusedElement) lastFocusedElement.focus();
+  document.body.style.overflow = '';
+};
 
-// Attach the closeModal function to all close buttons
+// Attach closeModal function to all close buttons
+const closeButtons = document.querySelectorAll("[data-close-modal]");
 closeButtons.forEach(button => {
   button.addEventListener("click", closeModal);
 });
 
+openButton.addEventListener("click", () => {
+  lastFocusedElement = document.activeElement;
+  modal.showModal();
+  document.body.style.overflow = 'hidden';
+  updateFocusableElements();
+  firstFocusableElement.focus();
+});
 
-// Handle the Escape key to close the modal
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && modal.hasAttribute('open')) {
-    closeModal();
+// Global keydown listener for trapping focus
+document.addEventListener('keydown', (e) => {
+  if (modal.hasAttribute('open')) {
+    if (e.key === "Escape") {
+      closeModal();
+    } else if (e.key === 'Tab') {
+      
+      // Shift + Tab and Tab controls
+      if (e.shiftKey) { 
+        if (document.activeElement === firstFocusableElement) {
+          lastFocusableElement.focus();
+          e.preventDefault();
+        }
+      } else { 
+        if (document.activeElement === lastFocusableElement) {
+          firstFocusableElement.focus();
+          e.preventDefault();
+        }
+      }
+    }
   }
 });

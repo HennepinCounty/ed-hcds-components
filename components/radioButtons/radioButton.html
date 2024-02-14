@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="radioButton.css" />
   </head>
   <body class="hc-padding-xy-08">
-    <h1>Radio Item</h1>
-
-    <h3>New styling</h3>
+    <h1>Radio Buttons</h1>
 
     <!-- ================ -->
     <!-- ================ -->
@@ -18,7 +16,7 @@
     <!-- ================ -->
 
     <!-- Disable browser validation for any examples that include form elements -->
-    <form action="/form-handler" method="post" novalidate="">
+    <form action="/form-handler" method="post" novalidate>
       <div class="hc-form-group">
         <fieldset class="hc-fieldset">
           <legend class="hc-fieldset__legend">Where do you live?</legend>
@@ -26,14 +24,14 @@
             <div class="hc-radios__item">
               <input
                 class="hc-radios__input"
-                id="whereDoYouLive"
+                id="hennepin"
                 name="whereDoYouLive"
                 type="radio"
                 value="hennepin"
               />
               <label
                 class="hc-field-label hc-radios__label"
-                for="whereDoYouLive"
+                for="hennepin"
               >
                 Hennepin county
               </label>
@@ -41,14 +39,14 @@
             <div class="hc-radios__item">
               <input
                 class="hc-radios__input"
-                id="whereDoYouLive-2"
+                id="otherCounty"
                 name="whereDoYouLive"
                 type="radio"
                 value="otherCounty"
               />
               <label
                 class="hc-field-label hc-radios__label"
-                for="whereDoYouLive-2"
+                for="otherCounty"
               >
                 A county in Minnesota that is not Hennepin County
               </label>
@@ -56,14 +54,14 @@
             <div class="hc-radios__item">
               <input
                 class="hc-radios__input"
-                id="whereDoYouLive-3"
+                id="outsideMN"
                 name="whereDoYouLive"
                 type="radio"
                 value="outsideMN"
               />
               <label
                 class="hc-field-label hc-radios__label"
-                for="whereDoYouLive-3"
+                for="outsideMN"
               >
                 A US state that is not Minnesota
               </label>
@@ -71,14 +69,14 @@
             <div class="hc-radios__item">
               <input
                 class="hc-radios__input"
-                id="whereDoYouLive-4"
+                id="outsideUS"
                 name="whereDoYouLive"
                 type="radio"
                 value="outsideUS"
               />
               <label
                 class="hc-field-label hc-radios__label"
-                for="whereDoYouLive-4"
+                for="outsideUS"
               >
                 Outside of the US
               </label>
@@ -93,53 +91,58 @@
     <!-- With hint -->
     <!-- ================ -->
     <!-- ================ -->
-    <form action="/form-handler" method="post" novalidate="">
+    <form action="/form-handler" method="post" novalidate>
       <div class="hc-form-group">
-        <fieldset
-          class="hc-fieldset"
-          aria-describedby="fieldset-hint-when-did-you-move"
-        >
-          <legend class="hc-fieldset__legend">
-            Did you move to Minnesota within the last year?
-          </legend>
-          <div class="hc-text-hint" id="fieldset-hint-when-did-you-move">
-            Hint text preview to provide context for question
-          </div>
-          <div class="hc-radios" data-module="hc-radios">
-            <div class="hc-radios__item">
-              <input
-                class="hc-radios__input"
-                id="whenDidYouMove-1"
-                name="whenDidYouMove"
-                type="radio"
-                value="hennepin"
-              />
-              <label
-                class="hc-field-label hc-radios__label"
-                for="whenDidYouMove-1"
-              >
-                Yes
-              </label>
-            </div>
-            <div class="hc-radios__item">
-              <input
-                class="hc-radios__input"
-                id="whenDidYouMove-2"
-                name="whenDidYouMove"
-                type="radio"
-                value="otherCounty"
-              />
-              <label
-                class="hc-field-label hc-radios__label"
-                for="whenDidYouMove-2"
-              >
-                No
-              </label>
-            </div>
-          </div>
-        </fieldset>
+          <fieldset class="hc-fieldset" aria-describedby="fieldset-hint-when-did-you-move">
+              <legend class="hc-fieldset__legend">
+                  Did you move to Minnesota within the last year?
+              </legend>
+
+              <!-- Directly providing context for the question with hint text -->
+              <p class="hc-text-hint" id="fieldset-hint-when-did-you-move">
+                  Hint: Please select 'Yes' if you moved to Minnesota within the last year; otherwise, select 'No'.
+              </p>
+
+              <div class="hc-radios" data-module="hc-radios">
+                  <div class="hc-radios__item">
+                      <input
+                          class="hc-radios__input"
+                          id="iMoved"
+                          name="whenDidYouMove"
+                          type="radio"
+                          value="iMoved"
+                          aria-labelledby="label-iMoved"
+                      />
+                      <label
+                          id="label-iMoved"
+                          class="hc-field-label hc-radios__label"
+                          for="iMoved"
+                      >
+                          Yes
+                      </label>
+                  </div>
+                  <div class="hc-radios__item">
+                      <input
+                          class="hc-radios__input"
+                          id="iDidntMove"
+                          name="whenDidYouMove"
+                          type="radio"
+                          value="iDidntMove"
+                          aria-labelledby="label-iDidntMove"
+                      />
+                      <label
+                          id="label-iDidntMove"
+                          class="hc-field-label hc-radios__label"
+                          for="iDidntMove"
+                      >
+                          No
+                      </label>
+                  </div>
+              </div>
+          </fieldset>
       </div>
-    </form>
+  </form>
+
     <!-- ================ -->
     <!-- ================ -->
     <!-- With error -->
