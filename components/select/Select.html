@@ -11,7 +11,12 @@
   <body class="hc-padding-xy-06">
     <h1 class="hc-margin-top-06">Select</h1>
 
-    <h2>Without helper text</h2>
+    <!-- ================ -->
+    <!-- ================ -->
+    <!-- Default state -->
+    <!-- ================ -->
+    <!-- ================ -->
+    <h2>Default state</h2>
 
     <div class="hc-form-group">
       <label class="hc-field-label" for="select1">Select an option</label>
@@ -23,6 +28,11 @@
       </select>
     </div>
 
+    <!-- ================ -->
+    <!-- ================ -->
+    <!-- With hint -->
+    <!-- ================ -->
+    <!-- ================ -->
     <h2>With helper text</h2>
 
     <div class="hc-form-group">
@@ -67,6 +77,7 @@
         id="select3"
         aria-describedby="helpful-error2"
         aria-invalid="true"
+        required
       >
         <option value="">--Choose an option--</option>
         <option value="item1">Item 1</option>
@@ -79,7 +90,7 @@
     <!-- Styling and accessibility guidance for validation -->
     <!-- You might not need both the error and hint examples on each radio button -->
     <!-- Determine need based on the context of the radio button question -->
-    
+
     <h2>With helper and error</h2>
     <div class="hc-form-group">
       <label class="hc-field-label" for="select4">Select an option</label>
@@ -97,6 +108,7 @@
         id="select4"
         aria-describedby="hint-example-3 error-example-3"
         aria-invalid="true"
+        required
       >
         <option value="">--Choose an option--</option>
         <option value="item1">Item 1</option>

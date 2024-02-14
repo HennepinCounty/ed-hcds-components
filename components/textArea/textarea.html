@@ -10,29 +10,25 @@
     <link rel="stylesheet" href="../../CSS/index.css" />
     <link rel="stylesheet" href="textArea.css" />
   </head>
-  <body class="hc-padding-x-05 hc-padding-y-08">
+
+  <body class="hc-padding-xy-06">
     <div>
-      <h1>Textarea</h1>
+      <h1 class="hc-margin-top-06">Textarea</h1>
       <h2>Variants</h2>
       <div>
+
+        
+    <!-- ================ -->
+    <!-- ================ -->
+    <!-- Default state -->
+    <!-- ================ -->
+    <!-- ================ -->
         <h3>Default</h3>
         <div class="hc-form-group">
-          <label class="hc-field-label" for="hc-textarea1">Label</label>
+          <label class="hc-field-label" for="hc-textarea1">Instructions</label>
           <textarea
             class="hc-textarea"
             id="hc-textarea1"
-            name="hc-textarea"
-            rows="5"
-            cols="50"
-          ></textarea>
-        </div>
-        <h3>Error</h3>
-        <div class="hc-form-group">
-          <label class="hc-field-label" for="hc-textarea5">Label</label>
-          <div class="hc-text-error">Error Message</div>
-          <textarea
-            class="hc-textarea hc-textarea--error"
-            id="hc-textarea5"
             name="hc-textarea"
             rows="5"
             cols="50"
@@ -43,18 +39,16 @@
 
     <!-- =========================== -->
     <!-- =========================== -->
-    <!-- Examples with helper text -->
+    <!-- With hint -->
     <!-- =========================== -->
     <!-- =========================== -->
 
-    <h1 class="hc-margin-top-09">With helper text</h1>
+    <h2>With helper text</h2>
 
     <h3>Default</h3>
     <div class="hc-form-group">
-      <label class="hc-field-label" for="hc-textarea-with-helper-1"
-        >Label</label
-      >
-      <div id="hint-example-1" class="hc-text-hint">Helper text</div>
+      <label class="hc-field-label" for="hc-textarea-with-helper-1">Instructions</label>
+      <div id="hint-example-1" class="hc-text-hint">Helper text with clear instructions</div>
       <textarea
         class="hc-textarea"
         id="hc-textarea-with-helper-1"
@@ -65,12 +59,34 @@
       ></textarea>
     </div>
 
+    <!-- ================ -->
+    <!-- ================ -->
+    <!-- Validation state -->
+    <!-- ================ -->
+    <!-- ================ -->
+
+    <!-- Styling and accessibility guidance for validation -->
+    <!-- aria-invalid="true" should be added/remove dynamically based on validation logic -->
+
     <h2>Error</h2>
     <div class="hc-form-group">
-      <label class="hc-field-label" for="hc-textarea-with-helper-2"
-        >Label</label
-      >
-      <div id="hint-example-2" class="hc-text-hint">Helper text</div>
+      <label class="hc-field-label" for="hc-textarea5">Instructions</label>
+      <div class="hc-text-error" id="textareaErrorMsg">Error Message</div>
+      <textarea
+        class="hc-textarea hc-textarea--error"
+        id="hc-textarea5"
+        name="hc-textarea"
+        rows="5"
+        cols="50"
+        aria-describedby="textareaErrorMsg"
+        aria-invalid="true"
+        required
+      ></textarea>
+    </div>
+
+    <div class="hc-form-group">
+      <label for="hc-textarea-with-helper-2" class="hc-field-label">Instructions</label>
+      <div id="hint-example-2" class="hc-text-hint">Helper text with clear instructions.</div>
       <div id="error-example-1" class="hc-text-error">Error Message</div>
       <textarea
         class="hc-textarea hc-textarea--error"
@@ -79,7 +95,10 @@
         rows="5"
         cols="50"
         aria-describedby="hint-example-2 error-example-1"
+        aria-invalid="true"
+        required
       ></textarea>
     </div>
+    
   </body>
 </html>
