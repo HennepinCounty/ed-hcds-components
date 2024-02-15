@@ -9,6 +9,7 @@
 @forward "./primitives/borderRadius";
 @forward "./primitives/borderStyle";
 @forward "./primitives/spacing";
+@forward "./primitives/icons";
 
 // Utilities
 @forward "./utiltities/width";
@@ -17,11 +18,8 @@
 @forward "./utiltities/margin";
 @forward "./utiltities/padding";
 
-// Icons
-@forward "./primitives/icons";
-
 // Components
-@forward "./components/buttons/button.css";
+@forward "./components/button/button.css";
 @forward "./components/textInput/textInput.css";
 @forward "./components/alertBanner/alert.css";
 @forward "./components/modal/modal.css";
@@ -32,4 +30,4 @@
 @forward "./components/skiplink/skiplink.css";
 @forward "./components/textArea/textArea.css";
 @forward "./components/select/select.css";
-@forward "./components/radio/radiobutton.css";
+@forward "./components/radioButtons/radioButton.css";
