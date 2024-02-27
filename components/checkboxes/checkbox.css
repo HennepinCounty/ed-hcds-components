@@ -2,7 +2,6 @@
 /* includes min-height for consistent sizing of form elements */
 /* margin-bottom adds space between items */
 /* position: relative so that absolute positioning can be used for label and input */
-
 .hc-checkboxes {
   margin-top: var(--hc-spacing-03);
 }
