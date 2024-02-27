@@ -36,12 +36,15 @@
   color: var(--hc-text-hint);
 }
 
-/* ======================================== */
-/* Based on GovUK */
-/* ======================================== */
-/*  govuk example
-https://github.com/alphagov/govuk-frontend/blob/a2ff2e41967a38785aaef33135dc7e41cbd6d00b/packages/govuk-frontend/src/govuk/components/breadcrumbs/_index.scss
- */
+
+
+/***************************************************************************************
+*    Title: Breadcrumbs component (css)
+*    Author: Gov.uk
+*    Date: Aug 7th, 2023
+*    Availability: https://github.com/alphagov/govuk-frontend/blob/a2ff2e41967a38785aaef33135dc7e41cbd6d00b/packages/govuk-frontend/src/govuk/components/breadcrumbs/_index.scss
+*
+***************************************************************************************/
 
 /* ======================================== */
 /* The MIT License (MIT)

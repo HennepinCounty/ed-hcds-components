@@ -5,8 +5,8 @@
 
 // These are also used in focus styles
 
-// Change borders to absolute px instead of rem
-// https://github.com/alphagov/govuk-frontend/pull/2998
+// Use px instead of rem
+// For more information, visit https://github.com/alphagov/govuk-frontend/pull/2998
 
 :root {
   --hc-border-base: 16px;

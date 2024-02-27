@@ -1,6 +1,4 @@
 :root {
-  // uses absolute units for spacing instead of rem per
-  // https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/
 
   --hc-spacing-base: 16px;
 
@@ -19,3 +17,7 @@
   --hc-spacing-12: calc(var(--hc-spacing-base) * 6); /*96px*/
   --hc-spacing-13: calc(var(--hc-spacing-base) * 10); /*160px*/
 }
+
+
+  // uses absolute units for spacing instead of rem per
+  // https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/

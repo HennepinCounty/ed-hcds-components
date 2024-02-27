@@ -31,3 +31,6 @@ dialog.hc-modal[open] {
 dialog.hc-modal::backdrop {
   background-color: rgba(0, 0, 0, 0.6);
 }
+
+
+

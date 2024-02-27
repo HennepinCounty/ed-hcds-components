@@ -54,7 +54,6 @@
 
 
 /* [ ] Check box styling */
-/* Should update to 36px but will need to redo the checkbox and label padddins */
 .hc-checkbox__label::before {
   content: "";
   box-sizing: border-box;
@@ -112,10 +111,15 @@
   border: var(--hc-border-brand);
 }
 
-/* ====================================== */
-/* styling based on govuk */
-/* https://github.com/alphagov/govuk-frontend/blob/9f05cea739d14d4cbf18e79b17228045ca84b3ba/packages/govuk-frontend/src/govuk/components/checkboxes/_index.scss */
-/* ====================================== */
+/***************************************************************************************
+*    Title: Checkboxes component (css)
+*    Author: Gov.uk
+*    Date: Aug 7th, 2023
+*    Availability: https://github.com/alphagov/govuk-frontend/blob/9f05cea739d14d4cbf18e79b17228045ca84b3ba/packages/govuk-frontend/src/govuk/components/checkboxes/_index.scss
+*
+***************************************************************************************/
+
+
 /* ======================================== */
 /* ======================================== */
 /* The MIT License (MIT)
@@ -142,7 +146,4 @@ SOFTWARE. */
 
 /* ======================================== */
 /* ======================================== */
-/* Other resources for accessibly styling radio buttons/checkboxes */
-/* https://www.sarasoueidan.com/blog/inclusively-hiding-and-styling-checkboxes-and-radio-buttons/ */
-/* ======================================== */
-/* ======================================== */
+
