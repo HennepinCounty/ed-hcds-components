@@ -68,6 +68,14 @@ h6 {
   isolation: isolate;
 }
 
+/***************************************************************************************
+*    Code used adopted from: 
+*    Title: My Custom CSS Reset
+*    Author: Josh W Comeau
+*    Date: June 9th, 2023
+*    Availability: https://www.joshwcomeau.com/css/custom-css-reset/
+*
+***************************************************************************************/
 :root {
   --hc-white: #ffffff;
   --hc-black: #000000;
@@ -160,7 +168,7 @@ h6 {
   --hc-button-danger: var(--hc-red-400);
   --hc-button-danger-hover: var(--hc-red-500);
   --hc-button-danger-active: var(--hc-red-600);
-  --hc-button-disabled-background: var(--hc-gray-300);
+  --hc-button-disabled-background: var(--hc-gray-200);
   --hc-button-disabled-text: var(--hc-text-disabled);
   --hc-icon-primary: var(--hc-gray-600);
   --hc-icon-secondary: var(--hc-gray-400);
@@ -636,6 +644,38 @@ ol + .hc-heading-s,
     padding-top: 10px;
   }
 }
+/***************************************************************************************
+*    Title: Typography (scss)
+*    Author: Gov.uk
+*    Date: Aug 7th, 2023
+*    Availability: https://github.com/alphagov/govuk-frontend/blob/a2ff2e41967a38785aaef33135dc7e41cbd6d00b/packages/govuk-frontend/src/govuk/core/_typography.scss
+*
+***************************************************************************************/
+/* ======================================== */
+/* ======================================== */
+/* The MIT License (MIT)
+
+Copyright (C) 2017 Crown Copyright (Government Digital Service)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE. */
+/* ======================================== */
+/* ======================================== */
 :root {
   --hc-shadow-style-focus: none;
   --focus-inset: 2px 0px 0px 0px var(--hc-white) inset,
@@ -1563,7 +1603,7 @@ ol + .hc-heading-s,
 /* ======================== */
 .hc-button--secondary {
   background-color: var(--hc-white);
-  color: var(--text-primary);
+  color: var(--hc-link-primary);
   border: 2px solid var(--hc-button-secondary-border);
 }
 
@@ -1884,39 +1924,6 @@ p.hc-alert-paragraph {
   outline: var(--hc-outline-style-focus);
 }
 
-/* This styles the modal container */
-dialog.hc-modal[open] {
-  display: block;
-  margin: auto;
-  max-width: 48rem;
-  border: none;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
-}
-
-/* This contains the modal heading and close button */
-.modal-header-and-close {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: var(--hc-spacing-03);
-}
-
-/* This contains content inside the modal */
-/* Gap is added in case this section is used to stack form elements or other nested components */
-.modal-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: var(--hc-spacing-05);
-  padding-right: var(--hc-spacing-07);
-  padding-bottom: var(--hc-spacing-07);
-}
-
-dialog.hc-modal::backdrop {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
 /* Wrapper for accordion group */
 .hc-accordion-group {
   /* background-color: white; */
@@ -2025,12 +2032,13 @@ dialog.hc-modal::backdrop {
   color: var(--hc-text-hint);
 }
 
-/* ======================================== */
-/* Based on GovUK */
-/* ======================================== */
-/*  govuk example
-https://github.com/alphagov/govuk-frontend/blob/a2ff2e41967a38785aaef33135dc7e41cbd6d00b/packages/govuk-frontend/src/govuk/components/breadcrumbs/_index.scss
- */
+/***************************************************************************************
+*    Title: Breadcrumbs component (css)
+*    Author: Gov.uk
+*    Date: Aug 7th, 2023
+*    Availability: https://github.com/alphagov/govuk-frontend/blob/a2ff2e41967a38785aaef33135dc7e41cbd6d00b/packages/govuk-frontend/src/govuk/components/breadcrumbs/_index.scss
+*
+***************************************************************************************/
 /* ======================================== */
 /* The MIT License (MIT)
 
@@ -2105,7 +2113,6 @@ SOFTWARE. */
 }
 
 /* [ ] Check box styling */
-/* Should update to 36px but will need to redo the checkbox and label padddins */
 .hc-checkbox__label::before {
   content: "";
   box-sizing: border-box;
@@ -2160,10 +2167,13 @@ SOFTWARE. */
   border: var(--hc-border-brand);
 }
 
-/* ====================================== */
-/* styling based on govuk */
-/* https://github.com/alphagov/govuk-frontend/blob/9f05cea739d14d4cbf18e79b17228045ca84b3ba/packages/govuk-frontend/src/govuk/components/checkboxes/_index.scss */
-/* ====================================== */
+/***************************************************************************************
+*    Title: Checkboxes component (css)
+*    Author: Gov.uk
+*    Date: Aug 7th, 2023
+*    Availability: https://github.com/alphagov/govuk-frontend/blob/9f05cea739d14d4cbf18e79b17228045ca84b3ba/packages/govuk-frontend/src/govuk/components/checkboxes/_index.scss
+*
+***************************************************************************************/
 /* ======================================== */
 /* ======================================== */
 /* The MIT License (MIT)
@@ -2189,41 +2199,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. */
 /* ======================================== */
 /* ======================================== */
-/* Other resources for accessibly styling radio buttons/checkboxes */
-/* https://www.sarasoueidan.com/blog/inclusively-hiding-and-styling-checkboxes-and-radio-buttons/ */
-/* ======================================== */
-/* ======================================== */
-/* Glues the input field and button together */
-.hc-search-wrapper {
-  display: flex;
-  flex-direction: row;
-  gap: var(--hc-spacing-00);
-}
-
-/* Styling for font typed into field */
-input.hc-input[type=search] {
-  font-family: var(--hc-font-family);
-  font-size: var(--hc-font-body-size-regular);
-  font-style: normal;
-  color: var(--hc-text-primary, #171a1d);
-  font-weight: 400;
-  line-height: 100%;
-}
-
-/* Un-rounds the corners of input field to be flush against button */
-.hc-input-search {
-  border-radius: 4px 0px 0px 4px;
-}
-
-/* Un-rounds the corners of button to be flush against input field */
-.hc-button-search {
-  border-radius: 0px 4px 4px 0px;
-  margin-inline-start: -2px;
-}
-
 .hc-skiplink {
-  /* taken from govuk
-  https://github.com/alphagov/govuk-frontend/blob/b44d7b0fe66847fb34881841b6550174111ea9ba/packages/govuk-frontend/src/govuk/helpers/_visually-hidden.scss#L4
+  /* 
   /// Hide an element visually, but have it available for screen readers whilst
   /// allowing the element to be focused when navigated to via the keyboard (e.g.
   /// for the skip link)
@@ -2239,11 +2216,6 @@ input.hc-input[type=search] {
   clip: rect(0 0 0 0) !important;
   -webkit-clip-path: inset(50%) !important;
   clip-path: inset(50%) !important;
-  /*
-  // For long content, line feeds are not interpreted as spaces and small width
-  // causes content to wrap 1 word per line:
-  // https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-  */
   white-space: nowrap !important;
 }
 
@@ -2287,6 +2259,38 @@ a.hc-skiplink:visited {
   color: var(--hc-white);
 }
 
+/***************************************************************************************
+*    Title: Skiplink component (css)
+*    Author: Gov.uk
+*    Date: July 31st, 2023
+*    Availability: https://github.com/alphagov/govuk-frontend/blob/b44d7b0fe66847fb34881841b6550174111ea9ba/packages/govuk-frontend/src/govuk/helpers/_visually-hidden.scss#L4
+*
+***************************************************************************************/
+/* ======================================== */
+/* ======================================== */
+/* The MIT License (MIT)
+
+Copyright (C) 2017 Crown Copyright (Government Digital Service)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE. */
+/* ======================================== */
+/* ======================================== */
 .hc-textarea {
   font-family: var(--hc-font-family);
   min-height: 40px;
@@ -2348,32 +2352,6 @@ a.hc-skiplink:visited {
   border: 2px solid var(--hc-border-color-error);
 }
 
-/* ======================================== */
-/* ======================================== */
-/* Based on GovUK */
-/* The MIT License (MIT)
-
-Copyright (C) 2017 Crown Copyright (Government Digital Service)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
-of the Software, and to permit persons to whom the Software is furnished to do
-so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE. */
-/* ======================================== */
-/* ======================================== */
 .hc-radios {
   margin-top: var(--hc-spacing-04);
 }
@@ -2468,4 +2446,98 @@ SOFTWARE. */
 /* Selected state */
 .hc-radios__input:checked + .hc-radios__label::after {
   opacity: 1;
+}
+
+/***************************************************************************************
+*    Title: Radio component (css)
+*    Author: Gov.uk
+*    Date: Sept 29th, 2023
+*    Availability: https://github.com/alphagov/govuk-frontend/blob/a2ff2e41967a38785aaef33135dc7e41cbd6d00b/packages/govuk-frontend/src/govuk/components/radios/_index.scss
+*
+***************************************************************************************/
+/* ======================================== */
+/* ======================================== */
+/* Based on GovUK */
+/* The MIT License (MIT)
+
+Copyright (C) 2017 Crown Copyright (Government Digital Service)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE. */
+/* ======================================== */
+/* ======================================== */
+/* Glues the input field and button together */
+.hc-search-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: var(--hc-spacing-00);
+}
+
+/* Styling for font typed into field */
+input.hc-input[type=search] {
+  font-family: var(--hc-font-family);
+  font-size: var(--hc-font-body-size-regular);
+  font-style: normal;
+  color: var(--hc-text-primary, #171a1d);
+  font-weight: 400;
+  line-height: 100%;
+}
+
+/* Un-rounds the corners of input field to be flush against button */
+.hc-input-search {
+  border-radius: 4px 0px 0px 4px;
+}
+
+/* Un-rounds the corners of button to be flush against input field */
+.hc-button-search {
+  border-radius: 0px 4px 4px 0px;
+  margin-inline-start: -2px;
+}
+
+/* This styles the modal container */
+dialog.hc-modal[open] {
+  display: block;
+  margin: auto;
+  max-width: 48rem;
+  border: none;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+}
+
+/* This contains the modal heading and close button */
+.modal-header-and-close {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: var(--hc-spacing-03);
+}
+
+/* This contains content inside the modal */
+/* Gap is added in case this section is used to stack form elements or other nested components */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--hc-spacing-05);
+  padding-right: var(--hc-spacing-07);
+  padding-bottom: var(--hc-spacing-07);
+}
+
+dialog.hc-modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
 }/*# sourceMappingURL=index.css.map */

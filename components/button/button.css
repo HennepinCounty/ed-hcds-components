@@ -57,7 +57,7 @@
 
 .hc-button--secondary {
   background-color: var(--hc-white);
-  color: var(--text-primary);
+  color: var(--hc-link-primary);
   border: 2px solid var(--hc-button-secondary-border);
 }
 
