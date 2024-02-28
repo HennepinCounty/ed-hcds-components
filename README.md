@@ -1,5 +1,5 @@
 # ed-hcds-components
-A repo of reusable components that will be featured in the Hennepin County Design System
+ed-hcds-components contains accessible code for building a user interface for Hennepin County digital products. 
 <br><br>
 
 ## Structure
