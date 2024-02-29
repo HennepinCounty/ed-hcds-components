@@ -4,16 +4,19 @@
   width: 1rem; /* 16px */
   height: 1rem; /* 16px */
   fill: currentColor;
+  flex-shrink: 0;
 }
 
 .hc-icon-size--regular {
   width: 1.5rem; /* 24px */
   height: 1.5rem; /* 24px */
   fill: currentColor;
+  flex-shrink: 0;
 }
 
 .hc-icon-size--large {
   width: 2rem; /* 32px */
   height: 2rem; /* 32px */
   fill: currentColor;
+  flex-shrink: 0;
 }
