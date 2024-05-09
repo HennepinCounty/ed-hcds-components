@@ -1,4 +1,4 @@
-let accordionHeaders = document.querySelectorAll(".hc-accordion-header");
+let accordionHeaders = document.querySelectorAll(".hc-accordion-section-heading");
 accordionHeaders.forEach((header) => {
   header.addEventListener("click", () => {
     const symbol = header.querySelector(`.hc-icon-size--regular path`);
