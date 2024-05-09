@@ -189,7 +189,7 @@ h6 {
   --hc-text-hint: var(--hc-gray-500);
   --hc-text-error: var(--hc-support-error);
   --hc-text-inverse: var(--hc-white);
-  --hc-text-disabled: var(--hc-gray-400);
+  --hc-text-disabled: var(--hc-gray-500);
   --hc-text-on-color-disabled: var(--hc-gray-400);
   --hc-link-primary: var(--hc-background-brand);
   --hc-link-inverse: var(--hc-white);
