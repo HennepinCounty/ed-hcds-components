@@ -44,11 +44,11 @@ Contains utility classes similar to Tailwind CSS
 ### Incorporate the Design System CSS Stylesheet
 
 1. The file ./CSS/index.css is a compiled CSS file that includes all the CSS for the design system. Copy ./CSS/index.css into your project, then link it in your HTML files. 
-  * Tip:  if you are building your project with Tailwind CSS, you can:
-    * add a `devDependencies` entry of `"@hennepincounty/ed-hcds-components": "git+https://github.com/HennepinCounty/ed-hcds-components.git#YOUR-CHOSEN-COMMIT-HASH-HERE"` 
-      * _(recommended:  choose a specific commit of the HCDS repository, rather than linking to `main`, for the same reasons that it is best to specify NPM package numbers rather than `latest`)_
-    * [Using `@import`, import](https://tailwindcss.com/docs/functions-and-directives#import-directive) "`../node_modules/@hennepincounty/ed-hcds-components/CSS/indexnoresetmin.css`" into your Tailwind configuration.
-    * Use class names found within the Hennepin County Design System anywhere in your project, including in your [Tailwind `@theme` directives](https://tailwindcss.com/docs/functions-and-directives#theme-directive).  For example, you can create a custom class within your Tailwind configuration whose background color matches the Hennepin County Design System's `--hc-support-success-inverse` variable.
+    * Tip:  if you are building your project with Tailwind CSS, you can:
+        * add a `devDependencies` entry of `"@hennepincounty/ed-hcds-components": "git+https://github.com/HennepinCounty/ed-hcds-components.git#YOUR-CHOSEN-COMMIT-HASH-HERE"` 
+            * _(recommended:  choose a specific commit of the HCDS repository, rather than linking to `main`, for the same reasons that it is best to specify NPM package numbers rather than `latest`)_
+        * [Using `@import`, import](https://tailwindcss.com/docs/functions-and-directives#import-directive) "`../node_modules/@hennepincounty/ed-hcds-components/CSS/indexnoresetmin.css`" into your Tailwind configuration.
+        * Use class names found within the Hennepin County Design System anywhere in your project, including in your [Tailwind `@theme` directives](https://tailwindcss.com/docs/functions-and-directives#theme-directive).  For example, you can create a custom class within your Tailwind configuration whose background color matches the Hennepin County Design System's `--hc-support-success-inverse` variable.
 2. The index.css file is compiled from ./index.scss in the root folder. If you would like to remove any components from the stylesheet, edit what files are forwarded by ./index.scss and then recompile a new css file.
 3. Note that the Search and Modal components require their nested components (button and text input field) to be imported.
 
