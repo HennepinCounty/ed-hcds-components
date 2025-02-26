@@ -33,6 +33,7 @@ jobs:
           # Build browser-ready minified CSS that does not include a reset, for consumption in contexts that already has its own
           Get-Content -Path './index.scss' | Where-Object {$_ -ne '@forward "./primitives/reset";'} | Set-Content -Path './index-no-reset.scss'
           npx sass ./index.scss ./CSS/indexnoresetmin.css --style=compressed
+          Remove-Item -Path './index.scss' -Force -ErrorAction:Ignore
 
       - name: 'Commit and push the changes to this repository'
         run: |
