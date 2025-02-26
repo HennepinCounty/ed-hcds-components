@@ -1,0 +1,43 @@
+name: "Rebuild browser-ready CSS"
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+    paths-ignore:
+      - ".github/**"
+      - "README.md"
+      - "CSS/**" # This is the output directory, so definitely don't do it there
+
+jobs:
+  regenerate-css:
+    runs-on: "ubuntu-latest"
+    steps:
+    
+      - name: 'Make it possible for this CI/CD pipeline to read the contents of its corresponding repository'
+        uses: 'actions/checkout@v4'
+
+      - name: 'Install Node.js'
+        uses: 'actions/setup-node@v4'
+        with:
+          node-version: '22'
+
+      - name: 'Regenerate browser-ready CSS'
+        shell: 'pwsh'
+        run: | 
+          # Install Node.js dependencies from NPM
+          npm ci 'sass@latest'
+          # TODO:  once debugged SASS compiler differences, add in automatically updating the rest of the CSS files
+          # Build browser-ready minified CSS that does not include a reset, for consumption in contexts that already has its own
+          Get-Content -Path './index.scss' | Where-Object {$_ -ne '@forward "./primitives/reset";'} | Set-Content -Path './index-no-reset.scss'
+          npx sass ./index.scss ./CSS/indexnoresetmin.css --style=compressed
+
+      - name: 'Commit and push the changes to this repository'
+        run: |
+          git config --global user.name "@{{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git add -A
+          git commit -m "Generated 4 files under ./CSS/"
+          git push
