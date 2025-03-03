@@ -9,47 +9,48 @@
         aria-disabled="true"
         onclick="console.log(new Date().getTime());"
       >
-        :)
+        Smile
       </button>
     </hc-aria-friendly-disabler>
     <script>
-      // To do:
-      // 1. Move this to being part of a standalone "built" file full of things like this.
-      // 2. Figure out how to maybe put it in the HEAD tag?  Weird, only works at the bottom, as-is.
+      // To do --make work for more than just buttons
       class AriaFriendlyDisabler extends HTMLElement {
-        // static eventNames = Object.getOwnPropertyNames(
-        //   HTMLElement.prototype
-        // ).filter((x) =>
-        //   new RegExp(
-        //     "^(on(?:click|pointer|mouse|key)(?:down|up|press)?)$"
-        //   ).test(x)
-        // );
-
         constructor() {
           super();
+          console.log("hi");
         }
 
-        // connectedCallback() {
-        //   //this.preventDefaultIfAriaDisabled();
-        // }
-        // attributeChangedCallback() {
-        //   //this.preventDefaultIfAriaDisabled();
-        // }
+        connectedCallback() {
+          this.preventDefaultIfAriaDisabled();
+        }
+        attributeChangedCallback() {
+          this.preventDefaultIfAriaDisabled();
+        }
 
-        // preventDefaultIfAriaDisabled = () => {
-        //   const thisButton = this.querySelector("button");
-        //   console.log(thisButton);
-        //   if (thisButton?.getAttribute("aria-disabled") === "true") {
-        //     console.log("starting");
-        //     eventNames.map((x) => {
-        //       thisButton.addEventListener(x, (e) => {
-        //         e?.preventDefault?.();
-        //       });
-        //     });
-        //   }
-        // };
-        customElements.define("hc-aria-friendly-disabler", AriaFriendlyDisabler);
+        preventDefaultIfAriaDisabled = () => {
+          const eventNames = Object.getOwnPropertyNames(
+            HTMLElement.prototype
+          ).filter((x) =>
+            new RegExp(
+              "^(on(?:click|pointer|mouse|key)(?:down|up|press)?)$"
+            ).test(x)
+          );
+          const thisButton = this.querySelector("button");
+          if (thisButton?.getAttribute("aria-disabled") === "true") {
+            console.log("starting");
+            eventNames.map((x) => {
+              thisButton.addEventListener(
+                x.substring(2),
+                (e) => {
+                  e?.preventDefault?.();
+                },
+                true
+              );
+            });
+          }
+        };
       }
+      customElements.define("hc-aria-friendly-disabler", AriaFriendlyDisabler);
     </script>
   </body>
 </html>
