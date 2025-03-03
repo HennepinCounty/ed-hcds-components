@@ -28,25 +28,34 @@
         }
 
         preventDefaultIfAriaDisabled = () => {
-          const eventNames = Object.getOwnPropertyNames(
-            HTMLElement.prototype
-          ).filter((x) =>
-            new RegExp(
-              "^(on(?:click|pointer|mouse|key)(?:down|up|press)?)$"
-            ).test(x)
-          );
-          const thisButton = this.querySelector("button");
+          const thisButton = this.querySelector('button');
           if (thisButton?.getAttribute("aria-disabled") === "true") {
             console.log("starting");
-            eventNames.map((x) => {
-              thisButton.addEventListener(
-                x.substring(2),
-                (e) => {
-                  e?.preventDefault?.();
-                },
-                true
-              );
-            });
+            thisButton?.addEventListener(
+              "click",
+              (e) => {
+                console.log('okay')
+                console.log(e.target);
+                console.log(e.currentTarget);
+                e?.preventDefault?.();
+                e?.stopImmediatePropagation?.();
+              },
+              true
+            );
+          }
+          else {
+            console.log("xyzzy");
+            thisButton?.removeEventListener(
+              "click",
+              (e) => {
+                console.log('yay')
+                console.log(e.target);
+                console.log(e.currentTarget);
+                e?.preventDefault?.();
+                e?.stopImmediatePropagation?.();
+              },
+              true
+            );
           }
         };
       }
