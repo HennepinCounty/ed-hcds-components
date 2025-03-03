@@ -28,34 +28,20 @@
         }
 
         preventDefaultIfAriaDisabled = () => {
-          const thisButton = this.querySelector('button');
+          const thisButton = this.querySelector("button");
+          const actionDisabler = (e) => {
+            console.log("okay");
+            console.log(e.target);
+            console.log(e.currentTarget);
+            e?.preventDefault?.();
+            e?.stopImmediatePropagation?.();
+          };
           if (thisButton?.getAttribute("aria-disabled") === "true") {
             console.log("starting");
-            thisButton?.addEventListener(
-              "click",
-              (e) => {
-                console.log('okay')
-                console.log(e.target);
-                console.log(e.currentTarget);
-                e?.preventDefault?.();
-                e?.stopImmediatePropagation?.();
-              },
-              true
-            );
-          }
-          else {
+            thisButton?.addEventListener("click", (e) => actionDisabler, true);
+          } else {
             console.log("xyzzy");
-            thisButton?.removeEventListener(
-              "click",
-              (e) => {
-                console.log('yay')
-                console.log(e.target);
-                console.log(e.currentTarget);
-                e?.preventDefault?.();
-                e?.stopImmediatePropagation?.();
-              },
-              true
-            );
+            thisButton?.removeEventListener("click", (e) => actionDisabler, true);
           }
         };
       }
