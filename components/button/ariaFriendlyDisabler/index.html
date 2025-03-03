@@ -1,0 +1,56 @@
+<html>
+  <head> </head>
+
+  <body>
+    <hc-aria-friendly-disabler>
+      <button
+        type="button"
+        class="hc-button"
+        aria-disabled="true"
+        onclick="console.log(new Date().getTime());"
+      >
+        Smile
+      </button>
+    </hc-aria-friendly-disabler>
+    <script>
+      // To do --make work for more than just buttons
+      class AriaFriendlyDisabler extends HTMLElement {
+        constructor() {
+          super();
+          console.log("hi");
+        }
+
+        connectedCallback() {
+          this.preventDefaultIfAriaDisabled();
+        }
+        attributeChangedCallback() {
+          this.preventDefaultIfAriaDisabled();
+        }
+
+        preventDefaultIfAriaDisabled = () => {
+          const eventNames = Object.getOwnPropertyNames(
+            HTMLElement.prototype
+          ).filter((x) =>
+            new RegExp(
+              "^(on(?:click|pointer|mouse|key)(?:down|up|press)?)$"
+            ).test(x)
+          );
+          const thisButton = this.querySelector("button");
+          if (thisButton?.getAttribute("aria-disabled") === "true") {
+            console.log("starting");
+            eventNames.map((x) => {
+              thisButton.addEventListener(
+                x.substring(2),
+                (e) => {
+                  e?.preventDefault?.();
+                },
+                true
+              );
+            });
+          }
+        };
+      }
+      customElements.define("hc-aria-friendly-disabler", AriaFriendlyDisabler);
+    </script>
+  </body>
+</html>
