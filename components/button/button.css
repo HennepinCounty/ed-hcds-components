@@ -3,50 +3,59 @@
 /* Primary button */
 /* ======================== */
 /* ======================== */
-.hc-button {
-  box-sizing: border-box;
-  border: 2px solid var(--hc-transparent);
-  display: inline-flex;
-  align-items: center;
-  vertical-align: top;
-  justify-content: center;
-  flex-direction: row;
-  text-align: left;
-  gap: var(--hc-spacing-02);
-  font-family: var(--hc-font-family), "Segoe UI", Tahoma, Geneva, Verdana,
-    sans-serif;
-  font-size: var(--hc-font-body-size-regular, 1rem);
-  font-weight: 400;
-  line-height: 1;
-  color: var(--hc-text-on-color);
-  border-radius: var(--hc-border-radius-02, 4px);
-  margin: 0;
-  background-color: var(--hc-button-primary);
-  height: var(--hc-height--medium, 2.5rem);
-  padding-left: var(--hc-spacing-03);
-  padding-right: var(--hc-spacing-03);
-  cursor: pointer;
+.hc-button,
+a.hc-button {
+	box-sizing: border-box;
+	border: 2px solid var(--hc-transparent);
+	display: inline-flex;
+	align-items: center;
+	vertical-align: top;
+	justify-content: center;
+	flex-direction: row;
+	text-align: left;
+	gap: var(--hc-spacing-02);
+	font-family: var(--hc-font-family), "Segoe UI", Tahoma, Geneva, Verdana,
+		sans-serif;
+	font-size: var(--hc-font-body-size-regular, 1rem);
+	font-weight: 400;
+	line-height: 1;
+	color: var(--hc-text-on-color);
+	border-radius: var(--hc-border-radius-02, 4px);
+	margin: 0;
+	background-color: var(--hc-button-primary);
+	height: var(--hc-height--medium, 2.5rem);
+	padding-left: var(--hc-spacing-03);
+	padding-right: var(--hc-spacing-03);
+	cursor: pointer;
+	text-decoration: none;
 }
 
 /* Focus styles */
-.hc-button:focus {
-  border: var(--hc-border-style-focus);
-  outline: var(--hc-outline-style-focus);
+.hc-button:focus,
+a.hc-button:focus {
+	border: var(--hc-border-style-focus);
+	outline: var(--hc-outline-style-focus);
+	color: var(--hc-text-on-color);
 }
 
 /* Background colors for */
-.hc-button:hover {
-  background-color: var(--hc-button-primary-hover);
+.hc-button:hover,
+a.hc-button:hover {
+	background-color: var(--hc-button-primary-hover);
+	color: var(--hc-text-on-color);
 }
 
-.hc-button:active {
-  background-color: var(--hc-button-primary-active);
+.hc-button:active,
+a.hc-button:active {
+	background-color: var(--hc-button-primary-active);
+	color: var(--hc-text-on-color);
 }
 
-.hc-button[aria-disabled="true"] {
-  background-color: var(--hc-button-disabled-background);
-  color: var(--hc-button-disabled-text);
-  cursor: not-allowed;
+.hc-button[aria-disabled="true"],
+a.hc-button[aria-disabled="true"] {
+	background-color: var(--hc-button-disabled-background);
+	color: var(--hc-button-disabled-text);
+	cursor: not-allowed;
 }
 
 /* ======================== */
@@ -55,63 +64,73 @@
 /* ======================== */
 /* ======================== */
 
-.hc-button--secondary {
-  background-color: var(--hc-white);
-  color: var(--hc-link-primary);
-  border: 2px solid var(--hc-button-secondary-border);
+.hc-button--secondary,
+a.hc-button--secondary {
+	background-color: var(--hc-white);
+	color: var(--hc-link-primary);
+	border: 2px solid var(--hc-button-secondary-border);
 }
 
 /* Background colors */
-.hc-button--secondary:hover {
-  color: var(--hc-text-on-color);
-  background-color: var(--hc-button-secondary-hover);
-  border: 2px solid var(--hc-transparent);
+.hc-button--secondary:hover,
+a.hc-button--secondary:hover {
+	color: var(--hc-text-on-color);
+	background-color: var(--hc-button-secondary-hover);
+	border: 2px solid var(--hc-transparent);
 }
 
-.hc-button--secondary:active {
-  color: var(--hc-text-on-color);
-  background-color: var(--hc-button-secondary-active);
+.hc-button--secondary:active,
+a.hc-button--secondary:active {
+	color: var(--hc-text-on-color);
+	background-color: var(--hc-button-secondary-active);
 }
 
-.hc-button--secondary:focus {
-  color: var(--hc-text-on-color);
-  background-color: var(--hc-button-secondary-focus-background);
-  border: var(--hc-border-style-focus);
+.hc-button--secondary:focus,
+a.hc-button--secondary:focus {
+	color: var(--hc-text-on-color);
+	background-color: var(--hc-button-secondary-focus-background);
+	border: var(--hc-border-style-focus);
 }
 
-.hc-button--secondary:focus:hover {
-  color: var(--hc-text-on-color);
-  background-color: var(--hc-button-secondary-hover);
+.hc-button--secondary:focus:hover,
+a.hc-button--secondary:focus:hover {
+	color: var(--hc-text-on-color);
+	background-color: var(--hc-button-secondary-hover);
 }
 
-.hc-button--secondary:focus:active {
-  color: var(--hc-text-on-color);
-  background-color: var(--hc-button-secondary-active);
+.hc-button--secondary:focus:active,
+a.hc-button--secondary:focus:active {
+	color: var(--hc-text-on-color);
+	background-color: var(--hc-button-secondary-active);
 }
 
-.hc-button--secondary[aria-disabled="true"] {
-  color: var(--hc-text-disabled);
-  background-color: var(--hc-button-disabled-background);
-  border: 2px solid var(--hc-transparent);
-  cursor: not-allowed;
+.hc-button--secondary[aria-disabled="true"],
+a.hc-button--secondary[aria-disabled="true"] {
+	color: var(--hc-text-disabled);
+	background-color: var(--hc-button-disabled-background);
+	border: 2px solid var(--hc-transparent);
+	cursor: not-allowed;
 }
 
-.hc-button--secondary:focus[aria-disabled="true"] {
-  color: var(--hc-text-disabled);
-  background-color: var(--hc-button-disabled-background);
-  border: var(--hc-border-style-focus);
+.hc-button--secondary:focus[aria-disabled="true"],
+a.hc-button--secondary:focus[aria-disabled="true"] {
+	color: var(--hc-text-disabled);
+	background-color: var(--hc-button-disabled-background);
+	border: var(--hc-border-style-focus);
 
-  cursor: not-allowed;
+	cursor: not-allowed;
 }
 
-.hc-button--secondary:focus:hover[aria-disabled="true"] {
-  color: var(--hc-text-disabled);
-  background-color: var(--hc-button-disabled-background);
+.hc-button--secondary:focus:hover[aria-disabled="true"],
+a.hc-button--secondary:focus:hover[aria-disabled="true"] {
+	color: var(--hc-text-disabled);
+	background-color: var(--hc-button-disabled-background);
 }
 
-.hc-button--secondary:focus:active[aria-disabled="true"] {
-  color: var(--hc-text-disabled);
-  background-color: var(--hc-button-disabled-background);
+.hc-button--secondary:focus:active[aria-disabled="true"],
+a.hc-button--secondary:focus:active[aria-disabled="true"] {
+	color: var(--hc-text-disabled);
+	background-color: var(--hc-button-disabled-background);
 }
 
 /* ======================== */
@@ -119,23 +138,29 @@
 /* Danger button */
 /* ======================== */
 /* ======================== */
-.hc-button--danger {
-  background-color: var(--hc-button-danger);
-  color: var(--hc-text-on-color);
+.hc-button--danger,
+a.hc-button--danger {
+	background-color: var(--hc-button-danger);
+	color: var(--hc-text-on-color);
 }
 
-.hc-button--danger:hover {
-  background-color: var(--hc-button-danger-hover);
+.hc-button--danger:hover,
+a.hc-button--danger:hover {
+	background-color: var(--hc-button-danger-hover);
+	color: var(--hc-text-on-color);
 }
 
-.hc-button--danger:active {
-  background-color: var(--hc-button-danger-active);
+.hc-button--danger:active,
+a.hc-button--danger:active {
+	background-color: var(--hc-button-danger-active);
+	color: var(--hc-text-on-color);
 }
 
-.hc-button--danger[aria-disabled="true"] {
-  background-color: var(--hc-button-disabled-background);
-  color: var(--hc-button-disabled-text);
-  cursor: not-allowed;
+.hc-button--danger[aria-disabled="true"],
+a.hc-button--danger[aria-disabled="true"] {
+	background-color: var(--hc-button-disabled-background);
+	color: var(--hc-button-disabled-text);
+	cursor: not-allowed;
 }
 
 /* ======================== */
@@ -147,26 +172,26 @@
 /* Icon sizing stored in _icons.scss*/
 
 .hc-button.hc-button--icon-left {
-  padding-inline-start: var(--hc-spacing-03);
+	padding-inline-start: var(--hc-spacing-03);
 }
 
 .hc-button.hc-button--icon-right {
-  padding-inline-end: var(--hc-spacing-03);
+	padding-inline-end: var(--hc-spacing-03);
 }
 
 .hc-button.hc-button--icon-only {
-  align-items: center;
-  justify-content: center;
-  padding-inline-start: var(--hc-spacing-03);
-  padding-inline-end: var(--hc-spacing-03);
+	align-items: center;
+	justify-content: center;
+	padding-inline-start: var(--hc-spacing-03);
+	padding-inline-end: var(--hc-spacing-03);
 }
 
 /* Undocumented class, used in modals */
 .button-group {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--hc-spacing-03);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-start;
+	gap: var(--hc-spacing-03);
 }
