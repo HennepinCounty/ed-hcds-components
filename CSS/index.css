@@ -1554,7 +1554,8 @@ SOFTWARE. */
 /* Primary button */
 /* ======================== */
 /* ======================== */
-.hc-button {
+.hc-button,
+a.hc-button {
   box-sizing: border-box;
   border: 2px solid var(--hc-transparent);
   display: inline-flex;
@@ -1576,24 +1577,32 @@ SOFTWARE. */
   padding-left: var(--hc-spacing-03);
   padding-right: var(--hc-spacing-03);
   cursor: pointer;
+  text-decoration: none;
 }
 
 /* Focus styles */
-.hc-button:focus {
+.hc-button:focus,
+a.hc-button:focus {
   border: var(--hc-border-style-focus);
   outline: var(--hc-outline-style-focus);
+  color: var(--hc-text-on-color);
 }
 
 /* Background colors for */
-.hc-button:hover {
+.hc-button:hover,
+a.hc-button:hover {
   background-color: var(--hc-button-primary-hover);
+  color: var(--hc-text-on-color);
 }
 
-.hc-button:active {
+.hc-button:active,
+a.hc-button:active {
   background-color: var(--hc-button-primary-active);
+  color: var(--hc-text-on-color);
 }
 
-.hc-button[aria-disabled=true] {
+.hc-button[aria-disabled=true],
+a.hc-button[aria-disabled=true] {
   background-color: var(--hc-button-disabled-background);
   color: var(--hc-button-disabled-text);
   cursor: not-allowed;
@@ -1604,60 +1613,70 @@ SOFTWARE. */
 /* Secondary button */
 /* ======================== */
 /* ======================== */
-.hc-button--secondary {
+.hc-button--secondary,
+a.hc-button--secondary {
   background-color: var(--hc-white);
   color: var(--hc-link-primary);
   border: 2px solid var(--hc-button-secondary-border);
 }
 
 /* Background colors */
-.hc-button--secondary:hover {
+.hc-button--secondary:hover,
+a.hc-button--secondary:hover {
   color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-hover);
   border: 2px solid var(--hc-transparent);
 }
 
-.hc-button--secondary:active {
+.hc-button--secondary:active,
+a.hc-button--secondary:active {
   color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-active);
 }
 
-.hc-button--secondary:focus {
+.hc-button--secondary:focus,
+a.hc-button--secondary:focus {
   color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-focus-background);
   border: var(--hc-border-style-focus);
 }
 
-.hc-button--secondary:focus:hover {
+.hc-button--secondary:focus:hover,
+a.hc-button--secondary:focus:hover {
   color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-hover);
 }
 
-.hc-button--secondary:focus:active {
+.hc-button--secondary:focus:active,
+a.hc-button--secondary:focus:active {
   color: var(--hc-text-on-color);
   background-color: var(--hc-button-secondary-active);
 }
 
-.hc-button--secondary[aria-disabled=true] {
+.hc-button--secondary[aria-disabled=true],
+a.hc-button--secondary[aria-disabled=true] {
   color: var(--hc-text-disabled);
   background-color: var(--hc-button-disabled-background);
   border: 2px solid var(--hc-transparent);
   cursor: not-allowed;
 }
 
-.hc-button--secondary:focus[aria-disabled=true] {
+.hc-button--secondary:focus[aria-disabled=true],
+a.hc-button--secondary:focus[aria-disabled=true] {
   color: var(--hc-text-disabled);
   background-color: var(--hc-button-disabled-background);
   border: var(--hc-border-style-focus);
   cursor: not-allowed;
 }
 
-.hc-button--secondary:focus:hover[aria-disabled=true] {
+.hc-button--secondary:focus:hover[aria-disabled=true],
+a.hc-button--secondary:focus:hover[aria-disabled=true] {
   color: var(--hc-text-disabled);
   background-color: var(--hc-button-disabled-background);
 }
 
-.hc-button--secondary:focus:active[aria-disabled=true] {
+.hc-button--secondary:focus:active[aria-disabled=true],
+a.hc-button--secondary:focus:active[aria-disabled=true] {
   color: var(--hc-text-disabled);
   background-color: var(--hc-button-disabled-background);
 }
@@ -1667,20 +1686,26 @@ SOFTWARE. */
 /* Danger button */
 /* ======================== */
 /* ======================== */
-.hc-button--danger {
+.hc-button--danger,
+a.hc-button--danger {
   background-color: var(--hc-button-danger);
   color: var(--hc-text-on-color);
 }
 
-.hc-button--danger:hover {
+.hc-button--danger:hover,
+a.hc-button--danger:hover {
   background-color: var(--hc-button-danger-hover);
+  color: var(--hc-text-on-color);
 }
 
-.hc-button--danger:active {
+.hc-button--danger:active,
+a.hc-button--danger:active {
   background-color: var(--hc-button-danger-active);
+  color: var(--hc-text-on-color);
 }
 
-.hc-button--danger[aria-disabled=true] {
+.hc-button--danger[aria-disabled=true],
+a.hc-button--danger[aria-disabled=true] {
   background-color: var(--hc-button-disabled-background);
   color: var(--hc-button-disabled-text);
   cursor: not-allowed;
