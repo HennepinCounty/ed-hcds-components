@@ -1,0 +1,77 @@
+name: "Rebuild browser-ready CSS"
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+    paths-ignore:
+      - ".github/**" # Don't rebuild CSS just because we updated a VCS/CICD setting.
+      - "!.github/workflows/rebuild-browser-ready-css.yml" # Unless we update this build script.  Then we should probably rebuild.
+      - "README.md" # Don't rebuild CSS just because we updated the README
+      - "CSS/**" # This is the output directory, so definitely don't rebuild when it changes.  We'd end up in an infinite loop.
+
+env:
+  TEMP_FOLDER_NAME: ".cicd_temp_ignoreme"
+
+jobs:
+  regenerate-css:
+    name: "Regenerate the CSS"
+    runs-on: "ubuntu-latest"
+    steps:
+
+      - id: "checkout_repo"
+        name: "Make it possible for this CI/CD pipeline to read the contents of its corresponding repository."
+        uses: "actions/checkout@v4"
+
+      - id: "create_temp_folder"
+        name: "Create a folder for temporary files specific to this CI/CD pipeline, but not meant to be stored in version control"
+        shell: "pwsh"
+        run: "[System.IO.Directory]::CreateDirectory('${{ env.TEMP_FOLDER_NAME }}')"
+
+      - id: "install_nodejs"
+        name: "Install Node.js"
+        uses: "actions/setup-node@v4"
+        with:
+          node-version: "22"
+        
+      - id: "install_sass_compiler"
+        name: "Install Dart-SASS compiler (Node.js package) from NPM"
+        shell: "pwsh"
+        working-directory: "./${{ env.TEMP_FOLDER_NAME }}"
+        run: "npm install 'sass@^1.85.1' --save-dev"
+
+      - id: "build_main_css"
+        name: "Regenerate main browser-ready CSS"
+        if: false # TODO:  once debugged SASS compiler differences, add in automatically updating the rest of the CSS files
+        shell: "pwsh"
+        run: "Write-Output('Hello world')" # TODO:  once debugged SASS compiler differences, add in automatically updating the rest of the CSS files
+
+      - id: "build_resetless_css"
+        name: "Regenerate browser-ready CSS that does not include a reset"
+        shell: "pwsh"
+        run: |
+          # Copy the main "index.scss" into a temporary file.  Make sure its line referring to "./primitives/reset" is removed.
+          Get-Content -Path './index.scss' | Where-Object {$_ -ne '@forward "./primitives/reset";'} | Set-Content -Path './index-no-reset.scss'
+          # Run Dart-SASS against the new temporary file.
+          cd ${{ env.TEMP_FOLDER_NAME }}
+          npx sass ../index-no-reset.scss ../CSS/indexnoresetmin.css --style=compressed
+          # Remove the temporary file; no longer needed.
+          cd ..
+          Remove-Item -Path './index-no-reset.scss' -Force -ErrorAction:Ignore
+        
+      - id: "delete_temp_folder"
+        name: "Delete the temporary folder"
+        shell: "pwsh"
+        run: "[System.IO.Directory]::Delete('${{ env.TEMP_FOLDER_NAME }}', $true)"
+
+      - id: "commit_updates_to_repo"
+        name: "Commit and push the changes to this repository"
+        shell: "pwsh"
+        run: |
+          git config --global user.name "@{{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git add -A
+          git commit -m "Regenerated files under ./CSS/"
+          git push

@@ -1,2 +1,4 @@
 test.html
 dsComponentTest.html
+node_modules
+.cicd_temp_ignoreme
