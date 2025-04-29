@@ -51,6 +51,34 @@ Contains utility classes similar to Tailwind CSS
 
  To use a component, copy and paste the component HTML into your project, then replace any placeholder text with real content.  Adjust the component’s HTML and JS as needed to fit your project needs.
 
+#### NPM import use (experimental)
+
+If you'd like to try importing [./CSS/indexnoresetmin.css](CSS/indexnoresetmin.css) into a project that also uses Tailwind CSS, you may notice that [it doesn't prune unused classes found in](https://github.com/tailwindlabs/tailwindcss/discussions/15391#discussioncomment-11557268) a URL-based `@import` like this:
+
+```css
+@import "https://raw.githubusercontent.com/HennepinCounty/ed-hcds-components/refs/heads/SOME-COMMIT-ID-HERE/CSS/indexnoresetmin.css";
+```
+
+**Experimental:**
+
+Pick your favorite commit ID from [this repository's history](https://github.com/HennepinCounty/ed-hcds-components/commits) and, swapping it in for `SOME-COMMIT-ID-HERE`, try:
+
+```powershell
+npm install 'git+https://github.com/HennepinCounty/ed-hcds-components.git#SOME-COMMIT-ID-HERE' --save-dev
+```
+
+You should then be able to include an `@import` statement more like this into your Tailwind configuration:
+
+```css
+@import "../node_modules/hcds-experimental/CSS/indexnoresetmin.css";
+```
+
+* **WARNINGs:**
+  * The `name` property of this repository's `package.json` is subject to change without notice and might not remain **`hcds-experimental`**.
+    * To update your code to use newer `SOME-COMMIT-ID-HERE` versions of this codebase's `package.json`, please be prepared to update your `devDependencies` in your `package.json` file and your Tailwind `@import` statements.
+  * This repository's [package.json](package.json) file is experimental, and is not intended to imply that updates to the design system will be versioned semantically.
+    * _(As implied by the lack of a `version` property within it.)_
+
 ### Questions and support
 If you have any questions or issues, visit office hours on Tuesdays and Thursdays from 3 p.m. to 3:30 p.m., or submit a support ticket
 
