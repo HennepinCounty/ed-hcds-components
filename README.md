@@ -51,6 +51,8 @@ Contains utility classes similar to Tailwind CSS
 
  To use a component, copy and paste the component HTML into your project, then replace any placeholder text with real content.  Adjust the component’s HTML and JS as needed to fit your project needs.
 
+* **NPM install use (experimental, for developers)**:  See [README2_npm_install.md](README2_npm_install.md).
+
 ### Questions and support
 If you have any questions or issues, visit office hours on Tuesdays and Thursdays from 3 p.m. to 3:30 p.m., or submit a support ticket
 

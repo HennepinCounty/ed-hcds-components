@@ -1,0 +1,4 @@
+{
+    "name": "hcds-experimental",
+    "description": "Open source UI components and visual style guide for Hennepin County, Minnesota, USA government websites.  Please note that this codebase is not yet formally versioned.  Therefore, please point your NPM imports to a specific Git commit ID, using the public GitHub URL for that commit.  For example, 'hcds-experimental': 'git+https://github.com/HennepinCounty/ed-hcds-components.git#SOME-COMMIT-ID-HERE'.  There are no executables in this codebase, but that will at least allow you to refer to the CSS files from a predictable file path within 'node_modules'.  Please also note that this package.json file will almost certainly take on a new name if more formal versioning is ever introduced, so be ready to change your package.json and import statements from 'hcds-experimental'."
+}
