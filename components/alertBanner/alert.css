@@ -1,167 +1,186 @@
 /* Base styling for alerts */
 .hc-alert {
-  padding: var(--hc-spacing-05);
-  margin-bottom: var(--hc-spacing-05);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  background-color: var(--hc-background-brand);
-  color: white;
-  max-width: 768px;
-  gap: var(--hc-spacing-08);
+	padding: var(--hc-spacing-05);
+	margin-bottom: var(--hc-spacing-05);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	background-color: var(--hc-support-info);
+	color: white;
+	max-width: 768px;
+	gap: var(--hc-spacing-08);
 }
 
 h2.hc-alert-heading {
-  font-size: var(--hc-font-h4-size);
-  font-weight: 500;
-  margin-bottom: 0rem;
-  color: var(--hc-white);
+	font-size: var(--hc-font-h4-size);
+	font-weight: 500;
+	margin-bottom: 0rem;
+	color: var(--hc-text-info);
 }
 
 /* Needed to override color */
 p.hc-alert-paragraph {
-  color: var(--hc-text-on-color);
+	color: var(--hc-text-info);
 }
 
 /* Different styling for alert types */
 .hc-alert-content {
-  display: flex;
-  flex-direction: column;
-  gap: var(--hc-spacing-03);
+	display: flex;
+	flex-direction: column;
+	gap: var(--hc-spacing-03);
 }
 
 /* Default styling for the close button */
 .hc-alert .hc-alert-close-button {
-  color: inherit;
-  border-color: var(--hc-white);
+	color: inherit;
+	border: var(--hc-border-interactive);
 }
+.hc-alert .hc-alert-close-button:hover {
+	color: inherit;
+	border-color: var(--hc-border-color-interactive-hover);
+}
+.hc-alert .hc-alert-close-button:active {
+	border-color: var(--hc-border-color-interactive-active);
+}
+
 .hc-alert .hc-alert-close-button:focus {
-  border: var(--hc-border-style-focus);
-  outline: var(--hc-outline-style-focus);
-  box-shadow: var(--hc-shadow-focus-outer-ring);
+	border: var(--hc-border-style-focus);
+	outline: var(--hc-outline-style-focus);
+	box-shadow: var(--hc-shadow-focus-outer-ring);
 }
 
 /* Adjusts size and position of the "x" icon */
 .hc-alert .hc-alert-close-button span[aria-hidden] {
-  font-size: 1.8rem;
-  margin-top: -0.2rem;
+	font-size: 1.8rem;
+	margin-top: -0.2rem;
 }
 
 /* Success styling */
 .hc-alert-success {
-  background-color: var(--hc-support-success);
+	background-color: var(--hc-support-success);
+	color: var(--hc-text-success);
 }
 
 /* success heading styling */
 .hc-alert.hc-alert-success > .hc-alert-content > h2.hc-alert-heading {
-  color: var(--hc-black);
+	color: var(--hc-text-success);
 }
 
 /* success paragraph styling */
 .hc-alert.hc-alert-success > .hc-alert-content > p.hc-alert-paragraph {
-  color: var(--hc-black);
+	color: var(--hc-text-success);
 }
 
 /* success close button styling */
 .hc-alert.hc-alert-success > .hc-alert-close-button {
-  color: var(--hc-black);
-  border-color: var(--hc-black);
-  background-color: var(--hc-support-success);
+	color: var(--hc-icon-success-inverse);
+	border-color: var(--hc-support-success-inverse);
+	background-color: var(--hc-support-success-inverse);
 }
 .hc-alert.hc-alert-success > .hc-alert-close-button:hover {
-  background-color: var(--hc-support-success--hover);
+	background-color: var(--hc-support-success-inverse-hover);
+	border-color: var(--hc-support-success-inverse-hover);
 }
 .hc-alert.hc-alert-success > .hc-alert-close-button:active {
-  background-color: var(--hc-support-success--active);
-  color: var(--hc-text-on-color);
+	background-color: var(--hc-support-success-inverse-active);
+	color: var(--hc-icon-success-inverse-active);
 }
 
 .hc-alert.hc-alert-success > .hc-alert-close-button:focus {
-  border: var(--hc-border-style-focus);
-  outline: var(--hc-outline-style-focus);
+	border: var(--hc-border-style-focus);
+	outline: var(--hc-outline-style-focus);
 }
 
 /*Danger styling */
 .hc-alert-danger {
-  background-color: var(--hc-support-error);
+	background-color: var(--hc-support-error);
+	color: var(--hc-text-error);
 }
 
 /* Danger close button styling */
 .hc-alert.hc-alert-danger > .hc-alert-close-button {
-  background-color: var(--hc-support-error);
+	background-color: var(--hc-support-error-inverse);
+	border-color: var(--hc-support-error-inverse);
+	color: var(--hc-support-error);
 }
 .hc-alert.hc-alert-danger > .hc-alert-close-button:hover {
-  background-color: var(--hc-support-error--hover);
+	background-color: var(--hc-support-error-inverse-hover);
 }
 .hc-alert.hc-alert-danger > .hc-alert-close-button:active {
-  background-color: var(--hc-support-error--active);
+	background-color: var(--hc-support-error-inverse-active);
+}
+
+.hc-alert.hc-alert-danger > .hc-alert-close-button:focus {
+	border: var(--hc-border-style-focus);
+	outline: var(--hc-outline-style-focus);
+	box-shadow: var(--hc-shadow-focus-outer-ring);
 }
 
 /*Warning styling */
 .hc-alert-warning {
-  background-color: var(--hc-support-warning);
+	background-color: var(--hc-support-warning);
 }
 
 /* warning heading styling */
 .hc-alert.hc-alert-warning > .hc-alert-content > h2.hc-alert-heading {
-  color: var(--hc-text-primary);
+	color: var(--hc-text-primary);
 }
 
 /* warning paragraph styling */
 .hc-alert.hc-alert-warning > .hc-alert-content > p.hc-alert-paragraph {
-  color: var(--hc-text-primary);
+	color: var(--hc-text-primary);
 }
 
 /* Warning close button styling */
 .hc-alert.hc-alert-warning > .hc-alert-close-button {
-  color: var(--hc-text-primary);
-  background-color: var(--hc-support-warning);
-  border-color: var(--hc-black);
+	color: var(--hc-text-primary);
+	background-color: var(--hc-support-warning);
+	border-color: var(--hc-black);
 }
 .hc-alert.hc-alert-warning > .hc-alert-close-button:hover {
-  background-color: var(--hc-support-warning--hover);
+	background-color: var(--hc-support-warning--hover);
 }
 .hc-alert.hc-alert-warning > .hc-alert-close-button:active {
-  background-color: var(--hc-support-warning--active);
+	background-color: var(--hc-support-warning--active);
 }
 
 .hc-alert.hc-alert-warning > .hc-alert-close-button:focus {
-  border: var(--hc-border-style-focus);
-  outline: var(--hc-outline-style-focus);
+	border: var(--hc-border-style-focus);
+	outline: var(--hc-outline-style-focus);
 }
 
 /*Info styling */
 .hc-alert-info {
-  background-color: var(--hc-support-info);
+	background-color: var(--hc-support-info);
 }
 
 /* info heading styling */
 .hc-alert.hc-alert-info > .hc-alert-content > h2.hc-alert-heading {
-  color: var(--hc-black);
+	color: var(--hc-black);
 }
 
 /* info paragraph styling */
 .hc-alert.hc-alert-info > .hc-alert-content > p.hc-alert-paragraph {
-  color: var(--hc-black);
+	color: var(--hc-black);
 }
 
 /* info close button styling */
 .hc-alert.hc-alert-info > .hc-alert-close-button {
-  color: var(--hc-black);
-  background-color: var(--hc-support-info);
-  border-color: var(--hc-black);
+	color: var(--hc-black);
+	background-color: var(--hc-support-info);
+	border-color: var(--hc-black);
 }
 .hc-alert.hc-alert-info > .hc-alert-close-button:hover {
-  color: var(--hc-white);
-  background-color: var(--hc-support-info--hover);
+	color: var(--hc-white);
+	background-color: var(--hc-support-info--hover);
 }
 .hc-alert.hc-alert-info > .hc-alert-close-button:active {
-  color: var(--hc-white);
-  background-color: var(--hc-support-info--active);
+	color: var(--hc-white);
+	background-color: var(--hc-support-info--active);
 }
 
 .hc-alert.hc-alert-info > .hc-alert-close-button:focus {
-  border: var(--hc-border-style-focus);
-  outline: var(--hc-outline-style-focus);
+	border: var(--hc-border-style-focus);
+	outline: var(--hc-outline-style-focus);
 }

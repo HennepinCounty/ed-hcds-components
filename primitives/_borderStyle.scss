@@ -8,6 +8,9 @@
 	// Border
 
 	--hc-border-brand: 2px solid var(--hc-background-brand);
+	--hc-border-interactive: 2px solid var(--hc-background-interactive);
+	--hc-border-color-interactive-hover: var(--hc-background-interactive-hover);
+	--hc-border-color-interactive-active: var(--hc-background-interactive-active);
 	--hc-border-style-focus: 2px solid var(--hc-white);
 	--hc-border-style-focus-alternate: 2px solid var(--hc-background-brand);
 	--hc-border-style-transparent: 2px solid var(--hc-transparent);
