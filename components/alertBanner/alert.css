@@ -35,6 +35,8 @@ p.hc-alert-paragraph {
 .hc-alert .hc-alert-close-button {
 	color: inherit;
 	border: var(--hc-border-interactive);
+	padding-left: var(--hc-spacing-06);
+	padding-right: var(--hc-spacing-04);
 }
 .hc-alert .hc-alert-close-button:hover {
 	color: inherit;
@@ -74,7 +76,7 @@ p.hc-alert-paragraph {
 
 /* success close button styling */
 .hc-alert.hc-alert-success > .hc-alert-close-button {
-	color: var(--hc-icon-success-inverse);
+	color: var(--hc-text-success-inverse);
 	border-color: var(--hc-support-success-inverse);
 	background-color: var(--hc-support-success-inverse);
 }
@@ -84,7 +86,7 @@ p.hc-alert-paragraph {
 }
 .hc-alert.hc-alert-success > .hc-alert-close-button:active {
 	background-color: var(--hc-support-success-inverse-active);
-	color: var(--hc-icon-success-inverse-active);
+	color: var(--hc-text-success-inverse);
 }
 
 .hc-alert.hc-alert-success > .hc-alert-close-button:focus {
@@ -96,6 +98,16 @@ p.hc-alert-paragraph {
 .hc-alert-danger {
 	background-color: var(--hc-support-error);
 	color: var(--hc-text-error);
+}
+
+/* danger heading styling */
+.hc-alert.hc-alert-danger > .hc-alert-content > h2.hc-alert-heading {
+	color: var(--hc-text-danger);
+}
+
+/* danger paragraph styling */
+.hc-alert.hc-alert-danger > .hc-alert-content > p.hc-alert-paragraph {
+	color: var(--hc-text-danger);
 }
 
 /* Danger close button styling */
@@ -124,25 +136,27 @@ p.hc-alert-paragraph {
 
 /* warning heading styling */
 .hc-alert.hc-alert-warning > .hc-alert-content > h2.hc-alert-heading {
-	color: var(--hc-text-primary);
+	color: var(--hc-text-warning);
 }
 
 /* warning paragraph styling */
 .hc-alert.hc-alert-warning > .hc-alert-content > p.hc-alert-paragraph {
-	color: var(--hc-text-primary);
+	color: var(--hc-text-warning);
 }
 
 /* Warning close button styling */
 .hc-alert.hc-alert-warning > .hc-alert-close-button {
-	color: var(--hc-text-primary);
-	background-color: var(--hc-support-warning);
-	border-color: var(--hc-black);
+	color: var(--hc-text-warning-inverse);
+	background-color: var(--hc-support-warning-inverse);
+	border-color: var(--hc-support-warning-inverse);
 }
 .hc-alert.hc-alert-warning > .hc-alert-close-button:hover {
-	background-color: var(--hc-support-warning--hover);
+	background-color: var(--hc-support-warning-inverse-hover);
+	border-color: var(--hc-support-warning-inverse-hover);
 }
 .hc-alert.hc-alert-warning > .hc-alert-close-button:active {
-	background-color: var(--hc-support-warning--active);
+	background-color: var(--hc-support-warning-inverse-active);
+	border-color: var(--hc-support-warning-inverse-active);
 }
 
 .hc-alert.hc-alert-warning > .hc-alert-close-button:focus {
