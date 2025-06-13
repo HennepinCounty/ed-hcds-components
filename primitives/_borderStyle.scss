@@ -1,16 +1,16 @@
 :root {
-  //Focus state borders/shaddows/etc
-  //Border needs to be the internal color
-  //Outline needs to be the external color because of offset
+	//Focus state borders/shaddows/etc
+	//Border needs to be the internal color
+	//Outline needs to be the external color because of offset
 
-  //These could be rewritten -- BorderSize should handle sizing
+	//These could be rewritten -- BorderSize should handle sizing
 
-  // Border
+	// Border
 
-  --hc-border-brand: 2px solid var(--hc-background-brand);
-  --hc-border-style-focus: 2px solid var(--hc-white);
-  --hc-border-style-focus-alternate: 2px solid var(--hc-background-brand);
-  --hc-border-style-transparent: 2px solid var(--hc-transparent);
-  // Outline
-  --hc-outline-style-focus: var(--hc-background-brand) solid 3px;
+	--hc-border-brand: 2px solid var(--hc-background-brand);
+	--hc-border-style-focus: 2px solid var(--hc-white);
+	--hc-border-style-focus-alternate: 2px solid var(--hc-background-brand);
+	--hc-border-style-transparent: 2px solid var(--hc-transparent);
+	// Outline
+	--hc-outline-style-focus: var(--hc-background-interactive) solid 3px;
 }

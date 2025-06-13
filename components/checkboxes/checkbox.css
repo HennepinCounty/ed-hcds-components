@@ -3,111 +3,109 @@
 /* margin-bottom adds space between items */
 /* position: relative so that absolute positioning can be used for label and input */
 .hc-checkboxes {
-  margin-top: var(--hc-spacing-03);
+	margin-top: var(--hc-spacing-03);
 }
 
 .hc-checkbox__item {
-  display: block;
-  position: relative;
-  min-height: 36px;
-  padding-left: 36px; /* This should equal width of the checkbox size*/
-  margin-bottom: var(--hc-spacing-05);
-  clear: left;
+	display: block;
+	position: relative;
+	min-height: 36px;
+	padding-left: 36px; /* This should equal width of the checkbox size*/
+	margin-bottom: var(--hc-spacing-05);
+	clear: left;
 }
-
 
 /* removes margin bottom from last element */
 .hc-checkbox__item:last-child,
 .hc-checkbox__item:last-of-type {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .hc-checkbox__input {
-  position: absolute;
-  top: 1px;
-  left: 1px;
+	position: absolute;
+	top: 1px;
+	left: 1px;
 
-  z-index: 1;
-  width: 36px;
-  height: 36px;
-  margin: 0;
+	z-index: 1;
+	width: 36px;
+	height: 36px;
+	margin: 0;
 
-  opacity: 0;
-  cursor: pointer;
+	opacity: 0;
+	cursor: pointer;
 }
 
 .hc-checkbox__label {
-  font-size: var(--hc-font-fieldLabel-size-regular);
-  color: var(--hc-text-primary, #171a1d);
-  font-weight: 400;
+	font-size: var(--hc-font-fieldLabel-size-regular);
+	color: var(--hc-text-primary, #171a1d);
+	font-weight: 400;
 
-  display: inline-block;
-  margin-bottom: 0px;
-  padding-left: var(--hc-spacing-04);
-  padding-right: var(--hc-spacing-04);
-  padding-bottom: var(--hc-spacing-01);
-  cursor: pointer;
-  touch-action: manipulation;
-  max-width: 80ch;
+	display: inline-block;
+	margin-bottom: 0px;
+	padding-left: var(--hc-spacing-04);
+	padding-right: var(--hc-spacing-04);
+	padding-bottom: var(--hc-spacing-01);
+	cursor: pointer;
+	touch-action: manipulation;
+	max-width: 80ch;
 }
-
 
 /* [ ] Check box styling */
 .hc-checkbox__label::before {
-  content: "";
-  box-sizing: border-box;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 36px;
-  height: 36px;
-  border: var(--hc-border-width-small) solid var(--hc-border-color-strong);
-  background: var(--hc-transparent);
-  border-radius: 4px;
-  cursor: pointer;
+	content: "";
+	box-sizing: border-box;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 36px;
+	height: 36px;
+	border: var(--hc-border-width-small) solid var(--hc-border-color-strong);
+	background: var(--hc-transparent);
+	border-radius: 4px;
+	cursor: pointer;
 }
 
 /* The check mark is a box with a border on the left and bottom side (└──),
  rotated 45 degrees */
 .hc-checkbox__label::after {
-  content: "";
-  box-sizing: border-box;
+	content: "";
+	box-sizing: border-box;
 
-  position: absolute;
-  top: 7px;
-  left: 7px;
-  width: 22px;
-  height: 14px;
-  color: white;
-  transform: rotate(-45deg);
-  border: solid;
-  border-width: 0 0 4px 4px;
-  /* Fix bug in IE11 caused by transform rotate (-45deg). */
-  border-top-color: transparent;
-  opacity: 0;
-  background: transparent;
-  cursor: pointer;
+	position: absolute;
+	top: 7px;
+	left: 7px;
+	width: 22px;
+	height: 14px;
+	color: white;
+	transform: rotate(-45deg);
+	border: solid;
+	border-width: 0 0 4px 4px;
+	/* Fix bug in IE11 caused by transform rotate (-45deg). */
+	border-top-color: transparent;
+	opacity: 0;
+	background: transparent;
+	cursor: pointer;
 }
 
 /* Focus state */
 .hc-checkbox__input:focus + .hc-checkbox__label::before {
-  outline: var(--hc-outline-style-focus);
-  outline-offset: 3px;
-  border-radius: 2px;
+	outline: var(--hc-outline-style-focus);
+	outline-offset: 3px;
+	border-radius: 2px;
 }
 
 /* Makes checkbox visible */
 .hc-checkbox__input:checked + .hc-checkbox__label::after {
-  opacity: 1;
-  transition: 0.1ms;
+	opacity: 1;
+	transition: 0.1ms;
 }
 
 /* checked state styling */
 .hc-checkbox__input:checked + .hc-checkbox__label::before {
-  background-color: var(
-    --hc-background-brand
-  ); /*adds blue background in checked state*/
-  border: var(--hc-border-brand);
+	background-color: var(
+		--hc-background-interactive
+	); /*adds blue background in checked state*/
+	border: var(--hc-border-interactive);
 }
 
 /***************************************************************************************
@@ -117,7 +115,6 @@
 *    Availability: https://github.com/alphagov/govuk-frontend/blob/9f05cea739d14d4cbf18e79b17228045ca84b3ba/packages/govuk-frontend/src/govuk/components/checkboxes/_index.scss
 *
 ***************************************************************************************/
-
 
 /* ======================================== */
 /* ======================================== */
@@ -145,4 +142,3 @@ SOFTWARE. */
 
 /* ======================================== */
 /* ======================================== */
-
