@@ -2060,6 +2060,10 @@ p.hc-alert-paragraph {
   border-top: 1px solid var(--hc-border-color-subtle);
 }
 
+.hc-accordion-item:focus-within {
+  border-radius: var(--hc-border-radius-regular);
+}
+
 /* Class attached to button to make the accordion clickable */
 .hc-accordion-header {
   font-family: var(--hc-font-family);
