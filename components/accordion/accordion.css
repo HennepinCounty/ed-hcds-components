@@ -30,7 +30,7 @@
 	min-width: 100%;
 	display: flex;
 	flex-direction: row;
-	justify-content: start;
+	justify-content: space-between;
 	gap: var(--hc-spacing-03);
 	border: var(--hc-border-style-transparent);
 }
@@ -60,6 +60,7 @@
 
 .hc-accordion-header:hover {
 	background-color: var(--hc-background-hover);
+	color: var(--hc-text-interactive);
 }
 
 /* Positioning for content inside the accordion */
