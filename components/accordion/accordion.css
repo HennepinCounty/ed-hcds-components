@@ -8,6 +8,8 @@
 /* Div wrapping accordion button with its expandable content */
 .hc-accordion-item {
 	margin-bottom: var(--hc-spacing-00);
+	border-radius: var(--hc-border-radius-none);
+	border-top: 1px solid var(--hc-border-color-subtle);
 }
 
 /* Class attached to button to make the accordion clickable */
@@ -22,17 +24,15 @@
 	cursor: pointer;
 	padding: var(--hc-spacing-04);
 	min-width: 100%;
-	border-radius: var(--hc-border-radius-none);
 	display: flex;
 	flex-direction: row;
 	justify-content: start;
 	gap: var(--hc-spacing-03);
 	border: var(--hc-border-style-transparent);
-	border-top-color: var(--hc-border-color-subtle);
 }
 
-.hc-accordion-header:last-child {
-	border-bottom-color: var(--hc-border-color-subtle);
+.hc-accordion-item:last-child {
+	border-bottom: 1px solid var(--hc-border-color-subtle);
 }
 
 .hc-accordion-section-heading {
