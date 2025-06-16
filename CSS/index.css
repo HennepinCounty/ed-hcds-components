@@ -1677,7 +1677,7 @@ a.hc-button {
   border-radius: var(--hc-border-radius-pill, 9999px);
   margin: 0;
   background-color: var(--hc-button-primary);
-  height: var(--hc-height--medium, 2.5rem);
+  height: var(--hc-height--large, 3rem);
   padding-left: var(--hc-spacing-06);
   padding-right: var(--hc-spacing-06);
   cursor: pointer;
