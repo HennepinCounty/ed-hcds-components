@@ -13,7 +13,7 @@
 }
 
 h2.hc-alert-heading {
-	font-size: var(--hc-font-h4-size);
+	font-size: var(--hc-font-h6-size);
 	font-weight: 500;
 	margin-bottom: 0rem;
 	/* color: var(--hc-text-info); */

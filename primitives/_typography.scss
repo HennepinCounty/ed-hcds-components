@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 // ============================
 // ============================
 // Mobile breakpoint styling
@@ -5,19 +6,19 @@
 // ============================
 :root {
 	// Font families
-	--hc-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	--hc-font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	//  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
 	// Base for font sizes
 	--hc-font-size-base: 1rem;
 
 	// Heading sizes
-	--hc-font-h1-size: calc(var(--hc-font-size-base) * 2.5); /*40px*/
-	--hc-font-h2-size: calc(var(--hc-font-size-base) * 2); /*32px*/
-	--hc-font-h3-size: calc(var(--hc-font-size-base) * 1.66); /*26.6px*/
-	--hc-font-h4-size: calc(var(--hc-font-size-base) * 1.25); /*20px*/
-	--hc-font-h5-size: calc(var(--hc-font-size-base) * 1.125); /*18px*/
-	--hc-font-h6-size: calc(var(--hc-font-size-base) * 1.125); /*18px*/
+	--hc-font-h1-size: calc(var(--hc-font-size-base) * 4); /*64px*/
+	--hc-font-h2-size: calc(var(--hc-font-size-base) * 3); /*48px*/
+	--hc-font-h3-size: calc(var(--hc-font-size-base) * 2.25); /*36*/
+	--hc-font-h4-size: calc(var(--hc-font-size-base) * 1.75); /*28px*/
+	--hc-font-h5-size: calc(var(--hc-font-size-base) * 1.5); /*24px*/
+	--hc-font-h6-size: calc(var(--hc-font-size-base) * 1.375); /*22px*/
 
 	// Paragraph sizes
 	--hc-font-body-size-small: calc(var(--hc-font-size-base) * 1); /*16px*/
@@ -32,12 +33,12 @@
 	--hc-font-error-size: var(--hc-font-body-size-regular); /*18px*/
 
 	// Line heights
-	--hc-font-h1-lineHeight: 109%;
-	--hc-font-h2-lineHeight: 109%;
-	--hc-font-h3-lineHeight: 115%;
-	--hc-font-h4-lineHeight: 120%;
-	--hc-font-h5-lineHeight: 130%;
-	--hc-font-h6-lineHeight: 130%;
+	--hc-font-h1-lineHeight: 110%;
+	--hc-font-h2-lineHeight: 110%;
+	--hc-font-h3-lineHeight: 120%;
+	--hc-font-h4-lineHeight: 140%;
+	--hc-font-h5-lineHeight: 140%;
+	--hc-font-h6-lineHeight: 140%;
 	--hc-font-body-lineHeight-large: 1.5;
 	--hc-font-body-lineHeight-regular: 1.5;
 	--hc-font-body-lineHeight-small: 1.5;
@@ -74,12 +75,12 @@
 @media (min-width: 40.0625rem) {
 	:root {
 		// Heading sizes
-		--hc-font-h1-size: calc(var(--hc-font-size-base) * 2.5); /*40px*/
-		--hc-font-h2-size: calc(var(--hc-font-size-base) * 2); /*32px*/
-		--hc-font-h3-size: calc(var(--hc-font-size-base) * 1.66); /*26.6px*/
-		--hc-font-h4-size: calc(var(--hc-font-size-base) * 1.25); /*20px*/
-		--hc-font-h5-size: calc(var(--hc-font-size-base) * 1.125); /*18px*/
-		--hc-font-h6-size: calc(var(--hc-font-size-base) * 1.125); /*18px*/
+		--hc-font-h1-size: calc(var(--hc-font-size-base) * 4); /*64px*/
+		--hc-font-h2-size: calc(var(--hc-font-size-base) * 3); /*48px*/
+		--hc-font-h3-size: calc(var(--hc-font-size-base) * 2.25); /*36*/
+		--hc-font-h4-size: calc(var(--hc-font-size-base) * 1.75); /*28px*/
+		--hc-font-h5-size: calc(var(--hc-font-size-base) * 1.5); /*24px*/
+		--hc-font-h6-size: calc(var(--hc-font-size-base) * 1.375); /*22px*/
 
 		// Paragraph sizes
 		--hc-font-body-size-large: calc(var(--hc-font-size-base) * 1.25); /*20px*/
@@ -94,16 +95,15 @@
 		--hc-font-error-size: var(--hc-font-body-size-regular); /*18px*/
 
 		// Line heights
-		--hc-font-h1-lineHeight: 1.09;
-		--hc-font-h2-lineHeight: 1.15;
-		--hc-font-h3-lineHeight: 1.3;
-		--hc-font-h4-lineHeight: 1.4;
-		--hc-font-h5-lineHeight: 1.5;
-		--hc-font-h6-lineHeight: 1.5;
+		--hc-font-h1-lineHeight: 110%;
+		--hc-font-h2-lineHeight: 110%;
+		--hc-font-h3-lineHeight: 120%;
+		--hc-font-h4-lineHeight: 140%;
+		--hc-font-h5-lineHeight: 140%;
+		--hc-font-h6-lineHeight: 140%;
 		--hc-font-body-lineHeight-large: 1.5;
 		--hc-font-body-lineHeight-regular: 1.5;
 		--hc-font-body-lineHeight-small: 1.5;
-		--hc-font-button-lineHeight: 1;
 
 		//Top margin when preceded by a paragraph
 		--hc-font-h1-margin-top: var(--hc-spacing-05);
@@ -213,11 +213,10 @@ h1,
 	display: block;
 	font-family: var(--hc-font-family);
 	color: var(--hc-text-primary);
-	font-size: 32px;
 	font-size: var(--hc-font-h1-size);
 	font-style: normal;
-	font-weight: 100;
-	line-height: 108%;
+	font-weight: 500;
+	line-height: var(--hc-font-h1-lineHeight);
 	margin-bottom: var(--hc-font-h1-margin-bottom);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -232,7 +231,7 @@ h2,
 	font-size: var(--hc-font-h2-size);
 	font-style: normal;
 	font-weight: 400;
-	line-height: 120%; /* 2.4rem */
+	line-height: var(--hc-font-h2-lineHeight);
 	margin-bottom: var(--hc-font-h2-margin-bottom);
 }
 
@@ -245,7 +244,7 @@ h3,
 	font-size: var(--hc-font-h3-size);
 	font-style: normal;
 	font-weight: 400;
-	line-height: 120%; /* 1.992rem */
+	line-height: var(--hc-font-h3-lineHeight);
 	margin-bottom: var(--hc-font-h3-margin-bottom);
 }
 
@@ -257,8 +256,8 @@ h4,
 	font-family: var(--hc-font-family);
 	font-size: var(--hc-font-h4-size);
 	font-style: normal;
-	font-weight: 700;
-	line-height: 120%; /* 1.5rem */
+	font-weight: 400;
+	line-height: var(--hc-font-h4-lineHeight);
 	margin-bottom: var(--hc-font-h4-margin-bottom);
 	// margin-top: var(--hc-font-h4-margin-top);
 }
@@ -272,7 +271,7 @@ h5,
 	font-size: var(--hc-font-h5-size);
 	font-style: normal;
 	font-weight: 600;
-	line-height: 150%; /* 1.5rem */
+	line-height: var(--hc-font-h5-lineHeight);
 	margin-bottom: var(--hc-font-h5-margin-bottom);
 }
 
@@ -285,7 +284,7 @@ h6,
 	font-size: var(--hc-font-h6-size);
 	font-style: normal;
 	font-weight: 600;
-	line-height: 120%; /* 1.02rem */
+	line-height: var(--hc-font-h6-lineHeight);
 	margin-bottom: var(--hc-font-h6-margin-bottom);
 }
 
