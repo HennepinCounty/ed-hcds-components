@@ -182,6 +182,8 @@ a.hc-button--danger[aria-disabled="true"] {
 }
 
 .hc-button.hc-button--icon-only {
+	height: auto;
+	width: auto;
 	align-items: center;
 	justify-content: center;
 	padding-inline-start: var(--hc-spacing-03);

@@ -39,7 +39,7 @@
 	font-size: var(--hc-font-fieldLabel-size-regular);
 	color: var(--hc-text-primary, #171a1d);
 	font-weight: 400;
-
+	margin-top: var(--hc-spacing-02);
 	display: inline-block;
 	margin-bottom: 0px;
 	padding-left: var(--hc-spacing-04);

@@ -1,104 +1,104 @@
 .hc-radios {
-  margin-top: var(--hc-spacing-04);
+	margin-top: var(--hc-spacing-04);
 }
 
 /* Styling for radio item */
 .hc-radios__item {
-  font-family: var(--hc-font-family);
-  font-size: var(--hc-font-body-size-regular);
-  display: block;
-  position: relative;
-  min-height: 36px;
-  margin-bottom: var(--hc-spacing-05);
-  padding-left: 36px;
-  clear: left;
+	font-family: var(--hc-font-family);
+	font-size: var(--hc-font-body-size-regular);
+	display: block;
+	position: relative;
+	min-height: 36px;
+	margin-bottom: var(--hc-spacing-05);
+	padding-left: 36px;
+	clear: left;
 }
 
 /* Prevent extra spacing added by last element */
 .hc-radios__item:last-child,
 .hc-radios__item:last-of-type {
-  margin-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 /* This hides the default browser styling of inputs */
 .hc-radios__input {
-  position: absolute;
-  z-index: 1;
-  top: 1px;
-  left: 1px;
-  width: 36px;
-  height: 36px;
-  margin: 0;
-  opacity: 0;
-  cursor: pointer;
+	position: absolute;
+	z-index: 1;
+	top: 1px;
+	left: 1px;
+	width: 36px;
+	height: 36px;
+	margin: 0;
+	opacity: 0;
+	cursor: pointer;
 }
 
 /* This pushes input text to the right to make room for radios */
 .hc-radios__label {
-  font-size: var(--hc-font-fieldLabel-size-regular);
-  font-weight: 400;
-  display: inline-block;
-  margin-bottom: 0;
-  padding-top: 0px;
-  padding-left: var(--hc-spacing-04);
-  padding-right: var(--hc-spacing-04);
-  padding-bottom: var(--hc-spacing-01);
-  cursor: pointer;
-  /* remove 300ms pause on mobile */
-  touch-action: manipulation;
-  max-width: 80ch;
+	font-size: var(--hc-font-fieldLabel-size-regular);
+	font-weight: 400;
+	display: inline-block;
+	margin-top: var(--hc-spacing-02);
+	margin-bottom: 0;
+	padding-top: 0px;
+	padding-left: var(--hc-spacing-04);
+	padding-right: var(--hc-spacing-04);
+	padding-bottom: var(--hc-spacing-01);
+	cursor: pointer;
+	/* remove 300ms pause on mobile */
+	touch-action: manipulation;
+	max-width: 80ch;
 }
 
 /* ( ) Radio ring */
 .hc-radios__label::before {
-  content: "";
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
+	content: "";
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	left: 0;
 
-  width: 36px;
-  height: 36px;
-  border: var(--hc-border-width-small) solid var(--hc-border-color-strong);
-  border-radius: 50%;
-  background: transparent;
+	width: 36px;
+	height: 36px;
+	border: var(--hc-border-width-small) solid var(--hc-border-color-strong);
+	border-radius: 50%;
+	background: transparent;
 }
 
 /* •  Radio button
  We create the 'button' entirely out of 'border' so that they remain
  'filled' even when colours are overridden in the browser. */
 .hc-radios__label::after {
-  content: "";
+	content: "";
 
-  position: absolute;
-  /* position of radio */
-  top: 10px;
-  left: 10px;
+	position: absolute;
+	/* position of radio */
+	top: 10px;
+	left: 10px;
 
-  width: 0px;
-  height: 0px;
+	width: 0px;
+	height: 0px;
 
-  /* defines size of radio */
-  border: 8px solid var(--hc-border-color-strong);
-  border-radius: 50%;
-  opacity: 0;
-  background: currentcolor;
+	/* defines size of radio */
+	border: 8px solid var(--hc-border-color-strong);
+	border-radius: 50%;
+	opacity: 0;
+	background: currentcolor;
 }
 
 /* Focused state */
 .hc-radios__input:focus + .hc-radios__label::before {
-  border-width: 2px;
+	border-width: 2px;
 
-  outline: var(--hc-outline-style-focus);
-  outline-offset: 3px;
-  border: 2px solid var(--hc-black);
+	outline: var(--hc-outline-style-focus);
+	outline-offset: 3px;
+	border: 2px solid var(--hc-black);
 }
 
 /* Selected state */
 .hc-radios__input:checked + .hc-radios__label::after {
-  opacity: 1;
+	opacity: 1;
 }
-
 
 /***************************************************************************************
 *    Title: Radio component (css)
@@ -107,7 +107,6 @@
 *    Availability: https://github.com/alphagov/govuk-frontend/blob/a2ff2e41967a38785aaef33135dc7e41cbd6d00b/packages/govuk-frontend/src/govuk/components/radios/_index.scss
 *
 ***************************************************************************************/
-
 
 /* ======================================== */
 /* ======================================== */

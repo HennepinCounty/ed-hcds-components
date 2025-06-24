@@ -305,9 +305,9 @@ h6 {
 :root {
   --hc-font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --hc-font-size-base: 1rem;
-  --hc-font-h1-size: calc(var(--hc-font-size-base) * 4); /*64px*/
-  --hc-font-h2-size: calc(var(--hc-font-size-base) * 3); /*48px*/
-  --hc-font-h3-size: calc(var(--hc-font-size-base) * 2.25); /*36*/
+  --hc-font-h1-size: calc(var(--hc-font-size-base) * 3); /*64px*/
+  --hc-font-h2-size: calc(var(--hc-font-size-base) * 2.5); /*48px*/
+  --hc-font-h3-size: calc(var(--hc-font-size-base) * 2); /*36*/
   --hc-font-h4-size: calc(var(--hc-font-size-base) * 1.75); /*28px*/
   --hc-font-h5-size: calc(var(--hc-font-size-base) * 1.5); /*24px*/
   --hc-font-h6-size: calc(var(--hc-font-size-base) * 1.375); /*22px*/
@@ -497,7 +497,7 @@ h5,
   font-family: var(--hc-font-family);
   font-size: var(--hc-font-h5-size);
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: var(--hc-font-h5-lineHeight);
   margin-bottom: var(--hc-font-h5-margin-bottom);
 }
@@ -509,7 +509,7 @@ h6,
   font-family: var(--hc-font-family);
   font-size: var(--hc-font-h6-size);
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: var(--hc-font-h6-lineHeight);
   margin-bottom: var(--hc-font-h6-margin-bottom);
 }
@@ -1877,6 +1877,8 @@ a.hc-button--danger[aria-disabled=true] {
 }
 
 .hc-button.hc-button--icon-only {
+  height: auto;
+  width: auto;
   align-items: center;
   justify-content: center;
   padding-inline-start: var(--hc-spacing-03);
@@ -2170,7 +2172,7 @@ p.hc-alert-paragraph {
 .hc-accordion-header {
   font-family: var(--hc-font-family);
   font-weight: 400;
-  font-size: var(--hc-font-h4-size);
+  font-size: var(--hc-font-h6-size);
   color: var(--hc-text-primary);
   background-color: var(--hc-background-default);
   line-height: 130%;
@@ -2181,6 +2183,7 @@ p.hc-alert-paragraph {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   gap: var(--hc-spacing-03);
   border: var(--hc-border-style-transparent);
 }
@@ -2337,6 +2340,7 @@ SOFTWARE. */
   font-size: var(--hc-font-fieldLabel-size-regular);
   color: var(--hc-text-primary, #171a1d);
   font-weight: 400;
+  margin-top: var(--hc-spacing-02);
   display: inline-block;
   margin-bottom: 0px;
   padding-left: var(--hc-spacing-04);
@@ -2627,6 +2631,7 @@ SOFTWARE. */
   font-size: var(--hc-font-fieldLabel-size-regular);
   font-weight: 400;
   display: inline-block;
+  margin-top: var(--hc-spacing-02);
   margin-bottom: 0;
   padding-top: 0px;
   padding-left: var(--hc-spacing-04);

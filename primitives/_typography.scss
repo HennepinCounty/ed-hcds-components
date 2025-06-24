@@ -13,9 +13,9 @@
 	--hc-font-size-base: 1rem;
 
 	// Heading sizes
-	--hc-font-h1-size: calc(var(--hc-font-size-base) * 4); /*64px*/
-	--hc-font-h2-size: calc(var(--hc-font-size-base) * 3); /*48px*/
-	--hc-font-h3-size: calc(var(--hc-font-size-base) * 2.25); /*36*/
+	--hc-font-h1-size: calc(var(--hc-font-size-base) * 3); /*64px*/
+	--hc-font-h2-size: calc(var(--hc-font-size-base) * 2.5); /*48px*/
+	--hc-font-h3-size: calc(var(--hc-font-size-base) * 2); /*36*/
 	--hc-font-h4-size: calc(var(--hc-font-size-base) * 1.75); /*28px*/
 	--hc-font-h5-size: calc(var(--hc-font-size-base) * 1.5); /*24px*/
 	--hc-font-h6-size: calc(var(--hc-font-size-base) * 1.375); /*22px*/
@@ -270,7 +270,7 @@ h5,
 	font-family: var(--hc-font-family);
 	font-size: var(--hc-font-h5-size);
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 400;
 	line-height: var(--hc-font-h5-lineHeight);
 	margin-bottom: var(--hc-font-h5-margin-bottom);
 }
@@ -283,7 +283,7 @@ h6,
 	font-family: var(--hc-font-family);
 	font-size: var(--hc-font-h6-size);
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 400;
 	line-height: var(--hc-font-h6-lineHeight);
 	margin-bottom: var(--hc-font-h6-margin-bottom);
 }
