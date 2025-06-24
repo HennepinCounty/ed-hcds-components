@@ -80,7 +80,7 @@
 	height: 0px;
 
 	/* defines size of radio */
-	border: 8px solid var(--hc-border-color-strong);
+	border: 10px solid var(--hc-background-interactive);
 	border-radius: 50%;
 	opacity: 0;
 	background: currentcolor;
