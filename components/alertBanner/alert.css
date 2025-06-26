@@ -109,12 +109,12 @@ p.hc-alert-paragraph {
 	> .hc-alert-content
 	> .hc-alert-heading-and-icon
 	> h2.hc-alert-heading {
-	color: var(--hc-text-danger);
+	color: var(--hc-text-error);
 }
 
 /* danger paragraph styling */
 .hc-alert.hc-alert-danger > .hc-alert-content > p.hc-alert-paragraph {
-	color: var(--hc-text-danger);
+	color: var(--hc-text-error);
 }
 
 /* Danger close button styling */

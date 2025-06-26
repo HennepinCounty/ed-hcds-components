@@ -355,6 +355,20 @@ a:disabled {
 	color: var(--hc-link-disabled);
 }
 
+.hc-link-on-color,
+a.hc-link-on-color {
+	color: var(--hc-link-inverse);
+}
+
+.hc-link-on-color:hover:visited,
+a.hc-link-on-color:hover:visited {
+	color: var(--hc-link-inverse);
+}
+
+.hc-text-on-color {
+	color: var(--hc-text-on-color);
+}
+
 .hc-field-label {
 	display: block;
 	color: var(--hc-text-primary, #171a1d);

@@ -1,0 +1,26 @@
+/* ================= */
+/* ================= */
+/* footer.css */
+/* ================= */
+/* ================= */
+
+.hc-footer {
+	background: var(--hc-background-brand-alternate);
+	height: auto;
+	width: 100%;
+	padding: var(--hc-spacing-06) var(--hc-spacing-05);
+	display: flex;
+	flex-grow: 0;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: var(--hc-spacing-07);
+}
+
+@media (min-width: 40.0625rem) {
+	.hc-footer {
+		background: var(--hc-background-brand-alternate);
+		padding: var(--hc-spacing-09) var(--hc-spacing-08);
+		flex-direction: row;
+		align-items: center;
+	}
+}

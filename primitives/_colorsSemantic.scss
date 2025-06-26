@@ -125,6 +125,7 @@
 	--hc-border-color-on-color: var(--hc-white);
 	--hc-border-color-strong: var(--hc-gray-900);
 	--hc-border-color-subtle: var(--hc-gray-400);
+	--border-subtle-on-color: rgba(255, 255, 255, 0.2);
 	--hc-button-border: var(--hc-background-interactive);
 	--hc-button-danger-active: var(--hc-red-950);
 	--hc-button-danger-hover: var(--hc-red-900);
@@ -197,7 +198,7 @@
 	--hc-text-disabled: var(--hc-gray-500);
 	--hc-text-success: var(--hc-green-950);
 	--hc-text-success-inverse: var(--hc-support-success);
-	--hc-text-error: var(--hc-red-700);
+	--hc-text-error: var(--hc-red-800);
 	--hc-text-error-inverse: var(--hc-support-error);
 	--hc-text-info: var(--hc-support-info-inverse);
 	--hc-text-info-inverse: var(--hc-support-info);
