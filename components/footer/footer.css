@@ -65,7 +65,7 @@
 @media (min-width: 40.0625rem) {
 	.hc-footer-links-and-copyright {
 		display: flex;
-		align-items: start;
+		align-items: end;
 		flex-direction: column;
 	}
 }
