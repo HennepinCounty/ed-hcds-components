@@ -8,7 +8,7 @@
 	background: var(--hc-background-brand-alternate);
 	height: auto;
 	width: 100%;
-	padding: var(--hc-spacing-06) var(--hc-spacing-05);
+	padding: var(--hc-spacing-08) var(--hc-spacing-06);
 	display: flex;
 	flex-grow: 0;
 	flex-direction: column;
@@ -19,8 +19,102 @@
 @media (min-width: 40.0625rem) {
 	.hc-footer {
 		background: var(--hc-background-brand-alternate);
-		padding: var(--hc-spacing-09) var(--hc-spacing-08);
+		padding: var(--hc-spacing-08) var(--hc-spacing-08);
 		flex-direction: row;
-		align-items: center;
+		align-items: top;
+	}
+}
+
+.hc-footer-social-and-heading {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	flex-shrink: 0;
+	gap: var(--hc-spacing-03);
+}
+
+.hc-footer-social-and-heading h2 {
+	color: var(--hc-text-on-color);
+	margin-bottom: var(--hc-spacing-00);
+	font-weight: 500;
+}
+
+.hc-footer-social-section {
+	display: flex;
+	flex-direction: row;
+	gap: 12px;
+	width: fit-content;
+	flex-shrink: 0;
+	flex-wrap: wrap;
+}
+
+.hc-footer-icon-container {
+	padding: var(--hc-spacing-04);
+	border-color: var(--border-subtle-on-color);
+	border-style: solid;
+	border-width: 2px;
+	height: fit-content;
+	width: fit-content;
+	border-radius: 50%;
+}
+
+.hc-footer svg {
+	flex-shrink: 0;
+}
+
+@media (min-width: 40.0625rem) {
+	.hc-footer-links-and-copyright {
+		display: flex;
+		align-items: start;
+		flex-direction: column;
+	}
+}
+
+/* @media (min-width: 40.0625rem) {
+	.hc-footer-link-container {
+		min-width: auto;
+		max-width: 1000px;
+		height: auto;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+		justify-content: start;
+	}
+} */
+
+.hc-footerLogo {
+	width: 55px;
+	height: 70px;
+}
+
+.hc-footer-image-link {
+	display: block;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.hc-footer-link-group {
+	display: flex;
+	flex-direction: column;
+	gap: var(--hc-spacing-05);
+}
+
+@media (min-width: 40.0625rem) {
+	.hc-footer-link-group {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+
+.hc-footer-links-and-logo {
+	display: flex;
+	flex-direction: column;
+}
+
+@media (min-width: 40.0625rem) {
+	.hc-footer-links-and-logo {
+		flex-direction: row;
+		gap: var(--hc-spacing-05);
 	}
 }
