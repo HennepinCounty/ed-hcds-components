@@ -206,8 +206,8 @@ h6 {
   --hc-border-color-focus-02: var(--hc-background-interactive);
   --hc-border-color-inverse: var(--hc-gray-900);
   --hc-border-color-on-color: var(--hc-white);
-  --hc-border-color-strong: var(--hc-gray-900);
-  --hc-border-color-subtle: var(--hc-gray-400);
+  --hc-border-color-strong: var(--hc-gray-700);
+  --hc-border-color-subtle: var(--hc-gray-500);
   --border-subtle-on-color: rgba(255, 255, 255, 0.2);
   --hc-button-border: var(--hc-background-interactive);
   --hc-button-danger-active: var(--hc-red-950);
@@ -237,7 +237,7 @@ h6 {
   --hc-button-tertiary-on-dark: var(--hc-white);
   --hc-button-tertiary: var(--hc-white);
   --hc-field-background: var(--hc-background-default);
-  --hc-field-border-color: var(--hc-border-color-strong);
+  --hc-field-border-color: var(--hc-border-color-subtle);
   --hc-field-disabled: var(--hc-gray-200);
   --hc-field-error: var(--hc-red-50);
   --hc-field-hover-01: var(--hc-gray-200);
@@ -2866,57 +2866,47 @@ SOFTWARE. */
   }
 }
 /* Glues the input field and button together */
-/* .hc-search-wrapper {
-	display: flex;
-	flex-direction: row;
-	gap: var(--hc-spacing-00);
-	padding: var(--hc-spacing-03);
-	position: relative;
-	justify-content: flex-start;
-	width: fit-content;
-} */
 .hc-search-wrapper {
   position: relative;
   display: flex;
   flex-direction: row;
   height: auto;
+  min-height: 48px;
   border-radius: var(--hc-border-radius-02);
-  padding: var(--hc-spacing-03);
-  border: 2px solid var(--hc-field-border-color);
-  border-radius: 9999px;
+  padding: var(--hc-spacing-02);
+  /* border: 2px solid var(--hc-field-border-color); */
+  /* border-radius: 9999px; */
   align-items: center;
   justify-content: center;
 }
 
-.hc-search-wrapper:focus-within {
-  border: var(--hc-border-style-focus);
-  outline: var(--hc-outline-style-focus);
-}
+/* Focus styling is removed from input */
+/* .hc-search-wrapper:focus-within {
 
+} */
 /* Styling for font typed into field */
 input.hc-input[type=search] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   font-family: var(--hc-font-family);
-  font-size: var(--hc-font-body-size-regular);
+  font-size: var(--hc-font-body-size-large);
   font-style: normal;
   color: var(--hc-text-primary, #171a1d);
   font-weight: 400;
   line-height: 100%;
-  height: 100px;
-  padding: 8px;
-  height: var(--hc-height--medium);
-  /* border-radius: 9999px; */
-  padding: var(--hc-spacing-02);
-  border: 2px solid var(--hc-transparent);
-  background-color: var(--hc-transparent);
+  border-radius: 9999px;
+  padding-inline-start: var(--hc-spacing-04);
+  border: 2px solid var(--hc-field-border-color);
+  background-color: var(--hc-white);
   width: 100%;
+  height: 100%;
+  min-height: 64px;
 }
 
 input.hc-input[type=search]:focus {
-  border: 2px solid var(--hc-transparent);
-  outline: var(--hc-transparent) solid 3px;
+  border: var(--hc-border-style-focus);
+  outline: var(--hc-outline-style-focus);
 }
 
 /* Un-rounds the corners of input field to be flush against button */
@@ -2928,10 +2918,10 @@ input.hc-input[type=search]:focus {
 /* Un-rounds the corners of button to be flush against input field */
 .hc-button-search {
   /* border-radius: 0px 4px 4px 0px; */
-  margin-inline-start: -2px;
-  /* position: absolute; */
-  top: 4px;
-  right: 4px;
+  /* margin-inline-start: -2px; */
+  position: absolute;
+  top: 12px;
+  right: 12px;
 }
 
 /* This styles the modal container */

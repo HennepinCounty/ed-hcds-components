@@ -123,8 +123,8 @@
 	--hc-border-color-focus-02: var(--hc-background-interactive);
 	--hc-border-color-inverse: var(--hc-gray-900);
 	--hc-border-color-on-color: var(--hc-white);
-	--hc-border-color-strong: var(--hc-gray-900);
-	--hc-border-color-subtle: var(--hc-gray-400);
+	--hc-border-color-strong: var(--hc-gray-700);
+	--hc-border-color-subtle: var(--hc-gray-500);
 	--border-subtle-on-color: rgba(255, 255, 255, 0.2);
 	--hc-button-border: var(--hc-background-interactive);
 	--hc-button-danger-active: var(--hc-red-950);
@@ -154,7 +154,7 @@
 	--hc-button-tertiary-on-dark: var(--hc-white);
 	--hc-button-tertiary: var(--hc-white);
 	--hc-field-background: var(--hc-background-default);
-	--hc-field-border-color: var(--hc-border-color-strong);
+	--hc-field-border-color: var(--hc-border-color-subtle);
 	--hc-field-disabled: var(--hc-gray-200);
 	--hc-field-error: var(--hc-red-50);
 	--hc-field-hover-01: var(--hc-gray-200);
