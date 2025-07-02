@@ -2896,7 +2896,7 @@ input.hc-input[type=search] {
   font-weight: 400;
   line-height: 100%;
   border-radius: 9999px;
-  padding-inline-start: var(--hc-spacing-04);
+  padding-inline-start: var(--hc-spacing-06);
   border: 2px solid var(--hc-field-border-color);
   background-color: var(--hc-white);
   width: 100%;
@@ -2922,6 +2922,12 @@ input.hc-input[type=search]:focus {
   position: absolute;
   top: 12px;
   right: 12px;
+}
+
+.hc-search-icon {
+  position: absolute;
+  left: 8px;
+  top: 8px;
 }
 
 /* This styles the modal container */
