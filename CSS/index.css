@@ -1962,15 +1962,21 @@ input.hc-input[type=text] {
   padding: var(--hc-spacing-05);
   margin-bottom: var(--hc-spacing-05);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: start;
   background-color: var(--hc-support-info);
   color: white;
-  max-width: 768px;
+  /* max-width: 768px; */
   gap: var(--hc-spacing-08);
 }
 
+@media (min-width: 40.0625rem) {
+  .hc-alert {
+    align-items: center;
+    flex-direction: row;
+  }
+}
 h2.hc-alert-heading {
   font-size: var(--hc-font-h6-size);
   font-weight: 500;
@@ -1981,7 +1987,8 @@ h2.hc-alert-heading {
 /* Needed to override color */
 p.hc-alert-paragraph {
   color: var(--hc-text-info);
-  margin-inline-start: var(--hc-spacing-07);
+  margin-bottom: 0px;
+  /* margin-inline-start: var(--hc-spacing-07); */
 }
 
 /* Different styling for alert types */
@@ -1989,16 +1996,33 @@ p.hc-alert-paragraph {
   display: flex;
   flex-direction: column;
   gap: var(--hc-spacing-03);
+  align-items: start;
+  min-height: 100%;
 }
 
+@media (min-width: 40.0625rem) {
+  .hc-alert-content {
+    display: flex;
+    flex-direction: row;
+    gap: var(--hc-spacing-03);
+    align-items: center;
+    min-height: 100%;
+  }
+}
 /* Default styling for the close button */
 .hc-alert .hc-alert-close-button {
   color: inherit;
   border: var(--hc-border-interactive);
   padding-left: var(--hc-spacing-06);
   padding-right: var(--hc-spacing-04);
+  margin-inline-start: var(--hc-spacing-05);
 }
 
+@media (min-width: 40.0625rem) {
+  .hc-alert .hc-alert-close-button {
+    margin-inline-start: var(--hc-spacing-00);
+  }
+}
 .hc-alert .hc-alert-close-button:hover {
   color: inherit;
   border-color: var(--hc-border-color-interactive-hover);
@@ -2027,12 +2051,12 @@ p.hc-alert-paragraph {
 }
 
 /* success heading styling */
-.hc-alert.hc-alert-success > .hc-alert-content > .hc-alert-heading-and-icon > h2.hc-alert-heading {
+.hc-alert.hc-alert-success > .hc-alert-icon-and-content > .hc-alert-content > h2.hc-alert-heading {
   color: var(--hc-text-success);
 }
 
 /* success paragraph styling */
-.hc-alert.hc-alert-success > .hc-alert-content > p.hc-alert-paragraph {
+.hc-alert.hc-alert-success > .hc-alert-icon-and-content > .hc-alert-content > p.hc-alert-paragraph {
   color: var(--hc-text-success);
 }
 
@@ -2065,12 +2089,12 @@ p.hc-alert-paragraph {
 }
 
 /* danger heading styling */
-.hc-alert.hc-alert-danger > .hc-alert-content > .hc-alert-heading-and-icon > h2.hc-alert-heading {
+.hc-alert.hc-alert-danger > .hc-alert-icon-and-content > .hc-alert-content > h2.hc-alert-heading {
   color: var(--hc-text-error);
 }
 
 /* danger paragraph styling */
-.hc-alert.hc-alert-danger > .hc-alert-content > p.hc-alert-paragraph {
+.hc-alert.hc-alert-danger > .hc-alert-icon-and-content > .hc-alert-content > p.hc-alert-paragraph {
   color: var(--hc-text-error);
 }
 
@@ -2101,12 +2125,12 @@ p.hc-alert-paragraph {
 }
 
 /* warning heading styling */
-.hc-alert.hc-alert-warning > .hc-alert-content > .hc-alert-heading-and-icon > h2.hc-alert-heading {
+.hc-alert.hc-alert-warning > .hc-alert-icon-and-content > .hc-alert-content > h2.hc-alert-heading {
   color: var(--hc-text-warning);
 }
 
 /* warning paragraph styling */
-.hc-alert.hc-alert-warning > .hc-alert-content > p.hc-alert-paragraph {
+.hc-alert.hc-alert-warning > .hc-alert-icon-and-content > .hc-alert-content > p.hc-alert-paragraph {
   color: var(--hc-text-warning);
 }
 
@@ -2138,12 +2162,12 @@ p.hc-alert-paragraph {
 }
 
 /* info heading styling */
-.hc-alert.hc-alert-info > .hc-alert-content > .hc-alert-heading-and-icon > h2.hc-alert-heading {
+.hc-alert.hc-alert-info > .hc-alert-icon-and-content > .hc-alert-content > h2.hc-alert-heading {
   color: var(--hc-support-info-inverse);
 }
 
 /* info paragraph styling */
-.hc-alert.hc-alert-info > .hc-alert-content > p.hc-alert-paragraph {
+.hc-alert.hc-alert-info > .hc-alert-icon-and-content > .hc-alert-content > p.hc-alert-paragraph {
   color: var(--hc-text-info);
 }
 
@@ -2170,12 +2194,20 @@ p.hc-alert-paragraph {
   box-shadow: var(--hc-shadow-focus-outer-ring);
 }
 
-.hc-alert-heading-and-icon {
+.hc-alert-icon-and-content {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   gap: var(--hc-spacing-03);
+  align-items: start;
 }
 
+@media (min-width: 40.0625rem) {
+  .hc-alert-icon-and-content {
+    flex-direction: row;
+    align-items: center;
+  }
+}
 /* Wrapper for accordion group */
 .hc-accordion-group {
   /* background-color: white; */
@@ -2896,7 +2928,7 @@ input.hc-input[type=search] {
   font-weight: 400;
   line-height: 100%;
   border-radius: 9999px;
-  padding-inline-start: var(--hc-spacing-06);
+  padding-inline-start: var(--hc-spacing-09);
   border: 2px solid var(--hc-field-border-color);
   background-color: var(--hc-white);
   width: 100%;
@@ -2926,8 +2958,9 @@ input.hc-input[type=search]:focus {
 
 .hc-search-icon {
   position: absolute;
-  left: 8px;
-  top: 8px;
+  left: 24px;
+  top: 24px;
+  color: var(--hc-gray-500);
 }
 
 /* This styles the modal container */
