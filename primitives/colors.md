@@ -1,7 +1,7 @@
 # Colors
 
 test
-#f0f7ff
+#F0F7FF
 ## Base colors
 
 | Property Name    | Value                  |
