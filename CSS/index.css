@@ -2219,6 +2219,16 @@ p.hc-alert-paragraph {
     align-items: center;
   }
 }
+.hc-alert-close-icon {
+  background-color: var(--hc-support-info-inverse);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
 /* Wrapper for accordion group */
 .hc-accordion-group {
   /* background-color: white; */
