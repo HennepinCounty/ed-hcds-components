@@ -1,5 +1,5 @@
 # Colors
-
+```#000000```
 ## Base colors
 
 | Property Name    | Value                  |
