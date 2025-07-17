@@ -149,24 +149,24 @@
 
 | Property Name                        | Value                                    | Hex Code               |
 | ------------------------------------ | ---------------------------------------- | ---------------------- |
-| --hc-button-primary                  | var(--hc-background-interactive)         | #0047e2                |
-| --hc-button-primary-hover            | var(--hc-background-interactive-hover)   | #0b35b2                |
-| --hc-button-primary-active           | var(--hc-background-interactive-active)  | #11267f                |
-| --hc-button-secondary                | var(--hc-white)                          | #ffffff                |
-| --hc-button-secondary-hover          | var(--hc-background-interactive-hover)   | #0b35b2                |
-| --hc-button-secondary-active         | var(--hc-background-interactive-active)  | #11267f                |
-| --hc-button-secondary-border         | var(--hc-background-interactive)         | #0047e2                |
-| --hc-button-tertiary                 | var(--hc-white)                          | #ffffff                |
-| --hc-button-tertiary-hover           | var(--hc-black)                          | #000000                |
-| --hc-button-tertiary-active          | var(--hc-gray-900)                       | #101828                |
-| --hc-button-tertiary-border          | var(--hc-black)                          | #000000                |
-| --hc-button-danger                   | var(--hc-red-700)                        | #ce1432                |
-| --hc-button-danger-hover             | var(--hc-red-900)                        | #88132d                |
-| --hc-button-danger-active            | var(--hc-red-950)                        | #4c0513                |
-| --hc-button-border                   | var(--hc-background-interactive)         | #0047e2                |
-| --hc-button-primary-on-dark          | var(--hc-white)                          | #ffffff                |
-| --hc-button-primary-on-dark-hover    | var(--hc-gray-50)                        | #f9fafb                |
-| --hc-button-primary-on-dark-active   | var(--hc-gray-100)                       | #f3f4f6                |
+| --hc-button-primary                  | var(--hc-background-interactive)         | `#0047e2`              |
+| --hc-button-primary-hover            | var(--hc-background-interactive-hover)   | `#0b35b2`              |
+| --hc-button-primary-active           | var(--hc-background-interactive-active)  | `#11267f`              |
+| --hc-button-secondary                | var(--hc-white)                          | `#ffffff`              |
+| --hc-button-secondary-hover          | var(--hc-background-interactive-hover)   | `#0b35b2`              |
+| --hc-button-secondary-active         | var(--hc-background-interactive-active)  | `#11267f`              |
+| --hc-button-secondary-border         | var(--hc-background-interactive)         | `#0047e2`              |
+| --hc-button-tertiary                 | var(--hc-white)                          | `#ffffff`              |
+| --hc-button-tertiary-hover           | var(--hc-black)                          | `#000000`              |
+| --hc-button-tertiary-active          | var(--hc-gray-900)                       | `#101828`              |
+| --hc-button-tertiary-border          | var(--hc-black)                          | `#000000`              |
+| --hc-button-danger                   | var(--hc-red-700)                        | `#ce1432`              |
+| --hc-button-danger-hover             | var(--hc-red-900)                        | `#88132d`              |
+| --hc-button-danger-active            | var(--hc-red-950)                        | `#4c0513`              |
+| --hc-button-border                   | var(--hc-background-interactive)         | `#0047e2`              |
+| --hc-button-primary-on-dark          | var(--hc-white)                          | `#ffffff`              |
+| --hc-button-primary-on-dark-hover    | var(--hc-gray-50)                        | `#f9fafb`              |
+| --hc-button-primary-on-dark-active   | var(--hc-gray-100)                       | `#f3f4f6`              |
 | --hc-button-secondary-on-dark        | var(--hc-transparent)                    | rgba(255, 255, 255, 0) |
 | --hc-button-secondary-on-dark-hover  | var(--hc-gray-50)                        | #f9fafb                |
 | --hc-button-secondary-on-dark-active | var(--hc-gray-100)                       | #f3f4f6                |
@@ -179,84 +179,84 @@
 
 ### Field colors
 
-| Property Name           | Value                         | Hex Code |
-| ----------------------- | ----------------------------- | -------- |
-| --hc-field-background   | var(--hc-background-default)  | #ffffff  |
-| --hc-field-border-color | var(--hc-border-color-subtle) | #6a7282  |
-| --hc-field-hover-01     | var(--hc-gray-200)            | #e5e7eb  |
-| --hc-field-hover-02     | var(--hc-blue-700)            | #0058a4  |
-| --hc-field-disabled     | var(--hc-gray-200)            | #e5e7eb  |
-| --hc-field-error        | var(--hc-red-50)              | #fff5f5  |
+| Property Name           | Value                         | Hex Code  |
+| ----------------------- | ----------------------------- | --------- |
+| --hc-field-background   | var(--hc-background-default)  | `#ffffff` |
+| --hc-field-border-color | var(--hc-border-color-subtle) | `#6a7282` |
+| --hc-field-hover-01     | var(--hc-gray-200)            | `#e5e7eb` |
+| --hc-field-hover-02     | var(--hc-blue-700)            | `#0058a4` |
+| --hc-field-disabled     | var(--hc-gray-200)            | `#e5e7eb` |
+| --hc-field-error        | var(--hc-red-50)              | `#fff5f5` |
 
 ### Icon colors
 
-| Property Name                    | Value                            | Hex Code |
-| -------------------------------- | -------------------------------- | -------- |
-| --hc-icon-primary                | var(--hc-gray-900)               | #101828  |
-| --hc-icon-secondary              | var(--hc-gray-700)               | #364153  |
-| --hc-icon-on-color               | var(--hc-white)                  | #ffffff  |
-| --hc-icon-inverse                | var(--hc-white)                  | #ffffff  |
-| --hc-icon-disabled               | var(--hc-gray-500)               | #6a7282  |
-| --hc-icon-icon-on-color-disabled | var(--hc-gray-400)               | #99a1af  |
-| --hc-icon-interactive            | var(--hc-background-interactive) | #0047e2  |
-| --hc-icon-info                   | var(--hc-ui-blue-900)            | #0c1555  |
-| --hc-icon-info-inverse           | var(--hc-support-info)           | #0c1555  |
-| --hc-icon-success                | var(--hc-green-900)              | #085f33  |
-| --hc-icon-success-inverse        | var(--hc-support-success)        | #085f33  |
-| --hc-icon-warning                | var(--hc-yellow-900)             | #78250f  |
-| --hc-icon-warning-inverse        | var(--hc-support-warning)        | #78250f  |
-| --hc-icon-error                  | var(--hc-red-900)                | #88132d  |
-| --hc-icon-error-inverse          | var(--hc-support-error)          | #88132d  |
+| Property Name                    | Value                            | Hex Code  |
+| -------------------------------- | -------------------------------- | --------- |
+| --hc-icon-primary                | var(--hc-gray-900)               | `#101828` |
+| --hc-icon-secondary              | var(--hc-gray-700)               | `#364153` |
+| --hc-icon-on-color               | var(--hc-white)                  | `#ffffff` |
+| --hc-icon-inverse                | var(--hc-white)                  | `#ffffff` |
+| --hc-icon-disabled               | var(--hc-gray-500)               | `#6a7282` |
+| --hc-icon-icon-on-color-disabled | var(--hc-gray-400)               | `#99a1af` |
+| --hc-icon-interactive            | var(--hc-background-interactive) | `#0047e2` |
+| --hc-icon-info                   | var(--hc-ui-blue-900)            | `#0c1555` |
+| --hc-icon-info-inverse           | var(--hc-support-info)           | `#0c1555` |
+| --hc-icon-success                | var(--hc-green-900)              | `#085f33` |
+| --hc-icon-success-inverse        | var(--hc-support-success)        | `#085f33` |
+| --hc-icon-warning                | var(--hc-yellow-900)             | `#78250f` |
+| --hc-icon-warning-inverse        | var(--hc-support-warning)        | `#78250f` |
+| --hc-icon-error                  | var(--hc-red-900)                | `#88132d` |
+| --hc-icon-error-inverse          | var(--hc-support-error)          | `#88132d` |
 
 ### Link colors
 
-| Property Name           | Value                            | Hex Code |
-| ----------------------- | -------------------------------- | -------- |
-| --hc-link-primary       | var(--hc-background-interactive) | #0047e2  |
-| --hc-link-inverse       | var(--hc-white)                  | #ffffff  |
-| --hc-link-disabled      | var(--hc-text-disabled)          | #6a7282  |
-| --hc-link-primary-hover | var(--hc-background-brand-hover) | #113c66  |
-| --hc-link-visited       | var(--hc-pink-900)               | #8c0f2e  |
+| Property Name           | Value                            | Hex Code  |
+| ----------------------- | -------------------------------- | --------- |
+| --hc-link-primary       | var(--hc-background-interactive) | `#0047e2` |
+| --hc-link-inverse       | var(--hc-white)                  | `#ffffff` |
+| --hc-link-disabled      | var(--hc-text-disabled)          | `#6a7282` |
+| --hc-link-primary-hover | var(--hc-background-brand-hover) | `#113c66` |
+| --hc-link-visited       | var(--hc-pink-900)               | `#8c0f2e` |
 
 ### Support colors
 
-| Property Name                       | Value                | Hex Code |
-| ----------------------------------- | -------------------- | -------- |
-| --hc-support-error                  | var(--hc-red-100)    | #ffe4e4  |
-| --hc-support-error-inverse          | var(--hc-red-800)    | #9f122d  |
-| --hc-support-error-inverse-hover    | var(--hc-red-900)    | #88132d  |
-| --hc-support-error-inverse-active   | var(--hc-red-950)    | #4c0513  |
-| --hc-support-info                   | var(--hc-blue-100)   | #dfefff  |
-| --hc-support-info-inverse           | var(--hc-blue-900)   | #113c66  |
-| --hc-support-info-inverse-hover     | var(--hc-blue-800)   | #054c87  |
-| --hc-support-info-inverse-active    | var(--hc-blue-700)   | #0058a4  |
-| --hc-support-success                | var(--hc-green-100)  | #d6ffe9  |
-| --hc-support-success-inverse        | var(--hc-green-800)  | #06753b  |
-| --hc-support-success-inverse-hover  | var(--hc-green-900)  | #085f33  |
-| --hc-support-success-inverse-active | var(--hc-green-950)  | #00361a  |
-| --hc-support-warning                | var(--hc-yellow-100) | #feeac7  |
-| --hc-support-warning-inverse        | var(--hc-yellow-800) | #922b0e  |
-| --hc-support-warning-inverse-hover  | var(--hc-yellow-900) | #78250f  |
-| --hc-support-warning-inverse-active | var(--hc-yellow-950) | #451003  |
+| Property Name                       | Value                | Hex Code  |
+| ----------------------------------- | -------------------- | --------- |
+| --hc-support-error                  | var(--hc-red-100)    | `#ffe4e4` |
+| --hc-support-error-inverse          | var(--hc-red-800)    | `#9f122d` |
+| --hc-support-error-inverse-hover    | var(--hc-red-900)    | `#88132d` |
+| --hc-support-error-inverse-active   | var(--hc-red-950)    | `#4c0513` |
+| --hc-support-info                   | var(--hc-blue-100)   | `#dfefff` |
+| --hc-support-info-inverse           | var(--hc-blue-900)   | `#113c66` |
+| --hc-support-info-inverse-hover     | var(--hc-blue-800)   | `#054c87` |
+| --hc-support-info-inverse-active    | var(--hc-blue-700)   | `#0058a4` |
+| --hc-support-success                | var(--hc-green-100)  | `#d6ffe9` |
+| --hc-support-success-inverse        | var(--hc-green-800)  | `#06753b` |
+| --hc-support-success-inverse-hover  | var(--hc-green-900)  | `#085f33` |
+| --hc-support-success-inverse-active | var(--hc-green-950)  | `#00361a` |
+| --hc-support-warning                | var(--hc-yellow-100) | `#feeac7` |
+| --hc-support-warning-inverse        | var(--hc-yellow-800) | `#922b0e` |
+| --hc-support-warning-inverse-hover  | var(--hc-yellow-900) | `#78250f` |
+| --hc-support-warning-inverse-active | var(--hc-yellow-950) | `#451003` |
 
 ### Text colors
 
-| Property Name               | Value                            | Hex Code |
-| --------------------------- | -------------------------------- | -------- |
-| --hc-text-primary           | var(--hc-gray-900)               | #101828  |
-| --hc-text-secondary         | var(--hc-gray-700)               | #364153  |
-| --hc-text-hint              | var(--hc-gray-700)               | #364153  |
-| --hc-text-placeholder       | var(--hc-gray-400)               | #99a1af  |
-| --hc-text-disabled          | var(--hc-gray-500)               | #6a7282  |
-| --hc-text-on-color-disabled | var(--hc-gray-400)               | #99a1af  |
-| --hc-text-success           | var(--hc-green-950)              | #00361a  |
-| --hc-text-success-inverse   | var(--hc-support-success)        | #02e56c  |
-| --hc-text-info              | var(--hc-support-info-inverse)   | #113c66  |
-| --hc-text-info-inverse      | var(--hc-support-info)           | #dfefff  |
-| --hc-text-warning           | var(--hc-yellow-900)             | #78250f  |
-| --hc-text-warning-inverse   | var(--hc-support-warning)        | #feeac7  |
-| --hc-text-error             | var(--hc-red-800)                | #9f122d  |
-| --hc-text-error-inverse     | var(--hc-support-error)          | #ffe4e4  |
-| --hc-text-on-color          | var(--hc-white)                  | #ffffff  |
-| --hc-text-inverse           | var(--hc-white)                  | #ffffff  |
-| --hc-text-interactive       | var(--hc-background-interactive) | #0047e2  |
+| Property Name               | Value                            | Hex Code  |
+| --------------------------- | -------------------------------- | --------- |
+| --hc-text-primary           | var(--hc-gray-900)               | `#101828` |
+| --hc-text-secondary         | var(--hc-gray-700)               | `#364153` |
+| --hc-text-hint              | var(--hc-gray-700)               | `#364153` |
+| --hc-text-placeholder       | var(--hc-gray-400)               | `#99a1af` |
+| --hc-text-disabled          | var(--hc-gray-500)               | `#6a7282` |
+| --hc-text-on-color-disabled | var(--hc-gray-400)               | `#99a1af` |
+| --hc-text-success           | var(--hc-green-950)              | `#00361a` |
+| --hc-text-success-inverse   | var(--hc-support-success)        | `#02e56c` |
+| --hc-text-info              | var(--hc-support-info-inverse)   | `#113c66` |
+| --hc-text-info-inverse      | var(--hc-support-info)           | `#dfefff` |
+| --hc-text-warning           | var(--hc-yellow-900)             | `#78250f` |
+| --hc-text-warning-inverse   | var(--hc-support-warning)        | `#feeac7` |
+| --hc-text-error             | var(--hc-red-800)                | `#9f122d` |
+| --hc-text-error-inverse     | var(--hc-support-error)          | `#ffe4e4` |
+| --hc-text-on-color          | var(--hc-white)                  | `#ffffff` |
+| --hc-text-inverse           | var(--hc-white)                  | `#ffffff` |
+| --hc-text-interactive       | var(--hc-background-interactive) | `#0047e2` |
