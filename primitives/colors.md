@@ -9,7 +9,7 @@
 | --hc-white       | #ffffff                                                                                                    |
 | --hc-blue-50     | #f0f7ff                                                                                                    |
 | --hc-blue-100    | #dfefff                                                                                                    |
-| --hc-blue-200    | #b9defe <a href='#'><img valign='middle' src='https://readme-swatches.vercel.app/b9defe?style=round'/></a> |
+| --hc-blue-200    | <a href='#'><img valign='middle' src='https://readme-swatches.vercel.app/b9defe?style=round'/></a> #b9defe |
 | --hc-blue-300    | #7bc6fe                                                                                                    |
 | --hc-blue-400    | #34a8fc                                                                                                    |
 | --hc-blue-500    | #0a8eed                                                                                                    |
