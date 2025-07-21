@@ -200,13 +200,13 @@
 | --hc-icon-icon-on-color-disabled | var(--hc-gray-400)               | <a href="#"><img src="https://readme-swatches.vercel.app/99a1af?style=round" valign="middle"></a> #99a1af |
 | --hc-icon-interactive            | var(--hc-background-interactive) | <a href="#"><img src="https://readme-swatches.vercel.app/0047e2?style=round" valign="middle"></a> #0047e2 |
 | --hc-icon-info                   | var(--hc-ui-blue-900)            | <a href="#"><img src="https://readme-swatches.vercel.app/0c1555?style=round" valign="middle"></a> #0c1555 |
-| --hc-icon-info-inverse           | var(--hc-support-info)           | <a href="#"><img src="https://readme-swatches.vercel.app/0c1555?style=round" valign="middle"></a> #0c1555 |
+| --hc-icon-info-inverse           | var(--hc-support-info)           | <a href="#"><img src="https://readme-swatches.vercel.app/0c1555?style=round" valign="middle"></a> #c6d9ff |
 | --hc-icon-success                | var(--hc-green-900)              | <a href="#"><img src="https://readme-swatches.vercel.app/085f33?style=round" valign="middle"></a> #085f33 |
-| --hc-icon-success-inverse        | var(--hc-support-success)        | <a href="#"><img src="https://readme-swatches.vercel.app/085f33?style=round" valign="middle"></a> #085f33 |
+| --hc-icon-success-inverse        | var(--hc-support-success)        | <a href="#"><img src="https://readme-swatches.vercel.app/085f33?style=round" valign="middle"></a> #d6ffe9 |
 | --hc-icon-warning                | var(--hc-yellow-900)             | <a href="#"><img src="https://readme-swatches.vercel.app/78250f?style=round" valign="middle"></a> #78250f |
-| --hc-icon-warning-inverse        | var(--hc-support-warning)        | <a href="#"><img src="https://readme-swatches.vercel.app/78250f?style=round" valign="middle"></a> #78250f |
+| --hc-icon-warning-inverse        | var(--hc-support-warning)        | <a href="#"><img src="https://readme-swatches.vercel.app/78250f?style=round" valign="middle"></a> #feeac7 |
 | --hc-icon-error                  | var(--hc-red-900)                | <a href="#"><img src="https://readme-swatches.vercel.app/88132d?style=round" valign="middle"></a> #88132d |
-| --hc-icon-error-inverse          | var(--hc-support-error)          | <a href="#"><img src="https://readme-swatches.vercel.app/88132d?style=round" valign="middle"></a> #88132d |
+| --hc-icon-error-inverse          | var(--hc-support-error)          | <a href="#"><img src="https://readme-swatches.vercel.app/ffe4e4?style=round" valign="middle"></a> #ffe4e4 |
 
 ### Link colors
 
