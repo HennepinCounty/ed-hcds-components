@@ -250,7 +250,7 @@
 | --hc-text-disabled          | var(--hc-gray-500)               | <a href="#"><img src="https://readme-swatches.vercel.app/6a7282?style=round" valign="middle"></a> #6a7282 |
 | --hc-text-on-color-disabled | var(--hc-gray-400)               | <a href="#"><img src="https://readme-swatches.vercel.app/99a1af?style=round" valign="middle"></a> #99a1af |
 | --hc-text-success           | var(--hc-green-950)              | <a href="#"><img src="https://readme-swatches.vercel.app/00361a?style=round" valign="middle"></a> #00361a |
-| --hc-text-success-inverse   | var(--hc-support-success)        | <a href="#"><img src="https://readme-swatches.vercel.app/02e56c?style=round" valign="middle"></a> #02e56c |
+| --hc-text-success-inverse   | var(--hc-support-success)        | <a href="#"><img src="https://readme-swatches.vercel.app/02e56c?style=round" valign="middle"></a> #d6ffe9 |
 | --hc-text-info              | var(--hc-support-info-inverse)   | <a href="#"><img src="https://readme-swatches.vercel.app/113c66?style=round" valign="middle"></a> #113c66 |
 | --hc-text-info-inverse      | var(--hc-support-info)           | <a href="#"><img src="https://readme-swatches.vercel.app/dfefff?style=round" valign="middle"></a> #dfefff |
 | --hc-text-warning           | var(--hc-yellow-900)             | <a href="#"><img src="https://readme-swatches.vercel.app/78250f?style=round" valign="middle"></a> #78250f |
