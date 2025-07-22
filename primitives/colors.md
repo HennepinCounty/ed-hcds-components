@@ -179,14 +179,11 @@
 
 ### Field colors
 
-| Property Name           | Value                         | Hex Code                                                                                                  |
-| ----------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------- |
-| --hc-field-background   | var(--hc-background-default)  | <a href="#"><img src="https://readme-swatches.vercel.app/ffffff?style=round" valign="middle"></a> #ffffff |
-| --hc-field-border-color | var(--hc-border-color-subtle) | <a href="#"><img src="https://readme-swatches.vercel.app/6a7282?style=round" valign="middle"></a> #6a7282 |
-| --hc-field-hover-01     | var(--hc-gray-200)            | <a href="#"><img src="https://readme-swatches.vercel.app/e5e7eb?style=round" valign="middle"></a> #e5e7eb |
-| --hc-field-hover-02     | var(--hc-blue-700)            | <a href="#"><img src="https://readme-swatches.vercel.app/0058a4?style=round" valign="middle"></a> #0058a4 |
-| --hc-field-disabled     | var(--hc-gray-200)            | <a href="#"><img src="https://readme-swatches.vercel.app/e5e7eb?style=round" valign="middle"></a> #e5e7eb |
-| --hc-field-error        | var(--hc-red-50)              | <a href="#"><img src="https://readme-swatches.vercel.app/fff5f5?style=round" valign="middle"></a> #fff5f5 |
+| Property Name         | Value                        | Hex Code                                                                                                  |
+| --------------------- | ---------------------------- | --------------------------------------------------------------------------------------------------------- |
+| --hc-field-background | var(--hc-background-default) | <a href="#"><img src="https://readme-swatches.vercel.app/ffffff?style=round" valign="middle"></a> #ffffff |
+| --hc-field-disabled   | var(--hc-gray-200)           | <a href="#"><img src="https://readme-swatches.vercel.app/e5e7eb?style=round" valign="middle"></a> #e5e7eb |
+| --hc-field-error      | var(--hc-red-50)             | <a href="#"><img src="https://readme-swatches.vercel.app/fff5f5?style=round" valign="middle"></a> #fff5f5 |
 
 ### Icon colors
 

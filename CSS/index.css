@@ -238,8 +238,6 @@ h6 {
   --hc-button-separator: var(--hc-gray-200);
   --hc-field-background: var(--hc-background-default);
   --hc-field-border-color: var(--hc-border-color-subtle);
-  --hc-field-hover-01: var(--hc-gray-200);
-  --hc-field-hover-02: var(--hc-blue-700);
   --hc-field-disabled: var(--hc-gray-200);
   --hc-field-error: var(--hc-red-50);
   --hc-icon-primary: var(--hc-gray-900);
@@ -2219,16 +2217,6 @@ p.hc-alert-paragraph {
     align-items: center;
   }
 }
-.hc-alert-close-icon {
-  background-color: var(--hc-support-info-inverse);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-}
-
 /* Wrapper for accordion group */
 .hc-accordion-group {
   /* background-color: white; */
