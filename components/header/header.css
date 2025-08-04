@@ -1,0 +1,44 @@
+/* ================= */
+/* ================= */
+/* navbar.css */
+/* ================= */
+/* ================= */
+
+.hc-navigationBar {
+	/* padding: var(--hc-spacing-04) var(--hc-spacing-13); */
+	background: var(--hc-background-default);
+	border-bottom: solid 1px var(--hc-border-color-subtle);
+	width: 100%;
+	display: flex;
+	flex-grow: 0;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+/* commented out because fixed position isn't needed */
+/* .topbar {
+	width: 100%;
+	background: #113c66;
+	padding: 15px 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+} */
+
+.hc-navbarLogoContainer {
+	width: auto;
+	max-width: 1200px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: start;
+	justify-content: flex-start;
+	padding: var(--hc-spacing-04) var(--hc-spacing-05);
+}
+
+.hc-navLogo {
+	width: 100%;
+	max-width: 377px;
+	height: auto;
+	display: block;
+}
