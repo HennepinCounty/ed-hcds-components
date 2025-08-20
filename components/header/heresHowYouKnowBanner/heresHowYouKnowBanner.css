@@ -59,6 +59,25 @@
 
 @media (min-width: 40.0625rem) {
 	.hc-details-content-item {
+		/* max-width: 40%; */
+	}
+}
+
+.hc-details-content-icon-and-item {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	gap: 4px;
+}
+
+@media (min-width: 40.0625rem) {
+	.hc-details-content-icon-and-item {
 		max-width: 40%;
 	}
+}
+
+.hc-howYouKnowBanner-icon {
+	width: 36px;
+	height: 36px;
+	flex-shrink: 0;
 }
