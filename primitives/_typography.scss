@@ -325,6 +325,17 @@ p,
 	max-width: 90ch;
 }
 
+.hc-body-bold {
+	color: var(--hc-text-primary, #171a1d);
+	font-family: var(--hc-font-family);
+	font-size: var(--hc-font-body-size-regular);
+	font-style: normal;
+	font-weight: 600;
+	line-height: 150%; /* 1.6875rem */
+	letter-spacing: -0.01125rem;
+	max-width: 90ch;
+}
+
 p {
 	margin-block-end: var(--hc-spacing-04);
 }
