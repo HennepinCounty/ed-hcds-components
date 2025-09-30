@@ -111,24 +111,21 @@
 
 ### Background colors
 
-| Property Name                      | Value                 | Hex Code                                                                                                  |
-| ---------------------------------- | --------------------- | --------------------------------------------------------------------------------------------------------- |
-| --hc-background-default            | var(--hc-white)       | <a href="#"><img src="https://readme-swatches.vercel.app/ffffff?style=round" valign="middle"></a> #ffffff |
-| --hc-background-hover              | var(--hc-gray-50)     | <a href="#"><img src="https://readme-swatches.vercel.app/f9fafb?style=round" valign="middle"></a> #f9fafb |
-| --hc-background-active             | var(--hc-gray-100)    | <a href="#"><img src="https://readme-swatches.vercel.app/f3f4f6?style=round" valign="middle"></a> #f3f4f6 |
-| --hc-background-selected           | var(--hc-gray-200)    | <a href="#"><img src="https://readme-swatches.vercel.app/e5e7eb?style=round" valign="middle"></a> #e5e7eb |
-| --hc-background-inverse            | var(--hc-gray-700)    | <a href="#"><img src="https://readme-swatches.vercel.app/364153?style=round" valign="middle"></a> #364153 |
-| --hc-background-disabled           | var(--hc-gray-300)    | <a href="#"><img src="https://readme-swatches.vercel.app/d1d5db?style=round" valign="middle"></a> #d1d5db |
-| --hc-background-brand              | var(--hc-blue-700)    | <a href="#"><img src="https://readme-swatches.vercel.app/0058a4?style=round" valign="middle"></a> #0058a4 |
-| --hc-background-brand-hover        | var(--hc-blue-900)    | <a href="#"><img src="https://readme-swatches.vercel.app/113c66?style=round" valign="middle"></a> #113c66 |
-| --hc-background-brand-active       | var(--hc-blue-950)    | <a href="#"><img src="https://readme-swatches.vercel.app/07284a?style=round" valign="middle"></a> #07284a |
-| --hc-background-brand-inverse      | var(--hc-blue-300)    | <a href="#"><img src="https://readme-swatches.vercel.app/7bc6fe?style=round" valign="middle"></a> #7bc6fe |
-| --hc-background-brand-alternate    | var(--hc-blue-900)    | <a href="#"><img src="https://readme-swatches.vercel.app/113c66?style=round" valign="middle"></a> #113c66 |
-| --hc-background-on-white           | var(--hc-gray-200)    | <a href="#"><img src="https://readme-swatches.vercel.app/e5e7eb?style=round" valign="middle"></a> #e5e7eb |
-| --hc-background-interactive        | var(--hc-ui-blue-600) | <a href="#"><img src="https://readme-swatches.vercel.app/0047e2?style=round" valign="middle"></a> #0047e2 |
-| --hc-background-interactive-hover  | var(--hc-ui-blue-700) | <a href="#"><img src="https://readme-swatches.vercel.app/0b35b2?style=round" valign="middle"></a> #0b35b2 |
-| --hc-background-interactive-active | var(--hc-ui-blue-800) | <a href="#"><img src="https://readme-swatches.vercel.app/11267f?style=round" valign="middle"></a> #11267f |
-| --hc-background-error              | var(--hc-red-50)      | <a href="#"><img src="https://readme-swatches.vercel.app/fff5f5?style=round" valign="middle"></a> #fff5f5 |
+| Property Name                      | Value                 | Hex Code                                                                                                  | Usage Guidance                                                                               |
+| ---------------------------------- | --------------------- | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| --hc-background-default            | var(--hc-white)       | <a href="#"><img src="https://readme-swatches.vercel.app/ffffff?style=round" valign="middle"></a> #ffffff | Primary page background.                                                                     |
+| --hc-background-hover              | var(--hc-gray-50)     | <a href="#"><img src="https://readme-swatches.vercel.app/f9fafb?style=round" valign="middle"></a> #f9fafb | Hover state for components using the default background color.                               |
+| --hc-background-inverse            | var(--hc-gray-700)    | <a href="#"><img src="https://readme-swatches.vercel.app/364153?style=round" valign="middle"></a> #364153 | Inverse of hc-background-default. Use to provide high contrast to a section of a page.       |
+| --hc-background-disabled           | var(--hc-gray-300)    | <a href="#"><img src="https://readme-swatches.vercel.app/d1d5db?style=round" valign="middle"></a> #d1d5db | Background for disabled UI elements like buttons or inputs.                                  |
+| --hc-background-brand              | var(--hc-blue-700)    | <a href="#"><img src="https://readme-swatches.vercel.app/0058a4?style=round" valign="middle"></a> #0058a4 | Main brand color.                                                                            |
+| --hc-background-brand-hover        | var(--hc-blue-900)    | <a href="#"><img src="https://readme-swatches.vercel.app/113c66?style=round" valign="middle"></a> #113c66 | Hover state for brand-colored components.                                                    |
+| --hc-background-brand-active       | var(--hc-blue-950)    | <a href="#"><img src="https://readme-swatches.vercel.app/07284a?style=round" valign="middle"></a> #07284a | Active state for brand-colored components.                                                   |
+| --hc-background-brand-inverse      | var(--hc-blue-300)    | <a href="#"><img src="https://readme-swatches.vercel.app/7bc6fe?style=round" valign="middle"></a> #7bc6fe | Inverse of brand color. Use when placing brand-colored components against a dark background. |
+| --hc-background-brand-alternate    | var(--hc-blue-900)    | <a href="#"><img src="https://readme-swatches.vercel.app/113c66?style=round" valign="middle"></a> #113c66 | Alternate brand color. Use to contrast with primary brand color.                             |
+| --hc-background-interactive        | var(--hc-ui-blue-600) | <a href="#"><img src="https://readme-swatches.vercel.app/0047e2?style=round" valign="middle"></a> #0047e2 | Background for interactive components, such as buttons.                                      |
+| --hc-background-interactive-hover  | var(--hc-ui-blue-700) | <a href="#"><img src="https://readme-swatches.vercel.app/0b35b2?style=round" valign="middle"></a> #0b35b2 | Hover state background for interactive components.                                           |
+| --hc-background-interactive-active | var(--hc-ui-blue-800) | <a href="#"><img src="https://readme-swatches.vercel.app/11267f?style=round" valign="middle"></a> #11267f | Active state background for interactive components.                                          |
+| --hc-background-error              | var(--hc-red-50)      | <a href="#"><img src="https://readme-swatches.vercel.app/fff5f5?style=round" valign="middle"></a> #fff5f5 | Background for components in an error state.                                                 |
 
 ### Border colors
 

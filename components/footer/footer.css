@@ -21,7 +21,7 @@
 		background: var(--hc-background-brand-alternate);
 		padding: var(--hc-spacing-08) var(--hc-spacing-08);
 		flex-direction: row;
-		align-items: top;
+		align-items: start;
 	}
 }
 
