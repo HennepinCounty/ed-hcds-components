@@ -111,7 +111,7 @@
 
 ### Background colors
 
-| Property Name                      | Value                 | Hex Code                                                                                                  | Usage Guidance                                                                               |
+| Property Name                      | Value                 | Hex Code                                                                                                  | Usage                                                                                        |
 | ---------------------------------- | --------------------- | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | --hc-background-default            | var(--hc-white)       | <a href="#"><img src="https://readme-swatches.vercel.app/ffffff?style=round" valign="middle"></a> #ffffff | Primary page background.                                                                     |
 | --hc-background-hover              | var(--hc-gray-50)     | <a href="#"><img src="https://readme-swatches.vercel.app/f9fafb?style=round" valign="middle"></a> #f9fafb | Hover state for components using the default background color.                               |
@@ -129,18 +129,18 @@
 
 ### Border colors
 
-| Property Name                 | Value                            | Hex Code                                                                                                                  |
-| ----------------------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| --hc-border-color-focus-inner | var(--hc-white)                  | <a href="#"><img src="https://readme-swatches.vercel.app/fff5f5?style=round" valign="middle"></a>#ffffff                  |
-| --hc-border-color-focus-outer | var(--hc-background-interactive) | <a href="#"><img src="https://readme-swatches.vercel.app/fff5f5?style=round" valign="middle"></a>#0047e2                  |
-| --hc-border-color-subtle      | var(--hc-gray-500)               | <a href="#"><img src="https://readme-swatches.vercel.app/6a7282?style=round" valign="middle"></a> #6a7282                 |
-| --hc-border-color-strong      | var(--hc-gray-700)               | <a href="#"><img src="https://readme-swatches.vercel.app/364153?style=round" valign="middle"></a> #364153                 |
-| --hc-border-color-error       | var(--hc-red-700)                | <a href="#"><img src="https://readme-swatches.vercel.app/ce1432?style=round" valign="middle"></a> #ce1432                 |
-| --hc-border-color-disabled-01 | var(--hc-gray-300)               | <a href="#"><img src="https://readme-swatches.vercel.app/d1d5db?style=round" valign="middle"></a> #d1d5db                 |
-| --hc-border-color-disabled-02 | var(--hc-gray-200)               | <a href="#"><img src="https://readme-swatches.vercel.app/e5e7eb?style=round" valign="middle"></a> #e5e7eb                 |
-| --hc-border-color-inverse     | var(--hc-gray-900)               | <a href="#"><img src="https://readme-swatches.vercel.app/101828?style=round" valign="middle"></a> #101828                 |
-| --hc-border-color-on-color    | var(--hc-white)                  | <a href="#"><img src="https://readme-swatches.vercel.app/ffffff?style=round" valign="middle"></a> #ffffff                 |
-| --border-subtle-on-color      | rgba(255, 255, 255, 0.2)         | <a href="#"><img src="https://readme-swatches.vercel.app/fff5f5?style=round" valign="middle"></a>rgba(255, 255, 255, 0.2) |
+| Property Name                             | Value                            | Hex Code                                                                                                                  | Usage                                                                   |
+| ----------------------------------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| --hc-border-color-focus-inner             | var(--hc-white)                  | <a href="#"><img src="https://readme-swatches.vercel.app/fff5f5?style=round" valign="middle"></a> #ffffff                 | Used for inner focus rings to ensure high contrast on dark backgrounds. |
+| --hc-border-color-focus-outer             | var(--hc-background-interactive) | <a href="#"><img src="https://readme-swatches.vercel.app/fff5f5?style=round" valign="middle"></a> #0047e2                 | Used for outer focus rings to indicate interactive elements.            |
+| --hc-border-color-subtle                  | var(--hc-gray-500)               | <a href="#"><img src="https://readme-swatches.vercel.app/6a7282?style=round" valign="middle"></a> #6a7282                 | For low-emphasis borders like dividers.                                 |
+| --hc-border-color-strong                  | var(--hc-gray-700)               | <a href="#"><img src="https://readme-swatches.vercel.app/364153?style=round" valign="middle"></a> #364153                 | For high-emphasis borders such as form fields.                          |
+| --hc-border-color-error                   | var(--hc-red-700)                | <a href="#"><img src="https://readme-swatches.vercel.app/ce1432?style=round" valign="middle"></a> #ce1432                 | Used to indicate error states in form fields or alerts.                 |
+| --hc-border-color-disabled-01             | var(--hc-gray-300)               | <a href="#"><img src="https://readme-swatches.vercel.app/d1d5db?style=round" valign="middle"></a> #d1d5db                 | For disabled components with medium contrast.                           |
+| ~~ CHECK ~~ --hc-border-color-disabled-02 | var(--hc-gray-200)               | <a href="#"><img src="https://readme-swatches.vercel.app/e5e7eb?style=round" valign="middle"></a> #e5e7eb                 | For disabled components with lower contrast.                            |
+| ~~ CHECK ~~ --hc-border-color-inverse     | var(--hc-gray-900)               | <a href="#"><img src="https://readme-swatches.vercel.app/101828?style=round" valign="middle"></a> #101828                 | For borders on dark backgrounds.                                        |
+| --hc-border-color-on-color                | var(--hc-white)                  | <a href="#"><img src="https://readme-swatches.vercel.app/ffffff?style=round" valign="middle"></a> #ffffff                 | For borders on dark backgrounds                                         |
+| --border-subtle-on-color                  | rgba(255, 255, 255, 0.2)         | <a href="#"><img src="https://readme-swatches.vercel.app/fff5f5?style=round" valign="middle"></a>rgba(255, 255, 255, 0.2) | For subtle borders on dark backgrounds.                                 |
 
 ### Button colors
 
@@ -176,41 +176,41 @@
 
 ### Field colors
 
-| Property Name         | Value                        | Hex Code                                                                                                  |
-| --------------------- | ---------------------------- | --------------------------------------------------------------------------------------------------------- |
-| --hc-field-background | var(--hc-background-default) | <a href="#"><img src="https://readme-swatches.vercel.app/ffffff?style=round" valign="middle"></a> #ffffff |
-| --hc-field-disabled   | var(--hc-gray-200)           | <a href="#"><img src="https://readme-swatches.vercel.app/e5e7eb?style=round" valign="middle"></a> #e5e7eb |
-| --hc-field-error      | var(--hc-red-50)             | <a href="#"><img src="https://readme-swatches.vercel.app/fff5f5?style=round" valign="middle"></a> #fff5f5 |
+| Property Name                 | Value                        | Hex Code                                                                                                  | Usage                                                                                       |
+| ----------------------------- | ---------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| --hc-field-background         | var(--hc-background-default) | <a href="#"><img src="https://readme-swatches.vercel.app/ffffff?style=round" valign="middle"></a> #ffffff | Default background for input fields and form elements.                                      |
+| --hc-field-disabled ~~check~~ | var(--hc-gray-200)           | <a href="#"><img src="https://readme-swatches.vercel.app/e5e7eb?style=round" valign="middle"></a> #e5e7eb | Background for disabled input fields.                                                       |
+| --hc-field-error              | var(--hc-red-50)             | <a href="#"><img src="https://readme-swatches.vercel.app/fff5f5?style=round" valign="middle"></a> #fff5f5 | Background for input fields in an error state, often paired with `--hc-border-color-error`. |
 
 ### Icon colors
 
-| Property Name                    | Value                            | Hex Code                                                                                                  |
-| -------------------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| --hc-icon-primary                | var(--hc-gray-900)               | <a href="#"><img src="https://readme-swatches.vercel.app/101828?style=round" valign="middle"></a> #101828 |
-| --hc-icon-secondary              | var(--hc-gray-700)               | <a href="#"><img src="https://readme-swatches.vercel.app/364153?style=round" valign="middle"></a> #364153 |
-| --hc-icon-on-color               | var(--hc-white)                  | <a href="#"><img src="https://readme-swatches.vercel.app/ffffff?style=round" valign="middle"></a> #ffffff |
-| --hc-icon-inverse                | var(--hc-white)                  | <a href="#"><img src="https://readme-swatches.vercel.app/ffffff?style=round" valign="middle"></a> #ffffff |
-| --hc-icon-disabled               | var(--hc-gray-500)               | <a href="#"><img src="https://readme-swatches.vercel.app/6a7282?style=round" valign="middle"></a> #6a7282 |
-| --hc-icon-icon-on-color-disabled | var(--hc-gray-400)               | <a href="#"><img src="https://readme-swatches.vercel.app/99a1af?style=round" valign="middle"></a> #99a1af |
-| --hc-icon-interactive            | var(--hc-background-interactive) | <a href="#"><img src="https://readme-swatches.vercel.app/0047e2?style=round" valign="middle"></a> #0047e2 |
-| --hc-icon-info                   | var(--hc-ui-blue-900)            | <a href="#"><img src="https://readme-swatches.vercel.app/0c1555?style=round" valign="middle"></a> #0c1555 |
-| --hc-icon-info-inverse           | var(--hc-support-info)           | <a href="#"><img src="https://readme-swatches.vercel.app/0c1555?style=round" valign="middle"></a> #c6d9ff |
-| --hc-icon-success                | var(--hc-green-900)              | <a href="#"><img src="https://readme-swatches.vercel.app/085f33?style=round" valign="middle"></a> #085f33 |
-| --hc-icon-success-inverse        | var(--hc-support-success)        | <a href="#"><img src="https://readme-swatches.vercel.app/085f33?style=round" valign="middle"></a> #d6ffe9 |
-| --hc-icon-warning                | var(--hc-yellow-900)             | <a href="#"><img src="https://readme-swatches.vercel.app/78250f?style=round" valign="middle"></a> #78250f |
-| --hc-icon-warning-inverse        | var(--hc-support-warning)        | <a href="#"><img src="https://readme-swatches.vercel.app/78250f?style=round" valign="middle"></a> #feeac7 |
-| --hc-icon-error                  | var(--hc-red-900)                | <a href="#"><img src="https://readme-swatches.vercel.app/88132d?style=round" valign="middle"></a> #88132d |
-| --hc-icon-error-inverse          | var(--hc-support-error)          | <a href="#"><img src="https://readme-swatches.vercel.app/ffe4e4?style=round" valign="middle"></a> #ffe4e4 |
+| Property Name                    | Value                            | Hex Code                                                                                                  | Usage                                                     |
+| -------------------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| --hc-icon-primary                | var(--hc-gray-900)               | <a href="#"><img src="https://readme-swatches.vercel.app/101828?style=round" valign="middle"></a> #101828 | For icons used in high-emphasis UI elements.              |
+| --hc-icon-secondary              | var(--hc-gray-700)               | <a href="#"><img src="https://readme-swatches.vercel.app/364153?style=round" valign="middle"></a> #364153 | Less emphasized color for icons in secondary UI elements. |
+| --hc-icon-on-color               | var(--hc-white)                  | <a href="#"><img src="https://readme-swatches.vercel.app/ffffff?style=round" valign="middle"></a> #ffffff | Icons placed on dark backgrounds.                         |
+| --hc-icon-inverse                | var(--hc-white)                  | <a href="#"><img src="https://readme-swatches.vercel.app/ffffff?style=round" valign="middle"></a> #ffffff | Icons placed on dark backgrounds.                         |
+| --hc-icon-disabled               | var(--hc-gray-500)               | <a href="#"><img src="https://readme-swatches.vercel.app/6a7282?style=round" valign="middle"></a> #6a7282 | Disabled or inactive states.                              |
+| --hc-icon-icon-on-color-disabled | var(--hc-gray-400)               | <a href="#"><img src="https://readme-swatches.vercel.app/99a1af?style=round" valign="middle"></a> #99a1af | Disabled icons on colored backgrounds.                    |
+| --hc-icon-interactive            | var(--hc-background-interactive) | <a href="#"><img src="https://readme-swatches.vercel.app/0047e2?style=round" valign="middle"></a> #0047e2 | For interactive icons like buttons or toggles.            |
+| --hc-icon-info                   | var(--hc-ui-blue-900)            | <a href="#"><img src="https://readme-swatches.vercel.app/0c1555?style=round" valign="middle"></a> #0c1555 | Icons representing informational messages or tooltips.    |
+| --hc-icon-info-inverse           | var(--hc-support-info)           | <a href="#"><img src="https://readme-swatches.vercel.app/0c1555?style=round" valign="middle"></a> #c6d9ff | Info icons on dark or colored backgrounds.                |
+| --hc-icon-success                | var(--hc-green-900)              | <a href="#"><img src="https://readme-swatches.vercel.app/085f33?style=round" valign="middle"></a> #085f33 | Icons indicating success or positive status.              |
+| --hc-icon-success-inverse        | var(--hc-support-success)        | <a href="#"><img src="https://readme-swatches.vercel.app/085f33?style=round" valign="middle"></a> #d6ffe9 | Success icons on dark or colored backgrounds.             |
+| --hc-icon-warning                | var(--hc-yellow-900)             | <a href="#"><img src="https://readme-swatches.vercel.app/78250f?style=round" valign="middle"></a> #78250f | Icons indicating warnings or cautionary messages.         |
+| --hc-icon-warning-inverse        | var(--hc-support-warning)        | <a href="#"><img src="https://readme-swatches.vercel.app/78250f?style=round" valign="middle"></a> #feeac7 | Warning icons on dark or colored backgrounds.             |
+| --hc-icon-error                  | var(--hc-red-900)                | <a href="#"><img src="https://readme-swatches.vercel.app/88132d?style=round" valign="middle"></a> #88132d | Icons indicating errors or critical issues.               |
+| --hc-icon-error-inverse          | var(--hc-support-error)          | <a href="#"><img src="https://readme-swatches.vercel.app/ffe4e4?style=round" valign="middle"></a> #ffe4e4 | Error icons on dark or colored backgrounds.               |
 
 ### Link colors
 
-| Property Name           | Value                            | Hex Code                                                                                                  |
-| ----------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| --hc-link-primary       | var(--hc-background-interactive) | <a href="#"><img src="https://readme-swatches.vercel.app/0047e2?style=round" valign="middle"></a> #0047e2 |
-| --hc-link-inverse       | var(--hc-white)                  | <a href="#"><img src="https://readme-swatches.vercel.app/ffffff?style=round" valign="middle"></a> #ffffff |
-| --hc-link-disabled      | var(--hc-text-disabled)          | <a href="#"><img src="https://readme-swatches.vercel.app/6a7282?style=round" valign="middle"></a> #6a7282 |
-| --hc-link-primary-hover | var(--hc-background-brand-hover) | <a href="#"><img src="https://readme-swatches.vercel.app/113c66?style=round" valign="middle"></a> #113c66 |
-| --hc-link-visited       | var(--hc-pink-900)               | <a href="#"><img src="https://readme-swatches.vercel.app/8c0f2e?style=round" valign="middle"></a> #8c0f2e |
+| Property Name                  | Value                            | Hex Code                                                                                                  | Usage                    |
+| ------------------------------ | -------------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------ |
+| --hc-link-primary              | var(--hc-background-interactive) | <a href="#"><img src="https://readme-swatches.vercel.app/0047e2?style=round" valign="middle"></a> #0047e2 | Link in default state.   |
+| --hc-link-inverse              | var(--hc-white)                  | <a href="#"><img src="https://readme-swatches.vercel.app/ffffff?style=round" valign="middle"></a> #ffffff | Use on dark backgrounds. |
+| --hc-link-disabled ~~Delete?~~ | var(--hc-text-disabled)          | <a href="#"><img src="https://readme-swatches.vercel.app/6a7282?style=round" valign="middle"></a> #6a7282 | This should be removed.  |
+| --hc-link-primary-hover        | var(--hc-background-brand-hover) | <a href="#"><img src="https://readme-swatches.vercel.app/113c66?style=round" valign="middle"></a> #113c66 | Link when hovered.       |
+| --hc-link-visited              | var(--hc-pink-900)               | <a href="#"><img src="https://readme-swatches.vercel.app/8c0f2e?style=round" valign="middle"></a> #8c0f2e | Color for visited links. |
 
 ### Support colors
 
@@ -235,25 +235,25 @@
 
 ### Text colors
 
-| Property Name               | Value                            | Hex Code                                                                                                  |
-| --------------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| --hc-text-primary           | var(--hc-gray-900)               | <a href="#"><img src="https://readme-swatches.vercel.app/101828?style=round" valign="middle"></a> #101828 |
-| --hc-text-secondary         | var(--hc-gray-700)               | <a href="#"><img src="https://readme-swatches.vercel.app/364153?style=round" valign="middle"></a> #364153 |
-| --hc-text-hint              | var(--hc-gray-700)               | <a href="#"><img src="https://readme-swatches.vercel.app/364153?style=round" valign="middle"></a> #364153 |
-| --hc-text-placeholder       | var(--hc-gray-400)               | <a href="#"><img src="https://readme-swatches.vercel.app/99a1af?style=round" valign="middle"></a> #99a1af |
-| --hc-text-disabled          | var(--hc-gray-500)               | <a href="#"><img src="https://readme-swatches.vercel.app/6a7282?style=round" valign="middle"></a> #6a7282 |
-| --hc-text-on-color-disabled | var(--hc-gray-400)               | <a href="#"><img src="https://readme-swatches.vercel.app/99a1af?style=round" valign="middle"></a> #99a1af |
-| --hc-text-success           | var(--hc-green-950)              | <a href="#"><img src="https://readme-swatches.vercel.app/00361a?style=round" valign="middle"></a> #00361a |
-| --hc-text-success-inverse   | var(--hc-support-success)        | <a href="#"><img src="https://readme-swatches.vercel.app/d6ffe9?style=round" valign="middle"></a> #d6ffe9 |
-| --hc-text-info              | var(--hc-support-info-inverse)   | <a href="#"><img src="https://readme-swatches.vercel.app/113c66?style=round" valign="middle"></a> #113c66 |
-| --hc-text-info-inverse      | var(--hc-support-info)           | <a href="#"><img src="https://readme-swatches.vercel.app/dfefff?style=round" valign="middle"></a> #dfefff |
-| --hc-text-warning           | var(--hc-yellow-900)             | <a href="#"><img src="https://readme-swatches.vercel.app/78250f?style=round" valign="middle"></a> #78250f |
-| --hc-text-warning-inverse   | var(--hc-support-warning)        | <a href="#"><img src="https://readme-swatches.vercel.app/feeac7?style=round" valign="middle"></a> #feeac7 |
-| --hc-text-error             | var(--hc-red-800)                | <a href="#"><img src="https://readme-swatches.vercel.app/9f122d?style=round" valign="middle"></a> #9f122d |
-| --hc-text-error-inverse     | var(--hc-support-error)          | <a href="#"><img src="https://readme-swatches.vercel.app/ffe4e4?style=round" valign="middle"></a> #ffe4e4 |
-| --hc-text-on-color          | var(--hc-white)                  | <a href="#"><img src="https://readme-swatches.vercel.app/ffffff?style=round" valign="middle"></a> #ffffff |
-| --hc-text-inverse           | var(--hc-white)                  | <a href="#"><img src="https://readme-swatches.vercel.app/ffffff?style=round" valign="middle"></a> #ffffff |
-| --hc-text-interactive       | var(--hc-background-interactive) | <a href="#"><img src="https://readme-swatches.vercel.app/0047e2?style=round" valign="middle"></a> #0047e2 |
+| Property Name               | Value                            | Hex Code                                                                                                  | Usage Guidance                                                               |
+| --------------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| --hc-text-primary           | var(--hc-gray-900)               | <a href="#"><img src="https://readme-swatches.vercel.app/101828?style=round" valign="middle"></a> #101828 | Default text color for primary content on page.                              |
+| --hc-text-secondary         | var(--hc-gray-700)               | <a href="#"><img src="https://readme-swatches.vercel.app/364153?style=round" valign="middle"></a> #364153 | For secondary content like captions, metadata, or help text in form frields. |
+| --hc-text-hint ~~Delete?~~  | var(--hc-gray-700)               | <a href="#"><img src="https://readme-swatches.vercel.app/364153?style=round" valign="middle"></a> #364153 | Used for hint text in form fields or contextual help.                        |
+| --hc-text-placeholder       | var(--hc-gray-400)               | <a href="#"><img src="https://readme-swatches.vercel.app/99a1af?style=round" valign="middle"></a> #99a1af | Placeholder text in input fields. Generally this should be avoided           |
+| --hc-text-disabled          | var(--hc-gray-500)               | <a href="#"><img src="https://readme-swatches.vercel.app/6a7282?style=round" valign="middle"></a> #6a7282 | For disabled text elements to indicate non-interactivity.                    |
+| --hc-text-on-color-disabled | var(--hc-gray-400)               | <a href="#"><img src="https://readme-swatches.vercel.app/99a1af?style=round" valign="middle"></a> #99a1af | Disabled text on dark backgrounds.                                           |
+| --hc-text-success           | var(--hc-green-950)              | <a href="#"><img src="https://readme-swatches.vercel.app/00361a?style=round" valign="middle"></a> #00361a | Text indicating success or positive status.                                  |
+| --hc-text-success-inverse   | var(--hc-support-success)        | <a href="#"><img src="https://readme-swatches.vercel.app/d6ffe9?style=round" valign="middle"></a> #d6ffe9 | Success text on dark backgrounds.                                            |
+| --hc-text-info              | var(--hc-support-info-inverse)   | <a href="#"><img src="https://readme-swatches.vercel.app/113c66?style=round" valign="middle"></a> #113c66 | Informational messages or labels.                                            |
+| --hc-text-info-inverse      | var(--hc-support-info)           | <a href="#"><img src="https://readme-swatches.vercel.app/dfefff?style=round" valign="middle"></a> #dfefff | Info text on dark backgrounds.                                               |
+| --hc-text-warning           | var(--hc-yellow-900)             | <a href="#"><img src="https://readme-swatches.vercel.app/78250f?style=round" valign="middle"></a> #78250f | Text indicating warnings or cautionary messages.                             |
+| --hc-text-warning-inverse   | var(--hc-support-warning)        | <a href="#"><img src="https://readme-swatches.vercel.app/feeac7?style=round" valign="middle"></a> #feeac7 | Warning text on dark backgrounds.                                            |
+| --hc-text-error             | var(--hc-red-800)                | <a href="#"><img src="https://readme-swatches.vercel.app/9f122d?style=round" valign="middle"></a> #9f122d | Text indicating errors or critical issues.                                   |
+| --hc-text-error-inverse     | var(--hc-support-error)          | <a href="#"><img src="https://readme-swatches.vercel.app/ffe4e4?style=round" valign="middle"></a> #ffe4e4 | Error text on dark backgrounds.                                              |
+| --hc-text-on-color          | var(--hc-white)                  | <a href="#"><img src="https://readme-swatches.vercel.app/ffffff?style=round" valign="middle"></a> #ffffff | Text on colored backgrounds or buttons.                                      |
+| --hc-text-inverse           | var(--hc-white)                  | <a href="#"><img src="https://readme-swatches.vercel.app/ffffff?style=round" valign="middle"></a> #ffffff | Text on colored backgrounds or buttons.                                      |
+| --hc-text-interactive       | var(--hc-background-interactive) | <a href="#"><img src="https://readme-swatches.vercel.app/0047e2?style=round" valign="middle"></a> #0047e2 | For interactive text elements like links or buttons.                         |
 
 | Property Name           | Value                         | Hex Code                                                                                                  |
 | ----------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------- |
