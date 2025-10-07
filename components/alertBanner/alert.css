@@ -1,4 +1,4 @@
-/* Base styling for alerts */
+/* Base styling for alert container */
 .hc-alert {
 	padding: var(--hc-spacing-05);
 	margin-bottom: var(--hc-spacing-05);
@@ -71,11 +71,12 @@ p.hc-alert-paragraph {
 /* Default styling for the close button */
 
 .hc-alert .hc-alert-close-button {
-	color: inherit;
-	border: var(--hc-border-interactive);
+	border: 2px solid var(--hc-transparent);
 	padding-left: var(--hc-spacing-06);
-	padding-right: var(--hc-spacing-04);
+	padding-right: var(--hc-spacing-05);
 	margin-inline-start: var(--hc-spacing-06);
+	background-color: var(--hc-transparent);
+	color: var(--hc-text-interactive);
 }
 
 @media (min-width: 40.0625rem) {
@@ -127,17 +128,18 @@ p.hc-alert-paragraph {
 
 /* success close button styling */
 .hc-alert.hc-alert-success > .hc-alert-close-button {
-	color: var(--hc-text-success-inverse);
-	border-color: var(--hc-support-success-inverse);
-	background-color: var(--hc-support-success-inverse);
+	font-weight: 600;
+	color: var(--hc-text-success);
+	border-color: var(--hc-support-success-inverse-hover);
+	background-color: var(--hc-transparent);
 }
 .hc-alert.hc-alert-success > .hc-alert-close-button:hover {
-	background-color: var(--hc-support-success-inverse-hover);
+	background-color: var(--hc-green-200);
 	border-color: var(--hc-support-success-inverse-hover);
 }
 .hc-alert.hc-alert-success > .hc-alert-close-button:active {
-	background-color: var(--hc-support-success-inverse-active);
-	color: var(--hc-text-success-inverse);
+	background-color: var(--hc-green-300);
+	color: var(--hc-text-success);
 }
 
 .hc-alert.hc-alert-success > .hc-alert-close-button:focus {
@@ -169,15 +171,18 @@ p.hc-alert-paragraph {
 
 /* Danger close button styling */
 .hc-alert.hc-alert-danger > .hc-alert-close-button {
-	background-color: var(--hc-support-error-inverse);
+	background-color: var(--hc-support-error);
 	border-color: var(--hc-support-error-inverse);
-	color: var(--hc-support-error);
+	color: var(--hc-text-error);
+	font-weight: 600;
 }
 .hc-alert.hc-alert-danger > .hc-alert-close-button:hover {
-	background-color: var(--hc-support-error-inverse-hover);
+	background-color: var(--hc-red-200);
+	border-color: var(--hc-support-error-inverse);
 }
 .hc-alert.hc-alert-danger > .hc-alert-close-button:active {
-	background-color: var(--hc-support-error-inverse-active);
+	background-color: var(--hc-red-300);
+	border-color: var(--hc-support-error-inverse);
 }
 
 .hc-alert.hc-alert-danger > .hc-alert-close-button:focus {
@@ -209,16 +214,17 @@ p.hc-alert-paragraph {
 
 /* Warning close button styling */
 .hc-alert.hc-alert-warning > .hc-alert-close-button {
-	color: var(--hc-text-warning-inverse);
-	background-color: var(--hc-support-warning-inverse);
-	border-color: var(--hc-support-warning-inverse);
+	color: var(--hc-text-warning);
+	background-color: var(--hc-yellow-100);
+	border-color: var(--hc-support-warning-inverse-hover);
+	font-weight: 600;
 }
 .hc-alert.hc-alert-warning > .hc-alert-close-button:hover {
-	background-color: var(--hc-support-warning-inverse-hover);
+	background-color: var(--hc-yellow-200);
 	border-color: var(--hc-support-warning-inverse-hover);
 }
 .hc-alert.hc-alert-warning > .hc-alert-close-button:active {
-	background-color: var(--hc-support-warning-inverse-active);
+	background-color: var(--hc-yellow-300);
 	border-color: var(--hc-support-warning-inverse-active);
 }
 
@@ -250,17 +256,18 @@ p.hc-alert-paragraph {
 
 /* info close button styling */
 .hc-alert.hc-alert-info > .hc-alert-close-button {
-	color: inherit;
-	border: var(--hc-border-interactive);
-	padding-left: var(--hc-spacing-06);
-	padding-right: var(--hc-spacing-04);
+	color: var(--hc-support-info-inverse);
+	border-color: var(--hc-support-info-inverse-hover);
+	font-weight: 600;
 }
 .hc-alert.hc-alert-info > .hc-alert-close-button:hover {
-	color: inherit;
-	border-color: var(--hc-border-color-interactive-hover);
+	color: var(--hc-support-info-inverse);
+	background: var(--hc-ui-blue-100);
+	border-color: var(--hc-support-info-inverse-hover);
 }
 .hc-alert.hc-alert-info > .hc-alert-close-button:active {
-	border-color: var(--hc-border-color-interactive-active);
+	background: var(--hc-ui-blue-200);
+	/* border-color: var(--hc-support-info-inverse-active); */
 }
 
 .hc-alert.hc-alert-info > .hc-alert-close-button:focus {

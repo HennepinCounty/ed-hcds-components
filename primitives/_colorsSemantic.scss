@@ -23,8 +23,7 @@
 	--hc-border-color-subtle: var(--hc-gray-300);
 	--hc-border-color-strong: var(--hc-gray-700);
 	--hc-border-color-error: var(--hc-red-700);
-	--hc-border-color-disabled-01: var(--hc-gray-300);
-	--hc-border-color-disabled-02: var(--hc-gray-200);
+	--hc-border-color-disabled: var(--hc-gray-300);
 	--hc-border-color-inverse: var(--hc-gray-900);
 	--hc-border-color-on-color: var(--hc-white);
 	--border-subtle-on-color: rgba(255, 255, 255, 0.2);
@@ -61,7 +60,7 @@
 	// remove word color from border variable?
 	// Field colors
 	--hc-field-background: var(--hc-background-default);
-	--hc-field-border-color: var(--hc-border-color-subtle);
+	--hc-field-border-color: var(--hc-border-color-strong);
 	--hc-field-disabled: var(--hc-gray-200);
 	--hc-field-error: var(--hc-red-50);
 
@@ -122,7 +121,7 @@
 	--hc-text-info-inverse: var(--hc-support-info);
 	--hc-text-warning: var(--hc-yellow-900);
 	--hc-text-warning-inverse: var(--hc-support-warning);
-	--hc-text-error: var(--hc-red-800);
+	--hc-text-error: var(--hc-red-900);
 	--hc-text-error-inverse: var(--hc-support-error);
 	--hc-text-on-color: var(--hc-white);
 	--hc-text-inverse: var(--hc-white);
