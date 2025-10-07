@@ -1,9 +1,7 @@
 :root {
 	//Focus state borders/shaddows/etc
-	//Border needs to be the internal color
-	//Outline needs to be the external color because of offset
-
-	//These could be rewritten -- BorderSize should handle sizing
+	//Border needs to be the inner color
+	//Outline needs to be the outer color because of offset
 
 	// Border
 
@@ -15,6 +13,7 @@
 	--hc-border-style-focus-alternate: 2px solid
 		var(--hc-border-color-focus-outer);
 	--hc-border-style-transparent: 2px solid var(--hc-transparent);
+
 	// Outline
 	--hc-outline-style-focus: var(--hc-background-interactive) solid 3px;
 }

@@ -107,24 +107,24 @@
 
 ### Support colors
 
-| Property Name                       | Value                | Hex Code                                                                                                  |
-| ----------------------------------- | -------------------- | --------------------------------------------------------------------------------------------------------- |
-| --hc-support-error                  | var(--hc-red-100)    | <a href="#"><img src="https://readme-swatches.vercel.app/ffe4e4?style=round" valign="middle"></a> #ffe4e4 |
-| --hc-support-error-inverse          | var(--hc-red-800)    | <a href="#"><img src="https://readme-swatches.vercel.app/9f122d?style=round" valign="middle"></a> #9f122d |
-| --hc-support-error-inverse-hover    | var(--hc-red-900)    | <a href="#"><img src="https://readme-swatches.vercel.app/88132d?style=round" valign="middle"></a> #88132d |
-| --hc-support-error-inverse-active   | var(--hc-red-950)    | <a href="#"><img src="https://readme-swatches.vercel.app/4c0513?style=round" valign="middle"></a> #4c0513 |
-| --hc-support-info                   | var(--hc-blue-100)   | <a href="#"><img src="https://readme-swatches.vercel.app/dfefff?style=round" valign="middle"></a> #dfefff |
-| --hc-support-info-inverse           | var(--hc-blue-900)   | <a href="#"><img src="https://readme-swatches.vercel.app/113c66?style=round" valign="middle"></a> #113c66 |
-| --hc-support-info-inverse-hover     | var(--hc-blue-800)   | <a href="#"><img src="https://readme-swatches.vercel.app/054c87?style=round" valign="middle"></a> #054c87 |
-| --hc-support-info-inverse-active    | var(--hc-blue-700)   | <a href="#"><img src="https://readme-swatches.vercel.app/0058a4?style=round" valign="middle"></a> #0058a4 |
-| --hc-support-success                | var(--hc-green-100)  | <a href="#"><img src="https://readme-swatches.vercel.app/d6ffe9?style=round" valign="middle"></a> #d6ffe9 |
-| --hc-support-success-inverse        | var(--hc-green-800)  | <a href="#"><img src="https://readme-swatches.vercel.app/06753b?style=round" valign="middle"></a> #06753b |
-| --hc-support-success-inverse-hover  | var(--hc-green-900)  | <a href="#"><img src="https://readme-swatches.vercel.app/085f33?style=round" valign="middle"></a> #085f33 |
-| --hc-support-success-inverse-active | var(--hc-green-950)  | <a href="#"><img src="https://readme-swatches.vercel.app/00361a?style=round" valign="middle"></a> #00361a |
-| --hc-support-warning                | var(--hc-yellow-100) | <a href="#"><img src="https://readme-swatches.vercel.app/feeac7?style=round" valign="middle"></a> #feeac7 |
-| --hc-support-warning-inverse        | var(--hc-yellow-800) | <a href="#"><img src="https://readme-swatches.vercel.app/922b0e?style=round" valign="middle"></a> #922b0e |
-| --hc-support-warning-inverse-hover  | var(--hc-yellow-900) | <a href="#"><img src="https://readme-swatches.vercel.app/78250f?style=round" valign="middle"></a> #78250f |
-| --hc-support-warning-inverse-active | var(--hc-yellow-950) | <a href="#"><img src="https://readme-swatches.vercel.app/451003?style=round" valign="middle"></a> #451003 |
+| Property Name                | Value                | Hex Code                                                                                                  |
+| ---------------------------- | -------------------- | --------------------------------------------------------------------------------------------------------- |
+| --hc-support-error           | var(--hc-red-100)    | <a href="#"><img src="https://readme-swatches.vercel.app/ffe4e4?style=round" valign="middle"></a> #ffe4e4 |
+| --hc-support-error-hover     | var(--hc-red-200)    | <a href="#"><img src="https://readme-swatches.vercel.app/88132d?style=round" valign="middle"></a> #88132d |
+| --hc-support-error-active    | var(--hc-red-300)    | <a href="#"><img src="https://readme-swatches.vercel.app/4c0513?style=round" valign="middle"></a> #4c0513 |
+| --hc-support-error-inverse   | var(--hc-red-800)    | <a href="#"><img src="https://readme-swatches.vercel.app/9f122d?style=round" valign="middle"></a> #9f122d |
+| --hc-support-info            | var(--hc-blue-100)   | <a href="#"><img src="https://readme-swatches.vercel.app/dfefff?style=round" valign="middle"></a> #dfefff |
+| --hc-support-info-hover      | var(--hc-blue-200)   | <a href="#"><img src="https://readme-swatches.vercel.app/054c87?style=round" valign="middle"></a> #054c87 |
+| --hc-support-info-active     | var(--hc-blue-300)   | <a href="#"><img src="https://readme-swatches.vercel.app/0058a4?style=round" valign="middle"></a> #0058a4 |
+| --hc-support-info-inverse    | var(--hc-blue-900)   | <a href="#"><img src="https://readme-swatches.vercel.app/113c66?style=round" valign="middle"></a> #113c66 |
+| --hc-support-success         | var(--hc-green-100)  | <a href="#"><img src="https://readme-swatches.vercel.app/d6ffe9?style=round" valign="middle"></a> #d6ffe9 |
+| --hc-support-success-hover   | var(--hc-green-200)  | <a href="#"><img src="https://readme-swatches.vercel.app/085f33?style=round" valign="middle"></a> #085f33 |
+| --hc-support-success-active  | var(--hc-green-300)  | <a href="#"><img src="https://readme-swatches.vercel.app/00361a?style=round" valign="middle"></a> #00361a |
+| --hc-support-success-inverse | var(--hc-green-800)  | <a href="#"><img src="https://readme-swatches.vercel.app/06753b?style=round" valign="middle"></a> #06753b |
+| --hc-support-warning         | var(--hc-yellow-100) | <a href="#"><img src="https://readme-swatches.vercel.app/feeac7?style=round" valign="middle"></a> #feeac7 |
+| --hc-support-warning-hover   | var(--hc-yellow-200) | <a href="#"><img src="https://readme-swatches.vercel.app/78250f?style=round" valign="middle"></a> #78250f |
+| --hc-support-warning-active  | var(--hc-yellow-300) | <a href="#"><img src="https://readme-swatches.vercel.app/451003?style=round" valign="middle"></a> #451003 |
+| --hc-support-warning-inverse | var(--hc-yellow-800) | <a href="#"><img src="https://readme-swatches.vercel.app/922b0e?style=round" valign="middle"></a> #922b0e |
 
 ### Text colors
 

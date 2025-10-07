@@ -130,15 +130,15 @@ p.hc-alert-paragraph {
 .hc-alert.hc-alert-success > .hc-alert-close-button {
 	font-weight: 600;
 	color: var(--hc-text-success);
-	border-color: var(--hc-support-success-inverse-hover);
+	border-color: var(--hc-support-success-inverse);
 	background-color: var(--hc-transparent);
 }
 .hc-alert.hc-alert-success > .hc-alert-close-button:hover {
-	background-color: var(--hc-green-200);
-	border-color: var(--hc-support-success-inverse-hover);
+	background-color: var(--hc-support-success-hover);
+	border-color: var(--hc-support-success-inverse);
 }
 .hc-alert.hc-alert-success > .hc-alert-close-button:active {
-	background-color: var(--hc-green-300);
+	background-color: var(--hc-support-success-active);
 	color: var(--hc-text-success);
 }
 
@@ -177,11 +177,11 @@ p.hc-alert-paragraph {
 	font-weight: 600;
 }
 .hc-alert.hc-alert-danger > .hc-alert-close-button:hover {
-	background-color: var(--hc-red-200);
+	background-color: var(--hc-support-error-hover);
 	border-color: var(--hc-support-error-inverse);
 }
 .hc-alert.hc-alert-danger > .hc-alert-close-button:active {
-	background-color: var(--hc-red-300);
+	background-color: var(--hc-support-error-active);
 	border-color: var(--hc-support-error-inverse);
 }
 
@@ -215,17 +215,17 @@ p.hc-alert-paragraph {
 /* Warning close button styling */
 .hc-alert.hc-alert-warning > .hc-alert-close-button {
 	color: var(--hc-text-warning);
-	background-color: var(--hc-yellow-100);
-	border-color: var(--hc-support-warning-inverse-hover);
+	background-color: var(--hc-support-warning);
+	border-color: var(--hc-support-warning-inverse);
 	font-weight: 600;
 }
 .hc-alert.hc-alert-warning > .hc-alert-close-button:hover {
-	background-color: var(--hc-yellow-200);
-	border-color: var(--hc-support-warning-inverse-hover);
+	background-color: var(--hc-support-warning-hover);
+	border-color: var(--hc-support-warning-inverse);
 }
 .hc-alert.hc-alert-warning > .hc-alert-close-button:active {
-	background-color: var(--hc-yellow-300);
-	border-color: var(--hc-support-warning-inverse-active);
+	background-color: var(--hc-support-warning-active);
+	border-color: var(--hc-support-warning-inverse);
 }
 
 .hc-alert.hc-alert-warning > .hc-alert-close-button:focus {
@@ -257,17 +257,17 @@ p.hc-alert-paragraph {
 /* info close button styling */
 .hc-alert.hc-alert-info > .hc-alert-close-button {
 	color: var(--hc-support-info-inverse);
-	border-color: var(--hc-support-info-inverse-hover);
+	border-color: var(--hc-support-info-inverse);
 	font-weight: 600;
 }
 .hc-alert.hc-alert-info > .hc-alert-close-button:hover {
 	color: var(--hc-support-info-inverse);
-	background: var(--hc-ui-blue-100);
-	border-color: var(--hc-support-info-inverse-hover);
+	background: var(--hc-support-info-hover);
+	border-color: var(--hc-support-info-inverse);
 }
 .hc-alert.hc-alert-info > .hc-alert-close-button:active {
-	background: var(--hc-ui-blue-200);
-	/* border-color: var(--hc-support-info-inverse-active); */
+	background: var(--hc-support-info-active);
+	border-color: var(--hc-support-info-inverse);
 }
 
 .hc-alert.hc-alert-info > .hc-alert-close-button:focus {
