@@ -34,7 +34,7 @@
 | --hc-border-color-on-color    | --hc-white                  | <a href="#"><img src="https://readme-swatches.vercel.app/ffffff?style=round" valign="middle"></a> #ffffff                 | For borders on dark backgrounds                                         |
 | --hc-border-subtle-on-color   | rgba(255, 255, 255, 0.2)    | <a href="#"><img src="https://readme-swatches.vercel.app/fff5f5?style=round" valign="middle"></a>rgba(255, 255, 255, 0.2) | For subtle borders on dark backgrounds.                                 |
 
-### Button colors
+<!-- ### Button colors
 
 | Property Name                        | Value                               | Hex Code                                                                                                                |
 | ------------------------------------ | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
@@ -64,7 +64,7 @@
 | --hc-button-tertiary-on-dark-hover   | --hc-gray-50                        | <a href="#"><img src="https://readme-swatches.vercel.app/f9fafb?style=round" valign="middle"></a> #f9fafb               |
 | --hc-button-tertiary-on-dark-active  | --hc-gray-100                       | <a href="#"><img src="https://readme-swatches.vercel.app/f3f4f6?style=round" valign="middle"></a> #f3f4f6               |
 | --hc-button-disabled                 | --hc-background-background-disabled | <a href="#"><img src="https://readme-swatches.vercel.app/d1d5db?style=round" valign="middle"></a> #d1d5db               |
-| --hc-button-separator                | --hc-gray-200                       | <a href="#"><img src="https://readme-swatches.vercel.app/e5e7eb?style=round" valign="middle"></a> #e5e7eb               |
+| --hc-button-separator                | --hc-gray-200                       | <a href="#"><img src="https://readme-swatches.vercel.app/e5e7eb?style=round" valign="middle"></a> #e5e7eb               | -->
 
 ### Field colors
 
