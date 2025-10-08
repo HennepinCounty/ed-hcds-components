@@ -50,7 +50,7 @@
 
 .hc-footer-icon-container {
 	padding: var(--hc-spacing-04);
-	border-color: var(--border-subtle-on-color);
+	border-color: var(--hc-border-subtle-on-color);
 	border-style: solid;
 	border-width: 2px;
 	height: fit-content;

@@ -25,7 +25,7 @@
 	--hc-border-color-disabled: var(--hc-gray-300);
 	--hc-border-color-inverse: var(--hc-gray-900);
 	--hc-border-color-on-color: var(--hc-white);
-	--border-subtle-on-color: rgba(255, 255, 255, 0.2);
+	--hc-border-subtle-on-color: rgba(255, 255, 255, 0.2);
 
 	// Button color
 	--hc-button-primary: var(--hc-background-interactive);
@@ -60,7 +60,6 @@
 	// Field colors
 	--hc-field-background: var(--hc-background-default);
 	--hc-field-border-color: var(--hc-border-color-strong);
-	--hc-field-disabled: var(--hc-gray-200);
 	--hc-field-error: var(--hc-red-50);
 
 	// Icon colors
@@ -83,11 +82,7 @@
 	// Link colors
 	--hc-link-primary: var(--hc-background-interactive);
 	--hc-link-inverse: var(--hc-white);
-	--hc-link-disabled: var(--hc-text-disabled);
 	--hc-link-primary-hover: var(--hc-background-brand-hover);
-	--hc-link-visited: var(
-		--hc-pink-900
-	); //link visited not applied currently, we're missing purple palette
 
 	// Support colors
 	--hc-support-error: var(--hc-red-100);

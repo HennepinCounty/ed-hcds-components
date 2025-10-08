@@ -204,7 +204,7 @@ h6 {
   --hc-border-color-disabled: var(--hc-gray-300);
   --hc-border-color-inverse: var(--hc-gray-900);
   --hc-border-color-on-color: var(--hc-white);
-  --border-subtle-on-color: rgba(255, 255, 255, 0.2);
+  --hc-border-subtle-on-color: rgba(255, 255, 255, 0.2);
   --hc-button-primary: var(--hc-background-interactive);
   --hc-button-primary-hover: var(--hc-background-interactive-hover);
   --hc-button-primary-active: var(--hc-background-interactive-active);
@@ -234,7 +234,6 @@ h6 {
   --hc-button-separator: var(--hc-gray-200);
   --hc-field-background: var(--hc-background-default);
   --hc-field-border-color: var(--hc-border-color-strong);
-  --hc-field-disabled: var(--hc-gray-200);
   --hc-field-error: var(--hc-red-50);
   --hc-icon-primary: var(--hc-gray-900);
   --hc-icon-secondary: var(--hc-gray-700);
@@ -253,11 +252,7 @@ h6 {
   --hc-icon-error-inverse: var(--hc-support-error);
   --hc-link-primary: var(--hc-background-interactive);
   --hc-link-inverse: var(--hc-white);
-  --hc-link-disabled: var(--hc-text-disabled);
   --hc-link-primary-hover: var(--hc-background-brand-hover);
-  --hc-link-visited: var(
-  	--hc-pink-900
-  );
   --hc-support-error: var(--hc-red-100);
   --hc-support-error-hover: var(--hc-red-200);
   --hc-support-error-active: var(--hc-red-300);
@@ -588,10 +583,6 @@ a:hover {
 
 a:visited:hover {
   color: var(--hc-link-primary-hover);
-}
-
-a:disabled {
-  color: var(--hc-link-disabled);
 }
 
 .hc-link-on-color,
@@ -2860,7 +2851,7 @@ SOFTWARE. */
 
 .hc-footer-icon-container {
   padding: var(--hc-spacing-04);
-  border-color: var(--border-subtle-on-color);
+  border-color: var(--hc-border-subtle-on-color);
   border-style: solid;
   border-width: 2px;
   height: -moz-fit-content;
@@ -3141,7 +3132,7 @@ input.hc-input[type=search] {
   line-height: 100%;
   border-radius: 9999px;
   padding-inline-start: var(--hc-spacing-09);
-  border: 2px solid var(--hc-field-border-color);
+  border: 2px solid var(--hc-border-color-subtle);
   background-color: var(--hc-white);
   width: 100%;
   height: 100%;
@@ -3153,13 +3144,11 @@ input.hc-input[type=search]:focus {
   outline: var(--hc-outline-style-focus);
 }
 
-/* Un-rounds the corners of input field to be flush against button */
 .hc-input-search {
   /* border-radius: 4px 0px 0px 4px; */
   border-radius: 9999px;
 }
 
-/* Un-rounds the corners of button to be flush against input field */
 .hc-button-search {
   /* border-radius: 0px 4px 4px 0px; */
   /* margin-inline-start: -2px; */
