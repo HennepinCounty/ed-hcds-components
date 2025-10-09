@@ -222,9 +222,9 @@ These colors are used for various types of text, such as body copy, image captio
 
 | Property Name    | Value                                                                                                                    | Contrasts with |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------ | -------------- |
-| --hc-black       | <a href="#"><img src="https://readme-swatches.vercel.app/000000?style=round" valign="middle"></a> #000000                |
-| --hc-transparent | <a href="#"><img src="https://readme-swatches.vercel.app/ffffff?style=round" valign="middle"></a> rgba(255, 255, 255, 0) |
-| --hc-white       | <a href="#"><img src="https://readme-swatches.vercel.app/ffffff?style=round" valign="middle"></a> #ffffff                |
+| --hc-black       | <a href="#"><img src="https://readme-swatches.vercel.app/000000?style=round" valign="middle"></a> #000000                | White          |
+| --hc-white       | <a href="#"><img src="https://readme-swatches.vercel.app/ffffff?style=round" valign="middle"></a> #ffffff                | Black          |
+| --hc-transparent | <a href="#"><img src="https://readme-swatches.vercel.app/ffffff?style=round" valign="middle"></a> rgba(255, 255, 255, 0) | Not applicable |
 
 ### Blue
 
