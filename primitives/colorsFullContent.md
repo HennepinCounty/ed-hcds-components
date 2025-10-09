@@ -21,8 +21,6 @@ use red, use var(hc-red-700) rather than var(--hc-text-error).
 
 ## Brand colors
 
-### From brand PDF
-
 Color is an integral part of our brand and with consistent application can help provide impact and brand recognition throughout all communications. Our brand is clean,simple and modern. White leads as the dominant color in all applications, followed by our core blues, shades of gray and our accent colors.
 
 #### Blues
