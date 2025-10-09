@@ -1,4 +1,4 @@
-# Colorsc6d9ff
+# Colors
 
 Our color system reflects the diversity and vibrancy of Hennepin County. Consistent use of colors lets residents identify our products. It also supports the credibility and integrity of our information.
 Use only colors from our county color palettes.
@@ -20,7 +20,7 @@ use red, use var(hc-red-700) rather than var(--hc-text-error).
 
 ### From brand PDF
 
-Color is an integral part of our brand and with consistent application can help provide impact and brand recognition throughout all communications. Our brand is clean,simple and modern. White leads as the dominant color in all applications, followed by our core blues, shades of grayand our accent colors. See the subsequent page for color codes/values.
+Color is an integral part of our brand and with consistent application can help provide impact and brand recognition throughout all communications. Our brand is clean,simple and modern. White leads as the dominant color in all applications, followed by our core blues, shades of gray and our accent colors.
 
 #### Blues
 
