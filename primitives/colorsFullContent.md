@@ -23,7 +23,7 @@ use red, use var(hc-red-700) rather than var(--hc-text-error).
 
 Color is an integral part of our brand and with consistent application can help provide impact and brand recognition throughout all communications. Our brand is clean,simple and modern. White leads as the dominant color in all applications, followed by our core blues, shades of gray and our accent colors.
 
-#### Blues
+### Blues
 
 Blue is our core color. It is the foundation for our brand and is made up of 3 distinctshades. One blue (or a subtle combinationblues) is used as the primary color, second to white.
 
@@ -33,13 +33,13 @@ Blue is our core color. It is the foundation for our brand and is made up of 3 d
 | --hc-brand-blue | --hc-blue-700 | #0058a4  | White          |
 | --hc-brand-sky  | --hc-sky-500  | #44c8f5  | Black          |
 
-#### Gray
+### Gray
 
 Gray is a staple of our brand. It weaves through communication and ties back to our palette. Gray is useful for breaking up visual space and leading the viewer’s eye through communications.
 
 View the base tokens {anchor link to bottom of page} for our full palette of grays.
 
-#### Accents
+### Accents
 
 Our accent colors complement our blue and gray palette, while providing energy and visual interest. Use the accent color palette sparingly in brand communications to add a “pop” of lively contrast when needed.
 
