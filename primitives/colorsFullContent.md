@@ -5,6 +5,10 @@ Use only colors from our county color palettes.
 
 Sometimes the county serves as a fiscal or administrative agent for other organizations. When we collaborate with them on a website, the website should follow county brand standards.
 
+Colors work together to communicate the brand tone. They draw the user’s attention. Apply colors with care to avoid overwhelming the user. All colors must meet WCAG 2.1 AA contrast standards.
+
+Always check color combinations when used with text or icons. Using a contrast checker to ensure readability and accessibility.
+
 ## Github library
 
 When possible use the [Hennepin County Design System GitHub](https://github.com/HennepinCounty/ed-hcds-components). This ensures your application will always use the most recent color palette
@@ -23,7 +27,7 @@ Color is an integral part of our brand and with consistent application can help 
 
 #### Blues
 
-Blue is our core color. It is the foundation for our brand and is made up of 3 distinctshades. One blue (or a subtle combinationblues) is used as the primary color, secondto white.
+Blue is our core color. It is the foundation for our brand and is made up of 3 distinctshades. One blue (or a subtle combinationblues) is used as the primary color, second to white.
 
 | Property Name   | Value         | Hex Code | Contrasts with |
 | --------------- | ------------- | -------- | -------------- |
@@ -41,28 +45,19 @@ View the base tokens {anchor link to bottom of page} for our full palette of gra
 
 Our accent colors complement our blue and gray palette, while providing energy and visual interest. Use the accent color palette sparingly in brand communications to add a “pop” of lively contrast when needed.
 
-| Property Name       | Value            | Hex Code | Contrasts with |
-| ------------------- | ---------------- | -------- | -------------- |
-| brand-accent-green  | --green-700      | #009245  | Black          |
-| brand-accent-gold   | --yellow-300     | #fbb03b  | Black          |
-| brand-accent-orange | --orange-500     | #f15a24  | Black          |
-| brand-accent-pink   | --pink-400       | #ff7bac  | Black          |
-| brand-accent-red    | --red-700        | #ce1432  | White          |
-| ui-blue             | --hc-ui-blue-600 | #0047e2  | White          |
-
-### Current in Figma
-
-Colors work together to communicate the brand tone. They draw the user’s attention. Apply colors with care to avoid overwhelming the user. All colors must meet WCAG 2.1 AA contrast standards.
-
-Always check color combinations when used with text or icons. Using a contrast checker to ensure readability and accessibility.
-
-Blue is our core color. It is the foundation for our brand and is made up of 3 distinct shades. One blue (or a subtle combination blues) is used as the primary color, second to white.
-
-###
+| Property Name       | Value        | Hex Code | Contrasts with |
+| ------------------- | ------------ | -------- | -------------- |
+| brand-accent-green  | --green-700  | #009245  | Black          |
+| brand-accent-gold   | --yellow-300 | #fbb03b  | Black          |
+| brand-accent-orange | --orange-500 | #f15a24  | Black          |
+| brand-accent-pink   | --pink-400   | #ff7bac  | Black          |
+| brand-accent-red    | --red-700    | #ce1432  | White          |
 
 ## Semantic colors
 
 ### Background colors
+
+Use these colors as the background color for pages or components.
 
 | Property Name                      | Value            | Hex Code                                                                                                  | Usage                                                                                        |
 | ---------------------------------- | ---------------- | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
@@ -82,10 +77,12 @@ Blue is our core color. It is the foundation for our brand and is made up of 3 d
 
 ### Border colors
 
+These colors are used for the border color of components, such as input fields.
+
 | Property Name                 | Value                       | Hex Code                                                                                                                  | Usage                                                                   |
 | ----------------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | --hc-border-color-focus-inner | --hc-white                  | <a href="#"><img src="https://readme-swatches.vercel.app/fff5f5?style=round" valign="middle"></a> #ffffff                 | Used for inner focus rings to ensure high contrast on dark backgrounds. |
-| --hc-border-color-focus-outer | --hc-background-interactive | <a href="#"><img src="https://readme-swatches.vercel.app/fff5f5?style=round" valign="middle"></a> #0047e2                 | Used for outer focus rings to indicate interactive elements.            |
+| --hc-border-color-focus-outer | --hc-background-interactive | <a href="#"><img src="https://readme-swatches.vercel.app/fff5f5?style=round" valign="middle"></a> #0047e2                 | Used for outer forcus ring of interactive elements.                     |
 | --hc-border-color-subtle      | --hc-gray-300               | <a href="#"><img src="https://readme-swatches.vercel.app/6a7282?style=round" valign="middle"></a> #6a7282                 | For low-emphasis borders like dividers.                                 |
 | --hc-border-color-strong      | --hc-gray-700               | <a href="#"><img src="https://readme-swatches.vercel.app/364153?style=round" valign="middle"></a> #364153                 | For high-emphasis borders such as form fields.                          |
 | --hc-border-color-error       | --hc-red-700                | <a href="#"><img src="https://readme-swatches.vercel.app/ce1432?style=round" valign="middle"></a> #ce1432                 | Used to indicate error states in form fields or alerts.                 |
@@ -128,6 +125,8 @@ Blue is our core color. It is the foundation for our brand and is made up of 3 d
 
 ### Field colors
 
+These colors are used to style fields, like text input and text area.
+
 | Property Name           | Value                    | Hex Code                                                                                                  | Usage                                                                                       |
 | ----------------------- | ------------------------ | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | --hc-field-background   | --hc-background-default  | <a href="#"><img src="https://readme-swatches.vercel.app/ffffff?style=round" valign="middle"></a> #ffffff | Default background for input fields and form elements.                                      |
@@ -135,6 +134,8 @@ Blue is our core color. It is the foundation for our brand and is made up of 3 d
 | --hc-field-error        | --hc-red-50              | <a href="#"><img src="https://readme-swatches.vercel.app/fff5f5?style=round" valign="middle"></a> #fff5f5 | Background color for fields in an error state, often paired with `--hc-border-color-error`. |
 
 ### Icon colors
+
+Use these colors to style icons against various backgrounds. Use the support colors in situations where color has semantic meaning, such as red for error or green for success.
 
 | Property Name                    | Value                       | Hex Code                                                                                                  | Usage                                                     |
 | -------------------------------- | --------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
@@ -156,6 +157,8 @@ Blue is our core color. It is the foundation for our brand and is made up of 3 d
 
 ### Link colors
 
+This group of colors is used to style links.
+
 | Property Name           | Value                       | Hex Code                                                                                                  | Usage                            |
 | ----------------------- | --------------------------- | --------------------------------------------------------------------------------------------------------- | -------------------------------- |
 | --hc-link-primary       | --hc-background-interactive | <a href="#"><img src="https://readme-swatches.vercel.app/0047e2?style=round" valign="middle"></a> #0047e2 | Link in default state.           |
@@ -163,6 +166,8 @@ Blue is our core color. It is the foundation for our brand and is made up of 3 d
 | --hc-link-primary-hover | --hc-background-brand-hover | <a href="#"><img src="https://readme-swatches.vercel.app/113c66?style=round" valign="middle"></a> #113c66 | Link when hovered.               |
 
 ### Support colors
+
+Use the support colors in components where color has semantic meaning, such as an alert notifying something was successfully submitted.
 
 | Property Name                | Value           | Hex Code                                                                                                  | Usage                                                                           |
 | ---------------------------- | --------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
@@ -185,9 +190,11 @@ Blue is our core color. It is the foundation for our brand and is made up of 3 d
 
 ### Text colors
 
+These colors are used for various types of text, such as body copy, image captions or error messages.
+
 | Property Name               | Value                       | Hex Code                                                                                                  | Usage Guidance                                                                                    |
 | --------------------------- | --------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| --hc-text-primary           | --hc-gray-900               | <a href="#"><img src="https://readme-swatches.vercel.app/101828?style=round" valign="middle"></a> #101828 | Default text color for primary content on page.                                                   |
+| --hc-text-primary           | --hc-gray-900               | <a href="#"><img src="https://readme-swatches.vercel.app/101828?style=round" valign="middle"></a> #101828 | For primary content on page, such as body copy.                                                   |
 | --hc-text-secondary         | --hc-gray-700               | <a href="#"><img src="https://readme-swatches.vercel.app/364153?style=round" valign="middle"></a> #364153 | For secondary content like captions or metadata.                                                  |
 | --hc-text-hint              | --hc-gray-700               | <a href="#"><img src="https://readme-swatches.vercel.app/364153?style=round" valign="middle"></a> #364153 | Used for hint text in form fields or contextual help.                                             |
 | --hc-text-placeholder       | --hc-gray-400               | <a href="#"><img src="https://readme-swatches.vercel.app/99a1af?style=round" valign="middle"></a> #99a1af | Use for placeholder text in input fields. Note that placeholder text should almost never be used. |
@@ -213,152 +220,152 @@ Blue is our core color. It is the foundation for our brand and is made up of 3 d
 
 ## Base colors
 
-| Property Name    | Value                                                                                                                    |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Property Name    | Value                                                                                                                    | Contrasts with |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------ | -------------- |
 | --hc-black       | <a href="#"><img src="https://readme-swatches.vercel.app/000000?style=round" valign="middle"></a> #000000                |
 | --hc-transparent | <a href="#"><img src="https://readme-swatches.vercel.app/ffffff?style=round" valign="middle"></a> rgba(255, 255, 255, 0) |
 | --hc-white       | <a href="#"><img src="https://readme-swatches.vercel.app/ffffff?style=round" valign="middle"></a> #ffffff                |
 
 ### Blue
 
-| Property Name | Value                                                                                                     |
-| ------------- | --------------------------------------------------------------------------------------------------------- |
-| --hc-blue-50  | <a href="#"><img src="https://readme-swatches.vercel.app/f0f7ff?style=round" valign="middle"></a> #f0f7ff |
-| --hc-blue-100 | <a href="#"><img src="https://readme-swatches.vercel.app/dfefff?style=round" valign="middle"></a> #dfefff |
-| --hc-blue-200 | <a href="#"><img src="https://readme-swatches.vercel.app/b9defe?style=round" valign="middle"></a> #b9defe |
-| --hc-blue-300 | <a href="#"><img src="https://readme-swatches.vercel.app/7bc6fe?style=round" valign="middle"></a> #7bc6fe |
-| --hc-blue-400 | <a href="#"><img src="https://readme-swatches.vercel.app/34a8fc?style=round" valign="middle"></a> #34a8fc |
-| --hc-blue-500 | <a href="#"><img src="https://readme-swatches.vercel.app/0a8eed?style=round" valign="middle"></a> #0a8eed |
-| --hc-blue-600 | <a href="#"><img src="https://readme-swatches.vercel.app/006fcb?style=round" valign="middle"></a> #006fcb |
-| --hc-blue-700 | <a href="#"><img src="https://readme-swatches.vercel.app/0058a4?style=round" valign="middle"></a> #0058a4 |
-| --hc-blue-800 | <a href="#"><img src="https://readme-swatches.vercel.app/054c87?style=round" valign="middle"></a> #054c87 |
-| --hc-blue-900 | <a href="#"><img src="https://readme-swatches.vercel.app/113c66?style=round" valign="middle"></a> #113c66 |
-| --hc-blue-950 | <a href="#"><img src="https://readme-swatches.vercel.app/07284a?style=round" valign="middle"></a> #07284a |
+| Property Name | Value                                                                                                     | Contrasts with |
+| ------------- | --------------------------------------------------------------------------------------------------------- | -------------- |
+| --hc-blue-50  | <a href="#"><img src="https://readme-swatches.vercel.app/f0f7ff?style=round" valign="middle"></a> #f0f7ff | Black          |
+| --hc-blue-100 | <a href="#"><img src="https://readme-swatches.vercel.app/dfefff?style=round" valign="middle"></a> #dfefff | Black          |
+| --hc-blue-200 | <a href="#"><img src="https://readme-swatches.vercel.app/b9defe?style=round" valign="middle"></a> #b9defe | Black          |
+| --hc-blue-300 | <a href="#"><img src="https://readme-swatches.vercel.app/7bc6fe?style=round" valign="middle"></a> #7bc6fe | Black          |
+| --hc-blue-400 | <a href="#"><img src="https://readme-swatches.vercel.app/34a8fc?style=round" valign="middle"></a> #34a8fc | Black          |
+| --hc-blue-500 | <a href="#"><img src="https://readme-swatches.vercel.app/0a8eed?style=round" valign="middle"></a> #0a8eed | Black          |
+| --hc-blue-600 | <a href="#"><img src="https://readme-swatches.vercel.app/006fcb?style=round" valign="middle"></a> #006fcb | White          |
+| --hc-blue-700 | <a href="#"><img src="https://readme-swatches.vercel.app/0058a4?style=round" valign="middle"></a> #0058a4 | White          |
+| --hc-blue-800 | <a href="#"><img src="https://readme-swatches.vercel.app/054c87?style=round" valign="middle"></a> #054c87 | White          |
+| --hc-blue-900 | <a href="#"><img src="https://readme-swatches.vercel.app/113c66?style=round" valign="middle"></a> #113c66 | White          |
+| --hc-blue-950 | <a href="#"><img src="https://readme-swatches.vercel.app/07284a?style=round" valign="middle"></a> #07284a | White          |
 
 ### Gray
 
-| Property Name | Value                                                                                                     |
-| ------------- | --------------------------------------------------------------------------------------------------------- |
-| --hc-gray-50  | <a href="#"><img src="https://readme-swatches.vercel.app/f9fafb?style=round" valign="middle"></a> #f9fafb |
-| --hc-gray-100 | <a href="#"><img src="https://readme-swatches.vercel.app/f3f4f6?style=round" valign="middle"></a> #f3f4f6 |
-| --hc-gray-200 | <a href="#"><img src="https://readme-swatches.vercel.app/e5e7eb?style=round" valign="middle"></a> #e5e7eb |
-| --hc-gray-300 | <a href="#"><img src="https://readme-swatches.vercel.app/d1d5db?style=round" valign="middle"></a> #d1d5db |
-| --hc-gray-400 | <a href="#"><img src="https://readme-swatches.vercel.app/99a1af?style=round" valign="middle"></a> #99a1af |
-| --hc-gray-500 | <a href="#"><img src="https://readme-swatches.vercel.app/6a7282?style=round" valign="middle"></a> #6a7282 |
-| --hc-gray-600 | <a href="#"><img src="https://readme-swatches.vercel.app/4a5565?style=round" valign="middle"></a> #4a5565 |
-| --hc-gray-700 | <a href="#"><img src="https://readme-swatches.vercel.app/364153?style=round" valign="middle"></a> #364153 |
-| --hc-gray-800 | <a href="#"><img src="https://readme-swatches.vercel.app/1e2939?style=round" valign="middle"></a> #1e2939 |
-| --hc-gray-900 | <a href="#"><img src="https://readme-swatches.vercel.app/101828?style=round" valign="middle"></a> #101828 |
-| --hc-gray-950 | <a href="#"><img src="https://readme-swatches.vercel.app/030712?style=round" valign="middle"></a> #030712 |
+| Property Name | Value                                                                                                     | Contrasts with |
+| ------------- | --------------------------------------------------------------------------------------------------------- | -------------- |
+| --hc-gray-50  | <a href="#"><img src="https://readme-swatches.vercel.app/f9fafb?style=round" valign="middle"></a> #f9fafb | Black          |
+| --hc-gray-100 | <a href="#"><img src="https://readme-swatches.vercel.app/f3f4f6?style=round" valign="middle"></a> #f3f4f6 | Black          |
+| --hc-gray-200 | <a href="#"><img src="https://readme-swatches.vercel.app/e5e7eb?style=round" valign="middle"></a> #e5e7eb | Black          |
+| --hc-gray-300 | <a href="#"><img src="https://readme-swatches.vercel.app/d1d5db?style=round" valign="middle"></a> #d1d5db | Black          |
+| --hc-gray-400 | <a href="#"><img src="https://readme-swatches.vercel.app/99a1af?style=round" valign="middle"></a> #99a1af | Black          |
+| --hc-gray-500 | <a href="#"><img src="https://readme-swatches.vercel.app/6a7282?style=round" valign="middle"></a> #6a7282 | White          |
+| --hc-gray-600 | <a href="#"><img src="https://readme-swatches.vercel.app/4a5565?style=round" valign="middle"></a> #4a5565 | White          |
+| --hc-gray-700 | <a href="#"><img src="https://readme-swatches.vercel.app/364153?style=round" valign="middle"></a> #364153 | White          |
+| --hc-gray-800 | <a href="#"><img src="https://readme-swatches.vercel.app/1e2939?style=round" valign="middle"></a> #1e2939 | White          |
+| --hc-gray-900 | <a href="#"><img src="https://readme-swatches.vercel.app/101828?style=round" valign="middle"></a> #101828 | White          |
+| --hc-gray-950 | <a href="#"><img src="https://readme-swatches.vercel.app/030712?style=round" valign="middle"></a> #030712 | White          |
 
 ### Green
 
-| Property Name  | Value                                                                                                     |
-| -------------- | --------------------------------------------------------------------------------------------------------- |
-| --hc-green-50  | <a href="#"><img src="https://readme-swatches.vercel.app/edfff5?style=round" valign="middle"></a> #edfff5 |
-| --hc-green-100 | <a href="#"><img src="https://readme-swatches.vercel.app/d6ffe9?style=round" valign="middle"></a> #d6ffe9 |
-| --hc-green-200 | <a href="#"><img src="https://readme-swatches.vercel.app/afffd4?style=round" valign="middle"></a> #afffd4 |
-| --hc-green-300 | <a href="#"><img src="https://readme-swatches.vercel.app/71ffb4?style=round" valign="middle"></a> #71ffb4 |
-| --hc-green-400 | <a href="#"><img src="https://readme-swatches.vercel.app/2dfb8c?style=round" valign="middle"></a> #2dfb8c |
-| --hc-green-500 | <a href="#"><img src="https://readme-swatches.vercel.app/02e56c?style=round" valign="middle"></a> #02e56c |
-| --hc-green-600 | <a href="#"><img src="https://readme-swatches.vercel.app/00bf56?style=round" valign="middle"></a> #00bf56 |
-| --hc-green-700 | <a href="#"><img src="https://readme-swatches.vercel.app/009245?style=round" valign="middle"></a> #009245 |
-| --hc-green-800 | <a href="#"><img src="https://readme-swatches.vercel.app/06753b?style=round" valign="middle"></a> #06753b |
-| --hc-green-900 | <a href="#"><img src="https://readme-swatches.vercel.app/085f33?style=round" valign="middle"></a> #085f33 |
-| --hc-green-950 | <a href="#"><img src="https://readme-swatches.vercel.app/00361a?style=round" valign="middle"></a> #00361a |
+| Property Name  | Value                                                                                                     | Contrasts with |
+| -------------- | --------------------------------------------------------------------------------------------------------- | -------------- |
+| --hc-green-50  | <a href="#"><img src="https://readme-swatches.vercel.app/edfff5?style=round" valign="middle"></a> #edfff5 | Black          |
+| --hc-green-100 | <a href="#"><img src="https://readme-swatches.vercel.app/d6ffe9?style=round" valign="middle"></a> #d6ffe9 | Black          |
+| --hc-green-200 | <a href="#"><img src="https://readme-swatches.vercel.app/afffd4?style=round" valign="middle"></a> #afffd4 | Black          |
+| --hc-green-300 | <a href="#"><img src="https://readme-swatches.vercel.app/71ffb4?style=round" valign="middle"></a> #71ffb4 | Black          |
+| --hc-green-400 | <a href="#"><img src="https://readme-swatches.vercel.app/2dfb8c?style=round" valign="middle"></a> #2dfb8c | Black          |
+| --hc-green-500 | <a href="#"><img src="https://readme-swatches.vercel.app/02e56c?style=round" valign="middle"></a> #02e56c | Black          |
+| --hc-green-600 | <a href="#"><img src="https://readme-swatches.vercel.app/00bf56?style=round" valign="middle"></a> #00bf56 | Black          |
+| --hc-green-700 | <a href="#"><img src="https://readme-swatches.vercel.app/009245?style=round" valign="middle"></a> #009245 | Black          |
+| --hc-green-800 | <a href="#"><img src="https://readme-swatches.vercel.app/06753b?style=round" valign="middle"></a> #06753b | White          |
+| --hc-green-900 | <a href="#"><img src="https://readme-swatches.vercel.app/085f33?style=round" valign="middle"></a> #085f33 | White          |
+| --hc-green-950 | <a href="#"><img src="https://readme-swatches.vercel.app/00361a?style=round" valign="middle"></a> #00361a | White          |
 
 ### Orange
 
-| Property Name   | Value                                                                                                     |
-| --------------- | --------------------------------------------------------------------------------------------------------- |
-| --hc-orange-50  | <a href="#"><img src="https://readme-swatches.vercel.app/fef5ee?style=round" valign="middle"></a> #fef5ee |
-| --hc-orange-100 | <a href="#"><img src="https://readme-swatches.vercel.app/fde7d7?style=round" valign="middle"></a> #fde7d7 |
-| --hc-orange-200 | <a href="#"><img src="https://readme-swatches.vercel.app/fbccad?style=round" valign="middle"></a> #fbccad |
-| --hc-orange-300 | <a href="#"><img src="https://readme-swatches.vercel.app/f8a779?style=round" valign="middle"></a> #f8a779 |
-| --hc-orange-400 | <a href="#"><img src="https://readme-swatches.vercel.app/f47943?style=round" valign="middle"></a> #f47943 |
-| --hc-orange-500 | <a href="#"><img src="https://readme-swatches.vercel.app/f15a24?style=round" valign="middle"></a> #f15a24 |
-| --hc-orange-600 | <a href="#"><img src="https://readme-swatches.vercel.app/e23d14?style=round" valign="middle"></a> #e23d14 |
-| --hc-orange-700 | <a href="#"><img src="https://readme-swatches.vercel.app/bb2b13?style=round" valign="middle"></a> #bb2b13 |
-| --hc-orange-800 | <a href="#"><img src="https://readme-swatches.vercel.app/952517?style=round" valign="middle"></a> #952517 |
-| --hc-orange-900 | <a href="#"><img src="https://readme-swatches.vercel.app/782116?style=round" valign="middle"></a> #782116 |
-| --hc-orange-950 | <a href="#"><img src="https://readme-swatches.vercel.app/410d09?style=round" valign="middle"></a> #410d09 |
+| Property Name   | Value                                                                                                     | Contrasts with |
+| --------------- | --------------------------------------------------------------------------------------------------------- | -------------- |
+| --hc-orange-50  | <a href="#"><img src="https://readme-swatches.vercel.app/fef5ee?style=round" valign="middle"></a> #fef5ee | Black          |
+| --hc-orange-100 | <a href="#"><img src="https://readme-swatches.vercel.app/fde7d7?style=round" valign="middle"></a> #fde7d7 | Black          |
+| --hc-orange-200 | <a href="#"><img src="https://readme-swatches.vercel.app/fbccad?style=round" valign="middle"></a> #fbccad | Black          |
+| --hc-orange-300 | <a href="#"><img src="https://readme-swatches.vercel.app/f8a779?style=round" valign="middle"></a> #f8a779 | Black          |
+| --hc-orange-400 | <a href="#"><img src="https://readme-swatches.vercel.app/f47943?style=round" valign="middle"></a> #f47943 | Black          |
+| --hc-orange-500 | <a href="#"><img src="https://readme-swatches.vercel.app/f15a24?style=round" valign="middle"></a> #f15a24 | Black          |
+| --hc-orange-600 | <a href="#"><img src="https://readme-swatches.vercel.app/e23d14?style=round" valign="middle"></a> #e23d14 | Black          |
+| --hc-orange-700 | <a href="#"><img src="https://readme-swatches.vercel.app/bb2b13?style=round" valign="middle"></a> #bb2b13 | White          |
+| --hc-orange-800 | <a href="#"><img src="https://readme-swatches.vercel.app/952517?style=round" valign="middle"></a> #952517 | White          |
+| --hc-orange-900 | <a href="#"><img src="https://readme-swatches.vercel.app/782116?style=round" valign="middle"></a> #782116 | White          |
+| --hc-orange-950 | <a href="#"><img src="https://readme-swatches.vercel.app/410d09?style=round" valign="middle"></a> #410d09 | White          |
 
 ### Pink
 
-| Property Name | Value                                                                                                     |
-| ------------- | --------------------------------------------------------------------------------------------------------- |
-| --hc-pink-50  | <a href="#"><img src="https://readme-swatches.vercel.app/fef1f6?style=round" valign="middle"></a> #fef1f6 |
-| --hc-pink-100 | <a href="#"><img src="https://readme-swatches.vercel.app/fee5ef?style=round" valign="middle"></a> #fee5ef |
-| --hc-pink-200 | <a href="#"><img src="https://readme-swatches.vercel.app/ffcbe1?style=round" valign="middle"></a> #ffcbe1 |
-| --hc-pink-300 | <a href="#"><img src="https://readme-swatches.vercel.app/ffa1c7?style=round" valign="middle"></a> #ffa1c7 |
-| --hc-pink-400 | <a href="#"><img src="https://readme-swatches.vercel.app/ff7bac?style=round" valign="middle"></a> #ff7bac |
-| --hc-pink-500 | <a href="#"><img src="https://readme-swatches.vercel.app/fa3a7c?style=round" valign="middle"></a> #fa3a7c |
-| --hc-pink-600 | <a href="#"><img src="https://readme-swatches.vercel.app/ea1855?style=round" valign="middle"></a> #ea1855 |
-| --hc-pink-700 | <a href="#"><img src="https://readme-swatches.vercel.app/cc0a3e?style=round" valign="middle"></a> #cc0a3e |
-| --hc-pink-800 | <a href="#"><img src="https://readme-swatches.vercel.app/a80c33?style=round" valign="middle"></a> #a80c33 |
-| --hc-pink-900 | <a href="#"><img src="https://readme-swatches.vercel.app/8c0f2e?style=round" valign="middle"></a> #8c0f2e |
-| --hc-pink-950 | <a href="#"><img src="https://readme-swatches.vercel.app/560116?style=round" valign="middle"></a> #560116 |
+| Property Name | Value                                                                                                     | Contrasts with |
+| ------------- | --------------------------------------------------------------------------------------------------------- | -------------- |
+| --hc-pink-50  | <a href="#"><img src="https://readme-swatches.vercel.app/fef1f6?style=round" valign="middle"></a> #fef1f6 | Black          |
+| --hc-pink-100 | <a href="#"><img src="https://readme-swatches.vercel.app/fee5ef?style=round" valign="middle"></a> #fee5ef | Black          |
+| --hc-pink-200 | <a href="#"><img src="https://readme-swatches.vercel.app/ffcbe1?style=round" valign="middle"></a> #ffcbe1 | Black          |
+| --hc-pink-300 | <a href="#"><img src="https://readme-swatches.vercel.app/ffa1c7?style=round" valign="middle"></a> #ffa1c7 | Black          |
+| --hc-pink-400 | <a href="#"><img src="https://readme-swatches.vercel.app/ff7bac?style=round" valign="middle"></a> #ff7bac | Black          |
+| --hc-pink-500 | <a href="#"><img src="https://readme-swatches.vercel.app/fa3a7c?style=round" valign="middle"></a> #fa3a7c | Black          |
+| --hc-pink-600 | <a href="#"><img src="https://readme-swatches.vercel.app/ea1855?style=round" valign="middle"></a> #ea1855 | Black          |
+| --hc-pink-700 | <a href="#"><img src="https://readme-swatches.vercel.app/cc0a3e?style=round" valign="middle"></a> #cc0a3e | White          |
+| --hc-pink-800 | <a href="#"><img src="https://readme-swatches.vercel.app/a80c33?style=round" valign="middle"></a> #a80c33 | White          |
+| --hc-pink-900 | <a href="#"><img src="https://readme-swatches.vercel.app/8c0f2e?style=round" valign="middle"></a> #8c0f2e | White          |
+| --hc-pink-950 | <a href="#"><img src="https://readme-swatches.vercel.app/560116?style=round" valign="middle"></a> #560116 | White          |
 
 ### Red
 
-| Property Name | Value                                                                                                     |
-| ------------- | --------------------------------------------------------------------------------------------------------- |
-| --hc-red-50   | <a href="#"><img src="https://readme-swatches.vercel.app/fff5f5?style=round" valign="middle"></a> #fff5f5 |
-| --hc-red-100  | <a href="#"><img src="https://readme-swatches.vercel.app/ffe4e4?style=round" valign="middle"></a> #ffe4e4 |
-| --hc-red-200  | <a href="#"><img src="https://readme-swatches.vercel.app/fecdcf?style=round" valign="middle"></a> #fecdcf |
-| --hc-red-300  | <a href="#"><img src="https://readme-swatches.vercel.app/fda4a8?style=round" valign="middle"></a> #fda4a8 |
-| --hc-red-400  | <a href="#"><img src="https://readme-swatches.vercel.app/fb717a?style=round" valign="middle"></a> #fb717a |
-| --hc-red-500  | <a href="#"><img src="https://readme-swatches.vercel.app/f43f4f?style=round" valign="middle"></a> #f43f4f |
-| --hc-red-600  | <a href="#"><img src="https://readme-swatches.vercel.app/e11d38?style=round" valign="middle"></a> #e11d38 |
-| --hc-red-700  | <a href="#"><img src="https://readme-swatches.vercel.app/ce1432?style=round" valign="middle"></a> #ce1432 |
-| --hc-red-800  | <a href="#"><img src="https://readme-swatches.vercel.app/9f122d?style=round" valign="middle"></a> #9f122d |
-| --hc-red-900  | <a href="#"><img src="https://readme-swatches.vercel.app/88132d?style=round" valign="middle"></a> #88132d |
-| --hc-red-950  | <a href="#"><img src="https://readme-swatches.vercel.app/4c0513?style=round" valign="middle"></a> #4c0513 |
+| Property Name | Value                                                                                                     | Contrasts with |
+| ------------- | --------------------------------------------------------------------------------------------------------- | -------------- |
+| --hc-red-50   | <a href="#"><img src="https://readme-swatches.vercel.app/fff5f5?style=round" valign="middle"></a> #fff5f5 | Black          |
+| --hc-red-100  | <a href="#"><img src="https://readme-swatches.vercel.app/ffe4e4?style=round" valign="middle"></a> #ffe4e4 | Black          |
+| --hc-red-200  | <a href="#"><img src="https://readme-swatches.vercel.app/fecdcf?style=round" valign="middle"></a> #fecdcf | Black          |
+| --hc-red-300  | <a href="#"><img src="https://readme-swatches.vercel.app/fda4a8?style=round" valign="middle"></a> #fda4a8 | Black          |
+| --hc-red-400  | <a href="#"><img src="https://readme-swatches.vercel.app/fb717a?style=round" valign="middle"></a> #fb717a | Black          |
+| --hc-red-500  | <a href="#"><img src="https://readme-swatches.vercel.app/f43f4f?style=round" valign="middle"></a> #f43f4f | Black          |
+| --hc-red-600  | <a href="#"><img src="https://readme-swatches.vercel.app/e11d38?style=round" valign="middle"></a> #e11d38 | White          |
+| --hc-red-700  | <a href="#"><img src="https://readme-swatches.vercel.app/ce1432?style=round" valign="middle"></a> #ce1432 | White          |
+| --hc-red-800  | <a href="#"><img src="https://readme-swatches.vercel.app/9f122d?style=round" valign="middle"></a> #9f122d | White          |
+| --hc-red-900  | <a href="#"><img src="https://readme-swatches.vercel.app/88132d?style=round" valign="middle"></a> #88132d | White          |
+| --hc-red-950  | <a href="#"><img src="https://readme-swatches.vercel.app/4c0513?style=round" valign="middle"></a> #4c0513 | White          |
 
 ### Sky blue
 
-| Property Name | Value                                                                                                     |
-| ------------- | --------------------------------------------------------------------------------------------------------- |
-| --hc-sky-50   | <a href="#"><img src="https://readme-swatches.vercel.app/f0faff?style=round" valign="middle"></a> #f0faff |
-| --hc-sky-100  | <a href="#"><img src="https://readme-swatches.vercel.app/e1f3fd?style=round" valign="middle"></a> #e1f3fd |
-| --hc-sky-200  | <a href="#"><img src="https://readme-swatches.vercel.app/bbe9fc?style=round" valign="middle"></a> #bbe9fc |
-| --hc-sky-300  | <a href="#"><img src="https://readme-swatches.vercel.app/7fd9fa?style=round" valign="middle"></a> #7fd9fa |
-| --hc-sky-400  | <a href="#"><img src="https://readme-swatches.vercel.app/44c8f5?style=round" valign="middle"></a> #44c8f5 |
-| --hc-sky-500  | <a href="#"><img src="https://readme-swatches.vercel.app/12afe5?style=round" valign="middle"></a> #12afe5 |
-| --hc-sky-600  | <a href="#"><img src="https://readme-swatches.vercel.app/068dc3?style=round" valign="middle"></a> #068dc3 |
-| --hc-sky-700  | <a href="#"><img src="https://readme-swatches.vercel.app/06709e?style=round" valign="middle"></a> #06709e |
-| --hc-sky-800  | <a href="#"><img src="https://readme-swatches.vercel.app/095e83?style=round" valign="middle"></a> #095e83 |
-| --hc-sky-900  | <a href="#"><img src="https://readme-swatches.vercel.app/0e4f6c?style=round" valign="middle"></a> #0e4f6c |
-| --hc-sky-950  | <a href="#"><img src="https://readme-swatches.vercel.app/093248?style=round" valign="middle"></a> #093248 |
+| Property Name | Value                                                                                                     | Contrasts with |
+| ------------- | --------------------------------------------------------------------------------------------------------- | -------------- |
+| --hc-sky-50   | <a href="#"><img src="https://readme-swatches.vercel.app/f0faff?style=round" valign="middle"></a> #f0faff | Black          |
+| --hc-sky-100  | <a href="#"><img src="https://readme-swatches.vercel.app/e1f3fd?style=round" valign="middle"></a> #e1f3fd | Black          |
+| --hc-sky-200  | <a href="#"><img src="https://readme-swatches.vercel.app/bbe9fc?style=round" valign="middle"></a> #bbe9fc | Black          |
+| --hc-sky-300  | <a href="#"><img src="https://readme-swatches.vercel.app/7fd9fa?style=round" valign="middle"></a> #7fd9fa | Black          |
+| --hc-sky-400  | <a href="#"><img src="https://readme-swatches.vercel.app/44c8f5?style=round" valign="middle"></a> #44c8f5 | Black          |
+| --hc-sky-500  | <a href="#"><img src="https://readme-swatches.vercel.app/12afe5?style=round" valign="middle"></a> #12afe5 | Black          |
+| --hc-sky-600  | <a href="#"><img src="https://readme-swatches.vercel.app/068dc3?style=round" valign="middle"></a> #068dc3 | Black          |
+| --hc-sky-700  | <a href="#"><img src="https://readme-swatches.vercel.app/06709e?style=round" valign="middle"></a> #06709e | White          |
+| --hc-sky-800  | <a href="#"><img src="https://readme-swatches.vercel.app/095e83?style=round" valign="middle"></a> #095e83 | White          |
+| --hc-sky-900  | <a href="#"><img src="https://readme-swatches.vercel.app/0e4f6c?style=round" valign="middle"></a> #0e4f6c | White          |
+| --hc-sky-950  | <a href="#"><img src="https://readme-swatches.vercel.app/093248?style=round" valign="middle"></a> #093248 | White          |
 
 ### UI blue
 
-| Property Name    | Value                                                                                                     |
-| ---------------- | --------------------------------------------------------------------------------------------------------- |
-| --hc-ui-blue-50  | <a href="#"><img src="https://readme-swatches.vercel.app/eff3ff?style=round" valign="middle"></a> #eff3ff |
-| --hc-ui-blue-100 | <a href="#"><img src="https://readme-swatches.vercel.app/c6d9ff?style=round" valign="middle"></a> #c6d9ff |
-| --hc-ui-blue-200 | <a href="#"><img src="https://readme-swatches.vercel.app/a8c6ff?style=round" valign="middle"></a> #a8c6ff |
-| --hc-ui-blue-300 | <a href="#"><img src="https://readme-swatches.vercel.app/6a9cff?style=round" valign="middle"></a> #6a9cff |
-| --hc-ui-blue-400 | <a href="#"><img src="https://readme-swatches.vercel.app/407eff?style=round" valign="middle"></a> #407eff |
-| --hc-ui-blue-500 | <a href="#"><img src="https://readme-swatches.vercel.app/1d62f4?style=round" valign="middle"></a> #1d62f4 |
-| --hc-ui-blue-600 | <a href="#"><img src="https://readme-swatches.vercel.app/0047e2?style=round" valign="middle"></a> #0047e2 |
-| --hc-ui-blue-700 | <a href="#"><img src="https://readme-swatches.vercel.app/0b35b2?style=round" valign="middle"></a> #0b35b2 |
-| --hc-ui-blue-800 | <a href="#"><img src="https://readme-swatches.vercel.app/11267f?style=round" valign="middle"></a> #11267f |
-| --hc-ui-blue-900 | <a href="#"><img src="https://readme-swatches.vercel.app/0c1555?style=round" valign="middle"></a> #0c1555 |
-| --hc-ui-blue-950 | <a href="#"><img src="https://readme-swatches.vercel.app/060941?style=round" valign="middle"></a> #060941 |
+| Property Name    | Value                                                                                                     | Contrasts with |
+| ---------------- | --------------------------------------------------------------------------------------------------------- | -------------- |
+| --hc-ui-blue-50  | <a href="#"><img src="https://readme-swatches.vercel.app/eff3ff?style=round" valign="middle"></a> #eff3ff | Black          |
+| --hc-ui-blue-100 | <a href="#"><img src="https://readme-swatches.vercel.app/c6d9ff?style=round" valign="middle"></a> #c6d9ff | Black          |
+| --hc-ui-blue-200 | <a href="#"><img src="https://readme-swatches.vercel.app/a8c6ff?style=round" valign="middle"></a> #a8c6ff | Black          |
+| --hc-ui-blue-300 | <a href="#"><img src="https://readme-swatches.vercel.app/6a9cff?style=round" valign="middle"></a> #6a9cff | Black          |
+| --hc-ui-blue-400 | <a href="#"><img src="https://readme-swatches.vercel.app/407eff?style=round" valign="middle"></a> #407eff | Black          |
+| --hc-ui-blue-500 | <a href="#"><img src="https://readme-swatches.vercel.app/1d62f4?style=round" valign="middle"></a> #1d62f4 | White          |
+| --hc-ui-blue-600 | <a href="#"><img src="https://readme-swatches.vercel.app/0047e2?style=round" valign="middle"></a> #0047e2 | White          |
+| --hc-ui-blue-700 | <a href="#"><img src="https://readme-swatches.vercel.app/0b35b2?style=round" valign="middle"></a> #0b35b2 | White          |
+| --hc-ui-blue-800 | <a href="#"><img src="https://readme-swatches.vercel.app/11267f?style=round" valign="middle"></a> #11267f | White          |
+| --hc-ui-blue-900 | <a href="#"><img src="https://readme-swatches.vercel.app/0c1555?style=round" valign="middle"></a> #0c1555 | White          |
+| --hc-ui-blue-950 | <a href="#"><img src="https://readme-swatches.vercel.app/060941?style=round" valign="middle"></a> #060941 | White          |
 
 ### Yellow
 
-| Property Name   | Value                                                                                                     |
-| --------------- | --------------------------------------------------------------------------------------------------------- |
-| --hc-yellow-50  | <a href="#"><img src="https://readme-swatches.vercel.app/fff8eb?style=round" valign="middle"></a> #fff8eb |
-| --hc-yellow-100 | <a href="#"><img src="https://readme-swatches.vercel.app/feeac7?style=round" valign="middle"></a> #feeac7 |
-| --hc-yellow-200 | <a href="#"><img src="https://readme-swatches.vercel.app/fdd48a?style=round" valign="middle"></a> #fdd48a |
-| --hc-yellow-300 | <a href="#"><img src="https://readme-swatches.vercel.app/fbb03b?style=round" valign="middle"></a> #fbb03b |
-| --hc-yellow-400 | <a href="#"><img src="https://readme-swatches.vercel.app/fa9e25?style=round" valign="middle"></a> #fa9e25 |
-| --hc-yellow-500 | <a href="#"><img src="https://readme-swatches.vercel.app/f47a0c?style=round" valign="middle"></a> #f47a0c |
-| --hc-yellow-600 | <a href="#"><img src="https://readme-swatches.vercel.app/d85607?style=round" valign="middle"></a> #d85607 |
-| --hc-yellow-700 | <a href="#"><img src="https://readme-swatches.vercel.app/bb2b13?style=round" valign="middle"></a> #bb2b13 |
-| --hc-yellow-800 | <a href="#"><img src="https://readme-swatches.vercel.app/922b0e?style=round" valign="middle"></a> #922b0e |
-| --hc-yellow-900 | <a href="#"><img src="https://readme-swatches.vercel.app/78250f?style=round" valign="middle"></a> #78250f |
-| --hc-yellow-950 | <a href="#"><img src="https://readme-swatches.vercel.app/451003?style=round" valign="middle"></a> #451003 |
+| Property Name   | Value                                                                                                     | Contrasts with |
+| --------------- | --------------------------------------------------------------------------------------------------------- | -------------- |
+| --hc-yellow-50  | <a href="#"><img src="https://readme-swatches.vercel.app/fff8eb?style=round" valign="middle"></a> #fff8eb | Black          |
+| --hc-yellow-100 | <a href="#"><img src="https://readme-swatches.vercel.app/feeac7?style=round" valign="middle"></a> #feeac7 | Black          |
+| --hc-yellow-200 | <a href="#"><img src="https://readme-swatches.vercel.app/fdd48a?style=round" valign="middle"></a> #fdd48a | Black          |
+| --hc-yellow-300 | <a href="#"><img src="https://readme-swatches.vercel.app/fbb03b?style=round" valign="middle"></a> #fbb03b | Black          |
+| --hc-yellow-400 | <a href="#"><img src="https://readme-swatches.vercel.app/fa9e25?style=round" valign="middle"></a> #fa9e25 | Black          |
+| --hc-yellow-500 | <a href="#"><img src="https://readme-swatches.vercel.app/f47a0c?style=round" valign="middle"></a> #f47a0c | Black          |
+| --hc-yellow-600 | <a href="#"><img src="https://readme-swatches.vercel.app/d85607?style=round" valign="middle"></a> #d85607 | Black          |
+| --hc-yellow-700 | <a href="#"><img src="https://readme-swatches.vercel.app/bb2b13?style=round" valign="middle"></a> #bb2b13 | White          |
+| --hc-yellow-800 | <a href="#"><img src="https://readme-swatches.vercel.app/922b0e?style=round" valign="middle"></a> #922b0e | White          |
+| --hc-yellow-900 | <a href="#"><img src="https://readme-swatches.vercel.app/78250f?style=round" valign="middle"></a> #78250f | White          |
+| --hc-yellow-950 | <a href="#"><img src="https://readme-swatches.vercel.app/451003?style=round" valign="middle"></a> #451003 | White          |
