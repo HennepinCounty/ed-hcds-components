@@ -25,11 +25,11 @@ Color is an integral part of our brand and with consistent application can help 
 
 Blue is our core color. It is the foundation for our brand and is made up of 3 distinctshades. One blue (or a subtle combinationblues) is used as the primary color, secondto white.
 
-| Property Name   | Value         | Hex Code  | Contrasts with |
-| --------------- | ------------- | --------- | -------------- |
-| --hc-brand-navy | --hc-blue-800 | `#123123` | White          |
-| --hc-brand-blue | --hc-blue-700 | #0058a4   | White          |
-| --hc-brand-sky  | --hc-sky-500  | #44c8f5   | Black          |
+| Property Name   | Value         | Hex Code | Contrasts with |
+| --------------- | ------------- | -------- | -------------- |
+| --hc-brand-navy | --hc-blue-800 | #123123  | White          |
+| --hc-brand-blue | --hc-blue-700 | #0058a4  | White          |
+| --hc-brand-sky  | --hc-sky-500  | #44c8f5  | Black          |
 
 #### Gray
 
