@@ -7,11 +7,10 @@ Sometimes the county serves as a fiscal or administrative agent for other organi
 
 ## Github library
 
-When possible use the Hennepin County Design System GitHub. This ensures your application will always use the most recent color palette
+When possible use the [Hennepin County Design System GitHub](https://github.com/HennepinCounty/ed-hcds-components). This ensures your application will always use the most recent color palette
 whenever you update.
 
-Use the CSS
-token variables provided rather than copying the hexadecimal (hex) color values. For example, use var(--hc-text-primary) rather than #222222.
+Use the CSS token variables provided rather than copying the hexadecimal (hex) color values. For example, use var(--hc-text-primary) rather than #222222.
 
 Only use the variables in the context they’re designed for. For example, if you wanted to
 use red, use var(hc-red-700) rather than var(--hc-text-error).
