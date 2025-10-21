@@ -309,7 +309,7 @@ h6 {
   --hc-font-body-size-large: calc(var(--hc-font-size-base) * 1.25); /*20px*/
   --hc-font-fieldLabel-size-small: var(--hc-font-body-size-small); /*16px*/
   --hc-font-fieldLabel-size-regular: var(--hc-font-body-size-regular); /*18px*/
-  --hc-font-fieldLabel-size-large: var(--hc-font-body-size-large); /*20px*/
+  --hc-font-fieldLabel-size-large: var(--hc-font-body-size-large); /*22px*/
   --hc-font-hint-size: var(--hc-font-body-size-regular); /*18px*/
   --hc-font-error-size: var(--hc-font-body-size-regular); /*18px*/
   --hc-font-h1-lineHeight: 110%;
@@ -346,7 +346,7 @@ h6 {
     --hc-font-h4-size: calc(var(--hc-font-size-base) * 1.75); /*28px*/
     --hc-font-h5-size: calc(var(--hc-font-size-base) * 1.5); /*24px*/
     --hc-font-h6-size: calc(var(--hc-font-size-base) * 1.375); /*22px*/
-    --hc-font-body-size-large: calc(var(--hc-font-size-base) * 1.25); /*20px*/
+    --hc-font-body-size-large: calc(var(--hc-font-size-base) * 1.375); /*22px*/
     --hc-font-body-size-regular: calc(
     	var(--hc-font-size-base) * 1.125
     ); /*18px*/
@@ -2304,6 +2304,10 @@ p.hc-alert-paragraph {
 /* Class added by JS when clicked */
 .hc-accordion-content--expanded {
   padding-bottom: var(--hc-spacing-03);
+}
+
+.hc-accordion-section-heading[aria-expanded=true] .hc-accordion-header {
+  color: var(--hc-text-interactive);
 }
 
 .hc-breadcrumbs__list {

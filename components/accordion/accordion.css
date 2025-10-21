@@ -79,3 +79,7 @@
 .hc-accordion-content--expanded {
 	padding-bottom: var(--hc-spacing-03);
 }
+
+.hc-accordion-section-heading[aria-expanded="true"] .hc-accordion-header {
+	color: var(--hc-text-interactive);
+}
