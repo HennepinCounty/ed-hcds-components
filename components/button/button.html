@@ -1,269 +1,478 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Buttons</title>
-    <link rel="stylesheet" href="../../CSS/index.css" />
-    <link rel="stylesheet" href="button.css" />
-    <script src="button.js" defer></script>
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Buttons</title>
+		<link rel="stylesheet" href="../../CSS/index.css" />
+		<link rel="stylesheet" href="button.css" />
+		<script src="button.js" defer></script>
+	</head>
 
-  <body class="hc-padding-x-03">
-    <h1 class="hc-margin-top-06">Buttons</h1>
+	<body class="hc-padding-x-03">
+		<h1 class="hc-margin-top-06">Buttons</h1>
 
+		<!-- ================ -->
+		<!-- ================ -->
+		<!-- Buttons no icon -->
+		<!-- ================ -->
+		<!-- ================ -->
+		<h2>Buttons no icon</h2>
 
-    <!-- ================ -->
-    <!-- ================ -->
-    <!-- Buttons no icon -->
-    <!-- ================ -->
-    <!-- ================ -->
-   <h2>Buttons no icon</h2>
+		<!-- Primary button -->
+		<h3 class="hc-margin-top-08 hc-margin-bottom-03">Primary button</h3>
+		<button class="hc-button">Primary</button>
+		<button class="hc-button" aria-disabled="true">Primary</button>
 
+		<!-- Secondary button -->
+		<h3 class="hc-margin-top-08 hc-margin-bottom-03">Secondary button</h3>
+		<button class="hc-button hc-button--secondary">Secondary</button>
+		<button class="hc-button hc-button--secondary" aria-disabled="true">
+			Secondary
+		</button>
 
-    <!-- Primary button -->
-    <h3 class="hc-margin-top-08 hc-margin-bottom-03">Primary button</h3>
-    <button class="hc-button">Primary</button>
-    <button class="hc-button" aria-disabled="true">Primary</button>
+		<!-- Tertiary button -->
+		<h3 class="hc-margin-top-08 hc-margin-bottom-03">Tertiary button</h3>
+		<button class="hc-button hc-button--tertiary">Tertiary</button>
+		<button class="hc-button hc-button--tertiary" aria-disabled="true">
+			Tertiary
+		</button>
 
+		<!-- Danger button -->
+		<h3 class="hc-margin-top-08 hc-margin-bottom-03">Danger button</h3>
+		<button class="hc-button hc-button--danger">Danger</button>
+		<button class="hc-button hc-button--danger" aria-disabled="true">
+			Danger
+		</button>
 
-    <!-- Secondary button -->
-    <h3 class="hc-margin-top-08 hc-margin-bottom-03">Secondary button</h3>
-    <button class="hc-button hc-button--secondary">Secondary</button>
-    <button class="hc-button hc-button--secondary" aria-disabled="true">Secondary</button>
+		<hr class="hc-margin-y-10" />
 
+		<!-- ================ -->
+		<!-- ================ -->
+		<!-- Buttons icon left -->
+		<!-- ================ -->
+		<!-- ================ -->
+		<h2>Buttons icon left</h2>
 
-    <!-- Danger button -->
-    <h3 class="hc-margin-top-08 hc-margin-bottom-03">Danger button</h3>
-    <button class="hc-button hc-button--danger">Danger</button>
-    <button class="hc-button hc-button--danger" aria-disabled="true">Danger</button>
+		<!-- Primary button -->
+		<h3 class="hc-margin-top-08 hc-margin-bottom-03">Primary button</h3>
+		<button class="hc-button hc-button--icon-left">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="hc-icon-size--regular"
+				viewbox="0 -960 960 960">
+				<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+			</svg>
+			Primary
+		</button>
+		<button class="hc-button hc-button--icon-left" aria-disabled="true">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="hc-icon-size--regular"
+				viewbox="0 -960 960 960">
+				<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+			</svg>
+			Primary
+		</button>
 
+		<!-- Secondary button -->
+		<h3 class="hc-margin-top-08 hc-margin-bottom-03">Secondary button</h3>
+		<button class="hc-button hc-button--secondary hc-button--icon-left">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="hc-icon-size--regular"
+				viewbox="0 -960 960 960">
+				<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+			</svg>
+			Secondary
+		</button>
+		<button
+			class="hc-button hc-button--secondary hc-button--icon-left"
+			aria-disabled="true">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="hc-icon-size--regular"
+				viewbox="0 -960 960 960">
+				<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+			</svg>
+			Secondary
+		</button>
 
-    <hr class="hc-margin-y-10" />
+		<!-- Tertiary button -->
+		<h3 class="hc-margin-top-08 hc-margin-bottom-03">Tertiary button</h3>
+		<button class="hc-button hc-button--tertiary hc-button--icon-left">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="hc-icon-size--regular"
+				viewbox="0 -960 960 960">
+				<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+			</svg>
+			Tertiary
+		</button>
+		<button
+			class="hc-button hc-button--tertiary hc-button--icon-left"
+			aria-disabled="true">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="hc-icon-size--regular"
+				viewbox="0 -960 960 960">
+				<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+			</svg>
+			Tertiary
+		</button>
 
-    <!-- ================ -->
-    <!-- ================ -->
-    <!-- Buttons icon left -->
-    <!-- ================ -->
-    <!-- ================ -->
-    <h2>Buttons icon left</h2>
-  
+		<!-- Danger button -->
+		<h3 class="hc-margin-top-08 hc-margin-bottom-03">Danger button</h3>
+		<button class="hc-button hc-button--danger hc-button--icon-left">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="hc-icon-size--regular"
+				viewbox="0 -960 960 960">
+				<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+			</svg>
+			Danger
+		</button>
+		<button
+			class="hc-button hc-button--danger hc-button--icon-left"
+			aria-disabled="true">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="hc-icon-size--regular"
+				viewbox="0 -960 960 960">
+				<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+			</svg>
+			Danger
+		</button>
 
-    <!-- Primary button -->
-    <h3 class="hc-margin-top-08 hc-margin-bottom-03">Primary button</h3>
-    <button class="hc-button hc-button--icon-left">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="hc-icon-size--regular"
-        viewbox="0 -960 960 960"
-      >
-        <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
-      </svg>
-      Primary
-    </button>
-    <button class="hc-button hc-button--icon-left" aria-disabled="true">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="hc-icon-size--regular"
-        viewbox="0 -960 960 960"
-      >
-        <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
-      </svg>
-      Primary
-    </button>
+		<hr class="hc-margin-y-10" />
 
+		<!-- ================ -->
+		<!-- ================ -->
+		<!-- Buttons icon right -->
+		<!-- ================ -->
+		<!-- ================ -->
+		<h2>Buttons icon right</h2>
 
-    <!-- Secondary button -->
-    <h3 class="hc-margin-top-08 hc-margin-bottom-03">Secondary button</h3>
-    <button class="hc-button hc-button--secondary hc-button--icon-left">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="hc-icon-size--regular"
-        viewbox="0 -960 960 960"
-      >
-        <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
-      </svg>
-      Secondary
-    </button>
-    <button
-      class="hc-button hc-button--secondary hc-button--icon-left"
-      aria-disabled="true"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="hc-icon-size--regular"
-        viewbox="0 -960 960 960"
-      >
-        <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
-      </svg>
-      Secondary
-    </button>
+		<!-- Primary button -->
+		<h3 class="hc-margin-top-08 hc-margin-bottom-03">Primary button</h3>
+		<button class="hc-button hc-button--icon-right">
+			Primary
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="hc-icon-size--regular"
+				viewbox="0 -960 960 960">
+				<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+			</svg>
+		</button>
+		<button class="hc-button hc-button--icon-right" aria-disabled="true">
+			Primary
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="hc-icon-size--regular"
+				viewbox="0 -960 960 960">
+				<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+			</svg>
+		</button>
 
+		<!-- Secondary button -->
+		<h3 class="hc-margin-top-08 hc-margin-bottom-03">Secondary button</h3>
+		<button class="hc-button hc-button--secondary hc-button--icon-right">
+			Secondary
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="hc-icon-size--regular"
+				viewbox="0 -960 960 960">
+				<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+			</svg>
+		</button>
+		<button
+			class="hc-button hc-button--secondary hc-button--icon-right"
+			aria-disabled="true">
+			Secondary
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="hc-icon-size--regular"
+				viewbox="0 -960 960 960">
+				<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+			</svg>
+		</button>
 
-    <!-- Danger button -->
-    <h3 class="hc-margin-top-08 hc-margin-bottom-03">Danger button</h3>
-    <button class="hc-button hc-button--danger hc-button--icon-left">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="hc-icon-size--regular"
-        viewbox="0 -960 960 960"
-      >
-        <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
-      </svg>
-      Danger
-    </button>
-    <button class="hc-button hc-button--danger hc-button--icon-left" aria-disabled="true">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="hc-icon-size--regular"
-        viewbox="0 -960 960 960"
-      >
-        <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
-      </svg>
-      Danger
-    </button>
+		<!-- Danger button -->
+		<h3 class="hc-margin-top-08 hc-margin-bottom-03">Danger button</h3>
+		<button class="hc-button hc-button--danger hc-button--icon-right">
+			Danger
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="hc-icon-size--regular"
+				viewbox="0 -960 960 960">
+				<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+			</svg>
+		</button>
+		<button
+			class="hc-button hc-button--danger hc-button--icon-right"
+			aria-disabled="true">
+			Danger
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="hc-icon-size--regular"
+				viewbox="0 -960 960 960">
+				<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+			</svg>
+		</button>
 
-    <hr class="hc-margin-y-10" />
+		<hr class="hc-margin-y-10" />
 
-    <!-- ================ -->
-    <!-- ================ -->
-    <!-- Buttons icon right -->
-    <!-- ================ -->
-    <!-- ================ -->
-    <h2>Buttons icon right</h2>
+		<!-- ================ -->
+		<!-- ================ -->
+		<!-- Icon only -->
+		<!-- ================ -->
+		<!-- ================ -->
 
-    <!-- Primary button -->
-    <h3 class="hc-margin-top-08 hc-margin-bottom-03">Primary button</h3>
-    <button class="hc-button hc-button--icon-right">
-      Primary
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="hc-icon-size--regular"
-        viewbox="0 -960 960 960"
-      >
-        <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
-      </svg>
-    </button>
-    <button class="hc-button hc-button--icon-right" aria-disabled="true">
-      Primary
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="hc-icon-size--regular"
-        viewbox="0 -960 960 960"
-      >
-        <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
-      </svg>
-    </button>
+		<h2>Icon only</h2>
 
-    <!-- Secondary button -->
-    <h3 class="hc-margin-top-08 hc-margin-bottom-03">Secondary button</h3>
-    <button class="hc-button hc-button--secondary hc-button--icon-right">
-      Secondary
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="hc-icon-size--regular"
-        viewbox="0 -960 960 960"
-      >
-        <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
-      </svg>
-    </button>
-    <button
-      class="hc-button hc-button--secondary hc-button--icon-right"
-      aria-disabled="true"
-    >
-      Secondary
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="hc-icon-size--regular"
-        viewbox="0 -960 960 960"
-      >
-        <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
-      </svg>
-    </button>
+		<!-- Only secondary button at this time-->
+		<h3 class="hc-margin-top-08 hc-margin-bottom-03">Secondary button</h3>
+		<button class="hc-button hc-button--secondary hc-button--icon-only">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="hc-icon-size--regular"
+				viewbox="0 -960 960 960">
+				<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+			</svg>
+		</button>
+		<button
+			class="hc-button hc-button--secondary hc-button--icon-only"
+			aria-disabled="true">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="hc-icon-size--regular"
+				viewbox="0 -960 960 960">
+				<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+			</svg>
+		</button>
 
-     <!-- Danger button -->
-    <h3 class="hc-margin-top-08 hc-margin-bottom-03">Danger button</h3>
-    <button class="hc-button hc-button--danger hc-button--icon-right">
-      Danger
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="hc-icon-size--regular"
-        viewbox="0 -960 960 960"
-      >
-        <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
-      </svg>
-    </button>
-    <button class="hc-button hc-button--danger hc-button--icon-right" aria-disabled="true">
-      Danger
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="hc-icon-size--regular"
-        viewbox="0 -960 960 960"
-      >
-        <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
-      </svg>
-    </button>
+		<hr class="hc-margin-y-10" />
 
-    <hr class="hc-margin-y-10" />
+		<!-- ======================== -->
+		<!-- ======================== -->
+		<!-- Button group -->
+		<!-- Used in modal component -->
+		<!-- ======================== -->
+		<!-- ======================== -->
+		<h2>Button group</h2>
 
-    <!-- ================ -->
-    <!-- ================ -->
-    <!-- Icon only -->
-    <!-- ================ -->
-    <!-- ================ -->
+		<div class="button-group">
+			<button
+				type="button"
+				class="hc-button hc-button--secondary btn-outline-primary"
+				data-close-modal>
+				Close
+			</button>
+			<button class="hc-button">Save changes</button>
+		</div>
 
-    <h2>Icon only</h2>
+		<!-- ======================== -->
+		<!-- ======================== -->
+		<!-- ======================== -->
+		<!-- ======================== -->
+		<!-- BUTTONS ON DARK BACKGROUND -->
+		<!-- ======================== -->
+		<!-- ======================== -->
+		<!-- ======================== -->
+		<!-- ======================== -->
 
-    <!-- Only secondary button at this time-->
-    <h3 class="hc-margin-top-08 hc-margin-bottom-03">Secondary button</h3>
-    <button class="hc-button hc-button--secondary hc-button--icon-only">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="hc-icon-size--regular"
-        viewbox="0 -960 960 960"
-      >
-        <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
-      </svg>
-    </button>
-    <button
-      class="hc-button hc-button--secondary hc-button--icon-only"
-      aria-disabled="true"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="hc-icon-size--regular"
-        viewbox="0 -960 960 960"
-      >
-        <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
-      </svg>
-    </button>
+		<div style="background-color: gray" class="hc-padding-left-04">
+			<h2>Buttons on dark no icon</h2>
 
+			<!-- Primary button -->
+			<h3 class="hc-margin-top-08 hc-margin-bottom-03">Primary button</h3>
+			<button class="hc-button hc-button-on-dark">Primary</button>
+			<button class="hc-button hc-button-on-dark" aria-disabled="true">
+				Primary
+			</button>
 
-    <hr class="hc-margin-y-10" />
+			<!-- Secondary button -->
+			<h3 class="hc-margin-top-08 hc-margin-bottom-03">Secondary button</h3>
+			<button class="hc-button hc-button--secondary hc-button-on-dark">
+				Secondary
+			</button>
+			<button class="hc-button hc-button--secondary" aria-disabled="true">
+				Secondary
+			</button>
 
-    <!-- ======================== -->
-    <!-- ======================== -->
-    <!-- Button group -->
-    <!-- Used in modal component -->
-    <!-- ======================== -->
-    <!-- ======================== -->
-    <h2>Button group</h2>
-    
-    <div class="button-group">
-      <button
-        type="button"
-        class="hc-button hc-button--secondary btn-outline-primary"
-        data-close-modal
-      >
-        Close
-      </button>
-      <button class="hc-button">Save changes</button>
-    </div>
+			<!-- Tertiary button -->
+			<h3 class="hc-margin-top-08 hc-margin-bottom-03">Tertiary button</h3>
+			<button class="hc-button hc-button--tertiary hc-button-on-dark">
+				Tertiary
+			</button>
+			<button
+				class="hc-button hc-button--tertiary hc-button-on-dark"
+				aria-disabled="true">
+				Tertiary
+			</button>
 
-    <br/>
-    <br/>
-    <br/>
-    
-  </body>
+			<hr class="hc-margin-y-10" />
+
+			<!-- ================ -->
+			<!-- ================ -->
+			<!-- Buttons icon left -->
+			<!-- ================ -->
+			<!-- ================ -->
+			<h2>Buttons icon left</h2>
+
+			<!-- Primary button -->
+			<h3 class="hc-margin-top-08 hc-margin-bottom-03">Primary button</h3>
+			<button class="hc-button hc-button--icon-left hc-button-on-dark">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="hc-icon-size--regular"
+					viewbox="0 -960 960 960">
+					<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+				</svg>
+				Primary
+			</button>
+			<button
+				class="hc-button hc-button--icon-left hc-button-on-dark"
+				aria-disabled="true">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="hc-icon-size--regular"
+					viewbox="0 -960 960 960">
+					<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+				</svg>
+				Primary
+			</button>
+
+			<!-- Secondary button -->
+			<h3 class="hc-margin-top-08 hc-margin-bottom-03">Secondary button</h3>
+			<button class="hc-button hc-button--secondary hc-button--icon-left">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="hc-icon-size--regular"
+					viewbox="0 -960 960 960">
+					<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+				</svg>
+				Secondary
+			</button>
+			<button
+				class="hc-button hc-button--secondary hc-button--icon-left"
+				aria-disabled="true">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="hc-icon-size--regular"
+					viewbox="0 -960 960 960">
+					<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+				</svg>
+				Secondary
+			</button>
+
+			<!-- Tertiary button -->
+			<h3 class="hc-margin-top-08 hc-margin-bottom-03">Tertiary button</h3>
+			<button class="hc-button hc-button--tertiary hc-button--icon-left">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="hc-icon-size--regular"
+					viewbox="0 -960 960 960">
+					<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+				</svg>
+				Tertiary
+			</button>
+			<button
+				class="hc-button hc-button--tertiary hc-button--icon-left"
+				aria-disabled="true">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="hc-icon-size--regular"
+					viewbox="0 -960 960 960">
+					<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+				</svg>
+				Tertiary
+			</button>
+
+			<hr class="hc-margin-y-10" />
+
+			<!-- ================ -->
+			<!-- ================ -->
+			<!-- Buttons icon right -->
+			<!-- ================ -->
+			<!-- ================ -->
+			<h2>Buttons icon right</h2>
+
+			<!-- Primary button -->
+			<h3 class="hc-margin-top-08 hc-margin-bottom-03">Primary button</h3>
+			<button class="hc-button hc-button--icon-right">
+				Primary
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="hc-icon-size--regular"
+					viewbox="0 -960 960 960">
+					<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+				</svg>
+			</button>
+			<button class="hc-button hc-button--icon-right" aria-disabled="true">
+				Primary
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="hc-icon-size--regular"
+					viewbox="0 -960 960 960">
+					<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+				</svg>
+			</button>
+
+			<!-- Secondary button -->
+			<h3 class="hc-margin-top-08 hc-margin-bottom-03">Secondary button</h3>
+			<button class="hc-button hc-button--secondary hc-button--icon-right">
+				Secondary
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="hc-icon-size--regular"
+					viewbox="0 -960 960 960">
+					<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+				</svg>
+			</button>
+			<button
+				class="hc-button hc-button--secondary hc-button--icon-right"
+				aria-disabled="true">
+				Secondary
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="hc-icon-size--regular"
+					viewbox="0 -960 960 960">
+					<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+				</svg>
+			</button>
+
+			<!-- ================ -->
+			<!-- ================ -->
+			<!-- Icon only -->
+			<!-- ================ -->
+			<!-- ================ -->
+
+			<h2>Icon only</h2>
+
+			<!-- Only secondary button at this time-->
+			<h3 class="hc-margin-top-08 hc-margin-bottom-03">Secondary button</h3>
+			<button class="hc-button hc-button--secondary hc-button--icon-only">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="hc-icon-size--regular"
+					viewbox="0 -960 960 960">
+					<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+				</svg>
+			</button>
+			<button
+				class="hc-button hc-button--secondary hc-button--icon-only"
+				aria-disabled="true">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="hc-icon-size--regular"
+					viewbox="0 -960 960 960">
+					<path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+				</svg>
+			</button>
+
+			<hr class="hc-margin-y-10" />
+		</div>
+	</body>
 </html>

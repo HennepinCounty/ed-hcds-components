@@ -1866,6 +1866,78 @@ a.hc-button--secondary:focus:active[aria-disabled=true] {
 
 /* ======================== */
 /* ======================== */
+/* Tertiary button */
+/* ======================== */
+/* ======================== */
+.hc-button--tertiary,
+a.hc-button--tertiary {
+  background-color: var(--hc-white);
+  color: var(--hc-text-primary);
+  border: 2px solid var(--hc-button-tertiary-border);
+}
+
+.hc-button--tertiary:hover,
+a.hc-button--tertiary:hover {
+  color: var(--hc-text-on-color);
+  background-color: var(--hc-button-tertiary-hover);
+  border: 2px solid var(--hc-transparent);
+}
+
+.hc-button--tertiary:active,
+a.hc-button--tertiary:active {
+  color: var(--hc-text-on-color);
+  background-color: var(--hc-button-tertiary-active);
+}
+
+.hc-button--tertiary:focus,
+a.hc-button--tertiary:focus {
+  color: var(--hc-link-primary);
+  background-color: var(--hc-button-tertiary-focus-background);
+  border: var(--hc-border-style-focus);
+}
+
+.hc-button--tertiary:focus:hover,
+a.hc-button--tertiary:focus:hover {
+  color: var(--hc-text-on-color);
+  background-color: var(--hc-button-tertiary-hover);
+}
+
+.hc-button--tertiary:focus:active,
+a.hc-button--tertiary:focus:active {
+  color: var(--hc-text-on-color);
+  background-color: var(--hc-button-tertiary-active);
+}
+
+.hc-button--tertiary[aria-disabled=true],
+a.hc-button--tertiary[aria-disabled=true] {
+  color: var(--hc-text-disabled);
+  background-color: var(--hc-background-disabled);
+  border: 2px solid var(--hc-transparent);
+  cursor: not-allowed;
+}
+
+.hc-button--tertiary:focus[aria-disabled=true],
+a.hc-button--tertiary:focus[aria-disabled=true] {
+  color: var(--hc-text-disabled);
+  background-color: var(--hc-background-disabled);
+  border: var(--hc-border-style-focus);
+  cursor: not-allowed;
+}
+
+.hc-button--tertiary:focus:hover[aria-disabled=true],
+a.hc-button--tertiary:focus:hover[aria-disabled=true] {
+  color: var(--hc-text-disabled);
+  background-color: var(--hc-background-disabled);
+}
+
+.hc-button--tertiary:focus:active[aria-disabled=true],
+a.hc-button--tertiary:focus:active[aria-disabled=true] {
+  color: var(--hc-text-disabled);
+  background-color: var(--hc-background-disabled);
+}
+
+/* ======================== */
+/* ======================== */
 /* Danger button */
 /* ======================== */
 /* ======================== */
@@ -1932,6 +2004,132 @@ a.hc-button--danger[aria-disabled=true] {
   gap: var(--hc-spacing-03);
 }
 
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* Buttons on dark */
+/* ------------- */
+/* ------------- */
+/* ------------- */
+/* Primary on dark */
+.hc-button.hc-button-on-dark,
+a.hc-button.hc-button-on-dark {
+  color: var(--hc-text-interactive);
+  background-color: var(--hc-button-primary-on-dark);
+}
+
+.hc-button.hc-button-on-dark:hover,
+a.hc-button.hc-button-on-dark:hover {
+  background-color: var(--hc-button-primary-on-dark-hover);
+}
+
+.hc-button.hc-button-on-dark:active,
+a.hc-button.hc-button-on-dark:active {
+  background-color: var(--hc-button-primary-on-dark-active);
+}
+
+.hc-button.hc-button-on-dark:focus,
+a.hc-button.hc-button-on-dark:focus {
+  /* color: var(--hc-text-interactive); */
+  /* background-color: var(--hc-button-primary-on-dark); */
+}
+
+.hc-button.hc-button-on-dark[aria-disabled=true],
+a.hc-button.hc-button-on-dark[aria-disabled=true] {
+  background-color: var(--hc-background-disabled);
+  color: var(--hc-text-disabled);
+  cursor: not-allowed;
+}
+
+.hc-button.hc-button-on-dark:focus[aria-disabled=true],
+a.hc-button.hc-button-on-dark:focus[aria-disabled=true] {
+  color: var(--hc-text-disabled);
+  background-color: var(--hc-background-disabled);
+  border: var(--hc-border-style-focus);
+  cursor: not-allowed;
+}
+
+.hc-button.hc-button-on-dark:focus:hover[aria-disabled=true],
+a.hc-button.hc-button-on-dark:focus:hover[aria-disabled=true] {
+  color: var(--hc-text-disabled);
+  background-color: var(--hc-background-disabled);
+}
+
+.hc-button.hc-button-on-dark:focus:active[aria-disabled=true],
+a.hc-button.hc-button-on-dark:focus:active[aria-disabled=true] {
+  color: var(--hc-text-disabled);
+  background-color: var(--hc-background-disabled);
+}
+
+/* Secondary on dark */
+.hc-button--secondary.hc-button-on-dark,
+a.hc-button--secondary.hc-button-on-dark {
+  background-color: var(--hc-button-secondary-on-dark);
+  color: var(--hc-text-on-color);
+  border: 2px solid var(--hc-border-color-on-color);
+}
+
+.hc-button--secondary.hc-button-on-dark:hover,
+a.hc-button--secondary.hc-button-on-dark:hover {
+  color: var(--hc-text-interactive);
+  background-color: var(--hc-button-secondary-on-dark-hover);
+  border: 2px solid var(--hc-transparent);
+}
+
+.hc-button--secondary.hc-button-on-dark:active,
+a.hc-button--secondary.hc-button-on-dark:active {
+  color: var(--hc-text-on-color);
+  background-color: var(--hc-button-secondary-on-dark-active);
+}
+
+.hc-button--secondary.hc-button-on-dark:focus,
+a.hc-button--secondary.hc-button-on-dark:focus {
+  color: var(--hc-text-on-color);
+  /* background-color: var(--hc-button-secondary-focus-background); */
+  border: var(--hc-border-style-focus);
+}
+
+.hc-button--secondary.hc-button-on-dark:focus:hover,
+a.hc-button--secondary.hc-button-on-dark:focus:hover {
+  color: var(--hc-text-interactive);
+  background-color: var(--hc-button-secondary-on-dark-hover);
+}
+
+.hc-button--secondary.hc-button-on-dark:focus:active,
+a.hc-button--secondary.hc-button-on-dark:focus:active {
+  color: var(--hc-text-interactive);
+  background-color: var(--hc-button-secondary-on-dark-active);
+}
+
+.hc-button--secondary.hc-button-on-dark[aria-disabled=true],
+a.hc-button--secondary.hc-button-on-dark[aria-disabled=true] {
+  color: var(--hc-text-disabled);
+  background-color: var(--hc-background-disabled);
+  border: 2px solid var(--hc-transparent);
+  cursor: not-allowed;
+}
+
+.hc-button--secondary.hc-button-on-dark:focus[aria-disabled=true],
+a.hc-button--secondary.hc-button-on-dark:focus[aria-disabled=true] {
+  color: var(--hc-text-disabled);
+  background-color: var(--hc-background-disabled);
+  border: var(--hc-border-style-focus);
+  cursor: not-allowed;
+}
+
+.hc-button--secondary.hc-button-on-dark:focus:hover[aria-disabled=true],
+a.hc-button--secondary.hc-button-on-dark:focus:hover[aria-disabled=true] {
+  color: var(--hc-text-disabled);
+  background-color: var(--hc-background-disabled);
+}
+
+.hc-button--secondary.hc-button-on-dark:focus:active[aria-disabled=true],
+a.hc-button--secondary.hc-button-on-dark:focus:active[aria-disabled=true] {
+  color: var(--hc-text-disabled);
+  background-color: var(--hc-background-disabled);
+}
+
+/* Tertiary on dark */
 /* Styling for field */
 .hc-input {
   height: 40px;
@@ -2330,14 +2528,14 @@ p.hc-alert-paragraph {
 }
 
 .hc-breadcrumbs__list-item + .hc-breadcrumbs__list-item {
-  padding-left: var(--hc-spacing-03);
+  padding-left: var(--hc-spacing-02);
 }
 
 .hc-breadcrumbs__list-item + .hc-breadcrumbs__list-item::before {
   display: inline-block;
-  padding-right: var(--hc-spacing-03);
+  padding-right: var(--hc-spacing-02);
   color: var(--hc-text-hint);
-  content: ">";
+  content: url(./chevronForward.svg);
 }
 
 .hc-breadcrumbs__list-item + .hc-breadcrumbs__list-item:hover::before {
