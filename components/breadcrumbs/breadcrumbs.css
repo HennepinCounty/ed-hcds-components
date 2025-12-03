@@ -4,6 +4,7 @@
 	padding: 0rem;
 	margin-bottom: var(--hc-spacing-10);
 	list-style: none;
+	align-items: start;
 }
 
 /* Max-width keeps any individual title from being too long and difficult to read */
@@ -36,11 +37,11 @@
 	color: var(--hc-text-hint);
 }
 
-ol.hc-breadcrumbs__list > li:first-child::before {
+ol.hc-breadcrumbs__list > li:first-child > a::before {
 	content: url(./home.svg);
+	vertical-align: top;
 	display: inline-block;
 	padding-inline-end: 2px;
-	margin-top: -1px;
 }
 
 /***************************************************************************************
