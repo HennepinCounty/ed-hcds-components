@@ -328,14 +328,6 @@ a.hc-link-on-color:hover:visited {
 	color: var(--hc-text-disabled);
 }
 
-.hc-field-label--small {
-	font-size: var(--hc-font-fieldLabel-size-small);
-}
-
-.hc-field-label--large {
-	font-size: var(--hc-font-fieldLabel-size-large);
-}
-
 .hc-text-hint {
 	display: block;
 	color: var(--hc-text-hint, #5c646d);
