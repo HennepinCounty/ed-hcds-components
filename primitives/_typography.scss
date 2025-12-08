@@ -146,7 +146,7 @@
 
 h1,
 .hc-heading-xl {
-	color: var(--hc-text-heading, #0058a4);
+	color: var(--hc-text-brand, #0058a4);
 
 	display: block;
 	font-family: var(--hc-font-family);
@@ -162,7 +162,7 @@ h1,
 
 h2,
 .hc-heading-l {
-	color: var(--hc-text-heading, #0058a4);
+	color: var(--hc-text-brand, #0058a4);
 
 	font-family: var(--hc-font-family);
 	font-size: var(--hc-font-h2-size);
@@ -174,7 +174,7 @@ h2,
 
 h3,
 .hc-heading-m {
-	color: var(--hc-text-heading, #0058a4);
+	color: var(--hc-text-brand, #0058a4);
 
 	font-family: var(--hc-font-family);
 	font-size: var(--hc-font-h3-size);
@@ -186,7 +186,7 @@ h3,
 
 h4,
 .hc-heading-s {
-	color: var(--hc-text-heading, #0058a4);
+	color: var(--hc-text-brand, #0058a4);
 
 	font-family: var(--hc-font-family);
 	font-size: var(--hc-font-h4-size);
