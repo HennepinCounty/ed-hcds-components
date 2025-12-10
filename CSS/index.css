@@ -183,6 +183,9 @@ h6 {
 }
 
 :root {
+  --hc-brand-blue: var(--hc-blue-700);
+  --hc-brand-navy: var(--hc-blue-800);
+  --hc-brand-sky: var(--hc-blue-500);
   --hc-background-default: var(--hc-white);
   --hc-background-hover: var(--hc-gray-50);
   --hc-background-inverse: var(--hc-gray-700);
