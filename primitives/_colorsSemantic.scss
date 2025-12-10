@@ -1,100 +1,126 @@
 // Named colors / Colors with semantic naming
 
 :root {
-  // Background colors
-  --hc-background-default: var(--hc-gray-100);
-  --hc-background-hover: var(--hc-gray-200);
-  --hc-background-active: var(--hc-gray-300);
-  --hc-background-selected: var(--hc-gray-300);
-  --hc-background-inverse: var(--hc-gray-600);
-  --hc-background-brand: var(--hc-blue-500);
-  --hc-background-brand-hover: var(--hc-blue-600);
-  --hc-background-brand-active: var(--hc-purple-600);
-  --hc-background-brand-inverse: var(--hc-blue-200);
-  --hc-background-brand-alternate: var(--hc-blue-600);
-  --hc-background-disabled: var(--hc-gray-100);
-  --hc-checkbox-background-disabled: var(--hc-gray-300);
+	// Background colors
+	--hc-background-default: var(--hc-white);
+	--hc-background-hover: var(--hc-gray-50);
+	--hc-background-inverse: var(--hc-gray-700);
+	--hc-background-disabled: var(--hc-gray-300);
+	--hc-background-brand: var(--hc-blue-700);
+	--hc-background-brand-hover: var(--hc-blue-900);
+	--hc-background-brand-active: var(--hc-blue-950);
+	--hc-background-brand-inverse: var(--hc-blue-300);
+	--hc-background-brand-alternate: var(--hc-blue-900);
+	--hc-background-interactive: var(--hc-ui-blue-600);
+	--hc-background-interactive-hover: var(--hc-ui-blue-700);
+	--hc-background-interactive-active: var(--hc-ui-blue-800);
+	--hc-background-error: var(--hc-red-50);
 
-  // Support colors
-  --hc-support-info: var(--hc-blue-200);
-  --hc-support-info--hover: var(--hc-blue-500);
-  --hc-support-info--active: var(--hc-blue-600);
-  --hc-support-info-inverse: var(--hc-blue-200);
-  --hc-support-success: var(--hc-green-300);
-  --hc-support-success--hover: var(--hc-green-400);
-  --hc-support-success--active: var(--hc-green-500);
-  --hc-support-success-inverse: var(--hc-green-200);
-  --hc-support-warning: var(--hc-yellow-200);
-  --hc-support-warning--hover: var(--hc-yellow-300);
-  --hc-support-warning--active: var(--hc-yellow-400);
-  --hc-support-warning-inverse: var(--hc-yellow-600);
-  --hc-support-error: var(--hc-red-400);
-  --hc-support-error--hover: var(--hc-red-500);
-  --hc-support-error--active: var(--hc-red-600);
-  --hc-support-error-inverse: var(--hc-red-200);
+	//accent colors
+	--hc-brand-accent-green: var(--hc-green-700);
+	--hc-brand-accent-gold: var(--hc-yellow-300);
+	--hc-brand-accent-orange: var(hc-orange-500);
+	--hc-brand-accent-pink: var(--hc-pink-400);
+	--hc-brand-accent-red: var(hc-red-700);
 
-  // Border colors
+	// Border color
+	--hc-border-color-focus-inner: var(--hc-white);
+	--hc-border-color-focus-outer: var(--hc-background-interactive);
+	--hc-border-color-subtle: var(--hc-gray-300);
+	--hc-border-color-strong: var(--hc-gray-700);
+	--hc-border-color-error: var(--hc-red-700);
+	--hc-border-color-disabled: var(--hc-gray-300);
+	--hc-border-color-inverse: var(--hc-gray-900);
+	--hc-border-color-on-color: var(--hc-white);
+	--hc-border-subtle-on-color: rgba(255, 255, 255, 0.2);
 
-  //use for bright color in focus states
-  --hc-border-color-focus-01: var(--hc-white);
+	// Button color
+	--hc-button-primary: var(--hc-background-interactive);
+	--hc-button-primary-hover: var(--hc-background-interactive-hover);
+	--hc-button-primary-active: var(--hc-background-interactive-active);
+	--hc-button-secondary: var(--hc-white);
+	--hc-button-secondary-hover: var(--hc-background-interactive-hover);
+	--hc-button-secondary-active: var(--hc-background-interactive-active);
+	--hc-button-secondary-border: var(--hc-background-interactive);
+	--hc-button-tertiary: var(--hc-white);
+	--hc-button-tertiary-hover: var(--hc-black);
+	--hc-button-tertiary-active: var(--hc-gray-900);
+	--hc-button-tertiary-border: var(--hc-black);
+	--hc-button-danger: var(--hc-red-700);
+	--hc-button-danger-hover: var(--hc-red-900);
+	--hc-button-danger-active: var(--hc-red-950);
+	--hc-button-border: var(--hc-background-interactive);
+	--hc-button-primary-on-dark: var(--hc-white);
+	--hc-button-primary-on-dark-hover: var(--hc-gray-50);
+	--hc-button-primary-on-dark-active: var(--hc-gray-100);
+	--hc-button-secondary-on-dark: var(--hc-transparent);
+	--hc-button-secondary-on-dark-hover: var(--hc-gray-50);
+	--hc-button-secondary-on-dark-active: var(--hc-gray-100);
+	--hc-button-secondary-on-dark-border: var(--hc-white);
+	--hc-button-tertiary-on-dark: var(--hc-white);
+	--hc-button-tertiary-on-dark-hover: var(--hc-gray-50);
+	--hc-button-tertiary-on-dark-active: var(--hc-gray-100);
+	--hc-button-disabled: var(--hc-background-background-disabled);
+	--hc-button-separator: var(--hc-gray-200);
 
-  //use for dark color in focus states
-  --hc-border-color-focus-02: var(--hc-blue-500);
-  --hc-border-color-subtle: var(--hc-gray-200);
-  --hc-border-color-regular: var(--hc-gray-500);
-  --hc-border-color-strong: var(--hc-gray-600);
-  --hc-border-color-disabled: var(--hc-gray-300);
-  --hc-border-color-error: var(--hc-support-error);
-  --hc-border-color-inverse: var(--hc-gray-100);
+	// remove word color from border variable?
+	// Field colors
+	--hc-field-background: var(--hc-background-default);
+	--hc-field-border-color: var(--hc-border-color-strong);
+	--hc-field-error: var(--hc-red-50);
 
-  // Button
-  --hc-button-primary: var(--hc-background-brand);
-  --hc-button-primary-hover: var(--hc-background-brand-hover);
-  --hc-button-primary-active: var(--hc-background-brand-active);
-  --hc-button-secondary: var(--hc-white);
-  --hc-button-secondary-focus-background: var(--hc-background-brand);
-  --hc-button-secondary-hover: var(--hc-background-brand-hover);
-  --hc-button-secondary-active: var(--hc-background-brand-active);
-  --hc-button-secondary-border: var(--hc-background-brand);
-  --hc-button-secondary-border-hover: var(--hc-button-secondary-hover);
-  --hc-button-secondary-border-active: var(--hc-button-secondary-active);
-  --hc-button-danger: var(--hc-red-400);
-  --hc-button-danger-hover: var(--hc-red-500);
-  --hc-button-danger-active: var(--hc-red-600);
-  --hc-button-disabled-background: var(--hc-gray-200);
-  --hc-button-disabled-text: var(--hc-text-disabled);
+	// Icon colors
+	--hc-icon-primary: var(--hc-gray-900);
+	--hc-icon-secondary: var(--hc-gray-700);
+	--hc-icon-on-color: var(--hc-white);
+	// --hc-icon-inverse: var(--hc-white);
+	--hc-icon-disabled: var(--hc-gray-500);
+	--hc-icon-icon-on-color-disabled: var(--hc-gray-400);
+	--hc-icon-interactive: var(--hc-background-interactive);
+	--hc-icon-info: var(--hc-text-info);
+	--hc-icon-info-inverse: var(--hc-support-info);
+	--hc-icon-success: var(--hc-text-success);
+	--hc-icon-success-inverse: var(--hc-support-success);
+	--hc-icon-warning: var(--hc-text-warning);
+	--hc-icon-warning-inverse: var(--hc-support-warning);
+	--hc-icon-error: var(--hc-text-error);
+	--hc-icon-error-inverse: var(--hc-support-error);
 
-  // Icon colors
-  --hc-icon-primary: var(--hc-gray-600);
-  --hc-icon-secondary: var(--hc-gray-400);
-  --hc-icon-on-color: var(--hc-white);
-  --hc-icon-inverse: var(--hc-white);
-  --hc-icon-disabled: var(--hc-gray-400);
-  --hc-icon-on-color-disabled: var(--hc-gray-300);
-  --hc-icon-error: var(--hc-support-error);
-  --hc-icon-brand: var(--hc-background-brand);
+	// Link colors
+	--hc-link-primary: var(--hc-background-interactive);
+	--hc-link-inverse: var(--hc-white);
+	--hc-link-primary-hover: var(--hc-background-brand-hover);
 
-  // Field colors
-  --hc-field-background: var(--hc-background-default);
-  --hc-field-hover: var(--hc-gray-100);
-  --hc-field-disabled: var(--hc-gray-100);
-  --hc-field-border-color: var(--hc-border-color-strong);
+	// Support colors
+	--hc-support-error: var(--hc-red-100);
+	--hc-support-error-hover: var(--hc-red-200);
+	--hc-support-error-active: var(--hc-red-300);
+	--hc-support-error-inverse: var(--hc-red-800);
+	--hc-support-info: var(--hc-blue-100);
+	--hc-support-info-hover: var(--hc-blue-200);
+	--hc-support-info-active: var(--hc-blue-300);
+	--hc-support-info-inverse: var(--hc-blue-900);
+	--hc-support-success: var(--hc-green-100);
+	--hc-support-success-hover: var(--hc-green-200);
+	--hc-support-success-active: var(--hc-green-300);
+	--hc-support-success-inverse: var(--hc-green-800);
+	--hc-support-warning: var(--hc-yellow-100);
+	--hc-support-warning-hover: var(--hc-yellow-200);
+	--hc-support-warning-active: var(--hc-yellow-300);
+	--hc-support-warning-inverse: var(--hc-yellow-800);
 
-  // Text colors
-  --hc-text-primary: var(--hc-gray-600);
-  --hc-text-secondary: var(--hc-gray-500);
-  --hc-text-on-color: var(--hc-white);
-  --hc-text-placeholder: var(--hc-gray-400);
-  --hc-text-hint: var(--hc-gray-500);
-  --hc-text-error: var(--hc-support-error);
-  --hc-text-inverse: var(--hc-white);
-  --hc-text-disabled: var(--hc-gray-500);
-  --hc-text-on-color-disabled: var(--hc-gray-400);
-
-  // Link colors
-  --hc-link-primary: var(--hc-background-brand);
-  --hc-link-inverse: var(--hc-white);
-  --hc-link-disabled: var(--hc-text-disabled);
-  --hc-link-primary-hover: var(--hc-background-brand-hover);
-  --hc-link-link-visited: var(--hc-purple-500);
+	// Text colors
+	--hc-text-primary: var(--hc-gray-900);
+	--hc-text-secondary: var(--hc-gray-700);
+	--hc-text-brand: var(--hc-background-brand-alternate);
+	--hc-text-hint: var(--hc-gray-700);
+	--hc-text-disabled: var(--hc-gray-500);
+	--hc-text-on-color-disabled: var(--hc-gray-400);
+	--hc-text-success: var(--hc-green-950);
+	--hc-text-info: var(--hc-support-info-inverse);
+	--hc-text-warning: var(--hc-yellow-900);
+	--hc-text-error: var(--hc-red-900);
+	--hc-text-on-color: var(--hc-white);
+	--hc-text-inverse: var(--hc-white);
+	--hc-text-interactive: var(--hc-background-interactive);
 }

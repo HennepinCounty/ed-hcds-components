@@ -1,69 +1,85 @@
 /* Wrapper for accordion group */
 .hc-accordion-group {
-  /* background-color: white; */
-  border-radius: var(--hc-border-radius-01);
-  max-width: 768px;
+	/* background-color: white; */
+	border-radius: var(--hc-border-radius-01);
+	max-width: 768px;
 }
 
 /* Div wrapping accordion button with its expandable content */
 .hc-accordion-item {
-  margin-bottom: var(--hc-spacing-04);
+	margin-bottom: var(--hc-spacing-00);
+	border-radius: var(--hc-border-radius-none);
+	border-top: 1px solid var(--hc-border-color-subtle);
+}
+
+.hc-accordion-item:focus-within {
+	border-radius: var(--hc-border-radius-regular);
 }
 
 /* Class attached to button to make the accordion clickable */
 .hc-accordion-header {
-  font-family: var(--hc-font-family);
-  font-weight: 400;
-  font-size: var(--hc-font-h4-size);
-  color: var(--hc-text-primary);
-  background-color: var(--hc-background-default);
-  line-height: 130%;
-  text-align: left;
-  cursor: pointer;
-  padding: var(--hc-spacing-04);
-  min-width: 100%;
-  border-radius: 4px;
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  gap: var(--hc-spacing-03);
-  border: var(--hc-border-style-transparent);
+	font-family: var(--hc-font-family);
+	font-weight: 400;
+	font-size: var(--hc-font-h6-size);
+	color: var(--hc-text-primary);
+	background-color: var(--hc-background-default);
+	line-height: 130%;
+	text-align: left;
+	cursor: pointer;
+	padding: var(--hc-spacing-04);
+	min-width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: var(--hc-spacing-03);
+	border: var(--hc-border-style-transparent);
+}
+
+.hc-accordion-item:last-child {
+	border-bottom: 1px solid var(--hc-border-color-subtle);
 }
 
 .hc-accordion-section-heading {
-  font-family: var(--hc-font-family);
-  font-weight: 400;
-  font-size: var(--hc-font-h4-size);
-  color: var(--hc-text-primary);
-  line-height: 130%;
-  text-align: left;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+	font-family: var(--hc-font-family);
+	font-weight: 400;
+	font-size: var(--hc-font-h4-size);
+	color: var(--hc-text-primary);
+	line-height: 130%;
+	text-align: left;
+	margin-block-start: 0px;
+	margin-block-end: 0px;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
 }
 
 .hc-accordion-header:focus {
-  border: var(--hc-border-style-focus);
-  outline: var(--hc-outline-style-focus);
+	border: var(--hc-border-style-focus);
+	outline: var(--hc-outline-style-focus);
+	border-radius: var(--hc-border-radius-regular);
 }
 
 .hc-accordion-header:hover {
-  background-color: var(--hc-background-hover);
+	background-color: var(--hc-background-hover);
+	color: var(--hc-text-interactive);
 }
 
 /* Positioning for content inside the accordion */
 .hc-accordion-content {
-  font-family: var(--hc-font-family);
-  padding-top: var(--hc-spacing-04);
-  padding-left: var(--hc-spacing-04);
-  padding-right: var(--hc-spacing-07);
-  display: none;
-  margin-bottom: 32px;
-  max-width: 80ch;
+	font-family: var(--hc-font-family);
+	padding-top: var(--hc-spacing-04);
+	padding-left: var(--hc-spacing-04);
+	padding-right: var(--hc-spacing-07);
+	display: none;
+	margin-bottom: 32px;
+	max-width: 80ch;
 }
 
 /* Class added by JS when clicked */
 .hc-accordion-content--expanded {
-  padding-bottom: var(--hc-spacing-03);
+	padding-bottom: var(--hc-spacing-03);
+}
+
+.hc-accordion-section-heading[aria-expanded="true"] .hc-accordion-header {
+	color: var(--hc-text-interactive);
 }

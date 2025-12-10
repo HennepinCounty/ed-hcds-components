@@ -17,6 +17,7 @@
 @forward "./utiltities/flex";
 @forward "./utiltities/margin";
 @forward "./utiltities/padding";
+@forward "./utiltities/visuallyHidden";
 
 // Components
 @forward "./components/button/button.css";
@@ -29,6 +30,9 @@
 @forward "./components/textArea/textArea.css";
 @forward "./components/select/select.css";
 @forward "./components/radioButtons/radioButton.css";
+@forward "./components/footer/footer.css";
+@forward "./components/header/heresHowYouKnowBanner/heresHowYouKnowBanner.css";
+@forward "./components/header/header.css";
 
 // Components with nested components
 @forward "./components/search/search.css";

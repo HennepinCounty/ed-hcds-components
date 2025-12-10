@@ -1,174 +1,164 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../../CSS/index.css" />
-    <link rel="stylesheet" href="checkbox.css" />
-  </head>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../../CSS/index.css" />
+		<link rel="stylesheet" href="checkbox.css" />
+	</head>
 
-  <body class="hc-padding-xy-06">
-    <h1 class="hc-margin-top-06">Checkboxes</h1>
+	<body class="hc-padding-xy-06">
+		<h1 class="hc-margin-top-06">Checkboxes</h1>
 
-    <!-- ================ -->
-    <!-- ================ -->
-    <!-- Default state -->
-    <!-- ================ -->
-    <!-- ================ -->
+		<!-- ================ -->
+		<!-- ================ -->
+		<!-- Default state -->
+		<!-- ================ -->
+		<!-- ================ -->
 
-    <h2>Default state</h2>
-    <form action="/form-handler" method="post" novalidate>
-      <div class="hc-form-group">
-        <fieldset class="hc-fieldset">
-          <legend class="hc-fieldset__legend">Title for checkbox group</legend>
-          <div class="hc-checkboxes" data-module="hc-checkbox">
-            <div class="hc-checkbox__item">
-              <input
-                class="hc-checkbox__input"
-                id="easy-copy-paste-example-1"
-                name="copyPasteExample"
-                type="checkbox"
-                value="easyPaste"
-              />
-              <label
-                class="hc-field-label hc-checkbox__label"
-                for="easy-copy-paste-example-1"
-              >
-                This is a checkbox example
-              </label>
-            </div>
+		<h2>Default state</h2>
+		<form action="/form-handler" method="post" novalidate>
+			<div class="hc-form-group">
+				<fieldset class="hc-fieldset">
+					<legend class="hc-fieldset__legend">Title for checkbox group</legend>
+					<div class="hc-checkboxes" data-module="hc-checkbox">
+						<div class="hc-checkbox__item">
+							<input
+								class="hc-checkbox__input"
+								id="easy-copy-paste-example-1"
+								name="copyPasteExample"
+								type="checkbox"
+								value="easyPaste" />
+							<label
+								class="hc-field-label hc-checkbox__label"
+								for="easy-copy-paste-example-1">
+								This is a checkbox example
+							</label>
+						</div>
 
-            <div class="hc-checkbox__item">
-              <input
-                class="hc-checkbox__input"
-                id="easy-copy-paste-example-3"
-                name="copyPasteExample"
-                type="checkbox"
-                value="secondEasyPaste"
-              />
-              <label
-                class="hc-field-label hc-checkbox__label"
-                for="easy-copy-paste-example-3"
-              >
-                Another checkbox example
-              </label>
-            </div>
-          </div>
-        </fieldset>
-      </div>
-    </form>
+						<div class="hc-checkbox__item">
+							<input
+								class="hc-checkbox__input"
+								id="easy-copy-paste-example-3"
+								name="copyPasteExample"
+								type="checkbox"
+								value="secondEasyPaste" />
+							<label
+								class="hc-field-label hc-checkbox__label"
+								for="easy-copy-paste-example-3">
+								Another checkbox example
+							</label>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+		</form>
 
-    <hr class="hc-margin-y-10" />
-    <!-- ================ -->
-    <!-- ================ -->
-    <!-- With hint -->
-    <!-- ================ -->
-    <!-- ================ -->
+		<hr class="hc-margin-y-10" />
+		<!-- ================ -->
+		<!-- ================ -->
+		<!-- With hint -->
+		<!-- ================ -->
+		<!-- ================ -->
 
-    <h2>With hint</h2>
+		<h2>With hint</h2>
 
-    <form action="/form-handler" method="post" novalidate>
-      <div class="hc-form-group">
-        <fieldset
-          class="hc-fieldset"
-          aria-describedby="fieldset-hint-homeownership"
-        >
-          <legend class="hc-fieldset__legend">Legend title for checkbox group</legend>
-          <div class="hc-text-hint" id="fieldset-hint-homeownership">
-            Hint: check all that apply
-          </div>
-          <div class="hc-checkboxes" data-module="hc-checkbox">
-            <div class="hc-checkbox__item">
-              <input
-                class="hc-checkbox__input"
-                id="renting"
-                name="exampleCheckboxGroup"
-                type="checkbox"
-                value="rent"
-              />
-              <label class="hc-field-label hc-checkbox__label" for="renting">
-                I like pizza
-              </label>
-            </div>
-            <div class="hc-checkbox__item">
-              <input
-                class="hc-checkbox__input"
-                id="owning"
-                name="exampleCheckboxGroup"
-                type="checkbox"
-                value="buy"
-              />
-              <label class="hc-field-label hc-checkbox__label" for="owning">
-                I like pineapple
-              </label>
-            </div>
-            <div class="hc-checkbox__item">
-              <input
-                class="hc-checkbox__input"
-                id="subletting"
-                name="exampleCheckboxGroup"
-                type="checkbox"
-                value="sublet"
-              />
-              <label class="hc-field-label hc-checkbox__label" for="subletting">
-                I like pineapple on pizza
-              </label>
-            </div>
-          </div>
-        </fieldset>
-      </div>
-    </form>
+		<form action="/form-handler" method="post" novalidate>
+			<div class="hc-form-group">
+				<fieldset
+					class="hc-fieldset"
+					aria-describedby="fieldset-hint-homeownership">
+					<legend class="hc-fieldset__legend">
+						Legend title for checkbox group
+					</legend>
+					<div class="hc-text-hint" id="fieldset-hint-homeownership">
+						Hint: check all that apply
+					</div>
+					<div class="hc-checkboxes" data-module="hc-checkbox">
+						<div class="hc-checkbox__item">
+							<input
+								class="hc-checkbox__input"
+								id="renting"
+								name="exampleCheckboxGroup"
+								type="checkbox"
+								value="rent" />
+							<label class="hc-field-label hc-checkbox__label" for="renting">
+								I like pizza
+							</label>
+						</div>
+						<div class="hc-checkbox__item">
+							<input
+								class="hc-checkbox__input"
+								id="owning"
+								name="exampleCheckboxGroup"
+								type="checkbox"
+								value="buy" />
+							<label class="hc-field-label hc-checkbox__label" for="owning">
+								I like pineapple
+							</label>
+						</div>
+						<div class="hc-checkbox__item">
+							<input
+								class="hc-checkbox__input"
+								id="subletting"
+								name="exampleCheckboxGroup"
+								type="checkbox"
+								value="sublet" />
+							<label class="hc-field-label hc-checkbox__label" for="subletting">
+								I like pineapple on pizza
+							</label>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+		</form>
 
-    <hr class="hc-margin-y-10" />
+		<hr class="hc-margin-y-10" />
 
-    <!-- ================ -->
-    <!-- ================ -->
-    <!-- Validation state -->
-    <!-- ================ -->
-    <!-- ================ -->
+		<!-- ================ -->
+		<!-- ================ -->
+		<!-- Error state -->
+		<!-- ================ -->
+		<!-- ================ -->
 
-    <!-- Styling and accessibility guidance for validation -->
-    
-    <h2>Validation state</h2>
-    <h3 class="hc-margin-bottom-06">With hint and error text</h3>
+		<!-- Styling and accessibility guidance for validation -->
 
-    <form action="/form-handler" method="post" novalidate>
-      <div class="hc-form-group">
+		<h2>Validation state</h2>
+		<h3 class="hc-margin-bottom-06">With hint and error text</h3>
 
-        <!-- aria-invalid="true" should be added/remove dynamically based on validation logic -->
-        <fieldset 
-          class="hc-fieldset" 
-          aria-describedby="fieldset-hint-example-1"
-          aria-invalid="true"
-        >
-          <legend class="hc-fieldset__legend">Legend title for checkbox group</legend>
-          <div class="hc-text-hint" id="fieldset-hint-example-1">
-            Hint text for all options
-          </div>
-          <p 
-            role="alert" 
-            class="hc-text-error" 
-            id="fieldset-error-example-1"
-          >
-            Error: checkbox not checked
-          </p>
-          <div class="hc-checkboxes" data-module="hc-checkbox">
-            <div class="hc-checkbox__item">
-              <input
-                class="hc-checkbox__input"
-                id="checkbox-error-example-1"
-                name="errorWithHintExample"
-                type="checkbox"
-                value="Have-not"
-              />
-              <label class="hc-field-label hc-checkbox__label" for="checkbox-error-example-1">
-                I have not done X
-              </label>
-            </div>
-          </div>
-        </fieldset>
-      </div>
-    </form>
-    
-  </body>
+		<form action="/form-handler" method="post" novalidate>
+			<div class="hc-form-group">
+				<!-- aria-invalid="true" should be added/remove dynamically based on validation logic -->
+				<fieldset
+					class="hc-fieldset"
+					aria-describedby="fieldset-hint-example-1"
+					aria-invalid="true">
+					<legend class="hc-fieldset__legend">
+						Legend title for checkbox group
+					</legend>
+					<div class="hc-text-hint" id="fieldset-hint-example-1">
+						Hint text for all options
+					</div>
+					<p role="alert" class="hc-text-error" id="fieldset-error-example-1">
+						Error: checkbox not checked
+					</p>
+					<div class="hc-checkboxes" data-module="hc-checkbox">
+						<div class="hc-checkbox__item">
+							<input
+								class="hc-checkbox__input"
+								id="checkbox-error-example-1"
+								name="errorWithHintExample"
+								type="checkbox"
+								value="Have-not" />
+							<label
+								class="hc-field-label hc-checkbox__label"
+								for="checkbox-error-example-1">
+								I have not done X
+							</label>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+		</form>
+	</body>
 </html>

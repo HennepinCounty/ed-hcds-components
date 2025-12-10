@@ -1,27 +1,62 @@
 /* Glues the input field and button together */
 .hc-search-wrapper {
-  display: flex;
-  flex-direction: row;
-  gap: var(--hc-spacing-00);
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	height: auto;
+	min-height: 48px;
+	border-radius: var(--hc-border-radius-02);
+	padding: var(--hc-spacing-02);
+	/* border: 2px solid var(--hc-field-border-color); */
+	/* border-radius: 9999px; */
+	align-items: center;
+	justify-content: center;
 }
+
+/* Focus styling is removed from input */
+/* .hc-search-wrapper:focus-within {
+
+} */
 
 /* Styling for font typed into field */
 input.hc-input[type="search"] {
-  font-family: var(--hc-font-family);
-  font-size: var(--hc-font-body-size-regular);
-  font-style: normal;
-  color: var(--hc-text-primary, #171a1d);
-  font-weight: 400;
-  line-height: 100%;
+	appearance: none;
+	font-family: var(--hc-font-family);
+	font-size: var(--hc-font-body-size-large);
+	font-style: normal;
+	color: var(--hc-text-primary, #171a1d);
+	font-weight: 400;
+	line-height: 100%;
+	border-radius: 9999px;
+	padding-inline-start: var(--hc-spacing-09);
+	border: 2px solid var(--hc-border-color-subtle);
+	background-color: var(--hc-white);
+	width: 100%;
+	height: 100%;
+	min-height: 64px;
 }
 
-/* Un-rounds the corners of input field to be flush against button */
+input.hc-input[type="search"]:focus {
+	border: var(--hc-border-style-focus);
+	outline: var(--hc-outline-style-focus);
+}
+
 .hc-input-search {
-  border-radius: 4px 0px 0px 4px;
+	/* border-radius: 4px 0px 0px 4px; */
+	border-radius: 9999px;
 }
 
-/* Un-rounds the corners of button to be flush against input field */
 .hc-button-search {
-  border-radius: 0px 4px 4px 0px;
-  margin-inline-start: -2px;
+	/* border-radius: 0px 4px 4px 0px; */
+	/* margin-inline-start: -2px; */
+	position: absolute;
+	top: 12px;
+	right: 12px;
+}
+
+.hc-search-icon {
+	position: absolute;
+	left: 24px;
+	top: 24px;
+	color: var(--hc-gray-500);
 }
