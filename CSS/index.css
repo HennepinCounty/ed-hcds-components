@@ -196,6 +196,11 @@ h6 {
   --hc-background-interactive-hover: var(--hc-ui-blue-700);
   --hc-background-interactive-active: var(--hc-ui-blue-800);
   --hc-background-error: var(--hc-red-50);
+  --hc-brand-accent-green: var(--hc-green-700);
+  --hc-brand-accent-gold: var(--hc-yellow-300);
+  --hc-brand-accent-orange: var(hc-orange-500);
+  --hc-brand-accent-pink: var(--hc-pink-400);
+  --hc-brand-accent-red: var(hc-red-700);
   --hc-border-color-focus-inner: var(--hc-white);
   --hc-border-color-focus-outer: var(--hc-background-interactive);
   --hc-border-color-subtle: var(--hc-gray-300);
@@ -238,7 +243,6 @@ h6 {
   --hc-icon-primary: var(--hc-gray-900);
   --hc-icon-secondary: var(--hc-gray-700);
   --hc-icon-on-color: var(--hc-white);
-  --hc-icon-inverse: var(--hc-white);
   --hc-icon-disabled: var(--hc-gray-500);
   --hc-icon-icon-on-color-disabled: var(--hc-gray-400);
   --hc-icon-interactive: var(--hc-background-interactive);
@@ -273,21 +277,15 @@ h6 {
   --hc-text-secondary: var(--hc-gray-700);
   --hc-text-brand: var(--hc-background-brand-alternate);
   --hc-text-hint: var(--hc-gray-700);
-  --hc-text-placeholder: var(--hc-gray-400);
   --hc-text-disabled: var(--hc-gray-500);
   --hc-text-on-color-disabled: var(--hc-gray-400);
   --hc-text-success: var(--hc-green-950);
-  --hc-text-success-inverse: var(--hc-support-success);
   --hc-text-info: var(--hc-support-info-inverse);
-  --hc-text-info-inverse: var(--hc-support-info);
   --hc-text-warning: var(--hc-yellow-900);
-  --hc-text-warning-inverse: var(--hc-support-warning);
   --hc-text-error: var(--hc-red-900);
-  --hc-text-error-inverse: var(--hc-support-error);
   --hc-text-on-color: var(--hc-white);
   --hc-text-inverse: var(--hc-white);
   --hc-text-interactive: var(--hc-background-interactive);
-  --hc-text-heading: var(--hc-background-brand-alternate);
 }
 
 :root {
@@ -380,7 +378,7 @@ h6 {
 }
 h1,
 .hc-heading-xl {
-  color: var(--hc-text-heading, #0058a4);
+  color: var(--hc-text-brand, #0058a4);
   display: block;
   font-family: var(--hc-font-family);
   font-size: var(--hc-font-h1-size);
@@ -395,7 +393,7 @@ h1,
 
 h2,
 .hc-heading-l {
-  color: var(--hc-text-heading, #0058a4);
+  color: var(--hc-text-brand, #0058a4);
   font-family: var(--hc-font-family);
   font-size: var(--hc-font-h2-size);
   font-style: normal;
@@ -406,7 +404,7 @@ h2,
 
 h3,
 .hc-heading-m {
-  color: var(--hc-text-heading, #0058a4);
+  color: var(--hc-text-brand, #0058a4);
   font-family: var(--hc-font-family);
   font-size: var(--hc-font-h3-size);
   font-style: normal;
@@ -417,7 +415,7 @@ h3,
 
 h4,
 .hc-heading-s {
-  color: var(--hc-text-heading, #0058a4);
+  color: var(--hc-text-brand, #0058a4);
   font-family: var(--hc-font-family);
   font-size: var(--hc-font-h4-size);
   font-style: normal;
@@ -547,14 +545,6 @@ a.hc-link-on-color:hover:visited {
 
 .hc-field-label--disabled {
   color: var(--hc-text-disabled);
-}
-
-.hc-field-label--small {
-  font-size: var(--hc-font-fieldLabel-size-small);
-}
-
-.hc-field-label--large {
-  font-size: var(--hc-font-fieldLabel-size-large);
 }
 
 .hc-text-hint {
