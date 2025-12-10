@@ -1,6 +1,11 @@
 // Named colors / Colors with semantic naming
 
 :root {
+	// Brand colors
+	--hc-brand-blue: var(--hc-blue-700);
+	--hc-brand-navy: var(--hc-blue-800);
+	--hc-brand-sky: var(--hc-blue-500);
+
 	// Background colors
 	--hc-background-default: var(--hc-white);
 	--hc-background-hover: var(--hc-gray-50);
