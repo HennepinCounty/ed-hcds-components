@@ -4,10 +4,6 @@
 
 Classes for creating a flex stack or row
 
-## Grid
-
-Contains Bootstrap grid
-
 ## Gap
 
 Contains gap property classes tied to spacing variables
