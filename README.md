@@ -3,6 +3,11 @@
 ed-hcds-components contains accessible code for building a user interface for Hennepin County digital products.
 <br><br>
 
+## Table of Contents
+- [Structure](#structure)
+- [Download](#downloading-and-incorporating-design-system-components)
+- [Questions](#questions-and-support)
+
 ## Structure
 
 ### Components
@@ -59,8 +64,8 @@ To use a component, copy and paste the component HTML into your project, then re
 
 - **NPM install use (experimental, for developers)**: See [README2_npm_install.md](README2_npm_install.md).
 
-### Questions and support
+## Questions and support
 
-If you have any questions or issues, visit office hours on Tuesdays and Thursdays from 3 p.m. to 3:30 p.m., or submit a support ticket
+If you have any questions or issues, visit office hours on Tuesdays and Thursdays from 3 p.m. to 3:30 p.m., or submit a support ticket.
 
 <br>
