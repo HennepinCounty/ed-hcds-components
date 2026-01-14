@@ -6,7 +6,7 @@ ed-hcds-components contains accessible code for building a user interface for He
 ## Table of Contents
 - [Structure](#structure)
 - [Download](#downloading-and-incorporating-design-system-components)
-- [Questions](#questions-and-support)
+- [Support](#questions-and-support)
 
 ## Structure
 
