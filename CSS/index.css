@@ -1663,6 +1663,7 @@ SOFTWARE. */
 
 .hc-visually-hidden {
   clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
   clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
@@ -2676,6 +2677,7 @@ SOFTWARE. */
   margin: -1px !important;
   overflow: hidden !important;
   clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(50%) !important;
   clip-path: inset(50%) !important;
   white-space: nowrap !important;
 }
@@ -2688,6 +2690,7 @@ SOFTWARE. */
   margin: inherit !important;
   overflow: visible !important;
   clip: auto !important;
+  -webkit-clip-path: none !important;
   clip-path: none !important;
   white-space: inherit !important;
   background-color: var(--hc-background-brand);
@@ -2789,9 +2792,7 @@ SOFTWARE. */
   /* background-color: var(--hc-white); */
   min-width: 11.5em;
   max-width: 100%;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background: no-repeat right;
   background-image: url("data:image/svg+xml;utf8,%3Csvg width%3D%2224%22 height%3D%2224%22 viewBox%3D%220 0 32 32%22 fill%3D%22none%22 xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath d%3D%22M16 22L6 12L7.4 10.6L16 19.2L24.6 10.6L26 12L16 22Z%22 fill%3D%22black%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-color: transparent;
@@ -2977,7 +2978,7 @@ SOFTWARE. */
 
 .hc-footer-social-and-heading h2 {
   color: var(--hc-text-on-color);
-  margin-bottom: var(--hc-spacing-00);
+  margin-bottom: var(--hc-spacing-06);
   font-weight: 500;
 }
 
@@ -2985,7 +2986,6 @@ SOFTWARE. */
   display: flex;
   flex-direction: row;
   gap: 12px;
-  width: -moz-fit-content;
   width: fit-content;
   flex-shrink: 0;
   flex-wrap: wrap;
@@ -2996,9 +2996,7 @@ SOFTWARE. */
   border-color: var(--hc-border-subtle-on-color);
   border-style: solid;
   border-width: 2px;
-  height: -moz-fit-content;
   height: fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   border-radius: 50%;
 }
@@ -3027,8 +3025,8 @@ SOFTWARE. */
 	}
 } */
 .hc-footerLogo {
-  width: 55px;
-  height: 70px;
+  width: auto;
+  height: 64px;
 }
 
 .hc-footer-image-link {
@@ -3040,7 +3038,16 @@ SOFTWARE. */
 .hc-footer-link-group {
   display: flex;
   flex-direction: column;
-  gap: var(--hc-spacing-05);
+  gap: var(--hc-spacing-06);
+}
+
+.hc-footer .hc-link-on-color {
+  text-decoration: none;
+}
+
+.hc-footer .hc-link-on-color:hover,
+.hc-footer .hc-link-on-color:focus {
+  text-decoration: none;
 }
 
 @media (min-width: 40.0625rem) {
@@ -3057,7 +3064,11 @@ SOFTWARE. */
 @media (min-width: 40.0625rem) {
   .hc-footer-links-and-logo {
     flex-direction: row;
+    align-items: center;
     gap: var(--hc-spacing-05);
+  }
+  .hc-footer-image-link {
+    margin-bottom: 0;
   }
 }
 .hc-details {
@@ -3276,9 +3287,7 @@ SOFTWARE. */
 } */
 /* Styling for font typed into field */
 input.hc-input[type=search] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   font-family: var(--hc-font-family);
   font-size: var(--hc-font-body-size-large);
   font-style: normal;
@@ -3350,4 +3359,6 @@ dialog.hc-modal[open] {
 
 dialog.hc-modal::backdrop {
   background-color: rgba(0, 0, 0, 0.6);
-}/*# sourceMappingURL=index.css.map */
+}
+
+/*# sourceMappingURL=index.css.map */
