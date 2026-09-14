@@ -28,6 +28,7 @@ a.hc-button {
 	padding-right: var(--hc-spacing-06);
 	cursor: pointer;
 	text-decoration: none;
+	outline-offset: 0;
 }
 
 /* Focus styles */
@@ -35,6 +36,7 @@ a.hc-button {
 a.hc-button:focus {
 	border: var(--hc-border-style-focus);
 	outline: var(--hc-outline-style-focus);
+	outline-offset: 0;
 	color: var(--hc-text-on-color);
 }
 

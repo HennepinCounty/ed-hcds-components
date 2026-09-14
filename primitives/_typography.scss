@@ -297,6 +297,16 @@ a:visited:hover {
 	color: var(--hc-link-primary-hover);
 }
 
+a:focus {
+	outline: var(--hc-outline-style-focus);
+	outline-offset: 2px;
+	border-radius: 2px;
+}
+
+a:focus:not(:focus-visible) {
+	outline: none;
+}
+
 .hc-link-on-color,
 a.hc-link-on-color {
 	color: var(--hc-link-inverse);
@@ -305,6 +315,18 @@ a.hc-link-on-color {
 .hc-link-on-color:hover:visited,
 a.hc-link-on-color:hover:visited {
 	color: var(--hc-link-inverse);
+}
+
+.hc-link-on-color:focus,
+a.hc-link-on-color:focus {
+	outline: 3px solid var(--hc-link-inverse);
+	outline-offset: 2px;
+	border-radius: 2px;
+}
+
+.hc-link-on-color:focus:not(:focus-visible),
+a.hc-link-on-color:focus:not(:focus-visible) {
+	outline: none;
 }
 
 .hc-text-on-color {
